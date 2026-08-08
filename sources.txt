@@ -1,4 +1,6 @@
 # TVBox 采集目标（每行一个，# 开头为注释）
 https://lytvs.top/蝴蝶影视纯净版ua9.json
 https://lytvs.top/蝴蝶影视全量版ua9.json
+https://gh-proxy.com/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/ok海豚18
+https://gh-proxy.com/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/ok海豚665
 REPO:FGBLH/HKL
