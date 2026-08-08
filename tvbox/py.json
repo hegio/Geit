@@ -1263,6 +1263,17 @@
       "playerType": 2
     },
     {
+      "key": "AVToday🔞.py",
+      "name": "AVToday🔞.py",
+      "type": 3,
+      "api": "./py/AVToday🔞.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
       "key": "AV星球🔞.py",
       "name": "AV星球🔞.py",
       "type": 3,
@@ -2308,6 +2319,17 @@
       "playerType": 2
     },
     {
+      "key": "成人乐园🔞.py",
+      "name": "成人乐园🔞.py",
+      "type": 3,
+      "api": "./py/成人乐园🔞.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
       "key": "房中㊙️术🔞.py",
       "name": "房中㊙️术🔞.py",
       "type": 3,
@@ -2653,6 +2675,17 @@
       "name": "熊猫视频.py",
       "type": 3,
       "api": "./py/熊猫视频.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
+      "key": "熟女汇🔞.py",
+      "name": "熟女汇🔞.py",
+      "type": 3,
+      "api": "./py/熟女汇🔞.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
