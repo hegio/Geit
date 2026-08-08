@@ -1,0 +1,4 @@
+# GitHub 仓库标识 owner/repo（用于生成 jsDeliviv 订阅链接）
+# 在 GitHub Actions 中会自动从环境变量 GITHUB_REPOSITORY 读取，本地测试才需要本文件
+# 改成你自己的，例如：
+owner/repo
