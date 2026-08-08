@@ -1,10 +1,4 @@
 # TVBox 采集目标（每行一个，# 开头为注释）
-# 支持两种写法：
-#   1) 单文件地址：GitHub raw / 第三方站点 / 带 gh-proxy 前缀都行
-#   2) 整仓库镜像：REPO:OWNER/REPO[@分支]  —— 自动抓取该仓库全部核心文件（.py/.js/.json 等，跳过 .jar 等二进制）
-
-# 第三方站点单文件（TVBox 配置）
-https://lytvs.top/%E8%80%81%E6%9D%A8TV%E7%BA%AF%E5%87%80%E7%89%88xxz.json
-
-# GitHub 仓库镜像：采集 FGBLH/HKL 仓库内的全部核心文件（203 个 .py + 8 个 .js + 配置等）
+https://lytvs.top/蝴蝶影视纯净版ua9.json
+https://lytvs.top/蝴蝶影视全量版ua9.json
 REPO:FGBLH/HKL
