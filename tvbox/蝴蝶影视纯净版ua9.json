@@ -34,7 +34,7 @@
         <div class="text-center space-y-2 border-b border-slate-700/60 pb-5">
             <div class="inline-block p-3 bg-slate-700/40 rounded-2xl text-4xl shadow-inner border border-slate-600/40">🦋</div>
             <h1 class="text-2xl sm:text-3xl font-extrabold tracking-wide text-white" id="header_title">老杨TV · 专属矩阵订阅导航</h1>
-            <p class="text-xs text-slate-400 font-mono">Core V3.3.1 | Build: 2026-08-08 17:24:24</p>
+            <p class="text-xs text-slate-400 font-mono">Core V3.3.1 | Build: 2026-08-08 19:15:17</p>
             
             <div class="flex items-center justify-center gap-2 mt-1">
                 <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900/60 border border-slate-700/60 text-[11px] text-slate-300">
@@ -57,7 +57,7 @@
         <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-2.5 text-center">
             <div class="bg-slate-900/60 p-2.5 rounded-2xl border border-slate-700/50">
                 <div class="text-[10px] text-slate-400">点播线路</div>
-                <div class="text-base font-bold text-emerald-400 mt-0.5"><span id="count_sites" data-target="362">0</span> <span class="text-[10px] font-normal">个</span></div>
+                <div class="text-base font-bold text-emerald-400 mt-0.5"><span id="count_sites" data-target="365">0</span> <span class="text-[10px] font-normal">个</span></div>
             </div>
             <div class="bg-slate-900/60 p-2.5 rounded-2xl border border-slate-700/50">
                 <div class="text-[10px] text-slate-400">直播源站</div>
@@ -419,27 +419,11 @@
     let verifyActionType = "copy";
     let currentMathQuestion = null;
 
-    // 🔒 内部算法 Keys：仅用于 DOM 加密（防止代码中硬编码答案）
+    // 🔒 内部算法 Keys：从 settings.json 动态注入
     const MATH_DB_ANSWERS = ["TRUE", "[PLUGIN]", "302", "HTTPS", "X25519", "QUIC", "FAKE-IP", "UTLS", "PREFER-IPV6", "AEAD", "#genre#", "proxy://", "default", "script=", "isVideoFormat"];
 
-    // 🔒 联合题库：代理网络协议 + TVBox/FongMi 核心（已转义双大括号）
-    const ALL_MATH_DB = [
-        { id: 0,  num_str: "01", cmd: "q1",  q: "Surge 想要对特定 HTTP/2 协议流量强行开启 MITM 解密，需在 [MITM] 下配置 h2 = ____？" },
-        { id: 1,  num_str: "02", cmd: "q2",  q: "Loon 模块化扩展文件(.plugin)中，定义脚本与重写的主标签名称叫什么____？" },
-        { id: 2,  num_str: "03", cmd: "q3",  q: "Shadowrocket 的 URL Rewrite 规则中，用于临时重定向的 HTTP 状态码关键字是____？" },
-        { id: 3,  num_str: "04", cmd: "q4",  q: "Sing-box 中专门用于规避 TLS 握手 SNI 明文特征并依赖 ECH 加密的 DNS 记录类型是____？" },
-        { id: 4,  num_str: "05", cmd: "q5",  q: "Xray 的 VLESS 协议在结合 Reality 传输层时，用作客户端鉴权的椭圆曲线密钥对算法是____？" },
-        { id: 5,  num_str: "06", cmd: "q6",  q: "Tuic v5 协议为了在 UDP 丢包环境下实现快速重传并降低延迟，其底层依托的传输层协议是____？" },
-        { id: 6,  num_str: "07", cmd: "q7",  q: "Clash Meta (mihomo) 想要对本地 DoH 请求防止被 GFW 污染，需开启的 DNS 核心模式是____？" },
-        { id: 7,  num_str: "08", cmd: "q8",  q: "V2Ray 中用于伪装成正常 TLS 流量并动态修改 Client Hello 随机数与指纹的模块是____？" },
-        { id: 8,  num_str: "09", cmd: "q9",  q: "Shadowrocket / Surge 中用于强行阻断并直接拒绝 IPv6 优先解析以防止地址泄漏的设置项是____？" },
-        { id: 9,  num_str: "10", cmd: "q10", q: "Shadowsocks 2022 协议族为了彻底解决旧版首包重放攻击，在 Header 中强制加入的校验机制是____？" },
-        { id: 10, num_str: "11", cmd: "q11", q: "在 M3U 或 TXT 直播源中，用于声明某个分组为“密码保护的隐藏分组”的行后缀标志是____？" },
-        { id: 11, num_str: "12", cmd: "q12", q: "Spider 爬虫返回媒体 URL 时，若需交由本身的 proxy() 方法接管二次转发，URL 前缀需使用____协议？" },
-        { id: 12, num_str: "13", cmd: "q13", q: "Catchup 追看配置中，若要将计算后的时间参数直接“完全替换”原始播放 URL，type 字段应填____？" },
-        { id: 13, num_str: "14", cmd: "q14", q: "M3U 格式中，用于指定解析器 WebView 额外执行 JS 自动点击或去广告的指令行是____？" },
-        { id: 14, num_str: "15", cmd: "q15", q: "Spider 类的子类中，用于在 WebView 拦截 URL 后进行人工二次校验“是否为有效媒体 URL”的方法名是____？" }
-    ];
+    // 🔒 联合题库：从 settings.json 动态注入
+    const ALL_MATH_DB = [{"id": 0, "num_str": "01", "cmd": "q1", "q": "Surge 想要对特定 HTTP/2 协议流量强行开启 MITM 解密，需在 [MITM] 下配置 h2 = ____？"}, {"id": 1, "num_str": "02", "cmd": "q2", "q": "Loon 模块化扩展文件(.plugin)中，定义脚本与重写的主标签名称叫什么____？"}, {"id": 2, "num_str": "03", "cmd": "q3", "q": "Shadowrocket 的 URL Rewrite 规则中，用于临时重定向的 HTTP 状态码关键字是____？"}, {"id": 3, "num_str": "04", "cmd": "q4", "q": "Sing-box 中专门用于规避 TLS 握手 SNI 明文特征并依赖 ECH 加密的 DNS 记录类型是____？"}, {"id": 4, "num_str": "05", "cmd": "q5", "q": "Xray 的 VLESS 协议在结合 Reality 传输层时，用作客户端鉴权的椭圆曲线密钥对算法是____？"}, {"id": 5, "num_str": "06", "cmd": "q6", "q": "Tuic v5 协议为了在 UDP 丢包环境下实现快速重传并降低延迟，其底层依托的传输层协议是____？"}, {"id": 6, "num_str": "07", "cmd": "q7", "q": "Clash Meta (mihomo) 想要对本地 DoH 请求防止被 GFW 污染，需开启的 DNS 核心模式是____？"}, {"id": 7, "num_str": "08", "cmd": "q8", "q": "V2Ray 中用于伪装成正常 TLS 流量并动态修改 Client Hello 随机数与指纹的模块是____？"}, {"id": 8, "num_str": "09", "cmd": "q9", "q": "Shadowrocket / Surge 中用于强行阻断并直接拒绝 IPv6 优先解析以防止地址泄漏的设置项是____？"}, {"id": 9, "num_str": "10", "cmd": "q10", "q": "Shadowsocks 2022 协议族为了彻底解决旧版首包重放攻击，在 Header 中强制加入的校验机制是____？"}, {"id": 10, "num_str": "11", "cmd": "q11", "q": "在 M3U 或 TXT 直播源中，用于声明某个分组为“密码保护的隐藏分组”的行后缀标志是____？"}, {"id": 11, "num_str": "12", "cmd": "q12", "q": "Spider 爬虫返回媒体 URL 时，若需交由本身的 proxy() 方法接管二次转发，URL 前缀需使用____协议？"}, {"id": 12, "num_str": "13", "cmd": "q13", "q": "Catchup 追看配置中，若要将计算后的时间参数直接“完全替换”原始播放 URL，type 字段应填____？"}, {"id": 13, "num_str": "14", "cmd": "q14", "q": "M3U 格式中，用于指定解析器 WebView 额外执行 JS 自动点击或去广告的指令行是____？"}, {"id": 14, "num_str": "15", "cmd": "q15", "q": "Spider 类的子类中，用于在 WebView 拦截 URL 后进行人工二次校验“是否为有效媒体 URL”的方法名是____？"}];
 
     // 🎲 每次点击按钮：从 ALL_MATH_DB 动态题库中随机抽题，渲染弹窗
     function triggerRandomVerify(el) {
