@@ -977,10 +977,10 @@
   ],
   "sites": [
     {
-      "key": "007吃瓜.py",
-      "name": "007吃瓜.py",
+      "key": "007吃瓜🔞.py",
+      "name": "007吃瓜🔞.py",
       "type": 3,
-      "api": "./py/007吃瓜.py",
+      "api": "./py/007吃瓜🔞.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
@@ -1087,10 +1087,32 @@
       "playerType": 2
     },
     {
+      "key": "51暗网🔞.py",
+      "name": "51暗网🔞.py",
+      "type": 3,
+      "api": "./py/51暗网🔞.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
       "key": "51爆料.py",
       "name": "51爆料.py",
       "type": 3,
       "api": "./py/51爆料.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
+      "key": "51短剧🔞.py",
+      "name": "51短剧🔞.py",
+      "type": 3,
+      "api": "./py/51短剧🔞.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
@@ -1531,6 +1553,17 @@
       "name": "VV视频🔞.py",
       "type": 3,
       "api": "./py/VV视频🔞.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
+      "key": "XX01🔞.py",
+      "name": "XX01🔞.py",
+      "type": 3,
+      "api": "./py/XX01🔞.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
@@ -2451,6 +2484,17 @@
       "playerType": 2
     },
     {
+      "key": "极品少女🔞.py",
+      "name": "极品少女🔞.py",
+      "type": 3,
+      "api": "./py/极品少女🔞.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
       "key": "枝枝影视.py",
       "name": "枝枝影视.py",
       "type": 3,
@@ -2752,6 +2796,17 @@
       "name": "猫咪TV.py",
       "type": 3,
       "api": "./py/猫咪TV.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
+      "key": "玉蚌含珠🔞.py",
+      "name": "玉蚌含珠🔞.py",
+      "type": 3,
+      "api": "./py/玉蚌含珠🔞.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
