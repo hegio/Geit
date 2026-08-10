@@ -33,6 +33,72 @@
           "playerType": 2
         },
 		{ 
+          "key": "DramaRush.py",
+          "name": "DramaRush.py",
+          "type": 3,
+          "api": "./X/py/DramaRush.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		 { 
+          "key": "猫又影视.py",
+          "name": "猫又影视.py",
+          "type": 3,
+          "api": "./py/猫又影视.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "佩可爱动漫.py",
+          "name": "佩可爱动漫.py",
+          "type": 3,
+          "api": "./py/佩可爱动漫.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "月之祠.py",
+          "name": "月祠",
+          "type": 3,
+          "api": "./py/月之祠.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "橘子动漫.py",
+          "name": "橘子动漫.py",
+          "type": 3,
+          "api": "./py/橘子动漫.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "男人本色.py",
+          "name": "男人本色.py",
+          "type": 3,
+          "api": "./X/py/男人本色.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
           "key": "歪比巴卜.py",
           "name": "歪比巴卜.py",
           "type": 3,
