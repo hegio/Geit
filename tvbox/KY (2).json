@@ -32,7 +32,39 @@
           "changeable": 1,
           "playerType": 2
         },
-		
+		{ 
+          "key": "歪比巴卜.py",
+          "name": "歪比巴卜.py",
+          "type": 3,
+          "api": "./py/歪比巴卜.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "小女16影视.py",
+          "name": "小女16影视.py",
+          "type": 3,
+          "api": "./X/py/小女16影视.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "M146影视.py",
+          "name": "M146影视.py",
+          "type": 3,
+          "api": "./X/py/M146影视.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
 		{ 
           "key": "真狼影视.py",
           "name": "真狼",
