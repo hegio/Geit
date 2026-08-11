@@ -33,6 +33,17 @@
           "playerType": 2
         },
 		{ 
+          "key": "mossom.py",
+          "name": "mossom.py",
+          "type": 3,
+          "api": "./py/mossom.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
           "key": "DramaRush.py",
           "name": "DramaRush.py",
           "type": 3,
