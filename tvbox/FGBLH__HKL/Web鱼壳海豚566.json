@@ -51,6 +51,12 @@
             "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/腾讯视频.py"
         },
         {
+            "key": "腾爱优b站",
+            "name": "🐬腾爱优b站.js[追剧]",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/uuy988/fgh998/refs/heads/main/js/腾爱优b站.js"
+        },
+        {
             "key": "MG",
             "name": "🐬芒果TV[追剧]",
             "type": 3,
