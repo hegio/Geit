@@ -33,6 +33,72 @@
           "playerType": 2
         },
 		{ 
+          "key": "好莱污影院.py",
+          "name": "好莱污影院.py",
+          "type": 3,
+          "api": "./X/py/好莱污影院.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "tiktvod01.py",
+          "name": "tiktvod01.py",
+          "type": 3,
+          "api": "./X/py/tiktvod01.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "madaoav影视.py",
+          "name": "madaoav影视.py",
+          "type": 3,
+          "api": "./X/py/madaoav影视.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "叽哔动漫.py",
+          "name": "叽哔动漫.py",
+          "type": 3,
+          "api": "./py/叽哔动漫.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "番茄动漫.py",
+          "name": "番茄动漫.py",
+          "type": 3,
+          "api": "./py/番茄动漫.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "橘子动漫.py",
+          "name": "橘子动漫.py",
+          "type": 3,
+          "api": "./py/橘子动漫.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
           "key": "影港",
           "name": "影港",
           "type": 3,
@@ -110,10 +176,10 @@
           "playerType": 2
         },
 		{ 
-          "key": "橘子动漫.py",
-          "name": "橘子动漫.py",
+          "key": "风车动漫.py",
+          "name": "风车动漫.py",
           "type": 3,
-          "api": "./py/橘子动漫.py",
+          "api": "./py/风车动漫.py",
           "searchable": 1,
           "quickSearch": 1,
           "filterable": 0,
