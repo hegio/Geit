@@ -87,6 +87,18 @@
             "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/油管.py"
         },
         {
+            "key": "网飞TV",
+            "name": "🐬[追剧]网飞TV.py(关梯)",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/网飞TV.py"
+        },
+        {
+            "key": "厂长影视",
+            "name": "🐬[追剧]厂长影视.py(关梯)",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/厂长影视.py"
+        },
+        {
             "key": "FreeOK",
             "name": "🐬[追剧]FreeOK.py(关梯)",
             "type": 3,
