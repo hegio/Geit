@@ -33,6 +33,28 @@
           "playerType": 2
         },
 		{ 
+          "key": "影港",
+          "name": "影港",
+          "type": 3,
+          "api": "./py/电影港.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "火豆",
+          "name": "火豆",
+          "type": 3,
+          "api": "./py/火豆影视.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
           "key": "mossom.py",
           "name": "mossom.py",
           "type": 3,
