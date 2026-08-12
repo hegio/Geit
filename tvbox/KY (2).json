@@ -33,6 +33,28 @@
           "playerType": 2
         },
 		{ 
+          "key": "Pornhub影视.py",
+          "name": "Pornhub影视.py",
+          "type": 3,
+          "api": "./X/py/Pornhub影视.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "javmenu影视.py",
+          "name": "javmenu影视.py",
+          "type": 3,
+          "api": "./X/py/javmenu影视.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
           "key": "好莱污影院.py",
           "name": "好莱污影院.py",
           "type": 3,
