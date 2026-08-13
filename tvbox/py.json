@@ -78,7 +78,7 @@
     {
       "name": "🐬iptv直播",
       "type": 0,
-      "url": "https://gh-proxy.org/https://raw.githubusercontent.com/vinkerq/iptv-api/refs/heads/master/iptv.txt",
+      "url": "https://wget.la/https://raw.githubusercontent.com/vinkerq/iptv-api/refs/heads/master/iptv.txt",
       "ua": "okhttp/5.3.2"
     },
     {
@@ -154,6 +154,12 @@
       "ua": "okhttp"
     },
     {
+      "name": "🐬风云源",
+      "type": 0,
+      "url": "http://iptv.4666888.xyz/FYTV.txt",
+      "ua": "okhttp"
+    },
+    {
       "name": "🐬易发源 有🔞",
       "type": 0,
       "url": "https://gh-proxy.org/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
@@ -210,7 +216,7 @@
     {
       "name": "🐬海豚佬🔞午夜剧场(挂梯)",
       "type": 0,
-      "url": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/午夜剧场.txt",
+      "url": "https://gh-proxy.com/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/午夜剧场.txt",
       "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
       "logo": "https://epg.112114.xyz/logo/{name}.png",
       "header": {
@@ -320,6 +326,22 @@
       "ua": "okhttp"
     },
     {
+      "name": "🐬iptv直播",
+      "type": 0,
+      "url": "https://gh-proxy.org/https://raw.githubusercontent.com/vinkerq/iptv-api/refs/heads/master/iptv.txt",
+      "ua": "okhttp/5.3.2"
+    },
+    {
+      "name": "🐬海豚佬🔞午夜剧场(挂梯)",
+      "type": 0,
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/午夜剧场.txt",
+      "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
+      "logo": "https://epg.112114.xyz/logo/{name}.png",
+      "header": {
+        "X-Api-key": "8692bd33270440d4d2941b814b81a25a1eb84a7205532971714c4299c57449e0..0..1738210005..5cf2c4ad-043b-4234-83a2-e84ae917"
+      }
+    },
+    {
       "name": "develop202",
       "type": 0,
       "url": "https://gh.927223.xyz/https://raw.githubusercontent.com/develop202/migu_video/refs/heads/main/interface.txt",
@@ -360,18 +382,6 @@
       "type": 0,
       "url": "http://xtvantsc.xyz/欧美2160.m3u",
       "ua": "okhttp"
-    },
-    {
-      "name": "🐬风云源",
-      "type": 0,
-      "url": "http://iptv.4666888.xyz/FYTV.txt",
-      "ua": "okhttp"
-    },
-    {
-      "name": "🐬iptv直播",
-      "type": 0,
-      "url": "https://wget.la/https://raw.githubusercontent.com/vinkerq/iptv-api/refs/heads/master/iptv.txt",
-      "ua": "okhttp/5.3.2"
     }
   ],
   "rules": [
@@ -1781,6 +1791,17 @@
       "playerType": 2
     },
     {
+      "key": "xxbrits🔞.py",
+      "name": "xxbrits🔞.py",
+      "type": 3,
+      "api": "./py/xxbrits🔞.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
       "key": "youav🔞.py",
       "name": "youav🔞.py",
       "type": 3,
@@ -1983,6 +2004,17 @@
       "name": "低端影视.py",
       "type": 3,
       "api": "./py/低端影视.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
+      "key": "儿子上穴🔞.py",
+      "name": "儿子上穴🔞.py",
+      "type": 3,
+      "api": "./py/儿子上穴🔞.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
@@ -2258,17 +2290,6 @@
       "name": "大屌视频.py",
       "type": 3,
       "api": "./py/大屌视频.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "大师兄影视.py",
-      "name": "大师兄影视.py",
-      "type": 3,
-      "api": "./py/大师兄影视.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
@@ -2936,6 +2957,17 @@
       "playerType": 2
     },
     {
+      "key": "清纯富婆🔞.py",
+      "name": "清纯富婆🔞.py",
+      "type": 3,
+      "api": "./py/清纯富婆🔞.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
       "key": "溏心次元🔞.py",
       "name": "溏心次元🔞.py",
       "type": 3,
@@ -3226,6 +3258,28 @@
       "name": "福利天堂.py",
       "type": 3,
       "api": "./py/福利天堂.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
+      "key": "糖心Vlog网页2🔞.py",
+      "name": "糖心Vlog网页2🔞.py",
+      "type": 3,
+      "api": "./py/糖心Vlog网页2🔞.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
+      "key": "糖心Vlog网页🔞.py",
+      "name": "糖心Vlog网页🔞.py",
+      "type": 3,
+      "api": "./py/糖心Vlog网页🔞.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
@@ -3530,6 +3584,17 @@
       "playerType": 2
     },
     {
+      "key": "追影.py",
+      "name": "追影.py",
+      "type": 3,
+      "api": "./py/追影.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
       "key": "酷我音乐.py",
       "name": "酷我音乐.py",
       "type": 3,
@@ -3695,6 +3760,17 @@
       "playerType": 2
     },
     {
+      "key": "魔色365🔞.py",
+      "name": "魔色365🔞.py",
+      "type": 3,
+      "api": "./py/魔色365🔞.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
       "key": "麒麟影视.py",
       "name": "麒麟影视.py",
       "type": 3,
@@ -3732,6 +3808,17 @@
       "name": "麻豆免费在线播放.py",
       "type": 3,
       "api": "./py/麻豆免费在线播放.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
+      "key": "麻豆影院🔞.py",
+      "name": "麻豆影院🔞.py",
+      "type": 3,
+      "api": "./py/麻豆影院🔞.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
