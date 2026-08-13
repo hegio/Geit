@@ -33,6 +33,39 @@
           "playerType": 2
         },
 		{ 
+          "key": "枫叶.py",
+          "name": "枫叶.py",
+          "type": 3,
+          "api": "./py/枫叶.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "EcoHub影视.py",
+          "name": "EcoHub影视.py",
+          "type": 3,
+          "api": "./py/EcoHub影视.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		 { 
+          "key": "慕白影视.py",
+          "name": "慕白影视.py",
+          "type": 3,
+          "api": "./py/慕白影视.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
           "key": "零度动漫.py",
           "name": "零度动漫.py",
           "type": 3,
