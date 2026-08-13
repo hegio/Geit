@@ -33,6 +33,95 @@
           "playerType": 2
         },
 		{ 
+          "key": "宅男影视.py",
+          "name": "宅男影视.py",
+          "type": 3,
+          "api": "./py/宅男影视.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		 { 
+          "key": "猫放时光.py",
+          "name": "猫放时光.py",
+          "type": 3,
+          "api": "./py/猫放时光.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "天使动漫.py",
+          "name": "天使动漫.py",
+          "type": 3,
+          "api": "./py/天使动漫.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "蓝鲸影视.py",
+          "name": "蓝鲸影视.py",
+          "type": 3,
+          "api": "./py/蓝鲸影视.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "豆豆影视.py",
+          "name": "豆豆影视.py",
+          "type": 3,
+          "api": "./X/py/豆豆影视.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "小鸡资源.py",
+          "name": "小鸡资源.py",
+          "type": 3,
+          "api": "./X/py/小鸡资源.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "无水印资源网.py",
+          "name": "无水印资源网",
+          "type": 3,
+          "api": "./py/无水印资源网.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "电影天堂资源.py",
+          "name": "电影天堂资源.py",
+          "type": 3,
+          "api": "./py/电影天堂资源.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		
+		{ 
           "key": "枫叶.py",
           "name": "枫叶.py",
           "type": 3,
