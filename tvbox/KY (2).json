@@ -33,6 +33,39 @@
           "playerType": 2
         },
 		{ 
+          "key": "零度动漫.py",
+          "name": "零度动漫.py",
+          "type": 3,
+          "api": "./py/零度动漫.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "Anime1动漫.py",
+          "name": "Anime1动漫.py",
+          "type": 3,
+          "api": "./py/Anime1动漫.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "厂长影视.py",
+          "name": "厂长影视.py",
+          "type": 3,
+          "api": "./py/厂长影视.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
           "key": "Pornhub影视.py",
           "name": "Pornhub影视.py",
           "type": 3,
