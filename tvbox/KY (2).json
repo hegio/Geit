@@ -33,6 +33,28 @@
           "playerType": 2
         },
 		{ 
+          "key": "弹窗测试.py",
+          "name": "弹窗测试.py",
+          "type": 3,
+          "api": "./py/弹窗测试.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "NO视频.py",
+          "name": "NO视频.py",
+          "type": 3,
+          "api": "./py/NO视频.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
           "key": "看剧AI.py",
           "name": "看剧AI.py",
           "type": 3,
