@@ -33,10 +33,10 @@
           "playerType": 2
         },
 		{ 
-          "key": "弹窗测试.py",
-          "name": "弹窗测试.py",
+          "key": "暴风资源.py",
+          "name": "暴风资源.py",
           "type": 3,
-          "api": "./py/弹窗测试.py",
+          "api": "./py/暴风资源.py",
           "searchable": 1,
           "quickSearch": 1,
           "filterable": 0,
@@ -44,10 +44,43 @@
           "playerType": 2
         },
 		{ 
-          "key": "NO视频.py",
-          "name": "NO视频.py",
+          "key": "多多追剧.py",
+          "name": "多多追剧.py",
           "type": 3,
-          "api": "./py/NO视频.py",
+          "api": "./py/多多追剧.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "动漫窝.py",
+          "name": "动漫窝.py",
+          "type": 3,
+          "api": "./py/动漫窝.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "追影.py",
+          "name": "追影.py",
+          "type": 3,
+          "api": "./py/追影影视.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "白嫖者联盟.py",
+          "name": "白嫖者联盟.py",
+          "type": 3,
+          "api": "./py/白嫖者联盟.py",
           "searchable": 1,
           "quickSearch": 1,
           "filterable": 0,
@@ -65,17 +98,7 @@
           "changeable": 1,
           "playerType": 2
         },
-		{ 
-          "key": "111tv.py",
-          "name": "111tv.py",
-          "type": 3,
-          "api": "./py/111tv.py",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 0,
-          "changeable": 1,
-          "playerType": 2
-        },
+		
 		{ 
           "key": "52porn.py",
           "name": "52porn",

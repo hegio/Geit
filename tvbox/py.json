@@ -977,61 +977,6 @@
   ],
   "sites": [
     {
-      "key": "007吃瓜🔞.py",
-      "name": "007吃瓜🔞.py",
-      "type": 3,
-      "api": "./py/007吃瓜🔞.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "123AV🔞.py",
-      "name": "123AV🔞.py",
-      "type": 3,
-      "api": "./py/123AV🔞.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "18AV🔞.py",
-      "name": "18AV🔞.py",
-      "type": 3,
-      "api": "./py/18AV🔞.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "18jtv🔞.py",
-      "name": "18jtv🔞.py",
-      "type": 3,
-      "api": "./py/18jtv🔞.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "2048核基地🔞.py",
-      "name": "2048核基地🔞.py",
-      "type": 3,
-      "api": "./py/2048核基地🔞.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
       "key": "275听书.py",
       "name": "275听书.py",
       "type": 3,
@@ -1058,72 +1003,6 @@
       "name": "4K影视.py",
       "type": 3,
       "api": "./py/4K影视.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "51吃瓜🔞.py",
-      "name": "51吃瓜🔞.py",
-      "type": 3,
-      "api": "./py/51吃瓜🔞.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "51大赛🔞.py",
-      "name": "51大赛🔞.py",
-      "type": 3,
-      "api": "./py/51大赛🔞.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "51暗网🔞.py",
-      "name": "51暗网🔞.py",
-      "type": 3,
-      "api": "./py/51暗网🔞.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "51爆料🔞.py",
-      "name": "51爆料🔞.py",
-      "type": 3,
-      "api": "./py/51爆料🔞.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "51短剧🔞.py",
-      "name": "51短剧🔞.py",
-      "type": 3,
-      "api": "./py/51短剧🔞.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "51视频🔞.py",
-      "name": "51视频🔞.py",
-      "type": 3,
-      "api": "./py/51视频🔞.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
@@ -1681,6 +1560,17 @@
       "playerType": 2
     },
     {
+      "key": "avgood🔞.py",
+      "name": "avgood🔞.py",
+      "type": 3,
+      "api": "./py/avgood🔞.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
       "key": "catemby.py",
       "name": "catemby.py",
       "type": 3,
@@ -1806,6 +1696,17 @@
       "name": "youav🔞.py",
       "type": 3,
       "api": "./py/youav🔞.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
+      "key": "一抖阁🔞.py",
+      "name": "一抖阁🔞.py",
+      "type": 3,
+      "api": "./py/一抖阁🔞.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
@@ -2308,6 +2209,17 @@
       "playerType": 2
     },
     {
+      "key": "大米星球🔞.py",
+      "name": "大米星球🔞.py",
+      "type": 3,
+      "api": "./py/大米星球🔞.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
       "key": "大鸡吧🔞.py",
       "name": "大鸡吧🔞.py",
       "type": 3,
@@ -2378,6 +2290,17 @@
       "name": "好剧屋.py",
       "type": 3,
       "api": "./py/好剧屋.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
+      "key": "好莱污影院🔞.py",
+      "name": "好莱污影院🔞.py",
+      "type": 3,
+      "api": "./py/好莱污影院🔞.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
@@ -2627,6 +2550,17 @@
       "playerType": 2
     },
     {
+      "key": "拍摄现场🔞.py",
+      "name": "拍摄现场🔞.py",
+      "type": 3,
+      "api": "./py/拍摄现场🔞.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
       "key": "换母俱乐部🔞.py",
       "name": "换母俱乐部🔞.py",
       "type": 3,
@@ -2726,6 +2660,17 @@
       "playerType": 2
     },
     {
+      "key": "有声骚麦🔞.py",
+      "name": "有声骚麦🔞.py",
+      "type": 3,
+      "api": "./py/有声骚麦🔞.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
       "key": "权色视频🔞.py",
       "name": "权色视频🔞.py",
       "type": 3,
@@ -2752,6 +2697,17 @@
       "name": "枝枝影视.py",
       "type": 3,
       "api": "./py/枝枝影视.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
+      "key": "枫叶4K.py",
+      "name": "枫叶4K.py",
+      "type": 3,
+      "api": "./py/枫叶4K.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
@@ -3067,6 +3023,17 @@
       "playerType": 2
     },
     {
+      "key": "狂飙短剧🔞.py",
+      "name": "狂飙短剧🔞.py",
+      "type": 3,
+      "api": "./py/狂飙短剧🔞.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
       "key": "猫咪AV.py",
       "name": "猫咪AV.py",
       "type": 3,
@@ -3280,6 +3247,17 @@
       "name": "糖心Vlog网页🔞.py",
       "type": 3,
       "api": "./py/糖心Vlog网页🔞.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
+      "key": "糯米短剧.py",
+      "name": "糯米短剧.py",
+      "type": 3,
+      "api": "./py/糯米短剧.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
@@ -3643,6 +3621,17 @@
       "name": "金牌APP.py",
       "type": 3,
       "api": "./py/金牌APP.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
+      "key": "阴阳宝鉴🔞.py",
+      "name": "阴阳宝鉴🔞.py",
+      "type": 3,
+      "api": "./py/阴阳宝鉴🔞.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
