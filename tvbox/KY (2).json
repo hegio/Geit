@@ -33,6 +33,50 @@
           "playerType": 2
         },
 		{ 
+          "key": "看剧AI.py",
+          "name": "看剧AI.py",
+          "type": 3,
+          "api": "./py/看剧AI.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "111tv.py",
+          "name": "111tv.py",
+          "type": 3,
+          "api": "./py/111tv.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "52porn.py",
+          "name": "52porn",
+          "type": 3,
+          "api": "./X/py/52porn.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "第一动漫.py",
+          "name": "第一动漫.py",
+          "type": 3,
+          "api": "./py/第一动漫.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
           "key": "宅男影视.py",
           "name": "宅男影视.py",
           "type": 3,
