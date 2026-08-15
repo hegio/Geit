@@ -160,12 +160,6 @@
       "ua": "okhttp"
     },
     {
-      "name": "🐬易发源 有🔞",
-      "type": 0,
-      "url": "https://gh-proxy.org/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-      "ua": "okhttp"
-    },
-    {
       "name": "🐬飞扬源",
       "type": 0,
       "url": "https://www.985pan.com/down.php/bf5e9607ff407fcdd71f63928ea5bc79.txt",
@@ -202,21 +196,27 @@
       "ua": "okhttp"
     },
     {
-      "name": "🐬安博(梯子)卡顿 有🔞",
-      "type": 0,
-      "url": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/安博.txt",
-      "ua": "okhttp"
-    },
-    {
       "name": "🐬jackTV(梯子)",
       "type": 0,
       "url": "https://php.946985.filegear-sg.me/jackTV.m3u",
       "ua": "okhttp"
     },
     {
+      "name": "🐬易发源 有🔞",
+      "type": 0,
+      "url": "https://gh-proxy.org/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+      "ua": "okhttp"
+    },
+    {
+      "name": "🐬安博(梯子)卡顿 有🔞",
+      "type": 0,
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/安博.txt",
+      "ua": "okhttp"
+    },
+    {
       "name": "🐬海豚佬🔞午夜剧场(挂梯)",
       "type": 0,
-      "url": "https://gh-proxy.com/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/午夜剧场.txt",
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/午夜剧场.txt",
       "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
       "logo": "https://epg.112114.xyz/logo/{name}.png",
       "header": {
@@ -332,16 +332,6 @@
       "ua": "okhttp/5.3.2"
     },
     {
-      "name": "🐬海豚佬🔞午夜剧场(挂梯)",
-      "type": 0,
-      "url": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/午夜剧场.txt",
-      "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
-      "logo": "https://epg.112114.xyz/logo/{name}.png",
-      "header": {
-        "X-Api-key": "8692bd33270440d4d2941b814b81a25a1eb84a7205532971714c4299c57449e0..0..1738210005..5cf2c4ad-043b-4234-83a2-e84ae917"
-      }
-    },
-    {
       "name": "develop202",
       "type": 0,
       "url": "https://gh.927223.xyz/https://raw.githubusercontent.com/develop202/migu_video/refs/heads/main/interface.txt",
@@ -382,6 +372,16 @@
       "type": 0,
       "url": "http://xtvantsc.xyz/欧美2160.m3u",
       "ua": "okhttp"
+    },
+    {
+      "name": "🐬海豚佬🔞午夜剧场(挂梯)",
+      "type": 0,
+      "url": "https://gh-proxy.com/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/午夜剧场.txt",
+      "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
+      "logo": "https://epg.112114.xyz/logo/{name}.png",
+      "header": {
+        "X-Api-key": "8692bd33270440d4d2941b814b81a25a1eb84a7205532971714c4299c57449e0..0..1738210005..5cf2c4ad-043b-4234-83a2-e84ae917"
+      }
     }
   ],
   "rules": [
