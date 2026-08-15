@@ -33,6 +33,28 @@
           "playerType": 2
         },
 		{ 
+          "key": "奶香香资源.py",
+          "name": "奶香香资源",
+          "type": 3,
+          "api": "./X/py/奶香香资源.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "桃花资源.py",
+          "name": "桃花资源.py",
+          "type": 3,
+          "api": "./X/py/桃花资源.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
           "key": "滴滴资源.py",
           "name": "滴滴资源.py",
           "type": 3,
