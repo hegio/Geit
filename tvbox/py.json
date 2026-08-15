@@ -1670,6 +1670,17 @@
       "playerType": 2
     },
     {
+      "key": "vidhub🍀TG @hshsjk9.py",
+      "name": "vidhub🍀TG @hshsjk9.py",
+      "type": 3,
+      "api": "./py/vidhub🍀TG @hshsjk9.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
       "key": "xhamster.py",
       "name": "xhamster.py",
       "type": 3,
@@ -2334,6 +2345,17 @@
       "name": "威视TV.py",
       "type": 3,
       "api": "./py/威视TV.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
+      "key": "宅男影视🍀TG @hshsjk9.py",
+      "name": "宅男影视🍀TG @hshsjk9.py",
+      "type": 3,
+      "api": "./py/宅男影视🍀TG @hshsjk9.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
@@ -3122,6 +3144,17 @@
       "playerType": 2
     },
     {
+      "key": "看剧AI🍀TG @hshsjk9.py",
+      "name": "看剧AI🍀TG @hshsjk9.py",
+      "type": 3,
+      "api": "./py/看剧AI🍀TG @hshsjk9.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
       "key": "真它妈多分类🔞.py",
       "name": "真它妈多分类🔞.py",
       "type": 3,
@@ -3650,6 +3683,17 @@
       "playerType": 2
     },
     {
+      "key": "青空次元🍀TG @hshsjk9.py",
+      "name": "青空次元🍀TG @hshsjk9.py",
+      "type": 3,
+      "api": "./py/青空次元🍀TG @hshsjk9.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
       "key": "韩剧巴士🔞.py",
       "name": "韩剧巴士🔞.py",
       "type": 3,
@@ -3720,6 +3764,17 @@
       "name": "骚火影视.py",
       "type": 3,
       "api": "./py/骚火影视.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
+      "key": "高清点播🍀TG @hshsjk9.py",
+      "name": "高清点播🍀TG @hshsjk9.py",
+      "type": 3,
+      "api": "./py/高清点播🍀TG @hshsjk9.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,

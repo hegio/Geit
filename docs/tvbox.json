@@ -1,6 +1,6 @@
 {
-  "updated": "2026-08-15 12:55 UTC",
-  "count": 353,
+  "updated": "2026-08-15 18:47 UTC",
+  "count": 359,
   "sources": [
     {
       "name": "ok海豚常规22.json",
@@ -1693,6 +1693,11 @@
       "url": "https://cdn.jsdelivr.net/gh/yanghanhanyingshi/abcd@main/tvbox/az5.txt"
     },
     {
+      "name": "nostr.html",
+      "raw": "https://raw.githubusercontent.com/yanghanhanyingshi/abcd/main/tvbox/nostr.html",
+      "url": "https://cdn.jsdelivr.net/gh/yanghanhanyingshi/abcd@main/tvbox/nostr.html"
+    },
+    {
       "name": "xly.txt",
       "raw": "https://raw.githubusercontent.com/yanghanhanyingshi/abcd/main/tvbox/xly.txt",
       "url": "https://cdn.jsdelivr.net/gh/yanghanhanyingshi/abcd@main/tvbox/xly.txt"
@@ -1748,6 +1753,16 @@
       "url": "https://cdn.jsdelivr.net/gh/yanghanhanyingshi/abcd@main/tvbox/FGBLH__HKL/PigAV.py"
     },
     {
+      "name": "FGBLH__HKL/vidhub🍀TG @hshsjk9.py",
+      "raw": "https://raw.githubusercontent.com/yanghanhanyingshi/abcd/main/tvbox/FGBLH__HKL/vidhub%F0%9F%8D%80TG%20%40hshsjk9.py",
+      "url": "https://cdn.jsdelivr.net/gh/yanghanhanyingshi/abcd@main/tvbox/FGBLH__HKL/vidhub%F0%9F%8D%80TG%20%40hshsjk9.py"
+    },
+    {
+      "name": "FGBLH__HKL/宅男影视🍀TG @hshsjk9.py",
+      "raw": "https://raw.githubusercontent.com/yanghanhanyingshi/abcd/main/tvbox/FGBLH__HKL/%E5%AE%85%E7%94%B7%E5%BD%B1%E8%A7%86%F0%9F%8D%80TG%20%40hshsjk9.py",
+      "url": "https://cdn.jsdelivr.net/gh/yanghanhanyingshi/abcd@main/tvbox/FGBLH__HKL/%E5%AE%85%E7%94%B7%E5%BD%B1%E8%A7%86%F0%9F%8D%80TG%20%40hshsjk9.py"
+    },
+    {
       "name": "FGBLH__HKL/影视大全.py",
       "raw": "https://raw.githubusercontent.com/yanghanhanyingshi/abcd/main/tvbox/FGBLH__HKL/%E5%BD%B1%E8%A7%86%E5%A4%A7%E5%85%A8.py",
       "url": "https://cdn.jsdelivr.net/gh/yanghanhanyingshi/abcd@main/tvbox/FGBLH__HKL/%E5%BD%B1%E8%A7%86%E5%A4%A7%E5%85%A8.py"
@@ -1758,14 +1773,29 @@
       "url": "https://cdn.jsdelivr.net/gh/yanghanhanyingshi/abcd@main/tvbox/FGBLH__HKL/%E7%94%B7%E5%90%8C%E7%BD%91.py"
     },
     {
+      "name": "FGBLH__HKL/看剧AI🍀TG @hshsjk9.py",
+      "raw": "https://raw.githubusercontent.com/yanghanhanyingshi/abcd/main/tvbox/FGBLH__HKL/%E7%9C%8B%E5%89%A7AI%F0%9F%8D%80TG%20%40hshsjk9.py",
+      "url": "https://cdn.jsdelivr.net/gh/yanghanhanyingshi/abcd@main/tvbox/FGBLH__HKL/%E7%9C%8B%E5%89%A7AI%F0%9F%8D%80TG%20%40hshsjk9.py"
+    },
+    {
       "name": "FGBLH__HKL/自动加载66.py",
       "raw": "https://raw.githubusercontent.com/yanghanhanyingshi/abcd/main/tvbox/FGBLH__HKL/%E8%87%AA%E5%8A%A8%E5%8A%A0%E8%BD%BD66.py",
       "url": "https://cdn.jsdelivr.net/gh/yanghanhanyingshi/abcd@main/tvbox/FGBLH__HKL/%E8%87%AA%E5%8A%A8%E5%8A%A0%E8%BD%BD66.py"
     },
     {
+      "name": "FGBLH__HKL/青空次元🍀TG @hshsjk9.py",
+      "raw": "https://raw.githubusercontent.com/yanghanhanyingshi/abcd/main/tvbox/FGBLH__HKL/%E9%9D%92%E7%A9%BA%E6%AC%A1%E5%85%83%F0%9F%8D%80TG%20%40hshsjk9.py",
+      "url": "https://cdn.jsdelivr.net/gh/yanghanhanyingshi/abcd@main/tvbox/FGBLH__HKL/%E9%9D%92%E7%A9%BA%E6%AC%A1%E5%85%83%F0%9F%8D%80TG%20%40hshsjk9.py"
+    },
+    {
       "name": "FGBLH__HKL/饭搭子影视.py",
       "raw": "https://raw.githubusercontent.com/yanghanhanyingshi/abcd/main/tvbox/FGBLH__HKL/%E9%A5%AD%E6%90%AD%E5%AD%90%E5%BD%B1%E8%A7%86.py",
       "url": "https://cdn.jsdelivr.net/gh/yanghanhanyingshi/abcd@main/tvbox/FGBLH__HKL/%E9%A5%AD%E6%90%AD%E5%AD%90%E5%BD%B1%E8%A7%86.py"
+    },
+    {
+      "name": "FGBLH__HKL/高清点播🍀TG @hshsjk9.py",
+      "raw": "https://raw.githubusercontent.com/yanghanhanyingshi/abcd/main/tvbox/FGBLH__HKL/%E9%AB%98%E6%B8%85%E7%82%B9%E6%92%AD%F0%9F%8D%80TG%20%40hshsjk9.py",
+      "url": "https://cdn.jsdelivr.net/gh/yanghanhanyingshi/abcd@main/tvbox/FGBLH__HKL/%E9%AB%98%E6%B8%85%E7%82%B9%E6%92%AD%F0%9F%8D%80TG%20%40hshsjk9.py"
     }
   ]
 }
