@@ -1,7 +1,7 @@
 # TVBox 采集目标（每行一个，# 开头为注释）
-https://lytvs.top/老杨TV纯净版xxz.json
-https://lytvs.top/老杨TV全量版xxz.json
-https://gh-proxy.com/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/ok海豚py668
-https://gh-proxy.com/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/Web鱼壳海豚py886
+https://gh-proxy.com/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/ok海豚常规22
+https://gh-proxy.com/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/ok海豚18pk
+https://gh-proxy.com/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/Web鱼壳海豚常规23
+https://gh-proxy.com/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/Web鱼壳海豚18ph
 https://pan.ling-lu-01.ccwu.cc/raw/tvbox/KY%20(2).json
 REPO:FGBLH/HKL
