@@ -77,6 +77,17 @@
           "playerType": 2
         },
 		{ 
+          "key": "青空次元.py",
+          "name": "青空次元.py",
+          "type": 3,
+          "api": "./py/青空次元.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
           "key": "多多追剧.py",
           "name": "多多追剧.py",
           "type": 3,

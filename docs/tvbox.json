@@ -1,6 +1,6 @@
 {
-  "updated": "2026-08-15 06:55 UTC",
-  "count": 354,
+  "updated": "2026-08-15 12:55 UTC",
+  "count": 353,
   "sources": [
     {
       "name": "ok海豚常规22.json",
@@ -1691,11 +1691,6 @@
       "name": "az5.txt",
       "raw": "https://raw.githubusercontent.com/yanghanhanyingshi/abcd/main/tvbox/az5.txt",
       "url": "https://cdn.jsdelivr.net/gh/yanghanhanyingshi/abcd@main/tvbox/az5.txt"
-    },
-    {
-      "name": "nostr.html",
-      "raw": "https://raw.githubusercontent.com/yanghanhanyingshi/abcd/main/tvbox/nostr.html",
-      "url": "https://cdn.jsdelivr.net/gh/yanghanhanyingshi/abcd@main/tvbox/nostr.html"
     },
     {
       "name": "xly.txt",
