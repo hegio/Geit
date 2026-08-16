@@ -1,6 +1,6 @@
 {
-  "updated": "2026-08-16 01:28 UTC",
-  "count": 359,
+  "updated": "2026-08-16 06:56 UTC",
+  "count": 360,
   "sources": [
     {
       "name": "ok海豚常规22.json",
@@ -1776,6 +1776,11 @@
       "name": "FGBLH__HKL/看剧AI🍀TG @hshsjk9.py",
       "raw": "https://raw.githubusercontent.com/yanghanhanyingshi/abcd/main/tvbox/FGBLH__HKL/%E7%9C%8B%E5%89%A7AI%F0%9F%8D%80TG%20%40hshsjk9.py",
       "url": "https://cdn.jsdelivr.net/gh/yanghanhanyingshi/abcd@main/tvbox/FGBLH__HKL/%E7%9C%8B%E5%89%A7AI%F0%9F%8D%80TG%20%40hshsjk9.py"
+    },
+    {
+      "name": "FGBLH__HKL/腾爱优芒B🍀TG @hshsjk9.py",
+      "raw": "https://raw.githubusercontent.com/yanghanhanyingshi/abcd/main/tvbox/FGBLH__HKL/%E8%85%BE%E7%88%B1%E4%BC%98%E8%8A%92B%F0%9F%8D%80TG%20%40hshsjk9.py",
+      "url": "https://cdn.jsdelivr.net/gh/yanghanhanyingshi/abcd@main/tvbox/FGBLH__HKL/%E8%85%BE%E7%88%B1%E4%BC%98%E8%8A%92B%F0%9F%8D%80TG%20%40hshsjk9.py"
     },
     {
       "name": "FGBLH__HKL/自动加载66.py",
