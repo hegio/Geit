@@ -171,6 +171,48 @@
             "api": "https://ghfast.top/https://raw.githubusercontent.com/uuy988/fgh998/refs/heads/main/py/大米星球🔞.py"
         },
         {
+            "key": "枫叶影院",
+            "name": "🐬枫叶影院.py(关梯)[追剧]",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/枫叶影院🍀TG @hshsjk9.py",
+            "changeable": 0
+        },
+        {
+            "key": "泡泡影院",
+            "name": "🐬泡泡影院.py[追剧]",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/泡泡影院🍀TG @hshsjk9.py",
+            "changeable": 0
+        },
+        {
+            "key": "楓林網",
+            "name": "🐬楓林網.py(关梯)[追剧]",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/楓林網🍀TG @hshsjk9.py",
+            "changeable": 0
+        },
+        {
+            "key": "草莓影视",
+            "name": "🐬草莓影视.py(关梯)[追剧]",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/草莓影视🍀TG @hshsjk9.py",
+            "changeable": 0
+        },
+        {
+            "key": "八戒影视",
+            "name": "🐬八戒影视.py[追剧]",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/八戒影视🍀TG @hshsjk9.py",
+            "changeable": 0
+        },
+        {
+            "key": "30剧集网",
+            "name": "🐬30剧集网.py(关梯)[追剧]",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/30剧集网🍀TG @hshsjk9.py",
+            "changeable": 0
+        },
+        {
             "key": "宅男影视",
             "name": "🐬宅男影视.py(关梯)[追剧]",
             "type": 3,
@@ -1867,6 +1909,12 @@
             "type": 0,
             "ua": "okhttp",
             "url": "https://t.freetv.fun/m3u/playlist_all.txt"
+        },
+        {
+            "name": "🐬内地港台",
+            "type": 0,
+            "ua": "okhttp",
+            "url": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/内地港台"
         },
         {
             "name": "🐬4GTV(梯子台湾节点)720p",

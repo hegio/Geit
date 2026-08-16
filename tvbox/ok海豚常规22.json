@@ -64,6 +64,13 @@
             "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/芒果TV.py"
         },
         {
+            "key": "腾爱优芒B",
+            "name": "🐬[追剧]腾爱优芒B.py",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/腾爱优芒B🍀TG @hshsjk9.py",
+            "changeable": 0
+        },
+        {
             "name": "弹幕",
             "key": "弹幕豆瓣",
             "type": 3,
@@ -87,10 +94,38 @@
             "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/油管.py"
         },
         {
-            "key": "腾爱优芒B",
-            "name": "🐬[追剧]腾爱优芒B.py",
+            "key": "泡泡影院",
+            "name": "🐬[追剧]泡泡影院.py",
             "type": 3,
-            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/腾爱优芒B🍀TG @hshsjk9.py",
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/泡泡影院🍀TG @hshsjk9.py",
+            "changeable": 0
+        },
+        {
+            "key": "楓林網",
+            "name": "🐬[追剧]楓林網.py(关梯)",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/楓林網🍀TG @hshsjk9.py",
+            "changeable": 0
+        },
+        {
+            "key": "草莓影视",
+            "name": "🐬[追剧]草莓影视.py(关梯)",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/草莓影视🍀TG @hshsjk9.py",
+            "changeable": 0
+        },
+        {
+            "key": "八戒影视",
+            "name": "🐬[追剧]八戒影视.py",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/八戒影视🍀TG @hshsjk9.py",
+            "changeable": 0
+        },
+        {
+            "key": "30剧集网",
+            "name": "🐬[追剧]30剧集网.py(关梯)",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/30剧集网🍀TG @hshsjk9.py",
             "changeable": 0
         },
         {
@@ -267,10 +302,17 @@
             "changeable": 0
         },
         {
-            "key": "枫叶影院",
+            "key": "枫叶影院js",
             "name": "🐬[追剧]枫叶影院.js(关梯)",
             "type": 3,
             "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/jar_js/枫叶影院.js",
+            "changeable": 0
+        },
+        {
+            "key": "枫叶影院",
+            "name": "🐬[追剧]枫叶影院.py(关梯)",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/枫叶影院🍀TG @hshsjk9.py",
             "changeable": 0
         },
         {
@@ -1092,6 +1134,12 @@
             "type": 0,
             "ua": "okhttp",
             "url": "https://t.freetv.fun/m3u/playlist_all.txt"
+        },
+        {
+            "name": "🐬内地港台",
+            "type": 0,
+            "ua": "okhttp",
+            "url": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/内地港台"
         },
         {
             "name": "🐬4GTV(梯子台湾节点)720p",

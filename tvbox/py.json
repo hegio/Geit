@@ -178,6 +178,12 @@
       "ua": "okhttp"
     },
     {
+      "name": "🐬内地港台",
+      "type": 0,
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/内地港台",
+      "ua": "okhttp"
+    },
+    {
       "name": "🐬4GTV(梯子台湾节点)720p",
       "type": 0,
       "url": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/4gtv.txt",
@@ -981,6 +987,17 @@
       "name": "275听书.py",
       "type": 3,
       "api": "./py/275听书.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
+      "key": "30剧集网🍀TG @hshsjk9.py",
+      "name": "30剧集网🍀TG @hshsjk9.py",
+      "type": 3,
+      "api": "./py/30剧集网🍀TG @hshsjk9.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
@@ -1956,6 +1973,17 @@
       "playerType": 2
     },
     {
+      "key": "八戒影视🍀TG @hshsjk9.py",
+      "name": "八戒影视🍀TG @hshsjk9.py",
+      "type": 3,
+      "api": "./py/八戒影视🍀TG @hshsjk9.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
       "key": "共青春影院.py",
       "name": "共青春影院.py",
       "type": 3,
@@ -2737,6 +2765,17 @@
       "playerType": 2
     },
     {
+      "key": "枫叶影院🍀TG @hshsjk9.py",
+      "name": "枫叶影院🍀TG @hshsjk9.py",
+      "type": 3,
+      "api": "./py/枫叶影院🍀TG @hshsjk9.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
       "key": "枫叶音乐.py",
       "name": "枫叶音乐.py",
       "type": 3,
@@ -2752,6 +2791,17 @@
       "name": "柯南影视.py",
       "type": 3,
       "api": "./py/柯南影视.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
+      "key": "楓林網🍀TG @hshsjk9.py",
+      "name": "楓林網🍀TG @hshsjk9.py",
+      "type": 3,
+      "api": "./py/楓林網🍀TG @hshsjk9.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
@@ -2873,6 +2923,17 @@
       "name": "油管直播.py",
       "type": 3,
       "api": "./py/油管直播.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
+      "key": "泡泡影院🍀TG @hshsjk9.py",
+      "name": "泡泡影院🍀TG @hshsjk9.py",
+      "type": 3,
+      "api": "./py/泡泡影院🍀TG @hshsjk9.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
@@ -3467,6 +3528,17 @@
       "name": "草榴视频区.py",
       "type": 3,
       "api": "./py/草榴视频区.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
+      "key": "草莓影视🍀TG @hshsjk9.py",
+      "name": "草莓影视🍀TG @hshsjk9.py",
+      "type": 3,
+      "api": "./py/草莓影视🍀TG @hshsjk9.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
