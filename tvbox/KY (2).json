@@ -33,6 +33,28 @@
           "playerType": 2
         },
 		{ 
+          "key": "电影人生.py",
+          "name": "电影人生.py",
+          "type": 3,
+          "api": "./py/电影人生.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "PPnix影视.py",
+          "name": "PPnix影视.py",
+          "type": 3,
+          "api": "./py/PPnix影视.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
           "key": "奶香香资源.py",
           "name": "奶香香资源",
           "type": 3,
