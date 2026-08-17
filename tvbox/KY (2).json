@@ -33,6 +33,51 @@
           "playerType": 2
         },
 		{ 
+          "key": "星核.py",
+          "name": "星核.py",
+          "type": 3,
+          "api": "./py/星核.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "月亮影视.py",
+          "name": "月亮影视.py",
+          "type": 3,
+          "api": "./py/月亮影视.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		
+		{ 
+          "key": "粤正影视.py",
+          "name": "粤正影视.py",
+          "type": 3,
+          "api": "./py/粤正影视.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "星澜影视.py",
+          "name": "星澜影视.py",
+          "type": 3,
+          "api": "./py/星澜影视.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
           "key": "电影人生.py",
           "name": "电影人生.py",
           "type": 3,

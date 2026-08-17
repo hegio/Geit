@@ -1,6 +1,6 @@
 {
-  "updated": "2026-08-16 18:45 UTC",
-  "count": 365,
+  "updated": "2026-08-17 01:28 UTC",
+  "count": 366,
   "sources": [
     {
       "name": "ok海豚常规22.json",
@@ -16,6 +16,11 @@
       "name": "fwc.m3u",
       "raw": "https://raw.githubusercontent.com/yanghanhanyingshi/abcd/main/tvbox/fwc.m3u",
       "url": "https://cdn.jsdelivr.net/gh/yanghanhanyingshi/abcd@main/tvbox/fwc.m3u"
+    },
+    {
+      "name": "黄蚂蚁先锋推流源.txt",
+      "raw": "https://raw.githubusercontent.com/yanghanhanyingshi/abcd/main/tvbox/%E9%BB%84%E8%9A%82%E8%9A%81%E5%85%88%E9%94%8B%E6%8E%A8%E6%B5%81%E6%BA%90.txt",
+      "url": "https://cdn.jsdelivr.net/gh/yanghanhanyingshi/abcd@main/tvbox/%E9%BB%84%E8%9A%82%E8%9A%81%E5%85%88%E9%94%8B%E6%8E%A8%E6%B5%81%E6%BA%90.txt"
     },
     {
       "name": "tv.m3u",
