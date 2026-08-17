@@ -69,7 +69,7 @@
           "key": "剧圈影视.py",
           "name": "剧圈影视.py",
           "type": 3,
-          "api": "./py/剧圈影视.py",
+          "api": "./py/剧圈圈.py",
           "searchable": 1,
           "quickSearch": 1,
           "filterable": 0,
