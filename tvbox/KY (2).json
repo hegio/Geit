@@ -33,6 +33,50 @@
           "playerType": 2
         },
 		{ 
+          "key": "播剧影视.py",
+          "name": "播剧影视.py",
+          "type": 3,
+          "api": "./py/播剧影视.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "子子影院.py",
+          "name": "子子影院.py",
+          "type": 3,
+          "api": "./py/子子影院.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "星澜影视.py",
+          "name": "星澜影视.py",
+          "type": 3,
+          "api": "./py/星澜影视.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "剧圈影视.py",
+          "name": "剧圈影视.py",
+          "type": 3,
+          "api": "./py/剧圈影视.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
           "key": "星核.py",
           "name": "星核.py",
           "type": 3,
@@ -66,17 +110,7 @@
           "changeable": 1,
           "playerType": 2
         },
-		{ 
-          "key": "星澜影视.py",
-          "name": "星澜影视.py",
-          "type": 3,
-          "api": "./py/星澜影视.py",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 0,
-          "changeable": 1,
-          "playerType": 2
-        },
+		
 		{ 
           "key": "电影人生.py",
           "name": "电影人生.py",
