@@ -3,7 +3,7 @@
 #freetv.fun does not provide or store any streaming media content.All channels are automatically collected from the network through crawlers, without any manual participation, just for testing purposes. Therefore, we do not guarantee the stability and legality of the channels, nor do we assume corresponding legal responsibilities. All legal responsibilities It should be the responsibility of the user and the source provider.
 #If you don't know how to use it, or don't have time to test it, you can download this recommended app for testing.
 #https://freetv.fun/app
-#Generated on: 2026-08-18 06:00:03 UTC
+#Generated on: 2026-08-18 11:00:02 UTC
 
 
 #這個檔案是由https://freetv.fun自動生成的,僅僅只是用於測試epg的準確性.
@@ -11,7 +11,7 @@
 #freetv.fun並不提供也不儲存任何的流媒體內容.所有的頻道都是由自動化系統通過網路自動收集而來,並沒有任何人工參與,僅僅只是為了測試.因此我們並不保證頻道的穩定性與合法性,我們也不承擔任何相關的法律責任.所有的法律責任與相關後果應由頻道的使用者與提供者自行承擔.
 #如果您不知道如何使用這個檔案,或者並沒有時間進行測試,那麼您可以下載我們推薦的APP來進行測試.
 #下載地址為https://freetv.fun/app
-#生成時間: 2026-08-18 06:00:03 UTC
+#生成時間: 2026-08-18 11:00:02 UTC
 
 
 Africa,#genre#
@@ -139,7 +139,6 @@ First Music Channel HD[geo-blocked],https://t.freetv.fun/live/first-channel.m3u8
 Ring - bTV[geo-blocked],https://t.freetv.fun/live/rig-tv.m3u8
 Cambodia,#genre#
 BTV NEWS[geo-blocked],https://t.freetv.fun/live/btv.m3u8
-BTV NEWS[geo-blocked],https://t.freetv.fun/live/btv-1.m3u8
 CTN[geo-blocked],https://t.freetv.fun/live/ctn-1.m3u8
 Canada,#genre#
 CMT Canada[geo-blocked],https://t.freetv.fun/live/cmt.m3u8
@@ -246,6 +245,7 @@ CCTV11[geo-blocked],https://t.freetv.fun/live/cctv11-4.m3u8
 CCTV11[geo-blocked],https://t.freetv.fun/live/cctv11-7.m3u8
 CCTV11[geo-blocked],https://t.freetv.fun/live/cctv11-8.m3u8
 CCTV11[geo-blocked],https://t.freetv.fun/live/cctv11-9.m3u8
+CCTV11[geo-blocked],https://t.freetv.fun/live/cctv11-10.m3u8
 CCTV11[geo-blocked],https://t.freetv.fun/live/cctv11-12.m3u8
 CCTV11[geo-blocked],https://t.freetv.fun/live/cctv11-16.m3u8
 CCTV11[geo-blocked],https://t.freetv.fun/live/cctv11xi-qu.m3u8
@@ -270,6 +270,7 @@ CCTV12[geo-blocked],https://t.freetv.fun/live/cctv12-4.m3u8
 CCTV12[geo-blocked],https://t.freetv.fun/live/cctv12-5.m3u8
 CCTV12[geo-blocked],https://t.freetv.fun/live/cctv12-6.m3u8
 CCTV12[geo-blocked],https://t.freetv.fun/live/cctv12-9.m3u8
+CCTV12[geo-blocked],https://t.freetv.fun/live/cctv12-11.m3u8
 CCTV12[geo-blocked],https://t.freetv.fun/live/cctv12-13.m3u8
 CCTV12[geo-blocked],https://t.freetv.fun/live/cctv-12.m3u8
 CCTV12[geo-blocked],https://t.freetv.fun/live/cctv-12hd.m3u8
@@ -386,11 +387,11 @@ CCTV17[geo-blocked],https://t.freetv.fun/live/cctv17-5.m3u8
 CCTV17[geo-blocked],https://t.freetv.fun/live/cctv17-11.m3u8
 CCTV17[geo-blocked],https://t.freetv.fun/live/cctv17.m3u8
 CCTV17[geo-blocked],https://t.freetv.fun/live/cctv17-1.m3u8
+CCTV17[geo-blocked],https://t.freetv.fun/live/cctv17-2.m3u8
 CCTV17[geo-blocked],https://t.freetv.fun/live/cctv17-3.m3u8
 CCTV17[geo-blocked],https://t.freetv.fun/live/cctv17-6.m3u8
 CCTV17[geo-blocked],https://t.freetv.fun/live/cctv17-7.m3u8
 CCTV17[geo-blocked],https://t.freetv.fun/live/cctv17-8.m3u8
-CCTV17[geo-blocked],https://t.freetv.fun/live/cctv17-9.m3u8
 CCTV17[geo-blocked],https://t.freetv.fun/live/cctv17-15.m3u8
 CCTV17[geo-blocked],https://t.freetv.fun/live/cctv17-16.m3u8
 CCTV17[geo-blocked],https://t.freetv.fun/live/cctv-17.m3u8
@@ -411,6 +412,7 @@ CCTV2[geo-blocked],https://t.freetv.fun/live/cctv2-8.m3u8
 CCTV2[geo-blocked],https://t.freetv.fun/live/cctv2-9.m3u8
 CCTV2[geo-blocked],https://t.freetv.fun/live/cctv2-13.m3u8
 CCTV2[geo-blocked],https://t.freetv.fun/live/cctv2-18.m3u8
+CCTV2[geo-blocked],https://t.freetv.fun/live/cctv2-19.m3u8
 CCTV2[geo-blocked],https://t.freetv.fun/live/cctv2-20.m3u8
 CCTV2[geo-blocked],https://t.freetv.fun/live/cctv2-10.m3u8
 CCTV2[geo-blocked],https://t.freetv.fun/live/cctv2-17.m3u8
@@ -491,23 +493,17 @@ CCTV4 FHD[geo-blocked],https://t.freetv.fun/live/cctv-4hd-1.m3u8
 CCTV4 FHD[geo-blocked],https://t.freetv.fun/live/cctv-4hd-2.m3u8
 CCTV4 FHD[geo-blocked],https://t.freetv.fun/live/cctv-4hd-3.m3u8
 CCTV4 FHD[geo-blocked],https://t.freetv.fun/live/cctv-4e.m3u8
-CCTV4K[geo-blocked],https://t.freetv.fun/live/cctv-4kgao-qing.m3u8
 CCTV4K[geo-blocked],https://t.freetv.fun/live/cctv-4kgao-qing-1.m3u8
 CCTV4K[geo-blocked],https://t.freetv.fun/live/cctv-4kgao-qing-2.m3u8
-CCTV4K[geo-blocked],https://t.freetv.fun/live/cctv-4kgao-qing-3.m3u8
-CCTV4K[geo-blocked],https://t.freetv.fun/live/cctv-4kgao-qing-4.m3u8
-CCTV4K[geo-blocked],https://t.freetv.fun/live/cctv-4kgao-qing-5.m3u8
+CCTV4K[geo-blocked],https://t.freetv.fun/live/cctv-4kgao-qing-6.m3u8
 CCTV4中文國際歐洲[geo-blocked],https://t.freetv.fun/live/cctv-4zhong-wen-guo-ji-9.m3u8
 CCTV4中文國際歐洲[geo-blocked],https://t.freetv.fun/live/cctv-4zhong-wen-guo-ji-10.m3u8
 CCTV4中文國際美洲[geo-blocked],https://t.freetv.fun/live/cctv4zhong-wen-guo-ji.m3u8
 CCTV4中文國際美洲[geo-blocked],https://t.freetv.fun/live/cctv4zhong-wen-guo-ji-1.m3u8
 CCTV4中文國際美洲[geo-blocked],https://t.freetv.fun/live/cctv4zhong-wen-guo-ji-2.m3u8
-CCTV4中文國際美洲[geo-blocked],https://t.freetv.fun/live/cctv-4-zhong-wen-guo-ji.m3u8
 CCTV4中文國際美洲[geo-blocked],https://t.freetv.fun/live/cctv-4-zhong-wen-guo-ji-1.m3u8
 CCTV4中文國際美洲[geo-blocked],https://t.freetv.fun/live/cctv-4-zhong-wen-guo-ji-2.m3u8
-CCTV4中文國際美洲[geo-blocked],https://t.freetv.fun/live/cctv-4-zhong-wen-guo-ji-3.m3u8
-CCTV4中文國際美洲[geo-blocked],https://t.freetv.fun/live/cctv-4-zhong-wen-guo-ji-4.m3u8
-CCTV4中文國際美洲[geo-blocked],https://t.freetv.fun/live/cctv-4-zhong-wen-guo-ji-5.m3u8
+CCTV4中文國際美洲[geo-blocked],https://t.freetv.fun/live/cctv-4-zhong-wen-guo-ji-6.m3u8
 CCTV4中文國際美洲[geo-blocked],https://t.freetv.fun/live/cctv4zhong-wen-guo-ji-4.m3u8
 CCTV5[geo-blocked],https://t.freetv.fun/live/cctv5.m3u8
 CCTV5[geo-blocked],https://t.freetv.fun/live/cctv5-1.m3u8
@@ -630,7 +626,6 @@ CCTV8[geo-blocked],https://t.freetv.fun/live/cctv8-11.m3u8
 CCTV8[geo-blocked],https://t.freetv.fun/live/cctv8-13.m3u8
 CCTV8[geo-blocked],https://t.freetv.fun/live/cctv8-16.m3u8
 CCTV8[geo-blocked],https://t.freetv.fun/live/cctv8-17.m3u8
-CCTV8[geo-blocked],https://t.freetv.fun/live/cctv8-18.m3u8
 CCTV8[geo-blocked],https://t.freetv.fun/live/cctv8hd-1.m3u8
 CCTV9[geo-blocked],https://t.freetv.fun/live/cctv9.m3u8
 CCTV9[geo-blocked],https://t.freetv.fun/live/cctv9-1.m3u8
@@ -783,10 +778,8 @@ CHC影迷電影[geo-blocked],https://t.freetv.fun/live/chcying-mi-dian-ying-8.m3
 內蒙古衛視[geo-blocked],https://t.freetv.fun/live/nei-meng-gu-wei-shi-9.m3u8
 內蒙古衛視[geo-blocked],https://t.freetv.fun/live/nei-meng-gu-wei-shi-10.m3u8
 內蒙古衛視[geo-blocked],https://t.freetv.fun/live/nei-meng-gu-wei-shi-11.m3u8
-內蒙古衛視[geo-blocked],https://t.freetv.fun/live/nei-meng-gu-wei-shi-13.m3u8
 內蒙古衛視[geo-blocked],https://t.freetv.fun/live/nei-meng-gu-wei-shi-15.m3u8
 內蒙古衛視[geo-blocked],https://t.freetv.fun/live/nei-meng-gu-wei-shi-16.m3u8
-內蒙古衛視[geo-blocked],https://t.freetv.fun/live/nei-meng-gu-wei-shi-18.m3u8
 兵團衛視[geo-blocked],https://t.freetv.fun/live/bing-tuan-wei-shi-1.m3u8
 兵團衛視[geo-blocked],https://t.freetv.fun/live/bing-tuan-wei-shi-5.m3u8
 兵團衛視[geo-blocked],https://t.freetv.fun/live/bing-tuan-wei-shi.m3u8
@@ -822,6 +815,7 @@ CHC影迷電影[geo-blocked],https://t.freetv.fun/live/chcying-mi-dian-ying-8.m3
 北京衛視[geo-blocked],https://t.freetv.fun/live/bei-jing-wei-shi-7.m3u8
 北京衛視[geo-blocked],https://t.freetv.fun/live/bei-jing-wei-shi-9.m3u8
 北京衛視[geo-blocked],https://t.freetv.fun/live/bei-jing-wei-shi-11.m3u8
+北京衛視[geo-blocked],https://t.freetv.fun/live/bei-jing-wei-shi-19.m3u8
 北京衛視[geo-blocked],https://t.freetv.fun/live/bei-jing-wei-shi.m3u8
 北京衛視[geo-blocked],https://t.freetv.fun/live/bei-jing-wei-shi-4.m3u8
 北京衛視[geo-blocked],https://t.freetv.fun/live/bei-jing-wei-shi-15.m3u8
@@ -839,8 +833,6 @@ CHC影迷電影[geo-blocked],https://t.freetv.fun/live/chcying-mi-dian-ying-8.m3
 北京衛視[geo-blocked],https://t.freetv.fun/live/bei-jing-wei-shi-23.m3u8
 北京衛視[geo-blocked],https://t.freetv.fun/live/bei-jing-wei-shi-29.m3u8
 北京衛視[geo-blocked],https://t.freetv.fun/live/bei-jing-wei-shi-30.m3u8
-北京衛視[geo-blocked],https://t.freetv.fun/live/bei-jing-wei-shi-31.m3u8
-北京衛視[geo-blocked],https://t.freetv.fun/live/bei-jing-wei-shi-36.m3u8
 南京教科[geo-blocked],https://t.freetv.fun/live/nan-jing-jiao-ke.m3u8
 南京教科[geo-blocked],https://t.freetv.fun/live/nan-jing-jiao-ke-1.m3u8
 南京教科[geo-blocked],https://t.freetv.fun/live/nan-jing-jiao-ke-2.m3u8
@@ -863,8 +855,6 @@ CHC影迷電影[geo-blocked],https://t.freetv.fun/live/chcying-mi-dian-ying-8.m3
 南平新聞綜合[geo-blocked],rtmp://play.kankanlive.com/live/1694661314645984
 南平新聞綜合[geo-blocked],https://t.freetv.fun/live/hui-nan-xin-wen-zong-he-4.m3u8
 南平新聞綜合[geo-blocked],https://t.freetv.fun/live/hui-nan-xin-wen-zong-he-2.m3u8
-合肥新聞[geo-blocked],https://t.freetv.fun/live/he-fei-xin-wen.m3u8
-合肥新聞[geo-blocked],https://t.freetv.fun/live/he-fei-xin-wen-1.m3u8
 吉林生活[geo-blocked],https://t.freetv.fun/live/ji-lin-sheng-huo.m3u8
 吉林生活[geo-blocked],https://t.freetv.fun/live/ji-lin-sheng-huo-1.m3u8
 吉林綜藝[geo-blocked],https://t.freetv.fun/live/ji-lin-zong-yi-wen-hua-1.m3u8
@@ -932,7 +922,6 @@ CHC影迷電影[geo-blocked],https://t.freetv.fun/live/chcying-mi-dian-ying-8.m3
 四川衛視[geo-blocked],https://t.freetv.fun/live/si-chuan-wei-shi-5.m3u8
 四川衛視[geo-blocked],https://t.freetv.fun/live/si-chuan-wei-shi-7.m3u8
 四川衛視[geo-blocked],https://t.freetv.fun/live/si-chuan-wei-shi-8.m3u8
-四川衛視[geo-blocked],https://t.freetv.fun/live/si-chuan-wei-shi-9.m3u8
 四川衛視[geo-blocked],https://t.freetv.fun/live/si-chuan-wei-shi-10.m3u8
 四川衛視[geo-blocked],https://t.freetv.fun/live/si-chuan-wei-shi-11.m3u8
 四川衛視[geo-blocked],https://t.freetv.fun/live/si-chuan-wei-shi-12.m3u8
@@ -963,7 +952,6 @@ CHC影迷電影[geo-blocked],https://t.freetv.fun/live/chcying-mi-dian-ying-8.m3
 大灣區衛視[geo-blocked],https://t.freetv.fun/live/da-wan-qu-wei-shi-15.m3u8
 大灣區衛視[geo-blocked],https://t.freetv.fun/live/da-wan-qu-wei-shi-16.m3u8
 大灣區衛視[geo-blocked],https://t.freetv.fun/live/da-wan-qu-wei-shi-17.php
-大灣區衛視[geo-blocked],https://t.freetv.fun/live/da-wan-qu-wei-shi-18.m3u8
 大灣區衛視[geo-blocked],https://t.freetv.fun/live/da-wan-qu-wei-shi-19.m3u8
 大灣區衛視[geo-blocked],https://t.freetv.fun/live/da-wan-qu-wei-shi-gao-qing.m3u8
 大灣區衛視[geo-blocked],https://t.freetv.fun/live/da-wan-qu-wei-shi-gao-qing-2.m3u8
@@ -998,14 +986,12 @@ CHC影迷電影[geo-blocked],https://t.freetv.fun/live/chcying-mi-dian-ying-8.m3
 天津衛視[geo-blocked],https://t.freetv.fun/live/tian-jin-wei-shi-22.m3u8
 天津衛視[geo-blocked],https://t.freetv.fun/live/tian-jin-wei-shi-23.m3u8
 天津衛視[geo-blocked],https://t.freetv.fun/live/tian-jin-wei-shi-24.m3u8
+天津衛視[geo-blocked],https://t.freetv.fun/live/tian-jin-wei-shi-27.m3u8
 天津衛視[geo-blocked],https://t.freetv.fun/live/tian-jin-wei-shi-28.m3u8
 太原新聞綜合[geo-blocked],https://t.freetv.fun/live/tai-gu-xin-wen-zong-he.m3u8
 如東新聞綜合[geo-blocked],https://t.freetv.fun/live/dong-wan-xin-wen-zong-he.m3u8
 如東新聞綜合[geo-blocked],https://t.freetv.fun/live/dong-wan-xin-wen-zong-he-2.m3u8
 安多衛視[geo-blocked],https://t.freetv.fun/live/an-duo-wei-shi-1.m3u8
-安徽影視[geo-blocked],https://t.freetv.fun/live/an-hui-ying-shi-2.m3u8
-安徽綜藝體育[geo-blocked],https://t.freetv.fun/live/an-hui-zong-yi-ti-yu.m3u8
-安徽綜藝體育[geo-blocked],https://t.freetv.fun/live/an-hui-zong-yi-ti-yu-1.m3u8
 安徽衛視[geo-blocked],https://t.freetv.fun/live/an-hui-wei-shi-1.m3u8
 安徽衛視[geo-blocked],https://t.freetv.fun/live/an-hui-wei-shi-2.m3u8
 安徽衛視[geo-blocked],https://t.freetv.fun/live/an-hui-wei-shi-4.m3u8
@@ -1018,7 +1004,6 @@ CHC影迷電影[geo-blocked],https://t.freetv.fun/live/chcying-mi-dian-ying-8.m3
 安徽衛視[geo-blocked],https://t.freetv.fun/live/an-hui-wei-shi-7.m3u8
 安徽衛視[geo-blocked],https://t.freetv.fun/live/an-hui-wei-shi.m3u8
 安徽衛視[geo-blocked],https://t.freetv.fun/live/an-hui-wei-shi-6.m3u8
-安徽衛視[geo-blocked],https://t.freetv.fun/live/an-hui-wei-shi-8.m3u8
 安徽衛視[geo-blocked],https://t.freetv.fun/live/an-hui-wei-shi-9.m3u8
 安徽衛視[geo-blocked],https://t.freetv.fun/live/an-hui-wei-shi-10.m3u8
 安徽衛視[geo-blocked],https://t.freetv.fun/live/an-hui-wei-shi-11.m3u8
@@ -1065,7 +1050,6 @@ CHC影迷電影[geo-blocked],https://t.freetv.fun/live/chcying-mi-dian-ying-8.m3
 山東衛視[geo-blocked],https://t.freetv.fun/live/shan-dong-wei-shi-4.m3u8
 山東衛視[geo-blocked],https://t.freetv.fun/live/shan-dong-wei-shi-6.m3u8
 山東衛視[geo-blocked],https://t.freetv.fun/live/shan-dong-wei-shi-7.m3u8
-山東衛視[geo-blocked],https://t.freetv.fun/live/shan-dong-wei-shi-8.m3u8
 山東衛視[geo-blocked],https://t.freetv.fun/live/shan-dong-wei-shi-9.m3u8
 山東衛視[geo-blocked],https://t.freetv.fun/live/shan-dong-wei-shi-10.m3u8
 山東衛視[geo-blocked],https://t.freetv.fun/live/shan-dong-wei-shi-11.m3u8
@@ -1139,7 +1123,6 @@ CHC影迷電影[geo-blocked],https://t.freetv.fun/live/chcying-mi-dian-ying-8.m3
 廣東少兒[geo-blocked],https://t.freetv.fun/live/yan-dong-shao-er-6.m3u8
 廣東少兒[geo-blocked],https://t.freetv.fun/live/yan-dong-shao-er-7.m3u8
 廣東少兒[geo-blocked],https://t.freetv.fun/live/yan-dong-shao-er-8.m3u8
-廣東少兒[geo-blocked],https://t.freetv.fun/live/yan-dong-shao-er-9.m3u8
 廣東少兒[geo-blocked],https://t.freetv.fun/live/yan-dong-shao-er-10.m3u8
 廣東少兒[geo-blocked],https://t.freetv.fun/live/yan-dong-shao-er-11.m3u8
 廣東少兒[geo-blocked],https://t.freetv.fun/live/yan-dong-shao-er-gao-qing-2.m3u8
@@ -1225,7 +1208,6 @@ CHC影迷電影[geo-blocked],https://t.freetv.fun/live/chcying-mi-dian-ying-8.m3
 廣東衛視[geo-blocked],https://t.freetv.fun/live/yan-dong-wei-shi-4.m3u8
 廣東衛視[geo-blocked],https://t.freetv.fun/live/yan-dong-wei-shi-5.m3u8
 廣東衛視[geo-blocked],https://t.freetv.fun/live/yan-dong-wei-shi-11.m3u8
-廣東衛視[geo-blocked],https://t.freetv.fun/live/yan-dong-wei-shi-13.m3u8
 廣東衛視[geo-blocked],https://t.freetv.fun/live/yan-dong-wei-shi-14.m3u8
 廣東衛視[geo-blocked],https://t.freetv.fun/live/yan-dong-wei-shi-gao-qing-1.m3u8
 廣東衛視[geo-blocked],https://t.freetv.fun/live/yan-dong-wei-shi-gao-qing.m3u8
@@ -1265,6 +1247,7 @@ CHC影迷電影[geo-blocked],https://t.freetv.fun/live/chcying-mi-dian-ying-8.m3
 廣西衛視[geo-blocked],https://t.freetv.fun/live/yan-xi-wei-shi-7.m3u8
 廣西衛視[geo-blocked],https://t.freetv.fun/live/yan-xi-wei-shi-16.m3u8
 廣西衛視[geo-blocked],https://t.freetv.fun/live/yan-xi-wei-shi-18.m3u8
+廣西衛視[geo-blocked],https://t.freetv.fun/live/yan-xi-wei-shi-20.m3u8
 廣西衛視[geo-blocked],https://t.freetv.fun/live/yan-xi-wei-shi-2.m3u8
 廣西衛視[geo-blocked],https://t.freetv.fun/live/yan-xi-wei-shi-4.m3u8
 廣西衛視[geo-blocked],https://t.freetv.fun/live/yan-xi-wei-shi-5.m3u8
@@ -1320,10 +1303,8 @@ CHC影迷電影[geo-blocked],https://t.freetv.fun/live/chcying-mi-dian-ying-8.m3
 東南衛視[geo-blocked],https://t.freetv.fun/live/dong-nan-wei-shi-9.m3u8
 東南衛視[geo-blocked],https://t.freetv.fun/live/dong-nan-wei-shi-16.php
 東南衛視[geo-blocked],https://t.freetv.fun/live/dong-nan-wei-shi-17.m3u8
-東南衛視[geo-blocked],https://t.freetv.fun/live/dong-nan-wei-shi-18.m3u8
 東南衛視[geo-blocked],https://t.freetv.fun/live/dong-nan-wei-shi-21.m3u8
 東南衛視[geo-blocked],https://t.freetv.fun/live/dong-nan-wei-shi-22.m3u8
-東南衛視[geo-blocked],https://t.freetv.fun/live/dong-nan-wei-shi-23.m3u8
 東方衛視[geo-blocked],https://t.freetv.fun/live/dong-fang-wei-shi-1.m3u8
 東方衛視[geo-blocked],https://t.freetv.fun/live/dong-fang-wei-shi-3.m3u8
 東方衛視[geo-blocked],https://t.freetv.fun/live/dong-fang-wei-shi-8.m3u8
@@ -1389,7 +1370,6 @@ CHC影迷電影[geo-blocked],https://t.freetv.fun/live/chcying-mi-dian-ying-8.m3
 江蘇衛視[geo-blocked],https://t.freetv.fun/live/jiang-su-wei-shi-1.m3u8
 江蘇衛視[geo-blocked],https://t.freetv.fun/live/jiang-su-wei-shi-2.m3u8
 江蘇衛視[geo-blocked],https://t.freetv.fun/live/jiang-su-wei-shi-5.m3u8
-江蘇衛視[geo-blocked],https://t.freetv.fun/live/jiang-su-wei-shi-6.m3u8
 江蘇衛視[geo-blocked],https://t.freetv.fun/live/jiang-su-wei-shi-8.m3u8
 江蘇衛視[geo-blocked],https://t.freetv.fun/live/jiang-su-wei-shi-12.m3u8
 江蘇衛視[geo-blocked],https://t.freetv.fun/live/jiang-su-wei-shi-14.m3u8
@@ -1428,11 +1408,11 @@ CHC影迷電影[geo-blocked],https://t.freetv.fun/live/chcying-mi-dian-ying-8.m3
 江西衛視[geo-blocked],https://t.freetv.fun/live/jiang-xi-wei-shi-mi-gu.m3u8
 江西衛視[geo-blocked],https://t.freetv.fun/live/jiang-xi-wei-shi-mi-gu-1.m3u8
 江門綜合[geo-blocked],https://t.freetv.fun/live/jiang-men-zong-he.m3u8
-江門綜合[geo-blocked],https://t.freetv.fun/live/jiang-men-zong-he-1.m3u8
 河北衛視[geo-blocked],https://t.freetv.fun/live/he-bei-wei-shi-5.m3u8
 河北衛視[geo-blocked],https://t.freetv.fun/live/he-bei-wei-shi-13.m3u8
 河北衛視[geo-blocked],https://t.freetv.fun/live/he-bei-wei-shi-17.m3u8
 河北衛視[geo-blocked],https://t.freetv.fun/live/he-bei-wei-shi-12.m3u8
+河北衛視[geo-blocked],https://t.freetv.fun/live/he-bei-wei-shi-3.m3u8
 河北衛視[geo-blocked],https://t.freetv.fun/live/he-bei-wei-shi-10.m3u8
 河北衛視[geo-blocked],https://t.freetv.fun/live/he-bei-wei-shi-21.m3u8
 河北衛視[geo-blocked],https://t.freetv.fun/live/he-bei-wei-shi.m3u8
@@ -1469,7 +1449,6 @@ CHC影迷電影[geo-blocked],https://t.freetv.fun/live/chcying-mi-dian-ying-8.m3
 河南衛視[geo-blocked],https://t.freetv.fun/live/he-nan-wei-shi-10.m3u8
 河南衛視[geo-blocked],https://t.freetv.fun/live/he-nan-wei-shi-12.m3u8
 河南衛視[geo-blocked],https://t.freetv.fun/live/he-nan-wei-shi-13.m3u8
-河南衛視[geo-blocked],https://t.freetv.fun/live/he-nan-wei-shi-15.m3u8
 河南衛視[geo-blocked],https://t.freetv.fun/live/he-nan-wei-shi-16.m3u8
 河南衛視[geo-blocked],https://t.freetv.fun/live/he-nan-wei-shi-17.m3u8
 河南衛視[geo-blocked],https://t.freetv.fun/live/he-nan-wei-shi-18.m3u8
@@ -1478,6 +1457,7 @@ CHC影迷電影[geo-blocked],https://t.freetv.fun/live/chcying-mi-dian-ying-8.m3
 河南衛視[geo-blocked],https://t.freetv.fun/live/he-nan-wei-shi-21.m3u8
 河南衛視[geo-blocked],https://t.freetv.fun/live/he-nan-wei-shi-22.m3u8
 河南衛視[geo-blocked],https://t.freetv.fun/live/he-nan-wei-shi-23.m3u8
+河南衛視[geo-blocked],https://t.freetv.fun/live/he-nan-wei-shi-26.m3u8
 河南衛視[geo-blocked],https://t.freetv.fun/live/he-nan-wei-shi-27.m3u8
 河南衛視[geo-blocked],https://t.freetv.fun/live/he-nan-wei-shi-29.m3u8
 河南衛視[geo-blocked],https://t.freetv.fun/live/he-nan-wei-shi-30.m3u8
@@ -1574,7 +1554,6 @@ CHC影迷電影[geo-blocked],https://t.freetv.fun/live/chcying-mi-dian-ying-8.m3
 海南衛視[geo-blocked],https://t.freetv.fun/live/hai-nan-wei-shi-4.m3u8
 海南衛視[geo-blocked],https://t.freetv.fun/live/hai-nan-wei-shi-10.m3u8
 海南衛視[geo-blocked],https://t.freetv.fun/live/hai-nan-wei-shi-11.m3u8
-海南衛視[geo-blocked],https://t.freetv.fun/live/hai-nan-wei-shi-14.m3u8
 海南衛視[geo-blocked],https://t.freetv.fun/live/hai-nan-wei-shi-15.m3u8
 海南衛視[geo-blocked],https://t.freetv.fun/live/hai-nan-wei-shi-16.m3u8
 海口新聞綜合[geo-blocked],https://t.freetv.fun/live/wu-hai-xin-wen-zong-he.m3u8
@@ -1635,7 +1614,7 @@ CHC影迷電影[geo-blocked],https://t.freetv.fun/live/chcying-mi-dian-ying-8.m3
 湖北衛視[geo-blocked],https://t.freetv.fun/live/hu-bei-wei-shi-12.m3u8
 湖北衛視[geo-blocked],https://t.freetv.fun/live/hu-bei-wei-shi-14.m3u8
 湖北衛視[geo-blocked],https://t.freetv.fun/live/hu-bei-wei-shi-19.m3u8
-湖北衛視[geo-blocked],https://t.freetv.fun/live/hu-bei-wei-shi-20.m3u8
+湖北衛視[geo-blocked],https://t.freetv.fun/live/hu-bei-wei-shi-21.m3u8
 湖北衛視[geo-blocked],https://t.freetv.fun/live/hu-bei-wei-shi-24.m3u8
 湖北衛視[geo-blocked],https://t.freetv.fun/live/hu-bei-wei-shi-26.m3u8
 湖北衛視[geo-blocked],https://t.freetv.fun/live/hu-bei-wei-shi-29.m3u8
@@ -1659,7 +1638,6 @@ CHC影迷電影[geo-blocked],https://t.freetv.fun/live/chcying-mi-dian-ying-8.m3
 湖南衛視[geo-blocked],https://t.freetv.fun/live/hu-nan-wei-shi-13.m3u8
 湖南衛視[geo-blocked],https://t.freetv.fun/live/hu-nan-wei-shi-15.m3u8
 湖南衛視[geo-blocked],https://t.freetv.fun/live/hu-nan-wei-shi-20.m3u8
-湖南衛視[geo-blocked],https://t.freetv.fun/live/hu-nan-wei-shi-25.m3u8
 湖南衛視[geo-blocked],https://t.freetv.fun/live/hu-nan-wei-shi-26.m3u8
 湖南衛視[geo-blocked],https://t.freetv.fun/live/hu-nan-wei-shi-32.m3u8
 湖州公共民生[geo-blocked],https://t.freetv.fun/live/hu-zhou-gong-gong-6.m3u8
@@ -1702,7 +1680,6 @@ CHC影迷電影[geo-blocked],https://t.freetv.fun/live/chcying-mi-dian-ying-8.m3
 甘肅衛視[geo-blocked],https://t.freetv.fun/live/gan-su-wei-shi-3.m3u8
 甘肅衛視[geo-blocked],https://t.freetv.fun/live/gan-su-wei-shi-4.m3u8
 甘肅衛視[geo-blocked],https://t.freetv.fun/live/gan-su-wei-shi-7.m3u8
-甘肅衛視[geo-blocked],https://t.freetv.fun/live/gan-su-wei-shi-8.m3u8
 甘肅衛視[geo-blocked],https://t.freetv.fun/live/gan-su-wei-shi-10.m3u8
 甘肅衛視[geo-blocked],https://t.freetv.fun/live/gan-su-wei-shi-11.m3u8
 甘肅衛視[geo-blocked],https://t.freetv.fun/live/gan-su-wei-shi-13.m3u8
@@ -1748,18 +1725,17 @@ CHC影迷電影[geo-blocked],https://t.freetv.fun/live/chcying-mi-dian-ying-8.m3
 貴州衛視[geo-blocked],https://t.freetv.fun/live/gui-zhou-wei-shi-8.m3u8
 貴州衛視[geo-blocked],https://t.freetv.fun/live/gui-zhou-wei-shi-9.m3u8
 貴州衛視[geo-blocked],https://t.freetv.fun/live/gui-zhou-wei-shi-10.m3u8
+貴州衛視[geo-blocked],https://t.freetv.fun/live/gui-zhou-wei-shi-11.m3u8
 貴州衛視[geo-blocked],https://t.freetv.fun/live/gui-zhou-wei-shi-12.m3u8
 貴州衛視[geo-blocked],https://t.freetv.fun/live/gui-zhou-wei-shi-13.m3u8
 貴州衛視[geo-blocked],https://t.freetv.fun/live/gui-zhou-wei-shi-14.m3u8
 貴州衛視[geo-blocked],https://t.freetv.fun/live/gui-zhou-wei-shi-15.m3u8
 貴州衛視[geo-blocked],https://t.freetv.fun/live/gui-zhou-wei-shi-21.m3u8
-貴州衛視[geo-blocked],https://t.freetv.fun/live/gui-zhou-wei-shi-23.m3u8
 農林衛視[geo-blocked],https://t.freetv.fun/live/nong-lin-wei-shi-1.m3u8
 農林衛視[geo-blocked],https://t.freetv.fun/live/nong-lin-wei-shi-2.m3u8
 農林衛視[geo-blocked],https://t.freetv.fun/live/nong-lin-wei-shi.m3u8
 農林衛視[geo-blocked],https://t.freetv.fun/live/nong-lin-wei-shi-3.m3u8
 農林衛視[geo-blocked],https://t.freetv.fun/live/nong-lin-wei-shi-4.m3u8
-農林衛視[geo-blocked],https://t.freetv.fun/live/zhong-guo-nong-lin-wei-shi.m3u8
 農林衛視[geo-blocked],https://t.freetv.fun/live/zhong-guo-nong-lin-wei-shi-1.m3u8
 農林衛視[geo-blocked],https://t.freetv.fun/live/zhong-guo-nong-lin-wei-shi-2.m3u8
 農林衛視[geo-blocked],https://t.freetv.fun/live/zhong-guo-nong-lin-wei-shi-3.m3u8
@@ -1784,8 +1760,8 @@ CHC影迷電影[geo-blocked],https://t.freetv.fun/live/chcying-mi-dian-ying-8.m3
 遼寧衛視[geo-blocked],https://t.freetv.fun/live/liao-zhu-wei-shi-6.m3u8
 遼寧衛視[geo-blocked],https://t.freetv.fun/live/liao-zhu-wei-shi-8.m3u8
 遼寧衛視[geo-blocked],https://t.freetv.fun/live/liao-zhu-wei-shi-10.m3u8
+遼寧衛視[geo-blocked],https://t.freetv.fun/live/liao-zhu-wei-shi-11.m3u8
 遼寧衛視[geo-blocked],https://t.freetv.fun/live/liao-zhu-wei-shi-17.m3u8
-遼寧衛視[geo-blocked],https://t.freetv.fun/live/liao-zhu-wei-shi-20.m3u8
 遼寧衛視[geo-blocked],https://t.freetv.fun/live/liao-zhu-wei-shi-22.m3u8
 遼寧衛視[geo-blocked],https://t.freetv.fun/live/liao-zhu-wei-shi-26.m3u8
 邢臺經濟生活[geo-blocked],https://t.freetv.fun/live/xing-tai-sheng-huo.m3u8
@@ -1803,7 +1779,6 @@ CHC影迷電影[geo-blocked],https://t.freetv.fun/live/chcying-mi-dian-ying-8.m3
 重慶衛視[geo-blocked],https://t.freetv.fun/live/zhong-qing-wei-shi-2.m3u8
 重慶衛視[geo-blocked],https://t.freetv.fun/live/zhong-qing-wei-shi-3.m3u8
 重慶衛視[geo-blocked],https://t.freetv.fun/live/zhong-qing-wei-shi-5.m3u8
-重慶衛視[geo-blocked],https://t.freetv.fun/live/zhong-qing-wei-shi-6.m3u8
 重慶衛視[geo-blocked],https://t.freetv.fun/live/zhong-qing-wei-shi-7.m3u8
 重慶衛視[geo-blocked],https://t.freetv.fun/live/zhong-qing-wei-shi-8.m3u8
 重慶衛視[geo-blocked],https://t.freetv.fun/live/zhong-qing-wei-shi-9.m3u8
@@ -1815,7 +1790,7 @@ CHC影迷電影[geo-blocked],https://t.freetv.fun/live/chcying-mi-dian-ying-8.m3
 重慶衛視[geo-blocked],https://t.freetv.fun/live/zhong-qing-wei-shi-18.m3u8
 重慶衛視[geo-blocked],https://t.freetv.fun/live/zhong-qing-wei-shi-19.m3u8
 重慶衛視[geo-blocked],https://t.freetv.fun/live/zhong-qing-wei-shi-20.m3u8
-重慶衛視[geo-blocked],https://t.freetv.fun/live/zhong-qing-wei-shi-23.m3u8
+重慶衛視[geo-blocked],https://t.freetv.fun/live/zhong-qing-wei-shi-22.m3u8
 金華新聞綜合[geo-blocked],https://t.freetv.fun/live/jin-chuan-xin-wen-zong-he.m3u8
 金華新聞綜合[geo-blocked],https://t.freetv.fun/live/jin-chuan-xin-wen-zong-he-1.m3u8
 金華新聞綜合[geo-blocked],https://t.freetv.fun/live/jin-chuan-xin-wen-zong-he-2.m3u8
@@ -1859,7 +1834,6 @@ CHC影迷電影[geo-blocked],https://t.freetv.fun/live/chcying-mi-dian-ying-8.m3
 陝西衛視[geo-blocked],https://t.freetv.fun/live/shan-xi-wei-shi-13-1.m3u8
 陝西衛視[geo-blocked],https://t.freetv.fun/live/shan-xi-wei-shi-14.m3u8
 陝西衛視[geo-blocked],https://t.freetv.fun/live/shan-xi-wei-shi-16.m3u8
-陝西衛視[geo-blocked],https://t.freetv.fun/live/shan-xi-wei-shi-21.m3u8
 陝西都市青春[geo-blocked],https://t.freetv.fun/live/shan-xi-du-shi-qing-chun.m3u8
 陝西都市青春[geo-blocked],https://t.freetv.fun/live/shan-xi-du-shi-qing-chun-1.m3u8
 陝西都市青春[geo-blocked],https://t.freetv.fun/live/shan-xi-du-shi-qing-chun-2.m3u8
@@ -1890,7 +1864,6 @@ CHC影迷電影[geo-blocked],https://t.freetv.fun/live/chcying-mi-dian-ying-8.m3
 雲南衛視[geo-blocked],https://t.freetv.fun/live/yun-nan-wei-shi-19.m3u8
 雲南衛視[geo-blocked],https://t.freetv.fun/live/yun-nan-wei-shi-20.m3u8
 雲南衛視[geo-blocked],https://t.freetv.fun/live/yun-nan-wei-shi-23.m3u8
-雲南衛視[geo-blocked],https://t.freetv.fun/live/yun-nan-wei-shi-28.m3u8
 雲南都市[geo-blocked],https://t.freetv.fun/live/yun-nan-du-shi.m3u8
 雲南都市[geo-blocked],https://t.freetv.fun/live/yun-nan-du-shi-1.m3u8
 電影頻道[geo-blocked],https://t.freetv.fun/live/dian-ying.m3u8
@@ -1913,11 +1886,11 @@ CHC影迷電影[geo-blocked],https://t.freetv.fun/live/chcying-mi-dian-ying-8.m3
 黑龍江衛視[geo-blocked],https://t.freetv.fun/live/hei-long-jiang-wei-shi-20.m3u8
 黑龍江衛視[geo-blocked],https://t.freetv.fun/live/hei-long-jiang-wei-shi.m3u8
 黑龍江衛視[geo-blocked],https://t.freetv.fun/live/hei-long-jiang-wei-shi-5.m3u8
+黑龍江衛視[geo-blocked],https://t.freetv.fun/live/hei-long-jiang-wei-shi-12.m3u8
 黑龍江衛視[geo-blocked],https://t.freetv.fun/live/hei-long-jiang-wei-shi-16.m3u8
 黑龍江衛視[geo-blocked],https://t.freetv.fun/live/hei-long-jiang-wei-shi-17.m3u8
 黑龍江衛視[geo-blocked],https://t.freetv.fun/live/hei-long-jiang-wei-shi-1.m3u8
 黑龍江衛視[geo-blocked],https://t.freetv.fun/live/hei-long-jiang-wei-shi-8.m3u8
-黑龍江衛視[geo-blocked],https://t.freetv.fun/live/hei-long-jiang-wei-shi-10.m3u8
 黑龍江衛視[geo-blocked],https://t.freetv.fun/live/hei-long-jiang-wei-shi-13.m3u8
 黑龍江衛視[geo-blocked],https://t.freetv.fun/live/hei-long-jiang-wei-shi-15.m3u8
 黑龍江衛視[geo-blocked],https://t.freetv.fun/live/hei-long-jiang-wei-shi-22.m3u8
@@ -2013,7 +1986,6 @@ Africa 24[geo-blocked],https://t.freetv.fun/live/africa-24.m3u8
 Africa 24[geo-blocked],https://t.freetv.fun/live/tv5monde-africa-1.m3u8
 Automoto[geo-blocked],https://t.freetv.fun/live/automotion.m3u8
 BFM Business[geo-blocked],https://t.freetv.fun/live/bfm-business.m3u8
-BFM Business[geo-blocked],https://t.freetv.fun/live/bfm-business-1.m3u8
 BFM Business[geo-blocked],https://t.freetv.fun/live/atameken-business.m3u8
 BFM Business[geo-blocked],https://t.freetv.fun/live/atameken-business-1.m3u8
 BFM TV (FR)[geo-blocked],https://t.freetv.fun/live/bfm-tv.m3u8
@@ -2052,7 +2024,6 @@ France 24 English[geo-blocked],https://t.freetv.fun/live/france-24-english.m3u8
 France 24 English[geo-blocked],https://t.freetv.fun/live/france-24-english-1.m3u8
 France 24 English[geo-blocked],https://t.freetv.fun/live/france-24-english-2.m3u8
 France 3 (FR)[geo-blocked],https://t.freetv.fun/live/france-3-lorraine.m3u8
-GRAND LILLE[geo-blocked],https://t.freetv.fun/live/bfm-grand-lille.m3u8
 Gulli  (FR)[geo-blocked],https://t.freetv.fun/live/gulli.php
 Gulli  (FR)[geo-blocked],https://t.freetv.fun/live/gulli-girl.m3u8
 Gulli  (FR)[geo-blocked],https://t.freetv.fun/live/gulli-girl-1.php
@@ -2065,7 +2036,6 @@ M6 Music Hits[geo-blocked],https://t.freetv.fun/live/music-hits.m3u8
 MCM Music[geo-blocked],https://t.freetv.fun/live/czm-music.m3u8
 MCM Music Top[geo-blocked],https://t.freetv.fun/live/mcm-top.php
 MCM Music Top[geo-blocked],https://t.freetv.fun/live/mcm-top-1.php
-MyZen TV[geo-blocked],https://t.freetv.fun/live/myzen-fit-1.m3u8
 Planete  CI   (FR)[geo-blocked],https://t.freetv.fun/live/big-planet.m3u8
 RTL9 France[geo-blocked],https://t.freetv.fun/live/rtl9.m3u8
 Serie Club HD France[geo-blocked],https://t.freetv.fun/live/serie-club.m3u8
@@ -2084,6 +2054,7 @@ latele[geo-blocked],https://t.freetv.fun/live/lale.m3u8
 GUATEMALA,#genre#
 CANAL 3 EL SUPER CANAL[geo-blocked],https://t.freetv.fun/live/super-canal.m3u8
 Georgia,#genre#
+Rustavi2[geo-blocked],https://t.freetv.fun/live/rustavi-2.m3u8
 TV8[geo-blocked],https://t.freetv.fun/live/tv8.m3u8
 TV8[geo-blocked],https://t.freetv.fun/live/tv8-1.m3u8
 Germany,#genre#
@@ -2175,7 +2146,6 @@ CCTV1(RTHK33)[geo-blocked],https://t.freetv.fun/live/cctv-4kchao-gao-qing-2.m3u8
 CCTV1(RTHK33)[geo-blocked],https://t.freetv.fun/live/cctv1hd-5.m3u8
 Discovery Kids[geo-blocked],https://t.freetv.fun/live/discovery-kids-1.m3u8
 MOVIE MOVIE[geo-blocked],https://t.freetv.fun/live/mytime-movie-network-2.m3u8
-MOVIE MOVIE[geo-blocked],https://t.freetv.fun/live/veles-movie-hits.m3u8
 NOW 新聞臺[geo-blocked],https://t.freetv.fun/live/nowxin-wen.ts
 RTHK31[geo-blocked],https://t.freetv.fun/live/rthk31.m3u8
 RTHK32[geo-blocked],https://t.freetv.fun/live/rthk32.m3u8
@@ -2197,7 +2167,6 @@ now Sports Prime[geo-blocked],https://t.freetv.fun/live/prime-2.m3u8
 明珠臺(備)[geo-blocked],https://t.freetv.fun/live/ming-zhu.m3u8
 明珠臺(備)[geo-blocked],https://t.freetv.fun/live/ming-zhu-1.m3u8
 明珠臺(備)[geo-blocked],https://t.freetv.fun/live/ming-zhu-2.m3u8
-明珠臺(備)[geo-blocked],https://t.freetv.fun/live/ming-zhu-3.m3u8
 星空衛視[geo-blocked],https://t.freetv.fun/live/xing-kong-wei-shi.m3u8
 林正英[geo-blocked],https://t.freetv.fun/live/lin-zheng-ying-ying-yuan-4.m3u8
 無線新聞台[geo-blocked],https://t.freetv.fun/live/wu-xian-xin-wen-1.php
@@ -2630,6 +2599,8 @@ STUDIO UNIVERSAL[geo-blocked],https://t.freetv.fun/live/studio-universal.m3u8
 STUDIO UNIVERSAL[geo-blocked],https://t.freetv.fun/live/studio-universal-latin-america.m3u8
 STUDIO UNIVERSAL[geo-blocked],https://t.freetv.fun/live/m-studio.m3u8
 Telemundo Internacional México[geo-blocked],https://t.freetv.fun/live/telemundo-internacional.m3u8
+Moldova,#genre#
+Vocea Basarabiei[geo-blocked],https://t.freetv.fun/live/vocea-basarabiei.m3u8
 Mongolia,#genre#
 ETV[geo-blocked],https://t.freetv.fun/live/etv.m3u8
 ETV[geo-blocked],https://t.freetv.fun/live/etv-1.m3u8
@@ -2664,7 +2635,6 @@ Star TV[geo-blocked],https://t.freetv.fun/live/hmong-star-tv.m3u8
 Star TV[geo-blocked],https://t.freetv.fun/live/star-tv.m3u8
 Star TV[geo-blocked],https://t.freetv.fun/live/start-tv.m3u8
 Star TV[geo-blocked],https://t.freetv.fun/live/stryk-tv.m3u8
-Star TV[geo-blocked],https://t.freetv.fun/live/star-tv-1.m3u8
 Star TV[geo-blocked],https://t.freetv.fun/live/stryk-tv-1.m3u8
 UBS[geo-blocked],https://t.freetv.fun/live/ubs.m3u8
 VTV[geo-blocked],https://t.freetv.fun/live/rvtv.m3u8
@@ -2742,7 +2712,6 @@ UNTV[geo-blocked],https://t.freetv.fun/live/untv.m3u8
 Poland,#genre#
 DocuBox HD[geo-blocked],https://t.freetv.fun/live/docubox.m3u8
 DocuBox HD[geo-blocked],https://t.freetv.fun/live/docubox-1.m3u8
-DocuBox HD[geo-blocked],https://t.freetv.fun/live/docubox-2.php
 DocuBox HD[geo-blocked],https://t.freetv.fun/live/docubox-3.m3u8
 ESKA Best Music TV[geo-blocked],https://t.freetv.fun/live/eska-tv.m3u8
 ETV Channel[geo-blocked],https://t.freetv.fun/live/seven-channel.m3u8
@@ -2782,7 +2751,6 @@ RTP Internacional[geo-blocked],https://t.freetv.fun/live/azteca-internacional.m3
 RTP Internacional[geo-blocked],https://t.freetv.fun/live/nuestra-tele-internacional.m3u8
 RTP Madeira[geo-blocked],https://t.freetv.fun/live/rtp-madeira.m3u8
 RTP Madeira[geo-blocked],https://t.freetv.fun/live/rtp-madeira-1.m3u8
-RTP Memoria[geo-blocked],https://t.freetv.fun/live/rtp-memoria.m3u8
 Sport TV 3[geo-blocked],https://t.freetv.fun/live/sportv-3.m3u8
 Zig Zag RTP[geo-blocked],https://t.freetv.fun/live/rtp.m3u8
 Qatar,#genre#
@@ -2809,6 +2777,7 @@ Agro TV[geo-blocked],https://t.freetv.fun/live/agro-tv-1.m3u8
 Agro TV[geo-blocked],https://t.freetv.fun/live/agro-tv-2.m3u8
 Duck Tv[geo-blocked],https://t.freetv.fun/live/ducktv.m3u8
 Duck Tv[geo-blocked],https://t.freetv.fun/live/ducktv-1.m3u8
+Duck Tv[geo-blocked],https://t.freetv.fun/live/ducktv-2.m3u8
 Epic Drama[geo-blocked],https://t.freetv.fun/live/viasat-epic-drama.m3u8
 Eurosport[geo-blocked],https://t.freetv.fun/live/eurosport-1-4.php
 Eurosport[geo-blocked],https://t.freetv.fun/live/eurosport-1-uhd-25fps.m3u8
@@ -2844,7 +2813,6 @@ National Geographic[geo-blocked],https://t.freetv.fun/live/national-geographic-1
 National Geographic Romania[geo-blocked],https://t.freetv.fun/live/national-geographic-latin-america.m3u8
 National Geographic Romania[geo-blocked],https://t.freetv.fun/live/national-geographic-latin-america-1.m3u8
 National Geographic Romania[geo-blocked],https://t.freetv.fun/live/national-geographic-latin-america-2.m3u8
-National TV[geo-blocked],https://t.freetv.fun/live/atn-national.m3u8
 Prima TV Romania[geo-blocked],https://t.freetv.fun/live/prima-1.m3u8
 Rock TV[geo-blocked],https://t.freetv.fun/live/rock-tv.m3u8
 Rock TV[geo-blocked],https://t.freetv.fun/live/rock-tv-1.m3u8
@@ -2859,7 +2827,6 @@ TV1000[geo-blocked],https://t.freetv.fun/live/tv1000-1.m3u8
 TV1000[geo-blocked],https://t.freetv.fun/live/viju-tv1000-3.m3u8
 TV1000[geo-blocked],https://t.freetv.fun/live/tv1000-2.php
 TV1000[geo-blocked],https://t.freetv.fun/live/viasat-tv1000.php
-UTV ROMANIA[geo-blocked],https://t.freetv.fun/live/utv.m3u8
 UTV ROMANIA[geo-blocked],https://t.freetv.fun/live/utv-1.m3u8
 Viasat Explore[geo-blocked],https://t.freetv.fun/live/viasat-explorer.php
 Viasat Explore[geo-blocked],https://t.freetv.fun/live/viasat-explore-classic.m3u8
@@ -3364,9 +3331,9 @@ NOON Kids [geo-blocked],https://t.freetv.fun/live/on-kids.m3u8
 NOON Kids [geo-blocked],https://t.freetv.fun/live/on-kids-1.m3u8
 OSN Movies Action[geo-blocked],https://t.freetv.fun/live/yes-movies-action.m3u8
 Quran TV[geo-blocked],https://t.freetv.fun/live/uranio-tv.m3u8
+RTS Sat (EXYU ) [geo-blocked],https://t.freetv.fun/live/rts-svet.m3u8
 Star Cinema 1 Saudi[geo-blocked],https://t.freetv.fun/live/star-cinema.m3u8
 osn yahala cinema[geo-blocked],https://t.freetv.fun/live/cinema.m3u8
-osn yahala cinema[geo-blocked],https://t.freetv.fun/live/cinema-1.m3u8
 Serbia,#genre#
 RTS 1 Serbia[geo-blocked],https://t.freetv.fun/live/rts-1.m3u8
 Singapore,#genre#
@@ -3407,7 +3374,6 @@ CGTN(Spain)[geo-blocked],https://t.freetv.fun/live/cgtnfa-yu-2.m3u8
 CGTN(Spain)[geo-blocked],https://t.freetv.fun/live/cgtne-yu-1.m3u8
 CGTN(Spain)[geo-blocked],https://t.freetv.fun/live/cgtn-2.m3u8
 CGTN(Spain)[geo-blocked],https://t.freetv.fun/live/cgtn-3.m3u8
-CGTN(Spain)[geo-blocked],https://t.freetv.fun/live/cgtn-4.m3u8
 CGTN(Spain)[geo-blocked],https://t.freetv.fun/live/cgtn-5.m3u8
 CGTN(Spain)[geo-blocked],https://t.freetv.fun/live/cgtne-yu-2.m3u8
 CGTN(Spain)[geo-blocked],https://t.freetv.fun/live/cgtn-6.m3u8
@@ -3616,6 +3582,7 @@ TCCTV-2[geo-blocked],https://t.freetv.fun/live/cctv-2hd-4.m3u8
 THAI TV[geo-blocked],https://t.freetv.fun/live/lao-thai-tv.m3u8
 TV 3 HD[geo-blocked],https://t.freetv.fun/live/tv-3.m3u8
 Thai Chaiyo[geo-blocked],https://t.freetv.fun/live/thai-chaiyo.m3u8
+ThaiPBS[geo-blocked],https://t.freetv.fun/live/thai-pbs.m3u8
 Thairath TV Thailand[geo-blocked],https://t.freetv.fun/live/thairath-tv.m3u8
 VOICE TV[geo-blocked],https://t.freetv.fun/live/vice-tv.m3u8
 WorkPoint TV[geo-blocked],https://t.freetv.fun/live/workpoint-tv.m3u8
@@ -3632,7 +3599,6 @@ KANALD  (TR)[geo-blocked],https://t.freetv.fun/live/anal.m3u8
 Kanal 24[geo-blocked],https://t.freetv.fun/live/24-kanal.m3u8
 Kaz Sport[geo-blocked],https://t.freetv.fun/live/qazsport.m3u8
 Kaz Sport[geo-blocked],https://t.freetv.fun/live/qazsport-1.m3u8
-Kaz Sport[geo-blocked],https://t.freetv.fun/live/qazsport-kz.m3u8
 Kral Pop Music Türkiye[geo-blocked],https://t.freetv.fun/live/music-pop.m3u8
 Muz TV Azerbaycan[geo-blocked],https://t.freetv.fun/live/muz-tv-1.m3u8
 NTV Türkiye[geo-blocked],https://t.freetv.fun/live/ntv-sd.m3u8
@@ -3669,7 +3635,6 @@ Ukraine,#genre#
 2x2 Ukraine[geo-blocked],https://t.freetv.fun/live/2x2.php
 2x2 Ukraine[geo-blocked],https://t.freetv.fun/live/2x2-1.m3u8
 2x2 Ukraine[geo-blocked],https://t.freetv.fun/live/2x2-2.php
-2x2 Ukraine[geo-blocked],https://t.freetv.fun/live/2x2-3.m3u8
 7 канал (Одесса)[geo-blocked],https://t.freetv.fun/live/piatyi-kanal.m3u8
 7 канал (Одесса)[geo-blocked],https://t.freetv.fun/live/8-kanal.m3u8
 7 канал (Одесса)[geo-blocked],https://t.freetv.fun/live/7-kanal.m3u8
@@ -3754,7 +3719,6 @@ Film4 UK[geo-blocked],https://t.freetv.fun/live/film4.m3u8
 Football UK[geo-blocked],https://t.freetv.fun/live/gfn-football.m3u8
 Football UK[geo-blocked],https://t.freetv.fun/live/premier-football.m3u8
 Football UK[geo-blocked],https://t.freetv.fun/live/ru-match-football-1.php
-Football UK[geo-blocked],https://t.freetv.fun/live/ru-match-football-2.php
 Football UK[geo-blocked],https://t.freetv.fun/live/ru-match-football-3.php
 Horse&Country[geo-blocked],https://t.freetv.fun/live/horse-and-country-1.m3u8
 ION[geo-blocked],https://t.freetv.fun/live/wion.m3u8
@@ -3796,7 +3760,6 @@ SKY Sports Football[geo-blocked],https://t.freetv.fun/live/sky-sports-football-5
 Sky Classics[geo-blocked],https://t.freetv.fun/live/music-classics.m3u8
 Sky Classics[geo-blocked],https://t.freetv.fun/live/cartoon-classics.m3u8
 Sky Classics[geo-blocked],https://t.freetv.fun/live/music-classics-1.m3u8
-Sky Movies Drama & Romance HD UK[geo-blocked],https://t.freetv.fun/live/romance.php
 Sky Nature[geo-blocked],https://t.freetv.fun/live/pbs-nature.m3u8
 Sky Sports Main Event[geo-blocked],https://t.freetv.fun/live/sky-sports-main-event-50fps.m3u8
 Sky Sports Main Event[geo-blocked],https://t.freetv.fun/live/sky-sports-main-event-50fps-1.m3u8
@@ -3874,7 +3837,6 @@ CNN en Español[geo-blocked],https://t.freetv.fun/live/beyblade-en-espanol.m3u8
 California Music Channel[geo-blocked],https://t.freetv.fun/live/california-music-channel.m3u8
 Cartoon Network[geo-blocked],https://t.freetv.fun/live/cartoon-network.m3u8
 Cartoon Network[geo-blocked],https://t.freetv.fun/live/cartoon-network-1.m3u8
-Cartoon Network[geo-blocked],https://t.freetv.fun/live/cartoon-network-2.m3u8
 Cartoonito TV[geo-blocked],https://t.freetv.fun/live/cartoonito.php
 Cetelmon TV[geo-blocked],https://t.freetv.fun/live/cetelmon-tv.m3u8
 Christian Youth Channel CYC[geo-blocked],https://t.freetv.fun/live/christian-youth-channel.m3u8
@@ -3986,7 +3948,6 @@ Newsmax[geo-blocked],https://t.freetv.fun/live/newsmax-tv.m3u8
 Newsmax[geo-blocked],https://t.freetv.fun/live/newsmax-spanish.m3u8
 Nick HD[geo-blocked],https://t.freetv.fun/live/nick-jr.m3u8
 Nick Jr.[geo-blocked],https://t.freetv.fun/live/nick-jr-1.m3u8
-Nick Jr.[geo-blocked],https://t.freetv.fun/live/nick-jr-1-1.m3u8
 Nick Jr.[geo-blocked],https://t.freetv.fun/live/nick-jr-2.m3u8
 Nick Jr.[geo-blocked],https://t.freetv.fun/live/nick-jr-3.m3u8
 Nick Jr.[geo-blocked],https://t.freetv.fun/live/nick-jr-4.php
