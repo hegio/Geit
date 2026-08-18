@@ -37,6 +37,17 @@
           "changeable": 1,
           "playerType": 2
         }, 
+	  { 
+          "key": "91porna影视.py",
+          "name": "91porna影视.py",
+          "type": 3,
+          "api": "./py/91porna影视.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
     { 
           "key": "熊猫直播.py",
           "name": "熊猫",
