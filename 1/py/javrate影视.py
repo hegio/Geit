@@ -20,6 +20,7 @@ import sys
 import json
 import time
 import random
+import html
 import urllib.parse
 
 import requests
@@ -49,12 +50,38 @@ class Spider(BaseSpider):
     UA = ('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
           '(KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36')
 
-    # 本地翻墙代理: javrate 主站被墙, 需代理访问
-    PROXY = 'http://127.0.0.1:10808'
+    # 翻墙代理候选: javrate 主站被墙, 需代理访问
+    # 依次探测可用代理; 全部失败则直连(手机开 VPN 全局模式时由系统接管)
+    # 也支持在源配置扩展参数里指定: proxy=http://host:port 或 代理=http://host:port
+    PROXY_CANDIDATES = [
+        'http://127.0.0.1:10808',   # 电脑 V2RayN 默认
+        'http://127.0.0.1:7890',    # Clash 默认 (手机/电脑)
+        'http://10.0.2.2:10808',    # 安卓模拟器 -> 宿主机
+        'http://127.0.0.1:10809',
+        'http://127.0.0.1:1080',
+    ]
+    PROXY = ''
 
     # ==================================================================
     # 请求层 (自包含 fetch, 支持代理, 兼容 base.spider 与 TVBox)
     # ==================================================================
+    def _detect_proxy(self):
+        """从候选代理列表中探测第一个可用的 (2秒超时/个, 命中即返回; 全失败返回''=直连)"""
+        try:
+            for p in self.PROXY_CANDIDATES:
+                try:
+                    r = requests.get(self.host + '/', headers=self._headers(),
+                                     timeout=2, verify=False,
+                                     proxies={'http': p, 'https': p})
+                    if getattr(r, 'status_code', 0) == 200:
+                        self._log('代理探测成功: %s' % p)
+                        return p
+                except Exception:
+                    continue
+        except Exception:
+            pass
+        return ''
+
     def _proxies(self):
         return {'http': self.PROXY, 'https': self.PROXY} if self.PROXY else None
 
@@ -125,7 +152,25 @@ class Spider(BaseSpider):
         return self.name
 
     def init(self, extend=''):
-        self._log('初始化完成: %s' % self.host)
+        # 1) 优先使用扩展参数指定的代理: proxy=http://host:port 或 代理=http://host:port
+        proxy = ''
+        if extend:
+            try:
+                if isinstance(extend, str):
+                    for part in re.split(r'[&;\n]', extend):
+                        if '=' in part:
+                            k, v = part.split('=', 1)
+                            if k.strip().lower() in ('proxy', '代理'):
+                                proxy = v.strip()
+            except Exception:
+                pass
+        if proxy:
+            self.PROXY = proxy if proxy.startswith('http') else 'http://' + proxy
+            self._log('使用扩展参数代理: %s' % self.PROXY)
+        else:
+            # 2) 自动探测可用代理 (本机 / 模拟器宿主)
+            self.PROXY = self._detect_proxy()
+        self._log('初始化完成: %s | 代理: %s' % (self.host, self.PROXY or '未探测到(将直连)'))
         return {}
 
     def isVideoFormat(self, url):
@@ -354,9 +399,9 @@ class Spider(BaseSpider):
         if not s:
             return ''
         s = re.sub(r'<[^>]+>', '', str(s))
-        s = s.replace('\xa0', ' ').replace('&nbsp;', ' ')
-        s = s.replace('&quot;', '"').replace('&#39;', "'").replace('&amp;', '&')
-        s = s.replace('&lt;', '<').replace('&gt;', '>').replace('&#x27;', "'")
+        s = s.replace('\xa0', ' ')
+        # 解码全部 HTML 实体 (含 &#xHHHH; / &#DDDD; 数字实体)
+        s = html.unescape(s)
         return re.sub(r'\s+', ' ', s).strip()
 
     @staticmethod
@@ -385,10 +430,10 @@ class Spider(BaseSpider):
                 return '%s%s/%s-2-1/' % (self.host, base_path, sort_id)
             return '%s%s/%s-2-%d/' % (self.host, base_path, sort_id, p)
         else:
-            # /movie/ 或 /best: 无排序, 尝试 /path/{page}/ 分页
+            # /movie/ 或 /best: 无排序, 用 ?page=N 分页
             if p <= 1:
                 return '%s%s' % (self.host, base_path)
-            return '%s%s/%d/' % (self.host, base_path, p)
+            return '%s%s?page=%d' % (self.host, base_path, p)
 
     # ==================================================================
     # 七、列表解析 (首页/分类/搜索通用)
@@ -501,8 +546,8 @@ class Spider(BaseSpider):
         if not html_text:
             return page
 
-        # 方式 A: data-page-info="第 1 頁 / 共 1328 頁"
-        m = re.search(r'data-page-info="[^"]*共\s*(\d+)\s*[頁页]', html_text)
+        # 方式 A: data-page-info="第 1 頁 / 共 1328 頁" (含实体形式 &#x5171;共 &#x9801;頁)
+        m = re.search(r'data-page-info="[^"]*(?:共|&#x5171;)\s*(\d+)\s*(?:[頁页]|&#x9801;)', html_text)
         if m:
             return max(page, int(m.group(1)))
 
@@ -748,7 +793,7 @@ class Spider(BaseSpider):
             play_url = self._fix(self._strip(ld.get('contentUrl', '')))
 
         # --- 播放线路 ---
-        vod_play_from = '默認線路'
+        vod_play_from = '酷鱼专线'
         vod_play_url = ''
         if play_url:
             vod_play_url = '正片$%s' % play_url
