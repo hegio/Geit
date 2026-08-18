@@ -141,11 +141,20 @@ class Spider(BaseSpider):
         pass
 
     def localProxy(self, param):
-        """下载带 token 的 m3u8, 改写相对路径为带 token 的绝对 URL
+        """下载带 token 的 m3u8, 若为 master playlist 则解析到 sub playlist,
+        改写所有 TS 相对路径为带 token 的绝对 URL.
 
-        master m3u8 内的子路径 (720p/video.m3u8) 和子 m3u8 内的 TS 分片 (video0.ts)
-        均为相对路径, 播放器拼接时不带 token 导致 403.
-        localProxy 下载 m3u8 后, 把所有相对路径改写为带上 token query 的绝对 URL.
+        播放链路:
+          master m3u8 (带 token) → 包含 720p/video.m3u8 等相对路径
+          sub m3u8 (带 token) → 包含 video0.ts 等相对路径
+          TS 分片 → 需带 token 才能访问 (否则 403)
+
+        localProxy 统一处理:
+          1. 下载 m3u8 (传入的 URL 带 token)
+          2. 若为 master playlist (#EXT-X-STREAM-INF), 提取 sub m3u8 路径,
+             构造带 token 的绝对 URL, 下载 sub m3u8
+          3. 改写 sub m3u8 内所有相对路径 (TS 分片, KEY URI) 为带 token 的绝对 URL
+          4. 返回改写后的 sub m3u8 内容 (播放器直接拿 TS 绝对直链, 无需再走 localProxy)
         """
         try:
             url = param if isinstance(param, str) else ''
@@ -160,12 +169,33 @@ class Spider(BaseSpider):
             if not text:
                 return None
 
-            # 提取 token query string
+            # 提取 token query string、base URL 和 origin
             token_qs = url.split('?', 1)[1] if '?' in url else ''
             base = url.rsplit('/', 1)[0] + '/'
+            parsed = urllib.parse.urlparse(url)
+            origin = '%s://%s' % (parsed.scheme, parsed.netloc)
 
+            # 若为 master playlist, 解析到 sub playlist
+            if '#EXT-X-STREAM-INF' in text:
+                sub_url = self._extract_sub_m3u8(text, base, token_qs, origin)
+                if sub_url:
+                    self._log('localProxy: master -> sub playlist')
+                    r2 = self.fetch(sub_url, headers=headers, timeout=20, verify=False)
+                    if r2.status_code == 200 and r2.text:
+                        text = r2.text
+                        # 更新 base、token、origin 为 sub m3u8 的
+                        token_qs = sub_url.split('?', 1)[1] if '?' in sub_url else token_qs
+                        base = sub_url.rsplit('/', 1)[0] + '/'
+                        parsed2 = urllib.parse.urlparse(sub_url)
+                        origin = '%s://%s' % (parsed2.scheme, parsed2.netloc)
+                    else:
+                        self._log('localProxy: sub fetch HTTP %d, fallback to master' % getattr(r2, 'status_code', 0))
+                else:
+                    self._log('localProxy: STREAM-INF found but no sub URL extracted')
+
+            # 改写所有相对路径为带 token 的绝对 URL
             if token_qs:
-                text = self._rewrite_m3u8(text, base, token_qs)
+                text = self._rewrite_m3u8(text, base, token_qs, origin)
 
             return [200, 'application/vnd.apple.mpegurl', text.encode('utf-8')]
         except Exception as e:
@@ -173,12 +203,13 @@ class Spider(BaseSpider):
             return None
 
     @staticmethod
-    def _rewrite_m3u8(text, base_url, token_qs):
+    def _rewrite_m3u8(text, base_url, token_qs, origin=''):
         """改写 m3u8 内的相对路径为带 token 的绝对 URL
 
         master m3u8:  720p/video.m3u8 -> {base}720p/video.m3u8?{token}
         子 m3u8:      video0.ts -> {base}720p/video0.ts?{token}
         """
+        cdn = origin or 'https://videocdn.avking.xyz'
         lines = text.split('\n')
         out = []
         for line in lines:
@@ -192,7 +223,7 @@ class Spider(BaseSpider):
                         uri = uri_m.group(1)
                         if not uri.startswith('http'):
                             if uri.startswith('/'):
-                                new_uri = 'https://videocdn.avking.xyz' + uri + '?' + token_qs
+                                new_uri = cdn + uri + '?' + token_qs
                             else:
                                 new_uri = base_url + uri + '?' + token_qs
                             stripped = stripped.replace('URI="%s"' % uri, 'URI="%s"' % new_uri)
@@ -205,7 +236,7 @@ class Spider(BaseSpider):
                 continue
             # 相对路径 -> 绝对 URL + token
             if path.startswith('/'):
-                abs_url = 'https://videocdn.avking.xyz' + path
+                abs_url = cdn + path
             else:
                 abs_url = base_url + path
             if '?' in abs_url:
@@ -216,6 +247,44 @@ class Spider(BaseSpider):
             indent = line[:len(line) - len(line.lstrip())]
             out.append(indent + abs_url)
         return '\n'.join(out)
+
+    @staticmethod
+    def _extract_sub_m3u8(text, base_url, token_qs, origin=''):
+        """从 master playlist 提取第一个 sub m3u8 URL (带 token)
+
+        master playlist 格式:
+          #EXTM3U
+          #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=...
+          720p/video.m3u8
+          #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=...
+          1080p/video.m3u8
+        """
+        cdn = origin or 'https://videocdn.avking.xyz'
+        lines = text.split('\n')
+        for i, line in enumerate(lines):
+            stripped = line.strip()
+            # 跳过 I-frame only 流
+            if stripped.startswith('#EXT-X-I-FRAME'):
+                continue
+            if stripped.startswith('#EXT-X-STREAM-INF'):
+                # 下一非空非注释行是 sub m3u8 路径
+                for j in range(i + 1, min(i + 3, len(lines))):
+                    path = lines[j].strip()
+                    if not path or path.startswith('#'):
+                        continue
+                    # 构造绝对 URL + token
+                    if path.startswith('http'):
+                        abs_url = path
+                    elif path.startswith('/'):
+                        abs_url = cdn + path
+                    else:
+                        abs_url = base_url + path
+                    if '?' in abs_url:
+                        abs_url += '&' + token_qs
+                    else:
+                        abs_url += '?' + token_qs
+                    return abs_url
+        return ''
 
     # ==================================================================
     # 四、请求工具 (节流 / 重试)
@@ -921,13 +990,29 @@ if __name__ == '__main__':
                     body = body.decode('utf-8', 'ignore')
                 lines = body.strip().split('\n')
                 print('   localProxy: %d 字节, %d 行' % (len(body), len(lines)))
+                # 检查是否已从 master 解析到 sub (不应有 STREAM-INF)
+                has_stream_inf = any('#EXT-X-STREAM-INF' in l for l in lines)
+                print('   master->sub 解析: %s' % ('已解析' if not has_stream_inf else '未解析(仍有 STREAM-INF)'))
                 # 检查相对路径是否被改写
                 rel = [l for l in lines if l.strip() and not l.strip().startswith('#') and not l.strip().startswith('http')]
                 print('   改写后非 http 路径行数: %d (期望 0)' % len(rel))
-                for l in lines:
-                    if 'token=' in l:
-                        print('   样本改写行: %s' % l.strip()[:120])
-                        break
+                # 检查 TS 是否带 token
+                ts_lines = [l for l in lines if l.strip() and not l.strip().startswith('#') and '.ts' in l.lower()]
+                ts_with_token = [l for l in ts_lines if 'token=' in l]
+                print('   TS 分片: %d 条, 带 token: %d 条' % (len(ts_lines), len(ts_with_token)))
+                for l in ts_lines[:3]:
+                    print('   样本 TS: %s' % l.strip()[:130])
+                # 验证第一个 TS 可访问
+                if ts_with_token:
+                    ts_url = ts_with_token[0].strip()
+                    try:
+                        ts_r = sp.fetch(ts_url, headers=sp._headers(referer=sp.host + '/'),
+                                        timeout=15, verify=False)
+                        ts_status = getattr(ts_r, 'status_code', 0)
+                        ts_len = len(getattr(ts_r, 'content', b''))
+                        print('   TS 直连验证: HTTP %d, %d 字节' % (ts_status, ts_len))
+                    except Exception as e:
+                        print('   TS 直连验证: 异常 %s' % e)
             else:
                 print('   localProxy: 失败')
 
