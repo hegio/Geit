@@ -141,7 +141,81 @@ class Spider(BaseSpider):
         pass
 
     def localProxy(self, param):
-        return [200, 'text/plain', '']
+        """下载带 token 的 m3u8, 改写相对路径为带 token 的绝对 URL
+
+        master m3u8 内的子路径 (720p/video.m3u8) 和子 m3u8 内的 TS 分片 (video0.ts)
+        均为相对路径, 播放器拼接时不带 token 导致 403.
+        localProxy 下载 m3u8 后, 把所有相对路径改写为带上 token query 的绝对 URL.
+        """
+        try:
+            url = param if isinstance(param, str) else ''
+            if not url or not url.startswith('http'):
+                return None
+            headers = self._headers(referer=self.host + '/')
+            r = self.fetch(url, headers=headers, timeout=20, verify=False)
+            if r.status_code != 200:
+                self._log('localProxy HTTP %d: %s' % (r.status_code, url[:100]))
+                return None
+            text = r.text or ''
+            if not text:
+                return None
+
+            # 提取 token query string
+            token_qs = url.split('?', 1)[1] if '?' in url else ''
+            base = url.rsplit('/', 1)[0] + '/'
+
+            if token_qs:
+                text = self._rewrite_m3u8(text, base, token_qs)
+
+            return [200, 'application/vnd.apple.mpegurl', text.encode('utf-8')]
+        except Exception as e:
+            self._log('localProxy 异常: %s' % e)
+            return None
+
+    @staticmethod
+    def _rewrite_m3u8(text, base_url, token_qs):
+        """改写 m3u8 内的相对路径为带 token 的绝对 URL
+
+        master m3u8:  720p/video.m3u8 -> {base}720p/video.m3u8?{token}
+        子 m3u8:      video0.ts -> {base}720p/video0.ts?{token}
+        """
+        lines = text.split('\n')
+        out = []
+        for line in lines:
+            stripped = line.strip()
+            # 跳过空行和注释行 (但 #EXT-X-KEY 的 URI= 需处理)
+            if not stripped or stripped.startswith('#'):
+                # #EXT-X-KEY: URI="key" 也需要补 token
+                if stripped.startswith('#EXT-X-KEY') and 'URI=' in stripped:
+                    uri_m = re.search(r'URI="([^"]+)"', stripped)
+                    if uri_m:
+                        uri = uri_m.group(1)
+                        if not uri.startswith('http'):
+                            if uri.startswith('/'):
+                                new_uri = 'https://videocdn.avking.xyz' + uri + '?' + token_qs
+                            else:
+                                new_uri = base_url + uri + '?' + token_qs
+                            stripped = stripped.replace('URI="%s"' % uri, 'URI="%s"' % new_uri)
+                out.append(line)
+                continue
+            # 非注释行 = 路径行 (子 m3u8 或 TS 分片)
+            path = stripped
+            if path.startswith('http'):
+                out.append(line)
+                continue
+            # 相对路径 -> 绝对 URL + token
+            if path.startswith('/'):
+                abs_url = 'https://videocdn.avking.xyz' + path
+            else:
+                abs_url = base_url + path
+            if '?' in abs_url:
+                abs_url += '&' + token_qs
+            else:
+                abs_url += '?' + token_qs
+            # 保持原始缩进
+            indent = line[:len(line) - len(line.lstrip())]
+            out.append(indent + abs_url)
+        return '\n'.join(out)
 
     # ==================================================================
     # 四、请求工具 (节流 / 重试)
@@ -595,13 +669,14 @@ class Spider(BaseSpider):
                     if view_count:
                         break
 
-        # --- 播放: contentUrl (m3u8 直链) ---
-        play_url = self._strip(ld.get('contentUrl', ''))
+        # --- 播放: embedUrl 优先 (/Player?url=xxx -> 带 token 的 m3u8)
+        #     contentUrl 是裸 m3u8 (无 token, 返回 403)
+        #     embedUrl 指向 /Player?url=xxx, 其内有带 token 的 m3u8
+        #     playerContent 抓 embed 页解析带 token 的直链
+        play_url = self._fix(self._strip(ld.get('embedUrl', '')))
         if not play_url:
-            # 兜底 1: embedUrl -> /Player?url=...
-            embed = self._strip(ld.get('embedUrl', ''))
-            if embed:
-                play_url = embed
+            # 兜底: contentUrl (裸 m3u8, 可能 403, 但仍尝试)
+            play_url = self._fix(self._strip(ld.get('contentUrl', '')))
 
         # --- 播放线路 ---
         vod_play_from = '默認線路'
@@ -647,19 +722,16 @@ class Spider(BaseSpider):
             'Referer': self.host + '/',
         }
         try:
-            # 已是直链 m3u8/mp4
-            if url.startswith('http') and self.isVideoFormat(url):
-                return self._play(url, headers, parse=0)
-
-            # embed 页: 尝试解析直链
-            if url.startswith('http') and not self.isVideoFormat(url):
-                real = self._extract_direct(url)
+            # /Player?url=xxx 或绝对 URL embed 页: 抓取带 token 的 m3u8
+            if url.startswith('http') or url.startswith('/Player'):
+                real = self._resolve_embed(self._fix(url))
                 if real and self.isVideoFormat(real):
-                    return self._play(real, headers, parse=0)
+                    # parse:1 让播放器走 localProxy, localProxy 改写 m3u8 相对路径补 token
+                    return self._play(real, headers, parse=1)
                 # 解析失败, 交 APP 处理
-                return self._play(url, headers, parse=1)
+                return self._play(self._fix(url), headers, parse=1)
 
-            # 纯 id 或 id$xxx: 回详情页拿 contentUrl
+            # 纯 id 或 id$xxx: 回详情页拿 embedUrl
             vid = url
             if '$' in url:
                 vid = url.split('$')[-1]
@@ -667,40 +739,64 @@ class Spider(BaseSpider):
             vid = re.sub(r'^[^$]+\$', '', vid) if '$' in url else vid
             html = self._fetch_text('%s/movie/detail/%s.html' % (self.host, vid))
             ld = self._parse_jsonld(html)
-            real = self._strip(ld.get('contentUrl', ''))
-            if real and self.isVideoFormat(real):
-                return self._play(real, headers, parse=0)
-            embed = self._strip(ld.get('embedUrl', ''))
+            # 优先 embedUrl (带 token)
+            embed = self._fix(self._strip(ld.get('embedUrl', '')))
             if embed:
-                real2 = self._extract_direct(self._fix(embed))
-                if real2 and self.isVideoFormat(real2):
-                    return self._play(real2, headers, parse=0)
-                return self._play(self._fix(embed), headers, parse=1)
+                real = self._resolve_embed(embed)
+                if real and self.isVideoFormat(real):
+                    return self._play(real, headers, parse=1)
+                return self._play(embed, headers, parse=1)
+            # 兜底: contentUrl
+            real = self._fix(self._strip(ld.get('contentUrl', '')))
+            if real and self.isVideoFormat(real):
+                return self._play(real, headers, parse=1)
             return self._play(url, headers, parse=1)
         except Exception as e:
             self._log('playerContent 异常: %s' % e)
             return self._play(url, headers, parse=1)
 
-    def _extract_direct(self, embed_url):
-        """从 embed 页提取 m3u8/mp4 直链"""
+    def _resolve_embed(self, embed_url):
+        """抓 /Player?url=xxx embed 页, 提取带 token 的 m3u8 直链
+
+        embed 页内有两个 m3u8:
+          1. 裸 m3u8 (无 token, 403)
+          2. 带 ?token=HS256-xxx&expires=xxx 的 m3u8 (200 OK)
+        优先返回带 token 的。
+
+        embed 页源码格式:
+          var source = "https://videocdn.avking.xyz/.../playlist.m3u8?token=...&expires=...&token_path=...";
+          var originalM3u8Url = 'https://videocdn.avking.xyz/.../playlist.m3u8';
+        """
         try:
             if not embed_url.startswith('http'):
                 embed_url = self._fix(embed_url)
             html = self._fetch_text(embed_url, referer=self.host + '/')
             if not html:
                 return ''
-            # 明文 m3u8
-            m = re.search(r'["\'](https?://[^"\'\\s]+\.m3u8[^"\'\\s]*)["\']', html)
+            # 优先: 带 token 的 m3u8 (匹配 "..." 或 '...' 内的 URL)
+            m = re.search(r'["\']\s*(https?://[^\s"\']+\.m3u8\?token=[^\s"\']+)\s*["\']', html)
             if m:
                 return m.group(1).replace('\\/', '/')
-            # mp4
-            m = re.search(r'["\'](https?://[^"\'\\s]+\.mp4[^"\'\\s]*)["\']', html)
+            # 兜底: var source = "xxx.m3u8" (无引号也兜底)
+            m = re.search(r'(?:source|src|url|file)\s*[:=]\s*["\']([^"\']+\.m3u8[^"\']*)["\']', html, re.I)
+            if m:
+                return m.group(1).replace('\\/', '/')
+            # 兜底2: 任意引号包裹的 m3u8
+            m = re.search(r'["\']\s*(https?://[^\s"\']+\.m3u8[^\s"\']*)\s*["\']', html)
+            if m:
+                return m.group(1).replace('\\/', '/')
+            # 兜底3: mp4
+            m = re.search(r'["\']\s*(https?://[^\s"\']+\.mp4[^\s"\']*)\s*["\']', html)
             if m:
                 return m.group(1).replace('\\/', '/')
             return ''
         except Exception as e:
             self._log('embed 直链提取失败: %s' % e)
             return ''
+
+    def _extract_direct(self, embed_url):
+        """通用 embed 页直链提取 (保留兼容)"""
+        return self._resolve_embed(embed_url)
 
     @staticmethod
     def _play(url, headers, parse=0):
@@ -816,6 +912,24 @@ if __name__ == '__main__':
         print('   [%s] parse=%d  url=%s' % (
             det['vod_play_from'], p['parse'], p['url'][:100]
         ))
+        # localProxy 验证
+        if p['url'] and p['url'].startswith('http'):
+            lp = sp.localProxy(p['url'])
+            if lp and lp[0] == 200:
+                body = lp[2]
+                if isinstance(body, bytes):
+                    body = body.decode('utf-8', 'ignore')
+                lines = body.strip().split('\n')
+                print('   localProxy: %d 字节, %d 行' % (len(body), len(lines)))
+                # 检查相对路径是否被改写
+                rel = [l for l in lines if l.strip() and not l.strip().startswith('#') and not l.strip().startswith('http')]
+                print('   改写后非 http 路径行数: %d (期望 0)' % len(rel))
+                for l in lines:
+                    if 'token=' in l:
+                        print('   样本改写行: %s' % l.strip()[:120])
+                        break
+            else:
+                print('   localProxy: 失败')
 
     print('\n================ 6. 搜索 + 搜索分页 ================')
     for kw in ['福原美奈', '中出', '人妻']:
