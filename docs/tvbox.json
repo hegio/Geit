@@ -1,6 +1,6 @@
 {
-  "updated": "2026-08-18 01:25 UTC",
-  "count": 366,
+  "updated": "2026-08-18 07:03 UTC",
+  "count": 365,
   "sources": [
     {
       "name": "ok海豚常规22.json",
@@ -41,11 +41,6 @@
       "name": "live.m3u",
       "raw": "https://raw.githubusercontent.com/yanghanhanyingshi/abcd/main/tvbox/live.m3u",
       "url": "https://cdn.jsdelivr.net/gh/yanghanhanyingshi/abcd@main/tvbox/live.m3u"
-    },
-    {
-      "name": "20251023002031-6064033c16.js",
-      "raw": "https://raw.githubusercontent.com/yanghanhanyingshi/abcd/main/tvbox/20251023002031-6064033c16.js",
-      "url": "https://cdn.jsdelivr.net/gh/yanghanhanyingshi/abcd@main/tvbox/20251023002031-6064033c16.js"
     },
     {
       "name": "20251023002108-a4795930ec.js",
