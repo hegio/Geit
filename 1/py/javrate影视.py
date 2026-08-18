@@ -16,6 +16,8 @@ class Spider(Spider):
             'Accept-Encoding': 'gzip, deflate',
             'Connection': 'keep-alive'
         }
+        
+        # 分类配置 - 可根据实际网站调整
         self.categories = [
             {"type_name": "最新", "type_id": "latest"},
             {"type_name": "热门", "type_id": "popular"},
@@ -24,6 +26,8 @@ class Spider(Spider):
             {"type_name": "欧美", "type_id": "western"},
             {"type_name": "动漫", "type_id": "anime"}
         ]
+        
+        # 筛选器配置 - 可根据实际网站调整
         self.filters = {
             "latest": [
                 {"key": "sort", "name": "排序", "value": [
@@ -56,35 +60,46 @@ class Spider(Spider):
                 ]}
             ]
         }
+        
+        # 调试模式 - 设为True可输出更多调试信息
+        self.debug_mode = True
 
     def getName(self):
         return self.name
 
     def init(self, extend=''):
-        print(f"初始化爬虫: {self.name}")
-        print(f"目标站点: {self.host}")
+        if self.debug_mode:
+            print(f"初始化爬虫: {self.name}")
+            print(f"目标站点: {self.host}")
         pass
 
     def _get(self, url, params=None):
         try:
-            print(f"请求URL: {url}")
+            if self.debug_mode:
+                print(f"请求URL: {url}")
             r = requests.get(url, headers=self.header, params=params, timeout=20, verify=False)
             r.encoding = r.apparent_encoding or 'utf-8'
-            print(f"响应状态码: {r.status_code}")
+            if self.debug_mode:
+                print(f"响应状态码: {r.status_code}")
+                print(f"响应内容长度: {len(r.text) if r.text else 0}")
             return r.text
         except Exception as e:
-            print(f"请求失败: {e}")
+            if self.debug_mode:
+                print(f"请求失败: {e}")
             return None
 
     def _post(self, url, data=None):
         try:
-            print(f"POST请求URL: {url}")
+            if self.debug_mode:
+                print(f"POST请求URL: {url}")
             r = requests.post(url, headers=self.header, data=data, timeout=20, verify=False)
             r.encoding = r.apparent_encoding or 'utf-8'
-            print(f"响应状态码: {r.status_code}")
+            if self.debug_mode:
+                print(f"响应状态码: {r.status_code}")
             return r.text
         except Exception as e:
-            print(f"POST请求失败: {e}")
+            if self.debug_mode:
+                print(f"POST请求失败: {e}")
             return None
 
     def _fix_url(self, url):
@@ -106,7 +121,8 @@ class Spider(Spider):
     def _parse_list_item(self, a):
         try:
             href = a.get('href', '') or ''
-            print(f"解析列表项链接: {href}")
+            if self.debug_mode:
+                print(f"解析列表项链接: {href}")
             
             # 提取ID，支持多种URL格式
             id_match = re.search(r'/(\d+)(?:\.html)?$', href)
@@ -123,13 +139,14 @@ class Spider(Spider):
                 if not vod_name:
                     vod_name = ''.join(a.xpath('.//div[contains(@class,"title")]//text()')).strip()
             
-            print(f"视频ID: {vod_id}, 标题: {vod_name}")
+            if self.debug_mode:
+                print(f"视频ID: {vod_id}, 标题: {vod_name}")
             
             # 提取封面图
             imgs = a.xpath('.//img')
             vod_pic = ''
             if imgs:
-                for attr in ['data-original', 'data-src', 'src', 'lazy-src']:
+                for attr in ['data-original', 'data-src', 'src', 'lazy-src', 'original']:
                     vod_pic = imgs[0].get(attr, '') or ''
                     if vod_pic:
                         break
@@ -145,30 +162,37 @@ class Spider(Spider):
                 'vod_remarks': vod_remarks
             }
         except Exception as e:
-            print(f"解析列表项失败: {e}")
+            if self.debug_mode:
+                print(f"解析列表项失败: {e}")
             return None
 
     def _parse_list(self, text):
         if not text:
+            if self.debug_mode:
+                print("文本内容为空")
             return []
         
-        print("开始解析列表...")
+        if self.debug_mode:
+            print("开始解析列表...")
         tree = etree.HTML(text)
         res, seen = [], set()
         
-        # 尝试多种可能的列表项XPath
+        # 尝试多种可能的列表项XPath - 可根据实际网站调整
         xpath_patterns = [
             '//a[contains(@href,"/") and not(contains(@href,"javascript"))]',
             '//div[contains(@class,"item") or contains(@class,"video")]//a',
             '//div[contains(@class,"card")]//a',
             '//div[contains(@class,"thumb")]//a',
             '//div[contains(@class,"video-item")]//a',
-            '//div[contains(@class,"movie-item")]//a'
+            '//div[contains(@class,"movie-item")]//a',
+            '//div[contains(@class,"post")]//a',
+            '//article[contains(@class,"post")]//a'
         ]
         
         for xpath in xpath_patterns:
             items = tree.xpath(xpath)
-            print(f"尝试XPath: {xpath}, 找到 {len(items)} 个元素")
+            if self.debug_mode:
+                print(f"尝试XPath: {xpath}, 找到 {len(items)} 个元素")
             
             for a in items:
                 try:
@@ -192,44 +216,53 @@ class Spider(Spider):
                     if video:
                         res.append(video)
                 except Exception as e:
-                    print(f"解析列表项失败: {e}")
+                    if self.debug_mode:
+                        print(f"解析列表项失败: {e}")
                     continue
         
-        print(f"解析完成，共 {len(res)} 个视频")
+        if self.debug_mode:
+            print(f"解析完成，共 {len(res)} 个视频")
         return res
 
     def homeContent(self, filter):
-        print("获取首页内容...")
+        if self.debug_mode:
+            print("获取首页内容...")
         return {"class": self.categories, "filters": self.filters}
 
     def homeVideoContent(self):
-        print("获取首页视频列表...")
+        if self.debug_mode:
+            print("获取首页视频列表...")
         videos = []
         try:
-            # 尝试多个可能的首页URL
+            # 尝试多个可能的首页URL - 可根据实际网站调整
             urls = [
                 self.host + '/',
                 self.host + '/latest',
                 self.host + '/popular',
-                self.host + '/home'
+                self.host + '/home',
+                self.host + '/index'
             ]
             
             for url in urls:
-                print(f"尝试获取首页: {url}")
+                if self.debug_mode:
+                    print(f"尝试获取首页: {url}")
                 html = self._get(url)
                 if html:
                     videos = self._parse_list(html)
                     if videos:
-                        print(f"成功获取 {len(videos)} 个视频")
+                        if self.debug_mode:
+                            print(f"成功获取 {len(videos)} 个视频")
                         break
             
             return {'list': videos}
         except Exception as e:
-            print(f"首页视频获取失败: {e}")
+            if self.debug_mode:
+                print(f"首页视频获取失败: {e}")
             return {'list': []}
 
     def categoryContent(self, tid, pg, filter, extend):
-        print(f"获取分类内容: {tid}, 页码: {pg}")
+        if self.debug_mode:
+            print(f"获取分类内容: {tid}, 页码: {pg}")
         videos = []
         try:
             if isinstance(extend, str) and extend:
@@ -240,7 +273,7 @@ class Spider(Spider):
             elif not extend:
                 extend = {}
             
-            # 构建分类URL
+            # 构建分类URL - 可根据实际网站调整
             url_map = {
                 'latest': '/latest',
                 'popular': '/popular',
@@ -253,14 +286,17 @@ class Spider(Spider):
             base_path = url_map.get(tid, tid)
             url = f"{self.host}{base_path}/page/{pg}.html"
             
-            print(f"分类URL: {url}")
+            if self.debug_mode:
+                print(f"分类URL: {url}")
             html = self._get(url)
             if not html:
+                if self.debug_mode:
+                    print("获取分类页面失败")
                 return {'list': [], 'page': int(pg), 'pagecount': 0, 'limit': 0, 'total': 0}
             
             videos = self._parse_list(html)
             
-            # 尝试获取总页数
+            # 尝试获取总页数 - 可根据实际网站调整
             tree = etree.HTML(html)
             pc = 1
             xpath_patterns = [
@@ -269,7 +305,8 @@ class Spider(Spider):
                 '//div[contains(@class,"pages")]//a[last()]/text()',
                 '//a[contains(@class,"last")]/text()',
                 '//span[contains(@class,"total-pages")]/text()',
-                '//div[contains(@class,"page-info")]/text()'
+                '//div[contains(@class,"page-info")]/text()',
+                '//ul[contains(@class,"pagination")]//li[last()]/a/text()'
             ]
             
             for xpath in xpath_patterns:
@@ -286,7 +323,8 @@ class Spider(Spider):
                 if pc > 1:
                     break
             
-            print(f"总页数: {pc}, 当前页: {pg}, 视频数: {len(videos)}")
+            if self.debug_mode:
+                print(f"总页数: {pc}, 当前页: {pg}, 视频数: {len(videos)}")
             
             return {
                 'list': videos,
@@ -296,38 +334,44 @@ class Spider(Spider):
                 'total': pc * len(videos)
             }
         except Exception as e:
-            print(f"分类内容获取失败: {e}")
+            if self.debug_mode:
+                print(f"分类内容获取失败: {e}")
             return {'list': [], 'page': 1, 'pagecount': 0, 'limit': 0, 'total': 0}
 
     def detailContent(self, ids):
-        print(f"获取详情页: {ids}")
+        if self.debug_mode:
+            print(f"获取详情页: {ids}")
         try:
             vod_id = ids[0]
             url = f'{self.host}/{vod_id}.html'
-            print(f"详情页URL: {url}")
+            if self.debug_mode:
+                print(f"详情页URL: {url}")
             html = self._get(url)
             if not html:
+                if self.debug_mode:
+                    print("获取详情页失败")
                 return {'list': []}
             
             root = etree.HTML(html)
             
-            # 提取标题
+            # 提取标题 - 可根据实际网站调整
             vod_name = ''.join(root.xpath('//h1/text()')).strip()
             if not vod_name:
                 title = root.xpath('//title/text()')
                 if title:
                     vod_name = title[0].split('-')[0].strip()
             
-            # 提取封面
-            vod_pic = self._fix_url(''.join(root.xpath('//img[@class="cover"]/@src | //div[@class="cover"]//img/@src | //div[contains(@class,"poster")]//img/@src')))
+            # 提取封面 - 可根据实际网站调整
+            vod_pic = self._fix_url(''.join(root.xpath('//img[@class="cover"]/@src | //div[@class="cover"]//img/@src | //div[contains(@class,"poster")]//img/@src | //div[contains(@class,"thumbnail")]//img/@src')))
             
-            # 提取年份
+            # 提取年份 - 可根据实际网站调整
             vod_year = ''
             year_patterns = [
                 '//span[contains(text(),"年")]//text()',
                 '//div[contains(text(),"年份")]//text()',
                 '//text()[contains(.,"20")]',
-                '//span[contains(@class,"year")]//text()'
+                '//span[contains(@class,"year")]//text()',
+                '//div[contains(@class,"info")]//text()'
             ]
             
             for xpath in year_patterns:
@@ -339,13 +383,14 @@ class Spider(Spider):
                 if vod_year:
                     break
             
-            # 提取简介
+            # 提取简介 - 可根据实际网站调整
             vod_content = ''
             content_patterns = [
                 '//div[contains(@class,"desc") or contains(@class,"summary") or contains(@class,"intro")]//text()',
                 '//p[contains(@class,"description")]//text()',
                 '//div[contains(@class,"content")]//text()',
-                '//div[contains(@class,"synopsis")]//text()'
+                '//div[contains(@class,"synopsis")]//text()',
+                '//div[contains(@class,"info")]//text()'
             ]
             
             for xpath in content_patterns:
@@ -357,7 +402,7 @@ class Spider(Spider):
                 if vod_content:
                     break
             
-            # 提取播放地址
+            # 提取播放地址 - 可根据实际网站调整
             vod_play_from = []
             vod_play_url = []
             
@@ -368,7 +413,9 @@ class Spider(Spider):
                 '//div[contains(@class,"videos")]//a',
                 '//ul[contains(@class,"ep-list")]//a',
                 '//div[contains(@class,"player")]//a',
-                '//div[contains(@class,"episode-list")]//a'
+                '//div[contains(@class,"episode-list")]//a',
+                '//div[contains(@class,"video-list")]//a',
+                '//div[contains(@class,"stream-list")]//a'
             ]
             
             for idx, pattern in enumerate(play_patterns):
@@ -390,7 +437,7 @@ class Spider(Spider):
             
             if not vod_play_from:
                 # 尝试直接查找播放链接
-                play_items = root.xpath('//a[contains(@href,"/play/") or contains(@href,"/video/") or contains(@href,"/watch/") or contains(@href,"/stream/")]')
+                play_items = root.xpath('//a[contains(@href,"/play/") or contains(@href,"/video/") or contains(@href,"/watch/") or contains(@href,"/stream/") or contains(@href,"/player/")]')
                 play_list = []
                 seen_url = set()
                 
@@ -400,7 +447,7 @@ class Spider(Spider):
                     if not ep_name or not href or href in seen_url:
                         continue
                     seen_url.add(href)
-                    play_list.append(f'{ep_name}${self._fix_url(href)}')
+                    play_list.append(f'{ep_name}${self._fix_url(href)})
                 
                 if play_list:
                     vod_play_from.append('播放')
@@ -416,31 +463,37 @@ class Spider(Spider):
                 'vod_play_url': '$$$'.join(vod_play_url) if vod_play_url else ''
             }
             
-            print(f"详情页解析完成: {vod_name}")
+            if self.debug_mode:
+                print(f"详情页解析完成: {vod_name}")
             return {'list': [detail]}
         except Exception as e:
-            print(f"详情页获取失败: {e}")
+            if self.debug_mode:
+                print(f"详情页获取失败: {e}")
             return {'list': []}
 
     def searchContent(self, key, quick, pg='1'):
-        print(f"搜索关键词: {key}, 页码: {pg}")
+        if self.debug_mode:
+            print(f"搜索关键词: {key}, 页码: {pg}")
         videos = []
         try:
-            # 尝试多个可能的搜索URL格式
+            # 尝试多个可能的搜索URL格式 - 可根据实际网站调整
             search_urls = [
                 self.host + '/search/' + quote(key) + '/page/' + pg + '.html',
                 self.host + '/search?q=' + quote(key) + '&page=' + pg,
                 self.host + '/search/' + quote(key) + '?page=' + pg,
-                self.host + '/find/' + quote(key) + '/page/' + pg + '.html'
+                self.host + '/find/' + quote(key) + '/page/' + pg + '.html',
+                self.host + '/search/' + quote(key) + '/index-' + pg + '.html'
             ]
             
             for url in search_urls:
-                print(f"尝试搜索URL: {url}")
+                if self.debug_mode:
+                    print(f"尝试搜索URL: {url}")
                 html = self._get(url)
                 if html:
                     videos = self._parse_list(html)
                     if videos:
-                        print(f"搜索成功，找到 {len(videos)} 个视频")
+                        if self.debug_mode:
+                            print(f"搜索成功，找到 {len(videos)} 个视频")
                         break
             
             return {
@@ -451,37 +504,44 @@ class Spider(Spider):
                 'total': len(videos)
             }
         except Exception as e:
-            print(f"搜索失败: {e}")
+            if self.debug_mode:
+                print(f"搜索失败: {e}")
             return {'list': [], 'page': 1, 'pagecount': 0, 'limit': 0, 'total': 0}
 
     def _extract_player_url(self, html):
         try:
-            # 尝试多种可能的播放器URL提取方式
+            # 尝试多种可能的播放器URL提取方式 - 可根据实际网站调整
             patterns = [
                 r'var\s+url\s*=\s*["\']([^"\']+)["\']',
                 r'video_url\s*=\s*["\']([^"\']+)["\']',
                 r'play_url\s*=\s*["\']([^"\']+)["\']',
                 r'src\s*=\s*["\']([^"\']+(?:\.m3u8|\.mp4|\.flv))["\']',
                 r'file\s*=\s*["\']([^"\']+(?:\.m3u8|\.mp4|\.flv))["\']',
-                r'video\s*=\s*["\']([^"\']+(?:\.m3u8|\.mp4|\.flv))["\']'
+                r'video\s*=\s*["\']([^"\']+(?:\.m3u8|\.mp4|\.flv))["\']',
+                r'player\s*=\s*["\']([^"\']+(?:\.m3u8|\.mp4|\.flv))["\']',
+                r'href\s*=\s*["\']([^"\']+(?:\.m3u8|\.mp4|\.flv))["\']'
             ]
             
             for pattern in patterns:
                 matches = re.findall(pattern, html, re.IGNORECASE)
                 if matches:
-                    print(f"提取到播放URL: {matches[0]}")
+                    if self.debug_mode:
+                        print(f"提取到播放URL: {matches[0]}")
                     return matches[0]
             
             return None
         except Exception as e:
-            print(f"提取播放URL失败: {e}")
+            if self.debug_mode:
+                print(f"提取播放URL失败: {e}")
             return None
 
     def playerContent(self, flag, id, vipFlags):
-        print(f"解析播放地址: {id}")
+        if self.debug_mode:
+            print(f"解析播放地址: {id}")
         try:
             url = id if id.startswith('http') else self._fix_url(id)
-            print(f"播放地址URL: {url}")
+            if self.debug_mode:
+                print(f"播放地址URL: {url}")
             html = self._get(url)
             
             if html:
@@ -490,14 +550,17 @@ class Spider(Spider):
                     if real_url.startswith('//'):
                         real_url = 'https:' + real_url
                     if self.isVideoFormat(real_url):
-                        print(f"直接播放URL: {real_url}")
+                        if self.debug_mode:
+                            print(f"直接播放URL: {real_url}")
                         return {'parse': 0, 'playUrl': '', 'url': real_url, 'header': json.dumps(self.header)}
-                    print(f"需要解析的URL: {real_url}")
+                    if self.debug_mode:
+                        print(f"需要解析的URL: {real_url}")
                     return {'parse': 1, 'playUrl': '', 'url': real_url, 'header': json.dumps(self.header)}
             
             return {'parse': 1, 'playUrl': '', 'url': url, 'header': json.dumps(self.header)}
         except Exception as e:
-            print(f"播放地址解析失败: {e}")
+            if self.debug_mode:
+                print(f"播放地址解析失败: {e}")
             return {'parse': 0, 'playUrl': '', 'url': ''}
 
     def isVideoFormat(self, url):
@@ -505,13 +568,16 @@ class Spider(Spider):
         return any(url.lower().endswith(fmt) for fmt in video_formats)
 
     def manualVideoCheck(self):
-        print("手动视频检查")
+        if self.debug_mode:
+            print("手动视频检查")
         pass
 
     def localProxy(self, params):
-        print("本地代理请求")
+        if self.debug_mode:
+            print("本地代理请求")
         return None
 
     def destroy(self):
-        print("销毁爬虫实例")
+        if self.debug_mode:
+            print("销毁爬虫实例")
         pass
