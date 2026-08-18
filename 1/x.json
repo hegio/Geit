@@ -27,10 +27,10 @@
   ],
   "sites": [
     { 
-          "key": "色播聚合.py",
-          "name": "色播",
+          "key": "javrate影视.py",
+          "name": "javrate影视.py",
           "type": 3,
-          "api": "./X/py/色播聚合.py",
+          "api": "./py/javrate影视.py",
           "searchable": 1,
           "quickSearch": 1,
           "filterable": 0,
