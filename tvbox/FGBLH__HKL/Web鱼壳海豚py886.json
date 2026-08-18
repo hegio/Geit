@@ -34,14 +34,8 @@
             "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/芒果TV.py"
         },
         {
-            "key": "腾爱优b站",
-            "name": "🐬腾爱优芒B.js[追剧]",
-            "type": 3,
-            "api": "https://ghfast.top/https://raw.githubusercontent.com/uuy988/fgh998/refs/heads/main/js/腾爱优b站.js"
-        },
-        {
             "key": "腾爱优芒B",
-            "name": "🐬腾爱优芒B.py[追剧]",
+            "name": "🐬腾爱优芒B.py(关梯)[追剧]",
             "type": 3,
             "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/腾爱优芒B🍀TG @hshsjk9.py",
             "changeable": 0
@@ -159,6 +153,12 @@
             "quickSearch": 1
         },
         {
+            "key": "xyzkk",
+            "name": "🐬小鸭子看看.py[伦理]｜🔞",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/小鸭子看看.py"
+        },
+        {
             "key": "大师兄影视",
             "name": "🐬大师兄影视.py[伦理]｜🔞",
             "type": 3,
@@ -169,6 +169,36 @@
             "name": "🐬大米星球.py(关梯)[伦理]｜🔞",
             "type": 3,
             "api": "https://ghfast.top/https://raw.githubusercontent.com/uuy988/fgh998/refs/heads/main/py/大米星球🔞.py"
+        },
+        {
+            "key": "大象影视",
+            "name": "🐬大象影视.py(关梯)[伦理]｜🔞",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/uuy988/fgh998/refs/heads/main/py/大象影视🔞TG @hshsjk9.py"
+        },
+        {
+            "key": "大马猴",
+            "name": "🐬大马猴.py(关梯)[追剧]",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/大马猴🍀TG @hshsjk9.py"
+        },
+        {
+            "key": "pomo",
+            "name": "🐬pomo.py(关梯)[追剧]",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/pomo🍀TG @hshsjk9.py"
+        },
+        {
+            "key": "FoFo影院",
+            "name": "🐬FoFo影院.py(关梯)[追剧]",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/FoFo影院🍀TG @hshsjk9.py"
+        },
+        {
+            "key": "66大片网",
+            "name": "🐬66大片网.py(关梯)[追剧]",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/66大片网🍀TG @hshsjk9.py"
         },
         {
             "key": "枫叶影院",
@@ -628,12 +658,6 @@
             "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/映像星球.py"
         },
         {
-            "key": "xyzkk",
-            "name": "🐬小鸭子看看.py 有🔞[追剧]",
-            "type": 3,
-            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/小鸭子看看.py"
-        },
-        {
             "key": "cjjh",
             "name": "🐬采集聚合.py[追剧]",
             "type": 3,
@@ -662,6 +686,12 @@
             "name": "🐬青空次元.py[动漫]",
             "type": 3,
             "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/青空次元🍀TG @hshsjk9.py"
+        },
+        {
+            "key": "共和国动漫",
+            "name": "🐬共和国动漫.py(关梯)[动漫]",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/共和国动漫🍀TG @hshsjk9.py"
         },
         {
             "key": "短剧巴士",
@@ -896,6 +926,12 @@
             "name": "🐬有声骚麦.py🔞[成人听书]",
             "type": 3,
             "api": "https://ghfast.top/https://raw.githubusercontent.com/uuy988/fgh998/refs/heads/main/py/有声骚麦🔞.py"
+        },
+        {
+            "key": "hqg",
+            "name": "🐬hqg.py[成人]｜🔞",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/uuy988/fgh998/refs/heads/main/py/hqg🔞TG @hshsjk9.py"
         },
         {
             "key": "小涩界",

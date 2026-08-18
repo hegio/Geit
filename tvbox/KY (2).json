@@ -32,11 +32,44 @@
           "changeable": 1,
           "playerType": 2
         },
-		 { 
-          "key": "青禾影视.py",
-          "name": "青禾影视.py",
+		{ 
+          "key": "太迷影视.py",
+          "name": "太迷影视.py",
           "type": 3,
-          "api": "./py/青禾影视.py",
+          "api": "./py/太迷影视.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "太迷影视",
+          "name": "太迷视.py",
+          "type": 1,
+          "api": "https://m.tai2.lol/api.php/provide/vod/",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		 { 
+          "key": "高清影视.py",
+          "name": "高清影视.py",
+          "type": 3,
+          "api": "./py/高清影视.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "huangguoai.py",
+          "name": "huangguoai.py",
+          "type": 3,
+          "api": "./py/huangguoai.py",
           "searchable": 1,
           "quickSearch": 1,
           "filterable": 0,

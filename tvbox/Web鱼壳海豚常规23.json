@@ -135,81 +135,94 @@
             "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/油管直播.py"
         },
         {
+            "key": "pomo",
+            "name": "🐬pomo.py(关梯)[追剧]",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/pomo🍀TG @hshsjk9.py"
+        },
+        {
+            "key": "大马猴",
+            "name": "🐬大马猴.py(关梯)[追剧]",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/大马猴🍀TG @hshsjk9.py"
+        },
+        {
+            "key": "FoFo影院",
+            "name": "🐬FoFo影院.py(关梯)[追剧]",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/FoFo影院🍀TG @hshsjk9.py"
+        },
+        {
+            "key": "66大片网",
+            "name": "🐬66大片网.py(关梯)[追剧]",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/66大片网🍀TG @hshsjk9.py"
+        },
+        {
             "key": "泡泡影院",
             "name": "🐬泡泡影院.py[追剧]",
             "type": 3,
-            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/泡泡影院🍀TG @hshsjk9.py",
-            "changeable": 0
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/泡泡影院🍀TG @hshsjk9.py"
         },
         {
             "key": "楓林網",
             "name": "🐬楓林網.py(关梯)[追剧]",
             "type": 3,
-            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/楓林網🍀TG @hshsjk9.py",
-            "changeable": 0
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/楓林網🍀TG @hshsjk9.py"
         },
         {
             "key": "草莓影视",
             "name": "🐬草莓影视.py(关梯)[追剧]",
             "type": 3,
-            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/草莓影视🍀TG @hshsjk9.py",
-            "changeable": 0
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/草莓影视🍀TG @hshsjk9.py"
         },
         {
             "key": "八戒影视",
             "name": "🐬八戒影视.py[追剧]",
             "type": 3,
-            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/八戒影视🍀TG @hshsjk9.py",
-            "changeable": 0
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/八戒影视🍀TG @hshsjk9.py"
         },
         {
             "key": "30剧集网",
             "name": "🐬30剧集网.py(关梯)[追剧]",
             "type": 3,
-            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/30剧集网🍀TG @hshsjk9.py",
-            "changeable": 0
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/30剧集网🍀TG @hshsjk9.py"
         },
         {
             "key": "宅男影视",
             "name": "🐬宅男影视.py(关梯)[追剧]",
             "type": 3,
-            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/宅男影视🍀TG @hshsjk9.py",
-            "changeable": 0
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/宅男影视🍀TG @hshsjk9.py"
         },
         {
             "key": "看剧AI",
             "name": "🐬看剧AI.py(关梯)[追剧]",
             "type": 3,
-            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/看剧AI🍀TG @hshsjk9.py",
-            "changeable": 0
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/看剧AI🍀TG @hshsjk9.py"
         },
         {
             "key": "高清点播",
             "name": "🐬高清点播.py(关梯[追剧]",
             "type": 3,
-            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/高清点播🍀TG @hshsjk9.py",
-            "changeable": 0
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/高清点播🍀TG @hshsjk9.py"
         },
         {
             "key": "vidhub",
             "name": "🐬vidhub.py(关梯)[追剧]",
             "type": 3,
-            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/vidhub🍀TG @hshsjk9.py",
-            "changeable": 0
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/vidhub🍀TG @hshsjk9.py"
         },
         {
             "key": "枫叶4K",
             "name": "🐬[追剧]枫叶4K.py(关梯)[追剧]",
             "type": 3,
-            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/枫叶4K.py",
-            "changeable": 0
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/枫叶4K.py"
         },
         {
             "key": "追影",
             "name": "🐬追影.py[追剧]",
             "type": 3,
-            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/追影.py",
-            "changeable": 0
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/追影.py"
         },
         {
             "key": "网飞TV",
@@ -765,6 +778,12 @@
             "name": "🐬青空次元.py[动漫]",
             "type": 3,
             "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/青空次元🍀TG @hshsjk9.py"
+        },
+        {
+            "key": "共和国动漫",
+            "name": "🐬共和国动漫.py(关梯)[动漫]",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/共和国动漫🍀TG @hshsjk9.py"
         },
         {
             "key": "短剧巴士",
