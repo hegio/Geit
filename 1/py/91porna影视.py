@@ -180,6 +180,13 @@ class Spider(BaseSpider):
                 continue
         return raw.decode('utf-8', 'ignore')
 
+    def _fix_cover(self, url):
+        """封面走 localProxy 中转, 修正 CDN 返回的 binary/octet-stream 为 image/jpeg。"""
+        if not url or not url.startswith('http'):
+            return url
+        qs = urllib.parse.urlencode({'do': 'py', 'name': self.getName(), 'url': url})
+        return f'http://127.0.0.1:9978/proxy?{qs}'
+
     def _abs(self, url):
         """补全相对 URL，并把封面域名映射到可用域名。"""
         if not url:
@@ -450,7 +457,7 @@ class Spider(BaseSpider):
             items.append({
                 'vod_id': vkey,
                 'vod_name': name[:200],
-                'vod_pic': pic,
+                'vod_pic': self._fix_cover(pic),
                 'vod_remarks': remarks[:80],
             })
         except Exception as ex:
@@ -632,7 +639,7 @@ class Spider(BaseSpider):
         return {
             'vod_id': vid,
             'vod_name': title[:200],
-            'vod_pic': pic,
+            'vod_pic': self._fix_cover(pic),
             'type_name': type_name[:80],
             'vod_year': year,
             'vod_area': '',
@@ -814,46 +821,67 @@ class Spider(BaseSpider):
     # ============================ 本地代理 (封面回源) ============================
     def localProxy(self, param):
         """
-        TVBox 客户端通过 /proxy?url=... 调用此方法回源封面/海报。
+        TVBox 客户端通过 /proxy?do=py&name=xxx&url=xxx 调用此方法回源封面/海报。
+        CDN 返回 binary/octet-stream, 需修正为正确的 image MIME 类型。
         返回 [status_code, content_type, body_bytes]。
         """
         try:
-            if isinstance(param, dict):
-                url = param.get('url') or ''
-            else:
-                url = str(param or '')
-                if 'url=' in url and url.startswith('http'):
-                    q = urllib.parse.parse_qs(urllib.parse.urlparse(url).query)
-                    if q.get('url'):
-                        url = q['url'][0]
-                else:
-                    m = re.search(r'[?&]url=([^&]+)', url)
-                    if m:
-                        url = urllib.parse.unquote(m.group(1))
-            if not url.startswith('http'):
+            url = self._extract_proxy_url(param)
+            if not url or not url.startswith('http'):
                 return None
-            target = url
-            req = urllib.request.Request(target, headers={
+            req = urllib.request.Request(url, headers={
                 'User-Agent': self.headers['User-Agent'],
-                'Referer': self.host + '/',
             })
-            if _ssl_context:
-                try:
-                    with urllib.request.urlopen(req, timeout=20, context=_ssl_context) as r:
-                        return [200, r.headers.get('Content-Type', 'image/jpeg'), r.read()]
-                except Exception:
-                    req2 = urllib.request.Request(target, headers={
-                        'User-Agent': self.headers['User-Agent'],
-                        'Referer': self.host + '/',
-                    })
-                    with urllib.request.urlopen(req2, timeout=20) as r:
-                        return [200, r.headers.get('Content-Type', 'image/jpeg'), r.read()]
-            else:
-                with urllib.request.urlopen(req, timeout=20) as r:
-                    return [200, r.headers.get('Content-Type', 'image/jpeg'), r.read()]
+            ctx = _ssl_context or ssl._create_unverified_context()
+            with urllib.request.urlopen(req, timeout=20, context=ctx) as r:
+                ct = r.headers.get('Content-Type', '')
+                body = r.read()
+            # 修正 Content-Type: CDN 返回 binary/octet-stream, TVBox 不认
+            if not ct or 'octet-stream' in ct or not ct.startswith('image/'):
+                ct = self._guess_image_mime(url)
+            return [200, ct, body]
         except Exception as e:
             self._log(f'localProxy 失败: {e}')
             return None
+
+    @staticmethod
+    def _extract_proxy_url(param):
+        """从 localProxy 参数中提取目标 url。"""
+        if isinstance(param, dict):
+            for k in ('url', 'pic', 'img', 'src', 'image', 'href', 'link', 'path', 'uri', 'u'):
+                v = param.get(k)
+                if v:
+                    if isinstance(v, list) and v:
+                        v = v[0]
+                    return str(v)
+            for vv in param.values():
+                if isinstance(vv, str) and vv.startswith('http'):
+                    return vv
+        elif isinstance(param, str):
+            if 'url=' in param:
+                q = urllib.parse.parse_qs(urllib.parse.urlparse(param).query)
+                if q.get('url'):
+                    return q['url'][0]
+                m = re.search(r'[?&]url=([^&]+)', param)
+                if m:
+                    return urllib.parse.unquote(m.group(1))
+            if param.startswith('http'):
+                return param
+        return ''
+
+    @staticmethod
+    def _guess_image_mime(url):
+        """根据 URL 扩展名推断 image MIME 类型。"""
+        low = url.lower().split('?')[0]
+        ext_map = {
+            '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg',
+            '.png': 'image/png', '.gif': 'image/gif',
+            '.webp': 'image/webp', '.bmp': 'image/bmp',
+        }
+        for ext, mt in ext_map.items():
+            if low.endswith(ext):
+                return mt
+        return 'image/jpeg'
 
 
 # ======================================================================
