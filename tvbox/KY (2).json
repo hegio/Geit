@@ -58,7 +58,7 @@
           "key": "咕咕资源.py",
           "name": "咕咕资源.py",
           "type": 3,
-          "api": "./py/gugu3.py",
+          "api": "./py/咕咕番.py",
           "searchable": 1,
           "quickSearch": 1,
           "filterable": 0,
