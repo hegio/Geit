@@ -33,6 +33,50 @@
           "playerType": 2
         },
 		{ 
+          "key": "哈密AV影视.py",
+          "name": "哈密AV影视.py",
+          "type": 3,
+          "api": "./X/py/哈密AV影视.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "临爱.py",
+          "name": "临爱",
+          "type": 3,
+          "api": "./py/临爱.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "咕咕资源.py",
+          "name": "咕咕资源.py",
+          "type": 3,
+          "api": "./py/gugu3.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "骚火电影.py",
+          "name": "骚火电影.py",
+          "type": 3,
+          "api": "./py/骚火电影.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
           "key": "太迷影视.py",
           "name": "太迷影视.py",
           "type": 3,
@@ -43,17 +87,7 @@
           "changeable": 1,
           "playerType": 2
         },
-		{ 
-          "key": "太迷影视",
-          "name": "太迷视.py",
-          "type": 1,
-          "api": "https://m.tai2.lol/api.php/provide/vod/",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 0,
-          "changeable": 1,
-          "playerType": 2
-        },
+		
 		 { 
           "key": "高清影视.py",
           "name": "高清影视.py",
@@ -66,10 +100,10 @@
           "playerType": 2
         },
 		{ 
-          "key": "huangguoai.py",
-          "name": "huangguoai.py",
+          "key": "黄果AI影视.py",
+          "name": "黄果AI影视",
           "type": 3,
-          "api": "./py/huangguoai.py",
+          "api": "./X/py/黄果AI影视.py",
           "searchable": 1,
           "quickSearch": 1,
           "filterable": 0,
