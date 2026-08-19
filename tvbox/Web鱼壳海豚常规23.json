@@ -135,16 +135,34 @@
             "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/油管直播.py"
         },
         {
-            "key": "pomo",
-            "name": "🐬pomo.py(关梯)[追剧]",
+            "key": "刷不停短剧",
+            "name": "🐬刷不停短剧.py(关梯)[追剧]",
             "type": 3,
-            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/pomo🍀TG @hshsjk9.py"
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/刷不停短剧🍀TG @hshsjk9.py"
+        },
+        {
+            "key": "飞快TV",
+            "name": "🐬飞快TV.py(关梯)[追剧]",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/飞快TV🍀TG @hshsjk9.py"
+        },
+        {
+            "key": "Auete影视",
+            "name": "🐬Auete影视.py(关梯)[追剧]",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/Auete影视🍀TG @hshsjk9.py"
         },
         {
             "key": "大马猴",
             "name": "🐬大马猴.py(关梯)[追剧]",
             "type": 3,
             "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/大马猴🍀TG @hshsjk9.py"
+        },
+        {
+            "key": "pomo",
+            "name": "🐬pomo.py(关梯)[追剧]",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/pomo🍀TG @hshsjk9.py"
         },
         {
             "key": "FoFo影院",
@@ -857,6 +875,12 @@
             "name": "🐬275听书.py[听书]",
             "type": 3,
             "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/275听书.py"
+        },
+        {
+            "key": "易听书网",
+            "name": "🐬[听书]易听书网(关梯).py",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/易听书网🍀TG @hshsjk9.py"
         },
         {
             "key": "kwms",

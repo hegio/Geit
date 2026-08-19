@@ -1236,6 +1236,17 @@
       "playerType": 2
     },
     {
+      "key": "Auete影视🍀TG @hshsjk9.py",
+      "name": "Auete影视🍀TG @hshsjk9.py",
+      "type": 3,
+      "api": "./py/Auete影视🍀TG @hshsjk9.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
       "key": "BadNews.py",
       "name": "BadNews.py",
       "type": 3,
@@ -2072,6 +2083,17 @@
       "playerType": 2
     },
     {
+      "key": "刷不停短剧🍀TG @hshsjk9.py",
+      "name": "刷不停短剧🍀TG @hshsjk9.py",
+      "type": 3,
+      "api": "./py/刷不停短剧🍀TG @hshsjk9.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
       "key": "剧OK.py",
       "name": "剧OK.py",
       "type": 3,
@@ -2736,6 +2758,17 @@
       "name": "教授.py",
       "type": 3,
       "api": "./py/教授.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
+      "key": "易听书网🍀TG @hshsjk9.py",
+      "name": "易听书网🍀TG @hshsjk9.py",
+      "type": 3,
+      "api": "./py/易听书网🍀TG @hshsjk9.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
@@ -3869,6 +3902,17 @@
       "name": "韩小圈.py",
       "type": 3,
       "api": "./py/韩小圈.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
+      "key": "飞快TV🍀TG @hshsjk9.py",
+      "name": "飞快TV🍀TG @hshsjk9.py",
+      "type": 3,
+      "api": "./py/飞快TV🍀TG @hshsjk9.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,

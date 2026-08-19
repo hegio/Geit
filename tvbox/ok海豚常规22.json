@@ -88,6 +88,24 @@
             "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/油管.py"
         },
         {
+            "key": "刷不停短剧",
+            "name": "🐬[追剧]刷不停短剧.py(关梯)",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/刷不停短剧🍀TG @hshsjk9.py"
+        },
+        {
+            "key": "飞快TV",
+            "name": "🐬[追剧]飞快TV.py(关梯)",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/飞快TV🍀TG @hshsjk9.py"
+        },
+        {
+            "key": "Auete影视",
+            "name": "🐬[追剧]Auete影视.py(关梯)",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/Auete影视🍀TG @hshsjk9.py"
+        },
+        {
             "key": "大马猴",
             "name": "🐬[追剧]大马猴.py(关梯)",
             "type": 3,
@@ -791,6 +809,12 @@
             "name": "🐬[听书]275听书.py",
             "type": 3,
             "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/275听书.py"
+        },
+        {
+            "key": "易听书网",
+            "name": "🐬[听书]易听书网(关梯).py",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/易听书网🍀TG @hshsjk9.py"
         },
         {
             "key": "枫叶音乐",
