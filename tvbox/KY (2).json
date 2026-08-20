@@ -32,6 +32,28 @@
           "changeable": 1,
           "playerType": 2
         },
+		 { 
+          "key": "优优影视",
+          "name": "优优影视",
+          "type": 3,
+          "api": "./py/优优影视.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "6房影视.py",
+          "name": "6房影视.py",
+          "type": 3,
+          "api": "./py/6房影视.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
 		{ 
           "key": "哈密AV影视.py",
           "name": "哈密AV影视.py",
@@ -55,8 +77,8 @@
           "playerType": 2
         },
 		{ 
-          "key": "咕咕资源.py",
-          "name": "咕咕资源.py",
+          "key": "咕咕番资源.py",
+          "name": "咕咕番",
           "type": 3,
           "api": "./py/咕咕番.py",
           "searchable": 1,
