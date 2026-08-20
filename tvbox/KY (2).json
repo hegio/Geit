@@ -32,6 +32,39 @@
           "changeable": 1,
           "playerType": 2
         },
+		{ 
+          "key": "不卡影院.py",
+          "name": "不卡影院.py",
+          "type": 3,
+          "api": "./py/不卡影院.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "每日大赛mrds66.py",
+          "name": "每日大赛",
+          "type": 3,
+          "api": "./X/py/每日大赛.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "yese影视.py",
+          "name": "夜色影视.py",
+          "type": 3,
+          "api": "./X/py/夜色影视.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
 		 { 
           "key": "优优影视",
           "name": "优优影视",
