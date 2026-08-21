@@ -135,6 +135,42 @@
             "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/油管直播.py"
         },
         {
+            "key": "影视大全",
+            "name": "🐬影视大全.py(关梯)[追剧]",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/影视大全🍀TG @hshsjk9.py"
+        },
+        {
+            "key": "一起影视",
+            "name": "🐬一起影视.py[追剧]",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/一起影视🍀TG @hshsjk9.py"
+        },
+        {
+            "key": "仙腾影院",
+            "name": "🐬仙腾影院.py(关梯)[追剧]",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/仙腾影院🍀TG @hshsjk9.py"
+        },
+        {
+            "key": "看戏影视",
+            "name": "🐬看戏影视.py[追剧]",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/看戏影视🍀TG @hshsjk9.py"
+        },
+        {
+            "key": "百花影院",
+            "name": "🐬百花影院.py[追剧](关梯)",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/百花影院🍀TG @hshsjk9.py"
+        },
+        {
+            "key": "VIP兔",
+            "name": "🐬VIP兔.py[追剧]",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/VIP兔🍀TG @hshsjk9.py"
+        },
+        {
             "key": "刷不停短剧",
             "name": "🐬刷不停短剧.py(关梯)[追剧]",
             "type": 3,
@@ -881,6 +917,24 @@
             "name": "🐬[听书]易听书网(关梯).py",
             "type": 3,
             "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/易听书网🍀TG @hshsjk9.py"
+        },
+        {
+            "key": "音乐聚合",
+            "name": "🐬音乐聚合.py[音乐]",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/音乐聚合🍀TG @hshsjk9.py"
+        },
+        {
+            "key": "千千音乐",
+            "name": "🐬千千音乐.py[音乐]",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/千千音乐🍀TG @hshsjk9.py"
+        },
+        {
+            "key": "枫叶音乐",
+            "name": "🐬[音乐]枫叶音乐.py",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/枫叶音乐.py"
         },
         {
             "key": "kwms",
