@@ -33,6 +33,72 @@
           "playerType": 2
         },
 		{ 
+          "key": "影视大全.py",
+          "name": "影视大全.py",
+          "type": 3,
+          "api": "./py/影视大全.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "冷映影视.py",
+          "name": "冷映影视.py",
+          "type": 3,
+          "api": "./py/冷映影视.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "7mmtv影视.py",
+          "name": "7mmtv影视.py",
+          "type": 3,
+          "api": "./X/py/7mmtv影视.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "剧白白影视.py",
+          "name": "剧白白影视.py",
+          "type": 3,
+          "api": "./py/剧白白影视.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "龙腾影院.py",
+          "name": "龙腾影院.py",
+          "type": 3,
+          "api": "./py/龙腾影院.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "织机片库.py",
+          "name": "织机片库.py",
+          "type": 3,
+          "api": "./py/织机片库.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
           "key": "不卡影院.py",
           "name": "不卡影院.py",
           "type": 3,
@@ -45,7 +111,7 @@
         },
 		{ 
           "key": "每日大赛mrds66.py",
-          "name": "每日大赛",
+          "name": "每日大赛🪜",
           "type": 3,
           "api": "./X/py/每日大赛.py",
           "searchable": 1,
