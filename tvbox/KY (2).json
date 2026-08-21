@@ -33,10 +33,10 @@
           "playerType": 2
         },
 		{ 
-          "key": "影视大全.py",
-          "name": "影视大全.py",
+          "key": "火狼动漫.py",
+          "name": "火狼动漫.py",
           "type": 3,
-          "api": "./py/影视大全.py",
+          "api": "./py/火狼动漫.py",
           "searchable": 1,
           "quickSearch": 1,
           "filterable": 0,
