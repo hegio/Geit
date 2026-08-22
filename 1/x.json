@@ -37,6 +37,17 @@
           "changeable": 1,
           "playerType": 2
         },
+	  { 
+          "key": "7mmtv",
+          "name": "7mmtv",
+          "type": 3,
+          "api": "./py/7mmtv.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
     { 
           "key": "javrate影视.py",
           "name": "javrate影视.py",
