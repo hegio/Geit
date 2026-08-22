@@ -38,10 +38,10 @@
           "playerType": 2
         },
 	  { 
-          "key": "7mmtv",
-          "name": "7mmtv",
+          "key": "javrate",
+          "name": "javrate",
           "type": 3,
-          "api": "./py/7mmtv.py",
+          "api": "./py/javrate.py",
           "searchable": 1,
           "quickSearch": 1,
           "filterable": 0,
