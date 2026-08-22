@@ -1324,6 +1324,17 @@
       "playerType": 2
     },
     {
+      "key": "EcoHub影视🍀TG @hshsjk9.py",
+      "name": "EcoHub影视🍀TG @hshsjk9.py",
+      "type": 3,
+      "api": "./py/EcoHub影视🍀TG @hshsjk9.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
       "key": "FGBLH__HKL__腾爱优芒B🍀TG @hshsjk9.py",
       "name": "FGBLH__HKL__腾爱优芒B🍀TG @hshsjk9.py",
       "type": 3,
@@ -1581,6 +1592,17 @@
       "name": "VIP兔🍀TG @hshsjk9.py",
       "type": 3,
       "api": "./py/VIP兔🍀TG @hshsjk9.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
+      "key": "VS影院🍀TG @hshsjk9.py",
+      "name": "VS影院🍀TG @hshsjk9.py",
+      "type": 3,
+      "api": "./py/VS影院🍀TG @hshsjk9.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
@@ -3319,6 +3341,17 @@
       "name": "瓜子APP.py",
       "type": 3,
       "api": "./py/瓜子APP.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
+      "key": "电影侠🍀TG @hshsjk9.py",
+      "name": "电影侠🍀TG @hshsjk9.py",
+      "type": 3,
+      "api": "./py/电影侠🍀TG @hshsjk9.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,

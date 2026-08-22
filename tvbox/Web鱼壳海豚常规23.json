@@ -135,6 +135,24 @@
             "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/油管直播.py"
         },
         {
+            "key": "VS影院",
+            "name": "🐬VS影院.py[追剧]",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/VS影院🍀TG @hshsjk9.py"
+        },
+        {
+            "key": "EcoHub影视",
+            "name": "🐬EcoHub影视.py[追剧]",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/EcoHub影视🍀TG @hshsjk9.py"
+        },
+        {
+            "key": "电影侠",
+            "name": "🐬电影侠.py[追剧]",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/电影侠🍀TG @hshsjk9.py"
+        },
+        {
             "key": "影视大全",
             "name": "🐬影视大全.py(关梯)[追剧]",
             "type": 3,
