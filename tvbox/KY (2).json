@@ -33,6 +33,28 @@
           "playerType": 2
         },
 		{ 
+          "key": "avvvvw.py",
+          "name": "avvvvw.py",
+          "type": 3,
+          "api": "./X/py/avvvvw.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "大海影视",
+          "name": "大海影视",
+          "type": 3,
+          "api": "./py/大海影视.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
           "key": "0574caiyi影视",
           "name": "0574caiyi影视",
           "type": 3,
