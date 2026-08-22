@@ -33,6 +33,17 @@
           "playerType": 2
         },
 		{ 
+          "key": "0574caiyi影视",
+          "name": "0574caiyi影视",
+          "type": 3,
+          "api": "./py/0574caiyi影视.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
           "key": "火狼动漫.py",
           "name": "火狼动漫.py",
           "type": 3,
@@ -58,7 +69,7 @@
           "key": "7mmtv影视.py",
           "name": "7mmtv影视.py",
           "type": 3,
-          "api": "./X/py/7mmtv影视.py",
+          "api": "./X/py/7mmtv.py",
           "searchable": 1,
           "quickSearch": 1,
           "filterable": 0,
