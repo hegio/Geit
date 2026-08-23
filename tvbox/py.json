@@ -2248,6 +2248,17 @@
       "playerType": 2
     },
     {
+      "key": "厂长资源🍀TG @hshsjk9.py",
+      "name": "厂长资源🍀TG @hshsjk9.py",
+      "type": 3,
+      "api": "./py/厂长资源🍀TG @hshsjk9.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
       "key": "可可影视.py",
       "name": "可可影视.py",
       "type": 3,
