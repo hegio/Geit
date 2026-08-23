@@ -2347,6 +2347,17 @@
       "playerType": 2
     },
     {
+      "key": "多多影视🍀TG @hshsjk9.py",
+      "name": "多多影视🍀TG @hshsjk9.py",
+      "type": 3,
+      "api": "./py/多多影视🍀TG @hshsjk9.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
       "key": "多瑙影院.py",
       "name": "多瑙影院.py",
       "type": 3,
@@ -2501,6 +2512,17 @@
       "playerType": 2
     },
     {
+      "key": "好好看🍀TG @hshsjk9.py",
+      "name": "好好看🍀TG @hshsjk9.py",
+      "type": 3,
+      "api": "./py/好好看🍀TG @hshsjk9.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
       "key": "好莱污影院🔞.py",
       "name": "好莱污影院🔞.py",
       "type": 3,
@@ -2626,17 +2648,6 @@
       "name": "山楂影视.py",
       "type": 3,
       "api": "./py/山楂影视.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "布布追剧.py",
-      "name": "布布追剧.py",
-      "type": 3,
-      "api": "./py/布布追剧.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
@@ -4034,6 +4045,17 @@
       "name": "飞快TV🍀TG @hshsjk9.py",
       "type": 3,
       "api": "./py/飞快TV🍀TG @hshsjk9.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
+      "key": "飞流视频🍀TG @hshsjk9.py",
+      "name": "飞流视频🍀TG @hshsjk9.py",
+      "type": 3,
+      "api": "./py/飞流视频🍀TG @hshsjk9.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,

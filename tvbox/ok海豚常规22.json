@@ -88,6 +88,24 @@
             "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/油管.py"
         },
         {
+            "key": "多多影视",
+            "name": "🐬[追剧]多多影视.py",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/多多影视🍀TG @hshsjk9.py"
+        },
+        {
+            "key": "飞流视频",
+            "name": "🐬[追剧]飞流视频.py(关梯)",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/飞流视频🍀TG @hshsjk9.py"
+        },
+        {
+            "key": "好好看",
+            "name": "🐬[追剧]好好看.py",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/好好看🍀TG @hshsjk9.py"
+        },
+        {
             "key": "VS影院",
             "name": "🐬[追剧]VS影院.py",
             "type": 3,
@@ -453,19 +471,6 @@
             "name": "🐬[追剧]神马影视.py(关梯)",
             "type": 3,
             "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/神马影视.py"
-        },
-        {
-            "key": "bbzj",
-            "name": "🐬[追剧]布布追剧.py",
-            "type": 3,
-            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/布布追剧.py"
-        },
-        {
-            "key": "布布追剧",
-            "name": "🐬[追剧]布布追剧.js",
-            "type": 3,
-            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/jar_js/布布追剧.js",
-            "changeable": 0
         },
         {
             "key": "hxq",

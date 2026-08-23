@@ -33,6 +33,61 @@
           "playerType": 2
         },
 		{ 
+          "key": "咕噜咕噜影视",
+          "name": "咕噜咕噜影视",
+          "type": 3,
+          "api": "./py/咕噜咕噜影视.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "首播网",
+          "name": "首播网",
+          "type": 3,
+          "api": "./py/首播网.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "78电影网",
+          "name": "78电影网",
+          "type": 3,
+          "api": "./py/78电影网.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "免费影视网",
+          "name": "免费影视网",
+          "type": 3,
+          "api": "./py/免费影视网.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "adproinc影视网",
+          "name": "adproinc影视网",
+          "type": 3,
+          "api": "./py/adproinc影视网.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
           "key": "avvvvw.py",
           "name": "avvvvw.py",
           "type": 3,
