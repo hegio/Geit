@@ -33,6 +33,17 @@
           "playerType": 2
         },
 		{ 
+          "key": "XX02",
+          "name": "XX02",
+          "type": 3,
+          "api": "./X/py/XX02.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
           "key": "XX01",
           "name": "XX01",
           "type": 3,
@@ -44,10 +55,10 @@
           "playerType": 2
         },
 		{ 
-          "key": "小蜜蜂影院",
-          "name": "小蜜蜂影院",
+          "key": "ancarett影视",
+          "name": "ancarett影视",
           "type": 3,
-          "api": "./py/小蜜蜂影院.py",
+          "api": "./py/ancarett影视.py",
           "searchable": 1,
           "quickSearch": 1,
           "filterable": 0,
