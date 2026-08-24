@@ -33,8 +33,63 @@
           "playerType": 2
         },
 		{ 
+          "key": "XX01",
+          "name": "XX01",
+          "type": 3,
+          "api": "./X/py/XX01.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "小蜜蜂影院",
+          "name": "小蜜蜂影院",
+          "type": 3,
+          "api": "./py/小蜜蜂影院.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "剧圈圈",
+          "name": "剧圈圈",
+          "type": 3,
+          "api": "./py/剧圈圈.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "火花影视",
+          "name": "火花影视",
+          "type": 3,
+          "api": "./py/火花影视.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "火花电影网.py",
+          "name": "火花电影网.py",
+          "type": 3,
+          "api": "./py/火花电影网.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
           "key": "vidhub",
-          "name": "vidhub",
+          "name": "清映",
           "type": 3,
           "api": "./py/vidhub.py",
           "searchable": 1,
