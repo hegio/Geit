@@ -33,10 +33,10 @@
           "playerType": 2
         },
 		{ 
-          "key": "XX02",
-          "name": "XX02",
+          "key": "疯狂影视",
+          "name": "疯狂影视",
           "type": 3,
-          "api": "./X/py/XX02.py",
+          "api": "./py/疯狂影视.py",
           "searchable": 1,
           "quickSearch": 1,
           "filterable": 0,
