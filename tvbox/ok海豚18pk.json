@@ -17,6 +17,12 @@
             "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/小鸭子看看.py"
         },
         {
+            "key": "青蛙影视",
+            "name": "🐬[伦理]青蛙影视.py(关梯)｜🔞",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/uuy988/fgh998/refs/heads/main/py/青蛙影视🔞TG @hshsjk9.py"
+        },
+        {
             "key": "向上影院",
             "name": "🐬[伦理]向上影院.py｜🔞",
             "type": 3,
@@ -48,7 +54,7 @@
         },
         {
             "key": "韩剧巴士",
-            "name": "🐬[伦理]韩剧巴士.py",
+            "name": "🐬[伦理]韩剧巴士.py🔞",
             "type": 3,
             "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/py/韩剧巴士🔞.py"
         },
@@ -361,6 +367,12 @@
             "name": "🐬[成人]成人文化馆.py(羊壳观看)｜🔞",
             "type": 3,
             "api": "https://ghfast.top/https://raw.githubusercontent.com/uuy988/fgh998/refs/heads/main/py/成人文化馆🔞TG @hshsjk9.py"
+        },
+        {
+            "key": "国色天香",
+            "name": "🐬[成人]国色天香.py｜🔞",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/uuy988/fgh998/refs/heads/main/py/国色天香🔞TG @hshsjk9.py"
         },
         {
             "key": "气泡视频",
