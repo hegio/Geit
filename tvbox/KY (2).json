@@ -33,6 +33,28 @@
           "playerType": 2
         },
 		{ 
+          "key": "IMXVOD影视",
+          "name": "IMXVOD影视",
+          "type": 3,
+          "api": "./py/IMXVOD影视.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "笔盒影视",
+          "name": "笔盒影视",
+          "type": 3,
+          "api": "./X/py/笔盒影视.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
           "key": "疯狂影视",
           "name": "疯狂影视",
           "type": 3,
