@@ -2083,6 +2083,17 @@
       "playerType": 2
     },
     {
+      "key": "兔岛影院🍀TG @hshsjk9.py",
+      "name": "兔岛影院🍀TG @hshsjk9.py",
+      "type": 3,
+      "api": "./py/兔岛影院🍀TG @hshsjk9.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
       "key": "八天电影.py",
       "name": "八天电影.py",
       "type": 3,
@@ -4056,6 +4067,17 @@
       "name": "陌陌一夜情🔞.py",
       "type": 3,
       "api": "./py/陌陌一夜情🔞.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
+      "key": "青牛影视🍀TG @hshsjk9.py",
+      "name": "青牛影视🍀TG @hshsjk9.py",
+      "type": 3,
+      "api": "./py/青牛影视🍀TG @hshsjk9.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
