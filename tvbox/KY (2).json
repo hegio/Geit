@@ -44,6 +44,17 @@
           "playerType": 2
         },
 		{ 
+          "key": "51duanju",
+          "name": "51duanju",
+          "type": 3,
+          "api": "./X/py/51duanju.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
           "key": "蜜桃FC2",
           "name": "蜜桃FC2",
           "type": 3,
