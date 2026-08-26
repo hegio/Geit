@@ -1,6 +1,6 @@
 {
-  "updated": "2026-08-25 18:57 UTC",
-  "count": 395,
+  "updated": "2026-08-26 01:27 UTC",
+  "count": 394,
   "sources": [
     {
       "name": "ok海豚常规22.json",
@@ -61,11 +61,6 @@
       "name": "20251023002200-507c3e8aae.js",
       "raw": "https://raw.githubusercontent.com/yanghanhanyingshi/abcd/main/tvbox/20251023002200-507c3e8aae.js",
       "url": "https://cdn.jsdelivr.net/gh/yanghanhanyingshi/abcd@main/tvbox/20251023002200-507c3e8aae.js"
-    },
-    {
-      "name": "小新TV.txt",
-      "raw": "https://raw.githubusercontent.com/yanghanhanyingshi/abcd/main/tvbox/%E5%B0%8F%E6%96%B0TV.txt",
-      "url": "https://cdn.jsdelivr.net/gh/yanghanhanyingshi/abcd@main/tvbox/%E5%B0%8F%E6%96%B0TV.txt"
     },
     {
       "name": "test_channels_taiwan.m3u",
