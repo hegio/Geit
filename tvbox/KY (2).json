@@ -32,6 +32,61 @@
           "changeable": 1,
           "playerType": 2
         },
+		{ 
+          "key": "hjtv影视",
+          "name": "hjtv影视",
+          "type": 3,
+          "api": "./X/py/hjtv影视.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "萝莉聚合AV",
+          "name": "萝莉聚合AV",
+          "type": 3,
+          "api": "./X/py/萝莉聚合AV.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "黑料群",
+          "name": "黑料群",
+          "type": 3,
+          "api": "./X/py/黑料群.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "kelatv影视",
+          "name": "kelatv影视",
+          "type": 3,
+          "api": "./py/kelatv影视.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "hn122影视",
+          "name": "hn122影视",
+          "type": 3,
+          "api": "./py/hn122影视.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
 		 { 
           "key": "jygdc影视",
           "name": "jygdc影视",
