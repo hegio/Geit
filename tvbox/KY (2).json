@@ -44,6 +44,17 @@
           "playerType": 2
         },
 		{ 
+          "key": "萝莉聚合",
+          "name": "萝莉聚合",
+          "type": 3,
+          "api": "./X/py/萝莉聚合.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
           "key": "萝莉聚合AV",
           "name": "萝莉聚合AV",
           "type": 3,
