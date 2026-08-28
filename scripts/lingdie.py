@@ -4,6 +4,12 @@
 采集 lytvs.top 私有订阅配置（蝴蝶影视专属 Token 接口），并把订阅里引用的
 所有文件（spider jar、各站点 api / ext、壁纸、logo 等）一并镜像下载到 data/mirror/。
 
+反 403 设计：
+- 优先使用 curl_cffi 模拟 Chrome 的真实 TLS/JA3 指纹（urllib 的 TLS 指纹会被
+  源站 WAF 识别成脚本而 403）。
+- curl_cffi 不可用时回退到 urllib（此时对强风控站点大概率仍 403，仅作兜底）。
+- 支持 PROXY_URL 环境变量，当 GitHub Actions 的 IP 段被源站拉黑时走代理。
+
 安全约定：
 - Token 只允许通过环境变量 SUB_URL 传入（来自 GitHub Secrets），绝不硬编码。
 - 返回体不含 Token，可安全落盘 / 提交。
@@ -26,6 +32,8 @@ if not SUB_URL:
     print("ERROR: 缺少环境变量 SUB_URL（应在 GitHub Secrets 中配置完整订阅 URL）", file=sys.stderr)
     sys.exit(1)
 
+PROXY_URL = os.environ.get("PROXY_URL", "").strip()  # 可选：走代理规避 IP 封禁
+
 DATA_DIR = pathlib.Path("data")
 DATA_DIR.mkdir(exist_ok=True)
 HISTORY_DIR = DATA_DIR / "history"
@@ -40,11 +48,13 @@ HEADERS = {
     "User-Agent": UA,
     "Accept": "*/*",
     "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
-    "Accept-Encoding": "identity",
     "Referer": "https://sub.lytvs.top/",
     "DNT": "1",
     "Connection": "keep-alive",
     "Upgrade-Insecure-Requests": "1",
+    "Sec-Ch-Ua": '"Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"',
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": '"Windows"',
     "Sec-Fetch-Dest": "document",
     "Sec-Fetch-Mode": "navigate",
     "Sec-Fetch-Site": "none",
@@ -54,20 +64,18 @@ HEADERS = {
 # 不可下载的本地/占位地址
 SKIP_HOSTS = ("127.0.0.1", "localhost", "[::1]", "::1")
 
-# Content-Type -> 扩展名（用于 URL 没有扩展名时兜底）
-CT_EXT = {
-    "application/javascript": ".js",
-    "text/javascript": ".js",
-    "application/x-python": ".py",
-    "text/x-python": ".py",
-    "application/java-archive": ".jar",
-    "application/octet-stream": ".bin",
-    "image/jpeg": ".jpg",
-    "image/png": ".png",
-    "image/webp": ".webp",
-    "application/json": ".json",
-    "text/plain": ".txt",
-}
+# 是否启用 curl_cffi（模拟 Chrome TLS 指纹，绕过 WAF 对脚本指纹的 403）
+try:
+    from curl_cffi import requests as cffi_requests
+    _CURL_CFFI_ERR = None
+    USE_CURL_CFFI = True
+except Exception as e:  # 兜底到 urllib
+    cffi_requests = None
+    _CURL_CFFI_ERR = e
+    USE_CURL_CFFI = False
+
+print(f"[engine] 下载引擎: {'curl_cffi (Chrome TLS 指纹模拟)' if USE_CURL_CFFI else f'urllib (curl_cffi 不可用: {_CURL_CFFI_ERR}; 强风控站点可能仍 403)'}"
+      + (f" | 代理: {PROXY_URL}" if PROXY_URL else ""))
 
 
 def _safe_print(text: str, to=sys.stdout) -> None:
@@ -76,8 +84,8 @@ def _safe_print(text: str, to=sys.stdout) -> None:
         to.write(text + "\n")
     except UnicodeEncodeError:
         try:
-            encoded = text.encode(to.encoding or "utf-8", errors="replace").decode(to.encoding or "utf-8", errors="replace")
-            to.write(encoded + "\n")
+            enc = to.encoding or "utf-8"
+            to.write(text.encode(enc, errors="replace").decode(enc, errors="replace") + "\n")
         except Exception:
             to.write(text.encode("utf-8", errors="replace").decode("latin-1", errors="replace") + "\n")
     to.flush()
@@ -87,7 +95,6 @@ def normalize_url(url: str) -> str:
     """对 URL 的非 ASCII path 做 percent-encoding，避免中文路径崩 urllib。"""
     try:
         p = urllib.parse.urlparse(url)
-        # 先尝试 unquote，再重新 quote，避免双重编码
         path = urllib.parse.unquote(p.path)
         path = urllib.parse.quote(path.encode("utf-8"), safe="/%")
         query = urllib.parse.unquote(p.query)
@@ -97,25 +104,54 @@ def normalize_url(url: str) -> str:
         return url
 
 
-def fetch(url: str, timeout: int = 30, retries: int = 2) -> tuple[bytes, str]:
-    """带重试的 HTTP GET，返回 (body, content-type)。"""
+def _fetch_curl_cffi(url: str, timeout: int) -> tuple[bytes, str]:
+    proxies = {"http": PROXY_URL, "https": PROXY_URL} if PROXY_URL else None
+    r = cffi_requests.get(url, headers=HEADERS, impersonate="chrome",
+                          proxies=proxies, timeout=timeout, allow_redirects=True)
+    if r.status_code >= 400:
+        raise urllib.error.HTTPError(url, r.status_code, "curl_cffi http error", r.headers, None)
+    return r.content, r.headers.get("content-type", "")
+
+
+def _fetch_urllib(url: str, timeout: int) -> tuple[bytes, str]:
+    proxies = None
+    if PROXY_URL:
+        proxies = {"http": PROXY_URL, "https": PROXY_URL}
+    handler = urllib.request.ProxyHandler(proxies) if proxies else urllib.request.ProxyHandler()
+    opener = urllib.request.build_opener(handler)
+    req = urllib.request.Request(url, headers=HEADERS)
+    with opener.open(req, timeout=timeout) as resp:
+        return resp.read(), resp.headers.get("Content-Type", "")
+
+
+def fetch(url: str, timeout: int = 30, retries: int = 3) -> tuple[bytes, str]:
+    """带重试的 HTTP GET，优先 curl_cffi（Chrome 指纹），失败回退 urllib。返回 (body, content-type)。"""
     url = normalize_url(url)
     last_err = None
     for attempt in range(retries + 1):
-        req = urllib.request.Request(url, headers=HEADERS)
         try:
-            with urllib.request.urlopen(req, timeout=timeout) as resp:
-                return resp.read(), resp.headers.get("Content-Type", "")
+            if USE_CURL_CFFI:
+                try:
+                    return _fetch_curl_cffi(url, timeout)
+                except Exception as e:
+                    # 单次 curl_cffi 异常先尝试 urllib 兜底（引擎级可恢复错误）
+                    if not isinstance(e, urllib.error.HTTPError):
+                        _safe_print(f"  [warn] curl_cffi 失败，回退 urllib: {e}", to=sys.stderr)
+                        return _fetch_urllib(url, timeout)
+                    raise
+            else:
+                return _fetch_urllib(url, timeout)
         except urllib.error.HTTPError as e:
             last_err = e
-            if e.code in (403, 429, 500, 502, 503, 504) and attempt < retries:
-                time.sleep(1.5 * (attempt + 1))
+            code = getattr(e, "code", None)
+            if code in (403, 429, 500, 502, 503, 504) and attempt < retries:
+                time.sleep(2 ** attempt)  # 指数退避
                 continue
             raise
         except Exception as e:
             last_err = e
             if attempt < retries:
-                time.sleep(1.5 * (attempt + 1))
+                time.sleep(2 ** attempt)
                 continue
             raise last_err
     raise last_err
@@ -182,7 +218,7 @@ def mirror_assets(cfg: dict) -> tuple[int, int, int]:
         fname = safe_name(label, url)
         dest = MIRROR_DIR / fname
         try:
-            data, ct = fetch(url, timeout=60, retries=2)
+            data, ct = fetch(url, timeout=60, retries=3)
             dest.write_bytes(data)
             manifest[url] = {
                 "file": f"mirror/{fname}",
@@ -203,7 +239,11 @@ def mirror_assets(cfg: dict) -> tuple[int, int, int]:
 
 
 def main() -> int:
-    raw, ctype = fetch(SUB_URL, timeout=30, retries=2)
+    try:
+        raw, ctype = fetch(SUB_URL, timeout=30, retries=3)
+    except Exception as e:
+        _safe_print(f"ERROR: 采集订阅配置失败: {e}", to=sys.stderr)
+        return 1
 
     now = datetime.datetime.now(datetime.timezone.utc)
     stamp = now.strftime("%Y%m%d_%H%M%SZ")
