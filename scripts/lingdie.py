@@ -32,7 +32,8 @@ if not SUB_URL:
     print("ERROR: 缺少环境变量 SUB_URL（应在 GitHub Secrets 中配置完整订阅 URL）", file=sys.stderr)
     sys.exit(1)
 
-PROXY_URL = os.environ.get("PROXY_URL", "").strip()  # 可选：走代理规避 IP 封禁
+PROXY_URL = os.environ.get("PROXY_URL", "").strip()  # 可选：HTTP 代理地址（住宅代理用）
+WORKER_URL = os.environ.get("WORKER_URL", "").strip()  # 可选：Cloudflare Worker 中转 URL（绕 IP 封禁）
 
 DATA_DIR = pathlib.Path("data")
 DATA_DIR.mkdir(exist_ok=True)
@@ -74,8 +75,19 @@ except Exception as e:  # 兜底到 urllib
     _CURL_CFFI_ERR = e
     USE_CURL_CFFI = False
 
-print(f"[engine] 下载引擎: {'curl_cffi (Chrome TLS 指纹模拟)' if USE_CURL_CFFI else f'urllib (curl_cffi 不可用: {_CURL_CFFI_ERR}; 强风控站点可能仍 403)'}"
-      + (f" | 代理: {PROXY_URL}" if PROXY_URL else ""))
+print(
+    f"[engine] 下载路径: "
+    + (
+        f"Cloudflare Worker 中转 ({WORKER_URL})"
+        if WORKER_URL
+        else (
+            "curl_cffi (Chrome TLS 指纹模拟)"
+            if USE_CURL_CFFI
+            else f"urllib (curl_cffi 不可用: {_CURL_CFFI_ERR}; 强风控站点可能仍 403)"
+        )
+    )
+    + (f" | 代理: {PROXY_URL}" if PROXY_URL else "")
+)
 
 # curl_cffi 全局 Session：抓订阅接口时自动保存 Cookie，下载同域资源时自动带上
 _cffi_session = None
@@ -123,6 +135,40 @@ def _is_lytvs(url: str) -> bool:
     return host == "lytvs.top" or host.endswith(".lytvs.top")
 
 
+def _fetch_via_worker(url: str, timeout: int) -> tuple[bytes, str]:
+    """通过 Cloudflare Worker 中转拉取：请求从 Cloudflare Edge IP 出去，绕开 Actions IP 封禁。
+    Worker 脚本见 worker/worker.js；返回真实 HTTP status（透传源站）。"""
+    global _SESSION_COOKIES
+    encoded = urllib.parse.quote(url, safe="")
+    worker_endpoint = WORKER_URL.rstrip("/") + "/proxy?url=" + encoded
+    headers = dict(HEADERS)
+    if _is_lytvs(url):
+        headers["Referer"] = "https://lytvs.top/"
+    if _SESSION_COOKIES:
+        headers["Cookie"] = _SESSION_COOKIES
+    if USE_CURL_CFFI:
+        session = _get_cffi_session()
+        r = session.get(worker_endpoint, headers=headers, timeout=timeout, allow_redirects=True)
+        if r.status_code >= 400:
+            raise urllib.error.HTTPError(url, r.status_code, "worker proxy http error", r.headers, None)
+        # Worker 把 4xx/5xx 包成 200 + x-proxy-status 时也能识别
+        proxy_status = r.headers.get("x-proxy-status")
+        if proxy_status and int(proxy_status) >= 400:
+            raise urllib.error.HTTPError(url, int(proxy_status), "worker proxy upstream error", r.headers, None)
+        # 抓订阅接口时保存 Set-Cookie
+        sc = r.headers.get("set-cookie")
+        if sc and not _SESSION_COOKIES:
+            _SESSION_COOKIES = sc.split(";", 1)[0].strip()
+        return r.content, r.headers.get("content-type", "")
+    else:
+        req = urllib.request.Request(worker_endpoint, headers=headers)
+        with urllib.request.urlopen(req, timeout=timeout) as resp:
+            sc = resp.headers.get_all("Set-Cookie") or []
+            if sc and not _SESSION_COOKIES:
+                _SESSION_COOKIES = "; ".join(c.split(";", 1)[0].strip() for c in sc if c.strip())
+            return resp.read(), resp.headers.get("Content-Type", "")
+
+
 def _fetch_curl_cffi(url: str, timeout: int) -> tuple[bytes, str]:
     session = _get_cffi_session()
     if session is None:
@@ -161,11 +207,14 @@ def _fetch_urllib(url: str, timeout: int) -> tuple[bytes, str]:
 
 
 def fetch(url: str, timeout: int = 30, retries: int = 3) -> tuple[bytes, str]:
-    """带重试的 HTTP GET，优先 curl_cffi（Chrome 指纹），失败回退 urllib。返回 (body, content-type)。"""
+    """带重试的 HTTP GET。优先级：WORKER_URL（Cloudflare 中转）> curl_cffi > urllib。
+    返回 (body, content-type)。"""
     url = normalize_url(url)
     last_err = None
     for attempt in range(retries + 1):
         try:
+            if WORKER_URL:
+                return _fetch_via_worker(url, timeout)
             if USE_CURL_CFFI:
                 try:
                     return _fetch_curl_cffi(url, timeout)
