@@ -1,0 +1,43 @@
+name: 定时采集订阅配置
+
+on:
+  schedule:
+    # 每 6 小时跑一次（UTC 时间：00:00 / 06:00 / 12:00 / 18:00）
+    - cron: "0 */6 * * *"
+  workflow_dispatch: {}   # 允许在 Actions 页面手动触发
+
+permissions:
+  contents: write        # 需要写权限把采集结果提交回仓库
+
+jobs:
+  lingdie:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: 拉取仓库
+        uses: actions/checkout@v4
+
+      - name: 配置 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 运行采集脚本
+        env:
+          SUB_URL: ${{ secrets.SUB_URL }}   # 完整订阅 URL（含 token），存于仓库 Secrets
+        run: python scripts/lingdie.py
+
+      - name: 转换为 TVBox 订阅格式
+        run: python scripts/convert.py
+
+      - name: 提交采集结果
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A data/
+          if git diff --cached --quiet; then
+            echo "内容无变化，跳过提交"
+          else
+            git commit -m "chore: 自动采集 $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+            git push
+          fi
