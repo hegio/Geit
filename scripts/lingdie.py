@@ -20,6 +20,7 @@ import hashlib
 import json
 import os
 import pathlib
+import random
 import re
 import sys
 import time
@@ -146,15 +147,37 @@ def _fetch_via_worker(url: str, timeout: int) -> tuple[bytes, str]:
         headers["Referer"] = "https://lytvs.top/"
     if _SESSION_COOKIES:
         headers["Cookie"] = _SESSION_COOKIES
+
+    def _upstream_status_from_response(r):
+        """Worker 现在统一返回 200，并把源站状态放在 x-proxy-status。"""
+        ps = r.headers.get("x-proxy-status")
+        if ps:
+            try:
+                return int(ps)
+            except ValueError:
+                pass
+        # 兼容旧 Worker：如果 Worker 直接把源站状态作为 HTTP status 返回
+        return r.status_code
+
+    def _error_detail(r, code):
+        """把上游 4xx/5xx 的响应体前 200 字节解码出来，方便排查 WAF 返回的具体提示。"""
+        try:
+            body = r.content[:400]
+        except Exception:
+            body = b""
+        try:
+            text = body.decode("utf-8", errors="replace").replace("\n", " ")[:200]
+        except Exception:
+            text = repr(body[:200])
+        status_text = r.headers.get("x-proxy-status-text", "")
+        return f"worker upstream {code}{(' ' + status_text).rstrip()} | body: {text}"
+
     if USE_CURL_CFFI:
         session = _get_cffi_session()
         r = session.get(worker_endpoint, headers=headers, timeout=timeout, allow_redirects=True)
-        if r.status_code >= 400:
-            raise urllib.error.HTTPError(url, r.status_code, "worker proxy http error", r.headers, None)
-        # Worker 把 4xx/5xx 包成 200 + x-proxy-status 时也能识别
-        proxy_status = r.headers.get("x-proxy-status")
-        if proxy_status and int(proxy_status) >= 400:
-            raise urllib.error.HTTPError(url, int(proxy_status), "worker proxy upstream error", r.headers, None)
+        upstream = _upstream_status_from_response(r)
+        if upstream >= 400:
+            raise urllib.error.HTTPError(url, upstream, _error_detail(r, upstream), r.headers, None)
         # 抓订阅接口时保存 Set-Cookie
         sc = r.headers.get("set-cookie")
         if sc and not _SESSION_COOKIES:
@@ -302,9 +325,12 @@ def mirror_assets(cfg: dict) -> tuple[int, int, int]:
     manifest: dict = {}
     ok = fail = 0
     lytvs_fail = 0   # lytvs.top 自己的资源失败数（用于判断是否 IP 被封）
-    for label, url in assets:
+    for idx, (label, url) in enumerate(assets):
         fname = safe_name(label, url)
         dest = MIRROR_DIR / fname
+        # 下载之间加随机小延迟，降低被源站速率限制/并发风控的概率
+        if idx > 0:
+            time.sleep(random.uniform(0.3, 0.8))
         try:
             data, ct = fetch(url, timeout=60, retries=3)
             dest.write_bytes(data)
@@ -327,9 +353,11 @@ def mirror_assets(cfg: dict) -> tuple[int, int, int]:
     )
     if lytvs_fail > 0:
         _safe_print(
-            f"\n[提示] lytvs.top 自身资源失败 {lytvs_fail} 个，但第三方站点下载正常。"
-            f"这说明 lytvs.top 对当前出口 IP（GitHub Actions）做了封锁。"
-            f"请在仓库 Secrets 配置 PROXY_URL（住宅/移动代理）后重跑，即可绕过 IP 风控。",
+            f"\n[提示] lytvs.top 自身资源失败 {lytvs_fail} 个。"
+            f"如果 WORKER_URL 已配置仍有大量 403，说明 Cloudflare Edge IP 也被该源站风控，"
+            f"或 Worker 透传的头还不够。下一步建议：\n"
+            f"  1) 确认已重新部署最新 worker/worker.js（透传 Sec-* 头）；\n"
+            f"  2) 若仍失败，在仓库 Secrets 配置 PROXY_URL（住宅/移动代理）后重跑。",
             to=sys.stderr,
         )
     return ok, fail, len(assets)
