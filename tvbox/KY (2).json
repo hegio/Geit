@@ -33,10 +33,55 @@
           "playerType": 2
         },
 		{ 
-          "key": "hjtv影视",
-          "name": "hjtv影视",
+          "key": "supjav",
+          "name": "supjav",
           "type": 3,
-          "api": "./X/py/hjtv影视.py",
+          "api": "./X/py/supjav.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		
+		{ 
+          "key": "libvio影视",
+          "name": "libvio影视",
+          "type": 3,
+          "api": "./py/libvio影视.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "aniget",
+          "name": "aniget",
+          "type": 3,
+          "api": "./X/py/aniget.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "JableTV",
+          "name": "JableTV",
+          "type": 3,
+          "api": "./X/py/JableTV.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "推特APP",
+          "name": "推特APP",
+          "type": 3,
+          "api": "./X/py/推特APP.py",
           "searchable": 1,
           "quickSearch": 1,
           "filterable": 0,
@@ -54,17 +99,7 @@
           "changeable": 1,
           "playerType": 2
         },
-		{ 
-          "key": "萝莉聚合AV",
-          "name": "萝莉聚合AV",
-          "type": 3,
-          "api": "./X/py/萝莉聚合AV.py",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 0,
-          "changeable": 1,
-          "playerType": 2
-        },
+		
 		{ 
           "key": "黑料群",
           "name": "黑料群",

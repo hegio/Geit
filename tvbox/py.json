@@ -42,7 +42,7 @@
     {
       "name": "🐬Nettv",
       "type": 0,
-      "url": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/Nettv.txt",
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/EHR663/refs/heads/main/Nettv.txt",
       "ua": "okhttp"
     },
     {
@@ -180,13 +180,13 @@
     {
       "name": "🐬内地港台",
       "type": 0,
-      "url": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/内地港台",
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/EHR663/refs/heads/main/内地港台",
       "ua": "okhttp"
     },
     {
       "name": "🐬4GTV(梯子台湾节点)720p",
       "type": 0,
-      "url": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/4gtv.txt",
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/EHR663/refs/heads/main/4gtv.txt",
       "ua": "okhttp"
     },
     {
@@ -988,6 +988,17 @@
       "playerType": 2
     },
     {
+      "key": "FGBLH__HKL__自动加载678.py",
+      "name": "FGBLH__HKL__自动加载678.py",
+      "type": 3,
+      "api": "./py/FGBLH__HKL__自动加载678.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
       "key": "FoFo影院🍀TG @hshsjk9.py",
       "name": "FoFo影院🍀TG @hshsjk9.py",
       "type": 3,
@@ -1351,6 +1362,17 @@
       "playerType": 2
     },
     {
+      "key": "君念影院🍀TG @hshsjk9.py",
+      "name": "君念影院🍀TG @hshsjk9.py",
+      "type": 3,
+      "api": "./py/君念影院🍀TG @hshsjk9.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
       "key": "听书网456🍀TG @hshsjk9.py",
       "name": "听书网456🍀TG @hshsjk9.py",
       "type": 3,
@@ -1549,17 +1571,6 @@
       "playerType": 2
     },
     {
-      "key": "山楂影视.py",
-      "name": "山楂影视.py",
-      "type": 3,
-      "api": "./py/山楂影视.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
       "key": "山水影视🍀TG @hshsjk9.py",
       "name": "山水影视🍀TG @hshsjk9.py",
       "type": 3,
@@ -1714,6 +1725,17 @@
       "playerType": 2
     },
     {
+      "key": "智能加载v5.1.py",
+      "name": "智能加载v5.1.py",
+      "type": 3,
+      "api": "./py/智能加载v5.1.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
       "key": "枝枝影视.py",
       "name": "枝枝影视.py",
       "type": 3,
@@ -1795,6 +1817,17 @@
       "name": "毒舌影视.py",
       "type": 3,
       "api": "./py/毒舌影视.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
+      "key": "毒舌短剧🍀TG @hshsjk9.py",
+      "name": "毒舌短剧🍀TG @hshsjk9.py",
+      "type": 3,
+      "api": "./py/毒舌短剧🍀TG @hshsjk9.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
@@ -2070,17 +2103,6 @@
       "name": "腾讯视频.py",
       "type": 3,
       "api": "./py/腾讯视频.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "自动加载678.py",
-      "name": "自动加载678.py",
-      "type": 3,
-      "api": "./py/自动加载678.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
