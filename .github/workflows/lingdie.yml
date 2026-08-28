@@ -22,6 +22,17 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: 检查 SUB_URL 密钥是否已配置
+        env:
+          SUB_URL: ${{ secrets.SUB_URL }}
+        run: |
+          if [ -z "$SUB_URL" ]; then
+            echo "ERROR: 仓库 Secrets 中未找到 SUB_URL 或值为空。"
+            echo "请前往 Settings → Secrets and variables → Actions → New repository secret"
+            echo "添加 Name=SUB_URL、Secret=你的完整订阅 URL（含 token），然后重新运行本工作流。"
+            exit 1
+          fi
+
       - name: 运行采集脚本
         env:
           SUB_URL: ${{ secrets.SUB_URL }}   # 完整订阅 URL（含 token），存于仓库 Secrets
