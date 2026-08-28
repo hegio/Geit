@@ -38,8 +38,9 @@ jobs:
 
       - name: 运行采集脚本
         env:
-          SUB_URL: ${{ secrets.SUB_URL }}   # 完整订阅 URL（含 token），存于仓库 Secrets
-          PROXY_URL: ${{ secrets.PROXY_URL }}  # 可选：当 GitHub Actions IP 被源站拉黑时，在此填 http(s) 代理地址
+          SUB_URL: ${{ secrets.SUB_URL }}    # 完整订阅 URL（含 token），存于仓库 Secrets
+          PROXY_URL: ${{ secrets.PROXY_URL }}   # 可选：HTTP 代理地址（住宅代理用）
+          WORKER_URL: ${{ secrets.WORKER_URL }} # 可选：Cloudflare Worker 中转 URL（推荐免费方案，绕 IP 封禁）
         run: python scripts/lingdie.py
 
       - name: 转换为 TVBox 订阅格式
