@@ -22,6 +22,9 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: 安装依赖（curl_cffi：模拟 Chrome TLS 指纹，绕过 WAF 对脚本指纹的 403）
+        run: pip install --upgrade curl_cffi
+
       - name: 检查 SUB_URL 密钥是否已配置
         env:
           SUB_URL: ${{ secrets.SUB_URL }}
@@ -36,6 +39,7 @@ jobs:
       - name: 运行采集脚本
         env:
           SUB_URL: ${{ secrets.SUB_URL }}   # 完整订阅 URL（含 token），存于仓库 Secrets
+          PROXY_URL: ${{ secrets.PROXY_URL }}  # 可选：当 GitHub Actions IP 被源站拉黑时，在此填 http(s) 代理地址
         run: python scripts/lingdie.py
 
       - name: 转换为 TVBox 订阅格式
