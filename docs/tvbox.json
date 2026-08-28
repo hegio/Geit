@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-27 22:04 UTC",
+  "updated": "2026-08-28 02:59 UTC",
   "count": 204,
   "sources": [
     {
@@ -41,11 +41,6 @@
       "name": "live.m3u",
       "raw": "https://raw.githubusercontent.com/yanghanhanyingshi/abcd/main/tvbox/live.m3u",
       "url": "https://cdn.jsdelivr.net/gh/yanghanhanyingshi/abcd@main/tvbox/live.m3u"
-    },
-    {
-      "name": "20251023002031-6064033c16.js",
-      "raw": "https://raw.githubusercontent.com/yanghanhanyingshi/abcd/main/tvbox/20251023002031-6064033c16.js",
-      "url": "https://cdn.jsdelivr.net/gh/yanghanhanyingshi/abcd@main/tvbox/20251023002031-6064033c16.js"
     },
     {
       "name": "20251023002108-a4795930ec.js",
@@ -741,6 +736,11 @@
       "name": "KY (2).json",
       "raw": "https://raw.githubusercontent.com/yanghanhanyingshi/abcd/main/tvbox/KY%20%282%29.json",
       "url": "https://cdn.jsdelivr.net/gh/yanghanhanyingshi/abcd@main/tvbox/KY%20%282%29.json"
+    },
+    {
+      "name": "纯福利.json",
+      "raw": "https://raw.githubusercontent.com/yanghanhanyingshi/abcd/main/tvbox/%E7%BA%AF%E7%A6%8F%E5%88%A9.json",
+      "url": "https://cdn.jsdelivr.net/gh/yanghanhanyingshi/abcd@main/tvbox/%E7%BA%AF%E7%A6%8F%E5%88%A9.json"
     },
     {
       "name": "FGBLH__HKL/音源.json",
