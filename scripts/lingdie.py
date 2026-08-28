@@ -16,6 +16,8 @@ import os
 import pathlib
 import re
 import sys
+import time
+import urllib.error
 import urllib.parse
 import urllib.request
 
@@ -32,7 +34,22 @@ MIRROR_DIR = DATA_DIR / "mirror"
 MIRROR_DIR.mkdir(exist_ok=True)
 
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-      "(KHTML, like Gecko) Chrome/124.0 Safari/537.36")
+      "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36")
+
+HEADERS = {
+    "User-Agent": UA,
+    "Accept": "*/*",
+    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+    "Accept-Encoding": "identity",
+    "Referer": "https://sub.lytvs.top/",
+    "DNT": "1",
+    "Connection": "keep-alive",
+    "Upgrade-Insecure-Requests": "1",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-User": "?1",
+}
 
 # 不可下载的本地/占位地址
 SKIP_HOSTS = ("127.0.0.1", "localhost", "[::1]", "::1")
@@ -53,10 +70,55 @@ CT_EXT = {
 }
 
 
-def fetch(url: str, timeout: int = 30) -> tuple[bytes, str]:
-    req = urllib.request.Request(url, headers={"User-Agent": UA})
-    with urllib.request.urlopen(req, timeout=timeout) as resp:
-        return resp.read(), resp.headers.get("Content-Type", "")
+def _safe_print(text: str, to=sys.stdout) -> None:
+    """兼容 Windows/Actions 各种终端编码的中文输出。"""
+    try:
+        to.write(text + "\n")
+    except UnicodeEncodeError:
+        try:
+            encoded = text.encode(to.encoding or "utf-8", errors="replace").decode(to.encoding or "utf-8", errors="replace")
+            to.write(encoded + "\n")
+        except Exception:
+            to.write(text.encode("utf-8", errors="replace").decode("latin-1", errors="replace") + "\n")
+    to.flush()
+
+
+def normalize_url(url: str) -> str:
+    """对 URL 的非 ASCII path 做 percent-encoding，避免中文路径崩 urllib。"""
+    try:
+        p = urllib.parse.urlparse(url)
+        # 先尝试 unquote，再重新 quote，避免双重编码
+        path = urllib.parse.unquote(p.path)
+        path = urllib.parse.quote(path.encode("utf-8"), safe="/%")
+        query = urllib.parse.unquote(p.query)
+        query = urllib.parse.quote(query.encode("utf-8"), safe="=&%")
+        return urllib.parse.urlunparse((p.scheme, p.netloc, path, p.params, query, p.fragment))
+    except Exception:
+        return url
+
+
+def fetch(url: str, timeout: int = 30, retries: int = 2) -> tuple[bytes, str]:
+    """带重试的 HTTP GET，返回 (body, content-type)。"""
+    url = normalize_url(url)
+    last_err = None
+    for attempt in range(retries + 1):
+        req = urllib.request.Request(url, headers=HEADERS)
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as resp:
+                return resp.read(), resp.headers.get("Content-Type", "")
+        except urllib.error.HTTPError as e:
+            last_err = e
+            if e.code in (403, 429, 500, 502, 503, 504) and attempt < retries:
+                time.sleep(1.5 * (attempt + 1))
+                continue
+            raise
+        except Exception as e:
+            last_err = e
+            if attempt < retries:
+                time.sleep(1.5 * (attempt + 1))
+                continue
+            raise last_err
+    raise last_err
 
 
 def collect_urls(cfg: dict) -> list[tuple[str, str]]:
@@ -102,11 +164,12 @@ def safe_name(label: str, url: str) -> str:
     path = urllib.parse.urlparse(url).path
     base = path.rsplit("/", 1)[-1] or "file"
     base = base.split("?")[0].split("#")[0]
-    base = re.sub(r"[^A-Za-z0-9._-]", "_", base) or "file"
+    base = urllib.parse.unquote(base)
+    base = re.sub(r"[^\w.\-]+", "_", base) or "file"
     suffix = pathlib.Path(base).suffix
     if not suffix:
         suffix = ".bin"
-    prefix = re.sub(r"[^A-Za-z0-9_-]", "_", label)
+    prefix = re.sub(r"[^\w\-]+", "_", label)
     return f"{prefix}__{base}" if base != "file" else f"{prefix}__file{suffix}"
 
 
@@ -119,7 +182,7 @@ def mirror_assets(cfg: dict) -> tuple[int, int, int]:
         fname = safe_name(label, url)
         dest = MIRROR_DIR / fname
         try:
-            data, ct = fetch(url, timeout=60)
+            data, ct = fetch(url, timeout=60, retries=2)
             dest.write_bytes(data)
             manifest[url] = {
                 "file": f"mirror/{fname}",
@@ -128,10 +191,10 @@ def mirror_assets(cfg: dict) -> tuple[int, int, int]:
                 "type": ct,
             }
             ok += 1
-            print(f"  mirror OK   {label} -> {fname} ({len(data)}B, {ct})")
+            _safe_print(f"  mirror OK   {label} -> {fname} ({len(data)}B, {ct})")
         except Exception as e:  # 单个文件失败不中断整体
             fail += 1
-            print(f"  mirror FAIL {label} {url} : {e}", file=sys.stderr)
+            _safe_print(f"  mirror FAIL {label} {url} : {e}", to=sys.stderr)
 
     (MIRROR_DIR / "manifest.json").write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8"
@@ -140,7 +203,7 @@ def mirror_assets(cfg: dict) -> tuple[int, int, int]:
 
 
 def main() -> int:
-    raw, ctype = fetch(SUB_URL)
+    raw, ctype = fetch(SUB_URL, timeout=30, retries=2)
 
     now = datetime.datetime.now(datetime.timezone.utc)
     stamp = now.strftime("%Y%m%d_%H%M%SZ")
@@ -178,7 +241,7 @@ def main() -> int:
             with log.open("a", encoding="utf-8") as f:
                 f.write(f"{stamp} mirror total={mirror_total} ok={mirror_ok} fail={mirror_fail}\n")
         except Exception as e:
-            print(f"WARN: 镜像下载阶段异常: {e}", file=sys.stderr)
+            _safe_print(f"WARN: 镜像下载阶段异常: {e}", to=sys.stderr)
 
     # 5) 清理过老的快照，避免仓库无限膨胀（默认保留 60 天）
     keep_days = int(os.environ.get("KEEP_DAYS", "60"))
@@ -186,11 +249,11 @@ def main() -> int:
     for old in olds[:-keep_days]:
         old.unlink()
 
-    print(f"OK size={len(raw)} sha={sha} sites={site_count} "
-          f"-> {latest.name} / history/{day}.{ext}")
+    _safe_print(f"OK size={len(raw)} sha={sha} sites={site_count} "
+                f"-> {latest.name} / history/{day}.{ext}")
     if mirror_total:
-        print(f"MIRROR total={mirror_total} ok={mirror_ok} fail={mirror_fail} "
-              f"-> data/mirror/ (manifest.json)")
+        _safe_print(f"MIRROR total={mirror_total} ok={mirror_ok} fail={mirror_fail} "
+                    f"-> data/mirror/ (manifest.json)")
     return 0
 
 
