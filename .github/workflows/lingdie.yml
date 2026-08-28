@@ -39,6 +39,8 @@ jobs:
         run: python scripts/lingdie.py
 
       - name: 转换为 TVBox 订阅格式
+        env:
+          RAW_BASE: ${{ vars.RAW_BASE }}   # 可选：仓库 Variables 中配置（如 https://raw.githubusercontent.com/<用户>/<仓库>/main/data），生成自托管订阅
         run: python scripts/convert.py
 
       - name: 提交采集结果
