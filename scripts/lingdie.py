@@ -77,6 +77,20 @@ except Exception as e:  # 兜底到 urllib
 print(f"[engine] 下载引擎: {'curl_cffi (Chrome TLS 指纹模拟)' if USE_CURL_CFFI else f'urllib (curl_cffi 不可用: {_CURL_CFFI_ERR}; 强风控站点可能仍 403)'}"
       + (f" | 代理: {PROXY_URL}" if PROXY_URL else ""))
 
+# curl_cffi 全局 Session：抓订阅接口时自动保存 Cookie，下载同域资源时自动带上
+_cffi_session = None
+
+
+def _get_cffi_session():
+    global _cffi_session
+    if _cffi_session is None and USE_CURL_CFFI:
+        _cffi_session = cffi_requests.Session(impersonate="chrome")
+    return _cffi_session
+
+
+# 全局 Session Cookie（urllib 兜底用，从订阅接口的 Set-Cookie 提取）
+_SESSION_COOKIES: str = ""
+
 
 def _safe_print(text: str, to=sys.stdout) -> None:
     """兼容 Windows/Actions 各种终端编码的中文输出。"""
@@ -104,23 +118,45 @@ def normalize_url(url: str) -> str:
         return url
 
 
+def _is_lytvs(url: str) -> bool:
+    host = urllib.parse.urlparse(url).hostname or ""
+    return host == "lytvs.top" or host.endswith(".lytvs.top")
+
+
 def _fetch_curl_cffi(url: str, timeout: int) -> tuple[bytes, str]:
+    session = _get_cffi_session()
+    if session is None:
+        raise RuntimeError("curl_cffi 不可用")
     proxies = {"http": PROXY_URL, "https": PROXY_URL} if PROXY_URL else None
-    r = cffi_requests.get(url, headers=HEADERS, impersonate="chrome",
-                          proxies=proxies, timeout=timeout, allow_redirects=True)
+    headers = dict(HEADERS)
+    # lytvs.top 自己的资源用同域 Referer（订阅接口在 sub.lytvs.top，资源在 lytvs.top）
+    if _is_lytvs(url):
+        headers["Referer"] = "https://lytvs.top/"
+    r = session.get(url, headers=headers, proxies=proxies,
+                    timeout=timeout, allow_redirects=True)
     if r.status_code >= 400:
         raise urllib.error.HTTPError(url, r.status_code, "curl_cffi http error", r.headers, None)
     return r.content, r.headers.get("content-type", "")
 
 
 def _fetch_urllib(url: str, timeout: int) -> tuple[bytes, str]:
+    global _SESSION_COOKIES
     proxies = None
     if PROXY_URL:
         proxies = {"http": PROXY_URL, "https": PROXY_URL}
     handler = urllib.request.ProxyHandler(proxies) if proxies else urllib.request.ProxyHandler()
     opener = urllib.request.build_opener(handler)
-    req = urllib.request.Request(url, headers=HEADERS)
+    headers = dict(HEADERS)
+    if _is_lytvs(url):
+        headers["Referer"] = "https://lytvs.top/"
+    if _SESSION_COOKIES:
+        headers["Cookie"] = _SESSION_COOKIES
+    req = urllib.request.Request(url, headers=headers)
     with opener.open(req, timeout=timeout) as resp:
+        # 抓订阅接口时保存 Set-Cookie，供后续同域资源下载使用
+        sc = resp.headers.get_all("Set-Cookie") or []
+        if sc and not _SESSION_COOKIES:
+            _SESSION_COOKIES = "; ".join(c.split(";", 1)[0].strip() for c in sc if c.strip())
         return resp.read(), resp.headers.get("Content-Type", "")
 
 
@@ -173,6 +209,8 @@ def collect_urls(cfg: dict) -> list[tuple[str, str]]:
         host = urllib.parse.urlparse(u).hostname or ""
         if host in SKIP_HOSTS:
             return
+        if "." not in host:   # 过滤明显非法的 hostname（避免 curl Bad hostname）
+            return
         if u in seen:
             return
         seen.add(u)
@@ -214,6 +252,7 @@ def mirror_assets(cfg: dict) -> tuple[int, int, int]:
     assets = collect_urls(cfg)
     manifest: dict = {}
     ok = fail = 0
+    lytvs_fail = 0   # lytvs.top 自己的资源失败数（用于判断是否 IP 被封）
     for label, url in assets:
         fname = safe_name(label, url)
         dest = MIRROR_DIR / fname
@@ -230,11 +269,20 @@ def mirror_assets(cfg: dict) -> tuple[int, int, int]:
             _safe_print(f"  mirror OK   {label} -> {fname} ({len(data)}B, {ct})")
         except Exception as e:  # 单个文件失败不中断整体
             fail += 1
+            if _is_lytvs(url):
+                lytvs_fail += 1
             _safe_print(f"  mirror FAIL {label} {url} : {e}", to=sys.stderr)
 
     (MIRROR_DIR / "manifest.json").write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8"
     )
+    if lytvs_fail > 0:
+        _safe_print(
+            f"\n[提示] lytvs.top 自身资源失败 {lytvs_fail} 个，但第三方站点下载正常。"
+            f"这说明 lytvs.top 对当前出口 IP（GitHub Actions）做了封锁。"
+            f"请在仓库 Secrets 配置 PROXY_URL（住宅/移动代理）后重跑，即可绕过 IP 风控。",
+            to=sys.stderr,
+        )
     return ok, fail, len(assets)
 
 
