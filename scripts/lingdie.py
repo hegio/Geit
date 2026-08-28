@@ -33,6 +33,12 @@ if not SUB_URL:
     print("ERROR: 缺少环境变量 SUB_URL（应在 GitHub Secrets 中配置完整订阅 URL）", file=sys.stderr)
     sys.exit(1)
 
+# 从订阅 URL 提取 token，用于给 lytvs.top 资源追加鉴权参数
+try:
+    _SUB_TOKEN = urllib.parse.parse_qs(urllib.parse.urlparse(SUB_URL).query).get("token", [""])[0]
+except Exception:
+    _SUB_TOKEN = ""
+
 PROXY_URL = os.environ.get("PROXY_URL", "").strip()  # 可选：HTTP 代理地址（住宅代理用）
 WORKER_URL = os.environ.get("WORKER_URL", "").strip()  # 可选：Cloudflare Worker 中转 URL（绕 IP 封禁）
 
@@ -42,6 +48,8 @@ HISTORY_DIR = DATA_DIR / "history"
 HISTORY_DIR.mkdir(exist_ok=True)
 MIRROR_DIR = DATA_DIR / "mirror"
 MIRROR_DIR.mkdir(exist_ok=True)
+DEBUG_DIR = DATA_DIR / "debug"
+DEBUG_DIR.mkdir(exist_ok=True)
 
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36")
@@ -136,6 +144,51 @@ def _is_lytvs(url: str) -> bool:
     return host == "lytvs.top" or host.endswith(".lytvs.top")
 
 
+def _mask_token(s: str) -> str:
+    """日志/错误信息里对订阅 token 做脱敏，避免公开日志泄露。"""
+    if not _SUB_TOKEN or not s:
+        return s
+    return s.replace(_SUB_TOKEN, "***")
+
+
+def _lytvs_auth_url(url: str) -> str:
+    """给 lytvs.top 的资源 URL 追加订阅 token（如果 SUB_URL 里有 token）。
+    源站返回的资源 URL 可能不带 token，但下载时又需要 token 鉴权，导致 403。"""
+    if not _SUB_TOKEN:
+        return url
+    parsed = urllib.parse.urlparse(url)
+    host = parsed.hostname or ""
+    if not (host == "lytvs.top" or host.endswith(".lytvs.top")):
+        return url
+    qs = urllib.parse.parse_qsl(parsed.query)
+    if any(k == "token" for k, _ in qs):
+        return url
+    qs.append(("token", _SUB_TOKEN))
+    return urllib.parse.urlunparse(
+        parsed._replace(query=urllib.parse.urlencode(qs))
+    )
+
+
+def _debug_path(url: str, code: int) -> pathlib.Path:
+    """为指定 URL 生成一个稳定的调试文件路径（带状态码，不含 token）。"""
+    parsed = urllib.parse.urlparse(_mask_token(url))
+    name = (parsed.path + "@" + parsed.query).strip("/")
+    name = urllib.parse.unquote(name)
+    name = re.sub(r"[^\w.\-]+", "_", name)[:100] or "unknown"
+    return DEBUG_DIR / f"{code}_{name}.html"
+
+
+def _save_debug_403(url: str, body: bytes, code: int) -> pathlib.Path | None:
+    """把 403/4xx 响应体前 8KB 保存到 data/debug/，方便诊断 WAF 拒绝理由。"""
+    try:
+        DEBUG_DIR.mkdir(exist_ok=True)
+        path = _debug_path(url, code)
+        path.write_bytes(body[:8192])
+        return path
+    except Exception:
+        return None
+
+
 def _fetch_via_worker(url: str, timeout: int) -> tuple[bytes, str]:
     """通过 Cloudflare Worker 中转拉取：请求从 Cloudflare Edge IP 出去，绕开 Actions IP 封禁。
     Worker 脚本见 worker/worker.js；返回真实 HTTP status（透传源站）。"""
@@ -165,12 +218,17 @@ def _fetch_via_worker(url: str, timeout: int) -> tuple[bytes, str]:
             body = r.content[:400]
         except Exception:
             body = b""
+        _save_debug_403(url, body, code)
         try:
             text = body.decode("utf-8", errors="replace").replace("\n", " ")[:200]
         except Exception:
             text = repr(body[:200])
         status_text = r.headers.get("x-proxy-status-text", "")
-        return f"worker upstream {code}{(' ' + status_text).rstrip()} | body: {text}"
+        debug_path = _debug_path(url, code)
+        return (
+            f"worker upstream {code}{(' ' + status_text).rstrip()} | body: {text}"
+            f" | debug: {debug_path}"
+        )
 
     if USE_CURL_CFFI:
         session = _get_cffi_session()
@@ -204,7 +262,8 @@ def _fetch_curl_cffi(url: str, timeout: int) -> tuple[bytes, str]:
     r = session.get(url, headers=headers, proxies=proxies,
                     timeout=timeout, allow_redirects=True)
     if r.status_code >= 400:
-        raise urllib.error.HTTPError(url, r.status_code, "curl_cffi http error", r.headers, None)
+        _save_debug_403(url, r.content, r.status_code)
+        raise urllib.error.HTTPError(url, r.status_code, f"curl_cffi http error {r.status_code}", r.headers, None)
     return r.content, r.headers.get("content-type", "")
 
 
@@ -252,6 +311,15 @@ def fetch(url: str, timeout: int = 30, retries: int = 3) -> tuple[bytes, str]:
         except urllib.error.HTTPError as e:
             last_err = e
             code = getattr(e, "code", None)
+            # urllib 路径：HTTPError 带 fp，保存 4xx 响应体用于诊断
+            if e.fp is not None:
+                try:
+                    pos = e.fp.tell() if hasattr(e.fp, "tell") else 0
+                    body = e.fp.read(8192)
+                    e.fp.seek(pos)
+                    _save_debug_403(url, body, code or 0)
+                except Exception:
+                    pass
             if code in (403, 429, 500, 502, 503, 504) and attempt < retries:
                 time.sleep(2 ** attempt)  # 指数退避
                 continue
@@ -328,11 +396,13 @@ def mirror_assets(cfg: dict) -> tuple[int, int, int]:
     for idx, (label, url) in enumerate(assets):
         fname = safe_name(label, url)
         dest = MIRROR_DIR / fname
+        # 给 lytvs.top 资源追加订阅 token（源站可能靠 token 鉴权下载资源）
+        download_url = _lytvs_auth_url(url)
         # 下载之间加随机小延迟，降低被源站速率限制/并发风控的概率
         if idx > 0:
             time.sleep(random.uniform(0.3, 0.8))
         try:
-            data, ct = fetch(url, timeout=60, retries=3)
+            data, ct = fetch(download_url, timeout=60, retries=3)
             dest.write_bytes(data)
             manifest[url] = {
                 "file": f"mirror/{fname}",
@@ -346,7 +416,9 @@ def mirror_assets(cfg: dict) -> tuple[int, int, int]:
             fail += 1
             if _is_lytvs(url):
                 lytvs_fail += 1
-            _safe_print(f"  mirror FAIL {label} {url} : {e}", to=sys.stderr)
+            # 日志里对 token 脱敏
+            err_text = _mask_token(str(e))
+            _safe_print(f"  mirror FAIL {label} {_mask_token(url)} : {err_text}", to=sys.stderr)
 
     (MIRROR_DIR / "manifest.json").write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8"
@@ -354,10 +426,11 @@ def mirror_assets(cfg: dict) -> tuple[int, int, int]:
     if lytvs_fail > 0:
         _safe_print(
             f"\n[提示] lytvs.top 自身资源失败 {lytvs_fail} 个。"
-            f"如果 WORKER_URL 已配置仍有大量 403，说明 Cloudflare Edge IP 也被该源站风控，"
-            f"或 Worker 透传的头还不够。下一步建议：\n"
-            f"  1) 确认已重新部署最新 worker/worker.js（透传 Sec-* 头）；\n"
-            f"  2) 若仍失败，在仓库 Secrets 配置 PROXY_URL（住宅/移动代理）后重跑。",
+            f"脚本已自动追加订阅 token 并透传完整浏览器头。若仍有大量 403：\n"
+            f"  1) 查看 data/debug/ 下的 403_*.html，确认源站拒绝理由；\n"
+            f"  2) 若 debug 文件显示需要 JavaScript 验证（如 Cloudflare challenge），"
+            f"则 Cloudflare Worker 无法执行 JS，需要改用 PROXY_URL（住宅代理）+ curl_cffi；\n"
+            f"  3) 若仍无法解决，把 debug 文件内容发回继续分析。",
             to=sys.stderr,
         )
     return ok, fail, len(assets)
