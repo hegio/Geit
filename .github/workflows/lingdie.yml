@@ -46,7 +46,17 @@ jobs:
       - name: 转换为 TVBox 订阅格式
         env:
           RAW_BASE: ${{ vars.RAW_BASE }}   # 可选：仓库 Variables 中配置（如 https://raw.githubusercontent.com/<用户>/<仓库>/main/data），生成自托管订阅
-        run: python scripts/convert.py
+        # convert 失败不阻断后续提交，避免 data/debug 调试文件无法回传
+        run: python scripts/convert.py || echo "::warning::convert.py 失败，已跳过（采集数据仍会提交）"
+
+      - name: 上传采集产物（含 data/debug/403 调试文件，便于诊断）
+        if: always()   # 即使前面步骤失败也上传，保证能拿到 403 调试文件
+        uses: actions/upload-artifact@v4
+        with:
+          name: collect-data
+          path: data/
+          if-no-files-found: warn
+          retention-days: 7
 
       - name: 提交采集结果
         run: |
