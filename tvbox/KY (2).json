@@ -33,6 +33,39 @@
           "playerType": 2
         },
 		{ 
+          "key": "多乐影院",
+          "name": "多乐影院",
+          "type": 3,
+          "api": "./py/多乐影院.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "咕噜",
+          "name": "咕噜",
+          "type": 3,
+          "api": "./py/咕噜.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "片库网",
+          "name": "库影",
+          "type": 3,
+          "api": "./py/片库网.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
           "key": "集芳阁云搜",
           "name": "集芳阁云搜",
           "type": 3,
@@ -78,10 +111,10 @@
           "playerType": 2
         },
 		{ 
-          "key": "推特APP",
-          "name": "推特APP",
+          "key": "爱欲网",
+          "name": "爱欲网",
           "type": 3,
-          "api": "./X/py/推特APP.py",
+          "api": "./X/py/爱欲网.py",
           "searchable": 1,
           "quickSearch": 1,
           "filterable": 0,
