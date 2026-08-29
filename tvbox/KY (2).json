@@ -33,10 +33,10 @@
           "playerType": 2
         },
 		{ 
-          "key": "supjav",
-          "name": "supjav",
+          "key": "集芳阁云搜",
+          "name": "集芳阁云搜",
           "type": 3,
-          "api": "./X/py/supjav.py",
+          "api": "./X/py/集芳阁云搜.py",
           "searchable": 1,
           "quickSearch": 1,
           "filterable": 0,
