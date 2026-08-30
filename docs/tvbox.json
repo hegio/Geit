@@ -1,6 +1,6 @@
 {
-  "updated": "2026-08-29 20:43 UTC",
-  "count": 208,
+  "updated": "2026-08-30 11:32 UTC",
+  "count": 211,
   "sources": [
     {
       "name": "ok海豚常规22.json",
@@ -26,6 +26,11 @@
       "name": "tv.m3u",
       "raw": "https://raw.githubusercontent.com/yanghanhanyingshi/abcd/main/tvbox/tv.m3u",
       "url": "https://cdn.jsdelivr.net/gh/yanghanhanyingshi/abcd@main/tvbox/tv.m3u"
+    },
+    {
+      "name": "migu.txt",
+      "raw": "https://raw.githubusercontent.com/yanghanhanyingshi/abcd/main/tvbox/migu.txt",
+      "url": "https://cdn.jsdelivr.net/gh/yanghanhanyingshi/abcd@main/tvbox/migu.txt"
     },
     {
       "name": "4gtv.txt",
@@ -106,41 +111,6 @@
       "name": "Nettv.txt",
       "raw": "https://raw.githubusercontent.com/yanghanhanyingshi/abcd/main/tvbox/Nettv.txt",
       "url": "https://cdn.jsdelivr.net/gh/yanghanhanyingshi/abcd@main/tvbox/Nettv.txt"
-    },
-    {
-      "name": "Music1.json",
-      "raw": "https://raw.githubusercontent.com/yanghanhanyingshi/abcd/main/tvbox/Music1.json",
-      "url": "https://cdn.jsdelivr.net/gh/yanghanhanyingshi/abcd@main/tvbox/Music1.json"
-    },
-    {
-      "name": "央视直播.js",
-      "raw": "https://raw.githubusercontent.com/yanghanhanyingshi/abcd/main/tvbox/%E5%A4%AE%E8%A7%86%E7%9B%B4%E6%92%AD.js",
-      "url": "https://cdn.jsdelivr.net/gh/yanghanhanyingshi/abcd@main/tvbox/%E5%A4%AE%E8%A7%86%E7%9B%B4%E6%92%AD.js"
-    },
-    {
-      "name": "开心影院.js",
-      "raw": "https://raw.githubusercontent.com/yanghanhanyingshi/abcd/main/tvbox/%E5%BC%80%E5%BF%83%E5%BD%B1%E9%99%A2.js",
-      "url": "https://cdn.jsdelivr.net/gh/yanghanhanyingshi/abcd@main/tvbox/%E5%BC%80%E5%BF%83%E5%BD%B1%E9%99%A2.js"
-    },
-    {
-      "name": "拾光影视.js",
-      "raw": "https://raw.githubusercontent.com/yanghanhanyingshi/abcd/main/tvbox/%E6%8B%BE%E5%85%89%E5%BD%B1%E8%A7%86.js",
-      "url": "https://cdn.jsdelivr.net/gh/yanghanhanyingshi/abcd@main/tvbox/%E6%8B%BE%E5%85%89%E5%BD%B1%E8%A7%86.js"
-    },
-    {
-      "name": "枫叶影院.js",
-      "raw": "https://raw.githubusercontent.com/yanghanhanyingshi/abcd/main/tvbox/%E6%9E%AB%E5%8F%B6%E5%BD%B1%E9%99%A2.js",
-      "url": "https://cdn.jsdelivr.net/gh/yanghanhanyingshi/abcd@main/tvbox/%E6%9E%AB%E5%8F%B6%E5%BD%B1%E9%99%A2.js"
-    },
-    {
-      "name": "片库.js",
-      "raw": "https://raw.githubusercontent.com/yanghanhanyingshi/abcd/main/tvbox/%E7%89%87%E5%BA%93.js",
-      "url": "https://cdn.jsdelivr.net/gh/yanghanhanyingshi/abcd@main/tvbox/%E7%89%87%E5%BA%93.js"
-    },
-    {
-      "name": "西瓜影视.js",
-      "raw": "https://raw.githubusercontent.com/yanghanhanyingshi/abcd/main/tvbox/%E8%A5%BF%E7%93%9C%E5%BD%B1%E8%A7%86.js",
-      "url": "https://cdn.jsdelivr.net/gh/yanghanhanyingshi/abcd@main/tvbox/%E8%A5%BF%E7%93%9C%E5%BD%B1%E8%A7%86.js"
     },
     {
       "name": "275听书.py",
@@ -591,6 +561,51 @@
       "name": "yins.json",
       "raw": "https://raw.githubusercontent.com/yanghanhanyingshi/abcd/main/tvbox/yins.json",
       "url": "https://cdn.jsdelivr.net/gh/yanghanhanyingshi/abcd@main/tvbox/yins.json"
+    },
+    {
+      "name": "Music1.json",
+      "raw": "https://raw.githubusercontent.com/yanghanhanyingshi/abcd/main/tvbox/Music1.json",
+      "url": "https://cdn.jsdelivr.net/gh/yanghanhanyingshi/abcd@main/tvbox/Music1.json"
+    },
+    {
+      "name": "央视直播.js",
+      "raw": "https://raw.githubusercontent.com/yanghanhanyingshi/abcd/main/tvbox/%E5%A4%AE%E8%A7%86%E7%9B%B4%E6%92%AD.js",
+      "url": "https://cdn.jsdelivr.net/gh/yanghanhanyingshi/abcd@main/tvbox/%E5%A4%AE%E8%A7%86%E7%9B%B4%E6%92%AD.js"
+    },
+    {
+      "name": "开心影院.js",
+      "raw": "https://raw.githubusercontent.com/yanghanhanyingshi/abcd/main/tvbox/%E5%BC%80%E5%BF%83%E5%BD%B1%E9%99%A2.js",
+      "url": "https://cdn.jsdelivr.net/gh/yanghanhanyingshi/abcd@main/tvbox/%E5%BC%80%E5%BF%83%E5%BD%B1%E9%99%A2.js"
+    },
+    {
+      "name": "拾光影视.js",
+      "raw": "https://raw.githubusercontent.com/yanghanhanyingshi/abcd/main/tvbox/%E6%8B%BE%E5%85%89%E5%BD%B1%E8%A7%86.js",
+      "url": "https://cdn.jsdelivr.net/gh/yanghanhanyingshi/abcd@main/tvbox/%E6%8B%BE%E5%85%89%E5%BD%B1%E8%A7%86.js"
+    },
+    {
+      "name": "枫叶影院.js",
+      "raw": "https://raw.githubusercontent.com/yanghanhanyingshi/abcd/main/tvbox/%E6%9E%AB%E5%8F%B6%E5%BD%B1%E9%99%A2.js",
+      "url": "https://cdn.jsdelivr.net/gh/yanghanhanyingshi/abcd@main/tvbox/%E6%9E%AB%E5%8F%B6%E5%BD%B1%E9%99%A2.js"
+    },
+    {
+      "name": "片库.js",
+      "raw": "https://raw.githubusercontent.com/yanghanhanyingshi/abcd/main/tvbox/%E7%89%87%E5%BA%93.js",
+      "url": "https://cdn.jsdelivr.net/gh/yanghanhanyingshi/abcd@main/tvbox/%E7%89%87%E5%BA%93.js"
+    },
+    {
+      "name": "百度短剧.js",
+      "raw": "https://raw.githubusercontent.com/yanghanhanyingshi/abcd/main/tvbox/%E7%99%BE%E5%BA%A6%E7%9F%AD%E5%89%A7.js",
+      "url": "https://cdn.jsdelivr.net/gh/yanghanhanyingshi/abcd@main/tvbox/%E7%99%BE%E5%BA%A6%E7%9F%AD%E5%89%A7.js"
+    },
+    {
+      "name": "腾爱优b站.js",
+      "raw": "https://raw.githubusercontent.com/yanghanhanyingshi/abcd/main/tvbox/%E8%85%BE%E7%88%B1%E4%BC%98b%E7%AB%99.js",
+      "url": "https://cdn.jsdelivr.net/gh/yanghanhanyingshi/abcd@main/tvbox/%E8%85%BE%E7%88%B1%E4%BC%98b%E7%AB%99.js"
+    },
+    {
+      "name": "西瓜影视.js",
+      "raw": "https://raw.githubusercontent.com/yanghanhanyingshi/abcd/main/tvbox/%E8%A5%BF%E7%93%9C%E5%BD%B1%E8%A7%86.js",
+      "url": "https://cdn.jsdelivr.net/gh/yanghanhanyingshi/abcd@main/tvbox/%E8%A5%BF%E7%93%9C%E5%BD%B1%E8%A7%86.js"
     },
     {
       "name": "config",

@@ -58,11 +58,16 @@
             "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/EHR663/refs/heads/main/py/芒果TV.py"
         },
         {
+            "key": "腾爱优b站",
+            "name": "🐬[追剧]腾爱优b站.js",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/phu889/kjh998/refs/heads/main/jar_js/腾爱优b站.js"
+        },
+        {
             "key": "腾爱优芒B",
             "name": "🐬[追剧]腾爱优芒B.py",
             "type": 3,
-            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/EHR663/refs/heads/main/py/腾爱优芒B🍀TG @hshsjk9.py",
-            "changeable": 0
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/EHR663/refs/heads/main/py/腾爱优芒B🍀TG @hshsjk9.py"
         },
         {
             "name": "弹幕",
@@ -440,35 +445,35 @@
             "key": "拾光影视",
             "name": "🐬[追剧]拾光影视.js",
             "type": 3,
-            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/EHR663/refs/heads/main/jar_js/拾光影视.js",
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/phu889/kjh998/refs/heads/main/jar_js/拾光影视.js",
             "changeable": 0
         },
         {
             "key": "开心影院",
             "name": "🐬[追剧]开心影院.js",
             "type": 3,
-            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/EHR663/refs/heads/main/jar_js/开心影院.js",
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/phu889/kjh998/refs/heads/main/jar_js/开心影院.js",
             "changeable": 0
         },
         {
             "key": "西瓜影视",
             "name": "🐬[追剧]西瓜影视.js",
             "type": 3,
-            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/EHR663/refs/heads/main/jar_js/西瓜影视.js",
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/phu889/kjh998/refs/heads/main/jar_js/西瓜影视.js",
             "changeable": 0
         },
         {
             "key": "片库",
             "name": "🐬[追剧]片库.js(关梯)",
             "type": 3,
-            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/EHR663/refs/heads/main/jar_js/片库.js",
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/phu889/kjh998/refs/heads/main/jar_js/片库.js",
             "changeable": 0
         },
         {
             "key": "枫叶影院js",
             "name": "🐬[追剧]枫叶影院.js(关梯)",
             "type": 3,
-            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/EHR663/refs/heads/main/jar_js/枫叶影院.js",
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/phu889/kjh998/refs/heads/main/jar_js/枫叶影院.js",
             "changeable": 0
         },
         {
@@ -816,9 +821,9 @@
             "key": "央视网页",
             "name": "🐬[直播]央视网页直播.js(关梯)",
             "type": 3,
-            "jar": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/EHR663/refs/heads/main/jar_js/WvSpider.jar",
+            "jar": "https://ghfast.top/https://raw.githubusercontent.com/phu889/kjh998/refs/heads/main/jar_js/WvSpider.jar",
             "api": "csp_WvSpider",
-            "ext": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/EHR663/refs/heads/main/jar_js/央视直播.js"
+            "ext": "https://ghfast.top/https://raw.githubusercontent.com/phu889/kjh998/refs/heads/main/jar_js/央视直播.js"
         },
         {
             "key": "youtube2",
@@ -936,6 +941,12 @@
             "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/EHR663/refs/heads/main/py/毒舌短剧🍀TG @hshsjk9.py"
         },
         {
+            "key": "百度短剧",
+            "name": "🐬[短剧]百度短剧",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/phu889/kjh998/refs/heads/main/jar_js/百度短剧.js"
+        },
+        {
             "key": "听书网456",
             "name": "🐬[听书]听书网456.py",
             "type": 3,
@@ -990,8 +1001,8 @@
             "api": "csp_Music1",
             "searchable": 1,
             "quickSearch": 1,
-            "ext": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/EHR663/refs/heads/main/jar_js/Music1.json",
-            "jar": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/EHR663/refs/heads/main/jar_js/so.jar",
+            "ext": "https://ghfast.top/https://raw.githubusercontent.com/phu889/kjh998/refs/heads/main/jar_js/Music1.json",
+            "jar": "https://ghfast.top/https://raw.githubusercontent.com/phu889/kjh998/refs/heads/main/jar_js/so.jar",
             "filterable": 1
         },
         {
