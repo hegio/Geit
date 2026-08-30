@@ -1362,10 +1362,10 @@
       "playerType": 2
     },
     {
-      "key": "君念影院🍀TG @hshsjk9.py",
-      "name": "君念影院🍀TG @hshsjk9.py",
+      "key": "君念影院.py",
+      "name": "君念影院.py",
       "type": 3,
-      "api": "./py/君念影院🍀TG @hshsjk9.py",
+      "api": "./py/君念影院.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
@@ -1439,10 +1439,10 @@
       "playerType": 2
     },
     {
-      "key": "夏日影院🍀TG @hshsjk9.py",
-      "name": "夏日影院🍀TG @hshsjk9.py",
+      "key": "夏日影院.py",
+      "name": "夏日影院.py",
       "type": 3,
-      "api": "./py/夏日影院🍀TG @hshsjk9.py",
+      "api": "./py/夏日影院.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
@@ -2048,6 +2048,17 @@
       "name": "短剧聚合.py",
       "type": 3,
       "api": "./py/短剧聚合.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
+      "key": "石榴短剧.py",
+      "name": "石榴短剧.py",
+      "type": 3,
+      "api": "./py/石榴短剧.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,

@@ -146,16 +146,22 @@
             "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/EHR663/refs/heads/main/py/油管直播.py"
         },
         {
+            "key": "永乐视频",
+            "name": "🐬永乐视频[追剧]",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/phu889/kjh998/refs/heads/main/py/永乐视频.py"
+        },
+        {
             "key": "夏日影院",
             "name": "🐬夏日影院.py[追剧]",
             "type": 3,
-            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/EHR663/refs/heads/main/py/夏日影院🍀TG @hshsjk9.py"
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/phu889/kjh998/refs/heads/main/py/夏日影院.py"
         },
         {
             "key": "君念影院",
             "name": "🐬君念影院.py(关梯)[追剧]",
             "type": 3,
-            "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/EHR663/refs/heads/main/py/君念影院🍀TG @hshsjk9.py"
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/phu889/kjh998/refs/heads/main/py/君念影院.py"
         },
         {
             "key": "首映网",
@@ -993,6 +999,12 @@
             "name": "🐬百度短剧[短剧]",
             "type": 3,
             "api": "https://ghfast.top/https://raw.githubusercontent.com/phu889/kjh998/refs/heads/main/jar_js/百度短剧.js"
+        },
+        {
+            "key": "石榴短剧",
+            "name": "🐬石榴短剧[短剧]",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/phu889/kjh998/refs/heads/main/py/石榴短剧.py"
         },
         {
             "key": "ytb",
