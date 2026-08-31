@@ -33,6 +33,105 @@
           "playerType": 2
         },
 		{ 
+          "key": "摸鱼动漫",
+          "name": "摸鱼动漫a",
+          "type": 3,
+          "api": "./X/py/摸鱼动漫.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "tvtfun影视",
+          "name": "tvtfun影视",
+          "type": 3,
+          "api": "./py/tvtfun影视.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "两个BT影视.py",
+          "name": "两个BT影视",
+          "type": 3,
+          "api": "./py/两个BT影视.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "小小影视.py",
+          "name": "小小影视.py",
+          "type": 3,
+          "api": "./py/小小影视.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "八一影院.py",
+          "name": "八一影院.py",
+          "type": 3,
+          "api": "./py/八一影院.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "91神马电影.py",
+          "name": "91神马电影.py",
+          "type": 3,
+          "api": "./py/91神马电影.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "推特APP.py",
+          "name": "推特APP.py",
+          "type": 3,
+          "api": "./X/py/推特APP.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "麻豆传媒AI.py",
+          "name": "麻豆传媒AI.py",
+          "type": 3,
+          "api": "./X/py/麻豆传媒AI.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "集芳阁云搜",
+          "name": "集芳阁云搜",
+          "type": 3,
+          "api": "./X/py/集芳阁云搜.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
           "key": "多乐影院",
           "name": "多乐影院",
           "type": 3,
