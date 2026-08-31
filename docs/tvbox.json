@@ -1,6 +1,6 @@
 {
-  "updated": "2026-08-31 13:00 UTC",
-  "count": 212,
+  "updated": "2026-08-31 22:47 UTC",
+  "count": 214,
   "sources": [
     {
       "name": "ok海豚常规22.json",
@@ -603,9 +603,19 @@
       "url": "https://cdn.jsdelivr.net/gh/yanghanhanyingshi/abcd@main/tvbox/%E8%A5%BF%E7%93%9C%E5%BD%B1%E8%A7%86.js"
     },
     {
+      "name": "云途影视.py",
+      "raw": "https://raw.githubusercontent.com/yanghanhanyingshi/abcd/main/tvbox/%E4%BA%91%E9%80%94%E5%BD%B1%E8%A7%86.py",
+      "url": "https://cdn.jsdelivr.net/gh/yanghanhanyingshi/abcd@main/tvbox/%E4%BA%91%E9%80%94%E5%BD%B1%E8%A7%86.py"
+    },
+    {
       "name": "君念影院.py",
       "raw": "https://raw.githubusercontent.com/yanghanhanyingshi/abcd/main/tvbox/%E5%90%9B%E5%BF%B5%E5%BD%B1%E9%99%A2.py",
       "url": "https://cdn.jsdelivr.net/gh/yanghanhanyingshi/abcd@main/tvbox/%E5%90%9B%E5%BF%B5%E5%BD%B1%E9%99%A2.py"
+    },
+    {
+      "name": "在线短剧.py",
+      "raw": "https://raw.githubusercontent.com/yanghanhanyingshi/abcd/main/tvbox/%E5%9C%A8%E7%BA%BF%E7%9F%AD%E5%89%A7.py",
+      "url": "https://cdn.jsdelivr.net/gh/yanghanhanyingshi/abcd@main/tvbox/%E5%9C%A8%E7%BA%BF%E7%9F%AD%E5%89%A7.py"
     },
     {
       "name": "夏日影院.py",

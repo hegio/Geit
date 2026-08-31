@@ -146,6 +146,12 @@
             "api": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/EHR663/refs/heads/main/py/油管直播.py"
         },
         {
+            "key": "云途影视",
+            "name": "🐬云途影视(关梯)[追剧]",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/phu889/kjh998/refs/heads/main/py/云途影视.py"
+        },
+        {
             "key": "永乐视频",
             "name": "🐬永乐视频[追剧]",
             "type": 3,
@@ -1005,6 +1011,12 @@
             "name": "🐬石榴短剧[短剧]",
             "type": 3,
             "api": "https://ghfast.top/https://raw.githubusercontent.com/phu889/kjh998/refs/heads/main/py/石榴短剧.py"
+        },
+        {
+            "key": "在线短剧",
+            "name": "🐬在线短剧(关梯)[短剧]",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/phu889/kjh998/refs/heads/main/py/在线短剧.py"
         },
         {
             "key": "ytb",

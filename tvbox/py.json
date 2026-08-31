@@ -1109,6 +1109,17 @@
       "playerType": 2
     },
     {
+      "key": "云途影视.py",
+      "name": "云途影视.py",
+      "type": 3,
+      "api": "./py/云途影视.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
       "key": "仙腾影院🍀TG @hshsjk9.py",
       "name": "仙腾影院🍀TG @hshsjk9.py",
       "type": 3,
@@ -1432,6 +1443,17 @@
       "name": "嘀嗒影视.py",
       "type": 3,
       "api": "./py/嘀嗒影视.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
+      "key": "在线短剧.py",
+      "name": "在线短剧.py",
+      "type": 3,
+      "api": "./py/在线短剧.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
