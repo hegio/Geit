@@ -32,6 +32,39 @@
           "changeable": 1,
           "playerType": 2
         },
+		 { 
+          "key": "剧踪影院",
+          "name": "剧踪影院",
+          "type": 3,
+          "api": "./py/剧踪影院.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "黑夜影院",
+          "name": "黑夜影院",
+          "type": 3,
+          "api": "./py/黑夜影院.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
+		{ 
+          "key": "黄果短剧",
+          "name": "黄果短剧",
+          "type": 3,
+          "api": "./X/py/黄果短剧.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
 		{ 
           "key": "摸鱼动漫",
           "name": "摸鱼动漫a",
