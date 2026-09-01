@@ -32,6 +32,17 @@
           "changeable": 1,
           "playerType": 2
         },
+		{ 
+          "key": "吉利猫",
+          "name": "吉利猫",
+          "type": 3,
+          "api": "./X/py/吉利猫.py",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 0,
+          "changeable": 1,
+          "playerType": 2
+        },
 		 { 
           "key": "剧踪影院",
           "name": "剧踪影院",

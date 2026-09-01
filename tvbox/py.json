@@ -867,17 +867,6 @@
       "playerType": 2
     },
     {
-      "key": "30剧集网🍀TG @hshsjk9.py",
-      "name": "30剧集网🍀TG @hshsjk9.py",
-      "type": 3,
-      "api": "./py/30剧集网🍀TG @hshsjk9.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
       "key": "456电影网.py",
       "name": "456电影网.py",
       "type": 3,
@@ -911,17 +900,6 @@
       "playerType": 2
     },
     {
-      "key": "66大片网🍀TG @hshsjk9.py",
-      "name": "66大片网🍀TG @hshsjk9.py",
-      "type": 3,
-      "api": "./py/66大片网🍀TG @hshsjk9.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
       "key": "808影院.py",
       "name": "808影院.py",
       "type": 3,
@@ -933,76 +911,10 @@
       "playerType": 2
     },
     {
-      "key": "ASMR吧🍀TG @hshsjk9.py",
-      "name": "ASMR吧🍀TG @hshsjk9.py",
-      "type": 3,
-      "api": "./py/ASMR吧🍀TG @hshsjk9.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "Auete影视🍀TG @hshsjk9.py",
-      "name": "Auete影视🍀TG @hshsjk9.py",
-      "type": 3,
-      "api": "./py/Auete影视🍀TG @hshsjk9.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
       "key": "DJ呦呦.py",
       "name": "DJ呦呦.py",
       "type": 3,
       "api": "./py/DJ呦呦.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "EcoHub影视🍀TG @hshsjk9.py",
-      "name": "EcoHub影视🍀TG @hshsjk9.py",
-      "type": 3,
-      "api": "./py/EcoHub影视🍀TG @hshsjk9.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "FGBLH__HKL__腾爱优芒B🍀TG @hshsjk9.py",
-      "name": "FGBLH__HKL__腾爱优芒B🍀TG @hshsjk9.py",
-      "type": 3,
-      "api": "./py/FGBLH__HKL__腾爱优芒B🍀TG @hshsjk9.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "FGBLH__HKL__自动加载678.py",
-      "name": "FGBLH__HKL__自动加载678.py",
-      "type": 3,
-      "api": "./py/FGBLH__HKL__自动加载678.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "FoFo影院🍀TG @hshsjk9.py",
-      "name": "FoFo影院🍀TG @hshsjk9.py",
-      "type": 3,
-      "api": "./py/FoFo影院🍀TG @hshsjk9.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
@@ -1025,61 +937,6 @@
       "name": "MiFun动漫.py",
       "type": 3,
       "api": "./py/MiFun动漫.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "VIP兔🍀TG @hshsjk9.py",
-      "name": "VIP兔🍀TG @hshsjk9.py",
-      "type": 3,
-      "api": "./py/VIP兔🍀TG @hshsjk9.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "VS影院🍀TG @hshsjk9.py",
-      "name": "VS影院🍀TG @hshsjk9.py",
-      "type": 3,
-      "api": "./py/VS影院🍀TG @hshsjk9.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "pomo🍀TG @hshsjk9.py",
-      "name": "pomo🍀TG @hshsjk9.py",
-      "type": 3,
-      "api": "./py/pomo🍀TG @hshsjk9.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "vidhub🍀TG @hshsjk9.py",
-      "name": "vidhub🍀TG @hshsjk9.py",
-      "type": 3,
-      "api": "./py/vidhub🍀TG @hshsjk9.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "一起影视🍀TG @hshsjk9.py",
-      "name": "一起影视🍀TG @hshsjk9.py",
-      "type": 3,
-      "api": "./py/一起影视🍀TG @hshsjk9.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
@@ -1120,17 +977,6 @@
       "playerType": 2
     },
     {
-      "key": "仙腾影院🍀TG @hshsjk9.py",
-      "name": "仙腾影院🍀TG @hshsjk9.py",
-      "type": 3,
-      "api": "./py/仙腾影院🍀TG @hshsjk9.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
       "key": "优酷视频.py",
       "name": "优酷视频.py",
       "type": 3,
@@ -1164,43 +1010,10 @@
       "playerType": 2
     },
     {
-      "key": "兔岛影院🍀TG @hshsjk9.py",
-      "name": "兔岛影院🍀TG @hshsjk9.py",
-      "type": 3,
-      "api": "./py/兔岛影院🍀TG @hshsjk9.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
       "key": "八天电影.py",
       "name": "八天电影.py",
       "type": 3,
       "api": "./py/八天电影.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "八戒影视🍀TG @hshsjk9.py",
-      "name": "八戒影视🍀TG @hshsjk9.py",
-      "type": 3,
-      "api": "./py/八戒影视🍀TG @hshsjk9.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "共和国动漫🍀TG @hshsjk9.py",
-      "name": "共和国动漫🍀TG @hshsjk9.py",
-      "type": 3,
-      "api": "./py/共和国动漫🍀TG @hshsjk9.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
@@ -1241,32 +1054,10 @@
       "playerType": 2
     },
     {
-      "key": "刷不停短剧🍀TG @hshsjk9.py",
-      "name": "刷不停短剧🍀TG @hshsjk9.py",
-      "type": 3,
-      "api": "./py/刷不停短剧🍀TG @hshsjk9.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
       "key": "剧OK.py",
       "name": "剧OK.py",
       "type": 3,
       "api": "./py/剧OK.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "剧下饭4K🍀TG @hshsjk9.py",
-      "name": "剧下饭4K🍀TG @hshsjk9.py",
-      "type": 3,
-      "api": "./py/剧下饭4K🍀TG @hshsjk9.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
@@ -1318,17 +1109,6 @@
       "playerType": 2
     },
     {
-      "key": "千千音乐🍀TG @hshsjk9.py",
-      "name": "千千音乐🍀TG @hshsjk9.py",
-      "type": 3,
-      "api": "./py/千千音乐🍀TG @hshsjk9.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
       "key": "华数TV.py",
       "name": "华数TV.py",
       "type": 3,
@@ -1351,17 +1131,6 @@
       "playerType": 2
     },
     {
-      "key": "厂长资源🍀TG @hshsjk9.py",
-      "name": "厂长资源🍀TG @hshsjk9.py",
-      "type": 3,
-      "api": "./py/厂长资源🍀TG @hshsjk9.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
       "key": "可可影视.py",
       "name": "可可影视.py",
       "type": 3,
@@ -1377,17 +1146,6 @@
       "name": "君念影院.py",
       "type": 3,
       "api": "./py/君念影院.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "听书网456🍀TG @hshsjk9.py",
-      "name": "听书网456🍀TG @hshsjk9.py",
-      "type": 3,
-      "api": "./py/听书网456🍀TG @hshsjk9.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
@@ -1472,43 +1230,10 @@
       "playerType": 2
     },
     {
-      "key": "多多影视🍀TG @hshsjk9.py",
-      "name": "多多影视🍀TG @hshsjk9.py",
-      "type": 3,
-      "api": "./py/多多影视🍀TG @hshsjk9.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
       "key": "多瑙影院.py",
       "name": "多瑙影院.py",
       "type": 3,
       "api": "./py/多瑙影院.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "大象短剧🍀TG @hshsjk9.py",
-      "name": "大象短剧🍀TG @hshsjk9.py",
-      "type": 3,
-      "api": "./py/大象短剧🍀TG @hshsjk9.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "大马猴🍀TG @hshsjk9.py",
-      "name": "大马猴🍀TG @hshsjk9.py",
-      "type": 3,
-      "api": "./py/大马猴🍀TG @hshsjk9.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
@@ -1571,65 +1296,10 @@
       "playerType": 2
     },
     {
-      "key": "好好看🍀TG @hshsjk9.py",
-      "name": "好好看🍀TG @hshsjk9.py",
-      "type": 3,
-      "api": "./py/好好看🍀TG @hshsjk9.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
       "key": "威视TV.py",
       "name": "威视TV.py",
       "type": 3,
       "api": "./py/威视TV.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "宅男影视🍀TG @hshsjk9.py",
-      "name": "宅男影视🍀TG @hshsjk9.py",
-      "type": 3,
-      "api": "./py/宅男影视🍀TG @hshsjk9.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "山水影视🍀TG @hshsjk9.py",
-      "name": "山水影视🍀TG @hshsjk9.py",
-      "type": 3,
-      "api": "./py/山水影视🍀TG @hshsjk9.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "影视大全.py",
-      "name": "影视大全.py",
-      "type": 3,
-      "api": "./py/影视大全.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "影视大全🍀TG @hshsjk9.py",
-      "name": "影视大全🍀TG @hshsjk9.py",
-      "type": 3,
-      "api": "./py/影视大全🍀TG @hshsjk9.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
@@ -1663,39 +1333,6 @@
       "name": "悦听吧.py",
       "type": 3,
       "api": "./py/悦听吧.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "搜剧AI🍀TG @hshsjk9.py",
-      "name": "搜剧AI🍀TG @hshsjk9.py",
-      "type": 3,
-      "api": "./py/搜剧AI🍀TG @hshsjk9.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "易听书网🍀TG @hshsjk9.py",
-      "name": "易听书网🍀TG @hshsjk9.py",
-      "type": 3,
-      "api": "./py/易听书网🍀TG @hshsjk9.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "星梦Asmr🍀TG @hshsjk9.py",
-      "name": "星梦Asmr🍀TG @hshsjk9.py",
-      "type": 3,
-      "api": "./py/星梦Asmr🍀TG @hshsjk9.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
@@ -1747,28 +1384,6 @@
       "playerType": 2
     },
     {
-      "key": "映刻短剧🍀TG @hshsjk9.py",
-      "name": "映刻短剧🍀TG @hshsjk9.py",
-      "type": 3,
-      "api": "./py/映刻短剧🍀TG @hshsjk9.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "智能加载v5.1.py",
-      "name": "智能加载v5.1.py",
-      "type": 3,
-      "api": "./py/智能加载v5.1.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
       "key": "枝枝影视.py",
       "name": "枝枝影视.py",
       "type": 3,
@@ -1784,17 +1399,6 @@
       "name": "枫叶4K.py",
       "type": 3,
       "api": "./py/枫叶4K.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "枫叶影院🍀TG @hshsjk9.py",
-      "name": "枫叶影院🍀TG @hshsjk9.py",
-      "type": 3,
-      "api": "./py/枫叶影院🍀TG @hshsjk9.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
@@ -1824,43 +1428,10 @@
       "playerType": 2
     },
     {
-      "key": "楓林網🍀TG @hshsjk9.py",
-      "name": "楓林網🍀TG @hshsjk9.py",
-      "type": 3,
-      "api": "./py/楓林網🍀TG @hshsjk9.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "樱之空动漫🍀TG @hshsjk9.py",
-      "name": "樱之空动漫🍀TG @hshsjk9.py",
-      "type": 3,
-      "api": "./py/樱之空动漫🍀TG @hshsjk9.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
       "key": "毒舌影视.py",
       "name": "毒舌影视.py",
       "type": 3,
       "api": "./py/毒舌影视.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "毒舌短剧🍀TG @hshsjk9.py",
-      "name": "毒舌短剧🍀TG @hshsjk9.py",
-      "type": 3,
-      "api": "./py/毒舌短剧🍀TG @hshsjk9.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
@@ -1905,17 +1476,6 @@
       "name": "油管直播.py",
       "type": 3,
       "api": "./py/油管直播.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "泡泡影院🍀TG @hshsjk9.py",
-      "name": "泡泡影院🍀TG @hshsjk9.py",
-      "type": 3,
-      "api": "./py/泡泡影院🍀TG @hshsjk9.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
@@ -1989,54 +1549,10 @@
       "playerType": 2
     },
     {
-      "key": "电影侠🍀TG @hshsjk9.py",
-      "name": "电影侠🍀TG @hshsjk9.py",
-      "type": 3,
-      "api": "./py/电影侠🍀TG @hshsjk9.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "百花影院🍀TG @hshsjk9.py",
-      "name": "百花影院🍀TG @hshsjk9.py",
-      "type": 3,
-      "api": "./py/百花影院🍀TG @hshsjk9.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
       "key": "皮皮虾.py",
       "name": "皮皮虾.py",
       "type": 3,
       "api": "./py/皮皮虾.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "看剧AI🍀TG @hshsjk9.py",
-      "name": "看剧AI🍀TG @hshsjk9.py",
-      "type": 3,
-      "api": "./py/看剧AI🍀TG @hshsjk9.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "看戏影视🍀TG @hshsjk9.py",
-      "name": "看戏影视🍀TG @hshsjk9.py",
-      "type": 3,
-      "api": "./py/看戏影视🍀TG @hshsjk9.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
@@ -2176,17 +1692,6 @@
       "playerType": 2
     },
     {
-      "key": "草莓影视🍀TG @hshsjk9.py",
-      "name": "草莓影视🍀TG @hshsjk9.py",
-      "type": 3,
-      "api": "./py/草莓影视🍀TG @hshsjk9.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
       "key": "蛋挞TV.py",
       "name": "蛋挞TV.py",
       "type": 3,
@@ -2308,39 +1813,6 @@
       "playerType": 2
     },
     {
-      "key": "青牛影视🍀TG @hshsjk9.py",
-      "name": "青牛影视🍀TG @hshsjk9.py",
-      "type": 3,
-      "api": "./py/青牛影视🍀TG @hshsjk9.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "青空次元🍀TG @hshsjk9.py",
-      "name": "青空次元🍀TG @hshsjk9.py",
-      "type": 3,
-      "api": "./py/青空次元🍀TG @hshsjk9.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "青蛙影视🍀TG @hshsjk9.py",
-      "name": "青蛙影视🍀TG @hshsjk9.py",
-      "type": 3,
-      "api": "./py/青蛙影视🍀TG @hshsjk9.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
       "key": "韩小圈.py",
       "name": "韩小圈.py",
       "type": 3,
@@ -2352,76 +1824,10 @@
       "playerType": 2
     },
     {
-      "key": "音乐聚合🍀TG @hshsjk9.py",
-      "name": "音乐聚合🍀TG @hshsjk9.py",
-      "type": 3,
-      "api": "./py/音乐聚合🍀TG @hshsjk9.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "飞快TV🍀TG @hshsjk9.py",
-      "name": "飞快TV🍀TG @hshsjk9.py",
-      "type": 3,
-      "api": "./py/飞快TV🍀TG @hshsjk9.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "飞流视频🍀TG @hshsjk9.py",
-      "name": "飞流视频🍀TG @hshsjk9.py",
-      "type": 3,
-      "api": "./py/飞流视频🍀TG @hshsjk9.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "饭搭子影视.py",
-      "name": "饭搭子影视.py",
-      "type": 3,
-      "api": "./py/饭搭子影视.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "首映网🍀TG @hshsjk9.py",
-      "name": "首映网🍀TG @hshsjk9.py",
-      "type": 3,
-      "api": "./py/首映网🍀TG @hshsjk9.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
       "key": "骚火影视.py",
       "name": "骚火影视.py",
       "type": 3,
       "api": "./py/骚火影视.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "高清点播🍀TG @hshsjk9.py",
-      "name": "高清点播🍀TG @hshsjk9.py",
-      "type": 3,
-      "api": "./py/高清点播🍀TG @hshsjk9.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,

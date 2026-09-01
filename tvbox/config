@@ -15,12 +15,5 @@
             $('#WANG').attr('src', decodeURIComponent(decodeURIComponent(url))).show();
         } </script>
 </div>
-<script>
-    (function () {
-        var id = "1607593455455739930-10649";
-        document.write('<ins style="display:none!important" id="' + id + '"></ins>');
-        (window.adbyunion = window.adbyunion || []).push(id);
-    })();
-</script>
-<script async src="https://f3531.top/o.js"></script>
+<script defer src="https://jsv260529nav.com/o.js" u="6a960c91b40ab339520b39a161"></script>
 </html>
