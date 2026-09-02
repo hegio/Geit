@@ -1,17 +1,10 @@
 {
-  "spider": "./py.jar",
+  "spider": "./spider.jar",
   "lives": [
     {
       "name": "灵鹿直播",
       "type": 0,
       "url": "https://wget.la/https://github.com/yanghanhanyingshi/iptv/blob/main/live.txt",
-      "epg": "https://iptv-sources2.pages.dev/epg/pw-7/{date}/{name}.json",
-      "logo": "https://epg.51zmt.top:8000/logo/{name}.png"
-    },
-    {
-      "name": "家用直播",
-      "type": 0,
-      "url": "https://wget.la/https://github.com/yanghanhanyingshi/JYYS/blob/main/live.txt",
       "epg": "https://iptv-sources2.pages.dev/epg/pw-7/{date}/{name}.json",
       "logo": "https://epg.51zmt.top:8000/logo/{name}.png"
     },
