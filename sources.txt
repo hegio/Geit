@@ -1,7 +1,3 @@
 # TVBox 采集目标（每行一个，# 开头为注释）
-https://gh-proxy.com/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/ok海豚常规22
-https://gh-proxy.com/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/Web鱼壳海豚常规23
-https://github.com/lyqnihao/m3u8/tree/862de86762399ff22b0bd385855a704a33a309ac/FGBLH/FG/py
-https://pan.ling-lu-01.ccwu.cc/raw/tvbox/KY%20(2).json
-https://ghfast.top/https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/纯福利/纯福利.json
-REPO:FGBLH/HKL
+https://gh-proxy.com/https://raw.githubusercontent.com/FGBLH/EHR663/refs/heads/main/Web鱼壳海豚常规23
+REPO:FGBLH/EHR663
