@@ -2,7 +2,7 @@ name: TVBox 自动采集
 
 on:
   schedule:
-    - cron: '30 21,9 * * *'        # 每天9:30和21:30执行
+    - cron: '0 21,9 * * *'        # 每天9:00和21:00执行
   workflow_dispatch:            # 允许在 Actions 页面手动点「Run workflow」触发
   push:
     paths:
