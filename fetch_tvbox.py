@@ -63,19 +63,12 @@ CODE_EXTS = {
 # 运行时 json.loads 此字符串，再把 sites 替换为「本次采集到的 .py 文件」后写出 py.json。
 # 如需增删规则 / 直播源 / 广告域名，直接改这里即可。
 PYJSON_TEMPLATE_JSON = r"""{
-  "spider": "./py.jar",
+  "spider": "./spider.jar",
   "lives": [
     {
       "name": "灵鹿直播",
       "type": 0,
       "url": "https://wget.la/https://github.com/yanghanhanyingshi/iptv/blob/main/live.txt",
-      "epg": "https://iptv-sources2.pages.dev/epg/pw-7/{date}/{name}.json",
-      "logo": "https://epg.51zmt.top:8000/logo/{name}.png"
-    },
-    {
-      "name": "家用直播",
-      "type": 0,
-      "url": "https://wget.la/https://github.com/yanghanhanyingshi/JYYS/blob/main/live.txt",
       "epg": "https://iptv-sources2.pages.dev/epg/pw-7/{date}/{name}.json",
       "logo": "https://epg.51zmt.top:8000/logo/{name}.png"
     }
