@@ -1,6 +1,6 @@
 {
-  "updated": "2026-09-02 03:43 UTC",
-  "count": 212,
+  "updated": "2026-09-03 13:37 UTC",
+  "count": 216,
   "sources": [
     {
       "name": "Web鱼壳海豚常规23.json",
@@ -663,6 +663,11 @@
       "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/%E8%A5%BF%E7%93%9C%E5%BD%B1%E8%A7%86.js"
     },
     {
+      "name": "CNFLIX.py",
+      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/CNFLIX.py",
+      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/CNFLIX.py"
+    },
+    {
       "name": "云途影视.py",
       "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/%E4%BA%91%E9%80%94%E5%BD%B1%E8%A7%86.py",
       "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/%E4%BA%91%E9%80%94%E5%BD%B1%E8%A7%86.py"
@@ -688,9 +693,24 @@
       "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/%E6%B0%B8%E4%B9%90%E8%A7%86%E9%A2%91.py"
     },
     {
+      "name": "短剧大全.py",
+      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/%E7%9F%AD%E5%89%A7%E5%A4%A7%E5%85%A8.py",
+      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/%E7%9F%AD%E5%89%A7%E5%A4%A7%E5%85%A8.py"
+    },
+    {
       "name": "石榴短剧.py",
       "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/%E7%9F%B3%E6%A6%B4%E7%9F%AD%E5%89%A7.py",
       "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/%E7%9F%B3%E6%A6%B4%E7%9F%AD%E5%89%A7.py"
+    },
+    {
+      "name": "蚕驰短剧网.py",
+      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/%E8%9A%95%E9%A9%B0%E7%9F%AD%E5%89%A7%E7%BD%91.py",
+      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/%E8%9A%95%E9%A9%B0%E7%9F%AD%E5%89%A7%E7%BD%91.py"
+    },
+    {
+      "name": "风尚影视.py",
+      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/%E9%A3%8E%E5%B0%9A%E5%BD%B1%E8%A7%86.py",
+      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/%E9%A3%8E%E5%B0%9A%E5%BD%B1%E8%A7%86.py"
     },
     {
       "name": "config",
