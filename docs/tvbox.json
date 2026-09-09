@@ -1,6 +1,6 @@
 {
-  "updated": "2026-09-08 13:44 UTC",
-  "count": 228,
+  "updated": "2026-09-09 13:41 UTC",
+  "count": 224,
   "sources": [
     {
       "name": "Web鱼壳海豚常规23.json",
@@ -23,6 +23,11 @@
       "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/tv.m3u"
     },
     {
+      "name": "migu.txt",
+      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/migu.txt",
+      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/migu.txt"
+    },
+    {
       "name": "4gtv.txt",
       "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/4gtv.txt",
       "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/4gtv.txt"
@@ -31,11 +36,6 @@
       "name": "新加坡.m3u",
       "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/%E6%96%B0%E5%8A%A0%E5%9D%A1.m3u",
       "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/%E6%96%B0%E5%8A%A0%E5%9D%A1.m3u"
-    },
-    {
-      "name": "app.txt",
-      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/app.txt",
-      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/app.txt"
     },
     {
       "name": "live.m3u",
@@ -66,11 +66,6 @@
       "name": "小新TV.txt",
       "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/%E5%B0%8F%E6%96%B0TV.txt",
       "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/%E5%B0%8F%E6%96%B0TV.txt"
-    },
-    {
-      "name": "app_dyttandroid.txt",
-      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/app_dyttandroid.txt",
-      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/app_dyttandroid.txt"
     },
     {
       "name": "test_channels_taiwan.m3u",
@@ -788,11 +783,6 @@
       "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/live.m3u"
     },
     {
-      "name": "maotouyinghb.txt",
-      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/maotouyinghb.txt",
-      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/maotouyinghb.txt"
-    },
-    {
       "name": "result.m3u",
       "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/result.m3u",
       "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/result.m3u"
@@ -823,19 +813,9 @@
       "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/playlist_all.txt"
     },
     {
-      "name": "az5.txt",
-      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/az5.txt",
-      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/az5.txt"
-    },
-    {
       "name": "nostr.html",
       "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/nostr.html",
       "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/nostr.html"
-    },
-    {
-      "name": "xly.txt",
-      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/xly.txt",
-      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/xly.txt"
     },
     {
       "name": "FGBLH__EHR663/音源.json",
