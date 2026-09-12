@@ -11,7 +11,7 @@ TVBox 配置文件 / 核心代码 极简采集器
        https://gh-proxy.com/https://raw.githubusercontent.com/OWNER/REPO/main/file   # 自动剥离前缀直连 raw
   2) 整仓库镜像：REPO:OWNER/REPO[@分支]
        自动列出仓库内全部「核心文件」（.py/.js/.json/.txt/.m3u 等，跳过 .jar 等二进制），逐个抓取。
-       REPO:FGBLH/HKL
+       REPO:FGBLH/EHR663
 
 特性（刻意做减法，只保留稳定够用的）：
   * 自动把 gh-proxy / ghproxy 等代理前缀剥离，直连 raw.githubusercontent.com（Actions 内网直达最稳）
