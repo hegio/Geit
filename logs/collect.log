@@ -9403,3 +9403,23 @@
 [2026-09-27T14:34:48Z] 已生成 tvbox/py.json：2 个 spider 站点
 [2026-09-27T14:34:48Z] === 完成：成功 8 / 2 条 ===
 [2026-09-27T14:34:48Z] TG 未配置，跳过推送（如需推送请在仓库 Actions Secrets 设置 TG_BOT_TOKEN / TG_CHAT_ID）
+[2026-09-28T17:23:56Z] === TVBox collector start ===
+[2026-09-28T17:23:56Z] 待处理 2 条
+[2026-09-28T17:23:56Z] 剥离代理前缀 -> https://raw.githubusercontent.com/FGBLH/EHR663/refs/heads/main/Web鱼壳海豚常规664
+[2026-09-28T17:23:58Z]   重试 1 失败: HTTP Error 404: Not Found
+[2026-09-28T17:24:02Z]   重试 2 失败: HTTP Error 404: Not Found
+[2026-09-28T17:24:08Z]   重试 3 失败: HTTP Error 404: Not Found
+[2026-09-28T17:24:08Z] FAIL https://gh-proxy.com/https://raw.githubusercontent.com/FGBLH/EHR663/refs/heads/main/Web鱼壳海豚常规664 -> HTTP Error 404: Not Found
+[2026-09-28T17:24:08Z] REPO FGBLH/EHR663 发现 8 个核心文件
+[2026-09-28T17:24:08Z] SKIP 未变化 FGBLH__EHR663/音源.json
+[2026-09-28T17:24:08Z] SKIP 未变化 FGBLH__EHR663/README.md
+[2026-09-28T17:24:08Z] SKIP 未变化 FGBLH__EHR663/Web鱼壳海豚常规997.json
+[2026-09-28T17:24:08Z] SKIP 未变化 FGBLH__EHR663/ok海豚常规996.json
+[2026-09-28T17:24:09Z] SKIP 未变化 FGBLH__EHR663/智能加载v5.1.py
+[2026-09-28T17:24:09Z] SKIP 未变化 FGBLH__EHR663/自动加载678.py
+[2026-09-28T17:24:09Z] SKIP 未变化 FGBLH__EHR663/午夜剧场.txt
+[2026-09-28T17:24:09Z] SKIP 未变化 FGBLH__EHR663/安博.txt
+[2026-09-28T17:24:09Z] 已生成订阅页：8 个文件
+[2026-09-28T17:24:09Z] 已生成 tvbox/py.json：2 个 spider 站点
+[2026-09-28T17:24:09Z] === 完成：成功 8 / 2 条 ===
+[2026-09-28T17:24:09Z] TG 未配置，跳过推送（如需推送请在仓库 Actions Secrets 设置 TG_BOT_TOKEN / TG_CHAT_ID）
