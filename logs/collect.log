@@ -9460,3 +9460,20 @@
 [2026-09-30T07:27:38Z] 已生成 tvbox/py.json：2 个 spider 站点
 [2026-09-30T07:27:38Z] === 完成：成功 8 / 2 条 ===
 [2026-09-30T07:27:38Z] TG 未配置，跳过推送（如需推送请在仓库 Actions Secrets 设置 TG_BOT_TOKEN / TG_CHAT_ID）
+[2026-09-30T15:41:16Z] === TVBox collector start ===
+[2026-09-30T15:41:16Z] 待处理 2 条
+[2026-09-30T15:41:16Z] 剥离代理前缀 -> https://raw.githubusercontent.com/FGBLH/EHR663/refs/heads/main/Web鱼壳海豚常规997
+[2026-09-30T15:41:16Z] SKIP 未变化 Web鱼壳海豚常规997.json
+[2026-09-30T15:41:17Z] REPO FGBLH/EHR663 发现 8 个核心文件
+[2026-09-30T15:41:17Z] SKIP 未变化 FGBLH__EHR663/音源.json
+[2026-09-30T15:41:18Z] SKIP 未变化 FGBLH__EHR663/README.md
+[2026-09-30T15:41:18Z] SKIP 重复内容 FGBLH__EHR663/Web鱼壳海豚常规997.json
+[2026-09-30T15:41:18Z] SKIP 未变化 FGBLH__EHR663/ok海豚常规996.json
+[2026-09-30T15:41:18Z] SKIP 未变化 FGBLH__EHR663/智能加载v5.1.py
+[2026-09-30T15:41:18Z] SKIP 未变化 FGBLH__EHR663/自动加载678.py
+[2026-09-30T15:41:19Z] SKIP 未变化 FGBLH__EHR663/午夜剧场.txt
+[2026-09-30T15:41:19Z] SKIP 未变化 FGBLH__EHR663/安博.txt
+[2026-09-30T15:41:19Z] 已生成订阅页：8 个文件
+[2026-09-30T15:41:19Z] 已生成 tvbox/py.json：2 个 spider 站点
+[2026-09-30T15:41:19Z] === 完成：成功 8 / 2 条 ===
+[2026-09-30T15:41:19Z] TG 未配置，跳过推送（如需推送请在仓库 Actions Secrets 设置 TG_BOT_TOKEN / TG_CHAT_ID）
