@@ -103,6 +103,18 @@
             "api": "https://ghfast.top/https://raw.githubusercontent.com/phu889/kjh998/refs/heads/main/py/ASMR吧.py"
         },
         {
+        	"key": "小蜜蜂影院",
+            "name": "🐬[追剧]小蜜蜂影院",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/phu889/kjh998/refs/heads/main/py/小蜜蜂影院.py"
+		},
+        {
+        	"key": "界影视",
+            "name": "🐬[追剧]界影视",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/phu889/kjh998/refs/heads/main/py/界影视.py"
+		},
+        {
         	"key": "飞牛影视",
             "name": "🐬[追剧]飞牛影视(关梯)",
             "type": 3,
@@ -1126,6 +1138,12 @@
       ]
     },
 		{
+			"key": "红果短剧",
+			"name": "🐬[短剧]红果短剧(关梯)",
+			"type": 3,
+			"api": "https://ghfast.top/https://raw.githubusercontent.com/phu889/kjh998/refs/heads/main/py/红果短剧.py"
+		},
+        {
 			"key": "开心短剧",
 			"name": "🐬[短剧]开心短剧",
 			"type": 3,
