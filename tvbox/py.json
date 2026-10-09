@@ -600,28 +600,5 @@
     "aliyuncs.com/ad",
     "qiniu.com/ad"
   ],
-  "sites": [
-    {
-      "key": "FGBLH__EHR663__智能加载v5.1.py",
-      "name": "FGBLH__EHR663__智能加载v5.1.py",
-      "type": 3,
-      "api": "./py/FGBLH__EHR663__智能加载v5.1.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "自动加载678.py",
-      "name": "自动加载678.py",
-      "type": 3,
-      "api": "./py/自动加载678.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    }
-  ]
+  "sites": []
 }
