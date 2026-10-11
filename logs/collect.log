@@ -9636,3 +9636,18 @@
 [2026-10-10T15:05:00Z] 已生成 tvbox/py.json：0 个 spider 站点
 [2026-10-10T15:05:00Z] === 完成：成功 0 / 2 条 ===
 [2026-10-10T15:05:00Z] TG 未配置，跳过推送（如需推送请在仓库 Actions Secrets 设置 TG_BOT_TOKEN / TG_CHAT_ID）
+[2026-10-11T15:21:30Z] === TVBox collector start ===
+[2026-10-11T15:21:30Z] 待处理 2 条
+[2026-10-11T15:21:30Z] 剥离代理前缀 -> https://raw.githubusercontent.com/FGBLH/EHR663/refs/heads/main/Web鱼壳海豚常规997
+[2026-10-11T15:21:32Z]   重试 1 失败: HTTP Error 404: Not Found
+[2026-10-11T15:21:36Z]   重试 2 失败: HTTP Error 404: Not Found
+[2026-10-11T15:21:42Z]   重试 3 失败: HTTP Error 404: Not Found
+[2026-10-11T15:21:42Z] FAIL https://gh-proxy.com/https://raw.githubusercontent.com/FGBLH/EHR663/refs/heads/main/Web鱼壳海豚常规997 -> HTTP Error 404: Not Found
+[2026-10-11T15:21:44Z]   重试 1 失败: HTTP Error 403: Forbidden
+[2026-10-11T15:21:48Z]   重试 2 失败: HTTP Error 403: Forbidden
+[2026-10-11T15:21:54Z]   重试 3 失败: HTTP Error 403: Forbidden
+[2026-10-11T15:21:54Z] FAIL REPO FGBLH/EHR663 -> HTTP Error 403: Forbidden
+[2026-10-11T15:21:54Z] 已生成订阅页：0 个文件
+[2026-10-11T15:21:54Z] 已生成 tvbox/py.json：0 个 spider 站点
+[2026-10-11T15:21:54Z] === 完成：成功 0 / 2 条 ===
+[2026-10-11T15:21:54Z] TG 未配置，跳过推送（如需推送请在仓库 Actions Secrets 设置 TG_BOT_TOKEN / TG_CHAT_ID）
