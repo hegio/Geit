@@ -1,0 +1,80 @@
+name: Geit 链接健康检查
+
+on:
+  schedule:
+    # 每天唤醒一次，由 gate 只放行每 3 天，实际间隔为 72 小时。
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: geit-collect
+  cancel-in-progress: false
+
+jobs:
+  schedule-gate:
+    runs-on: ubuntu-latest
+    outputs:
+      should_run: ${{ steps.gate.outputs.should_run }}
+    steps:
+      - name: 判断是否到 72 小时执行窗口
+        id: gate
+        shell: bash
+        run: |
+          if [ "${{ github.event_name }}" != "schedule" ]; then
+            echo "should_run=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          day=$(( $(date -u +%s) / 86400 ))
+          if [ $((day % 3)) -eq 0 ]; then
+            echo "should_run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "should_run=false" >> "$GITHUB_OUTPUT"
+          fi
+
+  health:
+    needs: schedule-gate
+    if: needs.schedule-gate.outputs.should_run == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 配置 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 检查链接健康状态
+        env:
+          PYTHONIOENCODING: utf-8
+        run: python check_health.py --workers 16 --max-channels 500 --probe
+
+      - name: 提交健康报告
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/health.json docs/health.csv docs/blocked.csv
+          if git diff --cached --quiet; then
+            echo "健康报告没有变化，跳过提交"
+          else
+            git commit -m "chore: 更新链接健康报告 $(TZ=Asia/Shanghai date +'%Y-%m-%d %H:%M')"
+            git push "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "HEAD:${GITHUB_REF_NAME}"
+          fi
+
+      - name: 上传健康报告
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: geit-health
+          path: |
+            docs/health.json
+            docs/health.csv
+            docs/blocked.csv
+          if-no-files-found: warn
+          retention-days: 14

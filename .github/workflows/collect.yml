@@ -2,13 +2,13 @@ name: Geit 自动聚合与校验
 
 on:
   schedule:
+    # GitHub cron 无法直接表达 18 小时；每 6 小时唤醒一次，由 gate 只放行每 3 个时间片。
     - cron: '0 */6 * * *'
   workflow_dispatch:
   push:
     paths:
       - 'sources.txt'
       - 'fetch_tvbox.py'
-      - 'check_health.py'
       - 'config_security.py'
       - 'py/**.py'
       - '.github/workflows/collect.yml'
@@ -21,7 +21,29 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  schedule-gate:
+    runs-on: ubuntu-latest
+    outputs:
+      should_run: ${{ steps.gate.outputs.should_run }}
+    steps:
+      - name: 判断是否到 18 小时执行窗口
+        id: gate
+        shell: bash
+        run: |
+          if [ "${{ github.event_name }}" != "schedule" ]; then
+            echo "should_run=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          slot=$(( $(date -u +%s) / 21600 ))
+          if [ $((slot % 3)) -eq 0 ]; then
+            echo "should_run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "should_run=false" >> "$GITHUB_OUTPUT"
+          fi
+
   collect:
+    needs: schedule-gate
+    if: needs.schedule-gate.outputs.should_run == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 45
     steps:
@@ -68,16 +90,11 @@ jobs:
           print("TVBox outputs validated")
           PY
 
-      - name: 检查链接健康状态（每轮抽样 500 个直播频道）
-        env:
-          PYTHONIOENCODING: utf-8
-        run: python check_health.py --workers 16 --max-channels 500 --probe
-
       - name: 提交生成结果
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add geit.json geitpy.json py tvbox/lives docs/health.json docs/health.csv docs/blocked.csv docs/sources.json docs/tvbox.json docs/index.html
+          git add geit.json geitpy.json py tvbox/lives docs/sources.json docs/tvbox.json docs/index.html
           if git diff --cached --quiet; then
             echo "没有变化，跳过提交"
           else
@@ -93,8 +110,6 @@ jobs:
           path: |
             geit.json
             geitpy.json
-            docs/health.json
-            docs/health.csv
-            docs/blocked.csv
+            docs/sources.json
           if-no-files-found: warn
           retention-days: 7
