@@ -1,6 +1,7 @@
 {
   "name": "Geit",
   "spider": "https://raw.githubusercontent.com/hegio/Geit/main/spider.jar",
+  "logo": "",
   "wallpaper": "",
   "sites": [
     {
@@ -264,5 +265,11 @@
       "url": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/lives/merged.m3u",
       "group": "聚合"
     }
-  ]
+  ],
+  "parses": [],
+  "rules": [],
+  "doh": [],
+  "flags": [],
+  "ijk": [],
+  "ads": []
 }

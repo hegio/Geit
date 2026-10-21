@@ -28,7 +28,7 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
-from config_security import find_sensitive_credentials
+from config_security import find_sensitive_credentials, redact_sensitive_text
 
 
 HERE = Path(__file__).resolve().parent
@@ -164,6 +164,21 @@ def validate_generated_configs() -> None:
         if findings:
             fields = ", ".join(sorted({item.rsplit(":", 1)[-1] for item in findings}))
             raise ValueError("%s 仍包含真实凭据（%d 处，字段：%s）" % (name, len(findings), fields))
+    for name in ("geit-fish.txt", "geitpy-fish.txt"):
+        path = HERE / name
+        if not path.is_file():
+            raise ValueError("缺少 %s" % name)
+        raw = path.read_text(encoding="utf-8-sig")
+        if re.match(r"^[A-Za-z0-9_-]{8}\*\*", raw):
+            raise ValueError("%s 仍是 Base64 包装格式，不是明文 JSON" % name)
+        config = json.loads(raw)
+        for key in ("sites", "lives", "parses", "rules", "doh", "flags", "ijk", "ads"):
+            if not isinstance(config.get(key), list):
+                raise ValueError("%s 缺少数组字段 %s" % (name, key))
+        if not isinstance(config.get("logo"), str):
+            raise ValueError("%s 的 logo 不是字符串" % name)
+        if find_sensitive_credentials(config):
+            raise ValueError("%s 仍包含真实凭据" % name)
 
 
 def http_check(url: str) -> tuple[int | None, str]:
@@ -255,17 +270,24 @@ def probe_manifest(url: str, ffprobe: str) -> tuple[str, str]:
 
 def check(item: Item, ffprobe: str, do_probe: bool) -> Item:
     item.checked_at = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
-    if item.kind == "site" and item.status == "requires_app":
+    if item.kind == "source" and item.status in {"invalid_config", "invalid_placeholder"}:
+        item.detail = "生成器未能解析该来源；格式判断需等待下一轮聚合重新确认"
         return item
+    # Some type-3 sites use a built-in spider class name instead of a URL;
+    # those can only be exercised inside the app.
+    if item.kind == "site" and item.status == "requires_app" and not item.url.startswith(("http://", "https://")):
+        item.detail = "站点使用内置 spider 标识，无法在服务端验证播放"
+        return item
+    was_requires_app = item.kind == "site" and item.status == "requires_app"
     status, detail = http_check(item.url)
     item.http_status = status
     if status is None:
         item.status = "http_error"
-        item.detail = detail
+        item.detail = redact_sensitive_text(detail)
         return item
     if status >= 400:
         item.status = "http_error"
-        item.detail = detail
+        item.detail = redact_sensitive_text(detail)
         return item
     if item.kind in {"live", "channel"}:
         if do_probe and item.url.lower().split("?", 1)[0].endswith((".m3u8", ".mpd", ".mp4", ".flv", ".ts")):
@@ -279,6 +301,9 @@ def check(item: Item, ffprobe: str, do_probe: bool) -> Item:
         else:
             item.status = "playback_unverified"
             item.detail = "HTTP 可访问，但无法仅凭状态码确认可播放"
+    elif was_requires_app:
+        item.status = "requires_app"
+        item.detail = "API 地址可访问；播放仍需影视 App 与对应 spider 解析"
     else:
         item.status = "reachable"
         item.detail = "HTTP 可访问"
@@ -291,6 +316,18 @@ def write_report(items: list[Item]) -> None:
     counts: dict[str, int] = {}
     for item in items:
         counts[item.status] = counts.get(item.status, 0) + 1
+    report_items = [
+        {
+            "kind": item.kind,
+            "name": redact_sensitive_text(item.name),
+            "url": redact_sensitive_text(item.url),
+            "status": item.status,
+            "http_status": item.http_status,
+            "detail": redact_sensitive_text(item.detail),
+            "checked_at": item.checked_at,
+        }
+        for item in items
+    ]
     report = {
         "updated": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
         "summary": counts,
@@ -298,24 +335,20 @@ def write_report(items: list[Item]) -> None:
             "checked_items": len(items),
             "note": "频道检查默认抽样；HTTP 200 不等于可播放，playback_unverified 需在影视 App 中复测",
         },
-        "items": [
-            {
-                "kind": item.kind,
-                "name": item.name,
-                "url": item.url,
-                "status": item.status,
-                "http_status": item.http_status,
-                "detail": item.detail,
-                "checked_at": item.checked_at,
-            }
-            for item in items
-        ],
+        "items": report_items,
     }
+    findings = find_sensitive_credentials(report)
+    if findings:
+        raise ValueError(
+            "健康报告脱敏后仍检测到真实凭据（%d 处，字段：%s）"
+            % (len(findings), ", ".join(sorted({item.rsplit(":", 1)[-1] for item in findings})))
+        )
     HEALTH_JSON.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     with HEALTH_CSV.open("w", encoding="utf-8-sig", newline="") as handle:
         writer = csv.DictWriter(
             handle,
             fieldnames=["kind", "name", "url", "status", "http_status", "detail", "checked_at"],
+            lineterminator="\n",
         )
         writer.writeheader()
         writer.writerows(report["items"])
@@ -324,6 +357,7 @@ def write_report(items: list[Item]) -> None:
         writer = csv.DictWriter(
             handle,
             fieldnames=["kind", "name", "url", "status", "http_status", "detail", "checked_at"],
+            lineterminator="\n",
         )
         writer.writeheader()
         writer.writerows(

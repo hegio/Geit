@@ -84,6 +84,28 @@ jobs:
               assert str(config.get("spider", "")).startswith("https://"), name
               assert not find_sensitive_credentials(config), name
 
+          pairs = (
+              ("geit-fish.txt", "geit.json"),
+              ("geitpy-fish.txt", "geitpy.json"),
+          )
+          for fish_name, json_name in pairs:
+              raw = Path(fish_name).read_text(encoding="utf-8-sig")
+              assert "**" not in raw[:16], f"{fish_name} is still wrapped"
+              fish = json.loads(raw)
+              source = json.loads(Path(json_name).read_text(encoding="utf-8"))
+              assert fish["sites"] == source["sites"], fish_name
+              assert fish["lives"] == source["lives"], fish_name
+              for key in ("sites", "lives", "parses", "rules", "doh", "flags", "ijk", "ads"):
+                  assert isinstance(fish.get(key), list), f"{fish_name}: {key}"
+              assert isinstance(fish.get("logo"), str), fish_name
+              assert not find_sensitive_credentials(fish), fish_name
+
+          import hashlib
+          hashes = {}
+          for path in Path("py").glob("*.py"):
+              digest = hashlib.sha256(path.read_bytes()).hexdigest()
+              assert digest not in hashes, f"duplicate Python: {path} == {hashes[digest]}"
+              hashes[digest] = path
           for path in Path("py").glob("*.py"):
               ast.parse(path.read_text(encoding="utf-8-sig", errors="replace"))
           assert Path("tvbox/lives/merged.m3u").read_text(encoding="utf-8").startswith("#EXTM3U")
@@ -100,14 +122,14 @@ jobs:
           else
             git commit -m "chore: 自动聚合 TVBox 配置 $(TZ=Asia/Shanghai date +'%Y-%m-%d %H:%M')"
             for attempt in 1 2 3; do
-              if git push "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "HEAD:${GITHUB_REF_NAME}"; then
+              if git push origin "HEAD:${GITHUB_REF_NAME}"; then
                 break
               fi
               if [ "$attempt" -eq 3 ]; then
                 echo "推送失败，已重试 3 次" >&2
                 exit 1
               fi
-              git pull --rebase "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "${GITHUB_REF_NAME}"
+              git pull --rebase origin "${GITHUB_REF_NAME}"
             done
           fi
 

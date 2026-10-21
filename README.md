@@ -16,7 +16,7 @@ https://raw.githubusercontent.com/hegio/Geit/main/geit.json
 https://raw.githubusercontent.com/hegio/Geit/main/geitpy.json
 ```
 
-鱼壳/海豚等需要“前缀 + Base64”包装格式的客户端：
+鱼壳/海豚兼容入口（明文 JSON，不使用前缀、Base64 或加密）：
 
 ```text
 https://raw.githubusercontent.com/hegio/Geit/main/geit-fish.txt
@@ -29,7 +29,7 @@ https://raw.githubusercontent.com/hegio/Geit/main/geitpy-fish.txt
 https://raw.githubusercontent.com/hegio/Geit/main/docs/tvbox.json
 ```
 
-GitHub 的 `/blob/` 地址打开的是网页，不是 JSON 文件，不能作为影视 App 订阅。请使用上面的 `raw.githubusercontent.com` 地址。
+GitHub 的 `/blob/` 地址打开的是 HTML 网页，不是 JSON 文件，不能作为影视 App 订阅。影视 App 会出现“配置取得失败”或类似提示。请使用上面的 `raw.githubusercontent.com` 地址；如果本地网络无法直连 Raw，可在 App 允许时使用 `gh-proxy.org` 等代理前缀。
 
 ## 产物
 
@@ -37,8 +37,8 @@ GitHub 的 `/blob/` 地址打开的是网页，不是 JSON 文件，不能作为
 |---|---|
 | `geit.json` | 聚合来源中的站点、直播源和 `spider.jar`，TVBox 可直接导入 |
 | `geitpy.json` | 在 `geit.json` 基础上追加 `py/` 内全部有效 Python 站点 |
-| `geit-fish.txt` | 与 `geit.json` 内容相同的鱼壳/海豚包装格式 |
-| `geitpy-fish.txt` | 与 `geitpy.json` 内容相同的鱼壳/海豚包装格式 |
+| `geit-fish.txt` | 与 `geit.json` 站点/直播相同的明文 JSON，补齐鱼壳/海豚常用顶层字段 |
+| `geitpy-fish.txt` | 与 `geitpy.json` 站点/直播相同的明文 JSON，包含 Python 站点 |
 | `tvbox/lives/merged.m3u` | 从 TXT/M3U 来源合并并按 URL 去重的直播列表 |
 | `docs/tvbox.json` | `geit.json` 的兼容副本，旧链接可直接使用 |
 | `docs/sources.json` | 每个来源的抓取状态和解析结果 |
@@ -72,8 +72,9 @@ GitHub 的 `/blob/` 地址打开的是网页，不是 JSON 文件，不能作为
 1. 读取 `sources.txt`，抓取并识别 JSON / TXT / M3U。
 2. 解密加密配置，提取并校验其中的 Python 文件。
 3. 按站点 API、直播 URL 和频道 URL 去重。
-4. 生成 `geit.json`、`geitpy.json`、`merged.m3u`、文档页和健康报告。
-5. 运行语法与结构校验，然后只提交生成产物和必要脚本。
+4. 按文件内容哈希去重 Python；同一内容的重复文件移入忽略提交的 `回收/重复Python/`。
+5. 生成 `geit.json`、`geitpy.json`、两个明文 fish JSON、`merged.m3u`、文档页和健康报告。
+6. 运行语法与结构校验，然后只提交生成产物和必要脚本。
 
 采集器不会把第三方原始配置原样提交。`config_security.py` 会递归检查生成配置中的 URL 参数、认证头、用户信息和敏感字段；本地生成和 GitHub Actions 静态校验都会在发现真实凭据时中止。
 
@@ -83,7 +84,7 @@ GitHub 的 `/blob/` 地址打开的是网页，不是 JSON 文件，不能作为
 python check_health.py --workers 16 --max-channels 500
 ```
 
-`check_health.py` 读取来源、站点、直播和合并频道，输出 `docs/health.json`、`docs/health.csv` 与 `docs/blocked.csv`。健康工作流会安装 `ffprobe`，对支持的直链和 HLS 首条媒体流做播放探测。常见状态：
+`check_health.py` 读取来源、站点、直播和合并频道，输出 `docs/health.json`、`docs/health.csv` 与 `docs/blocked.csv`。健康工作流会安装 `ffprobe`，对支持的直链和 HLS 首条媒体流做播放探测。写盘前会脱敏 `accountinfo`、`token`、`sig`、`signature`、`key` 等查询参数和 URL 用户信息，避免诊断文件泄露凭据。常见状态：
 
 - `reachable`：HTTP 可访问。
 - `http_error`：403、404、超时或连接失败。
@@ -93,6 +94,8 @@ python check_health.py --workers 16 --max-channels 500
 - `probe_ok` / `probe_failed`：使用 `ffprobe` 探测到或未探测到媒体流。
 
 健康状态是带时间戳的诊断结果，不会因为一次失败就永久删除来源。HTTP 200 不等于可播放，完整频道验证应结合播放列表内容、媒体分片和影视 App 实测。
+
+`docs/blocked.csv` 会汇总明确 HTTP 失败、ffprobe 失败和配置无法解析的条目；`requires_app`、`reachable` 和 `playback_unverified` 不会被当作永久失效。地区限制、CDN、UA、代理和临时超时都可能造成误判，因此标记用于复查，不会自动改动 `sources.txt`。
 
 ## 本地运行
 

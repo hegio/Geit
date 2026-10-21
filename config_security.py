@@ -10,6 +10,7 @@ from typing import Any
 
 
 SENSITIVE_NAMES = frozenset({
+    "accountinfo",
     "accesstoken",
     "apikey",
     "auth",
@@ -56,6 +57,11 @@ HEADER_CREDENTIAL = re.compile(
     r"(?i)\b(?:authorization|cookie|set-cookie|x-api-key|api-key)\b\s*[:=]\s*[^\s,;]+"
 )
 BEARER_CREDENTIAL = re.compile(r"(?i)\b(?:bearer|basic)\s+[A-Za-z0-9._~+/=-]{8,}")
+REDACTABLE_HEADER = re.compile(
+    r"(?i)\b(authorization|cookie|set-cookie|x-api-key|api-key)\b\s*[:=]\s*[^\s,;]+"
+)
+URL_USERINFO = re.compile(r"(?i)\b(https?://)[^/@\s]+@")
+REDACTABLE_QUERY = re.compile(r"([?&;])([A-Za-z0-9_.-]+)=([^&#\s\"'<>]*)")
 PLACEHOLDER = re.compile(
     r"^(?:\{\{.*\}\}|\$\{.*\}|%[A-Z0-9_]+%|<[^>]+>|\[[A-Z0-9_]+\])$",
     re.I,
@@ -143,3 +149,27 @@ def find_sensitive_credentials(value: Any, path: str = "$") -> list[str]:
 
 def contains_sensitive_credentials(value: Any) -> bool:
     return bool(find_sensitive_credentials(value))
+
+
+def redact_sensitive_text(value: Any) -> str:
+    """Redact credentials from a URL or error string before publishing it."""
+    text = "" if value is None else str(value)
+    if not text:
+        return text
+
+    text = URL_USERINFO.sub(lambda match: "%s<redacted>@" % match.group(1), text)
+
+    def redact_query(match: re.Match[str]) -> str:
+        name = match.group(2)
+        if _normalized_name(name) not in SENSITIVE_NAMES:
+            return match.group(0)
+        return "%s%s=<redacted>" % (match.group(1), name)
+
+    text = REDACTABLE_QUERY.sub(redact_query, text)
+
+    def redact_header(match: re.Match[str]) -> str:
+        return "%s: <redacted>" % match.group(1)
+
+    text = REDACTABLE_HEADER.sub(redact_header, text)
+    text = BEARER_CREDENTIAL.sub("Bearer <redacted>", text)
+    return text

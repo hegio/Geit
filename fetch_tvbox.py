@@ -6,6 +6,7 @@ The collector deliberately writes derived files only:
 
 * geit.json: playable TVBox configuration with sites and live entries
 * geitpy.json: geit.json plus every valid Python spider in py/
+* geit-fish.txt / geitpy-fish.txt: unencrypted Fish-compatible JSON profiles
 * tvbox/lives/merged.m3u: de-duplicated live channels from TXT/M3U sources
 * docs/sources.json: a human-readable source inventory
 * docs/health.json and docs/health.csv: link health report
@@ -37,13 +38,14 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, Iterable
 
-from config_security import find_sensitive_credentials
+from config_security import find_sensitive_credentials, redact_sensitive_text
 
 
 HERE = Path(__file__).resolve().parent
 SOURCES_FILE = HERE / "sources.txt"
 REPO_FILE = HERE / "repo.txt"
 PY_DIR = HERE / "py"
+RECYCLE_DIR = HERE / "回收"
 TVBOX_DIR = HERE / "tvbox"
 LIVE_DIR = TVBOX_DIR / "lives"
 DOCS_DIR = HERE / "docs"
@@ -416,9 +418,55 @@ def safe_python_name(url: str, data: bytes, existing: dict[str, bytes]) -> str:
     return candidate
 
 
+def python_name_rank(name: str) -> tuple[bool, int, str]:
+    """Prefer a short canonical filename over a generated hash-suffixed copy."""
+    has_hash_suffix = bool(re.search(r"-[0-9a-f]{10}\.py$", name, re.I))
+    return has_hash_suffix, len(name), name.lower()
+
+
+def deduplicate_python_data(files: dict[str, bytes]) -> dict[str, bytes]:
+    groups: dict[str, list[tuple[str, bytes]]] = {}
+    for name, data in files.items():
+        groups.setdefault(hashlib.sha256(data).hexdigest(), []).append((name, data))
+    result: dict[str, bytes] = {}
+    for entries in groups.values():
+        canonical_name, data = min(entries, key=lambda item: python_name_rank(item[0]))
+        result[canonical_name] = data
+    return result
+
+
+def quarantine_python(path: Path, category: str) -> None:
+    """Move duplicate or invalid Python out of the build without deleting it."""
+    target_dir = RECYCLE_DIR / category
+    target_dir.mkdir(parents=True, exist_ok=True)
+    target = target_dir / path.name
+    if target.exists():
+        digest = hashlib.sha256(path.read_bytes()).hexdigest()[:10]
+        target = target_dir / ("%s-%s%s" % (path.stem, digest, path.suffix))
+    shutil.move(str(path), str(target))
+    log("已移入回收/%s: %s" % (category, path.name))
+
+
+def deduplicate_python_directory() -> None:
+    PY_DIR.mkdir(parents=True, exist_ok=True)
+    groups: dict[str, list[Path]] = {}
+    for path in sorted(PY_DIR.glob("*.py")):
+        data = path.read_bytes()
+        if not valid_python(data):
+            quarantine_python(path, "无效Python")
+            continue
+        groups.setdefault(hashlib.sha256(data).hexdigest(), []).append(path)
+    for paths in groups.values():
+        keep = min(paths, key=lambda path: python_name_rank(path.name))
+        for duplicate in paths:
+            if duplicate != keep:
+                quarantine_python(duplicate, "重复Python")
+
+
 def load_local_python() -> dict[str, bytes]:
     result: dict[str, bytes] = {}
     PY_DIR.mkdir(parents=True, exist_ok=True)
+    deduplicate_python_directory()
     for path in sorted(PY_DIR.glob("*.py")):
         data = path.read_bytes()
         if valid_python(data):
@@ -439,7 +487,7 @@ def collect_one(source: str, local_python: dict[str, bytes]) -> SourceResult:
         result.bytes = len(data)
     except Exception as exc:
         result.status = "http_error"
-        result.detail = str(exc)
+        result.detail = redact_sensitive_text(exc)
         return result
 
     text = decode_text(data)
@@ -557,9 +605,16 @@ def build_config(stats: BuildStats, repo: str, branch: str) -> dict[str, Any]:
     config: dict[str, Any] = {
         "name": "Geit",
         "spider": raw_url(repo, branch, "spider.jar"),
+        "logo": "",
         "wallpaper": "",
         "sites": sites,
         "lives": lives,
+        "parses": [],
+        "rules": [],
+        "doh": [],
+        "flags": [],
+        "ijk": [],
+        "ads": [],
     }
     for key in ("parses", "rules", "doh", "flags", "ijk", "ads"):
         if key in stats.config_meta:
@@ -586,11 +641,21 @@ def write_json(path: Path, value: Any) -> None:
     path.write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
-def write_fish_wrapped(path: Path, value: Any) -> None:
-    """Write the wrapped payload used by the Fish/海豚 TVBox clients."""
-    plain = json.dumps(value, ensure_ascii=False, indent=4).encode("utf-8")
-    prefix = base64.urlsafe_b64encode(hashlib.sha256(plain).digest()).decode("ascii").rstrip("=")[:8]
-    path.write_text(prefix + "**" + base64.b64encode(plain).decode("ascii"), encoding="utf-8")
+def fish_compatible_config(value: dict[str, Any]) -> dict[str, Any]:
+    """Build a plain JSON profile matching common Fish/Dolphin clients."""
+    config = json.loads(json.dumps(value, ensure_ascii=False))
+    # The working Fish/Dolphin examples do not require this TVBox-only field.
+    config.pop("name", None)
+    config.setdefault("logo", "")
+    config.setdefault("wallpaper", "")
+    for key in ("parses", "rules", "doh", "flags", "ijk", "ads"):
+        config.setdefault(key, [])
+    return config
+
+
+def write_fish_json(path: Path, value: dict[str, Any]) -> None:
+    """Write an unencrypted JSON file for Fish/Dolphin-compatible clients."""
+    write_json(path, fish_compatible_config(value))
 
 
 def strip_unresolved_secret_placeholders(value: Any) -> Any:
@@ -614,8 +679,8 @@ def write_docs(stats: BuildStats, repo: str, branch: str) -> None:
         "count": len(stats.sources),
         "sources": [
             {
-                "source": item.source,
-                "effective_url": item.effective_url,
+                "source": redact_sensitive_text(item.source),
+                "effective_url": redact_sensitive_text(item.effective_url),
                 "kind": item.kind,
                 "status": item.status,
                 "http_status": item.http_status,
@@ -624,7 +689,7 @@ def write_docs(stats: BuildStats, repo: str, branch: str) -> None:
                 "sites": len(item.sites),
                 "lives": len(item.lives),
                 "channels": len(item.channels),
-                "detail": item.detail,
+                "detail": redact_sensitive_text(item.detail),
             }
             for item in stats.sources
         ],
@@ -642,18 +707,18 @@ def write_health_report(stats: BuildStats) -> None:
     for item in stats.sources:
         rows.append({
             "kind": "source",
-            "name": item.source,
-            "url": item.effective_url,
+            "name": redact_sensitive_text(item.source),
+            "url": redact_sensitive_text(item.effective_url),
             "status": item.status,
             "http_status": item.http_status or "",
-            "detail": item.detail,
+            "detail": redact_sensitive_text(item.detail),
         })
     for site in stats.sites:
         api = str(site.get("api", ""))
         rows.append({
             "kind": "site",
-            "name": site.get("name", ""),
-            "url": api,
+            "name": redact_sensitive_text(site.get("name", "")),
+            "url": redact_sensitive_text(api),
             "status": "requires_app" if site.get("type") == 3 else "unverified",
             "http_status": "",
             "detail": "需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放",
@@ -661,8 +726,8 @@ def write_health_report(stats: BuildStats) -> None:
     for live in stats.lives:
         rows.append({
             "kind": "live",
-            "name": live.get("name", ""),
-            "url": live.get("url", ""),
+            "name": redact_sensitive_text(live.get("name", "")),
+            "url": redact_sensitive_text(live.get("url", "")),
             "status": "unverified",
             "http_status": "",
             "detail": "播放能力需由 check_health.py 或影视 App 实测",
@@ -681,7 +746,11 @@ def write_health_report(stats: BuildStats) -> None:
         raise ValueError("健康报告包含真实凭据，已中止写入")
     write_json(DOCS_DIR / "health.json", report)
     with (DOCS_DIR / "health.csv").open("w", encoding="utf-8-sig", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=["kind", "name", "url", "status", "http_status", "detail"])
+        writer = csv.DictWriter(
+            handle,
+            fieldnames=["kind", "name", "url", "status", "http_status", "detail"],
+            lineterminator="\n",
+        )
         writer.writeheader()
         writer.writerows(rows)
 
@@ -689,6 +758,8 @@ def write_health_report(stats: BuildStats) -> None:
 def write_index(stats: BuildStats, repo: str, branch: str) -> None:
     geit = raw_url(repo, branch, "geit.json")
     geitpy = raw_url(repo, branch, "geitpy.json")
+    geit_fish = raw_url(repo, branch, "geit-fish.txt")
+    geitpy_fish = raw_url(repo, branch, "geitpy-fish.txt")
     health = raw_url(repo, branch, "docs/health.csv")
     html = """<!doctype html>
 <html lang="zh-CN"><head><meta charset="utf-8">
@@ -712,6 +783,8 @@ code{display:block;background:#eee8db;border-radius:10px;padding:10px;word-break
 <section class="grid">
 <article class="card"><h2>geit.json</h2><p>聚合站点、直播源和 spider.jar 的完整播放配置。</p><code>__GEIT__</code></article>
 <article class="card"><h2>geitpy.json</h2><p>在 geit.json 基础上追加 py/ 目录中的有效 Python 站点。</p><code>__GEITPY__</code></article>
+<article class="card"><h2>geit-fish.txt</h2><p>明文 JSON，无前缀、Base64 或加密，补齐鱼壳/海豚常用顶层字段。</p><code>__GEIT_FISH__</code></article>
+<article class="card"><h2>geitpy-fish.txt</h2><p>明文 fish JSON，包含 geitpy.json 中的 Python 站点。</p><code>__GEITPY_FISH__</code></article>
 <article class="card"><h2>健康报告</h2><p>记录 HTTP 可达性、配置解析状态与播放验证状态。</p><code>__HEALTH__</code></article>
 </section>
 <div class="stats"><span><b>__SITES__</b>站点</span><span><b>__LIVES__</b>直播配置</span><span><b>__CHANNELS__</b>去重频道</span><span><b>__SOURCES__</b>来源</span></div>
@@ -720,6 +793,8 @@ code{display:block;background:#eee8db;border-radius:10px;padding:10px;word-break
     replacements = {
         "__GEIT__": geit,
         "__GEITPY__": geitpy,
+        "__GEIT_FISH__": geit_fish,
+        "__GEITPY_FISH__": geitpy_fish,
         "__HEALTH__": health,
         "__SITES__": str(len(stats.sites)),
         "__LIVES__": str(len(stats.lives)),
@@ -764,6 +839,19 @@ def validate_outputs(config: dict[str, Any], py_config: dict[str, Any], repo: st
                 raise ValueError("geitpy.json 引用了不存在的 Python 文件: %s" % name)
 
 
+def validate_fish_config(value: dict[str, Any], label: str) -> None:
+    expected_lists = ("sites", "lives", "parses", "rules", "doh", "flags", "ijk", "ads")
+    for key in expected_lists:
+        if not isinstance(value.get(key), list):
+            raise ValueError("%s 缺少数组字段 %s" % (label, key))
+    if not isinstance(value.get("logo"), str):
+        raise ValueError("%s 的 logo 不是字符串" % label)
+    if not str(value.get("spider", "")).startswith("https://"):
+        raise ValueError("%s 的 spider 不是绝对 HTTPS 地址" % label)
+    if find_sensitive_credentials(value):
+        raise ValueError("%s 仍包含真实凭据" % label)
+
+
 def main() -> int:
     repo, branch = load_repo()
     log("=== Geit collector: %s@%s ===" % (repo, branch))
@@ -781,7 +869,7 @@ def main() -> int:
         source_lines.append(line)
 
     for index, source in enumerate(source_lines, 1):
-        log("(%d/%d) %s" % (index, len(source_lines), source))
+        log("(%d/%d) %s" % (index, len(source_lines), redact_sensitive_text(source)))
         result = collect_one(source, {**local_python, **stats.python_files})
         stats.sources.append(result)
         stats.sites.extend(result.sites)
@@ -793,13 +881,13 @@ def main() -> int:
         log("  -> %s, sites=%d, lives=%d, channels=%d"
             % (result.status, len(result.sites), len(result.lives), len(result.channels)))
 
+    stats.python_files = deduplicate_python_data(stats.python_files)
     for name, data in stats.python_files.items():
         target = PY_DIR / name
         if not target.exists():
             target.write_bytes(data)
             local_python[name] = data
-    PY_DIR.mkdir(parents=True, exist_ok=True)
-    local_python = {path.name: path.read_bytes() for path in sorted(PY_DIR.glob("*.py")) if valid_python(path.read_bytes())}
+    local_python = load_local_python()
 
     stats.sites = merge_dicts(stats.sites, ("key", "api"))
     stats.lives = merge_dicts(stats.lives, ("name", "url"))
@@ -819,17 +907,21 @@ def main() -> int:
     config = strip_unresolved_secret_placeholders(config)
     py_config = strip_unresolved_secret_placeholders(py_config)
     validate_outputs(config, py_config, repo, branch)
+    fish_config = fish_compatible_config(config)
+    py_fish_config = fish_compatible_config(py_config)
+    validate_fish_config(fish_config, "geit-fish.txt")
+    validate_fish_config(py_fish_config, "geitpy-fish.txt")
     write_json(GEIT_PATH, config)
     write_json(GEITPY_PATH, py_config)
-    write_fish_wrapped(GEIT_FISH_PATH, config)
-    write_fish_wrapped(GEITPY_FISH_PATH, py_config)
+    write_fish_json(GEIT_FISH_PATH, config)
+    write_fish_json(GEITPY_FISH_PATH, py_config)
     write_docs(stats, repo, branch)
     write_health_report(stats)
     write_index(stats, repo, branch)
 
     log("生成 geit.json：%d 个站点，%d 个直播源" % (len(config["sites"]), len(config["lives"])))
     log("生成 geitpy.json：%d 个站点（含 %d 个 Python）" % (len(py_config["sites"]), len(local_python)))
-    log("生成鱼壳兼容文件：geit-fish.txt、geitpy-fish.txt")
+    log("生成明文鱼壳兼容文件：geit-fish.txt、geitpy-fish.txt")
     log("合并直播频道：%d 条" % len(stats.channels))
     return 0
 
