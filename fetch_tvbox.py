@@ -593,6 +593,18 @@ def write_fish_wrapped(path: Path, value: Any) -> None:
     path.write_text(prefix + "**" + base64.b64encode(plain).decode("ascii"), encoding="utf-8")
 
 
+def strip_unresolved_secret_placeholders(value: Any) -> Any:
+    """Remove sites whose key or URL still contains an unresolved secret."""
+    if not isinstance(value, dict) or not isinstance(value.get("sites"), list):
+        return value
+    cleaned = json.loads(json.dumps(value, ensure_ascii=False))
+    cleaned["sites"] = [
+        site for site in cleaned["sites"]
+        if "{{SECRET_" not in json.dumps(site, ensure_ascii=False)
+    ]
+    return cleaned
+
+
 def write_docs(stats: BuildStats, repo: str, branch: str) -> None:
     DOCS_DIR.mkdir(parents=True, exist_ok=True)
     source_manifest = {
@@ -804,6 +816,8 @@ def main() -> int:
             existing_apis.add(site["api"])
 
     # Validate in memory before touching any published artifact.
+    config = strip_unresolved_secret_placeholders(config)
+    py_config = strip_unresolved_secret_placeholders(py_config)
     validate_outputs(config, py_config, repo, branch)
     write_json(GEIT_PATH, config)
     write_json(GEITPY_PATH, py_config)
