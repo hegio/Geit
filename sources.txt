@@ -1,3 +1,6 @@
 # TVBox 采集目标（每行一个，# 开头为注释）
-https://gh-proxy.com/https://raw.githubusercontent.com/FGBLH/EHR663/refs/heads/main/Web鱼壳海豚常规997
-REPO:FGBLH/EHR663
+#https://gh-proxy.com/https://raw.githubusercontent.com/FGBLH/EHR663/refs/heads/main/Web鱼壳海豚常规997
+https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt
+https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg
+https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt
+#REPO:FGBLH/EHR663
