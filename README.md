@@ -101,6 +101,18 @@ python check_health.py --workers 16 --max-channels 500
 
 `docs/blocked.csv` 会汇总明确 HTTP 失败、ffprobe 失败和配置无法解析的条目；`requires_app`、`reachable` 和 `playback_unverified` 不会被当作永久失效。地区限制、CDN、UA、代理和临时超时都可能造成误判，因此标记用于复查，不会自动改动 `sources.txt`。
 
+### 失效直播源自动清理
+
+健康工作流会把每一轮的结果累加到 `docs/removable.json`，只统计 `geit.json` 里的 `live` 直播源（它们每轮全量检查，能真正凑够连续次数；频道是抽样轮转的，同一条很可能连续几轮都没被抽到，因此不参与计数）。
+
+- 计入失败：连接被拒、DNS 解析失败、HTTP 4xx/5xx、ffprobe 报告无效流数据。
+- 不计入失败：**超时**。健康工作流跑在 GitHub 境外 runner 上，国内直播源超时率很高，按超时计数会误删活着的源。
+- 每次探测只判断该源"确定性失效"，某次只是慢不会清零已有计数外的其他影响：只要有一轮恢复 `reachable`，计数立即归零。
+
+连续失败达到 5 次（`FAIL_STREAK_LIMIT`）后，该源进入 `removable` 列表并在日志里打印名称与来源；下一次聚合运行 `fetch_tvbox.py` 时会自动把它从 `geit.json`、`geitpy.json` 和两个 fish JSON 中移除，其下频道也不再进入 `merged.m3u`。`docs/removable.json` 的 `pending` 列表记录失败 1-4 次的源，仅供人工预判，不会触发任何删除。
+
+`fetch_tvbox.py` 读取 `removable.json` 时是容错的：文件缺失、为空或无法解析都直接跳过清理，所以聚合不依赖健康报告存在。
+
 ## 本地运行
 
 ```powershell

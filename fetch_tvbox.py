@@ -54,6 +54,10 @@ GEITPY_PATH = HERE / "geitpy.json"
 GEIT_FISH_PATH = HERE / "geit-fish.txt"
 GEITPY_FISH_PATH = HERE / "geitpy-fish.txt"
 MERGED_M3U_PATH = LIVE_DIR / "merged.m3u"
+# 直播源出处：健康报告据此标注每个 live 来自 sources.txt 的哪一行。
+LIVE_SOURCE_KEY = "source"
+# 健康工作流写出的待删除直播源清单，达到连续失败上限即自动移除。
+REMOVABLE_PATH = DOCS_DIR / "removable.json"
 
 USER_AGENT = "Mozilla/5.0 (compatible; GeitCollector/2.0; +https://github.com/hegio/Geit)"
 TIMEOUT = 30
@@ -551,6 +555,7 @@ def collect_one(source: str, local_python: dict[str, bytes]) -> SourceResult:
             for live in lives:
                 item, error = sanitize_live(live)
                 if item:
+                    item.setdefault(LIVE_SOURCE_KEY, source)
                     result.lives.append(item)
                 elif error == "invalid_placeholder":
                     result.detail = "存在需要密钥占位符的直播项，已跳过"
@@ -627,17 +632,51 @@ def write_m3u(channels: list[Channel]) -> None:
     MERGED_M3U_PATH.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
+def drop_dead_lives(lives: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Remove live sources the health workflow flagged as repeatedly dead.
+
+    docs/removable.json lists live URLs that failed decisive checks
+    FAIL_STREAK_LIMIT times in a row. Only those URLs are dropped; a missing or
+    unreadable file means nothing is removed, so aggregation never depends on
+    the health report being present.
+    """
+    if not REMOVABLE_PATH.is_file():
+        return lives
+    try:
+        data = json.loads(REMOVABLE_PATH.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        log("WARN removable.json 无法解析，跳过直播源清理")
+        return lives
+    flagged = data.get("removable", []) if isinstance(data, dict) else []
+    doomed: dict[str, str] = {}
+    for entry in flagged:
+        if isinstance(entry, dict) and str(entry.get("url", "")):
+            doomed[str(entry["url"])] = str(entry.get("name", "")) or str(entry["url"])
+    if not doomed:
+        return lives
+    kept: list[dict[str, Any]] = []
+    for live in lives:
+        url = str(live.get("url", ""))
+        if url in doomed:
+            log("移除失效直播源（连续失败已达上限）: %s" % (live.get("name") or url))
+            continue
+        kept.append(live)
+    return kept
+
+
 def build_config(stats: BuildStats, repo: str, branch: str) -> dict[str, Any]:
     sites = merge_dicts(stats.sites, ("key", "api"))
     lives = merge_dicts(stats.lives, ("name", "url"))
     merged_live_url = raw_url(repo, branch, "tvbox/lives/merged.m3u")
     lives = [live for live in lives if live.get("url") != merged_live_url]
+    lives = drop_dead_lives(lives)
     if stats.channels:
         lives.append({
             "name": "Geit 聚合直播",
             "type": 0,
             "url": merged_live_url,
             "group": "聚合",
+            LIVE_SOURCE_KEY: "本仓库合并 tvbox/lives/merged.m3u",
         })
     config: dict[str, Any] = {
         "name": "Geit",

@@ -35,9 +35,14 @@ HERE = Path(__file__).resolve().parent
 DOCS_DIR = HERE / "docs"
 HEALTH_JSON = DOCS_DIR / "health.json"
 HEALTH_CSV = DOCS_DIR / "health.csv"
+REMOVABLE_JSON = DOCS_DIR / "removable.json"
 USER_AGENT = "Mozilla/5.0 (compatible; GeitHealth/2.0)"
 TIMEOUT = 15
 MAX_PROBE_BYTES = 2 * 1024 * 1024
+# 连续失败达到这个次数就自动删除对应直播源。
+FAIL_STREAK_LIMIT = 5
+# 超时不计入删除判定：境外探测对国内源超时很常见，属于误判高发区。
+SOFT_FAILURE_MARKERS = ("timed out", "read operation timed out", "超时")
 PROXY_FALLBACKS = (
     "https://gh-proxy.com/",
     "https://gh-proxy.org/",
@@ -54,10 +59,87 @@ class Item:
     http_status: int | None = None
     detail: str = ""
     checked_at: str = ""
+    source: str = ""
 
 
 def log(message: str) -> None:
     print("[%s] %s" % (time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), message))
+
+
+def is_decisive_failure(item: "Item") -> bool:
+    """True when a failure proves the live source is gone, not merely slow.
+
+    Timeouts are deliberately excluded: the health workflow runs on GitHub
+    hosted runners, and domestic Chinese live sources routinely time out from
+    outside the country. Counting those would delete working sources.
+    """
+    if item.kind != "live":
+        return False
+    if item.status not in {"http_error", "probe_failed", "invalid_config", "invalid_placeholder"}:
+        return False
+    detail = str(item.detail or "")
+    if any(marker in detail for marker in SOFT_FAILURE_MARKERS):
+        return False
+    return True
+
+
+def load_streaks() -> dict[str, dict[str, Any]]:
+    """Read the previous run's failure streaks keyed by live URL."""
+    if not REMOVABLE_JSON.is_file():
+        return {}
+    try:
+        data = json.loads(REMOVABLE_JSON.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {}
+    entries = data.get("streaks", []) if isinstance(data, dict) else []
+    result: dict[str, dict[str, Any]] = {}
+    for entry in entries:
+        if isinstance(entry, dict) and str(entry.get("url", "")):
+            result[str(entry["url"])] = entry
+    return result
+
+
+def update_streaks(items: list["Item"]) -> dict[str, dict[str, Any]]:
+    """Fold this run's decisive live failures into the persisted streaks.
+
+    Only live sources participate: they are fully checked every run, so a
+    streak of N really means N consecutive failures. Channels are sampled and
+    rotated, so a streak there would mostly record absence from the sample.
+    """
+    previous = load_streaks()
+    current: dict[str, dict[str, Any]] = {}
+    for item in items:
+        if item.kind != "live":
+            continue
+        url = str(item.url)
+        prior = previous.get(url, {})
+        history = list(prior.get("history", []))
+        if is_decisive_failure(item):
+            count = int(prior.get("count", 0)) + 1
+            history.append({
+                "checked_at": item.checked_at,
+                "status": item.status,
+                "detail": str(item.detail or "")[:300],
+            })
+            current[url] = {
+                "url": url,
+                "name": item.name,
+                "source": str(getattr(item, "source", "") or ""),
+                "count": count,
+                "history": history[-FAIL_STREAK_LIMIT:],
+                "removable": count >= FAIL_STREAK_LIMIT,
+            }
+        else:
+            # A healthy or merely slow result clears the streak.
+            current[url] = {
+                "url": url,
+                "name": item.name,
+                "source": str(getattr(item, "source", "") or ""),
+                "count": 0,
+                "history": [],
+                "removable": False,
+            }
+    return current
 
 
 def load_items() -> list[Item]:
@@ -98,6 +180,7 @@ def load_items() -> list[Item]:
                 name=str(live.get("name", "")),
                 url=str(live.get("url", "")),
                 detail="待检查",
+                source=str(live.get("source", "") or ""),
             ))
     merged_path = HERE / "tvbox" / "lives" / "merged.m3u"
     if merged_path.is_file():
@@ -366,6 +449,41 @@ def write_report(items: list[Item]) -> None:
         )
 
 
+def write_removable(items: list[Item]) -> None:
+    """Record decisive live failures and flag sources that hit the streak limit.
+
+    Reaching FAIL_STREAK_LIMIT means the source is auto-removed from geit.json
+    on the next aggregation run; below the limit it is only reported.
+    """
+    streaks = update_streaks(items)
+    ordered = sorted(streaks.values(), key=lambda entry: (-int(entry.get("count", 0)), str(entry.get("name", ""))))
+    flagged = [entry for entry in ordered if entry.get("removable")]
+    pending = [entry for entry in ordered if 0 < int(entry.get("count", 0)) < FAIL_STREAK_LIMIT]
+    report = {
+        "updated": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+        "policy": {
+            "fail_streak_limit": FAIL_STREAK_LIMIT,
+            "scope": "仅统计 geit.json 中的 live 直播源；频道抽样轮转，不参与计数",
+            "counted_failures": "连接被拒、DNS 失败、HTTP 4xx/5xx、无效流数据",
+            "ignored_failures": "超时（境外探测对国内源误判率高）",
+            "action": "达到上限的源会在下一次聚合时自动从 geit.json 移除，其下频道同步从 merged.m3u 剔除",
+        },
+        "summary": {
+            "flagged": len(flagged),
+            "pending": len(pending),
+            "clean": len(ordered) - len(flagged) - len(pending),
+        },
+        "removable": flagged,
+        "pending": pending,
+        "streaks": ordered,
+    }
+    REMOVABLE_JSON.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    if flagged:
+        for entry in flagged:
+            log("可删除直播源（连续失败 %d 次）: %s | 来源: %s"
+                % (entry["count"], entry["name"], entry.get("source") or "未知"))
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--probe", action="store_true", help="用 ffprobe 探测直接媒体地址")
@@ -410,7 +528,10 @@ def main() -> int:
     global HEALTH_JSON, HEALTH_CSV
     HEALTH_JSON = args.output_dir / "health.json"
     HEALTH_CSV = args.output_dir / "health.csv"
+    global REMOVABLE_JSON
+    REMOVABLE_JSON = args.output_dir / "removable.json"
     write_report(checked)
+    write_removable(checked)
     log("健康报告已写入 %s" % args.output_dir)
     return 0
 

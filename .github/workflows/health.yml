@@ -62,7 +62,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/health.json docs/health.csv docs/blocked.csv
+          git add docs/health.json docs/health.csv docs/blocked.csv docs/removable.json
           if git diff --cached --quiet; then
             echo "健康报告没有变化，跳过提交"
           else
@@ -88,5 +88,6 @@ jobs:
             docs/health.json
             docs/health.csv
             docs/blocked.csv
+            docs/removable.json
           if-no-files-found: warn
           retention-days: 14
