@@ -64,7 +64,16 @@ jobs:
             echo "健康报告没有变化，跳过提交"
           else
             git commit -m "chore: 更新链接健康报告 $(TZ=Asia/Shanghai date +'%Y-%m-%d %H:%M')"
-            git push "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "HEAD:${GITHUB_REF_NAME}"
+            for attempt in 1 2 3; do
+              if git push "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "HEAD:${GITHUB_REF_NAME}"; then
+                break
+              fi
+              if [ "$attempt" -eq 3 ]; then
+                echo "推送失败，已重试 3 次" >&2
+                exit 1
+              fi
+              git pull --rebase "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "${GITHUB_REF_NAME}"
+            done
           fi
 
       - name: 上传健康报告
