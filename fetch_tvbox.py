@@ -453,7 +453,9 @@ def deduplicate_python_directory() -> None:
     for path in sorted(PY_DIR.glob("*.py")):
         data = path.read_bytes()
         if not valid_python(data):
-            quarantine_python(path, "无效Python")
+            # Syntax compatibility can differ between local and CI Python
+            # versions. Keep the file for inspection instead of deleting it.
+            log("WARN 保留无效 Python（不参与配置）: %s" % path.name)
             continue
         groups.setdefault(hashlib.sha256(data).hexdigest(), []).append(path)
     for paths in groups.values():

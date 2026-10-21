@@ -167,10 +167,32 @@
       "api": "https://jsnz.pages.dev/f/e7124867.py"
     },
     {
+      "key": "py-261c1664-0865eb5887",
+      "name": "261c1664-0865eb5887",
+      "type": 3,
+      "api": "https://raw.githubusercontent.com/hegio/Geit/main/py/261c1664-0865eb5887.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
       "key": "py-261c1664",
       "name": "261c1664",
       "type": 3,
       "api": "https://raw.githubusercontent.com/hegio/Geit/main/py/261c1664.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
+      "key": "py-26511242-455968ff0f",
+      "name": "26511242-455968ff0f",
+      "type": 3,
+      "api": "https://raw.githubusercontent.com/hegio/Geit/main/py/26511242-455968ff0f.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
@@ -193,6 +215,17 @@
       "name": "275听书",
       "type": 3,
       "api": "https://raw.githubusercontent.com/hegio/Geit/main/py/275%E5%90%AC%E4%B9%A6.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
+      "key": "py-29b94aff-e2b4a6e25a",
+      "name": "29b94aff-e2b4a6e25a",
+      "type": 3,
+      "api": "https://raw.githubusercontent.com/hegio/Geit/main/py/29b94aff-e2b4a6e25a.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
@@ -255,6 +288,17 @@
       "playerType": 2
     },
     {
+      "key": "py-4df9fb60-85de4a5e39",
+      "name": "4df9fb60-85de4a5e39",
+      "type": 3,
+      "api": "https://raw.githubusercontent.com/hegio/Geit/main/py/4df9fb60-85de4a5e39.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
       "key": "py-4df9fb60",
       "name": "4df9fb60",
       "type": 3,
@@ -310,10 +354,32 @@
       "playerType": 2
     },
     {
+      "key": "py-72b7239d-980669205a",
+      "name": "72b7239d-980669205a",
+      "type": 3,
+      "api": "https://raw.githubusercontent.com/hegio/Geit/main/py/72b7239d-980669205a.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
       "key": "py-72b7239d",
       "name": "72b7239d",
       "type": 3,
       "api": "https://raw.githubusercontent.com/hegio/Geit/main/py/72b7239d.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
+      "key": "py-7e20bdb7-e18e212c42",
+      "name": "7e20bdb7-e18e212c42",
+      "type": 3,
+      "api": "https://raw.githubusercontent.com/hegio/Geit/main/py/7e20bdb7-e18e212c42.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
@@ -347,6 +413,17 @@
       "name": "99短剧网",
       "type": 3,
       "api": "https://raw.githubusercontent.com/hegio/Geit/main/py/99%E7%9F%AD%E5%89%A7%E7%BD%91.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
+      "key": "py-9e53615c-3996e23d16",
+      "name": "9e53615c-3996e23d16",
+      "type": 3,
+      "api": "https://raw.githubusercontent.com/hegio/Geit/main/py/9e53615c-3996e23d16.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
@@ -486,10 +563,10 @@
       "playerType": 2
     },
     {
-      "key": "py-af676592",
-      "name": "af676592",
+      "key": "py-af676592-fa68eadb39",
+      "name": "af676592-fa68eadb39",
       "type": 3,
-      "api": "https://raw.githubusercontent.com/hegio/Geit/main/py/af676592.py",
+      "api": "https://raw.githubusercontent.com/hegio/Geit/main/py/af676592-fa68eadb39.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
@@ -497,10 +574,10 @@
       "playerType": 2
     },
     {
-      "key": "py-cec31b11-3278653034",
-      "name": "cec31b11-3278653034",
+      "key": "py-af676592",
+      "name": "af676592",
       "type": 3,
-      "api": "https://raw.githubusercontent.com/hegio/Geit/main/py/cec31b11-3278653034.py",
+      "api": "https://raw.githubusercontent.com/hegio/Geit/main/py/af676592.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
@@ -519,10 +596,43 @@
       "playerType": 2
     },
     {
+      "key": "py-cf616b2f-040caafd11",
+      "name": "cf616b2f-040caafd11",
+      "type": 3,
+      "api": "https://raw.githubusercontent.com/hegio/Geit/main/py/cf616b2f-040caafd11.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
       "key": "py-cf616b2f",
       "name": "cf616b2f",
       "type": 3,
       "api": "https://raw.githubusercontent.com/hegio/Geit/main/py/cf616b2f.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
+      "key": "py-d44dd2cf",
+      "name": "d44dd2cf",
+      "type": 3,
+      "api": "https://raw.githubusercontent.com/hegio/Geit/main/py/d44dd2cf.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
+      "key": "py-e126d1e4-0eb654339f",
+      "name": "e126d1e4-0eb654339f",
+      "type": 3,
+      "api": "https://raw.githubusercontent.com/hegio/Geit/main/py/e126d1e4-0eb654339f.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
@@ -541,6 +651,17 @@
       "playerType": 2
     },
     {
+      "key": "py-e1aeef83-afaff16509",
+      "name": "e1aeef83-afaff16509",
+      "type": 3,
+      "api": "https://raw.githubusercontent.com/hegio/Geit/main/py/e1aeef83-afaff16509.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
       "key": "py-e1aeef83",
       "name": "e1aeef83",
       "type": 3,
@@ -552,10 +673,32 @@
       "playerType": 2
     },
     {
+      "key": "py-e7124867-d68d7da8e0",
+      "name": "e7124867-d68d7da8e0",
+      "type": 3,
+      "api": "https://raw.githubusercontent.com/hegio/Geit/main/py/e7124867-d68d7da8e0.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
       "key": "py-e7124867",
       "name": "e7124867",
       "type": 3,
       "api": "https://raw.githubusercontent.com/hegio/Geit/main/py/e7124867.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
+      "key": "py-eded33cf",
+      "name": "eded33cf",
+      "type": 3,
+      "api": "https://raw.githubusercontent.com/hegio/Geit/main/py/eded33cf.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,

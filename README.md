@@ -108,7 +108,7 @@ python fetch_tvbox.py
 python check_health.py --workers 16 --max-channels 300
 ```
 
-工作流使用 `pycryptodome` 解密；安装失败会直接中止，不会悄悄跳过加密来源。
+工作流固定使用 Python 3.12 和 `pycryptodome` 解密；依赖安装失败会直接中止，不会悄悄跳过加密来源。
 
 ## 注意
 
