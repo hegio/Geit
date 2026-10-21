@@ -9841,3 +9841,58 @@
 [2026-10-21T08:45:40Z] 已生成 tvbox/py.json：15 个 spider 站点
 [2026-10-21T08:45:40Z] === 完成：成功 41 / 3 条 ===
 [2026-10-21T08:45:40Z] TG 未配置，跳过推送（如需推送请在仓库 Actions Secrets 设置 TG_BOT_TOKEN / TG_CHAT_ID）
+[2026-10-21T08:47:53Z] === TVBox collector start ===
+[2026-10-21T08:47:53Z] 待处理 3 条
+[2026-10-21T08:47:53Z] 剥离代理前缀 -> https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt
+[2026-10-21T08:47:53Z] SKIP 未变化 yiyifafa.txt
+[2026-10-21T08:47:53Z] 剥离代理前缀 -> https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg
+[2026-10-21T08:47:54Z] 已自动解密 https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg
+[2026-10-21T08:47:54Z] SKIP 未变化 Jsnzkpg.json
+[2026-10-21T08:47:54Z] 解密配置中发现 39 个子链接，继续采集...
+[2026-10-21T08:47:54Z] 剥离代理前缀 -> https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt
+[2026-10-21T08:47:54Z] SKIP 已处理 https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt
+[2026-10-21T08:48:13Z] OK live.m3u (10053 字节)
+[2026-10-21T08:48:21Z] OK live.m3u (115612 字节)
+[2026-10-21T08:48:22Z] OK live.m3u (281972 字节)
+[2026-10-21T08:48:31Z] OK live.m3u (563402 字节)
+[2026-10-21T08:48:32Z] SKIP 未变化 drpy2.min.js
+[2026-10-21T08:48:32Z] SKIP 未变化 戏曲大全.js
+[2026-10-21T08:48:44Z] OK live.m3u (550684 字节)
+[2026-10-21T08:48:44Z] SKIP 未变化 04b5c0b4.js
+[2026-10-21T08:48:44Z] SKIP 未变化 261c1664.py
+[2026-10-21T08:48:44Z] SKIP 未变化 26511242.py
+[2026-10-21T08:48:44Z] SKIP 未变化 29b94aff.py
+[2026-10-21T08:48:44Z] SKIP 未变化 4df9fb60.py
+[2026-10-21T08:48:45Z] SKIP 未变化 696546f2.js
+[2026-10-21T08:48:45Z] SKIP 未变化 6b9e7fca.js
+[2026-10-21T08:48:45Z] SKIP 未变化 72b7239d.py
+[2026-10-21T08:48:45Z] SKIP 未变化 7e20bdb7.py
+[2026-10-21T08:48:45Z] SKIP 未变化 9e53615c.py
+[2026-10-21T08:48:45Z] SKIP 未变化 af676592.py
+[2026-10-21T08:48:46Z] SKIP 未变化 cec31b11.py
+[2026-10-21T08:48:46Z] SKIP 未变化 cf616b2f.py
+[2026-10-21T08:48:46Z] SKIP 未变化 d44dd2cf.py
+[2026-10-21T08:48:46Z] SKIP 未变化 e126d1e4.py
+[2026-10-21T08:48:46Z] SKIP 未变化 e1aeef83.py
+[2026-10-21T08:48:47Z] SKIP 未变化 e7124867.py
+[2026-10-21T08:48:47Z] SKIP 未变化 e8cd0ee0.txt
+[2026-10-21T08:48:47Z] SKIP 未变化 eded33cf.py
+[2026-10-21T08:48:47Z] SKIP 未变化 f05e3b39.js
+[2026-10-21T08:48:47Z] SKIP 未变化 f7b46c7f.js
+[2026-10-21T08:48:58Z] OK all.m3u (18820 字节)
+[2026-10-21T08:48:59Z] OK t4.json (1519 字节)
+[2026-10-21T08:49:09Z] OK list.m3u (796392 字节)
+[2026-10-21T08:49:20Z] OK live.m3u (61162 字节)
+[2026-10-21T08:49:24Z] OK live.m3u (10083 字节)
+[2026-10-21T08:49:26Z] SKIP 未变化 index.m3u
+[2026-10-21T08:49:27Z] OK live.m3u (3217 字节)
+[2026-10-21T08:49:30Z] OK live.m3u (141234 字节)
+[2026-10-21T08:49:33Z] OK live.m3u (205203 字节)
+[2026-10-21T08:49:36Z] OK live.m3u (105 字节)
+[2026-10-21T08:49:36Z] 剥离代理前缀 -> https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt
+[2026-10-21T08:49:36Z] SKIP 未变化 2027update.txt
+[2026-10-21T08:49:36Z] 已生成订阅页：41 个文件
+[2026-10-21T08:49:36Z] py.json 合并直播源：模板 1 + 采集 19 = 20 条
+[2026-10-21T08:49:36Z] 已生成 tvbox/py.json：15 个 spider 站点
+[2026-10-21T08:49:36Z] === 完成：成功 41 / 3 条 ===
+[2026-10-21T08:49:36Z] TG 未配置，跳过推送（如需推送请在仓库 Actions Secrets 设置 TG_BOT_TOKEN / TG_CHAT_ID）
