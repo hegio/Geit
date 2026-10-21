@@ -1,19 +1,4905 @@
 {
-  "updated": "2026-10-21T18:11:58Z",
+  "updated": "2026-10-21T18:31:17Z",
   "summary": {
-    "sources": 3,
-    "sites": 25,
-    "lives": 18,
-    "channels": 9974
+    "http_error": 263,
+    "probe_ok": 44,
+    "probe_failed": 28,
+    "manifest_ok": 2,
+    "playback_unverified": 181,
+    "requires_app": 22,
+    "reachable": 6
+  },
+  "coverage": {
+    "checked_items": 546,
+    "note": "频道检查默认抽样；HTTP 200 不等于可播放，playback_unverified 需在影视 App 中复测"
   },
   "items": [
     {
-      "kind": "source",
-      "name": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-      "url": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+      "kind": "channel",
+      "name": "-汕尾生活",
+      "url": "https://iswtv.swrtv.com/live/whshpd.m3u8",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T18:23:43Z"
+    },
+    {
+      "kind": "channel",
+      "name": "-汕尾综合",
+      "url": "https://iswtv.swrtv.com/live/xwzhpd.m3u8",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "ffprobe 检测到媒体流: video,audio,,video,audio",
+      "checked_at": "2026-10-21T18:23:41Z"
+    },
+    {
+      "kind": "channel",
+      "name": "14",
+      "url": "https://stream.ads.ottera.tv/playlist.m3u8?network_id=14",
+      "status": "http_error",
+      "http_status": 400,
+      "detail": "HTTP 400",
+      "checked_at": "2026-10-21T18:23:02Z"
+    },
+    {
+      "kind": "channel",
+      "name": "ANTV",
+      "url": "http://antvlive.ab5c6921.cdnviet.com/antv/chunklist.m3u8",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "ffprobe 检测到媒体流: data,video,audio,,data,video,audio",
+      "checked_at": "2026-10-21T18:23:08Z"
+    },
+    {
+      "kind": "channel",
+      "name": "Arirang",
+      "url": "http://amdlive-ch01.ctnd.com.edgesuite.net/arirang_1ch/smil:arirang_1ch.smil/chunklist.m3u8",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "ffprobe 检测到媒体流: data,video,audio,,data,video,audio,,data,video,audio,,data,video,audio,,data,video,audio,data,video,audio,data,video,audio,data,video,audio",
+      "checked_at": "2026-10-21T18:23:04Z"
+    },
+    {
+      "kind": "channel",
+      "name": "Arirang",
+      "url": "http://amdlive.ctnd.com.edgesuite.net/arirang_1ch/smil:arirang_1ch/master.m3u8",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "ffprobe 检测到媒体流: data,video,audio,,data,video,audio,,data,video,audio,,data,video,audio,,data,video,audio,data,video,audio,data,video,audio,data,video,audio",
+      "checked_at": "2026-10-21T18:23:06Z"
+    },
+    {
+      "kind": "channel",
+      "name": "Arirang",
+      "url": "https://amdlive-ch01-ctnd-com.akamaized.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "ffprobe 检测到媒体流: data,video,audio,,data,video,audio,,data,video,audio,,data,video,audio,,data,video,audio,data,video,audio,data,video,audio,data,video,audio",
+      "checked_at": "2026-10-21T18:23:07Z"
+    },
+    {
+      "kind": "channel",
+      "name": "Arirang Radio",
+      "url": "http://amdlive-ch03.ctnd.com.edgesuite.net/arirang_3ch/smil:arirang_3ch.smil/playlist.m3u8",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "ffprobe 检测到媒体流: data,video,audio,,data,video,audio,,data,video,audio,,data,video,audio,,data,video,audio,data,video,audio,data,video,audio,data,video,audio",
+      "checked_at": "2026-10-21T18:23:09Z"
+    },
+    {
+      "kind": "channel",
+      "name": "BBS佛教广播",
+      "url": "http://bbstv.clouducs.com:1935/bbstv-live/livestream/chunklist_w1403706733.m3u8",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "ffprobe 检测到媒体流: data,video,audio,,data,video,audio",
+      "checked_at": "2026-10-21T18:23:06Z"
+    },
+    {
+      "kind": "channel",
+      "name": "BTN",
+      "url": "http://btn.nowcdn.co.kr/btn/btnlive01/playlist.m3u8",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "ffprobe 检测到媒体流: data,video,audio,,data,video,audio",
+      "checked_at": "2026-10-21T18:23:11Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CCTV1",
+      "url": "http://111.29.9.33:6610/000000001000/1000000001000021973/index.m3u8?channel-id=bestzb&Contentid=1000000001000021973&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:27:10Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CCTV10",
+      "url": "http://111.29.9.33:6610/000000001000/1000000001000023734/index.m3u8?channel-id=bestzb&Contentid=1000000001000023734&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:27:13Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CCTV10科教",
+      "url": "http://120.87.19.109:80/PLTV/88888973/224/3221225744/10000100000000060000000000334567_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:29:43Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CCTV10科教高清",
+      "url": "http://120.87.19.109:80/PLTV/88888973/224/3221225745/10000100000000060000000000334569_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:30:14Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CCTV11",
+      "url": "http://111.29.9.33:6610/000000001000/1000000002000019789/index.m3u8?channel-id=bestzb&Contentid=1000000002000019789&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:27:13Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CCTV11戏曲",
+      "url": "http://120.87.19.109:80/PLTV/88888973/224/3221225746/10000100000000060000000000334570_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:29:43Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CCTV11戏曲高清",
+      "url": "http://120.87.19.109:80/PLTV/88888973/224/3221226644/10000100000000060000000002070289_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:30:14Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CCTV12",
+      "url": "http://111.29.9.33:6610/000000001000/1000000001000001640/index.m3u8?channel-id=bestzb&Contentid=1000000001000001640&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:27:16Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CCTV12社会与法",
+      "url": "http://120.87.19.109:80/PLTV/88888973/224/3221225748/10000100000000060000000000334583_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:29:43Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CCTV12社会与法高清",
+      "url": "http://120.87.19.109:80/PLTV/88888973/224/3221225742/10000100000000060000000000334548_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:30:15Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CCTV13",
+      "url": "http://111.29.9.33:6610/000000001000/1000000002000021303/index.m3u8?channel-id=bestzb&Contentid=1000000002000021303&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:27:18Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CCTV13新闻",
+      "url": "http://120.87.19.109:80/PLTV/88888973/224/3221225751/10000100000000060000000000334589_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:29:43Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CCTV13新闻高清",
+      "url": "http://120.87.19.109:80/PLTV/88888973/224/3221226669/10000100000000060000000002070290_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:30:16Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CCTV14",
+      "url": "http://111.29.9.33:6610/000000001000/1000000001000008170/index.m3u8?channel-id=bestzb&Contentid=1000000001000008170&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:27:22Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CCTV14少儿",
+      "url": "http://120.87.19.109:80/PLTV/88888973/224/3221225753/10000100000000060000000000334592_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:29:44Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CCTV14少儿高清",
+      "url": "http://120.87.19.109:80/PLTV/88888973/224/3221225740/10000100000000060000000000334546_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:30:16Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CCTV15",
+      "url": "http://111.29.9.33:6610/000000001000/1000000002000008163/index.m3u8?channel-id=bestzb&Contentid=1000000002000008163&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:27:22Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CCTV15音乐",
+      "url": "http://120.87.19.109:80/PLTV/88888973/224/3221225756/10000100000000060000000000334620_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:29:44Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CCTV15音乐高清",
+      "url": "http://120.87.19.109:80/PLTV/88888973/224/3221226647/10000100000000060000000002070293_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:30:16Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CCTV16奥林匹克高清",
+      "url": "http://120.87.19.109:80/PLTV/88888973/224/3221226645/10000100000000060000000001772867_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:30:19Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CCTV17",
+      "url": "http://111.29.9.33:6610/000000001000/1000000005000056836/index.m3u8?channel-id=bestzb&Contentid=1000000005000056836&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:27:40Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CCTV17农业农村",
+      "url": "http://120.87.19.109:80/PLTV/88888973/224/3221226566/10000100000000060000000001504118_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:29:45Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CCTV17农业农村",
+      "url": "http://120.87.19.109:80/PLTV/88888973/224/3221226661/10000100000000060000000002070294_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:29:46Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CCTV1综合",
+      "url": "http://120.87.19.109:80/PLTV/88888973/224/3221225737/10000100000000060000000000334541_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:29:15Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CCTV1综合高清",
+      "url": "http://120.87.19.109:80/PLTV/88888973/224/3221225768/10000100000000060000000000337107_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:29:49Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CCTV2",
+      "url": "http://111.29.9.33:6610/000000001000/1000000001000012442/index.m3u8?channel-id=bestzb&Contentid=1000000001000012442&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:27:10Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CCTV2财经",
+      "url": "http://120.87.19.109:80/PLTV/88888973/224/3221225738/10000100000000060000000000334543_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:29:15Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CCTV2财经高清",
+      "url": "http://120.87.19.109:80/PLTV/88888973/224/3221225767/10000100000000060000000000337109_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:29:51Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CCTV3",
+      "url": "http://111.29.9.33:6610/000000001000/1000000001000011218/index.m3u8?channel-id=bestzb&Contentid=1000000001000011218&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:27:10Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CCTV3综艺",
+      "url": "http://120.87.19.109:80/PLTV/88888973/224/3221225814/10000100000000060000000000388928_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:29:18Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CCTV3综艺高清",
+      "url": "http://120.87.19.109:80/PLTV/88888973/224/3221226350/10000100000000060000000001464865_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:29:55Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CCTV4",
+      "url": "http://111.29.9.33:6610/000000001000/1000000002000031664/index.m3u8?channel-id=bestzb&Contentid=1000000002000031664&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:27:10Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CCTV4",
+      "url": "http://cfss.cc/cdn/dy/CCTV4...flv",
+      "status": "probe_failed",
+      "http_status": 200,
+      "detail": "http://cfss.cc/cdn/dy/CCTV4...flv: Invalid data found when processing input",
+      "checked_at": "2026-10-21T18:23:22Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CCTV4K超高清",
+      "url": "http://120.87.19.109:80/PLTV/88888973/224/3221226217/10000100000000060000000001339123_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:30:21Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CCTV4中文国际",
+      "url": "http://120.87.19.109:80/PLTV/88888973/224/3221225739/10000100000000060000000000334545_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:29:20Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CCTV4中文国际高清",
+      "url": "http://120.87.19.109:80/PLTV/88888973/224/3221226356/10000100000000060000000001481216_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:29:55Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CCTV5",
+      "url": "http://111.29.9.33:6610/000000001000/1000000001000004794/index.m3u8?channel-id=bestzb&Contentid=1000000001000004794&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:27:10Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CCTV5+",
+      "url": "http://111.29.9.33:6610/000000001000/1000000001000020505/index.m3u8?channel-id=bestzb&Contentid=1000000001000020505&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:27:10Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CCTV5+体育赛事高清",
+      "url": "http://120.87.19.109:80/PLTV/88888973/224/3221225705/10000100000000060000000000334542_0.smil/01.m3u8?fmt=ts2hls,744,01.m3u8&accountinfo=<redacted>&GuardEncType=8601",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:30:13Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CCTV5体育",
+      "url": "http://120.87.19.109:80/PLTV/88888973/224/3221225815/10000100000000060000000000389197_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:29:25Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CCTV5体育高清",
+      "url": "http://120.87.19.109:80/PLTV/88888973/224/3221226352/10000100000000060000000001464824_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:30:13Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CCTV6",
+      "url": "http://111.29.9.33:6610/000000001000/1000000001000016466/index.m3u8?channel-id=bestzb&Contentid=1000000001000016466&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:27:10Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CCTV6电影",
+      "url": "http://120.87.19.109:80/PLTV/88888973/224/3221225816/10000100000000060000000000389199_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:29:25Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CCTV6电影高清",
+      "url": "http://120.87.19.109:80/PLTV/88888973/224/3221226351/10000100000000060000000001464856_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:30:13Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CCTV7",
+      "url": "http://111.29.9.33:6610/000000001000/1000000001000017218/index.m3u8?channel-id=bestzb&Contentid=1000000001000017218&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:27:11Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CCTV7国防军事",
+      "url": "http://120.87.19.109:80/PLTV/88888973/224/3221225741/10000100000000060000000000334547_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:29:43Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CCTV7国防军事高清",
+      "url": "http://120.87.19.109:80/PLTV/88888973/224/3221225749/10000100000000060000000000334584_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:30:13Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CCTV8",
+      "url": "http://111.29.9.33:6610/000000001000/1000000001000003736/index.m3u8?channel-id=bestzb&Contentid=1000000001000003736&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:27:12Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CCTV8电视剧",
+      "url": "http://120.87.19.109:80/PLTV/88888973/224/3221225817/10000100000000060000000000389200_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:29:43Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CCTV8电视剧高清",
+      "url": "http://120.87.19.109:80/PLTV/88888973/224/3221226349/10000100000000060000000001464866_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:30:13Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CCTV9",
+      "url": "http://111.29.9.33:6610/000000001000/1000000001000014583/index.m3u8?channel-id=bestzb&Contentid=1000000001000014583&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:27:13Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CCTV9纪录",
+      "url": "http://120.87.19.109:80/PLTV/88888973/224/3221225743/10000100000000060000000000334557_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:29:43Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CCTV9纪录高清",
+      "url": "http://120.87.19.109:80/PLTV/88888973/224/3221225747/10000100000000060000000000334581_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:30:13Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CCTV远方的家",
+      "url": "http://cfss.cc/cdn/dy/44931143492.flv",
+      "status": "probe_failed",
+      "http_status": 200,
+      "detail": "http://cfss.cc/cdn/dy/44931143492.flv: Invalid data found when processing input",
+      "checked_at": "2026-10-21T18:23:23Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CGTN",
+      "url": "http://120.87.19.109:80/PLTV/88888973/224/3221225718/10000100000000060000000000334622_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:29:46Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CJB",
+      "url": "http://1.222.207.80:1935/live/cjbtv/chunklist_w1357270949.m3u8",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "ffprobe 检测到媒体流: data,video,audio,,data,video,audio",
+      "checked_at": "2026-10-21T18:23:05Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CPBC",
+      "url": "http://onair1.cpbc.co.kr:1935/tv/smil:live.smil/playlist.m3u8",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "ffprobe 检测到媒体流: data,video,audio,,data,video,audio,,data,video,audio,data,video,audio",
+      "checked_at": "2026-10-21T18:23:12Z"
+    },
+    {
+      "kind": "channel",
+      "name": "DV现场",
+      "url": "http://cfss.cc/cdn/dy/gdtvdvxc.flv",
+      "status": "probe_failed",
+      "http_status": 200,
+      "detail": "http://cfss.cc/cdn/dy/gdtvdvxc.flv: Invalid data found when processing input",
+      "checked_at": "2026-10-21T18:23:24Z"
+    },
+    {
+      "kind": "channel",
+      "name": "EBS-KIDS",
+      "url": "http://ebsonairios.ebs.co.kr/ebsutablet500k/_definst_/tablet500k/playlist.m3u8",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "ffprobe 检测到媒体流: data,video,audio,,data,video,audio",
+      "checked_at": "2026-10-21T18:23:13Z"
+    },
+    {
+      "kind": "channel",
+      "name": "EBS少儿",
+      "url": "http://ebsonairios.ebs.co.kr/ebsutablet500k/_definst_/tablet500k/chunklist_w1965791004.m3u8",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "ffprobe 检测到媒体流: data,video,audio,,data,video,audio",
+      "checked_at": "2026-10-21T18:23:02Z"
+    },
+    {
+      "kind": "channel",
+      "name": "HBTV",
+      "url": "http://hoabinhtvlive.746b3ddb.cdnviet.com/hoabinhtv/chunklist.m3u8",
+      "status": "http_error",
+      "http_status": 502,
+      "detail": "HTTP 502",
+      "checked_at": "2026-10-21T18:23:07Z"
+    },
+    {
+      "kind": "channel",
+      "name": "KCTV",
+      "url": "http://119.77.96.184:1935/chn05/chn05/chunklist.m3u",
+      "status": "manifest_ok",
+      "http_status": 200,
+      "detail": "文本列表可下载；不是可直接探测的单条 HLS 播放列表",
+      "checked_at": "2026-10-21T18:23:04Z"
+    },
+    {
+      "kind": "channel",
+      "name": "KCTV",
+      "url": "http://119.77.96.184:1935/chn05/chn05/chunklist.m3u8",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "ffprobe 检测到媒体流: data,video,audio,,data,video,audio",
+      "checked_at": "2026-10-21T18:23:05Z"
+    },
+    {
+      "kind": "channel",
+      "name": "Lumina",
+      "url": "https://cdn.ttvb.eu.org/douyin/86292842871",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno -2] Name or service not known>",
+      "checked_at": "2026-10-21T18:23:20Z"
+    },
+    {
+      "kind": "channel",
+      "name": "MBN",
+      "url": "http://mytv.dothome.co.kr/ch/catv/54.php",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:23:14Z"
+    },
+    {
+      "kind": "channel",
+      "name": "NewKID2",
+      "url": "https://stream.ads.ottera.tv/playlist.m3u8?network_id=878",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "ffprobe 检测到媒体流: video,audio,,video,audio,,video,audio,,video,audio,video,audio,video,audio",
+      "checked_at": "2026-10-21T18:23:15Z"
+    },
+    {
+      "kind": "channel",
+      "name": "NewKID4",
+      "url": "https://stream.ads.ottera.tv/playlist.m3u8?network_id=872",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "ffprobe 检测到媒体流: video,audio,,video,audio,,video,audio,,video,audio,video,audio,video,audio",
+      "checked_at": "2026-10-21T18:23:16Z"
+    },
+    {
+      "kind": "channel",
+      "name": "NewKID4",
+      "url": "https://stream.ads.ottera.tv/playlist.m3u8?network_id=888",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "ffprobe 检测到媒体流: video,audio,,video,audio,,video,audio,,video,audio,video,audio,video,audio",
+      "checked_at": "2026-10-21T18:23:15Z"
+    },
+    {
+      "kind": "channel",
+      "name": "RNA",
+      "url": "http://5ddfc48289114.streamlock.net/CHsoom/LIVE/playist.m3u8",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "ffprobe 检测到媒体流: data,video,audio,,data,video,audio",
+      "checked_at": "2026-10-21T18:23:17Z"
+    },
+    {
+      "kind": "channel",
+      "name": "TV1",
+      "url": "https://stream.ads.ottera.tv/playlist.m3u8?network_id=743",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "ffprobe 检测到媒体流: video,audio,,video,audio,,video,audio,,video,audio,video,audio,video,audio",
+      "checked_at": "2026-10-21T18:23:00Z"
+    },
+    {
+      "kind": "channel",
+      "name": "TV3",
+      "url": "https://stream.ads.ottera.tv/playlist.m3u8?network_id=630",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "ffprobe 检测到媒体流: video,audio,,video,audio,,video,audio,,video,audio,video,audio,video,audio",
+      "checked_at": "2026-10-21T18:23:00Z"
+    },
+    {
+      "kind": "channel",
+      "name": "TV4",
+      "url": "https://stream.ads.ottera.tv/playlist.m3u8?network_id=644",
+      "status": "probe_failed",
+      "http_status": 200,
+      "detail": "ffprobe 未检测到媒体流",
+      "checked_at": "2026-10-21T18:23:01Z"
+    },
+    {
+      "kind": "channel",
+      "name": "The",
+      "url": "https://cdn.ttvb.eu.org/douyin/91425370684",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno -2] Name or service not known>",
+      "checked_at": "2026-10-21T18:23:20Z"
+    },
+    {
+      "kind": "channel",
+      "name": "东南卫视",
+      "url": "http://111.29.9.33:6610/000000001000/1000000002000009263/index.m3u8?channel-id=bestzb&Contentid=1000000002000009263&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:28:14Z"
+    },
+    {
+      "kind": "channel",
+      "name": "东方卫视",
+      "url": "http://111.29.9.33:6610/000000001000/1000000001000005866/index.m3u8?channel-id=bestzb&Contentid=1000000001000005866&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:27:41Z"
+    },
+    {
+      "kind": "channel",
+      "name": "东方卫视",
+      "url": "http://120.87.19.109:80/PLTV/88888973/224/3221225686/10000100000000060000000000333818_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:30:44Z"
+    },
+    {
+      "kind": "channel",
+      "name": "东莞新闻综合",
+      "url": "http://stream.sun0769.com/dgrtv1/mp4tv1_1500/index.m3u8",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "ffprobe 检测到媒体流: video,audio,,video,audio",
+      "checked_at": "2026-10-21T18:23:50Z"
+    },
+    {
+      "kind": "channel",
+      "name": "东莞新闻综合",
+      "url": "https://stream.sun0769.com/dgrtv1/mp4tv1_1500/index.m3u8",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "ffprobe 检测到媒体流: video,audio,,video,audio",
+      "checked_at": "2026-10-21T18:23:33Z"
+    },
+    {
+      "kind": "channel",
+      "name": "东莞生活资讯",
+      "url": "http://stream.sun0769.com/dgrtv1/mp4tv2_1500/index.m3u8",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T18:23:51Z"
+    },
+    {
+      "kind": "channel",
+      "name": "东莞生活资讯",
+      "url": "https://stream.sun0769.com/dgrtv1/mp4tv2_1500/index.m3u8",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T18:23:33Z"
+    },
+    {
+      "kind": "channel",
+      "name": "中国交通广播",
+      "url": "http://cfss.cc/cdn/dy/CMG_ZGJTGB.flv",
+      "status": "probe_failed",
+      "http_status": 200,
+      "detail": "http://cfss.cc/cdn/dy/CMG_ZGJTGB.flv: Invalid data found when processing input",
+      "checked_at": "2026-10-21T18:23:26Z"
+    },
+    {
+      "kind": "channel",
+      "name": "中国教育1台",
+      "url": "http://111.29.9.33:6610/000000001000/5000000002000002652/index.m3u8?channel-id=bestzb&Contentid=5000000002000002652&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:28:19Z"
+    },
+    {
+      "kind": "channel",
+      "name": "中国教育4台",
+      "url": "http://111.29.9.33:6610/000000001000/5000000011000031126/index.m3u8?channel-id=bestzb&Contentid=5000000011000031126&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:28:24Z"
+    },
+    {
+      "kind": "channel",
+      "name": "中山综合",
+      "url": "http://v.zsbtv.com.cn/lsdream/qTl38me/1000/live.m3u8",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:23:33Z"
+    },
+    {
+      "kind": "channel",
+      "name": "丰顺综合",
+      "url": "https://p2.vzan.com/701678271/024926084736123670/live.m3u8",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T18:23:38Z"
+    },
+    {
+      "kind": "channel",
+      "name": "乐游",
+      "url": "http://111.29.9.33:6610/000000001000/5000000011000031112/index.m3u8?channel-id=bestzb&Contentid=5000000011000031112&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:29:15Z"
+    },
+    {
+      "kind": "channel",
+      "name": "云南卫视",
+      "url": "http://111.29.9.33:6610/000000001000/1000000002000024694/index.m3u8?channel-id=bestzb&Contentid=1000000002000024694&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:28:11Z"
+    },
+    {
+      "kind": "channel",
+      "name": "云浮文旅",
+      "url": "https://livestream.oeeee.com/slive/28284.m3u8",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T18:23:36Z"
+    },
+    {
+      "kind": "channel",
+      "name": "云浮综合",
+      "url": "https://livestream.oeeee.com/slive/28283.m3u8",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T18:23:34Z"
+    },
+    {
+      "kind": "channel",
+      "name": "五华综合",
+      "url": "http://p2hs.vzan.com/slowlive/621139761151691240/live.m3u8",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T18:23:51Z"
+    },
+    {
+      "kind": "channel",
+      "name": "动漫秀场",
+      "url": "http://111.29.9.33:6610/000000001000/5000000011000031113/index.m3u8?channel-id=bestzb&Contentid=5000000011000031113&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:29:13Z"
+    },
+    {
+      "kind": "channel",
+      "name": "北京卫视",
+      "url": "http://111.29.9.33:6610/000000001000/1000000001000017156/index.m3u8?channel-id=bestzb&Contentid=1000000001000017156&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:27:41Z"
+    },
+    {
+      "kind": "channel",
+      "name": "北京卫视",
+      "url": "http://120.87.19.109:80/PLTV/88888973/224/3221225688/10000100000000060000000000333853_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:30:44Z"
+    },
+    {
+      "kind": "channel",
+      "name": "北京纪实科教",
+      "url": "http://111.29.9.33:6610/000000001000/1000000001000028380/index.m3u8?channel-id=bestzb&Contentid=1000000001000028380&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:28:42Z"
+    },
+    {
+      "kind": "channel",
+      "name": "十四小天使",
+      "url": "https://cdn.ttvb.eu.org/douyin/50055338591",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno -2] Name or service not known>",
+      "checked_at": "2026-10-21T18:23:19Z"
+    },
+    {
+      "kind": "channel",
+      "name": "吉林卫视",
+      "url": "http://111.29.9.33:6610/000000001000/5000000011000031117/index.m3u8?channel-id=bestzb&Contentid=5000000011000031117&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:28:11Z"
+    },
+    {
+      "kind": "channel",
+      "name": "哈哈炫动",
+      "url": "http://111.29.9.33:6610/000000001000/5000000011000031123/index.m3u8?channel-id=bestzb&Contentid=5000000011000031123&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:29:12Z"
+    },
+    {
+      "kind": "channel",
+      "name": "嘉佳卡通",
+      "url": "http://111.29.9.33:6610/000000001000/1000000002000025964/index.m3u8?channel-id=bestzb&Contentid=1000000002000025964&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:29:12Z"
+    },
+    {
+      "kind": "channel",
+      "name": "四川卫视",
+      "url": "http://111.29.9.33:6610/000000001000/1000000002000016825/index.m3u8?channel-id=bestzb&Contentid=1000000002000016825&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:28:11Z"
+    },
+    {
+      "kind": "channel",
+      "name": "声优广播",
+      "url": "http://www.uniqueradio.jp/agplayerf/hls/Active.m3u8",
+      "status": "http_error",
+      "http_status": 503,
+      "detail": "HTTP 503",
+      "checked_at": "2026-10-21T18:23:05Z"
+    },
+    {
+      "kind": "channel",
+      "name": "大湾区卫视",
+      "url": "http://8.138.7.223/tv/dwq.m3u8",
+      "status": "probe_failed",
+      "http_status": 200,
+      "detail": "http://8.138.7.223/tv/dwq.m3u8: Server returned 403 Forbidden (access denied)",
+      "checked_at": "2026-10-21T18:23:40Z"
+    },
+    {
+      "kind": "channel",
+      "name": "大湾区卫视",
+      "url": "http://k.061899.xyz/k.php?id=dwqws",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "Remote end closed connection without response",
+      "checked_at": "2026-10-21T18:23:33Z"
+    },
+    {
+      "kind": "channel",
+      "name": "大湾区卫视高清",
+      "url": "http://119.29.142.81:4022/udp/239.77.0.215:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno 111] Connection refused>",
+      "checked_at": "2026-10-21T18:23:57Z"
+    },
+    {
+      "kind": "channel",
+      "name": "大湾区卫视高清",
+      "url": "http://61.145.188.90:50055/udp/239.77.0.215:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:27:09Z"
+    },
+    {
+      "kind": "channel",
+      "name": "大湾区卫视高清",
+      "url": "http://gdyd.7259.cc.cd:4014/udp/239.77.0.215:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:25:27Z"
+    },
+    {
+      "kind": "channel",
+      "name": "大湾区卫视高清",
+      "url": "http://gdyd.7259.cc.cd:4111/udp/239.77.0.215:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:24:23Z"
+    },
+    {
+      "kind": "channel",
+      "name": "大湾区卫视高清",
+      "url": "http://hongzhijiaoyu.net:8188/udp/239.77.0.215:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:24:08Z"
+    },
+    {
+      "kind": "channel",
+      "name": "大湾区卫视高清",
+      "url": "http://ikuai.cyruslee.top:8888/udp/239.77.0.215:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:54Z"
+    },
+    {
+      "kind": "channel",
+      "name": "大湾区卫视高清",
+      "url": "http://jellyfin.cyruslee.top:8888/udp/239.77.0.215:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:41Z"
+    },
+    {
+      "kind": "channel",
+      "name": "大湾区卫视高清",
+      "url": "http://lbyjlt.vv5678.cn:8880/udp/239.77.0.215:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:29Z"
+    },
+    {
+      "kind": "channel",
+      "name": "大湾区卫视高清",
+      "url": "http://lsa.familyds.com:8188/udp/239.77.0.215:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:24:14Z"
+    },
+    {
+      "kind": "channel",
+      "name": "大湾区卫视高清",
+      "url": "http://plex.cyruslee.top:8888/udp/239.77.0.215:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:34Z"
+    },
+    {
+      "kind": "channel",
+      "name": "大湾区卫视高清",
+      "url": "http://www.3344.uk:8888/udp/239.77.0.215:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:46Z"
+    },
+    {
+      "kind": "channel",
+      "name": "大湾区卫视高清",
+      "url": "http://www.maomizi.cn:9527/udp/239.77.0.215:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno 111] Connection refused>",
+      "checked_at": "2026-10-21T18:27:04Z"
+    },
+    {
+      "kind": "channel",
+      "name": "大湾区卫视高清",
+      "url": "http://www.syy3.top:3861/udp/239.77.0.215:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno 111] Connection refused>",
+      "checked_at": "2026-10-21T18:26:24Z"
+    },
+    {
+      "kind": "channel",
+      "name": "大湾区卫视高清",
+      "url": "http://www.yahao.host:4022/udp/239.77.0.215:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:24:19Z"
+    },
+    {
+      "kind": "channel",
+      "name": "大湾区卫视高清",
+      "url": "http://yanshifen.top:8889/udp/239.77.0.215:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:27:00Z"
+    },
+    {
+      "kind": "channel",
+      "name": "大燕儿",
+      "url": "https://cdn.ttvb.eu.org/douyin/74005228754",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:23:22Z"
+    },
+    {
+      "kind": "channel",
+      "name": "天津卫视",
+      "url": "http://111.29.9.33:6610/000000001000/1000000001000000831/index.m3u8?channel-id=bestzb&Contentid=1000000001000000831&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:27:41Z"
+    },
+    {
+      "kind": "channel",
+      "name": "天津卫视",
+      "url": "http://120.87.19.109:80/PLTV/88888973/224/3221225689/10000100000000060000000000333854_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:30:44Z"
+    },
+    {
+      "kind": "channel",
+      "name": "央视三农",
+      "url": "http://cfss.cc/cdn/dy/letus17.flv",
+      "status": "probe_failed",
+      "http_status": 200,
+      "detail": "http://cfss.cc/cdn/dy/letus17.flv: Invalid data found when processing input",
+      "checked_at": "2026-10-21T18:23:24Z"
+    },
+    {
+      "kind": "channel",
+      "name": "央视网",
+      "url": "http://cfss.cc/cdn/dy/cctv.com.flv",
+      "status": "probe_failed",
+      "http_status": 302,
+      "detail": "http://cfss.cc/cdn/dy/cctv.com.flv: Invalid data found when processing input",
+      "checked_at": "2026-10-21T18:23:22Z"
+    },
+    {
+      "kind": "channel",
+      "name": "央视网快看",
+      "url": "http://cfss.cc/cdn/dy/kuaikancctv.flv",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "ffprobe 检测到媒体流: audio,video",
+      "checked_at": "2026-10-21T18:23:23Z"
+    },
+    {
+      "kind": "channel",
+      "name": "央视网新闻",
+      "url": "http://cfss.cc/cdn/dy/1606137427.flv",
+      "status": "probe_failed",
+      "http_status": 200,
+      "detail": "http://cfss.cc/cdn/dy/1606137427.flv: Invalid data found when processing input",
+      "checked_at": "2026-10-21T18:23:24Z"
+    },
+    {
+      "kind": "channel",
+      "name": "央视网财经",
+      "url": "http://cfss.cc/cdn/dy/nuanxinnengl.flv",
+      "status": "probe_failed",
+      "http_status": 200,
+      "detail": "http://cfss.cc/cdn/dy/nuanxinnengl.flv: Invalid data found when processing input",
+      "checked_at": "2026-10-21T18:23:31Z"
+    },
+    {
+      "kind": "channel",
+      "name": "央视财经",
+      "url": "http://cfss.cc/cdn/dy/yscjxmt.flv",
+      "status": "probe_failed",
+      "http_status": 200,
+      "detail": "http://cfss.cc/cdn/dy/yscjxmt.flv: Invalid data found when processing input",
+      "checked_at": "2026-10-21T18:23:31Z"
+    },
+    {
+      "kind": "channel",
+      "name": "宁夏卫视",
+      "url": "http://111.29.9.33:6610/000000001000/1000000002000031451/index.m3u8?channel-id=bestzb&Contentid=1000000002000031451&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:28:14Z"
+    },
+    {
+      "kind": "channel",
+      "name": "安徽卫视",
+      "url": "http://111.29.9.33:6610/000000001000/1000000001000020780/index.m3u8?channel-id=bestzb&Contentid=1000000001000020780&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:27:53Z"
+    },
+    {
+      "kind": "channel",
+      "name": "安徽卫视",
+      "url": "http://120.87.19.109:80/PLTV/88888973/224/3221225687/10000100000000060000000000333836_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:30:44Z"
+    },
+    {
+      "kind": "channel",
+      "name": "家庭剧场",
+      "url": "http://111.29.9.33:6610/000000001000/1000000004000008284/index.m3u8?channel-id=bestzb&Contentid=1000000004000008284&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:28:45Z"
+    },
+    {
+      "kind": "channel",
+      "name": "小央视频",
+      "url": "http://cfss.cc/cdn/dy/cctv_video.flv",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "ffprobe 检测到媒体流: video,audio",
+      "checked_at": "2026-10-21T18:23:22Z"
+    },
+    {
+      "kind": "channel",
+      "name": "小强热线浙江教科",
+      "url": "http://cfss.cc/cdn/dy/ZTV4.flv",
+      "status": "probe_failed",
+      "http_status": 200,
+      "detail": "http://cfss.cc/cdn/dy/ZTV4.flv: Invalid data found when processing input",
+      "checked_at": "2026-10-21T18:23:31Z"
+    },
+    {
+      "kind": "channel",
+      "name": "小糯米",
+      "url": "https://cdn.ttvb.eu.org/douyin/84904405660",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno -2] Name or service not known>",
+      "checked_at": "2026-10-21T18:23:19Z"
+    },
+    {
+      "kind": "channel",
+      "name": "山东卫视",
+      "url": "http://111.29.9.33:6610/000000001000/1000000001000012807/index.m3u8?channel-id=bestzb&Contentid=1000000001000012807&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:27:47Z"
+    },
+    {
+      "kind": "channel",
+      "name": "山东卫视",
+      "url": "http://120.87.19.109:80/PLTV/88888973/224/3221225690/10000100000000060000000000333859_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:30:44Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东体育高清",
+      "url": "http://119.29.142.81:4022/udp/239.77.0.112:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno 111] Connection refused>",
+      "checked_at": "2026-10-21T18:23:57Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东体育高清",
+      "url": "http://61.145.188.90:50055/udp/239.77.0.112:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:27:05Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东体育高清",
+      "url": "http://gdyd.7259.cc.cd:4014/udp/239.77.0.112:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:25:24Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东体育高清",
+      "url": "http://gdyd.7259.cc.cd:4111/udp/239.77.0.112:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:24:23Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东体育高清",
+      "url": "http://hongzhijiaoyu.net:8188/udp/239.77.0.112:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:24:08Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东体育高清",
+      "url": "http://ikuai.cyruslee.top:8888/udp/239.77.0.112:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:53Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东体育高清",
+      "url": "http://jellyfin.cyruslee.top:8888/udp/239.77.0.112:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:40Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东体育高清",
+      "url": "http://lbyjlt.vv5678.cn:8880/udp/239.77.0.112:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:27Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东体育高清",
+      "url": "http://lsa.familyds.com:8188/udp/239.77.0.112:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:24:14Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东体育高清",
+      "url": "http://plex.cyruslee.top:8888/udp/239.77.0.112:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:34Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东体育高清",
+      "url": "http://www.3344.uk:8888/udp/239.77.0.112:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:46Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东体育高清",
+      "url": "http://www.maomizi.cn:9527/udp/239.77.0.112:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno 111] Connection refused>",
+      "checked_at": "2026-10-21T18:27:04Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东体育高清",
+      "url": "http://www.syy3.top:3861/udp/239.77.0.112:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno 111] Connection refused>",
+      "checked_at": "2026-10-21T18:26:24Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东体育高清",
+      "url": "http://www.yahao.host:4022/udp/239.77.0.112:5146",
+      "status": "http_error",
+      "http_status": 503,
+      "detail": "HTTP 503",
+      "checked_at": "2026-10-21T18:24:19Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东体育高清",
+      "url": "http://yanshifen.top:8889/udp/239.77.0.112:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:58Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东卫视",
+      "url": "http://111.29.9.33:6610/000000001000/1000000001000014176/index.m3u8?channel-id=bestzb&Contentid=1000000001000014176&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:28:11Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东卫视高清",
+      "url": "http://119.29.142.81:4022/udp/239.77.0.84:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno 111] Connection refused>",
+      "checked_at": "2026-10-21T18:23:56Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东卫视高清",
+      "url": "http://61.145.188.90:50055/udp/239.77.0.84:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:27:05Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东卫视高清",
+      "url": "http://gdyd.7259.cc.cd:4014/udp/239.77.0.84:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:25:23Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东卫视高清",
+      "url": "http://gdyd.7259.cc.cd:4111/udp/239.77.0.84:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:24:22Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东卫视高清",
+      "url": "http://hongzhijiaoyu.net:8188/udp/239.77.0.84:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:24:05Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东卫视高清",
+      "url": "http://ikuai.cyruslee.top:8888/udp/239.77.0.84:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:50Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东卫视高清",
+      "url": "http://jellyfin.cyruslee.top:8888/udp/239.77.0.84:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:39Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东卫视高清",
+      "url": "http://lbyjlt.vv5678.cn:8880/udp/239.77.0.84:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:25Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东卫视高清",
+      "url": "http://lsa.familyds.com:8188/udp/239.77.0.84:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:24:12Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东卫视高清",
+      "url": "http://plex.cyruslee.top:8888/udp/239.77.0.84:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:33Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东卫视高清",
+      "url": "http://www.3344.uk:8888/udp/239.77.0.84:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:45Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东卫视高清",
+      "url": "http://www.maomizi.cn:9527/udp/239.77.0.84:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno 111] Connection refused>",
+      "checked_at": "2026-10-21T18:27:03Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东卫视高清",
+      "url": "http://www.syy3.top:3861/udp/239.77.0.84:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno 111] Connection refused>",
+      "checked_at": "2026-10-21T18:26:23Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东卫视高清",
+      "url": "http://www.yahao.host:4022/udp/239.77.0.84:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:24:17Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东卫视高清",
+      "url": "http://yanshifen.top:8889/udp/239.77.0.84:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:58Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东大湾区卫视",
+      "url": "http://gx.484947.xyz/PLTV/77777777/224/3221225748/index.m3u8",
+      "status": "http_error",
+      "http_status": 403,
+      "detail": "HTTP 403",
+      "checked_at": "2026-10-21T18:23:40Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东好女人",
+      "url": "https://cdn.ttvb.eu.org/douyin/69766729938",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno -2] Name or service not known>",
+      "checked_at": "2026-10-21T18:23:20Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东少儿高清",
+      "url": "http://119.29.142.81:4022/udp/239.77.0.250:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno 111] Connection refused>",
+      "checked_at": "2026-10-21T18:23:58Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东少儿高清",
+      "url": "http://61.145.188.90:50055/udp/239.77.0.250:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:27:10Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东少儿高清",
+      "url": "http://gdyd.7259.cc.cd:4014/udp/239.77.0.250:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:26:22Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东少儿高清",
+      "url": "http://gdyd.7259.cc.cd:4111/udp/239.77.0.250:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:25:21Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东少儿高清",
+      "url": "http://hongzhijiaoyu.net:8188/udp/239.77.0.250:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:24:10Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东少儿高清",
+      "url": "http://ikuai.cyruslee.top:8888/udp/239.77.0.250:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:54Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东少儿高清",
+      "url": "http://jellyfin.cyruslee.top:8888/udp/239.77.0.250:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:42Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东少儿高清",
+      "url": "http://lbyjlt.vv5678.cn:8880/udp/239.77.0.250:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:30Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东少儿高清",
+      "url": "http://lsa.familyds.com:8188/udp/239.77.0.250:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:24:16Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东少儿高清",
+      "url": "http://plex.cyruslee.top:8888/udp/239.77.0.250:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:36Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东少儿高清",
+      "url": "http://www.3344.uk:8888/udp/239.77.0.250:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:47Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东少儿高清",
+      "url": "http://www.maomizi.cn:9527/udp/239.77.0.250:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno 111] Connection refused>",
+      "checked_at": "2026-10-21T18:27:04Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东少儿高清",
+      "url": "http://www.syy3.top:3861/udp/239.77.0.250:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno 111] Connection refused>",
+      "checked_at": "2026-10-21T18:26:25Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东少儿高清",
+      "url": "http://www.yahao.host:4022/udp/239.77.0.250:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:24:19Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东少儿高清",
+      "url": "http://yanshifen.top:8889/udp/239.77.0.250:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:27:00Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东影视",
+      "url": "http://k.061899.xyz/k.php?id=gdys",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "Remote end closed connection without response",
+      "checked_at": "2026-10-21T18:23:32Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东影视高清",
+      "url": "http://119.29.142.81:4022/udp/239.77.0.217:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno 111] Connection refused>",
+      "checked_at": "2026-10-21T18:23:58Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东影视高清",
+      "url": "http://61.145.188.90:50055/udp/239.77.0.217:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:27:10Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东影视高清",
+      "url": "http://gdyd.7259.cc.cd:4014/udp/239.77.0.217:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:26:22Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东影视高清",
+      "url": "http://gdyd.7259.cc.cd:4111/udp/239.77.0.217:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:24:26Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东影视高清",
+      "url": "http://hongzhijiaoyu.net:8188/udp/239.77.0.217:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:24:10Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东影视高清",
+      "url": "http://ikuai.cyruslee.top:8888/udp/239.77.0.217:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:54Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东影视高清",
+      "url": "http://jellyfin.cyruslee.top:8888/udp/239.77.0.217:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:42Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东影视高清",
+      "url": "http://lbyjlt.vv5678.cn:8880/udp/239.77.0.217:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:30Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东影视高清",
+      "url": "http://lsa.familyds.com:8188/udp/239.77.0.217:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:24:15Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东影视高清",
+      "url": "http://plex.cyruslee.top:8888/udp/239.77.0.217:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:36Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东影视高清",
+      "url": "http://www.3344.uk:8888/udp/239.77.0.217:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:47Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东影视高清",
+      "url": "http://www.maomizi.cn:9527/udp/239.77.0.217:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno 111] Connection refused>",
+      "checked_at": "2026-10-21T18:27:04Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东影视高清",
+      "url": "http://www.syy3.top:3861/udp/239.77.0.217:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno 111] Connection refused>",
+      "checked_at": "2026-10-21T18:26:25Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东影视高清",
+      "url": "http://www.yahao.host:4022/udp/239.77.0.217:5146",
+      "status": "http_error",
+      "http_status": 503,
+      "detail": "HTTP 503",
+      "checked_at": "2026-10-21T18:24:19Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东影视高清",
+      "url": "http://yanshifen.top:8889/udp/239.77.0.217:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:27:00Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东新闻",
+      "url": "http://k.061899.xyz/k.php?id=gdxw",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "Remote end closed connection without response",
+      "checked_at": "2026-10-21T18:23:32Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东新闻高清",
+      "url": "http://119.29.142.81:4022/udp/239.77.0.173:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno 111] Connection refused>",
+      "checked_at": "2026-10-21T18:23:56Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东新闻高清",
+      "url": "http://61.145.188.90:50055/udp/239.77.0.173:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:27:05Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东新闻高清",
+      "url": "http://gdyd.7259.cc.cd:4014/udp/239.77.0.173:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:25:23Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东新闻高清",
+      "url": "http://gdyd.7259.cc.cd:4111/udp/239.77.0.173:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:24:22Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东新闻高清",
+      "url": "http://hongzhijiaoyu.net:8188/udp/239.77.0.173:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:24:05Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东新闻高清",
+      "url": "http://ikuai.cyruslee.top:8888/udp/239.77.0.173:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:52Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东新闻高清",
+      "url": "http://jellyfin.cyruslee.top:8888/udp/239.77.0.173:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:40Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东新闻高清",
+      "url": "http://lbyjlt.vv5678.cn:8880/udp/239.77.0.173:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:25Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东新闻高清",
+      "url": "http://lsa.familyds.com:8188/udp/239.77.0.173:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:24:14Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东新闻高清",
+      "url": "http://plex.cyruslee.top:8888/udp/239.77.0.173:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:33Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东新闻高清",
+      "url": "http://www.3344.uk:8888/udp/239.77.0.173:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:46Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东新闻高清",
+      "url": "http://www.maomizi.cn:9527/udp/239.77.0.173:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno 111] Connection refused>",
+      "checked_at": "2026-10-21T18:27:03Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东新闻高清",
+      "url": "http://www.syy3.top:3861/udp/239.77.0.173:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno 111] Connection refused>",
+      "checked_at": "2026-10-21T18:26:24Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东新闻高清",
+      "url": "http://www.yahao.host:4022/udp/239.77.0.173:5146",
+      "status": "http_error",
+      "http_status": 503,
+      "detail": "HTTP 503",
+      "checked_at": "2026-10-21T18:24:18Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东新闻高清",
+      "url": "http://yanshifen.top:8889/udp/239.77.0.173:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:58Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东民生",
+      "url": "http://k.061899.xyz/k.php?id=gdms",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "Remote end closed connection without response",
+      "checked_at": "2026-10-21T18:23:32Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东民生(晚7点)",
+      "url": "http://tv1288.xyz/douyin.php?type=rid&rid=gdtvdvxc",
+      "status": "http_error",
+      "http_status": 400,
+      "detail": "HTTP 400",
+      "checked_at": "2026-10-21T18:23:41Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东民生高清",
+      "url": "http://119.29.142.81:4022/udp/239.77.0.225:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno 111] Connection refused>",
+      "checked_at": "2026-10-21T18:23:56Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东民生高清",
+      "url": "http://61.145.188.90:50055/udp/239.77.0.225:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:27:05Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东民生高清",
+      "url": "http://gdyd.7259.cc.cd:4014/udp/239.77.0.225:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:25:24Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东民生高清",
+      "url": "http://gdyd.7259.cc.cd:4111/udp/239.77.0.225:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:24:22Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东民生高清",
+      "url": "http://hongzhijiaoyu.net:8188/udp/239.77.0.225:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:24:06Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东民生高清",
+      "url": "http://ikuai.cyruslee.top:8888/udp/239.77.0.225:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:52Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东民生高清",
+      "url": "http://jellyfin.cyruslee.top:8888/udp/239.77.0.225:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:40Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东民生高清",
+      "url": "http://lbyjlt.vv5678.cn:8880/udp/239.77.0.225:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:27Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东民生高清",
+      "url": "http://lsa.familyds.com:8188/udp/239.77.0.225:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:24:14Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东民生高清",
+      "url": "http://plex.cyruslee.top:8888/udp/239.77.0.225:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:33Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东民生高清",
+      "url": "http://www.3344.uk:8888/udp/239.77.0.225:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:46Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东民生高清",
+      "url": "http://www.maomizi.cn:9527/udp/239.77.0.225:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno 111] Connection refused>",
+      "checked_at": "2026-10-21T18:27:03Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东民生高清",
+      "url": "http://www.syy3.top:3861/udp/239.77.0.225:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno 111] Connection refused>",
+      "checked_at": "2026-10-21T18:26:24Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东民生高清",
+      "url": "http://www.yahao.host:4022/udp/239.77.0.225:5146",
+      "status": "http_error",
+      "http_status": 503,
+      "detail": "HTTP 503",
+      "checked_at": "2026-10-21T18:24:18Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东民生高清",
+      "url": "http://yanshifen.top:8889/udp/239.77.0.225:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:58Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东珠江",
+      "url": "http://8.138.7.223/tv/gdzj.m3u8",
+      "status": "probe_failed",
+      "http_status": 200,
+      "detail": "http://8.138.7.223/tv/gdzj.m3u8: Server returned 403 Forbidden (access denied)",
+      "checked_at": "2026-10-21T18:23:39Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东珠江",
+      "url": "http://k.061899.xyz/k.php?id=gdzj",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "Remote end closed connection without response",
+      "checked_at": "2026-10-21T18:23:32Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东珠江(晚6点)",
+      "url": "http://tv1288.xyz/douyin.php?type=rid&rid=gdtvzjpd",
+      "status": "http_error",
+      "http_status": 400,
+      "detail": "HTTP 400",
+      "checked_at": "2026-10-21T18:23:41Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东珠江频道",
+      "url": "https://gx.484947.xyz/PLTV/77777777/224/3221225717/index.m3u8",
+      "status": "http_error",
+      "http_status": 403,
+      "detail": "HTTP 403",
+      "checked_at": "2026-10-21T18:23:40Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东珠江高清",
+      "url": "http://119.29.142.81:4022/udp/239.77.0.1:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno 111] Connection refused>",
+      "checked_at": "2026-10-21T18:23:56Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东珠江高清",
+      "url": "http://61.145.188.90:50055/udp/239.77.0.1:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:27:05Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东珠江高清",
+      "url": "http://gdyd.7259.cc.cd:4014/udp/239.77.0.1:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:25:23Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东珠江高清",
+      "url": "http://gdyd.7259.cc.cd:4111/udp/239.77.0.1:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:24:22Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东珠江高清",
+      "url": "http://hongzhijiaoyu.net:8188/udp/239.77.0.1:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:24:05Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东珠江高清",
+      "url": "http://ikuai.cyruslee.top:8888/udp/239.77.0.1:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:51Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东珠江高清",
+      "url": "http://jellyfin.cyruslee.top:8888/udp/239.77.0.1:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:39Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东珠江高清",
+      "url": "http://lbyjlt.vv5678.cn:8880/udp/239.77.0.1:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:25Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东珠江高清",
+      "url": "http://lsa.familyds.com:8188/udp/239.77.0.1:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:24:13Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东珠江高清",
+      "url": "http://plex.cyruslee.top:8888/udp/239.77.0.1:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:33Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东珠江高清",
+      "url": "http://www.3344.uk:8888/udp/239.77.0.1:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:46Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东珠江高清",
+      "url": "http://www.maomizi.cn:9527/udp/239.77.0.1:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno 111] Connection refused>",
+      "checked_at": "2026-10-21T18:27:03Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东珠江高清",
+      "url": "http://www.syy3.top:3861/udp/239.77.0.1:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno 111] Connection refused>",
+      "checked_at": "2026-10-21T18:26:24Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东珠江高清",
+      "url": "http://www.yahao.host:4022/udp/239.77.0.1:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:24:17Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东珠江高清",
+      "url": "http://yanshifen.top:8889/udp/239.77.0.1:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:58Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东经济",
+      "url": "https://jsv-live-play.sfccn.com/live/jsv_3920_fhd.m3u8",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "The read operation timed out",
+      "checked_at": "2026-10-21T18:23:41Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广州南国都市",
+      "url": "https://tencentplay.gztv.com/live/nanguodushi.m3u8?txSecret=babbcbacdbcf13a3311a264e4dd66b8d&txTime=191b60b41a7",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "ffprobe 检测到媒体流: video,audio,,video,audio",
+      "checked_at": "2026-10-21T18:23:46Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广州新闻",
+      "url": "https://tencentplay.gztv.com/live/xinwen.m3u8?txSecret=6f73647cae387d01a3c2132074132a83&txTime=18d00acf487",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "ffprobe 检测到媒体流: video,audio,,video,audio",
+      "checked_at": "2026-10-21T18:23:43Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广州法治",
+      "url": "https://tencentplay.gztv.com/live/fazhi.m3u8?txSecret=4400d75d2114b2db07d86eda8f8218ee&txTime=191b60ce0f6",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "The read operation timed out",
+      "checked_at": "2026-10-21T18:23:46Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广州综合",
+      "url": "https://tencentplay.gztv.com/live/zonghes.m3u8?txSecret=f0147ae6453a80f5989f382368b72aad&txTime=18d00acf487",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "ffprobe 检测到媒体流: video,audio,,video,audio",
+      "checked_at": "2026-10-21T18:23:43Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广西卫视",
+      "url": "http://111.29.9.33:6610/000000001000/1000000002000019837/index.m3u8?channel-id=bestzb&Contentid=1000000002000019837&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:28:11Z"
+    },
+    {
+      "kind": "channel",
+      "name": "延边新闻",
+      "url": "http://cfss.cc/cdn/dy/YBnews.flv",
+      "status": "probe_failed",
+      "http_status": 200,
+      "detail": "http://cfss.cc/cdn/dy/YBnews.flv: Invalid data found when processing input",
+      "checked_at": "2026-10-21T18:23:30Z"
+    },
+    {
+      "kind": "channel",
+      "name": "快乐垂钓",
+      "url": "http://111.29.9.33:6610/000000001000/5000000011000031206/index.m3u8?channel-id=bestzb&Contentid=5000000011000031206&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:28:42Z"
+    },
+    {
+      "kind": "channel",
+      "name": "怀集综合",
+      "url": "https://www.zqhjtv.com/hls/hjzhpd.m3u8",
+      "status": "probe_failed",
+      "http_status": 200,
+      "detail": "https://www.zqhjtv.com/hls/hjzhpd.m3u8: Connection timed out",
+      "checked_at": "2026-10-21T18:23:53Z"
+    },
+    {
+      "kind": "channel",
+      "name": "惊悚悬疑",
+      "url": "http://111.29.9.33:6610/000000001000/1000000004000024282/index.m3u8?channel-id=bestzb&Contentid=1000000004000024282&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:28:45Z"
+    },
+    {
+      "kind": "channel",
+      "name": "揭阳生活",
+      "url": "http://hls-jyrtv.jyrtv.tv/stjy2020/ggpd.m3u8",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno -5] No address associated with hostname>",
+      "checked_at": "2026-10-21T18:23:37Z"
+    },
+    {
+      "kind": "channel",
+      "name": "揭阳生活高清",
+      "url": "http://119.29.142.81:4022/udp/239.77.0.251:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno 111] Connection refused>",
+      "checked_at": "2026-10-21T18:23:53Z"
+    },
+    {
+      "kind": "channel",
+      "name": "揭阳生活高清",
+      "url": "http://61.145.188.90:50055/udp/239.77.0.251:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:27:04Z"
+    },
+    {
+      "kind": "channel",
+      "name": "揭阳生活高清",
+      "url": "http://gdyd.7259.cc.cd:4014/udp/239.77.0.251:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:25:21Z"
+    },
+    {
+      "kind": "channel",
+      "name": "揭阳生活高清",
+      "url": "http://gdyd.7259.cc.cd:4111/udp/239.77.0.251:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:24:20Z"
+    },
+    {
+      "kind": "channel",
+      "name": "揭阳生活高清",
+      "url": "http://hongzhijiaoyu.net:8188/udp/239.77.0.251:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:23:58Z"
+    },
+    {
+      "kind": "channel",
+      "name": "揭阳生活高清",
+      "url": "http://ikuai.cyruslee.top:8888/udp/239.77.0.251:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:49Z"
+    },
+    {
+      "kind": "channel",
+      "name": "揭阳生活高清",
+      "url": "http://jellyfin.cyruslee.top:8888/udp/239.77.0.251:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:36Z"
+    },
+    {
+      "kind": "channel",
+      "name": "揭阳生活高清",
+      "url": "http://lbyjlt.vv5678.cn:8880/udp/239.77.0.251:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:25Z"
+    },
+    {
+      "kind": "channel",
+      "name": "揭阳生活高清",
+      "url": "http://lsa.familyds.com:8188/udp/239.77.0.251:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:24:10Z"
+    },
+    {
+      "kind": "channel",
+      "name": "揭阳生活高清",
+      "url": "http://plex.cyruslee.top:8888/udp/239.77.0.251:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:30Z"
+    },
+    {
+      "kind": "channel",
+      "name": "揭阳生活高清",
+      "url": "http://www.3344.uk:8888/udp/239.77.0.251:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:43Z"
+    },
+    {
+      "kind": "channel",
+      "name": "揭阳生活高清",
+      "url": "http://www.maomizi.cn:9527/udp/239.77.0.251:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno 111] Connection refused>",
+      "checked_at": "2026-10-21T18:27:02Z"
+    },
+    {
+      "kind": "channel",
+      "name": "揭阳生活高清",
+      "url": "http://www.syy3.top:3861/udp/239.77.0.251:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno 111] Connection refused>",
+      "checked_at": "2026-10-21T18:26:22Z"
+    },
+    {
+      "kind": "channel",
+      "name": "揭阳生活高清",
+      "url": "http://www.yahao.host:4022/udp/239.77.0.251:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:24:16Z"
+    },
+    {
+      "kind": "channel",
+      "name": "揭阳生活高清",
+      "url": "http://yanshifen.top:8889/udp/239.77.0.251:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:55Z"
+    },
+    {
+      "kind": "channel",
+      "name": "揭阳综合",
+      "url": "http://hls-jyrtv.jyrtv.tv/stjy2020/zhpd.m3u8",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno -5] No address associated with hostname>",
+      "checked_at": "2026-10-21T18:23:37Z"
+    },
+    {
+      "kind": "channel",
+      "name": "揭阳综合高清",
+      "url": "http://119.29.142.81:4022/udp/239.77.0.229:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno 111] Connection refused>",
+      "checked_at": "2026-10-21T18:23:53Z"
+    },
+    {
+      "kind": "channel",
+      "name": "揭阳综合高清",
+      "url": "http://61.145.188.90:50055/udp/239.77.0.229:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:27:04Z"
+    },
+    {
+      "kind": "channel",
+      "name": "揭阳综合高清",
+      "url": "http://gdyd.7259.cc.cd:4014/udp/239.77.0.229:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:25:21Z"
+    },
+    {
+      "kind": "channel",
+      "name": "揭阳综合高清",
+      "url": "http://gdyd.7259.cc.cd:4111/udp/239.77.0.229:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:24:20Z"
+    },
+    {
+      "kind": "channel",
+      "name": "揭阳综合高清",
+      "url": "http://hongzhijiaoyu.net:8188/udp/239.77.0.229:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:23:58Z"
+    },
+    {
+      "kind": "channel",
+      "name": "揭阳综合高清",
+      "url": "http://ikuai.cyruslee.top:8888/udp/239.77.0.229:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:48Z"
+    },
+    {
+      "kind": "channel",
+      "name": "揭阳综合高清",
+      "url": "http://jellyfin.cyruslee.top:8888/udp/239.77.0.229:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:36Z"
+    },
+    {
+      "kind": "channel",
+      "name": "揭阳综合高清",
+      "url": "http://lbyjlt.vv5678.cn:8880/udp/239.77.0.229:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:25Z"
+    },
+    {
+      "kind": "channel",
+      "name": "揭阳综合高清",
+      "url": "http://lsa.familyds.com:8188/udp/239.77.0.229:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:24:10Z"
+    },
+    {
+      "kind": "channel",
+      "name": "揭阳综合高清",
+      "url": "http://plex.cyruslee.top:8888/udp/239.77.0.229:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:30Z"
+    },
+    {
+      "kind": "channel",
+      "name": "揭阳综合高清",
+      "url": "http://www.3344.uk:8888/udp/239.77.0.229:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:43Z"
+    },
+    {
+      "kind": "channel",
+      "name": "揭阳综合高清",
+      "url": "http://www.maomizi.cn:9527/udp/239.77.0.229:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno 111] Connection refused>",
+      "checked_at": "2026-10-21T18:27:01Z"
+    },
+    {
+      "kind": "channel",
+      "name": "揭阳综合高清",
+      "url": "http://www.syy3.top:3861/udp/239.77.0.229:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno 111] Connection refused>",
+      "checked_at": "2026-10-21T18:26:22Z"
+    },
+    {
+      "kind": "channel",
+      "name": "揭阳综合高清",
+      "url": "http://www.yahao.host:4022/udp/239.77.0.229:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:24:16Z"
+    },
+    {
+      "kind": "channel",
+      "name": "揭阳综合高清",
+      "url": "http://yanshifen.top:8889/udp/239.77.0.229:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:55Z"
+    },
+    {
+      "kind": "channel",
+      "name": "新疆卫视",
+      "url": "http://111.29.9.33:6610/000000001000/1000000002000029441/index.m3u8?channel-id=bestzb&Contentid=1000000002000029441&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:28:17Z"
+    },
+    {
+      "kind": "channel",
+      "name": "新疆卫视",
+      "url": "http://120.87.19.109:80/PLTV/88888973/224/3221225694/10000100000000060000000000334004_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:30:46Z"
+    },
+    {
+      "kind": "channel",
+      "name": "明星大片",
+      "url": "http://111.29.9.33:6610/000000001000/1000000004000019008/index.m3u8?channel-id=bestzb&Contentid=1000000004000019008&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:28:50Z"
+    },
+    {
+      "kind": "channel",
+      "name": "晓晓",
+      "url": "https://cdn.ttvb.eu.org/douyin/147258247158d",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno -2] Name or service not known>",
+      "checked_at": "2026-10-21T18:23:19Z"
+    },
+    {
+      "kind": "channel",
+      "name": "朱朱",
+      "url": "https://cdn.ttvb.eu.org/douyin/36914825720a",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno -2] Name or service not known>",
+      "checked_at": "2026-10-21T18:23:19Z"
+    },
+    {
+      "kind": "channel",
+      "name": "极目新闻",
+      "url": "http://cfss.cc/cdn/dy/ctdsbdy.flv",
+      "status": "probe_failed",
+      "http_status": 200,
+      "detail": "http://cfss.cc/cdn/dy/ctdsbdy.flv: Invalid data found when processing input",
+      "checked_at": "2026-10-21T18:23:30Z"
+    },
+    {
+      "kind": "channel",
+      "name": "格格睡不醒",
+      "url": "https://cdn.ttvb.eu.org/douyin/41753242146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno -2] Name or service not known>",
+      "checked_at": "2026-10-21T18:23:19Z"
+    },
+    {
+      "kind": "channel",
+      "name": "格格睡醒了",
+      "url": "https://cdn.ttvb.eu.org/douyin/42347122605",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:23:18Z"
+    },
+    {
+      "kind": "channel",
+      "name": "欢笑剧场4K",
+      "url": "http://111.29.9.33:6610/000000001000/5000000002000009455/index.m3u8?channel-id=bestzb&Contentid=5000000002000009455&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:28:42Z"
+    },
+    {
+      "kind": "channel",
+      "name": "每日经济新闻",
+      "url": "http://cfss.cc/cdn/dy/nbdnews.flv",
+      "status": "probe_failed",
+      "http_status": 200,
+      "detail": "http://cfss.cc/cdn/dy/nbdnews.flv: Invalid data found when processing input",
+      "checked_at": "2026-10-21T18:23:26Z"
+    },
+    {
+      "kind": "channel",
+      "name": "水水家猪蹄",
+      "url": "https://cdn.ttvb.eu.org/douyin/ssjzt777",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:23:18Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕头生活高清",
+      "url": "http://119.29.142.81:4022/udp/239.253.43.46:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno 111] Connection refused>",
+      "checked_at": "2026-10-21T18:23:55Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕头生活高清",
+      "url": "http://61.145.188.90:50055/udp/239.253.43.46:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:27:04Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕头生活高清",
+      "url": "http://gdyd.7259.cc.cd:4014/udp/239.253.43.46:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:25:21Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕头生活高清",
+      "url": "http://gdyd.7259.cc.cd:4111/udp/239.253.43.46:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:24:21Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕头生活高清",
+      "url": "http://hongzhijiaoyu.net:8188/udp/239.253.43.46:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:24:04Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕头生活高清",
+      "url": "http://ikuai.cyruslee.top:8888/udp/239.253.43.46:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:50Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕头生活高清",
+      "url": "http://jellyfin.cyruslee.top:8888/udp/239.253.43.46:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:37Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕头生活高清",
+      "url": "http://lbyjlt.vv5678.cn:8880/udp/239.253.43.46:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:25Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕头生活高清",
+      "url": "http://lsa.familyds.com:8188/udp/239.253.43.46:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:24:11Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕头生活高清",
+      "url": "http://plex.cyruslee.top:8888/udp/239.253.43.46:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:30Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕头生活高清",
+      "url": "http://www.3344.uk:8888/udp/239.253.43.46:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:43Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕头生活高清",
+      "url": "http://www.maomizi.cn:9527/udp/239.253.43.46:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno 111] Connection refused>",
+      "checked_at": "2026-10-21T18:27:03Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕头生活高清",
+      "url": "http://www.syy3.top:3861/udp/239.253.43.46:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno 111] Connection refused>",
+      "checked_at": "2026-10-21T18:26:23Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕头生活高清",
+      "url": "http://www.yahao.host:4022/udp/239.253.43.46:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:24:17Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕头生活高清",
+      "url": "http://yanshifen.top:8889/udp/239.253.43.46:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:57Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕头经济",
+      "url": "http://129.211.14.102:25000/gdst.php?id=st2&token=<redacted>",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:23:37Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕头综合",
+      "url": "http://129.211.14.102:25000/gdst.php?id=st1&token=<redacted>",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:23:37Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕头综合高清",
+      "url": "http://119.29.142.81:4022/udp/239.253.43.45:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno 111] Connection refused>",
+      "checked_at": "2026-10-21T18:23:54Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕头综合高清",
+      "url": "http://61.145.188.90:50055/udp/239.253.43.45:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:27:04Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕头综合高清",
+      "url": "http://gdyd.7259.cc.cd:4014/udp/239.253.43.45:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:25:21Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕头综合高清",
+      "url": "http://gdyd.7259.cc.cd:4111/udp/239.253.43.45:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:24:20Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕头综合高清",
+      "url": "http://hongzhijiaoyu.net:8188/udp/239.253.43.45:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:24:04Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕头综合高清",
+      "url": "http://ikuai.cyruslee.top:8888/udp/239.253.43.45:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:50Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕头综合高清",
+      "url": "http://jellyfin.cyruslee.top:8888/udp/239.253.43.45:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:37Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕头综合高清",
+      "url": "http://lbyjlt.vv5678.cn:8880/udp/239.253.43.45:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:25Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕头综合高清",
+      "url": "http://lsa.familyds.com:8188/udp/239.253.43.45:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:24:11Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕头综合高清",
+      "url": "http://plex.cyruslee.top:8888/udp/239.253.43.45:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:30Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕头综合高清",
+      "url": "http://www.3344.uk:8888/udp/239.253.43.45:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:43Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕头综合高清",
+      "url": "http://www.maomizi.cn:9527/udp/239.253.43.45:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno 111] Connection refused>",
+      "checked_at": "2026-10-21T18:27:03Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕头综合高清",
+      "url": "http://www.syy3.top:3861/udp/239.253.43.45:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno 111] Connection refused>",
+      "checked_at": "2026-10-21T18:26:23Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕头综合高清",
+      "url": "http://www.yahao.host:4022/udp/239.253.43.45:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:24:17Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕头综合高清",
+      "url": "http://yanshifen.top:8889/udp/239.253.43.45:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:56Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕尾生活高清",
+      "url": "http://119.29.142.81:4022/udp/239.77.0.187:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno 111] Connection refused>",
+      "checked_at": "2026-10-21T18:23:54Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕尾生活高清",
+      "url": "http://61.145.188.90:50055/udp/239.77.0.187:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:27:04Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕尾生活高清",
+      "url": "http://gdyd.7259.cc.cd:4014/udp/239.77.0.187:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:25:21Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕尾生活高清",
+      "url": "http://gdyd.7259.cc.cd:4111/udp/239.77.0.187:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:24:20Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕尾生活高清",
+      "url": "http://hongzhijiaoyu.net:8188/udp/239.77.0.187:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:24:04Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕尾生活高清",
+      "url": "http://ikuai.cyruslee.top:8888/udp/239.77.0.187:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:49Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕尾生活高清",
+      "url": "http://jellyfin.cyruslee.top:8888/udp/239.77.0.187:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:37Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕尾生活高清",
+      "url": "http://lbyjlt.vv5678.cn:8880/udp/239.77.0.187:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:25Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕尾生活高清",
+      "url": "http://lsa.familyds.com:8188/udp/239.77.0.187:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:24:11Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕尾生活高清",
+      "url": "http://plex.cyruslee.top:8888/udp/239.77.0.187:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:30Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕尾生活高清",
+      "url": "http://www.3344.uk:8888/udp/239.77.0.187:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:43Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕尾生活高清",
+      "url": "http://www.maomizi.cn:9527/udp/239.77.0.187:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno 111] Connection refused>",
+      "checked_at": "2026-10-21T18:27:03Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕尾生活高清",
+      "url": "http://www.syy3.top:3861/udp/239.77.0.187:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno 111] Connection refused>",
+      "checked_at": "2026-10-21T18:26:23Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕尾生活高清",
+      "url": "http://www.yahao.host:4022/udp/239.77.0.187:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:24:17Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕尾生活高清",
+      "url": "http://yanshifen.top:8889/udp/239.77.0.187:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:56Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕尾综合高清",
+      "url": "http://119.29.142.81:4022/udp/239.77.0.25:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno 111] Connection refused>",
+      "checked_at": "2026-10-21T18:23:54Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕尾综合高清",
+      "url": "http://61.145.188.90:50055/udp/239.77.0.25:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:27:04Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕尾综合高清",
+      "url": "http://gdyd.7259.cc.cd:4014/udp/239.77.0.25:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:25:21Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕尾综合高清",
+      "url": "http://gdyd.7259.cc.cd:4111/udp/239.77.0.25:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:24:20Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕尾综合高清",
+      "url": "http://hongzhijiaoyu.net:8188/udp/239.77.0.25:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:23:59Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕尾综合高清",
+      "url": "http://ikuai.cyruslee.top:8888/udp/239.77.0.25:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:49Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕尾综合高清",
+      "url": "http://jellyfin.cyruslee.top:8888/udp/239.77.0.25:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:37Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕尾综合高清",
+      "url": "http://lbyjlt.vv5678.cn:8880/udp/239.77.0.25:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:25Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕尾综合高清",
+      "url": "http://lsa.familyds.com:8188/udp/239.77.0.25:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:24:10Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕尾综合高清",
+      "url": "http://plex.cyruslee.top:8888/udp/239.77.0.25:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:30Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕尾综合高清",
+      "url": "http://www.3344.uk:8888/udp/239.77.0.25:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:43Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕尾综合高清",
+      "url": "http://www.maomizi.cn:9527/udp/239.77.0.25:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno 111] Connection refused>",
+      "checked_at": "2026-10-21T18:27:02Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕尾综合高清",
+      "url": "http://www.syy3.top:3861/udp/239.77.0.25:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno 111] Connection refused>",
+      "checked_at": "2026-10-21T18:26:23Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕尾综合高清",
+      "url": "http://www.yahao.host:4022/udp/239.77.0.25:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:24:17Z"
+    },
+    {
+      "kind": "channel",
+      "name": "汕尾综合高清",
+      "url": "http://yanshifen.top:8889/udp/239.77.0.25:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:56Z"
+    },
+    {
+      "kind": "channel",
+      "name": "江苏卫视",
+      "url": "http://111.29.9.33:6610/000000001000/1000000001000001828/index.m3u8?channel-id=bestzb&Contentid=1000000001000001828&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:27:53Z"
+    },
+    {
+      "kind": "channel",
+      "name": "江苏卫视",
+      "url": "http://120.87.19.109:80/PLTV/88888973/224/3221225685/10000100000000060000000000333755_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:30:44Z"
+    },
+    {
+      "kind": "channel",
+      "name": "江西卫视",
+      "url": "http://111.29.9.33:6610/000000001000/1000000001000013731/index.m3u8?channel-id=bestzb&Contentid=1000000001000013731&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:28:11Z"
+    },
+    {
+      "kind": "channel",
+      "name": "江西卫视",
+      "url": "http://120.87.19.109:80/PLTV/88888973/224/3221225691/10000100000000060000000000333873_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:30:44Z"
+    },
+    {
+      "kind": "channel",
+      "name": "河北卫视",
+      "url": "http://111.29.9.33:6610/000000001000/1000000002000017118/index.m3u8?channel-id=bestzb&Contentid=1000000002000017118&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:27:41Z"
+    },
+    {
+      "kind": "channel",
+      "name": "河南卫视",
+      "url": "http://111.29.9.33:6610/000000001000/5000000011000031119/index.m3u8?channel-id=bestzb&Contentid=5000000011000031119&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:27:44Z"
+    },
+    {
+      "kind": "channel",
+      "name": "河源公共",
+      "url": "https://tmpstream.hyrtv.cn/hygg/sd/live.m3u8",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno 111] Connection refused>",
+      "checked_at": "2026-10-21T18:23:51Z"
+    },
+    {
+      "kind": "channel",
+      "name": "河源公共1",
+      "url": "http://tmpstream.hyrtv.cn/hygg/sd/live.m3u8",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "Remote end closed connection without response",
+      "checked_at": "2026-10-21T18:23:37Z"
+    },
+    {
+      "kind": "channel",
+      "name": "河源综合",
+      "url": "https://tmpstream.hyrtv.cn/xwzh/sd/live.m3u8",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno 111] Connection refused>",
+      "checked_at": "2026-10-21T18:23:51Z"
+    },
+    {
+      "kind": "channel",
+      "name": "河源综合1",
+      "url": "http://tmpstream.hyrtv.cn/xwzh/sd/live.m3u8",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "Remote end closed connection without response",
+      "checked_at": "2026-10-21T18:23:37Z"
+    },
+    {
+      "kind": "channel",
+      "name": "浙江卫视",
+      "url": "http://111.29.9.33:6610/000000001000/1000000001000009806/index.m3u8?channel-id=bestzb&Contentid=1000000001000009806&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:27:43Z"
+    },
+    {
+      "kind": "channel",
+      "name": "浙江卫视",
+      "url": "http://120.87.19.109:80/PLTV/88888973/224/3221225684/10000100000000060000000000334089_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:30:26Z"
+    },
+    {
+      "kind": "channel",
+      "name": "海南卫视",
+      "url": "http://111.29.9.33:6610/000000001000/5000000004000006211/index.m3u8?channel-id=bestzb&Contentid=5000000004000006211&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:28:14Z"
+    },
+    {
+      "kind": "channel",
+      "name": "深圳卫视",
+      "url": "http://111.29.9.33:6610/000000001000/1000000001000009227/index.m3u8?channel-id=bestzb&Contentid=1000000001000009227&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:27:44Z"
+    },
+    {
+      "kind": "channel",
+      "name": "深圳卫视",
+      "url": "http://120.87.19.109:80/PLTV/88888973/224/3221225692/10000100000000060000000000333949_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:30:45Z"
+    },
+    {
+      "kind": "channel",
+      "name": "深圳卫视",
+      "url": "http://nn.7x9d.cn/深圳最新.php?id=szws4k",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:23:48Z"
+    },
+    {
+      "kind": "channel",
+      "name": "深圳国际",
+      "url": "http://nn.7x9d.cn/深圳最新.php?id=szgj",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:23:50Z"
+    },
+    {
+      "kind": "channel",
+      "name": "深圳少儿",
+      "url": "http://nn.7x9d.cn/深圳最新.php?id=szse",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:23:49Z"
+    },
+    {
+      "kind": "channel",
+      "name": "深圳新闻网",
+      "url": "http://cfss.cc/cdn/dy/1057124186.flv",
+      "status": "probe_failed",
+      "http_status": 200,
+      "detail": "http://cfss.cc/cdn/dy/1057124186.flv: Invalid data found when processing input",
+      "checked_at": "2026-10-21T18:23:31Z"
+    },
+    {
+      "kind": "channel",
+      "name": "深圳电视剧",
+      "url": "http://nn.7x9d.cn/深圳最新.php?id=szdsj",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:23:49Z"
+    },
+    {
+      "kind": "channel",
+      "name": "深圳移动电视",
+      "url": "http://nn.7x9d.cn/深圳最新.php?id=szyd",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:23:50Z"
+    },
+    {
+      "kind": "channel",
+      "name": "深圳财经生活",
+      "url": "http://nn.7x9d.cn/深圳最新.php?id=szcjsh",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:23:49Z"
+    },
+    {
+      "kind": "channel",
+      "name": "深圳都市",
+      "url": "http://livepull-tcms.sztv.com.cn/live/dslive.m3u8",
+      "status": "http_error",
+      "http_status": 403,
+      "detail": "HTTP 403",
+      "checked_at": "2026-10-21T18:23:33Z"
+    },
+    {
+      "kind": "channel",
+      "name": "深圳都市",
+      "url": "http://nn.7x9d.cn/深圳最新.php?id=szds",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:23:48Z"
+    },
+    {
+      "kind": "channel",
+      "name": "深圳龙岗",
+      "url": "http://zhfw-t.szlg.com:8080/live/television1.m3u8",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T18:23:39Z"
+    },
+    {
+      "kind": "channel",
+      "name": "清远文旅生活",
+      "url": "http://zmylivestream.nfnews.com/zmy_slive/20811.m3u8",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:23:52Z"
+    },
+    {
+      "kind": "channel",
+      "name": "清远文旅生活",
+      "url": "http://zmylivestream.nfnews.com/zmy_slive/25321.m3u8",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:23:34Z"
+    },
+    {
+      "kind": "channel",
+      "name": "清远新闻综合",
+      "url": "http://zmylivestream.nfnews.com/zmy_slive/25319.m3u8",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:23:34Z"
+    },
+    {
+      "kind": "channel",
+      "name": "游戏风云",
+      "url": "http://111.29.9.33:6610/000000001000/5000000011000031114/index.m3u8?channel-id=bestzb&Contentid=5000000011000031114&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:28:42Z"
+    },
+    {
+      "kind": "channel",
+      "name": "湖北卫视",
+      "url": "http://111.29.9.33:6610/000000001000/1000000001000010355/index.m3u8?channel-id=bestzb&Contentid=1000000001000010355&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:27:49Z"
+    },
+    {
+      "kind": "channel",
+      "name": "湖南卫视",
+      "url": "http://111.29.9.33:6610/000000001000/1000000001000009115/index.m3u8?channel-id=bestzb&Contentid=1000000001000009115&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:27:42Z"
+    },
+    {
+      "kind": "channel",
+      "name": "湖南卫视",
+      "url": "http://120.87.19.109:80/PLTV/88888973/224/3221225682/10000100000000060000000000333514_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:30:26Z"
+    },
+    {
+      "kind": "channel",
+      "name": "湛江公共",
+      "url": "http://gbtv-hls-wjq.zjwtv.com/zjtv/ggpd.m3u8",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno -2] Name or service not known>",
+      "checked_at": "2026-10-21T18:23:36Z"
+    },
+    {
+      "kind": "channel",
+      "name": "湛江新闻综合",
+      "url": "http://gbtv-hls-wjq.zjwtv.com/zjtv/zhpd.m3u8",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno -2] Name or service not known>",
+      "checked_at": "2026-10-21T18:23:36Z"
+    },
+    {
+      "kind": "channel",
+      "name": "潮州民生1",
+      "url": "http://livezhpd.czbtv.com:38880/live/ggpd.m3u8?secret=<redacted>",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:23:38Z"
+    },
+    {
+      "kind": "channel",
+      "name": "潮州民生高清",
+      "url": "http://119.29.142.81:4022/udp/239.253.43.75:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno 111] Connection refused>",
+      "checked_at": "2026-10-21T18:23:55Z"
+    },
+    {
+      "kind": "channel",
+      "name": "潮州民生高清",
+      "url": "http://61.145.188.90:50055/udp/239.253.43.75:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:27:05Z"
+    },
+    {
+      "kind": "channel",
+      "name": "潮州民生高清",
+      "url": "http://gdyd.7259.cc.cd:4014/udp/239.253.43.75:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:25:23Z"
+    },
+    {
+      "kind": "channel",
+      "name": "潮州民生高清",
+      "url": "http://gdyd.7259.cc.cd:4111/udp/239.253.43.75:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:24:21Z"
+    },
+    {
+      "kind": "channel",
+      "name": "潮州民生高清",
+      "url": "http://hongzhijiaoyu.net:8188/udp/239.253.43.75:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:24:05Z"
+    },
+    {
+      "kind": "channel",
+      "name": "潮州民生高清",
+      "url": "http://ikuai.cyruslee.top:8888/udp/239.253.43.75:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:50Z"
+    },
+    {
+      "kind": "channel",
+      "name": "潮州民生高清",
+      "url": "http://jellyfin.cyruslee.top:8888/udp/239.253.43.75:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:38Z"
+    },
+    {
+      "kind": "channel",
+      "name": "潮州民生高清",
+      "url": "http://lbyjlt.vv5678.cn:8880/udp/239.253.43.75:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:25Z"
+    },
+    {
+      "kind": "channel",
+      "name": "潮州民生高清",
+      "url": "http://lsa.familyds.com:8188/udp/239.253.43.75:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:24:12Z"
+    },
+    {
+      "kind": "channel",
+      "name": "潮州民生高清",
+      "url": "http://plex.cyruslee.top:8888/udp/239.253.43.75:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:31Z"
+    },
+    {
+      "kind": "channel",
+      "name": "潮州民生高清",
+      "url": "http://www.3344.uk:8888/udp/239.253.43.75:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:45Z"
+    },
+    {
+      "kind": "channel",
+      "name": "潮州民生高清",
+      "url": "http://www.maomizi.cn:9527/udp/239.253.43.75:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno 111] Connection refused>",
+      "checked_at": "2026-10-21T18:27:03Z"
+    },
+    {
+      "kind": "channel",
+      "name": "潮州民生高清",
+      "url": "http://www.syy3.top:3861/udp/239.253.43.75:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno 111] Connection refused>",
+      "checked_at": "2026-10-21T18:26:23Z"
+    },
+    {
+      "kind": "channel",
+      "name": "潮州民生高清",
+      "url": "http://www.yahao.host:4022/udp/239.253.43.75:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:24:17Z"
+    },
+    {
+      "kind": "channel",
+      "name": "潮州民生高清",
+      "url": "http://yanshifen.top:8889/udp/239.253.43.75:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:57Z"
+    },
+    {
+      "kind": "channel",
+      "name": "潮州综合1",
+      "url": "http://livezhpd.czbtv.com:38880/live/ctvzhpd.m3u8?secret=<redacted>",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:23:37Z"
+    },
+    {
+      "kind": "channel",
+      "name": "潮州综合高清",
+      "url": "http://119.29.142.81:4022/udp/239.253.43.70:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno 111] Connection refused>",
+      "checked_at": "2026-10-21T18:23:55Z"
+    },
+    {
+      "kind": "channel",
+      "name": "潮州综合高清",
+      "url": "http://61.145.188.90:50055/udp/239.253.43.70:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:27:04Z"
+    },
+    {
+      "kind": "channel",
+      "name": "潮州综合高清",
+      "url": "http://gdyd.7259.cc.cd:4014/udp/239.253.43.70:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:25:23Z"
+    },
+    {
+      "kind": "channel",
+      "name": "潮州综合高清",
+      "url": "http://gdyd.7259.cc.cd:4111/udp/239.253.43.70:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:24:21Z"
+    },
+    {
+      "kind": "channel",
+      "name": "潮州综合高清",
+      "url": "http://hongzhijiaoyu.net:8188/udp/239.253.43.70:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:24:04Z"
+    },
+    {
+      "kind": "channel",
+      "name": "潮州综合高清",
+      "url": "http://ikuai.cyruslee.top:8888/udp/239.253.43.70:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:50Z"
+    },
+    {
+      "kind": "channel",
+      "name": "潮州综合高清",
+      "url": "http://jellyfin.cyruslee.top:8888/udp/239.253.43.70:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:37Z"
+    },
+    {
+      "kind": "channel",
+      "name": "潮州综合高清",
+      "url": "http://lbyjlt.vv5678.cn:8880/udp/239.253.43.70:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:25Z"
+    },
+    {
+      "kind": "channel",
+      "name": "潮州综合高清",
+      "url": "http://lsa.familyds.com:8188/udp/239.253.43.70:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:24:11Z"
+    },
+    {
+      "kind": "channel",
+      "name": "潮州综合高清",
+      "url": "http://plex.cyruslee.top:8888/udp/239.253.43.70:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:31Z"
+    },
+    {
+      "kind": "channel",
+      "name": "潮州综合高清",
+      "url": "http://www.3344.uk:8888/udp/239.253.43.70:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:45Z"
+    },
+    {
+      "kind": "channel",
+      "name": "潮州综合高清",
+      "url": "http://www.maomizi.cn:9527/udp/239.253.43.70:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno 111] Connection refused>",
+      "checked_at": "2026-10-21T18:27:03Z"
+    },
+    {
+      "kind": "channel",
+      "name": "潮州综合高清",
+      "url": "http://www.syy3.top:3861/udp/239.253.43.70:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno 111] Connection refused>",
+      "checked_at": "2026-10-21T18:26:23Z"
+    },
+    {
+      "kind": "channel",
+      "name": "潮州综合高清",
+      "url": "http://www.yahao.host:4022/udp/239.253.43.70:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:24:17Z"
+    },
+    {
+      "kind": "channel",
+      "name": "潮州综合高清",
+      "url": "http://yanshifen.top:8889/udp/239.253.43.70:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:57Z"
+    },
+    {
+      "kind": "channel",
+      "name": "炫舞未来",
+      "url": "http://111.29.9.33:6610/000000001000/1000000001000000515/index.m3u8?channel-id=bestzb&Contentid=1000000001000000515&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:29:12Z"
+    },
+    {
+      "kind": "channel",
+      "name": "特区新闻广场",
+      "url": "http://cfss.cc/cdn/dy/tqxwgc.flv",
+      "status": "probe_failed",
+      "http_status": 200,
+      "detail": "http://cfss.cc/cdn/dy/tqxwgc.flv: Invalid data found when processing input",
+      "checked_at": "2026-10-21T18:23:31Z"
+    },
+    {
+      "kind": "channel",
+      "name": "环球时报",
+      "url": "http://cfss.cc/cdn/dy/HuanQiuShiBao.flv",
+      "status": "probe_failed",
+      "http_status": 200,
+      "detail": "http://cfss.cc/cdn/dy/HuanQiuShiBao.flv: Invalid data found when processing input",
+      "checked_at": "2026-10-21T18:23:31Z"
+    },
+    {
+      "kind": "channel",
+      "name": "珠江频道",
+      "url": "http://cfss.cc/cdn/dy/gdtvzjpd.flv",
+      "status": "probe_failed",
+      "http_status": 200,
+      "detail": "http://cfss.cc/cdn/dy/gdtvzjpd.flv: Invalid data found when processing input",
+      "checked_at": "2026-10-21T18:23:24Z"
+    },
+    {
+      "kind": "channel",
+      "name": "甘肃卫视",
+      "url": "http://111.29.9.33:6610/000000001000/1000000002000017827/index.m3u8?channel-id=bestzb&Contentid=1000000002000017827&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:28:12Z"
+    },
+    {
+      "kind": "channel",
+      "name": "生活时尚",
+      "url": "http://111.29.9.33:6610/000000001000/5000000002000019634/index.m3u8?channel-id=bestzb&Contentid=5000000002000019634&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:28:43Z"
+    },
+    {
+      "kind": "channel",
+      "name": "电影频道央影传媒",
+      "url": "http://cfss.cc/cdn/dy/cctv6media..flv",
+      "status": "probe_failed",
+      "http_status": 200,
+      "detail": "http://cfss.cc/cdn/dy/cctv6media..flv: Invalid data found when processing input",
+      "checked_at": "2026-10-21T18:23:24Z"
+    },
+    {
+      "kind": "channel",
+      "name": "番禺电视台",
+      "url": "http://video.epaper.pybtv.cn:8080/live/rtmp_live_demo.m3u8",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:23:50Z"
+    },
+    {
+      "kind": "channel",
+      "name": "番禺综合",
+      "url": "http://video.epaper.pybtv.cn:8080/live/rtmp_live_demo.flv",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:23:38Z"
+    },
+    {
+      "kind": "channel",
+      "name": "第一财团",
+      "url": "http://cfss.cc/cdn/dy/Diyicaituan.flv",
+      "status": "probe_failed",
+      "http_status": 200,
+      "detail": "http://cfss.cc/cdn/dy/Diyicaituan.flv: Invalid data found when processing input",
+      "checked_at": "2026-10-21T18:23:31Z"
+    },
+    {
+      "kind": "channel",
+      "name": "粤TV-广东台荔枝网",
+      "url": "http://cfss.cc/cdn/dy/ZK8763.flv",
+      "status": "probe_failed",
+      "http_status": 200,
+      "detail": "http://cfss.cc/cdn/dy/ZK8763.flv: Invalid data found when processing input",
+      "checked_at": "2026-10-21T18:23:24Z"
+    },
+    {
+      "kind": "channel",
+      "name": "精品大剧",
+      "url": "http://111.29.9.33:6610/000000001000/1000000004000013968/index.m3u8?channel-id=bestzb&Contentid=1000000004000013968&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:28:48Z"
+    },
+    {
+      "kind": "channel",
+      "name": "纯享4K",
+      "url": "http://111.29.9.33:6610/000000001000/1000000004000011651/index.m3u8?channel-id=bestzb&Contentid=1000000004000011651&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:29:14Z"
+    },
+    {
+      "kind": "channel",
+      "name": "经济科教高清",
+      "url": "http://119.29.142.81:4022/udp/239.77.0.85:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno 111] Connection refused>",
+      "checked_at": "2026-10-21T18:23:57Z"
+    },
+    {
+      "kind": "channel",
+      "name": "经济科教高清",
+      "url": "http://61.145.188.90:50055/udp/239.77.0.85:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:27:05Z"
+    },
+    {
+      "kind": "channel",
+      "name": "经济科教高清",
+      "url": "http://gdyd.7259.cc.cd:4014/udp/239.77.0.85:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:25:24Z"
+    },
+    {
+      "kind": "channel",
+      "name": "经济科教高清",
+      "url": "http://gdyd.7259.cc.cd:4111/udp/239.77.0.85:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:24:23Z"
+    },
+    {
+      "kind": "channel",
+      "name": "经济科教高清",
+      "url": "http://hongzhijiaoyu.net:8188/udp/239.77.0.85:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:24:08Z"
+    },
+    {
+      "kind": "channel",
+      "name": "经济科教高清",
+      "url": "http://ikuai.cyruslee.top:8888/udp/239.77.0.85:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:53Z"
+    },
+    {
+      "kind": "channel",
+      "name": "经济科教高清",
+      "url": "http://jellyfin.cyruslee.top:8888/udp/239.77.0.85:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:40Z"
+    },
+    {
+      "kind": "channel",
+      "name": "经济科教高清",
+      "url": "http://lbyjlt.vv5678.cn:8880/udp/239.77.0.85:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:28Z"
+    },
+    {
+      "kind": "channel",
+      "name": "经济科教高清",
+      "url": "http://lsa.familyds.com:8188/udp/239.77.0.85:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:24:14Z"
+    },
+    {
+      "kind": "channel",
+      "name": "经济科教高清",
+      "url": "http://plex.cyruslee.top:8888/udp/239.77.0.85:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:34Z"
+    },
+    {
+      "kind": "channel",
+      "name": "经济科教高清",
+      "url": "http://www.3344.uk:8888/udp/239.77.0.85:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:46Z"
+    },
+    {
+      "kind": "channel",
+      "name": "经济科教高清",
+      "url": "http://www.maomizi.cn:9527/udp/239.77.0.85:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno 111] Connection refused>",
+      "checked_at": "2026-10-21T18:27:04Z"
+    },
+    {
+      "kind": "channel",
+      "name": "经济科教高清",
+      "url": "http://www.syy3.top:3861/udp/239.77.0.85:5146",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno 111] Connection refused>",
+      "checked_at": "2026-10-21T18:26:24Z"
+    },
+    {
+      "kind": "channel",
+      "name": "经济科教高清",
+      "url": "http://www.yahao.host:4022/udp/239.77.0.85:5146",
+      "status": "http_error",
+      "http_status": 503,
+      "detail": "HTTP 503",
+      "checked_at": "2026-10-21T18:24:19Z"
+    },
+    {
+      "kind": "channel",
+      "name": "经济科教高清",
+      "url": "http://yanshifen.top:8889/udp/239.77.0.85:5146",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:26:59Z"
+    },
+    {
+      "kind": "channel",
+      "name": "维度新闻",
+      "url": "http://cfss.cc/cdn/dy/975107749.flv",
+      "status": "probe_failed",
+      "http_status": 200,
+      "detail": "http://cfss.cc/cdn/dy/975107749.flv: Invalid data found when processing input",
+      "checked_at": "2026-10-21T18:23:31Z"
+    },
+    {
+      "kind": "channel",
+      "name": "肇庆生活服务",
+      "url": "http://zmylivestream.nfnews.com/zmy_slive/27871.m3u8",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:23:34Z"
+    },
+    {
+      "kind": "channel",
+      "name": "肇庆综合",
+      "url": "http://zmylivestream.nfnews.com/zmy_slive/27872.m3u8",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:23:33Z"
+    },
+    {
+      "kind": "channel",
+      "name": "育见新闻",
+      "url": "http://cfss.cc/cdn/dy/CETVxinwen.flv",
+      "status": "probe_failed",
+      "http_status": 200,
+      "detail": "http://cfss.cc/cdn/dy/CETVxinwen.flv: Invalid data found when processing input",
+      "checked_at": "2026-10-21T18:23:31Z"
+    },
+    {
+      "kind": "channel",
+      "name": "茶频道",
+      "url": "http://111.29.9.33:6610/000000001000/5000000011000031209/index.m3u8?channel-id=bestzb&Contentid=5000000011000031209&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:29:13Z"
+    },
+    {
+      "kind": "channel",
+      "name": "西藏卫视",
+      "url": "http://120.87.19.109:80/PLTV/88888973/224/3221225693/10000100000000060000000000333969_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:30:45Z"
+    },
+    {
+      "kind": "channel",
+      "name": "财联社",
+      "url": "http://cfss.cc/cdn/dy/clscccaijing.flv",
+      "status": "probe_failed",
+      "http_status": 200,
+      "detail": "http://cfss.cc/cdn/dy/clscccaijing.flv: Invalid data found when processing input",
+      "checked_at": "2026-10-21T18:23:31Z"
+    },
+    {
+      "kind": "channel",
+      "name": "贵州卫视",
+      "url": "http://111.29.9.33:6610/000000001000/1000000002000003169/index.m3u8?channel-id=bestzb&Contentid=1000000002000003169&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:27:40Z"
+    },
+    {
+      "kind": "channel",
+      "name": "超级体育",
+      "url": "http://111.29.9.33:6610/000000001000/1000000004000007755/index.m3u8?channel-id=bestzb&Contentid=1000000004000007755&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:28:54Z"
+    },
+    {
+      "kind": "channel",
+      "name": "超级电影",
+      "url": "http://111.29.9.33:6610/000000001000/1000000001000012884/index.m3u8?channel-id=bestzb&Contentid=1000000001000012884&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:28:44Z"
+    },
+    {
+      "kind": "channel",
+      "name": "超级电视剧",
+      "url": "http://111.29.9.33:6610/000000001000/1000000001000008139/index.m3u8?channel-id=bestzb&Contentid=1000000001000008139&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:28:24Z"
+    },
+    {
+      "kind": "channel",
+      "name": "超级综艺",
+      "url": "http://111.29.9.33:6610/000000001000/1000000004000023658/index.m3u8?channel-id=bestzb&Contentid=1000000004000023658&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:28:54Z"
+    },
+    {
+      "kind": "channel",
+      "name": "辽宁卫视",
+      "url": "http://111.29.9.33:6610/000000001000/1000000001000001945/index.m3u8?channel-id=bestzb&Contentid=1000000001000001945&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:28:11Z"
+    },
+    {
+      "kind": "channel",
+      "name": "都市剧场",
+      "url": "http://111.29.9.33:6610/000000001000/5000000011000031111/index.m3u8?channel-id=bestzb&Contentid=5000000011000031111&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:28:42Z"
+    },
+    {
+      "kind": "channel",
+      "name": "重庆卫视",
+      "url": "http://111.29.9.33:6610/000000001000/1000000001000001096/index.m3u8?channel-id=bestzb&Contentid=1000000001000001096&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:27:42Z"
+    },
+    {
+      "kind": "channel",
+      "name": "金牌综艺",
+      "url": "http://111.29.9.33:6610/000000001000/1000000004000026167/index.m3u8?channel-id=bestzb&Contentid=1000000004000026167&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:29:12Z"
+    },
+    {
+      "kind": "channel",
+      "name": "金鹰卡通",
+      "url": "http://111.29.9.33:6610/000000001000/5000000006000040024/index.m3u8?channel-id=bestzb&Contentid=5000000006000040024&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:29:12Z"
+    },
+    {
+      "kind": "channel",
+      "name": "金鹰纪实",
+      "url": "http://111.29.9.33:6610/000000001000/5000000011000031203/index.m3u8?channel-id=bestzb&Contentid=5000000011000031203&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:28:42Z"
+    },
+    {
+      "kind": "channel",
+      "name": "阳江-1",
+      "url": "https://live.yjtvw.com:8081/live/yjtv1.m3u8",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno -2] Name or service not known>",
+      "checked_at": "2026-10-21T18:23:36Z"
+    },
+    {
+      "kind": "channel",
+      "name": "阳江-2",
+      "url": "https://live.yjtvw.com:8081/live/yjtv2.m3u8",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno -2] Name or service not known>",
+      "checked_at": "2026-10-21T18:23:36Z"
+    },
+    {
+      "kind": "channel",
+      "name": "青海卫视",
+      "url": "http://111.29.9.33:6610/000000001000/1000000002000013359/index.m3u8?channel-id=bestzb&Contentid=1000000002000013359&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:28:13Z"
+    },
+    {
+      "kind": "channel",
+      "name": "韩国EBS1",
+      "url": "http://ebsonairios.ebs.co.kr/groundwavetablet500k/tablet500k/playlist.m3u8?zshijd",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "ffprobe 检测到媒体流: data,video,audio,,data,video,audio",
+      "checked_at": "2026-10-21T18:23:03Z"
+    },
+    {
+      "kind": "channel",
+      "name": "韩国EBS2",
+      "url": "http://ebsonairios.ebs.co.kr/ebs2tablet500k/tablet500k/ebs2tablet500k.index.m3u8?zshijd",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "ffprobe 检测到媒体流: data,video,audio,,data,video,audio",
+      "checked_at": "2026-10-21T18:23:04Z"
+    },
+    {
+      "kind": "channel",
+      "name": "韩国音乐",
+      "url": "http://mgugaklive.nowcdn.co.kr/gugakvideo/gugakvideo.stream/playlist.m3u8",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "ffprobe 检测到媒体流: data,video,audio,,data,video,audio",
+      "checked_at": "2026-10-21T18:23:16Z"
+    },
+    {
+      "kind": "channel",
+      "name": "韶关综合",
+      "url": "https://live.sgmsw.cn/hls/lhx1FUeZg/playlist.m3u8",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "ffprobe 检测到媒体流: video,audio,,video,audio",
+      "checked_at": "2026-10-21T18:23:36Z"
+    },
+    {
+      "kind": "channel",
+      "name": "韶关综合",
+      "url": "https://www.sgmsw.cn/videos/tv/201805/1308/SB05RIYZOU8JR418AUQOF62CAJQ08D0E/hls/live.m3u8",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "ffprobe 检测到媒体流: video,audio,,video,audio",
+      "checked_at": "2026-10-21T18:23:36Z"
+    },
+    {
+      "kind": "channel",
+      "name": "魅力足球",
+      "url": "http://111.29.9.33:6610/000000001000/5000000011000031207/index.m3u8?channel-id=bestzb&Contentid=5000000011000031207&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:28:42Z"
+    },
+    {
+      "kind": "channel",
+      "name": "黑莓动画",
+      "url": "http://111.29.9.33:6610/000000001000/1000000004000021734/index.m3u8?channel-id=bestzb&Contentid=1000000004000021734&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:29:12Z"
+    },
+    {
+      "kind": "channel",
+      "name": "黑莓电影",
+      "url": "http://111.29.9.33:6610/000000001000/1000000004000019624/index.m3u8?channel-id=bestzb&Contentid=1000000004000019624&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:28:43Z"
+    },
+    {
+      "kind": "channel",
+      "name": "黑龙江卫视",
+      "url": "http://111.29.9.33:6610/000000001000/1000000001000001925/index.m3u8?channel-id=bestzb&Contentid=1000000001000001925&livemode=1&stbId=3",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T18:27:40Z"
+    },
+    {
+      "kind": "live",
+      "name": "🍿乌拉TV直播",
+      "url": "https://ilook.epg.one/5CM5SY98BF24PL/2",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:23:00Z"
+    },
+    {
+      "kind": "live",
+      "name": "🍿全球TV直播",
+      "url": "https://seep.eu.org/iptv-org.github.io/iptv/index.m3u",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "播放列表首条媒体流：ffprobe 检测到媒体流: video,data,video,data,,video,data,video,data,,video,data,video,data,,video,data,video,data,,video,data,video,data,,video,data,video,data,video,data,video,data,video,data,video,data",
+      "checked_at": "2026-10-21T18:23:00Z"
+    },
+    {
+      "kind": "live",
+      "name": "🍿华视TV直播",
+      "url": "https://445569.pages.dev/https://raw.githubusercontent.com/swhtv/111/refs/heads/main/%E5%8D%8E%E8%A7%86box%E5%8D%8E%E8%A7%86%E5%A4%A7%E5%85%A8swtv",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:22:59Z"
+    },
+    {
+      "kind": "live",
+      "name": "🍿易发TV直播",
+      "url": "https://445569.pages.dev/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+      "status": "manifest_ok",
+      "http_status": 200,
+      "detail": "文本列表可下载；不是可直接探测的单条 HLS 播放列表",
+      "checked_at": "2026-10-21T18:23:00Z"
+    },
+    {
+      "kind": "live",
+      "name": "🏆PPV体育赛事直播",
+      "url": "https://www.korice.eu.org/ppv_m3u.php",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T18:22:59Z"
+    },
+    {
+      "kind": "live",
+      "name": "👖裤佬IPTV直播",
+      "url": "https://iptv.445569.xyz/live.m3u",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "播放列表首条媒体流：ffprobe 检测到媒体流: video,audio",
+      "checked_at": "2026-10-21T18:22:59Z"
+    },
+    {
+      "kind": "live",
+      "name": "👖裤佬TikTok直播",
+      "url": "https://tiktok.445569.xyz/live.m3u",
+      "status": "probe_failed",
+      "http_status": 200,
+      "detail": "播放列表可下载，但首条媒体流探测失败：ffprobe 超时",
+      "checked_at": "2026-10-21T18:22:59Z"
+    },
+    {
+      "kind": "live",
+      "name": "👖裤佬Twitch直播",
+      "url": "https://twitch.445569.xyz/live.m3u",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "播放列表首条媒体流：ffprobe 检测到媒体流: audio,video,data,,audio,data,,audio,video,data,,audio,video,data,,audio,video,data,,audio,video,data,,audio,video,data,audio,data,audio,video,data,audio,video,data,audio,video,data,audio,video,data",
+      "checked_at": "2026-10-21T18:22:59Z"
+    },
+    {
+      "kind": "live",
+      "name": "👖裤佬YY直播",
+      "url": "https://yy.445569.xyz/live.m3u",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "播放列表首条媒体流：ffprobe 检测到媒体流: audio,video",
+      "checked_at": "2026-10-21T18:22:59Z"
+    },
+    {
+      "kind": "live",
+      "name": "👖裤佬体育直播[主]",
+      "url": "https://jsnzkpg.de5.net/all.m3u",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "播放列表首条媒体流：ffprobe 检测到媒体流: video,audio",
+      "checked_at": "2026-10-21T18:22:59Z"
+    },
+    {
+      "kind": "live",
+      "name": "👖裤佬体育直播[备]",
+      "url": "https://stymei.pages.dev/live.m3u",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "播放列表首条媒体流：ffprobe 检测到媒体流: video,audio",
+      "checked_at": "2026-10-21T18:22:59Z"
+    },
+    {
+      "kind": "live",
+      "name": "👖裤佬快手直播",
+      "url": "https://kuaishou.445569.xyz/list.m3u",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "播放列表首条媒体流：ffprobe 检测到媒体流: video,audio",
+      "checked_at": "2026-10-21T18:22:59Z"
+    },
+    {
+      "kind": "live",
+      "name": "👖裤佬抖音直播",
+      "url": "https://douyin.445569.xyz/live.m3u",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "播放列表首条媒体流：ffprobe 检测到媒体流: audio,video,,audio,video",
+      "checked_at": "2026-10-21T18:22:59Z"
+    },
+    {
+      "kind": "live",
+      "name": "👖裤佬斗鱼直播",
+      "url": "https://douyu.445569.xyz/live.m3u",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "播放列表首条媒体流：ffprobe 检测到媒体流: audio,video",
+      "checked_at": "2026-10-21T18:22:59Z"
+    },
+    {
+      "kind": "live",
+      "name": "👖裤佬来疯直播",
+      "url": "https://laifeng.445569.xyz/live.m3u",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "播放列表首条媒体流：ffprobe 检测到媒体流: video,audio,,video,audio",
+      "checked_at": "2026-10-21T18:22:59Z"
+    },
+    {
+      "kind": "live",
+      "name": "👖裤佬百战直播",
+      "url": "https://baizhan.445569.xyz/live.m3u",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "播放列表首条媒体流：ffprobe 检测到媒体流: audio,video",
+      "checked_at": "2026-10-21T18:22:59Z"
+    },
+    {
+      "kind": "live",
+      "name": "👖裤佬虎牙直播",
+      "url": "https://huya.445569.xyz/live.m3u",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "播放列表首条媒体流：ffprobe 检测到媒体流: subtitle,audio,video",
+      "checked_at": "2026-10-21T18:22:59Z"
+    },
+    {
+      "kind": "live",
+      "name": "👖裤佬酷狗直播",
+      "url": "https://kugou.445569.xyz/live.m3u",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "播放列表首条媒体流：ffprobe 检测到媒体流: video,audio,,video,audio",
+      "checked_at": "2026-10-21T18:22:59Z"
+    },
+    {
+      "kind": "site",
+      "name": "✈️TG频道@stymei",
+      "url": "csp_Douban",
+      "status": "requires_app",
+      "http_status": null,
+      "detail": "站点使用内置 spider 标识，无法在服务端验证播放",
+      "checked_at": "2026-10-21T18:22:58Z"
+    },
+    {
+      "kind": "site",
+      "name": "👖4k",
+      "url": "https://jsnz.pages.dev/f/af676592.py",
+      "status": "requires_app",
+      "http_status": 200,
+      "detail": "API 地址可访问；播放仍需影视 App 与对应 spider 解析",
+      "checked_at": "2026-10-21T18:22:58Z"
+    },
+    {
+      "kind": "site",
+      "name": "👖API",
+      "url": "https://jsnz.pages.dev/f/cf616b2f.py",
+      "status": "requires_app",
+      "http_status": 200,
+      "detail": "API 地址可访问；播放仍需影视 App 与对应 spider 解析",
+      "checked_at": "2026-10-21T18:22:59Z"
+    },
+    {
+      "kind": "site",
+      "name": "👖APP",
+      "url": "https://jsnz.pages.dev/f/04b5c0b4.js",
+      "status": "requires_app",
+      "http_status": 200,
+      "detail": "API 地址可访问；播放仍需影视 App 与对应 spider 解析",
+      "checked_at": "2026-10-21T18:22:58Z"
+    },
+    {
+      "kind": "site",
+      "name": "👖Emby",
+      "url": "https://jsnz.pages.dev/f/696546f2.js",
+      "status": "requires_app",
+      "http_status": 200,
+      "detail": "API 地址可访问；播放仍需影视 App 与对应 spider 解析",
+      "checked_at": "2026-10-21T18:22:59Z"
+    },
+    {
+      "kind": "site",
+      "name": "👖IPTV",
+      "url": "https://jsnz.pages.dev/f/f05e3b39.js",
+      "status": "requires_app",
+      "http_status": 200,
+      "detail": "API 地址可访问；播放仍需影视 App 与对应 spider 解析",
+      "checked_at": "2026-10-21T18:22:58Z"
+    },
+    {
+      "kind": "site",
+      "name": "👖JS",
+      "url": "https://jsnz.pages.dev/f/f7b46c7f.js",
+      "status": "requires_app",
+      "http_status": 200,
+      "detail": "API 地址可访问；播放仍需影视 App 与对应 spider 解析",
+      "checked_at": "2026-10-21T18:22:59Z"
+    },
+    {
+      "kind": "site",
+      "name": "👖PHP",
+      "url": "http://jiduo.3116598.xyz/PHP/pkty.php",
       "status": "reachable",
       "http_status": 200,
-      "detail": ""
+      "detail": "HTTP 可访问",
+      "checked_at": "2026-10-21T18:22:59Z"
+    },
+    {
+      "kind": "site",
+      "name": "👖PY",
+      "url": "https://jsnz.pages.dev/f/e1aeef83.py",
+      "status": "requires_app",
+      "http_status": 200,
+      "detail": "API 地址可访问；播放仍需影视 App 与对应 spider 解析",
+      "checked_at": "2026-10-21T18:22:58Z"
+    },
+    {
+      "kind": "site",
+      "name": "👖体育",
+      "url": "https://jsnzkpg.de5.net/t4.json",
+      "status": "reachable",
+      "http_status": 200,
+      "detail": "HTTP 可访问",
+      "checked_at": "2026-10-21T18:22:58Z"
+    },
+    {
+      "kind": "site",
+      "name": "👖动漫",
+      "url": "https://jsnz.pages.dev/f/7e20bdb7.py",
+      "status": "requires_app",
+      "http_status": 200,
+      "detail": "API 地址可访问；播放仍需影视 App 与对应 spider 解析",
+      "checked_at": "2026-10-21T18:22:58Z"
+    },
+    {
+      "kind": "site",
+      "name": "👖听书",
+      "url": "https://jsnz.pages.dev/f/d44dd2cf.py",
+      "status": "requires_app",
+      "http_status": 200,
+      "detail": "API 地址可访问；播放仍需影视 App 与对应 spider 解析",
+      "checked_at": "2026-10-21T18:22:59Z"
+    },
+    {
+      "kind": "site",
+      "name": "👖奈飞",
+      "url": "https://api.wsyzy.net/api.php/provide/vod",
+      "status": "reachable",
+      "http_status": 200,
+      "detail": "HTTP 可访问",
+      "checked_at": "2026-10-21T18:22:58Z"
+    },
+    {
+      "kind": "site",
+      "name": "👖少儿",
+      "url": "https://jsnz.pages.dev/f/6b9e7fca.js",
+      "status": "requires_app",
+      "http_status": 200,
+      "detail": "API 地址可访问；播放仍需影视 App 与对应 spider 解析",
+      "checked_at": "2026-10-21T18:22:59Z"
+    },
+    {
+      "kind": "site",
+      "name": "👖广播",
+      "url": "https://jsnz.pages.dev/f/cec31b11.py",
+      "status": "requires_app",
+      "http_status": 200,
+      "detail": "API 地址可访问；播放仍需影视 App 与对应 spider 解析",
+      "checked_at": "2026-10-21T18:22:59Z"
+    },
+    {
+      "kind": "site",
+      "name": "👖影视",
+      "url": "https://jsnz.pages.dev/f/9e53615c.py",
+      "status": "requires_app",
+      "http_status": 200,
+      "detail": "API 地址可访问；播放仍需影视 App 与对应 spider 解析",
+      "checked_at": "2026-10-21T18:22:58Z"
+    },
+    {
+      "kind": "site",
+      "name": "👖戏曲",
+      "url": "https://iduo.us.ci/gt/leevi0709/one/main/js/drpy2.min.js",
+      "status": "requires_app",
+      "http_status": 200,
+      "detail": "API 地址可访问；播放仍需影视 App 与对应 spider 解析",
+      "checked_at": "2026-10-21T18:22:59Z"
+    },
+    {
+      "kind": "site",
+      "name": "👖有声",
+      "url": "https://jsnz.pages.dev/f/e126d1e4.py",
+      "status": "requires_app",
+      "http_status": 200,
+      "detail": "API 地址可访问；播放仍需影视 App 与对应 spider 解析",
+      "checked_at": "2026-10-21T18:22:59Z"
+    },
+    {
+      "kind": "site",
+      "name": "👖短剧",
+      "url": "https://jsnz.pages.dev/f/29b94aff.py",
+      "status": "requires_app",
+      "http_status": 200,
+      "detail": "API 地址可访问；播放仍需影视 App 与对应 spider 解析",
+      "checked_at": "2026-10-21T18:22:58Z"
+    },
+    {
+      "kind": "site",
+      "name": "👖网盘",
+      "url": "https://jsnz.pages.dev/f/261c1664.py",
+      "status": "requires_app",
+      "http_status": 200,
+      "detail": "API 地址可访问；播放仍需影视 App 与对应 spider 解析",
+      "checked_at": "2026-10-21T18:22:58Z"
+    },
+    {
+      "kind": "site",
+      "name": "👖聚合",
+      "url": "https://jsnz.pages.dev/f/4df9fb60.py",
+      "status": "requires_app",
+      "http_status": 200,
+      "detail": "API 地址可访问；播放仍需影视 App 与对应 spider 解析",
+      "checked_at": "2026-10-21T18:22:58Z"
+    },
+    {
+      "kind": "site",
+      "name": "👖采集",
+      "url": "https://jsnz.pages.dev/f/72b7239d.py",
+      "status": "requires_app",
+      "http_status": 200,
+      "detail": "API 地址可访问；播放仍需影视 App 与对应 spider 解析",
+      "checked_at": "2026-10-21T18:22:58Z"
+    },
+    {
+      "kind": "site",
+      "name": "👖韩国",
+      "url": "https://jsnz.pages.dev/f/26511242.py",
+      "status": "requires_app",
+      "http_status": 200,
+      "detail": "API 地址可访问；播放仍需影视 App 与对应 spider 解析",
+      "checked_at": "2026-10-21T18:22:58Z"
+    },
+    {
+      "kind": "site",
+      "name": "👖音乐",
+      "url": "https://jsnz.pages.dev/f/eded33cf.py",
+      "status": "requires_app",
+      "http_status": 200,
+      "detail": "API 地址可访问；播放仍需影视 App 与对应 spider 解析",
+      "checked_at": "2026-10-21T18:22:58Z"
+    },
+    {
+      "kind": "site",
+      "name": "📌测试",
+      "url": "https://jsnz.pages.dev/f/e7124867.py",
+      "status": "requires_app",
+      "http_status": 200,
+      "detail": "API 地址可访问；播放仍需影视 App 与对应 spider 解析",
+      "checked_at": "2026-10-21T18:22:59Z"
     },
     {
       "kind": "source",
@@ -21,7 +4907,17 @@
       "url": "https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
       "status": "reachable",
       "http_status": 200,
-      "detail": "存在含真实凭据的站点，已跳过"
+      "detail": "HTTP 可访问",
+      "checked_at": "2026-10-21T18:22:58Z"
+    },
+    {
+      "kind": "source",
+      "name": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+      "url": "https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+      "status": "reachable",
+      "http_status": 200,
+      "detail": "HTTP 可访问",
+      "checked_at": "2026-10-21T18:22:58Z"
     },
     {
       "kind": "source",
@@ -29,351 +4925,8 @@
       "url": "https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
       "status": "reachable",
       "http_status": 200,
-      "detail": ""
-    },
-    {
-      "kind": "site",
-      "name": "✈️TG频道@stymei",
-      "url": "csp_Douban",
-      "status": "requires_app",
-      "http_status": "",
-      "detail": "需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放"
-    },
-    {
-      "kind": "site",
-      "name": "👖IPTV",
-      "url": "https://jsnz.pages.dev/f/f05e3b39.js",
-      "status": "requires_app",
-      "http_status": "",
-      "detail": "需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放"
-    },
-    {
-      "kind": "site",
-      "name": "👖体育",
-      "url": "https://jsnzkpg.de5.net/t4.json",
-      "status": "unverified",
-      "http_status": "",
-      "detail": "需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放"
-    },
-    {
-      "kind": "site",
-      "name": "👖韩国",
-      "url": "https://jsnz.pages.dev/f/26511242.py",
-      "status": "requires_app",
-      "http_status": "",
-      "detail": "需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放"
-    },
-    {
-      "kind": "site",
-      "name": "👖聚合",
-      "url": "https://jsnz.pages.dev/f/4df9fb60.py",
-      "status": "requires_app",
-      "http_status": "",
-      "detail": "需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放"
-    },
-    {
-      "kind": "site",
-      "name": "👖影视",
-      "url": "https://jsnz.pages.dev/f/9e53615c.py",
-      "status": "requires_app",
-      "http_status": "",
-      "detail": "需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放"
-    },
-    {
-      "kind": "site",
-      "name": "👖采集",
-      "url": "https://jsnz.pages.dev/f/72b7239d.py",
-      "status": "requires_app",
-      "http_status": "",
-      "detail": "需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放"
-    },
-    {
-      "kind": "site",
-      "name": "👖短剧",
-      "url": "https://jsnz.pages.dev/f/29b94aff.py",
-      "status": "requires_app",
-      "http_status": "",
-      "detail": "需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放"
-    },
-    {
-      "kind": "site",
-      "name": "👖音乐",
-      "url": "https://jsnz.pages.dev/f/eded33cf.py",
-      "status": "requires_app",
-      "http_status": "",
-      "detail": "需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放"
-    },
-    {
-      "kind": "site",
-      "name": "👖动漫",
-      "url": "https://jsnz.pages.dev/f/7e20bdb7.py",
-      "status": "requires_app",
-      "http_status": "",
-      "detail": "需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放"
-    },
-    {
-      "kind": "site",
-      "name": "👖奈飞",
-      "url": "https://api.wsyzy.net/api.php/provide/vod",
-      "status": "unverified",
-      "http_status": "",
-      "detail": "需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放"
-    },
-    {
-      "kind": "site",
-      "name": "👖网盘",
-      "url": "https://jsnz.pages.dev/f/261c1664.py",
-      "status": "requires_app",
-      "http_status": "",
-      "detail": "需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放"
-    },
-    {
-      "kind": "site",
-      "name": "👖4k",
-      "url": "https://jsnz.pages.dev/f/af676592.py",
-      "status": "requires_app",
-      "http_status": "",
-      "detail": "需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放"
-    },
-    {
-      "kind": "site",
-      "name": "👖APP",
-      "url": "https://jsnz.pages.dev/f/04b5c0b4.js",
-      "status": "requires_app",
-      "http_status": "",
-      "detail": "需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放"
-    },
-    {
-      "kind": "site",
-      "name": "👖PY",
-      "url": "https://jsnz.pages.dev/f/e1aeef83.py",
-      "status": "requires_app",
-      "http_status": "",
-      "detail": "需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放"
-    },
-    {
-      "kind": "site",
-      "name": "👖JS",
-      "url": "https://jsnz.pages.dev/f/f7b46c7f.js",
-      "status": "requires_app",
-      "http_status": "",
-      "detail": "需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放"
-    },
-    {
-      "kind": "site",
-      "name": "👖PHP",
-      "url": "http://jiduo.3116598.xyz/PHP/pkty.php",
-      "status": "unverified",
-      "http_status": "",
-      "detail": "需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放"
-    },
-    {
-      "kind": "site",
-      "name": "👖Emby",
-      "url": "https://jsnz.pages.dev/f/696546f2.js",
-      "status": "requires_app",
-      "http_status": "",
-      "detail": "需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放"
-    },
-    {
-      "kind": "site",
-      "name": "👖API",
-      "url": "https://jsnz.pages.dev/f/cf616b2f.py",
-      "status": "requires_app",
-      "http_status": "",
-      "detail": "需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放"
-    },
-    {
-      "kind": "site",
-      "name": "👖少儿",
-      "url": "https://jsnz.pages.dev/f/6b9e7fca.js",
-      "status": "requires_app",
-      "http_status": "",
-      "detail": "需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放"
-    },
-    {
-      "kind": "site",
-      "name": "👖听书",
-      "url": "https://jsnz.pages.dev/f/d44dd2cf.py",
-      "status": "requires_app",
-      "http_status": "",
-      "detail": "需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放"
-    },
-    {
-      "kind": "site",
-      "name": "👖广播",
-      "url": "https://jsnz.pages.dev/f/cec31b11.py",
-      "status": "requires_app",
-      "http_status": "",
-      "detail": "需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放"
-    },
-    {
-      "kind": "site",
-      "name": "👖有声",
-      "url": "https://jsnz.pages.dev/f/e126d1e4.py",
-      "status": "requires_app",
-      "http_status": "",
-      "detail": "需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放"
-    },
-    {
-      "kind": "site",
-      "name": "👖戏曲",
-      "url": "https://iduo.us.ci/gt/leevi0709/one/main/js/drpy2.min.js",
-      "status": "requires_app",
-      "http_status": "",
-      "detail": "需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放"
-    },
-    {
-      "kind": "site",
-      "name": "📌测试",
-      "url": "https://jsnz.pages.dev/f/e7124867.py",
-      "status": "requires_app",
-      "http_status": "",
-      "detail": "需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放"
-    },
-    {
-      "kind": "live",
-      "name": "👖裤佬IPTV直播",
-      "url": "https://iptv.445569.xyz/live.m3u",
-      "status": "unverified",
-      "http_status": "",
-      "detail": "播放能力需由 check_health.py 或影视 App 实测"
-    },
-    {
-      "kind": "live",
-      "name": "👖裤佬体育直播[主]",
-      "url": "https://jsnzkpg.de5.net/all.m3u",
-      "status": "unverified",
-      "http_status": "",
-      "detail": "播放能力需由 check_health.py 或影视 App 实测"
-    },
-    {
-      "kind": "live",
-      "name": "👖裤佬体育直播[备]",
-      "url": "https://stymei.pages.dev/live.m3u",
-      "status": "unverified",
-      "http_status": "",
-      "detail": "播放能力需由 check_health.py 或影视 App 实测"
-    },
-    {
-      "kind": "live",
-      "name": "👖裤佬抖音直播",
-      "url": "https://douyin.445569.xyz/live.m3u",
-      "status": "unverified",
-      "http_status": "",
-      "detail": "播放能力需由 check_health.py 或影视 App 实测"
-    },
-    {
-      "kind": "live",
-      "name": "👖裤佬快手直播",
-      "url": "https://kuaishou.445569.xyz/list.m3u",
-      "status": "unverified",
-      "http_status": "",
-      "detail": "播放能力需由 check_health.py 或影视 App 实测"
-    },
-    {
-      "kind": "live",
-      "name": "👖裤佬虎牙直播",
-      "url": "https://huya.445569.xyz/live.m3u",
-      "status": "unverified",
-      "http_status": "",
-      "detail": "播放能力需由 check_health.py 或影视 App 实测"
-    },
-    {
-      "kind": "live",
-      "name": "👖裤佬斗鱼直播",
-      "url": "https://douyu.445569.xyz/live.m3u",
-      "status": "unverified",
-      "http_status": "",
-      "detail": "播放能力需由 check_health.py 或影视 App 实测"
-    },
-    {
-      "kind": "live",
-      "name": "👖裤佬酷狗直播",
-      "url": "https://kugou.445569.xyz/live.m3u",
-      "status": "unverified",
-      "http_status": "",
-      "detail": "播放能力需由 check_health.py 或影视 App 实测"
-    },
-    {
-      "kind": "live",
-      "name": "👖裤佬来疯直播",
-      "url": "https://laifeng.445569.xyz/live.m3u",
-      "status": "unverified",
-      "http_status": "",
-      "detail": "播放能力需由 check_health.py 或影视 App 实测"
-    },
-    {
-      "kind": "live",
-      "name": "👖裤佬百战直播",
-      "url": "https://baizhan.445569.xyz/live.m3u",
-      "status": "unverified",
-      "http_status": "",
-      "detail": "播放能力需由 check_health.py 或影视 App 实测"
-    },
-    {
-      "kind": "live",
-      "name": "👖裤佬YY直播",
-      "url": "https://yy.445569.xyz/live.m3u",
-      "status": "unverified",
-      "http_status": "",
-      "detail": "播放能力需由 check_health.py 或影视 App 实测"
-    },
-    {
-      "kind": "live",
-      "name": "👖裤佬Twitch直播",
-      "url": "https://twitch.445569.xyz/live.m3u",
-      "status": "unverified",
-      "http_status": "",
-      "detail": "播放能力需由 check_health.py 或影视 App 实测"
-    },
-    {
-      "kind": "live",
-      "name": "👖裤佬TikTok直播",
-      "url": "https://tiktok.445569.xyz/live.m3u",
-      "status": "unverified",
-      "http_status": "",
-      "detail": "播放能力需由 check_health.py 或影视 App 实测"
-    },
-    {
-      "kind": "live",
-      "name": "🏆PPV体育赛事直播",
-      "url": "https://www.korice.eu.org/ppv_m3u.php",
-      "status": "unverified",
-      "http_status": "",
-      "detail": "播放能力需由 check_health.py 或影视 App 实测"
-    },
-    {
-      "kind": "live",
-      "name": "🍿华视TV直播",
-      "url": "https://445569.pages.dev/https://raw.githubusercontent.com/swhtv/111/refs/heads/main/%E5%8D%8E%E8%A7%86box%E5%8D%8E%E8%A7%86%E5%A4%A7%E5%85%A8swtv",
-      "status": "unverified",
-      "http_status": "",
-      "detail": "播放能力需由 check_health.py 或影视 App 实测"
-    },
-    {
-      "kind": "live",
-      "name": "🍿易发TV直播",
-      "url": "https://445569.pages.dev/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-      "status": "unverified",
-      "http_status": "",
-      "detail": "播放能力需由 check_health.py 或影视 App 实测"
-    },
-    {
-      "kind": "live",
-      "name": "🍿乌拉TV直播",
-      "url": "https://ilook.epg.one/5CM5SY98BF24PL/2",
-      "status": "unverified",
-      "http_status": "",
-      "detail": "播放能力需由 check_health.py 或影视 App 实测"
-    },
-    {
-      "kind": "live",
-      "name": "🍿全球TV直播",
-      "url": "https://seep.eu.org/iptv-org.github.io/iptv/index.m3u",
-      "status": "unverified",
-      "http_status": "",
-      "detail": "播放能力需由 check_health.py 或影视 App 实测"
+      "detail": "HTTP 可访问",
+      "checked_at": "2026-10-21T18:22:58Z"
     }
   ]
 }

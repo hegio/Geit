@@ -1,47 +1,547 @@
-﻿kind,name,url,status,http_status,detail
-source,https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt,https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt,reachable,200,
-source,https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg,https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg,reachable,200,存在含真实凭据的站点，已跳过
-source,https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt,https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt,reachable,200,
-site,✈️TG频道@stymei,csp_Douban,requires_app,,需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放
-site,👖IPTV,https://jsnz.pages.dev/f/f05e3b39.js,requires_app,,需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放
-site,👖体育,https://jsnzkpg.de5.net/t4.json,unverified,,需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放
-site,👖韩国,https://jsnz.pages.dev/f/26511242.py,requires_app,,需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放
-site,👖聚合,https://jsnz.pages.dev/f/4df9fb60.py,requires_app,,需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放
-site,👖影视,https://jsnz.pages.dev/f/9e53615c.py,requires_app,,需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放
-site,👖采集,https://jsnz.pages.dev/f/72b7239d.py,requires_app,,需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放
-site,👖短剧,https://jsnz.pages.dev/f/29b94aff.py,requires_app,,需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放
-site,👖音乐,https://jsnz.pages.dev/f/eded33cf.py,requires_app,,需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放
-site,👖动漫,https://jsnz.pages.dev/f/7e20bdb7.py,requires_app,,需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放
-site,👖奈飞,https://api.wsyzy.net/api.php/provide/vod,unverified,,需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放
-site,👖网盘,https://jsnz.pages.dev/f/261c1664.py,requires_app,,需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放
-site,👖4k,https://jsnz.pages.dev/f/af676592.py,requires_app,,需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放
-site,👖APP,https://jsnz.pages.dev/f/04b5c0b4.js,requires_app,,需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放
-site,👖PY,https://jsnz.pages.dev/f/e1aeef83.py,requires_app,,需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放
-site,👖JS,https://jsnz.pages.dev/f/f7b46c7f.js,requires_app,,需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放
-site,👖PHP,http://jiduo.3116598.xyz/PHP/pkty.php,unverified,,需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放
-site,👖Emby,https://jsnz.pages.dev/f/696546f2.js,requires_app,,需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放
-site,👖API,https://jsnz.pages.dev/f/cf616b2f.py,requires_app,,需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放
-site,👖少儿,https://jsnz.pages.dev/f/6b9e7fca.js,requires_app,,需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放
-site,👖听书,https://jsnz.pages.dev/f/d44dd2cf.py,requires_app,,需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放
-site,👖广播,https://jsnz.pages.dev/f/cec31b11.py,requires_app,,需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放
-site,👖有声,https://jsnz.pages.dev/f/e126d1e4.py,requires_app,,需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放
-site,👖戏曲,https://iduo.us.ci/gt/leevi0709/one/main/js/drpy2.min.js,requires_app,,需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放
-site,📌测试,https://jsnz.pages.dev/f/e7124867.py,requires_app,,需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放
-live,👖裤佬IPTV直播,https://iptv.445569.xyz/live.m3u,unverified,,播放能力需由 check_health.py 或影视 App 实测
-live,👖裤佬体育直播[主],https://jsnzkpg.de5.net/all.m3u,unverified,,播放能力需由 check_health.py 或影视 App 实测
-live,👖裤佬体育直播[备],https://stymei.pages.dev/live.m3u,unverified,,播放能力需由 check_health.py 或影视 App 实测
-live,👖裤佬抖音直播,https://douyin.445569.xyz/live.m3u,unverified,,播放能力需由 check_health.py 或影视 App 实测
-live,👖裤佬快手直播,https://kuaishou.445569.xyz/list.m3u,unverified,,播放能力需由 check_health.py 或影视 App 实测
-live,👖裤佬虎牙直播,https://huya.445569.xyz/live.m3u,unverified,,播放能力需由 check_health.py 或影视 App 实测
-live,👖裤佬斗鱼直播,https://douyu.445569.xyz/live.m3u,unverified,,播放能力需由 check_health.py 或影视 App 实测
-live,👖裤佬酷狗直播,https://kugou.445569.xyz/live.m3u,unverified,,播放能力需由 check_health.py 或影视 App 实测
-live,👖裤佬来疯直播,https://laifeng.445569.xyz/live.m3u,unverified,,播放能力需由 check_health.py 或影视 App 实测
-live,👖裤佬百战直播,https://baizhan.445569.xyz/live.m3u,unverified,,播放能力需由 check_health.py 或影视 App 实测
-live,👖裤佬YY直播,https://yy.445569.xyz/live.m3u,unverified,,播放能力需由 check_health.py 或影视 App 实测
-live,👖裤佬Twitch直播,https://twitch.445569.xyz/live.m3u,unverified,,播放能力需由 check_health.py 或影视 App 实测
-live,👖裤佬TikTok直播,https://tiktok.445569.xyz/live.m3u,unverified,,播放能力需由 check_health.py 或影视 App 实测
-live,🏆PPV体育赛事直播,https://www.korice.eu.org/ppv_m3u.php,unverified,,播放能力需由 check_health.py 或影视 App 实测
-live,🍿华视TV直播,https://445569.pages.dev/https://raw.githubusercontent.com/swhtv/111/refs/heads/main/%E5%8D%8E%E8%A7%86box%E5%8D%8E%E8%A7%86%E5%A4%A7%E5%85%A8swtv,unverified,,播放能力需由 check_health.py 或影视 App 实测
-live,🍿易发TV直播,https://445569.pages.dev/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt,unverified,,播放能力需由 check_health.py 或影视 App 实测
-live,🍿乌拉TV直播,https://ilook.epg.one/5CM5SY98BF24PL/2,unverified,,播放能力需由 check_health.py 或影视 App 实测
-live,🍿全球TV直播,https://seep.eu.org/iptv-org.github.io/iptv/index.m3u,unverified,,播放能力需由 check_health.py 或影视 App 实测
+﻿kind,name,url,status,http_status,detail,checked_at
+channel,-汕尾生活,https://iswtv.swrtv.com/live/whshpd.m3u8,http_error,404,HTTP 404,2026-10-21T18:23:43Z
+channel,-汕尾综合,https://iswtv.swrtv.com/live/xwzhpd.m3u8,probe_ok,200,"ffprobe 检测到媒体流: video,audio,,video,audio",2026-10-21T18:23:41Z
+channel,14,https://stream.ads.ottera.tv/playlist.m3u8?network_id=14,http_error,400,HTTP 400,2026-10-21T18:23:02Z
+channel,ANTV,http://antvlive.ab5c6921.cdnviet.com/antv/chunklist.m3u8,probe_ok,200,"ffprobe 检测到媒体流: data,video,audio,,data,video,audio",2026-10-21T18:23:08Z
+channel,Arirang,http://amdlive-ch01.ctnd.com.edgesuite.net/arirang_1ch/smil:arirang_1ch.smil/chunklist.m3u8,probe_ok,200,"ffprobe 检测到媒体流: data,video,audio,,data,video,audio,,data,video,audio,,data,video,audio,,data,video,audio,data,video,audio,data,video,audio,data,video,audio",2026-10-21T18:23:04Z
+channel,Arirang,http://amdlive.ctnd.com.edgesuite.net/arirang_1ch/smil:arirang_1ch/master.m3u8,probe_ok,200,"ffprobe 检测到媒体流: data,video,audio,,data,video,audio,,data,video,audio,,data,video,audio,,data,video,audio,data,video,audio,data,video,audio,data,video,audio",2026-10-21T18:23:06Z
+channel,Arirang,https://amdlive-ch01-ctnd-com.akamaized.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8,probe_ok,200,"ffprobe 检测到媒体流: data,video,audio,,data,video,audio,,data,video,audio,,data,video,audio,,data,video,audio,data,video,audio,data,video,audio,data,video,audio",2026-10-21T18:23:07Z
+channel,Arirang Radio,http://amdlive-ch03.ctnd.com.edgesuite.net/arirang_3ch/smil:arirang_3ch.smil/playlist.m3u8,probe_ok,200,"ffprobe 检测到媒体流: data,video,audio,,data,video,audio,,data,video,audio,,data,video,audio,,data,video,audio,data,video,audio,data,video,audio,data,video,audio",2026-10-21T18:23:09Z
+channel,BBS佛教广播,http://bbstv.clouducs.com:1935/bbstv-live/livestream/chunklist_w1403706733.m3u8,probe_ok,200,"ffprobe 检测到媒体流: data,video,audio,,data,video,audio",2026-10-21T18:23:06Z
+channel,BTN,http://btn.nowcdn.co.kr/btn/btnlive01/playlist.m3u8,probe_ok,200,"ffprobe 检测到媒体流: data,video,audio,,data,video,audio",2026-10-21T18:23:11Z
+channel,CCTV1,http://111.29.9.33:6610/000000001000/1000000001000021973/index.m3u8?channel-id=bestzb&Contentid=1000000001000021973&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:10Z
+channel,CCTV10,http://111.29.9.33:6610/000000001000/1000000001000023734/index.m3u8?channel-id=bestzb&Contentid=1000000001000023734&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:13Z
+channel,CCTV10科教,"http://120.87.19.109:80/PLTV/88888973/224/3221225744/10000100000000060000000000334567_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:29:43Z
+channel,CCTV10科教高清,"http://120.87.19.109:80/PLTV/88888973/224/3221225745/10000100000000060000000000334569_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:30:14Z
+channel,CCTV11,http://111.29.9.33:6610/000000001000/1000000002000019789/index.m3u8?channel-id=bestzb&Contentid=1000000002000019789&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:13Z
+channel,CCTV11戏曲,"http://120.87.19.109:80/PLTV/88888973/224/3221225746/10000100000000060000000000334570_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:29:43Z
+channel,CCTV11戏曲高清,"http://120.87.19.109:80/PLTV/88888973/224/3221226644/10000100000000060000000002070289_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:30:14Z
+channel,CCTV12,http://111.29.9.33:6610/000000001000/1000000001000001640/index.m3u8?channel-id=bestzb&Contentid=1000000001000001640&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:16Z
+channel,CCTV12社会与法,"http://120.87.19.109:80/PLTV/88888973/224/3221225748/10000100000000060000000000334583_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:29:43Z
+channel,CCTV12社会与法高清,"http://120.87.19.109:80/PLTV/88888973/224/3221225742/10000100000000060000000000334548_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:30:15Z
+channel,CCTV13,http://111.29.9.33:6610/000000001000/1000000002000021303/index.m3u8?channel-id=bestzb&Contentid=1000000002000021303&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:18Z
+channel,CCTV13新闻,"http://120.87.19.109:80/PLTV/88888973/224/3221225751/10000100000000060000000000334589_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:29:43Z
+channel,CCTV13新闻高清,"http://120.87.19.109:80/PLTV/88888973/224/3221226669/10000100000000060000000002070290_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:30:16Z
+channel,CCTV14,http://111.29.9.33:6610/000000001000/1000000001000008170/index.m3u8?channel-id=bestzb&Contentid=1000000001000008170&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:22Z
+channel,CCTV14少儿,"http://120.87.19.109:80/PLTV/88888973/224/3221225753/10000100000000060000000000334592_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:29:44Z
+channel,CCTV14少儿高清,"http://120.87.19.109:80/PLTV/88888973/224/3221225740/10000100000000060000000000334546_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:30:16Z
+channel,CCTV15,http://111.29.9.33:6610/000000001000/1000000002000008163/index.m3u8?channel-id=bestzb&Contentid=1000000002000008163&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:22Z
+channel,CCTV15音乐,"http://120.87.19.109:80/PLTV/88888973/224/3221225756/10000100000000060000000000334620_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:29:44Z
+channel,CCTV15音乐高清,"http://120.87.19.109:80/PLTV/88888973/224/3221226647/10000100000000060000000002070293_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:30:16Z
+channel,CCTV16奥林匹克高清,"http://120.87.19.109:80/PLTV/88888973/224/3221226645/10000100000000060000000001772867_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:30:19Z
+channel,CCTV17,http://111.29.9.33:6610/000000001000/1000000005000056836/index.m3u8?channel-id=bestzb&Contentid=1000000005000056836&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:40Z
+channel,CCTV17农业农村,"http://120.87.19.109:80/PLTV/88888973/224/3221226566/10000100000000060000000001504118_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:29:45Z
+channel,CCTV17农业农村,"http://120.87.19.109:80/PLTV/88888973/224/3221226661/10000100000000060000000002070294_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:29:46Z
+channel,CCTV1综合,"http://120.87.19.109:80/PLTV/88888973/224/3221225737/10000100000000060000000000334541_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:29:15Z
+channel,CCTV1综合高清,"http://120.87.19.109:80/PLTV/88888973/224/3221225768/10000100000000060000000000337107_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:29:49Z
+channel,CCTV2,http://111.29.9.33:6610/000000001000/1000000001000012442/index.m3u8?channel-id=bestzb&Contentid=1000000001000012442&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:10Z
+channel,CCTV2财经,"http://120.87.19.109:80/PLTV/88888973/224/3221225738/10000100000000060000000000334543_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:29:15Z
+channel,CCTV2财经高清,"http://120.87.19.109:80/PLTV/88888973/224/3221225767/10000100000000060000000000337109_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:29:51Z
+channel,CCTV3,http://111.29.9.33:6610/000000001000/1000000001000011218/index.m3u8?channel-id=bestzb&Contentid=1000000001000011218&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:10Z
+channel,CCTV3综艺,"http://120.87.19.109:80/PLTV/88888973/224/3221225814/10000100000000060000000000388928_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:29:18Z
+channel,CCTV3综艺高清,"http://120.87.19.109:80/PLTV/88888973/224/3221226350/10000100000000060000000001464865_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:29:55Z
+channel,CCTV4,http://111.29.9.33:6610/000000001000/1000000002000031664/index.m3u8?channel-id=bestzb&Contentid=1000000002000031664&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:10Z
+channel,CCTV4,http://cfss.cc/cdn/dy/CCTV4...flv,probe_failed,200,http://cfss.cc/cdn/dy/CCTV4...flv: Invalid data found when processing input,2026-10-21T18:23:22Z
+channel,CCTV4K超高清,"http://120.87.19.109:80/PLTV/88888973/224/3221226217/10000100000000060000000001339123_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:30:21Z
+channel,CCTV4中文国际,"http://120.87.19.109:80/PLTV/88888973/224/3221225739/10000100000000060000000000334545_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:29:20Z
+channel,CCTV4中文国际高清,"http://120.87.19.109:80/PLTV/88888973/224/3221226356/10000100000000060000000001481216_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:29:55Z
+channel,CCTV5,http://111.29.9.33:6610/000000001000/1000000001000004794/index.m3u8?channel-id=bestzb&Contentid=1000000001000004794&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:10Z
+channel,CCTV5+,http://111.29.9.33:6610/000000001000/1000000001000020505/index.m3u8?channel-id=bestzb&Contentid=1000000001000020505&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:10Z
+channel,CCTV5+体育赛事高清,"http://120.87.19.109:80/PLTV/88888973/224/3221225705/10000100000000060000000000334542_0.smil/01.m3u8?fmt=ts2hls,744,01.m3u8&accountinfo=<redacted>&GuardEncType=8601",http_error,,<urlopen error timed out>,2026-10-21T18:30:13Z
+channel,CCTV5体育,"http://120.87.19.109:80/PLTV/88888973/224/3221225815/10000100000000060000000000389197_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:29:25Z
+channel,CCTV5体育高清,"http://120.87.19.109:80/PLTV/88888973/224/3221226352/10000100000000060000000001464824_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:30:13Z
+channel,CCTV6,http://111.29.9.33:6610/000000001000/1000000001000016466/index.m3u8?channel-id=bestzb&Contentid=1000000001000016466&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:10Z
+channel,CCTV6电影,"http://120.87.19.109:80/PLTV/88888973/224/3221225816/10000100000000060000000000389199_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:29:25Z
+channel,CCTV6电影高清,"http://120.87.19.109:80/PLTV/88888973/224/3221226351/10000100000000060000000001464856_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:30:13Z
+channel,CCTV7,http://111.29.9.33:6610/000000001000/1000000001000017218/index.m3u8?channel-id=bestzb&Contentid=1000000001000017218&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:11Z
+channel,CCTV7国防军事,"http://120.87.19.109:80/PLTV/88888973/224/3221225741/10000100000000060000000000334547_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:29:43Z
+channel,CCTV7国防军事高清,"http://120.87.19.109:80/PLTV/88888973/224/3221225749/10000100000000060000000000334584_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:30:13Z
+channel,CCTV8,http://111.29.9.33:6610/000000001000/1000000001000003736/index.m3u8?channel-id=bestzb&Contentid=1000000001000003736&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:12Z
+channel,CCTV8电视剧,"http://120.87.19.109:80/PLTV/88888973/224/3221225817/10000100000000060000000000389200_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:29:43Z
+channel,CCTV8电视剧高清,"http://120.87.19.109:80/PLTV/88888973/224/3221226349/10000100000000060000000001464866_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:30:13Z
+channel,CCTV9,http://111.29.9.33:6610/000000001000/1000000001000014583/index.m3u8?channel-id=bestzb&Contentid=1000000001000014583&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:13Z
+channel,CCTV9纪录,"http://120.87.19.109:80/PLTV/88888973/224/3221225743/10000100000000060000000000334557_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:29:43Z
+channel,CCTV9纪录高清,"http://120.87.19.109:80/PLTV/88888973/224/3221225747/10000100000000060000000000334581_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:30:13Z
+channel,CCTV远方的家,http://cfss.cc/cdn/dy/44931143492.flv,probe_failed,200,http://cfss.cc/cdn/dy/44931143492.flv: Invalid data found when processing input,2026-10-21T18:23:23Z
+channel,CGTN,"http://120.87.19.109:80/PLTV/88888973/224/3221225718/10000100000000060000000000334622_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:29:46Z
+channel,CJB,http://1.222.207.80:1935/live/cjbtv/chunklist_w1357270949.m3u8,probe_ok,200,"ffprobe 检测到媒体流: data,video,audio,,data,video,audio",2026-10-21T18:23:05Z
+channel,CPBC,http://onair1.cpbc.co.kr:1935/tv/smil:live.smil/playlist.m3u8,probe_ok,200,"ffprobe 检测到媒体流: data,video,audio,,data,video,audio,,data,video,audio,data,video,audio",2026-10-21T18:23:12Z
+channel,DV现场,http://cfss.cc/cdn/dy/gdtvdvxc.flv,probe_failed,200,http://cfss.cc/cdn/dy/gdtvdvxc.flv: Invalid data found when processing input,2026-10-21T18:23:24Z
+channel,EBS-KIDS,http://ebsonairios.ebs.co.kr/ebsutablet500k/_definst_/tablet500k/playlist.m3u8,probe_ok,200,"ffprobe 检测到媒体流: data,video,audio,,data,video,audio",2026-10-21T18:23:13Z
+channel,EBS少儿,http://ebsonairios.ebs.co.kr/ebsutablet500k/_definst_/tablet500k/chunklist_w1965791004.m3u8,probe_ok,200,"ffprobe 检测到媒体流: data,video,audio,,data,video,audio",2026-10-21T18:23:02Z
+channel,HBTV,http://hoabinhtvlive.746b3ddb.cdnviet.com/hoabinhtv/chunklist.m3u8,http_error,502,HTTP 502,2026-10-21T18:23:07Z
+channel,KCTV,http://119.77.96.184:1935/chn05/chn05/chunklist.m3u,manifest_ok,200,文本列表可下载；不是可直接探测的单条 HLS 播放列表,2026-10-21T18:23:04Z
+channel,KCTV,http://119.77.96.184:1935/chn05/chn05/chunklist.m3u8,probe_ok,200,"ffprobe 检测到媒体流: data,video,audio,,data,video,audio",2026-10-21T18:23:05Z
+channel,Lumina,https://cdn.ttvb.eu.org/douyin/86292842871,http_error,,<urlopen error [Errno -2] Name or service not known>,2026-10-21T18:23:20Z
+channel,MBN,http://mytv.dothome.co.kr/ch/catv/54.php,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:23:14Z
+channel,NewKID2,https://stream.ads.ottera.tv/playlist.m3u8?network_id=878,probe_ok,200,"ffprobe 检测到媒体流: video,audio,,video,audio,,video,audio,,video,audio,video,audio,video,audio",2026-10-21T18:23:15Z
+channel,NewKID4,https://stream.ads.ottera.tv/playlist.m3u8?network_id=872,probe_ok,200,"ffprobe 检测到媒体流: video,audio,,video,audio,,video,audio,,video,audio,video,audio,video,audio",2026-10-21T18:23:16Z
+channel,NewKID4,https://stream.ads.ottera.tv/playlist.m3u8?network_id=888,probe_ok,200,"ffprobe 检测到媒体流: video,audio,,video,audio,,video,audio,,video,audio,video,audio,video,audio",2026-10-21T18:23:15Z
+channel,RNA,http://5ddfc48289114.streamlock.net/CHsoom/LIVE/playist.m3u8,probe_ok,200,"ffprobe 检测到媒体流: data,video,audio,,data,video,audio",2026-10-21T18:23:17Z
+channel,TV1,https://stream.ads.ottera.tv/playlist.m3u8?network_id=743,probe_ok,200,"ffprobe 检测到媒体流: video,audio,,video,audio,,video,audio,,video,audio,video,audio,video,audio",2026-10-21T18:23:00Z
+channel,TV3,https://stream.ads.ottera.tv/playlist.m3u8?network_id=630,probe_ok,200,"ffprobe 检测到媒体流: video,audio,,video,audio,,video,audio,,video,audio,video,audio,video,audio",2026-10-21T18:23:00Z
+channel,TV4,https://stream.ads.ottera.tv/playlist.m3u8?network_id=644,probe_failed,200,ffprobe 未检测到媒体流,2026-10-21T18:23:01Z
+channel,The,https://cdn.ttvb.eu.org/douyin/91425370684,http_error,,<urlopen error [Errno -2] Name or service not known>,2026-10-21T18:23:20Z
+channel,东南卫视,http://111.29.9.33:6610/000000001000/1000000002000009263/index.m3u8?channel-id=bestzb&Contentid=1000000002000009263&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:14Z
+channel,东方卫视,http://111.29.9.33:6610/000000001000/1000000001000005866/index.m3u8?channel-id=bestzb&Contentid=1000000001000005866&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:41Z
+channel,东方卫视,"http://120.87.19.109:80/PLTV/88888973/224/3221225686/10000100000000060000000000333818_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:30:44Z
+channel,东莞新闻综合,http://stream.sun0769.com/dgrtv1/mp4tv1_1500/index.m3u8,probe_ok,200,"ffprobe 检测到媒体流: video,audio,,video,audio",2026-10-21T18:23:50Z
+channel,东莞新闻综合,https://stream.sun0769.com/dgrtv1/mp4tv1_1500/index.m3u8,probe_ok,200,"ffprobe 检测到媒体流: video,audio,,video,audio",2026-10-21T18:23:33Z
+channel,东莞生活资讯,http://stream.sun0769.com/dgrtv1/mp4tv2_1500/index.m3u8,http_error,404,HTTP 404,2026-10-21T18:23:51Z
+channel,东莞生活资讯,https://stream.sun0769.com/dgrtv1/mp4tv2_1500/index.m3u8,http_error,404,HTTP 404,2026-10-21T18:23:33Z
+channel,中国交通广播,http://cfss.cc/cdn/dy/CMG_ZGJTGB.flv,probe_failed,200,http://cfss.cc/cdn/dy/CMG_ZGJTGB.flv: Invalid data found when processing input,2026-10-21T18:23:26Z
+channel,中国教育1台,http://111.29.9.33:6610/000000001000/5000000002000002652/index.m3u8?channel-id=bestzb&Contentid=5000000002000002652&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:19Z
+channel,中国教育4台,http://111.29.9.33:6610/000000001000/5000000011000031126/index.m3u8?channel-id=bestzb&Contentid=5000000011000031126&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:24Z
+channel,中山综合,http://v.zsbtv.com.cn/lsdream/qTl38me/1000/live.m3u8,http_error,,<urlopen error timed out>,2026-10-21T18:23:33Z
+channel,丰顺综合,https://p2.vzan.com/701678271/024926084736123670/live.m3u8,http_error,404,HTTP 404,2026-10-21T18:23:38Z
+channel,乐游,http://111.29.9.33:6610/000000001000/5000000011000031112/index.m3u8?channel-id=bestzb&Contentid=5000000011000031112&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:29:15Z
+channel,云南卫视,http://111.29.9.33:6610/000000001000/1000000002000024694/index.m3u8?channel-id=bestzb&Contentid=1000000002000024694&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:11Z
+channel,云浮文旅,https://livestream.oeeee.com/slive/28284.m3u8,http_error,404,HTTP 404,2026-10-21T18:23:36Z
+channel,云浮综合,https://livestream.oeeee.com/slive/28283.m3u8,http_error,404,HTTP 404,2026-10-21T18:23:34Z
+channel,五华综合,http://p2hs.vzan.com/slowlive/621139761151691240/live.m3u8,http_error,404,HTTP 404,2026-10-21T18:23:51Z
+channel,动漫秀场,http://111.29.9.33:6610/000000001000/5000000011000031113/index.m3u8?channel-id=bestzb&Contentid=5000000011000031113&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:29:13Z
+channel,北京卫视,http://111.29.9.33:6610/000000001000/1000000001000017156/index.m3u8?channel-id=bestzb&Contentid=1000000001000017156&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:41Z
+channel,北京卫视,"http://120.87.19.109:80/PLTV/88888973/224/3221225688/10000100000000060000000000333853_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:30:44Z
+channel,北京纪实科教,http://111.29.9.33:6610/000000001000/1000000001000028380/index.m3u8?channel-id=bestzb&Contentid=1000000001000028380&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:42Z
+channel,十四小天使,https://cdn.ttvb.eu.org/douyin/50055338591,http_error,,<urlopen error [Errno -2] Name or service not known>,2026-10-21T18:23:19Z
+channel,吉林卫视,http://111.29.9.33:6610/000000001000/5000000011000031117/index.m3u8?channel-id=bestzb&Contentid=5000000011000031117&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:11Z
+channel,哈哈炫动,http://111.29.9.33:6610/000000001000/5000000011000031123/index.m3u8?channel-id=bestzb&Contentid=5000000011000031123&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:29:12Z
+channel,嘉佳卡通,http://111.29.9.33:6610/000000001000/1000000002000025964/index.m3u8?channel-id=bestzb&Contentid=1000000002000025964&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:29:12Z
+channel,四川卫视,http://111.29.9.33:6610/000000001000/1000000002000016825/index.m3u8?channel-id=bestzb&Contentid=1000000002000016825&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:11Z
+channel,声优广播,http://www.uniqueradio.jp/agplayerf/hls/Active.m3u8,http_error,503,HTTP 503,2026-10-21T18:23:05Z
+channel,大湾区卫视,http://8.138.7.223/tv/dwq.m3u8,probe_failed,200,http://8.138.7.223/tv/dwq.m3u8: Server returned 403 Forbidden (access denied),2026-10-21T18:23:40Z
+channel,大湾区卫视,http://k.061899.xyz/k.php?id=dwqws,http_error,,Remote end closed connection without response,2026-10-21T18:23:33Z
+channel,大湾区卫视高清,http://119.29.142.81:4022/udp/239.77.0.215:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:23:57Z
+channel,大湾区卫视高清,http://61.145.188.90:50055/udp/239.77.0.215:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:27:09Z
+channel,大湾区卫视高清,http://gdyd.7259.cc.cd:4014/udp/239.77.0.215:5146,http_error,,<urlopen error timed out>,2026-10-21T18:25:27Z
+channel,大湾区卫视高清,http://gdyd.7259.cc.cd:4111/udp/239.77.0.215:5146,http_error,,<urlopen error timed out>,2026-10-21T18:24:23Z
+channel,大湾区卫视高清,http://hongzhijiaoyu.net:8188/udp/239.77.0.215:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:24:08Z
+channel,大湾区卫视高清,http://ikuai.cyruslee.top:8888/udp/239.77.0.215:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:54Z
+channel,大湾区卫视高清,http://jellyfin.cyruslee.top:8888/udp/239.77.0.215:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:41Z
+channel,大湾区卫视高清,http://lbyjlt.vv5678.cn:8880/udp/239.77.0.215:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:29Z
+channel,大湾区卫视高清,http://lsa.familyds.com:8188/udp/239.77.0.215:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:24:14Z
+channel,大湾区卫视高清,http://plex.cyruslee.top:8888/udp/239.77.0.215:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:34Z
+channel,大湾区卫视高清,http://www.3344.uk:8888/udp/239.77.0.215:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:46Z
+channel,大湾区卫视高清,http://www.maomizi.cn:9527/udp/239.77.0.215:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:27:04Z
+channel,大湾区卫视高清,http://www.syy3.top:3861/udp/239.77.0.215:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:26:24Z
+channel,大湾区卫视高清,http://www.yahao.host:4022/udp/239.77.0.215:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:24:19Z
+channel,大湾区卫视高清,http://yanshifen.top:8889/udp/239.77.0.215:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:27:00Z
+channel,大燕儿,https://cdn.ttvb.eu.org/douyin/74005228754,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:23:22Z
+channel,天津卫视,http://111.29.9.33:6610/000000001000/1000000001000000831/index.m3u8?channel-id=bestzb&Contentid=1000000001000000831&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:41Z
+channel,天津卫视,"http://120.87.19.109:80/PLTV/88888973/224/3221225689/10000100000000060000000000333854_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:30:44Z
+channel,央视三农,http://cfss.cc/cdn/dy/letus17.flv,probe_failed,200,http://cfss.cc/cdn/dy/letus17.flv: Invalid data found when processing input,2026-10-21T18:23:24Z
+channel,央视网,http://cfss.cc/cdn/dy/cctv.com.flv,probe_failed,302,http://cfss.cc/cdn/dy/cctv.com.flv: Invalid data found when processing input,2026-10-21T18:23:22Z
+channel,央视网快看,http://cfss.cc/cdn/dy/kuaikancctv.flv,probe_ok,200,"ffprobe 检测到媒体流: audio,video",2026-10-21T18:23:23Z
+channel,央视网新闻,http://cfss.cc/cdn/dy/1606137427.flv,probe_failed,200,http://cfss.cc/cdn/dy/1606137427.flv: Invalid data found when processing input,2026-10-21T18:23:24Z
+channel,央视网财经,http://cfss.cc/cdn/dy/nuanxinnengl.flv,probe_failed,200,http://cfss.cc/cdn/dy/nuanxinnengl.flv: Invalid data found when processing input,2026-10-21T18:23:31Z
+channel,央视财经,http://cfss.cc/cdn/dy/yscjxmt.flv,probe_failed,200,http://cfss.cc/cdn/dy/yscjxmt.flv: Invalid data found when processing input,2026-10-21T18:23:31Z
+channel,宁夏卫视,http://111.29.9.33:6610/000000001000/1000000002000031451/index.m3u8?channel-id=bestzb&Contentid=1000000002000031451&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:14Z
+channel,安徽卫视,http://111.29.9.33:6610/000000001000/1000000001000020780/index.m3u8?channel-id=bestzb&Contentid=1000000001000020780&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:53Z
+channel,安徽卫视,"http://120.87.19.109:80/PLTV/88888973/224/3221225687/10000100000000060000000000333836_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:30:44Z
+channel,家庭剧场,http://111.29.9.33:6610/000000001000/1000000004000008284/index.m3u8?channel-id=bestzb&Contentid=1000000004000008284&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:45Z
+channel,小央视频,http://cfss.cc/cdn/dy/cctv_video.flv,probe_ok,200,"ffprobe 检测到媒体流: video,audio",2026-10-21T18:23:22Z
+channel,小强热线浙江教科,http://cfss.cc/cdn/dy/ZTV4.flv,probe_failed,200,http://cfss.cc/cdn/dy/ZTV4.flv: Invalid data found when processing input,2026-10-21T18:23:31Z
+channel,小糯米,https://cdn.ttvb.eu.org/douyin/84904405660,http_error,,<urlopen error [Errno -2] Name or service not known>,2026-10-21T18:23:19Z
+channel,山东卫视,http://111.29.9.33:6610/000000001000/1000000001000012807/index.m3u8?channel-id=bestzb&Contentid=1000000001000012807&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:47Z
+channel,山东卫视,"http://120.87.19.109:80/PLTV/88888973/224/3221225690/10000100000000060000000000333859_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:30:44Z
+channel,广东体育高清,http://119.29.142.81:4022/udp/239.77.0.112:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:23:57Z
+channel,广东体育高清,http://61.145.188.90:50055/udp/239.77.0.112:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:27:05Z
+channel,广东体育高清,http://gdyd.7259.cc.cd:4014/udp/239.77.0.112:5146,http_error,,<urlopen error timed out>,2026-10-21T18:25:24Z
+channel,广东体育高清,http://gdyd.7259.cc.cd:4111/udp/239.77.0.112:5146,http_error,,<urlopen error timed out>,2026-10-21T18:24:23Z
+channel,广东体育高清,http://hongzhijiaoyu.net:8188/udp/239.77.0.112:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:24:08Z
+channel,广东体育高清,http://ikuai.cyruslee.top:8888/udp/239.77.0.112:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:53Z
+channel,广东体育高清,http://jellyfin.cyruslee.top:8888/udp/239.77.0.112:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:40Z
+channel,广东体育高清,http://lbyjlt.vv5678.cn:8880/udp/239.77.0.112:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:27Z
+channel,广东体育高清,http://lsa.familyds.com:8188/udp/239.77.0.112:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:24:14Z
+channel,广东体育高清,http://plex.cyruslee.top:8888/udp/239.77.0.112:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:34Z
+channel,广东体育高清,http://www.3344.uk:8888/udp/239.77.0.112:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:46Z
+channel,广东体育高清,http://www.maomizi.cn:9527/udp/239.77.0.112:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:27:04Z
+channel,广东体育高清,http://www.syy3.top:3861/udp/239.77.0.112:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:26:24Z
+channel,广东体育高清,http://www.yahao.host:4022/udp/239.77.0.112:5146,http_error,503,HTTP 503,2026-10-21T18:24:19Z
+channel,广东体育高清,http://yanshifen.top:8889/udp/239.77.0.112:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:58Z
+channel,广东卫视,http://111.29.9.33:6610/000000001000/1000000001000014176/index.m3u8?channel-id=bestzb&Contentid=1000000001000014176&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:11Z
+channel,广东卫视高清,http://119.29.142.81:4022/udp/239.77.0.84:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:23:56Z
+channel,广东卫视高清,http://61.145.188.90:50055/udp/239.77.0.84:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:27:05Z
+channel,广东卫视高清,http://gdyd.7259.cc.cd:4014/udp/239.77.0.84:5146,http_error,,<urlopen error timed out>,2026-10-21T18:25:23Z
+channel,广东卫视高清,http://gdyd.7259.cc.cd:4111/udp/239.77.0.84:5146,http_error,,<urlopen error timed out>,2026-10-21T18:24:22Z
+channel,广东卫视高清,http://hongzhijiaoyu.net:8188/udp/239.77.0.84:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:24:05Z
+channel,广东卫视高清,http://ikuai.cyruslee.top:8888/udp/239.77.0.84:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:50Z
+channel,广东卫视高清,http://jellyfin.cyruslee.top:8888/udp/239.77.0.84:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:39Z
+channel,广东卫视高清,http://lbyjlt.vv5678.cn:8880/udp/239.77.0.84:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:25Z
+channel,广东卫视高清,http://lsa.familyds.com:8188/udp/239.77.0.84:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:24:12Z
+channel,广东卫视高清,http://plex.cyruslee.top:8888/udp/239.77.0.84:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:33Z
+channel,广东卫视高清,http://www.3344.uk:8888/udp/239.77.0.84:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:45Z
+channel,广东卫视高清,http://www.maomizi.cn:9527/udp/239.77.0.84:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:27:03Z
+channel,广东卫视高清,http://www.syy3.top:3861/udp/239.77.0.84:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:26:23Z
+channel,广东卫视高清,http://www.yahao.host:4022/udp/239.77.0.84:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:24:17Z
+channel,广东卫视高清,http://yanshifen.top:8889/udp/239.77.0.84:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:58Z
+channel,广东大湾区卫视,http://gx.484947.xyz/PLTV/77777777/224/3221225748/index.m3u8,http_error,403,HTTP 403,2026-10-21T18:23:40Z
+channel,广东好女人,https://cdn.ttvb.eu.org/douyin/69766729938,http_error,,<urlopen error [Errno -2] Name or service not known>,2026-10-21T18:23:20Z
+channel,广东少儿高清,http://119.29.142.81:4022/udp/239.77.0.250:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:23:58Z
+channel,广东少儿高清,http://61.145.188.90:50055/udp/239.77.0.250:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:27:10Z
+channel,广东少儿高清,http://gdyd.7259.cc.cd:4014/udp/239.77.0.250:5146,http_error,,<urlopen error timed out>,2026-10-21T18:26:22Z
+channel,广东少儿高清,http://gdyd.7259.cc.cd:4111/udp/239.77.0.250:5146,http_error,,<urlopen error timed out>,2026-10-21T18:25:21Z
+channel,广东少儿高清,http://hongzhijiaoyu.net:8188/udp/239.77.0.250:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:24:10Z
+channel,广东少儿高清,http://ikuai.cyruslee.top:8888/udp/239.77.0.250:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:54Z
+channel,广东少儿高清,http://jellyfin.cyruslee.top:8888/udp/239.77.0.250:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:42Z
+channel,广东少儿高清,http://lbyjlt.vv5678.cn:8880/udp/239.77.0.250:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:30Z
+channel,广东少儿高清,http://lsa.familyds.com:8188/udp/239.77.0.250:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:24:16Z
+channel,广东少儿高清,http://plex.cyruslee.top:8888/udp/239.77.0.250:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:36Z
+channel,广东少儿高清,http://www.3344.uk:8888/udp/239.77.0.250:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:47Z
+channel,广东少儿高清,http://www.maomizi.cn:9527/udp/239.77.0.250:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:27:04Z
+channel,广东少儿高清,http://www.syy3.top:3861/udp/239.77.0.250:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:26:25Z
+channel,广东少儿高清,http://www.yahao.host:4022/udp/239.77.0.250:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:24:19Z
+channel,广东少儿高清,http://yanshifen.top:8889/udp/239.77.0.250:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:27:00Z
+channel,广东影视,http://k.061899.xyz/k.php?id=gdys,http_error,,Remote end closed connection without response,2026-10-21T18:23:32Z
+channel,广东影视高清,http://119.29.142.81:4022/udp/239.77.0.217:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:23:58Z
+channel,广东影视高清,http://61.145.188.90:50055/udp/239.77.0.217:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:27:10Z
+channel,广东影视高清,http://gdyd.7259.cc.cd:4014/udp/239.77.0.217:5146,http_error,,<urlopen error timed out>,2026-10-21T18:26:22Z
+channel,广东影视高清,http://gdyd.7259.cc.cd:4111/udp/239.77.0.217:5146,http_error,,<urlopen error timed out>,2026-10-21T18:24:26Z
+channel,广东影视高清,http://hongzhijiaoyu.net:8188/udp/239.77.0.217:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:24:10Z
+channel,广东影视高清,http://ikuai.cyruslee.top:8888/udp/239.77.0.217:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:54Z
+channel,广东影视高清,http://jellyfin.cyruslee.top:8888/udp/239.77.0.217:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:42Z
+channel,广东影视高清,http://lbyjlt.vv5678.cn:8880/udp/239.77.0.217:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:30Z
+channel,广东影视高清,http://lsa.familyds.com:8188/udp/239.77.0.217:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:24:15Z
+channel,广东影视高清,http://plex.cyruslee.top:8888/udp/239.77.0.217:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:36Z
+channel,广东影视高清,http://www.3344.uk:8888/udp/239.77.0.217:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:47Z
+channel,广东影视高清,http://www.maomizi.cn:9527/udp/239.77.0.217:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:27:04Z
+channel,广东影视高清,http://www.syy3.top:3861/udp/239.77.0.217:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:26:25Z
+channel,广东影视高清,http://www.yahao.host:4022/udp/239.77.0.217:5146,http_error,503,HTTP 503,2026-10-21T18:24:19Z
+channel,广东影视高清,http://yanshifen.top:8889/udp/239.77.0.217:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:27:00Z
+channel,广东新闻,http://k.061899.xyz/k.php?id=gdxw,http_error,,Remote end closed connection without response,2026-10-21T18:23:32Z
+channel,广东新闻高清,http://119.29.142.81:4022/udp/239.77.0.173:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:23:56Z
+channel,广东新闻高清,http://61.145.188.90:50055/udp/239.77.0.173:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:27:05Z
+channel,广东新闻高清,http://gdyd.7259.cc.cd:4014/udp/239.77.0.173:5146,http_error,,<urlopen error timed out>,2026-10-21T18:25:23Z
+channel,广东新闻高清,http://gdyd.7259.cc.cd:4111/udp/239.77.0.173:5146,http_error,,<urlopen error timed out>,2026-10-21T18:24:22Z
+channel,广东新闻高清,http://hongzhijiaoyu.net:8188/udp/239.77.0.173:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:24:05Z
+channel,广东新闻高清,http://ikuai.cyruslee.top:8888/udp/239.77.0.173:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:52Z
+channel,广东新闻高清,http://jellyfin.cyruslee.top:8888/udp/239.77.0.173:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:40Z
+channel,广东新闻高清,http://lbyjlt.vv5678.cn:8880/udp/239.77.0.173:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:25Z
+channel,广东新闻高清,http://lsa.familyds.com:8188/udp/239.77.0.173:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:24:14Z
+channel,广东新闻高清,http://plex.cyruslee.top:8888/udp/239.77.0.173:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:33Z
+channel,广东新闻高清,http://www.3344.uk:8888/udp/239.77.0.173:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:46Z
+channel,广东新闻高清,http://www.maomizi.cn:9527/udp/239.77.0.173:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:27:03Z
+channel,广东新闻高清,http://www.syy3.top:3861/udp/239.77.0.173:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:26:24Z
+channel,广东新闻高清,http://www.yahao.host:4022/udp/239.77.0.173:5146,http_error,503,HTTP 503,2026-10-21T18:24:18Z
+channel,广东新闻高清,http://yanshifen.top:8889/udp/239.77.0.173:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:58Z
+channel,广东民生,http://k.061899.xyz/k.php?id=gdms,http_error,,Remote end closed connection without response,2026-10-21T18:23:32Z
+channel,广东民生(晚7点),http://tv1288.xyz/douyin.php?type=rid&rid=gdtvdvxc,http_error,400,HTTP 400,2026-10-21T18:23:41Z
+channel,广东民生高清,http://119.29.142.81:4022/udp/239.77.0.225:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:23:56Z
+channel,广东民生高清,http://61.145.188.90:50055/udp/239.77.0.225:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:27:05Z
+channel,广东民生高清,http://gdyd.7259.cc.cd:4014/udp/239.77.0.225:5146,http_error,,<urlopen error timed out>,2026-10-21T18:25:24Z
+channel,广东民生高清,http://gdyd.7259.cc.cd:4111/udp/239.77.0.225:5146,http_error,,<urlopen error timed out>,2026-10-21T18:24:22Z
+channel,广东民生高清,http://hongzhijiaoyu.net:8188/udp/239.77.0.225:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:24:06Z
+channel,广东民生高清,http://ikuai.cyruslee.top:8888/udp/239.77.0.225:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:52Z
+channel,广东民生高清,http://jellyfin.cyruslee.top:8888/udp/239.77.0.225:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:40Z
+channel,广东民生高清,http://lbyjlt.vv5678.cn:8880/udp/239.77.0.225:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:27Z
+channel,广东民生高清,http://lsa.familyds.com:8188/udp/239.77.0.225:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:24:14Z
+channel,广东民生高清,http://plex.cyruslee.top:8888/udp/239.77.0.225:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:33Z
+channel,广东民生高清,http://www.3344.uk:8888/udp/239.77.0.225:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:46Z
+channel,广东民生高清,http://www.maomizi.cn:9527/udp/239.77.0.225:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:27:03Z
+channel,广东民生高清,http://www.syy3.top:3861/udp/239.77.0.225:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:26:24Z
+channel,广东民生高清,http://www.yahao.host:4022/udp/239.77.0.225:5146,http_error,503,HTTP 503,2026-10-21T18:24:18Z
+channel,广东民生高清,http://yanshifen.top:8889/udp/239.77.0.225:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:58Z
+channel,广东珠江,http://8.138.7.223/tv/gdzj.m3u8,probe_failed,200,http://8.138.7.223/tv/gdzj.m3u8: Server returned 403 Forbidden (access denied),2026-10-21T18:23:39Z
+channel,广东珠江,http://k.061899.xyz/k.php?id=gdzj,http_error,,Remote end closed connection without response,2026-10-21T18:23:32Z
+channel,广东珠江(晚6点),http://tv1288.xyz/douyin.php?type=rid&rid=gdtvzjpd,http_error,400,HTTP 400,2026-10-21T18:23:41Z
+channel,广东珠江频道,https://gx.484947.xyz/PLTV/77777777/224/3221225717/index.m3u8,http_error,403,HTTP 403,2026-10-21T18:23:40Z
+channel,广东珠江高清,http://119.29.142.81:4022/udp/239.77.0.1:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:23:56Z
+channel,广东珠江高清,http://61.145.188.90:50055/udp/239.77.0.1:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:27:05Z
+channel,广东珠江高清,http://gdyd.7259.cc.cd:4014/udp/239.77.0.1:5146,http_error,,<urlopen error timed out>,2026-10-21T18:25:23Z
+channel,广东珠江高清,http://gdyd.7259.cc.cd:4111/udp/239.77.0.1:5146,http_error,,<urlopen error timed out>,2026-10-21T18:24:22Z
+channel,广东珠江高清,http://hongzhijiaoyu.net:8188/udp/239.77.0.1:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:24:05Z
+channel,广东珠江高清,http://ikuai.cyruslee.top:8888/udp/239.77.0.1:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:51Z
+channel,广东珠江高清,http://jellyfin.cyruslee.top:8888/udp/239.77.0.1:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:39Z
+channel,广东珠江高清,http://lbyjlt.vv5678.cn:8880/udp/239.77.0.1:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:25Z
+channel,广东珠江高清,http://lsa.familyds.com:8188/udp/239.77.0.1:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:24:13Z
+channel,广东珠江高清,http://plex.cyruslee.top:8888/udp/239.77.0.1:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:33Z
+channel,广东珠江高清,http://www.3344.uk:8888/udp/239.77.0.1:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:46Z
+channel,广东珠江高清,http://www.maomizi.cn:9527/udp/239.77.0.1:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:27:03Z
+channel,广东珠江高清,http://www.syy3.top:3861/udp/239.77.0.1:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:26:24Z
+channel,广东珠江高清,http://www.yahao.host:4022/udp/239.77.0.1:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:24:17Z
+channel,广东珠江高清,http://yanshifen.top:8889/udp/239.77.0.1:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:58Z
+channel,广东经济,https://jsv-live-play.sfccn.com/live/jsv_3920_fhd.m3u8,http_error,,The read operation timed out,2026-10-21T18:23:41Z
+channel,广州南国都市,https://tencentplay.gztv.com/live/nanguodushi.m3u8?txSecret=babbcbacdbcf13a3311a264e4dd66b8d&txTime=191b60b41a7,probe_ok,200,"ffprobe 检测到媒体流: video,audio,,video,audio",2026-10-21T18:23:46Z
+channel,广州新闻,https://tencentplay.gztv.com/live/xinwen.m3u8?txSecret=6f73647cae387d01a3c2132074132a83&txTime=18d00acf487,probe_ok,200,"ffprobe 检测到媒体流: video,audio,,video,audio",2026-10-21T18:23:43Z
+channel,广州法治,https://tencentplay.gztv.com/live/fazhi.m3u8?txSecret=4400d75d2114b2db07d86eda8f8218ee&txTime=191b60ce0f6,http_error,,The read operation timed out,2026-10-21T18:23:46Z
+channel,广州综合,https://tencentplay.gztv.com/live/zonghes.m3u8?txSecret=f0147ae6453a80f5989f382368b72aad&txTime=18d00acf487,probe_ok,200,"ffprobe 检测到媒体流: video,audio,,video,audio",2026-10-21T18:23:43Z
+channel,广西卫视,http://111.29.9.33:6610/000000001000/1000000002000019837/index.m3u8?channel-id=bestzb&Contentid=1000000002000019837&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:11Z
+channel,延边新闻,http://cfss.cc/cdn/dy/YBnews.flv,probe_failed,200,http://cfss.cc/cdn/dy/YBnews.flv: Invalid data found when processing input,2026-10-21T18:23:30Z
+channel,快乐垂钓,http://111.29.9.33:6610/000000001000/5000000011000031206/index.m3u8?channel-id=bestzb&Contentid=5000000011000031206&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:42Z
+channel,怀集综合,https://www.zqhjtv.com/hls/hjzhpd.m3u8,probe_failed,200,https://www.zqhjtv.com/hls/hjzhpd.m3u8: Connection timed out,2026-10-21T18:23:53Z
+channel,惊悚悬疑,http://111.29.9.33:6610/000000001000/1000000004000024282/index.m3u8?channel-id=bestzb&Contentid=1000000004000024282&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:45Z
+channel,揭阳生活,http://hls-jyrtv.jyrtv.tv/stjy2020/ggpd.m3u8,http_error,,<urlopen error [Errno -5] No address associated with hostname>,2026-10-21T18:23:37Z
+channel,揭阳生活高清,http://119.29.142.81:4022/udp/239.77.0.251:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:23:53Z
+channel,揭阳生活高清,http://61.145.188.90:50055/udp/239.77.0.251:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:27:04Z
+channel,揭阳生活高清,http://gdyd.7259.cc.cd:4014/udp/239.77.0.251:5146,http_error,,<urlopen error timed out>,2026-10-21T18:25:21Z
+channel,揭阳生活高清,http://gdyd.7259.cc.cd:4111/udp/239.77.0.251:5146,http_error,,<urlopen error timed out>,2026-10-21T18:24:20Z
+channel,揭阳生活高清,http://hongzhijiaoyu.net:8188/udp/239.77.0.251:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:23:58Z
+channel,揭阳生活高清,http://ikuai.cyruslee.top:8888/udp/239.77.0.251:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:49Z
+channel,揭阳生活高清,http://jellyfin.cyruslee.top:8888/udp/239.77.0.251:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:36Z
+channel,揭阳生活高清,http://lbyjlt.vv5678.cn:8880/udp/239.77.0.251:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:25Z
+channel,揭阳生活高清,http://lsa.familyds.com:8188/udp/239.77.0.251:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:24:10Z
+channel,揭阳生活高清,http://plex.cyruslee.top:8888/udp/239.77.0.251:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:30Z
+channel,揭阳生活高清,http://www.3344.uk:8888/udp/239.77.0.251:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:43Z
+channel,揭阳生活高清,http://www.maomizi.cn:9527/udp/239.77.0.251:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:27:02Z
+channel,揭阳生活高清,http://www.syy3.top:3861/udp/239.77.0.251:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:26:22Z
+channel,揭阳生活高清,http://www.yahao.host:4022/udp/239.77.0.251:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:24:16Z
+channel,揭阳生活高清,http://yanshifen.top:8889/udp/239.77.0.251:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:55Z
+channel,揭阳综合,http://hls-jyrtv.jyrtv.tv/stjy2020/zhpd.m3u8,http_error,,<urlopen error [Errno -5] No address associated with hostname>,2026-10-21T18:23:37Z
+channel,揭阳综合高清,http://119.29.142.81:4022/udp/239.77.0.229:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:23:53Z
+channel,揭阳综合高清,http://61.145.188.90:50055/udp/239.77.0.229:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:27:04Z
+channel,揭阳综合高清,http://gdyd.7259.cc.cd:4014/udp/239.77.0.229:5146,http_error,,<urlopen error timed out>,2026-10-21T18:25:21Z
+channel,揭阳综合高清,http://gdyd.7259.cc.cd:4111/udp/239.77.0.229:5146,http_error,,<urlopen error timed out>,2026-10-21T18:24:20Z
+channel,揭阳综合高清,http://hongzhijiaoyu.net:8188/udp/239.77.0.229:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:23:58Z
+channel,揭阳综合高清,http://ikuai.cyruslee.top:8888/udp/239.77.0.229:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:48Z
+channel,揭阳综合高清,http://jellyfin.cyruslee.top:8888/udp/239.77.0.229:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:36Z
+channel,揭阳综合高清,http://lbyjlt.vv5678.cn:8880/udp/239.77.0.229:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:25Z
+channel,揭阳综合高清,http://lsa.familyds.com:8188/udp/239.77.0.229:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:24:10Z
+channel,揭阳综合高清,http://plex.cyruslee.top:8888/udp/239.77.0.229:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:30Z
+channel,揭阳综合高清,http://www.3344.uk:8888/udp/239.77.0.229:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:43Z
+channel,揭阳综合高清,http://www.maomizi.cn:9527/udp/239.77.0.229:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:27:01Z
+channel,揭阳综合高清,http://www.syy3.top:3861/udp/239.77.0.229:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:26:22Z
+channel,揭阳综合高清,http://www.yahao.host:4022/udp/239.77.0.229:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:24:16Z
+channel,揭阳综合高清,http://yanshifen.top:8889/udp/239.77.0.229:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:55Z
+channel,新疆卫视,http://111.29.9.33:6610/000000001000/1000000002000029441/index.m3u8?channel-id=bestzb&Contentid=1000000002000029441&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:17Z
+channel,新疆卫视,"http://120.87.19.109:80/PLTV/88888973/224/3221225694/10000100000000060000000000334004_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:30:46Z
+channel,明星大片,http://111.29.9.33:6610/000000001000/1000000004000019008/index.m3u8?channel-id=bestzb&Contentid=1000000004000019008&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:50Z
+channel,晓晓,https://cdn.ttvb.eu.org/douyin/147258247158d,http_error,,<urlopen error [Errno -2] Name or service not known>,2026-10-21T18:23:19Z
+channel,朱朱,https://cdn.ttvb.eu.org/douyin/36914825720a,http_error,,<urlopen error [Errno -2] Name or service not known>,2026-10-21T18:23:19Z
+channel,极目新闻,http://cfss.cc/cdn/dy/ctdsbdy.flv,probe_failed,200,http://cfss.cc/cdn/dy/ctdsbdy.flv: Invalid data found when processing input,2026-10-21T18:23:30Z
+channel,格格睡不醒,https://cdn.ttvb.eu.org/douyin/41753242146,http_error,,<urlopen error [Errno -2] Name or service not known>,2026-10-21T18:23:19Z
+channel,格格睡醒了,https://cdn.ttvb.eu.org/douyin/42347122605,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:23:18Z
+channel,欢笑剧场4K,http://111.29.9.33:6610/000000001000/5000000002000009455/index.m3u8?channel-id=bestzb&Contentid=5000000002000009455&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:42Z
+channel,每日经济新闻,http://cfss.cc/cdn/dy/nbdnews.flv,probe_failed,200,http://cfss.cc/cdn/dy/nbdnews.flv: Invalid data found when processing input,2026-10-21T18:23:26Z
+channel,水水家猪蹄,https://cdn.ttvb.eu.org/douyin/ssjzt777,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:23:18Z
+channel,汕头生活高清,http://119.29.142.81:4022/udp/239.253.43.46:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:23:55Z
+channel,汕头生活高清,http://61.145.188.90:50055/udp/239.253.43.46:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:27:04Z
+channel,汕头生活高清,http://gdyd.7259.cc.cd:4014/udp/239.253.43.46:5146,http_error,,<urlopen error timed out>,2026-10-21T18:25:21Z
+channel,汕头生活高清,http://gdyd.7259.cc.cd:4111/udp/239.253.43.46:5146,http_error,,<urlopen error timed out>,2026-10-21T18:24:21Z
+channel,汕头生活高清,http://hongzhijiaoyu.net:8188/udp/239.253.43.46:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:24:04Z
+channel,汕头生活高清,http://ikuai.cyruslee.top:8888/udp/239.253.43.46:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:50Z
+channel,汕头生活高清,http://jellyfin.cyruslee.top:8888/udp/239.253.43.46:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:37Z
+channel,汕头生活高清,http://lbyjlt.vv5678.cn:8880/udp/239.253.43.46:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:25Z
+channel,汕头生活高清,http://lsa.familyds.com:8188/udp/239.253.43.46:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:24:11Z
+channel,汕头生活高清,http://plex.cyruslee.top:8888/udp/239.253.43.46:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:30Z
+channel,汕头生活高清,http://www.3344.uk:8888/udp/239.253.43.46:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:43Z
+channel,汕头生活高清,http://www.maomizi.cn:9527/udp/239.253.43.46:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:27:03Z
+channel,汕头生活高清,http://www.syy3.top:3861/udp/239.253.43.46:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:26:23Z
+channel,汕头生活高清,http://www.yahao.host:4022/udp/239.253.43.46:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:24:17Z
+channel,汕头生活高清,http://yanshifen.top:8889/udp/239.253.43.46:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:57Z
+channel,汕头经济,http://129.211.14.102:25000/gdst.php?id=st2&token=<redacted>,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:23:37Z
+channel,汕头综合,http://129.211.14.102:25000/gdst.php?id=st1&token=<redacted>,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:23:37Z
+channel,汕头综合高清,http://119.29.142.81:4022/udp/239.253.43.45:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:23:54Z
+channel,汕头综合高清,http://61.145.188.90:50055/udp/239.253.43.45:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:27:04Z
+channel,汕头综合高清,http://gdyd.7259.cc.cd:4014/udp/239.253.43.45:5146,http_error,,<urlopen error timed out>,2026-10-21T18:25:21Z
+channel,汕头综合高清,http://gdyd.7259.cc.cd:4111/udp/239.253.43.45:5146,http_error,,<urlopen error timed out>,2026-10-21T18:24:20Z
+channel,汕头综合高清,http://hongzhijiaoyu.net:8188/udp/239.253.43.45:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:24:04Z
+channel,汕头综合高清,http://ikuai.cyruslee.top:8888/udp/239.253.43.45:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:50Z
+channel,汕头综合高清,http://jellyfin.cyruslee.top:8888/udp/239.253.43.45:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:37Z
+channel,汕头综合高清,http://lbyjlt.vv5678.cn:8880/udp/239.253.43.45:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:25Z
+channel,汕头综合高清,http://lsa.familyds.com:8188/udp/239.253.43.45:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:24:11Z
+channel,汕头综合高清,http://plex.cyruslee.top:8888/udp/239.253.43.45:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:30Z
+channel,汕头综合高清,http://www.3344.uk:8888/udp/239.253.43.45:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:43Z
+channel,汕头综合高清,http://www.maomizi.cn:9527/udp/239.253.43.45:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:27:03Z
+channel,汕头综合高清,http://www.syy3.top:3861/udp/239.253.43.45:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:26:23Z
+channel,汕头综合高清,http://www.yahao.host:4022/udp/239.253.43.45:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:24:17Z
+channel,汕头综合高清,http://yanshifen.top:8889/udp/239.253.43.45:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:56Z
+channel,汕尾生活高清,http://119.29.142.81:4022/udp/239.77.0.187:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:23:54Z
+channel,汕尾生活高清,http://61.145.188.90:50055/udp/239.77.0.187:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:27:04Z
+channel,汕尾生活高清,http://gdyd.7259.cc.cd:4014/udp/239.77.0.187:5146,http_error,,<urlopen error timed out>,2026-10-21T18:25:21Z
+channel,汕尾生活高清,http://gdyd.7259.cc.cd:4111/udp/239.77.0.187:5146,http_error,,<urlopen error timed out>,2026-10-21T18:24:20Z
+channel,汕尾生活高清,http://hongzhijiaoyu.net:8188/udp/239.77.0.187:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:24:04Z
+channel,汕尾生活高清,http://ikuai.cyruslee.top:8888/udp/239.77.0.187:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:49Z
+channel,汕尾生活高清,http://jellyfin.cyruslee.top:8888/udp/239.77.0.187:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:37Z
+channel,汕尾生活高清,http://lbyjlt.vv5678.cn:8880/udp/239.77.0.187:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:25Z
+channel,汕尾生活高清,http://lsa.familyds.com:8188/udp/239.77.0.187:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:24:11Z
+channel,汕尾生活高清,http://plex.cyruslee.top:8888/udp/239.77.0.187:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:30Z
+channel,汕尾生活高清,http://www.3344.uk:8888/udp/239.77.0.187:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:43Z
+channel,汕尾生活高清,http://www.maomizi.cn:9527/udp/239.77.0.187:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:27:03Z
+channel,汕尾生活高清,http://www.syy3.top:3861/udp/239.77.0.187:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:26:23Z
+channel,汕尾生活高清,http://www.yahao.host:4022/udp/239.77.0.187:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:24:17Z
+channel,汕尾生活高清,http://yanshifen.top:8889/udp/239.77.0.187:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:56Z
+channel,汕尾综合高清,http://119.29.142.81:4022/udp/239.77.0.25:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:23:54Z
+channel,汕尾综合高清,http://61.145.188.90:50055/udp/239.77.0.25:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:27:04Z
+channel,汕尾综合高清,http://gdyd.7259.cc.cd:4014/udp/239.77.0.25:5146,http_error,,<urlopen error timed out>,2026-10-21T18:25:21Z
+channel,汕尾综合高清,http://gdyd.7259.cc.cd:4111/udp/239.77.0.25:5146,http_error,,<urlopen error timed out>,2026-10-21T18:24:20Z
+channel,汕尾综合高清,http://hongzhijiaoyu.net:8188/udp/239.77.0.25:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:23:59Z
+channel,汕尾综合高清,http://ikuai.cyruslee.top:8888/udp/239.77.0.25:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:49Z
+channel,汕尾综合高清,http://jellyfin.cyruslee.top:8888/udp/239.77.0.25:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:37Z
+channel,汕尾综合高清,http://lbyjlt.vv5678.cn:8880/udp/239.77.0.25:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:25Z
+channel,汕尾综合高清,http://lsa.familyds.com:8188/udp/239.77.0.25:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:24:10Z
+channel,汕尾综合高清,http://plex.cyruslee.top:8888/udp/239.77.0.25:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:30Z
+channel,汕尾综合高清,http://www.3344.uk:8888/udp/239.77.0.25:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:43Z
+channel,汕尾综合高清,http://www.maomizi.cn:9527/udp/239.77.0.25:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:27:02Z
+channel,汕尾综合高清,http://www.syy3.top:3861/udp/239.77.0.25:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:26:23Z
+channel,汕尾综合高清,http://www.yahao.host:4022/udp/239.77.0.25:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:24:17Z
+channel,汕尾综合高清,http://yanshifen.top:8889/udp/239.77.0.25:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:56Z
+channel,江苏卫视,http://111.29.9.33:6610/000000001000/1000000001000001828/index.m3u8?channel-id=bestzb&Contentid=1000000001000001828&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:53Z
+channel,江苏卫视,"http://120.87.19.109:80/PLTV/88888973/224/3221225685/10000100000000060000000000333755_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:30:44Z
+channel,江西卫视,http://111.29.9.33:6610/000000001000/1000000001000013731/index.m3u8?channel-id=bestzb&Contentid=1000000001000013731&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:11Z
+channel,江西卫视,"http://120.87.19.109:80/PLTV/88888973/224/3221225691/10000100000000060000000000333873_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:30:44Z
+channel,河北卫视,http://111.29.9.33:6610/000000001000/1000000002000017118/index.m3u8?channel-id=bestzb&Contentid=1000000002000017118&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:41Z
+channel,河南卫视,http://111.29.9.33:6610/000000001000/5000000011000031119/index.m3u8?channel-id=bestzb&Contentid=5000000011000031119&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:44Z
+channel,河源公共,https://tmpstream.hyrtv.cn/hygg/sd/live.m3u8,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:23:51Z
+channel,河源公共1,http://tmpstream.hyrtv.cn/hygg/sd/live.m3u8,http_error,,Remote end closed connection without response,2026-10-21T18:23:37Z
+channel,河源综合,https://tmpstream.hyrtv.cn/xwzh/sd/live.m3u8,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:23:51Z
+channel,河源综合1,http://tmpstream.hyrtv.cn/xwzh/sd/live.m3u8,http_error,,Remote end closed connection without response,2026-10-21T18:23:37Z
+channel,浙江卫视,http://111.29.9.33:6610/000000001000/1000000001000009806/index.m3u8?channel-id=bestzb&Contentid=1000000001000009806&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:43Z
+channel,浙江卫视,"http://120.87.19.109:80/PLTV/88888973/224/3221225684/10000100000000060000000000334089_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:30:26Z
+channel,海南卫视,http://111.29.9.33:6610/000000001000/5000000004000006211/index.m3u8?channel-id=bestzb&Contentid=5000000004000006211&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:14Z
+channel,深圳卫视,http://111.29.9.33:6610/000000001000/1000000001000009227/index.m3u8?channel-id=bestzb&Contentid=1000000001000009227&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:44Z
+channel,深圳卫视,"http://120.87.19.109:80/PLTV/88888973/224/3221225692/10000100000000060000000000333949_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:30:45Z
+channel,深圳卫视,http://nn.7x9d.cn/深圳最新.php?id=szws4k,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:23:48Z
+channel,深圳国际,http://nn.7x9d.cn/深圳最新.php?id=szgj,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:23:50Z
+channel,深圳少儿,http://nn.7x9d.cn/深圳最新.php?id=szse,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:23:49Z
+channel,深圳新闻网,http://cfss.cc/cdn/dy/1057124186.flv,probe_failed,200,http://cfss.cc/cdn/dy/1057124186.flv: Invalid data found when processing input,2026-10-21T18:23:31Z
+channel,深圳电视剧,http://nn.7x9d.cn/深圳最新.php?id=szdsj,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:23:49Z
+channel,深圳移动电视,http://nn.7x9d.cn/深圳最新.php?id=szyd,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:23:50Z
+channel,深圳财经生活,http://nn.7x9d.cn/深圳最新.php?id=szcjsh,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:23:49Z
+channel,深圳都市,http://livepull-tcms.sztv.com.cn/live/dslive.m3u8,http_error,403,HTTP 403,2026-10-21T18:23:33Z
+channel,深圳都市,http://nn.7x9d.cn/深圳最新.php?id=szds,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:23:48Z
+channel,深圳龙岗,http://zhfw-t.szlg.com:8080/live/television1.m3u8,http_error,404,HTTP 404,2026-10-21T18:23:39Z
+channel,清远文旅生活,http://zmylivestream.nfnews.com/zmy_slive/20811.m3u8,http_error,,<urlopen error timed out>,2026-10-21T18:23:52Z
+channel,清远文旅生活,http://zmylivestream.nfnews.com/zmy_slive/25321.m3u8,http_error,,<urlopen error timed out>,2026-10-21T18:23:34Z
+channel,清远新闻综合,http://zmylivestream.nfnews.com/zmy_slive/25319.m3u8,http_error,,<urlopen error timed out>,2026-10-21T18:23:34Z
+channel,游戏风云,http://111.29.9.33:6610/000000001000/5000000011000031114/index.m3u8?channel-id=bestzb&Contentid=5000000011000031114&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:42Z
+channel,湖北卫视,http://111.29.9.33:6610/000000001000/1000000001000010355/index.m3u8?channel-id=bestzb&Contentid=1000000001000010355&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:49Z
+channel,湖南卫视,http://111.29.9.33:6610/000000001000/1000000001000009115/index.m3u8?channel-id=bestzb&Contentid=1000000001000009115&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:42Z
+channel,湖南卫视,"http://120.87.19.109:80/PLTV/88888973/224/3221225682/10000100000000060000000000333514_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:30:26Z
+channel,湛江公共,http://gbtv-hls-wjq.zjwtv.com/zjtv/ggpd.m3u8,http_error,,<urlopen error [Errno -2] Name or service not known>,2026-10-21T18:23:36Z
+channel,湛江新闻综合,http://gbtv-hls-wjq.zjwtv.com/zjtv/zhpd.m3u8,http_error,,<urlopen error [Errno -2] Name or service not known>,2026-10-21T18:23:36Z
+channel,潮州民生1,http://livezhpd.czbtv.com:38880/live/ggpd.m3u8?secret=<redacted>,http_error,,<urlopen error timed out>,2026-10-21T18:23:38Z
+channel,潮州民生高清,http://119.29.142.81:4022/udp/239.253.43.75:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:23:55Z
+channel,潮州民生高清,http://61.145.188.90:50055/udp/239.253.43.75:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:27:05Z
+channel,潮州民生高清,http://gdyd.7259.cc.cd:4014/udp/239.253.43.75:5146,http_error,,<urlopen error timed out>,2026-10-21T18:25:23Z
+channel,潮州民生高清,http://gdyd.7259.cc.cd:4111/udp/239.253.43.75:5146,http_error,,<urlopen error timed out>,2026-10-21T18:24:21Z
+channel,潮州民生高清,http://hongzhijiaoyu.net:8188/udp/239.253.43.75:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:24:05Z
+channel,潮州民生高清,http://ikuai.cyruslee.top:8888/udp/239.253.43.75:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:50Z
+channel,潮州民生高清,http://jellyfin.cyruslee.top:8888/udp/239.253.43.75:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:38Z
+channel,潮州民生高清,http://lbyjlt.vv5678.cn:8880/udp/239.253.43.75:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:25Z
+channel,潮州民生高清,http://lsa.familyds.com:8188/udp/239.253.43.75:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:24:12Z
+channel,潮州民生高清,http://plex.cyruslee.top:8888/udp/239.253.43.75:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:31Z
+channel,潮州民生高清,http://www.3344.uk:8888/udp/239.253.43.75:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:45Z
+channel,潮州民生高清,http://www.maomizi.cn:9527/udp/239.253.43.75:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:27:03Z
+channel,潮州民生高清,http://www.syy3.top:3861/udp/239.253.43.75:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:26:23Z
+channel,潮州民生高清,http://www.yahao.host:4022/udp/239.253.43.75:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:24:17Z
+channel,潮州民生高清,http://yanshifen.top:8889/udp/239.253.43.75:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:57Z
+channel,潮州综合1,http://livezhpd.czbtv.com:38880/live/ctvzhpd.m3u8?secret=<redacted>,http_error,,<urlopen error timed out>,2026-10-21T18:23:37Z
+channel,潮州综合高清,http://119.29.142.81:4022/udp/239.253.43.70:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:23:55Z
+channel,潮州综合高清,http://61.145.188.90:50055/udp/239.253.43.70:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:27:04Z
+channel,潮州综合高清,http://gdyd.7259.cc.cd:4014/udp/239.253.43.70:5146,http_error,,<urlopen error timed out>,2026-10-21T18:25:23Z
+channel,潮州综合高清,http://gdyd.7259.cc.cd:4111/udp/239.253.43.70:5146,http_error,,<urlopen error timed out>,2026-10-21T18:24:21Z
+channel,潮州综合高清,http://hongzhijiaoyu.net:8188/udp/239.253.43.70:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:24:04Z
+channel,潮州综合高清,http://ikuai.cyruslee.top:8888/udp/239.253.43.70:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:50Z
+channel,潮州综合高清,http://jellyfin.cyruslee.top:8888/udp/239.253.43.70:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:37Z
+channel,潮州综合高清,http://lbyjlt.vv5678.cn:8880/udp/239.253.43.70:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:25Z
+channel,潮州综合高清,http://lsa.familyds.com:8188/udp/239.253.43.70:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:24:11Z
+channel,潮州综合高清,http://plex.cyruslee.top:8888/udp/239.253.43.70:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:31Z
+channel,潮州综合高清,http://www.3344.uk:8888/udp/239.253.43.70:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:45Z
+channel,潮州综合高清,http://www.maomizi.cn:9527/udp/239.253.43.70:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:27:03Z
+channel,潮州综合高清,http://www.syy3.top:3861/udp/239.253.43.70:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:26:23Z
+channel,潮州综合高清,http://www.yahao.host:4022/udp/239.253.43.70:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:24:17Z
+channel,潮州综合高清,http://yanshifen.top:8889/udp/239.253.43.70:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:57Z
+channel,炫舞未来,http://111.29.9.33:6610/000000001000/1000000001000000515/index.m3u8?channel-id=bestzb&Contentid=1000000001000000515&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:29:12Z
+channel,特区新闻广场,http://cfss.cc/cdn/dy/tqxwgc.flv,probe_failed,200,http://cfss.cc/cdn/dy/tqxwgc.flv: Invalid data found when processing input,2026-10-21T18:23:31Z
+channel,环球时报,http://cfss.cc/cdn/dy/HuanQiuShiBao.flv,probe_failed,200,http://cfss.cc/cdn/dy/HuanQiuShiBao.flv: Invalid data found when processing input,2026-10-21T18:23:31Z
+channel,珠江频道,http://cfss.cc/cdn/dy/gdtvzjpd.flv,probe_failed,200,http://cfss.cc/cdn/dy/gdtvzjpd.flv: Invalid data found when processing input,2026-10-21T18:23:24Z
+channel,甘肃卫视,http://111.29.9.33:6610/000000001000/1000000002000017827/index.m3u8?channel-id=bestzb&Contentid=1000000002000017827&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:12Z
+channel,生活时尚,http://111.29.9.33:6610/000000001000/5000000002000019634/index.m3u8?channel-id=bestzb&Contentid=5000000002000019634&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:43Z
+channel,电影频道央影传媒,http://cfss.cc/cdn/dy/cctv6media..flv,probe_failed,200,http://cfss.cc/cdn/dy/cctv6media..flv: Invalid data found when processing input,2026-10-21T18:23:24Z
+channel,番禺电视台,http://video.epaper.pybtv.cn:8080/live/rtmp_live_demo.m3u8,http_error,,<urlopen error timed out>,2026-10-21T18:23:50Z
+channel,番禺综合,http://video.epaper.pybtv.cn:8080/live/rtmp_live_demo.flv,http_error,,<urlopen error timed out>,2026-10-21T18:23:38Z
+channel,第一财团,http://cfss.cc/cdn/dy/Diyicaituan.flv,probe_failed,200,http://cfss.cc/cdn/dy/Diyicaituan.flv: Invalid data found when processing input,2026-10-21T18:23:31Z
+channel,粤TV-广东台荔枝网,http://cfss.cc/cdn/dy/ZK8763.flv,probe_failed,200,http://cfss.cc/cdn/dy/ZK8763.flv: Invalid data found when processing input,2026-10-21T18:23:24Z
+channel,精品大剧,http://111.29.9.33:6610/000000001000/1000000004000013968/index.m3u8?channel-id=bestzb&Contentid=1000000004000013968&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:48Z
+channel,纯享4K,http://111.29.9.33:6610/000000001000/1000000004000011651/index.m3u8?channel-id=bestzb&Contentid=1000000004000011651&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:29:14Z
+channel,经济科教高清,http://119.29.142.81:4022/udp/239.77.0.85:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:23:57Z
+channel,经济科教高清,http://61.145.188.90:50055/udp/239.77.0.85:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:27:05Z
+channel,经济科教高清,http://gdyd.7259.cc.cd:4014/udp/239.77.0.85:5146,http_error,,<urlopen error timed out>,2026-10-21T18:25:24Z
+channel,经济科教高清,http://gdyd.7259.cc.cd:4111/udp/239.77.0.85:5146,http_error,,<urlopen error timed out>,2026-10-21T18:24:23Z
+channel,经济科教高清,http://hongzhijiaoyu.net:8188/udp/239.77.0.85:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:24:08Z
+channel,经济科教高清,http://ikuai.cyruslee.top:8888/udp/239.77.0.85:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:53Z
+channel,经济科教高清,http://jellyfin.cyruslee.top:8888/udp/239.77.0.85:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:40Z
+channel,经济科教高清,http://lbyjlt.vv5678.cn:8880/udp/239.77.0.85:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:28Z
+channel,经济科教高清,http://lsa.familyds.com:8188/udp/239.77.0.85:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:24:14Z
+channel,经济科教高清,http://plex.cyruslee.top:8888/udp/239.77.0.85:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:34Z
+channel,经济科教高清,http://www.3344.uk:8888/udp/239.77.0.85:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:46Z
+channel,经济科教高清,http://www.maomizi.cn:9527/udp/239.77.0.85:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:27:04Z
+channel,经济科教高清,http://www.syy3.top:3861/udp/239.77.0.85:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:26:24Z
+channel,经济科教高清,http://www.yahao.host:4022/udp/239.77.0.85:5146,http_error,503,HTTP 503,2026-10-21T18:24:19Z
+channel,经济科教高清,http://yanshifen.top:8889/udp/239.77.0.85:5146,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:26:59Z
+channel,维度新闻,http://cfss.cc/cdn/dy/975107749.flv,probe_failed,200,http://cfss.cc/cdn/dy/975107749.flv: Invalid data found when processing input,2026-10-21T18:23:31Z
+channel,肇庆生活服务,http://zmylivestream.nfnews.com/zmy_slive/27871.m3u8,http_error,,<urlopen error timed out>,2026-10-21T18:23:34Z
+channel,肇庆综合,http://zmylivestream.nfnews.com/zmy_slive/27872.m3u8,http_error,,<urlopen error timed out>,2026-10-21T18:23:33Z
+channel,育见新闻,http://cfss.cc/cdn/dy/CETVxinwen.flv,probe_failed,200,http://cfss.cc/cdn/dy/CETVxinwen.flv: Invalid data found when processing input,2026-10-21T18:23:31Z
+channel,茶频道,http://111.29.9.33:6610/000000001000/5000000011000031209/index.m3u8?channel-id=bestzb&Contentid=5000000011000031209&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:29:13Z
+channel,西藏卫视,"http://120.87.19.109:80/PLTV/88888973/224/3221225693/10000100000000060000000000333969_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:30:45Z
+channel,财联社,http://cfss.cc/cdn/dy/clscccaijing.flv,probe_failed,200,http://cfss.cc/cdn/dy/clscccaijing.flv: Invalid data found when processing input,2026-10-21T18:23:31Z
+channel,贵州卫视,http://111.29.9.33:6610/000000001000/1000000002000003169/index.m3u8?channel-id=bestzb&Contentid=1000000002000003169&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:40Z
+channel,超级体育,http://111.29.9.33:6610/000000001000/1000000004000007755/index.m3u8?channel-id=bestzb&Contentid=1000000004000007755&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:54Z
+channel,超级电影,http://111.29.9.33:6610/000000001000/1000000001000012884/index.m3u8?channel-id=bestzb&Contentid=1000000001000012884&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:44Z
+channel,超级电视剧,http://111.29.9.33:6610/000000001000/1000000001000008139/index.m3u8?channel-id=bestzb&Contentid=1000000001000008139&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:24Z
+channel,超级综艺,http://111.29.9.33:6610/000000001000/1000000004000023658/index.m3u8?channel-id=bestzb&Contentid=1000000004000023658&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:54Z
+channel,辽宁卫视,http://111.29.9.33:6610/000000001000/1000000001000001945/index.m3u8?channel-id=bestzb&Contentid=1000000001000001945&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:11Z
+channel,都市剧场,http://111.29.9.33:6610/000000001000/5000000011000031111/index.m3u8?channel-id=bestzb&Contentid=5000000011000031111&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:42Z
+channel,重庆卫视,http://111.29.9.33:6610/000000001000/1000000001000001096/index.m3u8?channel-id=bestzb&Contentid=1000000001000001096&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:42Z
+channel,金牌综艺,http://111.29.9.33:6610/000000001000/1000000004000026167/index.m3u8?channel-id=bestzb&Contentid=1000000004000026167&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:29:12Z
+channel,金鹰卡通,http://111.29.9.33:6610/000000001000/5000000006000040024/index.m3u8?channel-id=bestzb&Contentid=5000000006000040024&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:29:12Z
+channel,金鹰纪实,http://111.29.9.33:6610/000000001000/5000000011000031203/index.m3u8?channel-id=bestzb&Contentid=5000000011000031203&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:42Z
+channel,阳江-1,https://live.yjtvw.com:8081/live/yjtv1.m3u8,http_error,,<urlopen error [Errno -2] Name or service not known>,2026-10-21T18:23:36Z
+channel,阳江-2,https://live.yjtvw.com:8081/live/yjtv2.m3u8,http_error,,<urlopen error [Errno -2] Name or service not known>,2026-10-21T18:23:36Z
+channel,青海卫视,http://111.29.9.33:6610/000000001000/1000000002000013359/index.m3u8?channel-id=bestzb&Contentid=1000000002000013359&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:13Z
+channel,韩国EBS1,http://ebsonairios.ebs.co.kr/groundwavetablet500k/tablet500k/playlist.m3u8?zshijd,probe_ok,200,"ffprobe 检测到媒体流: data,video,audio,,data,video,audio",2026-10-21T18:23:03Z
+channel,韩国EBS2,http://ebsonairios.ebs.co.kr/ebs2tablet500k/tablet500k/ebs2tablet500k.index.m3u8?zshijd,probe_ok,200,"ffprobe 检测到媒体流: data,video,audio,,data,video,audio",2026-10-21T18:23:04Z
+channel,韩国音乐,http://mgugaklive.nowcdn.co.kr/gugakvideo/gugakvideo.stream/playlist.m3u8,probe_ok,200,"ffprobe 检测到媒体流: data,video,audio,,data,video,audio",2026-10-21T18:23:16Z
+channel,韶关综合,https://live.sgmsw.cn/hls/lhx1FUeZg/playlist.m3u8,probe_ok,200,"ffprobe 检测到媒体流: video,audio,,video,audio",2026-10-21T18:23:36Z
+channel,韶关综合,https://www.sgmsw.cn/videos/tv/201805/1308/SB05RIYZOU8JR418AUQOF62CAJQ08D0E/hls/live.m3u8,probe_ok,200,"ffprobe 检测到媒体流: video,audio,,video,audio",2026-10-21T18:23:36Z
+channel,魅力足球,http://111.29.9.33:6610/000000001000/5000000011000031207/index.m3u8?channel-id=bestzb&Contentid=5000000011000031207&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:42Z
+channel,黑莓动画,http://111.29.9.33:6610/000000001000/1000000004000021734/index.m3u8?channel-id=bestzb&Contentid=1000000004000021734&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:29:12Z
+channel,黑莓电影,http://111.29.9.33:6610/000000001000/1000000004000019624/index.m3u8?channel-id=bestzb&Contentid=1000000004000019624&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:43Z
+channel,黑龙江卫视,http://111.29.9.33:6610/000000001000/1000000001000001925/index.m3u8?channel-id=bestzb&Contentid=1000000001000001925&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:40Z
+live,🍿乌拉TV直播,https://ilook.epg.one/5CM5SY98BF24PL/2,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:23:00Z
+live,🍿全球TV直播,https://seep.eu.org/iptv-org.github.io/iptv/index.m3u,probe_ok,200,"播放列表首条媒体流：ffprobe 检测到媒体流: video,data,video,data,,video,data,video,data,,video,data,video,data,,video,data,video,data,,video,data,video,data,,video,data,video,data,video,data,video,data,video,data,video,data",2026-10-21T18:23:00Z
+live,🍿华视TV直播,https://445569.pages.dev/https://raw.githubusercontent.com/swhtv/111/refs/heads/main/%E5%8D%8E%E8%A7%86box%E5%8D%8E%E8%A7%86%E5%A4%A7%E5%85%A8swtv,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:22:59Z
+live,🍿易发TV直播,https://445569.pages.dev/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt,manifest_ok,200,文本列表可下载；不是可直接探测的单条 HLS 播放列表,2026-10-21T18:23:00Z
+live,🏆PPV体育赛事直播,https://www.korice.eu.org/ppv_m3u.php,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T18:22:59Z
+live,👖裤佬IPTV直播,https://iptv.445569.xyz/live.m3u,probe_ok,200,"播放列表首条媒体流：ffprobe 检测到媒体流: video,audio",2026-10-21T18:22:59Z
+live,👖裤佬TikTok直播,https://tiktok.445569.xyz/live.m3u,probe_failed,200,播放列表可下载，但首条媒体流探测失败：ffprobe 超时,2026-10-21T18:22:59Z
+live,👖裤佬Twitch直播,https://twitch.445569.xyz/live.m3u,probe_ok,200,"播放列表首条媒体流：ffprobe 检测到媒体流: audio,video,data,,audio,data,,audio,video,data,,audio,video,data,,audio,video,data,,audio,video,data,,audio,video,data,audio,data,audio,video,data,audio,video,data,audio,video,data,audio,video,data",2026-10-21T18:22:59Z
+live,👖裤佬YY直播,https://yy.445569.xyz/live.m3u,probe_ok,200,"播放列表首条媒体流：ffprobe 检测到媒体流: audio,video",2026-10-21T18:22:59Z
+live,👖裤佬体育直播[主],https://jsnzkpg.de5.net/all.m3u,probe_ok,200,"播放列表首条媒体流：ffprobe 检测到媒体流: video,audio",2026-10-21T18:22:59Z
+live,👖裤佬体育直播[备],https://stymei.pages.dev/live.m3u,probe_ok,200,"播放列表首条媒体流：ffprobe 检测到媒体流: video,audio",2026-10-21T18:22:59Z
+live,👖裤佬快手直播,https://kuaishou.445569.xyz/list.m3u,probe_ok,200,"播放列表首条媒体流：ffprobe 检测到媒体流: video,audio",2026-10-21T18:22:59Z
+live,👖裤佬抖音直播,https://douyin.445569.xyz/live.m3u,probe_ok,200,"播放列表首条媒体流：ffprobe 检测到媒体流: audio,video,,audio,video",2026-10-21T18:22:59Z
+live,👖裤佬斗鱼直播,https://douyu.445569.xyz/live.m3u,probe_ok,200,"播放列表首条媒体流：ffprobe 检测到媒体流: audio,video",2026-10-21T18:22:59Z
+live,👖裤佬来疯直播,https://laifeng.445569.xyz/live.m3u,probe_ok,200,"播放列表首条媒体流：ffprobe 检测到媒体流: video,audio,,video,audio",2026-10-21T18:22:59Z
+live,👖裤佬百战直播,https://baizhan.445569.xyz/live.m3u,probe_ok,200,"播放列表首条媒体流：ffprobe 检测到媒体流: audio,video",2026-10-21T18:22:59Z
+live,👖裤佬虎牙直播,https://huya.445569.xyz/live.m3u,probe_ok,200,"播放列表首条媒体流：ffprobe 检测到媒体流: subtitle,audio,video",2026-10-21T18:22:59Z
+live,👖裤佬酷狗直播,https://kugou.445569.xyz/live.m3u,probe_ok,200,"播放列表首条媒体流：ffprobe 检测到媒体流: video,audio,,video,audio",2026-10-21T18:22:59Z
+site,✈️TG频道@stymei,csp_Douban,requires_app,,站点使用内置 spider 标识，无法在服务端验证播放,2026-10-21T18:22:58Z
+site,👖4k,https://jsnz.pages.dev/f/af676592.py,requires_app,200,API 地址可访问；播放仍需影视 App 与对应 spider 解析,2026-10-21T18:22:58Z
+site,👖API,https://jsnz.pages.dev/f/cf616b2f.py,requires_app,200,API 地址可访问；播放仍需影视 App 与对应 spider 解析,2026-10-21T18:22:59Z
+site,👖APP,https://jsnz.pages.dev/f/04b5c0b4.js,requires_app,200,API 地址可访问；播放仍需影视 App 与对应 spider 解析,2026-10-21T18:22:58Z
+site,👖Emby,https://jsnz.pages.dev/f/696546f2.js,requires_app,200,API 地址可访问；播放仍需影视 App 与对应 spider 解析,2026-10-21T18:22:59Z
+site,👖IPTV,https://jsnz.pages.dev/f/f05e3b39.js,requires_app,200,API 地址可访问；播放仍需影视 App 与对应 spider 解析,2026-10-21T18:22:58Z
+site,👖JS,https://jsnz.pages.dev/f/f7b46c7f.js,requires_app,200,API 地址可访问；播放仍需影视 App 与对应 spider 解析,2026-10-21T18:22:59Z
+site,👖PHP,http://jiduo.3116598.xyz/PHP/pkty.php,reachable,200,HTTP 可访问,2026-10-21T18:22:59Z
+site,👖PY,https://jsnz.pages.dev/f/e1aeef83.py,requires_app,200,API 地址可访问；播放仍需影视 App 与对应 spider 解析,2026-10-21T18:22:58Z
+site,👖体育,https://jsnzkpg.de5.net/t4.json,reachable,200,HTTP 可访问,2026-10-21T18:22:58Z
+site,👖动漫,https://jsnz.pages.dev/f/7e20bdb7.py,requires_app,200,API 地址可访问；播放仍需影视 App 与对应 spider 解析,2026-10-21T18:22:58Z
+site,👖听书,https://jsnz.pages.dev/f/d44dd2cf.py,requires_app,200,API 地址可访问；播放仍需影视 App 与对应 spider 解析,2026-10-21T18:22:59Z
+site,👖奈飞,https://api.wsyzy.net/api.php/provide/vod,reachable,200,HTTP 可访问,2026-10-21T18:22:58Z
+site,👖少儿,https://jsnz.pages.dev/f/6b9e7fca.js,requires_app,200,API 地址可访问；播放仍需影视 App 与对应 spider 解析,2026-10-21T18:22:59Z
+site,👖广播,https://jsnz.pages.dev/f/cec31b11.py,requires_app,200,API 地址可访问；播放仍需影视 App 与对应 spider 解析,2026-10-21T18:22:59Z
+site,👖影视,https://jsnz.pages.dev/f/9e53615c.py,requires_app,200,API 地址可访问；播放仍需影视 App 与对应 spider 解析,2026-10-21T18:22:58Z
+site,👖戏曲,https://iduo.us.ci/gt/leevi0709/one/main/js/drpy2.min.js,requires_app,200,API 地址可访问；播放仍需影视 App 与对应 spider 解析,2026-10-21T18:22:59Z
+site,👖有声,https://jsnz.pages.dev/f/e126d1e4.py,requires_app,200,API 地址可访问；播放仍需影视 App 与对应 spider 解析,2026-10-21T18:22:59Z
+site,👖短剧,https://jsnz.pages.dev/f/29b94aff.py,requires_app,200,API 地址可访问；播放仍需影视 App 与对应 spider 解析,2026-10-21T18:22:58Z
+site,👖网盘,https://jsnz.pages.dev/f/261c1664.py,requires_app,200,API 地址可访问；播放仍需影视 App 与对应 spider 解析,2026-10-21T18:22:58Z
+site,👖聚合,https://jsnz.pages.dev/f/4df9fb60.py,requires_app,200,API 地址可访问；播放仍需影视 App 与对应 spider 解析,2026-10-21T18:22:58Z
+site,👖采集,https://jsnz.pages.dev/f/72b7239d.py,requires_app,200,API 地址可访问；播放仍需影视 App 与对应 spider 解析,2026-10-21T18:22:58Z
+site,👖韩国,https://jsnz.pages.dev/f/26511242.py,requires_app,200,API 地址可访问；播放仍需影视 App 与对应 spider 解析,2026-10-21T18:22:58Z
+site,👖音乐,https://jsnz.pages.dev/f/eded33cf.py,requires_app,200,API 地址可访问；播放仍需影视 App 与对应 spider 解析,2026-10-21T18:22:58Z
+site,📌测试,https://jsnz.pages.dev/f/e7124867.py,requires_app,200,API 地址可访问；播放仍需影视 App 与对应 spider 解析,2026-10-21T18:22:59Z
+source,https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg,https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg,reachable,200,HTTP 可访问,2026-10-21T18:22:58Z
+source,https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt,https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt,reachable,200,HTTP 可访问,2026-10-21T18:22:58Z
+source,https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt,https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt,reachable,200,HTTP 可访问,2026-10-21T18:22:58Z
