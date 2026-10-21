@@ -1,146 +1,429 @@
 ﻿kind,name,url,status,http_status,detail,checked_at
-channel,1994破坏之王,https://cdn7.ryplay7.com/20240915/380_11f89ab4/index.m3u8,http_error,,<urlopen error _ssl.c:983: The handshake operation timed out>,2026-10-21T13:37:41Z
-channel,2019哪吒之魔童降世,http://111.229.219.148:808/Cache/lzgg/67f35a41a439e00540d0d88f62d3d56a.m3u8,http_error,,<urlopen error timed out>,2026-10-21T13:37:36Z
-channel,2025哪吒之魔童闹海,https://play.modujx11.com/20250802/Cha4M4YU/index.m3u8,probe_failed,200,https://play.modujx11.com/20250802/Cha4M4YU/index.m3u8: End of file,2026-10-21T13:37:38Z
-channel,2026八仙,http://111.229.219.148:808/Cache/lzgg/7a367b98744276dba9ea2844bf13ab1e.m3u8,http_error,,<urlopen error timed out>,2026-10-21T13:37:35Z
-channel,Astro QJ,https://cdn3.indevs.in/stream/live/qj/,http_error,404,HTTP 404,2026-10-21T13:39:35Z
-channel,Beyond-冷雨夜,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cdqcbe3c77ucgubud6i0&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:03Z
-channel,By Your side,https://www.iesdouyin.com/aweme/v1/playwm/?line=0&logo_name=aweme_diversion_search&ratio=720p&video_id=v0200fg10000cohhg2bc77u7p44oqrsg,http_error,403,HTTP 403,2026-10-21T13:37:33Z
-channel,CCTV1港澳版,https://cdn6.cc.cd/163189/cctv1,http_error,,<urlopen error timed out>,2026-10-21T13:38:22Z
-channel,CH5,https://cdn6.cc.cd/163189/ch5,http_error,,<urlopen error timed out>,2026-10-21T13:38:58Z
-channel,CH8,https://cdn6.cc.cd/163189/ch8,http_error,,<urlopen error timed out>,2026-10-21T13:39:00Z
-channel,CHU,https://cdn6.cc.cd/163189/chu,http_error,,<urlopen error timed out>,2026-10-21T13:39:03Z
-channel,Colbie Caillat-Try,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000ckblmvrc77u7sbpm2vjg&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:28Z
-channel,Dancer in the dark,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000c7qaabrc77ucr5apups0&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:33Z
-channel,Dilemma,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cq4uhjvog65ui5mm0pcg&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:32Z
-channel,Dusk Till Dawn,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cp9tgnnog65mqc12febg&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:33Z
-channel,F4-决不能失去你,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000clpfsjbc77u46m77t630&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:14Z
-channel,Free Loop,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fd90000bu2n37d2kepoqmgibfng&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:31Z
-channel,HOY TV,https://cdn6.cc.cd/163189/hoy,http_error,,<urlopen error timed out>,2026-10-21T13:38:06Z
-channel,Nothin' on me,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cmm6k83c77u8g6f05uf0&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:33Z
-channel,One Last Time,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000co6atujc77u007hc7bs0&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:33Z
-channel,Play,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000ca5nc43c77u72ekj6rpg&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:33Z
-channel,Please Don't Go,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cpl46avog65gueg43ogg&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:32Z
-channel,Pretty Boy,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cpv0lcnog65imtn4isig&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:32Z
-channel,Sold Out,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000coop9krc77u2ah4aikq0&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:33Z
-channel,TVB1,https://cdn6.cc.cd/163189/tvb1,http_error,,<urlopen error timed out>,2026-10-21T13:38:37Z
-channel,TVBJ1,https://cdn6.cc.cd/163189/j1,http_error,,<urlopen error timed out>,2026-10-21T13:38:38Z
-channel,TVB亚洲武侠,https://cdn6.cc.cd/163189/yzwx,http_error,,<urlopen error timed out>,2026-10-21T13:39:21Z
-channel,TVB娱乐新闻台,https://cdn6.cc.cd/163189/ylxw,http_error,,<urlopen error timed out>,2026-10-21T13:39:22Z
-channel,TVB星河,https://cdn6.cc.cd/163189/tvbxh,http_error,,<urlopen error timed out>,2026-10-21T13:39:23Z
-channel,Talking to the moon,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300f0e0000btktaso6de4h3n6m8mug&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:31Z
-channel,anyone of us,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300faf0000c08j4u35esuptakp4ltg&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:27Z
-channel,bad romance,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cv55iuvog65uhoogkirg&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:30Z
-channel,by2-我知道,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000ct0ushnog65rec0oavug&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:00Z
-channel,call me maybe,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000csl040fog65p2l58uqdg&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:30Z
-channel,dancing with your ghost,https://www.iesdouyin.com/aweme/v1/playwm/?line=0&logo_name=aweme_diversion_search&ratio=720p&video_id=v1e00fgi0000ctf6s1vog65kfs6o3iq0,http_error,404,HTTP 404,2026-10-21T13:37:32Z
-channel,good time,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300f0e0000btpfugg6de4h3n78ccig&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:31Z
-channel,heartbeats,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000clm5h5vog65n7m96h5o0&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:31Z
-channel,here with me,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cl898rnog65i0hbffnv0&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:32Z
-channel,i want you to know,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cvn75nnog65u3q261730&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:30Z
-channel,love the way you lie,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000csk8qsvog65nldrobpag&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:29Z
-channel,moshi moshi,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cl4vd2vog65v766s3lag&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:32Z
-channel,moves like jagger,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fb10000bvesniikbj343hhac8eg&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:27Z
-channel,natural,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000caj6qnrc77u88k20m8jg&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:28Z
-channel,normal no more,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cvvrm4vog65v9p2sp2hg&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:25Z
-channel,oao-wake,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000cssap9fog65j9je20u7g&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:24Z
-channel,outside,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cp8jcdnog65ic6gplqf0&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:33Z
-channel,poker face,https://www.iesdouyin.com/aweme/v1/playwm/?line=0&logo_name=aweme_diversion_search&ratio=720p&video_id=v0200fg10000cpoe5uvog65h83t50rsg,http_error,404,HTTP 404,2026-10-21T13:37:32Z
-channel,run free,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000c6bn043c77u9bihknaj0&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:25Z
-channel,sound of my dream,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cu8hr8fog65sbnn5265g&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:17Z
-channel,sweety-樱花草,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000c9rreibc77u0n5mpg0o0&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:13Z
-channel,the cure,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000ctc4cd7og65hrog41isg&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:30Z
-channel,the day you went away,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000crchtlnog65ud12ifgd0&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:30Z
-channel,this Is what you came for,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cpeh6v7og65u1fbjqs9g&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:33Z
-channel,wakawaka,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fbe0000buqeue7bs17qid7thla0&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:28Z
-channel,we don't talk anymore,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cfb0e4bc77u38s842ah0&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:30Z
-channel,wolves,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200f3e0000bt8c32cebj9j64kkp230&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:30Z
-channel,上帝是女孩DJ,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000chhlaijc77u2jkqvf1h0&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:17Z
-channel,东方卫视4K,http://go.bkpcp.top/mg/dfws,http_error,,[WinError 10054] 远程主机强迫关闭了一个现有的连接。,2026-10-21T13:37:34Z
-channel,任然-飞鸟和蝉,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000chgciibc77u4m8k4edog&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:13Z
-channel,何仟仟-魔鬼邂逅,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000c9i1th3c77u5pdfcatng&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:13Z
-channel,全粤语Club风格汽车慢摇串烧DJ,http://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cpp7b2nog65rhkqq6tpg,http_error,404,HTTP 404,2026-10-21T13:37:18Z
-channel,全粤语女声深情DJ串烧,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000ctbb4kvog65q67op5tug&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:18Z
-channel,全粤语港台经典老歌DJ,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cs5om8nog65vrmmn2g4g&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:18Z
-channel,八度空间,https://cdn6.cc.cd/163189/8tv,http_error,,<urlopen error timed out>,2026-10-21T13:38:54Z
-channel,关淑怡-难得有情人,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cockvfrc77uecmqmqq40&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:00Z
-channel,凤凰中文,https://cdn6.cc.cd/163189/fhzw,http_error,,<urlopen error timed out>,2026-10-21T13:37:51Z
-channel,凤凰资讯,https://cdn6.cc.cd/163189/fhzx,http_error,,<urlopen error timed out>,2026-10-21T13:38:36Z
-channel,凤凰香港,https://cdn6.cc.cd/163189/fhhk,http_error,,<urlopen error timed out>,2026-10-21T13:38:36Z
-channel,刘小慧-初恋情人,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000cc9cli3c77u4vdavpd70&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:00Z
-channel,刘德华-暗里着迷,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000c8rv9cjc77u58p5sd07g&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:02Z
-channel,华丽翡翠台,https://cdn6.cc.cd/163189/hlfct,http_error,,<urlopen error timed out>,2026-10-21T13:39:12Z
-channel,华丽翡翠台(硬字幕),https://cdn6.cc.cd/163189/jade,http_error,,<urlopen error timed out>,2026-10-21T13:39:29Z
-channel,卫兰-大哥,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cc50gabc77ue2vb9akd0&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:36:54Z
-channel,古巨基-必杀技,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cekv06jc77udpp4ltm90&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:10Z
-channel,吴若希-越难越爱,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000chcdhdfog65g2p9hdi7g&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:12Z
-channel,周杰伦-一路向北,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000ctdf26vog65kmvqmvk1g&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:36:58Z
-channel,周杰伦-七里香,https://www.iesdouyin.com/aweme/v1/playwm/?line=0&logo_name=aweme_diversion_search_app&ratio=720p&video_id=v0200fg10000cpbvhp7og65tm36f7f9g,http_error,404,HTTP 404,2026-10-21T13:36:57Z
-channel,周杰伦-不能说的秘密,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cum99unog65osqdmttig&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:36:58Z
-channel,周杰伦-告白气球,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000ci86emrc77ualbim8bv0&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:36:58Z
-channel,周杰伦-我不配,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000ctckvvnog65m6b34rft0&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:36:58Z
-channel,周杰伦-我落泪情绪零碎,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000ctt2hmvog65usvfqcpf0&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:36:58Z
-channel,周杰伦-搁浅,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cuflqnvog65rdj8jqpc0&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:36:58Z
-channel,周杰伦-晴天,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000ctrtl67og65qlnn3p6q0&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:36:58Z
-channel,周杰伦-珊瑚海,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cu53j17og65mdmh6uuvg&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:36:57Z
-channel,周杰伦-等你下课,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cu1nfonog65trp6p79ug&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:36:57Z
-channel,周杰伦-简单爱,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000csnbkmqljht17n76quv0&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:36:58Z
-channel,周杰伦-花海,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000ct25167og65te5cdbhj0&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:36:58Z
-channel,周杰伦-蒲公英的约定,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cu16plvog65nf0t5gj8g&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:36:58Z
-channel,周杰伦-说好不哭,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cu1rh9vog65imnpbre70&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:36:57Z
-channel,周杰伦-说好的幸福呢,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cssvfd7og65s05l6fb30&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:36:57Z
-channel,周杰伦-退后,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cu4gqmvog65ugg1to2qg&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:36:57Z
-channel,周杰伦-青花瓷,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cslnpcnog65tu8njd7pg&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:36:58Z
-channel,孙耀威-爱的故上集,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000c60cbq3c77u4kbdnbc3g&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:05Z
-channel,容祖儿-连续剧,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cm5avjbc77u543s8e3b0&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:06Z
-channel,广州南国都市4K,http://tencentplaygsm.gztv.com/live/nanguodushi.m3u8,http_error,403,HTTP 403,2026-10-21T13:37:34Z
-channel,张学友-只想一生跟你走,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000ci8ljnbc77u7qp8pt7cg&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:03Z
-channel,新澳门直播,https://play3636.zdwafis.com/live/mosixmark.flv,http_error,,<urlopen error [Errno 11001] getaddrinfo failed>,2026-10-21T13:37:34Z
-channel,无线新闻台,https://cdn6.cc.cd/163189/wxxw,http_error,,<urlopen error timed out>,2026-10-21T13:38:05Z
-channel,无线新闻台,https://cdn6.cc.cd/163189/wxxwt,http_error,,<urlopen error timed out>,2026-10-21T13:38:03Z
-channel,时代进行曲,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cujiftvog65jokluhvng&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:26Z
-channel,李克勤-护花使者,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cit40pbc77uae67r96cg&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:00Z
-channel,李克勤-红日,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000co87rbjc77ueeb2bpbbg&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:00Z
-channel,杨千嬅-少年的祈祷,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000c5ju2krc77u41p3mgv50&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:07Z
-channel,林俊杰-Always Online,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000ck65c1rc77ucdedd9tpg&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:36:59Z
-channel,林俊杰-不潮不用花钱,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000c7kn32bc77u538kgoopg&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:00Z
-channel,林俊杰-她说,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000c7kn4r3c77u8dq4r1vo0&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:36:59Z
-channel,林俊杰-当你,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000c7kn3mjc77u760cntbs0&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:36:59Z
-channel,林俊杰-江南,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000c8t5ac3c77u822ppftmg&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:36:59Z
-channel,林峯-幼稚完,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000c3c8tolfurq0t8hl20cg&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:10Z
-channel,梁汉文-缠绵游戏,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cjo6odrc77u9f4if7ub0&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:10Z
-channel,梁静茹-没有如果,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000crofuu7og65j64cj0thg&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:15Z
-channel,河北电视4K,http://106.53.99.30/tv/api.php?id=hebtv4k,http_error,,<urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。>,2026-10-21T13:37:34Z
-channel,浙江卫视4K,http://go.bkpcp.top/mg/zjws,http_error,,[WinError 10054] 远程主机强迫关闭了一个现有的连接。,2026-10-21T13:37:34Z
-channel,湖南卫视4K,http://go.bkpcp.top/mg/hunws,http_error,,[WinError 10054] 远程主机强迫关闭了一个现有的连接。,2026-10-21T13:37:34Z
-channel,澳视卫星,https://cdn6.cc.cd/163189/as,http_error,,<urlopen error timed out>,2026-10-21T13:38:23Z
-channel,澳视澳门,https://cdn6.cc.cd/163189/asam,http_error,,<urlopen error timed out>,2026-10-21T13:38:23Z
-channel,澳门体育,https://cdn6.cc.cd/163189/amty,http_error,,<urlopen error timed out>,2026-10-21T13:38:28Z
-channel,澳门综艺,https://cdn6.cc.cd/163189/amzy,http_error,,<urlopen error timed out>,2026-10-21T13:38:29Z
-channel,澳门莲花,https://cdn6.cc.cd/163189/amlh,http_error,,<urlopen error timed out>,2026-10-21T13:38:33Z
-channel,王杰-不浪漫罪名,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000c9bvck3c77ucqkhpnfd0&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:02Z
-channel,王蓝茵-恶作剧,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000ciocl7jc77u2jkq998s0&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:14Z
-channel,粤语打碟现场串烧DJ,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000crom7dnog65uq525ar4g&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:17Z
-channel,粤语经典重温DJ,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000cp06gijc77ue69pt0spg&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:18Z
-channel,精选粤语dj串烧,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cpucv77og65tcsi9n2hg&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:18Z
-channel,罗文-几许风雨,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000co6fijvog65rloj3i5n0&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:01Z
-channel,翡翠剧集台,https://cdn6.cc.cd/163189/tvbd,http_error,,<urlopen error timed out>,2026-10-21T13:38:38Z
-channel,翡翠台,https://cdn6.cc.cd/163189/fct,http_error,,<urlopen error timed out>,2026-10-21T13:37:53Z
-channel,苏州修复4K,http://106.53.99.30/tv/api.php?id=sztv4k,http_error,,<urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。>,2026-10-21T13:37:34Z
-channel,萧亚轩-遗失的心跳,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000ck491ufog65vq1gb76i0&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:15Z
-channel,蓝又时-孤单心事,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cr897onog65sgcniupd0&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:15Z
-channel,许廷铿-面具,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200ffe0000bsma66222nggd3hrnnrg&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:10Z
-channel,谢霆锋-活着viva,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000ccdmdsbc77u0hvhjiuc0&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:36:57Z
-channel,邓岳章-不做情人,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cfrhffjc77ua9ospmb0g&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:13Z
-channel,郑中基-无赖,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cmaj7d7og65vg4bdm0h0&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:05Z
-channel,郑欣宜-上心,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cmvk5cnog65judt62tcg&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:36:55Z
-channel,重温经典,https://cdn6.cc.cd/163189/cwjd,http_error,,<urlopen error timed out>,2026-10-21T13:38:34Z
-channel,金光布袋戏,https://cdn3.indevs.in/stream/live/jgbdx/,http_error,404,HTTP 404,2026-10-21T13:39:10Z
-channel,陈僖仪-忘川,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000ca6gn83c77ufug96j7cg&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:11Z
-channel,陈慧娴-夜半小夜曲,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fc30000bu3s66l91uupo5jllq40&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:01Z
-channel,麦浚龙-耿耿于怀,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cf2gn93c77uam6kuerdg&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:12Z
-channel,黄凯芹-雨中的恋人们,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cjli7rfog65o4vh2p4ug&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:36:57Z
-live,🍿全球TV直播,https://seep.eu.org/iptv-org.github.io/iptv/index.m3u,probe_failed,200,播放列表可下载，但首条媒体流探测失败：https://jmp2.uk/plu-62ba60f059624e000781c436.m3u8: Server returned 400 Bad Request,2026-10-21T13:36:49Z
-live,👖裤佬YY直播,https://yy.445569.xyz/live.m3u,probe_failed,200,播放列表可下载，但首条媒体流探测失败：http://nas.jqcykj.com:88/yy?id=54880976: Error number -138 occurred,2026-10-21T13:36:43Z
-live,👖裤佬体育直播[主],https://jsnzkpg.de5.net/all.m3u,probe_failed,200,播放列表可下载，但首条媒体流探测失败：https://k0u3cydy43y9zw2408x8760xfx5xx9z.djvod.ndcimgs.com/upic/2026/03/07/21/BMjAyNjAzMDcyMTIyMzlfNDI0MDI5NTBfMTg5Nzk0ODUxNjg5XzFfMw==_b_Bc33d39ac3524c256f9ddabce4588794b.mp4: I/O error,2026-10-21T13:36:43Z
-live,👖裤佬虎牙直播,https://huya.445569.xyz/live.m3u,probe_failed,200,播放列表可下载，但首条媒体流探测失败：https://huya.445569.xyz/live/998: Server returned 403 Forbidden (access denied),2026-10-21T13:36:43Z
+channel,600国际新闻台,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=600%E5%9B%BD%E9%99%85%E6%96%B0%E9%97%BB%E5%8F%B0&src=aHR0cHM6Ly9saXZlLnhpbmZsaXguY29tL0xzaGFwZS90cmFja3MtdjFhMS9tb25vLm0zdTg=,http_error,403,HTTP 403,2026-10-21T14:08:08Z
+channel,AEC,http://o11.163189.xyz/stream/live/aec/,http_error,429,HTTP 429,2026-10-21T14:07:48Z
+channel,AEC,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=ASTROAEC&src=aHR0cDovL28xMS4xNjMxODkueHl6L3N0cmVhbS9saXZlL2FlYy8=,http_error,403,HTTP 403,2026-10-21T14:08:03Z
+channel,AEC1,https://stream1.freetv.fun/b20e1ac2d4f0887344d0ddd5ba105241d00870d5531c70449227394ef43f63b0.ctv,http_error,,The read operation timed out,2026-10-21T14:07:16Z
+channel,AEC2,https://stream1.freetv.fun/350fb10e18f0f0db7607abfd9b7d5ccb5f5fb6c3bc3b47f87418e81b0b0610d8.ctv,http_error,,The read operation timed out,2026-10-21T14:07:17Z
+channel,AOD1,https://stream1.freetv.fun/dcc918363c923133d16e69ed325b09c7de1519542d4d7ec57da0bacecd3e4d89.ctv,http_error,,The read operation timed out,2026-10-21T14:07:17Z
+channel,AOD1,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=ASTROAOD&src=aHR0cDovL28xMS4xNjMxODkueHl6L3N0cmVhbS9saXZlL2FvZC8=,http_error,403,HTTP 403,2026-10-21T14:08:04Z
+channel,AOD2,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=Astr%E5%89%A7%E9%9B%86&src=aHR0cDovL3BocC5qZHNoaXBpbi5jb206ODg4MC9UVk9EL2lwdHYucGhwP2lkPWFvZA==,http_error,403,HTTP 403,2026-10-21T14:08:04Z
+channel,Astr欢喜,http://o11.163189.xyz/stream/live/hxt/,http_error,429,HTTP 429,2026-10-21T14:05:43Z
+channel,CCTV 13新闻,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CCTV%2013%E6%96%B0%E9%97%BB&src=aHR0cDovL25uLjd4OWQuY24veHpjMi5waHA/dWE9VFc5NmFXeHNZUzgxTGpBZ0tGZHBibVJ2ZDNNZ1RsUWdOaTR4T3lCWGFXNDJORHNnZURZMEtTQkJjSEJzWlZkbFlrdHBkQzgxTXpjdU16WWdLRXRJVkUxTUxDQnNhV3RsSUVkbFkydHZLU0JEYUhKdmJXVXZNVEEyTGpBdU1DNHdJRk5oWm1GeWFTODFNemN1TXpZPSZobHM9YUhSMGNEb3ZMM1IyZEdvdWFuaDNiSFI0TG1OdmJUbzRNREF6TDJOamRIWXhNeTV0TTNVNA==,http_error,403,HTTP 403,2026-10-21T14:08:14Z
+channel,CCTV 13新闻,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CCTV%2013%E6%96%B0%E9%97%BB&src=aHR0cHM6Ly9jZG4zLjE2MzE4OS54eXovMTYzMTg5L2NjdHYxMw==,http_error,403,HTTP 403,2026-10-21T14:08:14Z
+channel,CCTV 4H,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CCTV%204H&src=aHR0cHM6Ly9oYzlsYnk5Ynp3OHpjYXIud2NldHYuY29tL2hscy9jY3R2NC5tM3U4,http_error,403,HTTP 403,2026-10-21T14:08:14Z
+channel,CCTV 4K,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CCTV%204K&src=aHR0cDovLzY3LjIyMC43MS4xOTk6MjM0Ny9saXZlaHR0cHBsYXk/Y2hhbm5lbF9pZD0zMDAyOQ==,http_error,403,HTTP 403,2026-10-21T14:08:12Z
+channel,CCTV 4国际,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CCTV%204%E5%9B%BD%E9%99%85&src=aHR0cHM6Ly9oYzlsYnk5Ynp3OHpjYXIud2NldHYuY29tL2hscy93Y2V0djMxOC5tM3U4,http_error,403,HTTP 403,2026-10-21T14:08:14Z
+channel,CCTV-01咪咕,http://rihou.cc:555/tv/[mg]CCTV-01$IPV4•线路1,http_error,,<urlopen error timed out>,2026-10-21T14:06:40Z
+channel,CCTV-02咪咕,http://rihou.cc:555/tv/[mg]CCTV-02$IPV4•线路1,http_error,,<urlopen error timed out>,2026-10-21T14:06:40Z
+channel,CCTV-03咪咕,http://rihou.cc:555/tv/[mg]CCTV-03$IPV4•线路1,http_error,,<urlopen error timed out>,2026-10-21T14:06:46Z
+channel,CCTV-04咪咕,http://rihou.cc:555/tv/[mg]CCTV-04$IPV4•线路1,http_error,,<urlopen error timed out>,2026-10-21T14:06:46Z
+channel,CCTV-05咪咕,http://rihou.cc:555/tv/[mg]CCTV-05$IPV4•线路1,http_error,,<urlopen error timed out>,2026-10-21T14:06:46Z
+channel,CCTV-06咪咕,http://rihou.cc:555/tv/[mg]CCTV-06$IPV4•线路1,http_error,,<urlopen error timed out>,2026-10-21T14:06:46Z
+channel,CCTV-07咪咕,http://rihou.cc:555/tv/[mg]CCTV-07$IPV4•线路1,http_error,,<urlopen error timed out>,2026-10-21T14:06:46Z
+channel,CCTV-08咪咕,http://rihou.cc:555/tv/[mg]CCTV-08$IPV4•线路1,http_error,,<urlopen error timed out>,2026-10-21T14:06:46Z
+channel,CCTV-09咪咕,http://rihou.cc:555/tv/[mg]CCTV-09$IPV4•线路1,http_error,,<urlopen error timed out>,2026-10-21T14:06:46Z
+channel,CCTV-1 综合,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CCTV-1%20%E7%BB%BC%E5%90%88&src=aHR0cDovLzM4Ljc1LjEzNi4xMzc6OTgvZ3NsYi9kc2RxYnYvY2N0djFoZC5tM3U4P2F1dGg9dGVzdDIwMjUxMDA5,http_error,403,HTTP 403,2026-10-21T14:08:14Z
+channel,CCTV-10 科教,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CCTV-10%20%E7%A7%91%E6%95%99&src=aHR0cDovLzM4Ljc1LjEzNi4xMzc6OTgvZ3NsYi9kc2RxYnYvY2N0djEwaGQubTN1OD9hdXRoPXRlc3QyMDI1MTAwOQ==,http_error,403,HTTP 403,2026-10-21T14:08:15Z
+channel,CCTV-10咪咕,http://rihou.cc:555/tv/[mg]CCTV-10$IPV4•线路1,http_error,,<urlopen error timed out>,2026-10-21T14:06:46Z
+channel,CCTV-10科教,http://m.061899.xyz/mg/cctv10,http_error,,Remote end closed connection without response,2026-10-21T14:08:18Z
+channel,CCTV-11 戏曲,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CCTV-11%20%E6%88%8F%E6%9B%B2&src=aHR0cDovLzM4Ljc1LjEzNi4xMzc6OTgvZ3NsYi9kc2RxYnYvY2N0djExaGQubTN1OD9hdXRoPXRlc3QyMDI1MTAwOQ==,http_error,403,HTTP 403,2026-10-21T14:08:15Z
+channel,CCTV-11咪咕,http://rihou.cc:555/tv/[mg]CCTV-11$IPV4•线路1,http_error,,<urlopen error timed out>,2026-10-21T14:06:50Z
+channel,CCTV-11戏曲,http://m.061899.xyz/mg/cctv11,http_error,,Remote end closed connection without response,2026-10-21T14:08:19Z
+channel,CCTV-12咪咕,http://rihou.cc:555/tv/[mg]CCTV-12$IPV4•线路1,http_error,,<urlopen error timed out>,2026-10-21T14:06:50Z
+channel,CCTV-12社会与法,http://m.061899.xyz/mg/cctv12,http_error,,Remote end closed connection without response,2026-10-21T14:08:20Z
+channel,CCTV-13 新闻,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CCTV-13%20%E6%96%B0%E9%97%BB&src=aHR0cDovLzM4Ljc1LjEzNi4xMzc6OTgvZ3NsYi9kc2RxYnYvY2N0djEzaGQubTN1OD9hdXRoPXRlc3QyMDI1MTAwOQ==,http_error,403,HTTP 403,2026-10-21T14:08:15Z
+channel,CCTV-13HD,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CCTV-13HD&src=aHR0cDovLzEwNy4xNTAuNjAuMTIyL2xpdmUvY2N0djEzaGQubTN1OA==,http_error,403,HTTP 403,2026-10-21T14:08:15Z
+channel,CCTV-13咪咕,http://rihou.cc:555/tv/[mg]CCTV-13$IPV4•线路1,http_error,,<urlopen error timed out>,2026-10-21T14:06:51Z
+channel,CCTV-13新闻,http://m.061899.xyz/mg/cctv13,http_error,,Remote end closed connection without response,2026-10-21T14:08:20Z
+channel,CCTV-14 少儿,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CCTV-14%20%E5%B0%91%E5%84%BF&src=aHR0cDovLzM4Ljc1LjEzNi4xMzc6OTgvZ3NsYi9kc2RxYnYvY2N0djE0aGQubTN1OD9hdXRoPXRlc3QyMDI1MTAwOQ==,http_error,403,HTTP 403,2026-10-21T14:08:15Z
+channel,CCTV-14咪咕,http://rihou.cc:555/tv/[mg]CCTV-14$IPV4•线路1,http_error,,<urlopen error timed out>,2026-10-21T14:06:51Z
+channel,CCTV-14少儿,http://m.061899.xyz/mg/cctv14,http_error,,Remote end closed connection without response,2026-10-21T14:08:20Z
+channel,CCTV-15 音乐,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CCTV-15%20%E9%9F%B3%E4%B9%90&src=aHR0cDovLzM4Ljc1LjEzNi4xMzc6OTgvZ3NsYi9kc2RxYnYvY2N0djE1aGQubTN1OD9hdXRoPXRlc3QyMDI1MTAwOQ==,http_error,403,HTTP 403,2026-10-21T14:08:15Z
+channel,CCTV-15HD,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CCTV-15HD&src=aHR0cDovLzEwNy4xNTAuNjAuMTIyL2xpdmUvY2N0djE1aGQubTN1OA==,http_error,403,HTTP 403,2026-10-21T14:08:15Z
+channel,CCTV-15咪咕,http://rihou.cc:555/tv/[mg]CCTV-15$IPV4•线路1,http_error,,<urlopen error timed out>,2026-10-21T14:06:53Z
+channel,CCTV-15音乐,http://m.061899.xyz/mg/cctv15,http_error,,Remote end closed connection without response,2026-10-21T14:08:21Z
+channel,CCTV-16 奥林匹克,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CCTV-16%20%E5%A5%A5%E6%9E%97%E5%8C%B9%E5%85%8B&src=aHR0cDovLzM4Ljc1LjEzNi4xMzc6OTgvZ3NsYi9kc2RxYnYvY2N0djE2aGQubTN1OD9hdXRoPXRlc3QyMDI1MTAwOQ==,http_error,403,HTTP 403,2026-10-21T14:08:15Z
+channel,CCTV-16HD,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CCTV-16HD&src=aHR0cDovLzEwNy4xNTAuNjAuMTIyL2xpdmUvY2N0djE2aGQubTN1OA==,http_error,403,HTTP 403,2026-10-21T14:08:15Z
+channel,CCTV-16奥运,http://m.061899.xyz/mg/cctv16,http_error,,Remote end closed connection without response,2026-10-21T14:08:21Z
+channel,CCTV-17HD,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CCTV-17HD&src=aHR0cDovLzEwNy4xNTAuNjAuMTIyL2xpdmUvY2N0djE3aGQubTN1OA==,http_error,403,HTTP 403,2026-10-21T14:08:16Z
+channel,CCTV-17农业农村,http://m.061899.xyz/mg/cctv17,http_error,,Remote end closed connection without response,2026-10-21T14:08:21Z
+channel,CCTV-17咪咕,http://rihou.cc:555/tv/[mg]CCTV-17$IPV4•线路1,http_error,,<urlopen error timed out>,2026-10-21T14:07:10Z
+channel,CCTV-1综合,http://m.061899.xyz/mg/cctv1,http_error,,Remote end closed connection without response,2026-10-21T14:08:16Z
+channel,CCTV-2 财经,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CCTV-2%20%E8%B4%A2%E7%BB%8F&src=aHR0cDovLzM4Ljc1LjEzNi4xMzc6OTgvZ3NsYi9kc2RxYnYvY2N0djJoZC5tM3U4P2F1dGg9dGVzdDIwMjUxMDA5,http_error,403,HTTP 403,2026-10-21T14:08:14Z
+channel,CCTV-2财经,http://m.061899.xyz/mg/cctv2,http_error,,Remote end closed connection without response,2026-10-21T14:08:16Z
+channel,CCTV-3 综艺,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CCTV-3%20%E7%BB%BC%E8%89%BA&src=aHR0cDovLzM4Ljc1LjEzNi4xMzc6OTgvZ3NsYi9kc2RxYnYvY2N0djNoZC5tM3U4P2F1dGg9dGVzdDIwMjUxMDA5,http_error,403,HTTP 403,2026-10-21T14:08:14Z
+channel,CCTV-3综艺,http://m.061899.xyz/mg/cctv3,http_error,,Remote end closed connection without response,2026-10-21T14:08:16Z
+channel,CCTV-4 中文国际,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CCTV-4%20%E4%B8%AD%E6%96%87%E5%9B%BD%E9%99%85&src=aHR0cDovLzM4Ljc1LjEzNi4xMzc6OTgvZ3NsYi9kc2RxYnYvY2N0djRoZC5tM3U4P2F1dGg9dGVzdDIwMjUxMDA5,http_error,403,HTTP 403,2026-10-21T14:08:15Z
+channel,CCTV-4中文国际,http://m.061899.xyz/mg/cctv4,http_error,,Remote end closed connection without response,2026-10-21T14:08:16Z
+channel,CCTV-4欧洲,http://m.061899.xyz/mg/cctv4o,http_error,,Remote end closed connection without response,2026-10-21T14:08:16Z
+channel,CCTV-4美洲,http://m.061899.xyz/mg/cctv4m,http_error,,Remote end closed connection without response,2026-10-21T14:08:16Z
+channel,CCTV-5 体育,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CCTV-5%20%E4%BD%93%E8%82%B2&src=aHR0cDovLzM4Ljc1LjEzNi4xMzc6OTgvZ3NsYi9kc2RxYnYvY2N0djVwLm0zdTg/YXV0aD10ZXN0MjAyNTEwMDk=,http_error,403,HTTP 403,2026-10-21T14:08:15Z
+channel,CCTV-5+HD,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CCTV-5%2BHD&src=aHR0cDovLzEwNy4xNTAuNjAuMTIyL2xpdmUvY2N0djVwLm0zdTg=,http_error,403,HTTP 403,2026-10-21T14:08:15Z
+channel,CCTV-5+体育赛事,http://m.061899.xyz/mg/cctv5p,http_error,,Remote end closed connection without response,2026-10-21T14:08:17Z
+channel,CCTV-5+体育赛事,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CCTV-5%2B%E4%BD%93%E8%82%B2%E8%B5%9B%E4%BA%8B&src=aHR0cDovLzYzLjE0MS4yMzAuMTc4OjgyL2dzbGIvemJkcTUubTN1OD9pZD1jY3R2NXA=,http_error,403,HTTP 403,2026-10-21T14:08:15Z
+channel,CCTV-5+咪咕,http://rihou.cc:555/tv/[mg]CCTV-5p$IPV4•线路1,http_error,,<urlopen error timed out>,2026-10-21T14:06:46Z
+channel,CCTV-5HD,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CCTV-5HD&src=aHR0cDovLzEwNy4xNTAuNjAuMTIyL2xpdmUvY2N0djVoZC5tM3U4,http_error,403,HTTP 403,2026-10-21T14:08:15Z
+channel,CCTV-6 电影,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CCTV-6%20%E7%94%B5%E5%BD%B1&src=aHR0cDovLzM4Ljc1LjEzNi4xMzc6OTgvZ3NsYi9kc2RxYnYvY2N0djZoZC5tM3U4P2F1dGg9dGVzdDIwMjUxMDA5,http_error,403,HTTP 403,2026-10-21T14:08:15Z
+channel,CCTV-6电影,http://m.061899.xyz/mg/cctv6,http_error,,Remote end closed connection without response,2026-10-21T14:08:17Z
+channel,CCTV-7 国防军事,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CCTV-7%20%E5%9B%BD%E9%98%B2%E5%86%9B%E4%BA%8B&src=aHR0cDovLzM4Ljc1LjEzNi4xMzc6OTgvZ3NsYi9kc2RxYnYvY2N0djdoZC5tM3U4P2F1dGg9dGVzdDIwMjUxMDA5,http_error,403,HTTP 403,2026-10-21T14:08:15Z
+channel,CCTV-7国防军事,http://m.061899.xyz/mg/cctv7,http_error,,Remote end closed connection without response,2026-10-21T14:08:18Z
+channel,CCTV-8 电视剧,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CCTV-8%20%E7%94%B5%E8%A7%86%E5%89%A7&src=aHR0cDovLzM4Ljc1LjEzNi4xMzc6OTgvZ3NsYi9kc2RxYnYvY2N0djhoZC5tM3U4P2F1dGg9dGVzdDIwMjUxMDA5,http_error,403,HTTP 403,2026-10-21T14:08:15Z
+channel,CCTV-8电视剧,http://m.061899.xyz/mg/cctv8,http_error,,Remote end closed connection without response,2026-10-21T14:08:18Z
+channel,CCTV-9纪录,http://m.061899.xyz/mg/cctv9,http_error,,Remote end closed connection without response,2026-10-21T14:08:18Z
+channel,CCTV-世界地理,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CCTV-%E4%B8%96%E7%95%8C%E5%9C%B0%E7%90%86&src=aHR0cDovLzM4Ljc1LjEzNi4xMzc6OTgvZ3NsYi9kc2RxcHViL3NqZGwubTN1OD9hdXRoPXRlc3RwdWI=,http_error,403,HTTP 403,2026-10-21T14:08:16Z
+channel,CCTV-兵器科技,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CCTV-%E5%85%B5%E5%99%A8%E7%A7%91%E6%8A%80&src=aHR0cDovLzM4Ljc1LjEzNi4xMzc6OTgvZ3NsYi9kc2RxcHViL2dmanMubTN1OD9hdXRoPXRlc3RwdWI=,http_error,403,HTTP 403,2026-10-21T14:08:16Z
+channel,CCTV-卫生健康,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CCTV-%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7&src=aHR0cDovLzEwNy4xNTAuNjAuMTIyL2xpdmUvd3Nqay5tM3U4,http_error,403,HTTP 403,2026-10-21T14:08:14Z
+channel,CCTV-央视台球,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CCTV-%E5%A4%AE%E8%A7%86%E5%8F%B0%E7%90%83&src=aHR0cDovLzM4Ljc1LjEzNi4xMzc6OTgvZ3NsYi9kc2RxcHViL3lzdHEubTN1OD9hdXRoPXRlc3RwdWI=,http_error,403,HTTP 403,2026-10-21T14:08:16Z
+channel,CCTV-央视文化精品,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CCTV-%E5%A4%AE%E8%A7%86%E6%96%87%E5%8C%96%E7%B2%BE%E5%93%81&src=aHR0cDovLzEwNy4xNTAuNjAuMTIyL2xpdmUveXNqcC5tM3U4,http_error,403,HTTP 403,2026-10-21T14:08:14Z
+channel,CCTV-女性时尚,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CCTV-%E5%A5%B3%E6%80%A7%E6%97%B6%E5%B0%9A&src=aHR0cDovLzM4Ljc1LjEzNi4xMzc6OTgvZ3NsYi9kc2RxcHViL254c3MubTN1OD9hdXRoPXRlc3RwdWI=,http_error,403,HTTP 403,2026-10-21T14:08:16Z
+channel,CCTV-怀旧剧场,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CCTV-%E6%80%80%E6%97%A7%E5%89%A7%E5%9C%BA&src=aHR0cDovLzM4Ljc1LjEzNi4xMzc6OTgvZ3NsYi9kc2RxcHViL2hqamMubTN1OD9hdXRoPXRlc3RwdWI=,http_error,403,HTTP 403,2026-10-21T14:08:16Z
+channel,CCTV-电视指南,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CCTV-%E7%94%B5%E8%A7%86%E6%8C%87%E5%8D%97&src=aHR0cDovLzM4Ljc1LjEzNi4xMzc6OTgvZ3NsYi9kc2RxcHViL2Rzem4ubTN1OD9hdXRoPXRlc3RwdWI=,http_error,403,HTTP 403,2026-10-21T14:08:16Z
+channel,CCTV-第一剧场,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CCTV-%E7%AC%AC%E4%B8%80%E5%89%A7%E5%9C%BA&src=aHR0cDovLzM4Ljc1LjEzNi4xMzc6OTgvZ3NsYi9kc2RxcHViL2R5amMubTN1OD9hdXRoPXRlc3RwdWI=,http_error,403,HTTP 403,2026-10-21T14:08:16Z
+channel,CCTV-风云剧场,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CCTV-%E9%A3%8E%E4%BA%91%E5%89%A7%E5%9C%BA&src=aHR0cDovLzM4Ljc1LjEzNi4xMzc6OTgvZ3NsYi9kc2RxcHViL2Z5amMubTN1OD9hdXRoPXRlc3RwdWI=,http_error,403,HTTP 403,2026-10-21T14:08:16Z
+channel,CCTV1,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CCTV1&src=aHR0cDovLzM4Ljc1LjEzNi4xMzc6OTgvZ3NsYi9kc2RxcHViL2NjdHYxaGQubTN1OD9hdXRoPXRlc3RwdWI=,http_error,403,HTTP 403,2026-10-21T14:08:14Z
+channel,CCTV12社会与法,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CCTV12%E7%A4%BE%E4%BC%9A%E4%B8%8E%E6%B3%95&src=aHR0cDovLzExMi4xMjMuMjQzLjM3OjUwMDg1L3RzZmlsZS9saXZlLzAwMTNfMS5tM3U4,http_error,403,HTTP 403,2026-10-21T14:08:15Z
+channel,CCTV12社会与法,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CCTV12%E7%A4%BE%E4%BC%9A%E4%B8%8E%E6%B3%95&src=aHR0cDovLzc0LjkxLjI2LjIxODo4Mi9saXZlL2NjdHYxMmhkLm0zdTg=,http_error,403,HTTP 403,2026-10-21T14:08:15Z
+channel,CCTV13新闻,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CCTV13%E6%96%B0%E9%97%BB&src=aHR0cDovLzM5LjE1Mi4xMDMuMTc6ODA4OS90c2ZpbGUvbGl2ZS8xMDEyXzEubTN1OA==,http_error,403,HTTP 403,2026-10-21T14:08:15Z
+channel,CCTV13新闻,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CCTV13%E6%96%B0%E9%97%BB&src=aHR0cDovLzc0LjkxLjI2LjIxODo4Mi9saXZlL2NjdHYxM2hkLm0zdTg=,http_error,403,HTTP 403,2026-10-21T14:08:15Z
+channel,CCTV14少儿,http://iptv.4666888.xyz/iptv2A.php?id=12,http_error,,<urlopen error timed out>,2026-10-21T14:07:41Z
+channel,CCTV16奥林匹克,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CCTV16%E5%A5%A5%E6%9E%97%E5%8C%B9%E5%85%8B&src=aHR0cDovLzc0LjkxLjI2LjIxODo4Mi9saXZlL2NjdHYxNmhkLm0zdTg=,http_error,403,HTTP 403,2026-10-21T14:08:15Z
+channel,CCTV17农业农村,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CCTV17%E5%86%9C%E4%B8%9A%E5%86%9C%E6%9D%91&src=aHR0cDovLzc0LjkxLjI2LjIxODo4Mi9saXZlL2NjdHYxN2hkLm0zdTg=,http_error,403,HTTP 403,2026-10-21T14:08:16Z
+channel,CCTV1综合,http://iptv.4666888.xyz/iptv2A.php?id=7,http_error,,<urlopen error timed out>,2026-10-21T14:07:40Z
+channel,CCTV2,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CCTV2&src=aHR0cDovLzM4Ljc1LjEzNi4xMzc6OTgvZ3NsYi9kc2RxcHViL2NjdHYyaGQubTN1OD9hdXRoPXRlc3RwdWI=,http_error,403,HTTP 403,2026-10-21T14:08:14Z
+channel,CCTV2财经,http://iptv.4666888.xyz/iptv2A.php?id=8,http_error,,<urlopen error timed out>,2026-10-21T14:07:40Z
+channel,CCTV3,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CCTV3&src=aHR0cDovLzM4Ljc1LjEzNi4xMzc6OTgvZ3NsYi9kc2RxcHViL2NjdHYzaGQubTN1OD9hdXRoPXRlc3RwdWI=,http_error,403,HTTP 403,2026-10-21T14:08:14Z
+channel,CCTV3综艺,http://iptv.4666888.xyz/iptv2A.php?id=9,http_error,,<urlopen error timed out>,2026-10-21T14:07:41Z
+channel,CCTV4,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CCTV4&src=aHR0cDovLzM4Ljc1LjEzNi4xMzc6OTgvZ3NsYi9kc2RxcHViL2NjdHY0aGQubTN1OD9hdXRoPXRlc3RwdWI=,http_error,403,HTTP 403,2026-10-21T14:08:14Z
+channel,CCTV5,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CCTV5&src=aHR0cDovLzM4Ljc1LjEzNi4xMzc6OTgvZ3NsYi9kc2RxcHViL2NjdHY1aGQubTN1OD9hdXRoPXRlc3RwdWI=,http_error,403,HTTP 403,2026-10-21T14:08:15Z
+channel,CCTV5+体育赛事,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CCTV5%2B%E4%BD%93%E8%82%B2%E8%B5%9B%E4%BA%8B&src=aHR0cDovLzc0LjkxLjI2LjIxODo4Mi9saXZlL2NjdHY1cC5tM3U4,http_error,403,HTTP 403,2026-10-21T14:08:15Z
+channel,CCTV6,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CCTV6&src=aHR0cDovLzM4Ljc1LjEzNi4xMzc6OTgvZ3NsYi9kc2RxcHViL2NjdHY2aGQubTN1OD9hdXRoPXRlc3RwdWI=,http_error,403,HTTP 403,2026-10-21T14:08:15Z
+channel,CCTV7,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CCTV7&src=aHR0cDovLzM4Ljc1LjEzNi4xMzc6OTgvZ3NsYi9kc2RxcHViL2NjdHY3aGQubTN1OD9hdXRoPXRlc3RwdWI=,http_error,403,HTTP 403,2026-10-21T14:08:15Z
+channel,CCTV8,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CCTV8&src=aHR0cDovLzM4Ljc1LjEzNi4xMzc6OTgvZ3NsYi9kc2RxcHViL2NjdHY4aGQubTN1OD9hdXRoPXRlc3RwdWI=,http_error,403,HTTP 403,2026-10-21T14:08:15Z
+channel,CCTV9 1,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CCTV9&src=aHR0cDovLzM4Ljc1LjEzNi4xMzc6OTgvZ3NsYi9kc2RxcHViL2NjdHY5aGQubTN1OD9hdXRoPXRlc3RwdWI=,http_error,403,HTTP 403,2026-10-21T14:08:04Z
+channel,CCTV世界地理,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CCTV%E4%B8%96%E7%95%8C%E5%9C%B0%E7%90%86&src=aHR0cDovL2htZnMuZjMzMjIubmV0OjMzODgvaGxzLzI4L2luZGV4Lm0zdTg=,http_error,403,HTTP 403,2026-10-21T14:08:16Z
+channel,CCTV中学生,http://m.061899.xyz/mg/zxs,http_error,,Remote end closed connection without response,2026-10-21T14:08:22Z
+channel,CCTV俄语,http://m.061899.xyz/mg/cgtnr,http_error,,Remote end closed connection without response,2026-10-21T14:08:24Z
+channel,CCTV发现之旅,http://m.061899.xyz/mg/fxzl,http_error,,Remote end closed connection without response,2026-10-21T14:08:22Z
+channel,CCTV法语,http://m.061899.xyz/mg/cgtnf,http_error,,Remote end closed connection without response,2026-10-21T14:08:23Z
+channel,CCTV老故事,http://m.061899.xyz/mg/lgs,http_error,,Remote end closed connection without response,2026-10-21T14:08:23Z
+channel,CCTV西班牙语,http://m.061899.xyz/mg/cgtne,http_error,,Remote end closed connection without response,2026-10-21T14:08:23Z
+channel,CCTV阿拉伯语,http://m.061899.xyz/mg/cgtna,http_error,,Remote end closed connection without response,2026-10-21T14:08:23Z
+channel,CETV 1 中国教育,http://m.061899.xyz/mg/cetv1,http_error,,Remote end closed connection without response,2026-10-21T14:08:24Z
+channel,CETV 2 中国教育,http://m.061899.xyz/mg/cetv2,http_error,,Remote end closed connection without response,2026-10-21T14:08:24Z
+channel,CETV 4 中国教育,http://m.061899.xyz/mg/cetv4,http_error,,Remote end closed connection without response,2026-10-21T14:08:25Z
+channel,CGTN,http://m.061899.xyz/mg/cgtn,http_error,,Remote end closed connection without response,2026-10-21T14:08:23Z
+channel,CGTN Documentary,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CGTN%20Documentary&src=aHR0cHM6Ly9hbWcwMDQwNS1yYWt1dGVudHYtY2d0bmRvY3VtZW50YXJ5LXJha3V0ZW4tMHFsOGouYW1hZ2kudHYvbWFzdGVyNDgwcC5tM3U4,http_error,403,HTTP 403,2026-10-21T14:08:14Z
+channel,CGTN Espanol,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CGTN%20Espanol&src=aHR0cHM6Ly9lc3Bhbm9sLWxpdmV3cy5jZ3RuLmNvbS9obHMvTFN2ZU9HQmFCdzQxRWE3dWtrVkFVZEtRMjIwODAyTFNUZXh1NnhBdUZIOFZaTkJMRTFaTkVhMjIwODAyY2QvcGxheWxpc3QubTN1OA==,http_error,403,HTTP 403,2026-10-21T14:08:14Z
+channel,CGTN JP,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CGTN%20JP&src=aHR0cHM6Ly9kMnA0bXJjd2w2bHk0LmNsb3VkZnJvbnQubmV0L291dC92MS84ZDUwZjY5ZmRiYmY0MTFhOGQzMDI3NDNlNDI2MzcxNi9DR05XZWJMaXZlSlBfMS5tM3U4,http_error,403,HTTP 403,2026-10-21T14:08:14Z
+channel,CGTN俄语,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CGTN%E4%BF%84%E8%AF%AD&src=aHR0cHM6Ly8wNDcyLm9yZy9obHMvY2d0bmUubTN1OA==,http_error,403,HTTP 403,2026-10-21T14:08:14Z
+channel,CGTN法语,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CGTN%E6%B3%95%E8%AF%AD&src=aHR0cHM6Ly8wNDcyLm9yZy9obHMvY2d0bmYubTN1OA==,http_error,403,HTTP 403,2026-10-21T14:08:14Z
+channel,CGTN纪录,http://m.061899.xyz/mg/cgtnjl,http_error,,Remote end closed connection without response,2026-10-21T14:08:23Z
+channel,CGTN英语,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CGTN%E8%8B%B1%E8%AF%AD&src=aHR0cHM6Ly8wNDcyLm9yZy9obHMvY2d0bi5tM3U4,http_error,403,HTTP 403,2026-10-21T14:08:14Z
+channel,CGTN西语,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CGTN%E8%A5%BF%E8%AF%AD&src=aHR0cHM6Ly8wNDcyLm9yZy9obHMvY2d0bngubTN1OA==,http_error,403,HTTP 403,2026-10-21T14:08:14Z
+channel,CGTN记录,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CGTN%E8%AE%B0%E5%BD%95&src=aHR0cHM6Ly8wNDcyLm9yZy9obHMvY2d0bmQubTN1OA==,http_error,403,HTTP 403,2026-10-21T14:08:14Z
+channel,CGTN阿语,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CGTN%E9%98%BF%E8%AF%AD&src=aHR0cHM6Ly8wNDcyLm9yZy9obHMvY2d0bmEubTN1OA==,http_error,403,HTTP 403,2026-10-21T14:08:14Z
+channel,CGT法语咪咕,http://rihou.cc:555/tv/[mg]CGTN-法$IPV4•线路1,http_error,,<urlopen error timed out>,2026-10-21T14:07:16Z
+channel,CGT西语咪咕,http://rihou.cc:555/tv/[mg]CGTN-西$IPV4•线路1,http_error,,<urlopen error timed out>,2026-10-21T14:07:10Z
+channel,CGT阿语咪咕,http://rihou.cc:555/tv/[mg]CGTN-阿$IPV4•线路1,http_error,,<urlopen error timed out>,2026-10-21T14:07:16Z
+channel,CH 5,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CH5&src=aHR0cDovL2NkbjYuMTYzMTg5Lnh5ei8xNjMxODkvY2g1,http_error,403,HTTP 403,2026-10-21T14:08:04Z
+channel,CH 8,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=CH8&src=aHR0cDovL2NkbjYuMTYzMTg5Lnh5ei8xNjMxODkvY2g4,http_error,403,HTTP 403,2026-10-21T14:08:04Z
+channel,CH5,https://cdn6.163189.xyz/163189/ch5,http_error,,<urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1016)>,2026-10-21T14:05:42Z
+channel,CH5综合,http://rihou.cc:555/tv/[Pd]CH5综合,http_error,,<urlopen error timed out>,2026-10-21T14:05:45Z
+channel,CH8,https://cdn6.163189.xyz/163189/ch8,http_error,,<urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1016)>,2026-10-21T14:05:42Z
+channel,CH8综合,http://rihou.cc:555/tv/[Pd]CH8综合,http_error,,<urlopen error timed out>,2026-10-21T14:05:45Z
+channel,CHC动作电影,http://m.061899.xyz/mg/dzdy,http_error,,Remote end closed connection without response,2026-10-21T14:08:22Z
+channel,CHC家庭影院,http://m.061899.xyz/mg/jtyy,http_error,,Remote end closed connection without response,2026-10-21T14:08:21Z
+channel,CHC影迷电影,http://m.061899.xyz/mg/ymdy,http_error,,Remote end closed connection without response,2026-10-21T14:08:22Z
+channel,CHU,https://cdn6.163189.xyz/163189/chu,http_error,,<urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1016)>,2026-10-21T14:05:42Z
+channel,CHU综合,http://rihou.cc:555/tv/[Pd]CHU综合,http_error,,<urlopen error timed out>,2026-10-21T14:05:45Z
+channel,CNA,https://stream1.freetv.fun/206e3b04525e02c7c1afa88cbcb2bd2905209075dce5f44f41f4ca9e46ce9b76.m3u8,http_error,,The read operation timed out,2026-10-21T14:07:20Z
+channel,HOY 77,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=HOY%2077&src=aHR0cDovL2Nkbi52ZXJ5ZmFzdC5maWxlZ2Vhci1zZy5tZS9saXZlL2hveS9zdHJlYW0ubTN1OA==,http_error,403,HTTP 403,2026-10-21T14:08:09Z
+channel,HOY TV,http://push.cdn1.hls123.de:8080/streams/dguce4v9b69/index.m3u8,http_error,,<urlopen error [Errno -2] Name or service not known>,2026-10-21T14:07:23Z
+channel,HOY TV,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=HOY%20TV&src=aHR0cDovL3BocC5qZHNoaXBpbi5jb206ODg4MC9UVk9EL2lwdHYucGhwP2lkPWhveXR2,http_error,403,HTTP 403,2026-10-21T14:08:09Z
+channel,HOY TV,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=HOY%20TV&src=aHR0cDovL3BocC5qZHNoaXBpbi5jb20vVFZPRC9pcHR2LnBocD9pZD1ob3l0dg==,http_error,403,HTTP 403,2026-10-21T14:08:09Z
+channel,HOY TV[HOY TV],https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=HOY%20TV%5BHOY%20TV%5D&src=aHR0cDovLzY3LjIyMC43MS4xOTk6MjM0Ny9saXZlaHR0cHBsYXk/Y2hhbm5lbF9pZD0yMDE1Mg==,http_error,403,HTTP 403,2026-10-21T14:08:12Z
+channel,HOY77,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=HOY77&src=aHR0cDovL2lwdHYuNDY2Njg4OC54eXovaXB0djJBLnBocD9pZD0zNQ==,http_error,403,HTTP 403,2026-10-21T14:08:12Z
+channel,HOY77,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=HOY77&src=aHR0cDovL3IuamRzaGlwaW4uY29tL3NGdzRT,http_error,403,HTTP 403,2026-10-21T14:08:13Z
+channel,HOY78,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=HOY78&src=aHR0cDovL2lwdHYuNDY2Njg4OC54eXovaXB0djJBLnBocD9pZD0zMQ==,http_error,403,HTTP 403,2026-10-21T14:08:12Z
+channel,HOY资讯台,http://push.cdn1.hls123.de:8080/streams/xeblk620c0e/index.m3u8,http_error,,<urlopen error [Errno -2] Name or service not known>,2026-10-21T14:07:23Z
+channel,J1,https://6.cdn.loc.cc/163189.php?id=j1,http_error,,<urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1016)>,2026-10-21T14:05:43Z
+channel,MYTV黃金翡翠,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=MYTV%E9%BB%83%E9%87%91%E7%BF%A1%E7%BF%A0&src=aHR0cDovL2lwdHYuNDY2Njg4OC54eXovaXB0djJBLnBocD9pZD0zMg==,http_error,403,HTTP 403,2026-10-21T14:08:04Z
+channel,Mytv 2台,http://iptv.4666888.xyz/iptv2A.php?id=32,http_error,,<urlopen error timed out>,2026-10-21T14:07:24Z
+channel,NOW新闻台,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=NOW%E6%96%B0%E9%97%BB%E5%8F%B0&src=aHR0cHM6Ly9jZG4uMTYzMTg5Lnh5ei8xNjMxODkvbm93,http_error,403,HTTP 403,2026-10-21T14:08:08Z
+channel,Now新闻台,http://push.cdn1.hls123.de:8080/streams/zed7kdzyh1/index.m3u8,http_error,,<urlopen error [Errno -2] Name or service not known>,2026-10-21T14:07:23Z
+channel,Plus综合Pdtv,http://rihou.cc:555/tv/[Pd]Plus综合,http_error,,<urlopen error timed out>,2026-10-21T14:05:49Z
+channel,RTHK31,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=RTHK31&src=aHR0cDovL2lwdHYuNDY2Njg4OC54eXovaXB0djJBLnBocD9pZD0yMw==,http_error,403,HTTP 403,2026-10-21T14:08:13Z
+channel,RTHK31,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=RTHK31&src=aHR0cDovL3BocC5qZHNoaXBpbi5jb206ODg4MC9UVk9EL2lwdHYucGhwP2lkPXJ0aGszMQ==,http_error,403,HTTP 403,2026-10-21T14:08:13Z
+channel,RTHK32,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=RTHK32&src=aHR0cDovL3BocC5qZHNoaXBpbi5jb206ODg4MC9UVk9EL2lwdHYucGhwP2lkPXJ0aGszMg==,http_error,403,HTTP 403,2026-10-21T14:08:13Z
+channel,RTHK33,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=RTHK33&src=aHR0cHM6Ly9saXZlLmFzdHJhZGFteS5jb20vaGszMy9pbmRleC5tM3U4,http_error,403,HTTP 403,2026-10-21T14:08:13Z
+channel,RTHK34,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=RTHK34&src=aHR0cHM6Ly9uZXdzLmNndG4uY29tL3Jlc291cmNlL2xpdmUvZG9jdW1lbnQvY2d0bi1kb2MubTN1OA==,http_error,403,HTTP 403,2026-10-21T14:08:13Z
+channel,TVB,https://6.cdn.loc.cc/163189.php?id=tvb1,http_error,,<urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1016)>,2026-10-21T14:05:43Z
+channel,TVB J1,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=TVB%20J1&src=aHR0cDovL3BocC5qZHNoaXBpbi5jb20vVFZPRC9pcHR2LnBocD9pZD1qMQ==,http_error,403,HTTP 403,2026-10-21T14:08:05Z
+channel,TVB PLUS,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=TVB%20PLUS&src=aHR0cDovL28xMS4xNjMxODkueHl6L3N0cmVhbS90dmIvdHZicC8=,http_error,403,HTTP 403,2026-10-21T14:08:09Z
+channel,TVB PLUS,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=TVB%20PLUS&src=aHR0cHM6Ly92ZG02LWh3Lm5iZ2RzeWdzLmNvbS9saXZlL2g2LTIuZmx2,http_error,403,HTTP 403,2026-10-21T14:08:09Z
+channel,TVB PLUS备3,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=TVB%20PLUS%E5%A4%873&src=aHR0cDovL3BocC5qZHNoaXBpbi5jb206ODg4MC9UVk9EL2lwdHYucGhwP2lkPXR2YnA=,http_error,403,HTTP 403,2026-10-21T14:08:09Z
+channel,TVB Plus,http://push.cdn1.hls123.de:8080/streams/gw8n98gubb4/index.m3u8,http_error,,<urlopen error [Errno -2] Name or service not known>,2026-10-21T14:07:22Z
+channel,TVB Plus,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=TVB%20Plus&src=aHR0cDovL3IuamRzaGlwaW4uY29tL05yNWpx,http_error,403,HTTP 403,2026-10-21T14:08:10Z
+channel,TVB Plus,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=TVB%20Plus&src=aHR0cDovL3IuamRzaGlwaW4uY29tL25kR2dT,http_error,403,HTTP 403,2026-10-21T14:08:10Z
+channel,TVB Plus,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=TVB%20Plus&src=aHR0cDovLzc0LjkxLjI2LjIxODo4Mi9saXZlL2oyLm0zdTg=,http_error,403,HTTP 403,2026-10-21T14:08:10Z
+channel,TVB plus,https://cdn6.163189.xyz/163189/tvbp,http_error,,<urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1016)>,2026-10-21T14:07:48Z
+channel,TVB plus 超清,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=TVB%20plus%20%E8%B6%85%E6%B8%85&src=aHR0cDovLzY3LjIyMC43MS4xOTk6MjM0Ny9saXZlaHR0cHBsYXk/Y2hhbm5lbF9pZD0zMDAyMw==,http_error,403,HTTP 403,2026-10-21T14:08:10Z
+channel,TVB1,https://cdn6.163189.xyz/163189/tvb1,http_error,,<urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1016)>,2026-10-21T14:05:40Z
+channel,TVB1,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=TVB1&src=aHR0cDovL2lwdHYuNDY2Njg4OC54eXovaXB0djJBLnBocD9pZD0yNQ==,http_error,403,HTTP 403,2026-10-21T14:08:05Z
+channel,TVBJ1,https://cdn6.163189.xyz/163189/j1,http_error,,<urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1016)>,2026-10-21T14:05:40Z
+channel,TVBJ1,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=TVBJ1&src=aHR0cDovL2lwdHYuNDY2Njg4OC54eXovaXB0djJBLnBocD9pZD0yNg==,http_error,403,HTTP 403,2026-10-21T14:08:05Z
+channel,TVB亞洲劇臺,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=TVB%E4%BA%9E%E6%B4%B2%E5%8A%87%E8%87%BA%5BTVB%20Asian%20Select%5D&src=aHR0cDovLzY3LjIyMC43MS4xOTk6MjM0Ny9saXZlaHR0cHBsYXk/Y2hhbm5lbF9pZD0xMzAyMg==,http_error,403,HTTP 403,2026-10-21T14:08:04Z
+channel,TVB娛樂新闻台,http://rihou.cc:555/tv/[PL]无线娱乐,http_error,,<urlopen error timed out>,2026-10-21T14:08:09Z
+channel,TVB娱乐新闻,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=TVB%E5%A8%B1%E4%B9%90%E6%96%B0%E9%97%BB&src=aHR0cDovL2lwdHYuNDY2Njg4OC54eXovaXB0djJBLnBocD9pZD0zNg==,http_error,403,HTTP 403,2026-10-21T14:08:07Z
+channel,TVB明珠,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=TVB%E6%98%8E%E7%8F%A0&src=aHR0cDovL2lwdHYuNDY2Njg4OC54eXovaXB0djJBLnBocD9pZD0yOQ==,http_error,403,HTTP 403,2026-10-21T14:08:11Z
+channel,TVB明珠台,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=TVB%E6%98%8E%E7%8F%A0%E5%8F%B0&src=aHR0cDovL3B1bGwtdml2ZWsuc3BlZWR3cy5jb20vbGl2ZS9hYWFtaW5nemh1LmZsdg==,http_error,403,HTTP 403,2026-10-21T14:08:11Z
+channel,TVB星河,http://push.cdn1.hls123.de:8080/streams/hbiwgswysds/index.m3u8,http_error,,<urlopen error [Errno -2] Name or service not known>,2026-10-21T14:07:21Z
+channel,TVB星河1,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=TVB%E6%98%9F%E6%B2%B3&src=aHR0cDovL28xMS4xNjMxODkueHl6L3N0cmVhbS9saXZlL3R2YnhoLw==,http_error,403,HTTP 403,2026-10-21T14:08:03Z
+channel,TVB星河2,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=TVB%E6%98%9F%E6%B2%B3&src=aHR0cDovL3IuamRzaGlwaW4uY29tL1ZvYWM0,http_error,403,HTTP 403,2026-10-21T14:08:03Z
+channel,TVB無线新聞1,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=TVB%E7%84%A1%E7%BA%BF%E6%96%B0%E8%81%9E&src=aHR0cDovL3BocC5qZHNoaXBpbi5jb20vVFZPRC9pcHR2LnBocD9pZD10dmJ4dw==,http_error,403,HTTP 403,2026-10-21T14:08:08Z
+channel,TVB無线新聞2,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=TVB%E7%84%A1%E7%BA%BF%E6%96%B0%E8%81%9E&src=aHR0cDovL3BocC5qZHNoaXBpbi5jb206ODg4MC9zbXQucGhwP2lkPWluZXdzX3R3bg==,http_error,403,HTTP 403,2026-10-21T14:08:08Z
+channel,TVB翡翠(馬來),https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=TVB%E7%BF%A1%E7%BF%A0(%E9%A6%AC%E4%BE%86)&src=aHR0cDovL2lwdHYuNDY2Njg4OC54eXovaXB0djJBLnBocD9pZD0yOA==,http_error,403,HTTP 403,2026-10-21T14:08:07Z
+channel,TVB翡翠14,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=TVB%E7%BF%A1%E7%BF%A0&src=aHR0cDovL2lwdHYuNDY2Njg4OC54eXovaXB0djJBLnBocD9pZD0zNA==,http_error,403,HTTP 403,2026-10-21T14:08:07Z
+channel,TVB翡翠6,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=TVB%E7%BF%A1%E7%BF%A0&src=aHR0cDovL3IuamRzaGlwaW4uY29tL3FyZmJn,http_error,403,HTTP 403,2026-10-21T14:08:06Z
+channel,TVB翡翠7,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=TVB%E7%BF%A1%E7%BF%A0&src=aHR0cDovL3IuamRzaGlwaW4uY29tL3FDbFFm,http_error,403,HTTP 403,2026-10-21T14:08:06Z
+channel,TVB翡翠8,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=TVB%E7%BF%A1%E7%BF%A0&src=aHR0cDovL3IuamRzaGlwaW4uY29tLzYyV003,http_error,403,HTTP 403,2026-10-21T14:08:06Z
+channel,TVB翡翠劇集,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=TVB%E7%BF%A1%E7%BF%A0%E5%8A%87%E9%9B%86&src=aHR0cDovL2lwdHYuNDY2Njg4OC54eXovaXB0djJBLnBocD9pZD0zMw==,http_error,403,HTTP 403,2026-10-21T14:08:04Z
+channel,TVB翡翠台13,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=TVB%E7%BF%A1%E7%BF%A0%E5%8F%B0&src=aHR0cDovL3B1bGwtdml2ZWsuc3BlZWR3cy5jb20vbGl2ZS9hYWFqYWRlLmZsdg==,http_error,403,HTTP 403,2026-10-21T14:08:07Z
+channel,TntSports3,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=TntSports3&src=aHR0cDovL2lwdHYuNDY2Njg4OC54eXovaXB0djJBLnBocD9pZD0z,http_error,403,HTTP 403,2026-10-21T14:08:13Z
+channel,VIUTV,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=VIUTV&src=aHR0cDovL3BocC5qZHNoaXBpbi5jb206ODg4MC9UVk9EL2lwdHYucGhwP2lkPXZpdXR2,http_error,403,HTTP 403,2026-10-21T14:08:10Z
+channel,VIUTV,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=VIUTV&src=aHR0cDovL3BocC5qZHNoaXBpbi5jb206ODg4MC9zbXQucGhwP2lkPXZpdXR2,http_error,403,HTTP 403,2026-10-21T14:08:10Z
+channel,VIUTV,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=VIUTV&src=aHR0cDovL3BocC5qZHNoaXBpbi5jb20vVFZPRC9pcHR2LnBocD9pZD12aXV0dg==,http_error,403,HTTP 403,2026-10-21T14:08:10Z
+channel,VIUTV,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=VIUTV&src=aHR0cDovL3BocC5qZHNoaXBpbi5jb20vVFZPRC9pcHR2LnBocD9pZD12aXV0djI=,http_error,403,HTTP 403,2026-10-21T14:08:10Z
+channel,VIUTV,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=VIUTV&src=aHR0cHM6Ly9jZG4uMTYzMTg5Lnh5ei8xNjMxODkvdml1,http_error,403,HTTP 403,2026-10-21T14:08:11Z
+channel,VIUTV,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=VIUTV&src=aHR0cHM6Ly9jZG4xMC4xNjMxODkueHl6L3N0cmVhbS8xNjMxODkvdml1Lw==,http_error,403,HTTP 403,2026-10-21T14:08:10Z
+channel,VIUTVSIX,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=VIUTVSIX&src=aHR0cHM6Ly9jZG4xMC4xNjMxODkueHl6L3N0cmVhbS8xNjMxODkvdml1Ni8=,http_error,403,HTTP 403,2026-10-21T14:08:10Z
+channel,ViuTV,http://push.cdn1.hls123.de:8080/streams/iewbjlpp9v/index.m3u8,http_error,,<urlopen error [Errno -2] Name or service not known>,2026-10-21T14:07:22Z
+channel,ViuTV,https://cdn.163189.xyz/163189/viu,http_error,,<urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1016)>,2026-10-21T14:05:45Z
+channel,ViuTV,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=ViuTV&src=aHR0cDovL3IuamRzaGlwaW4uY29tL1RjS3Iy,http_error,403,HTTP 403,2026-10-21T14:08:11Z
+channel,ViuTV,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=ViuTV&src=aHR0cDovL3IuamRzaGlwaW4uY29tL3ZTSnZs,http_error,403,HTTP 403,2026-10-21T14:08:10Z
+channel,ViuTV6高清[ViuTV6 HD],https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=ViuTV6%E9%AB%98%E6%B8%85%5BViuTV6%20HD%5D&src=aHR0cDovLzY3LjIyMC43MS4xOTk6MjM0Ny9saXZlaHR0cHBsYXk/Y2hhbm5lbF9pZD0yMDEzMg==,http_error,403,HTTP 403,2026-10-21T14:08:11Z
+channel,ViuTVsix,http://push.cdn1.hls123.de:8080/streams/5lthhpr4cx3/index.m3u8,http_error,,<urlopen error [Errno -2] Name or service not known>,2026-10-21T14:07:23Z
+channel,ViuTV高清[ViuTV HD],https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=ViuTV%E9%AB%98%E6%B8%85%5BViuTV%20HD%5D&src=aHR0cDovLzY3LjIyMC43MS4xOTk6MjM0Ny9saXZlaHR0cHBsYXk/Y2hhbm5lbF9pZD0yMDEzMQ==,http_error,403,HTTP 403,2026-10-21T14:08:11Z
+channel,cctv10hd,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=cctv10hd&src=aHR0cDovLzYzLjE0MS4yMzAuMTc4OjgyL2dzbGIvemJkcTUubTN1OD9pZD1jY3R2MTBoZA==,http_error,403,HTTP 403,2026-10-21T14:08:15Z
+channel,cctv13hd,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=cctv13hd&src=aHR0cDovLzYzLjE0MS4yMzAuMTc4OjgyL2dzbGIvemJkcTUubTN1OD9pZD1jY3R2MTNoZA==,http_error,403,HTTP 403,2026-10-21T14:08:15Z
+channel,cctv13md,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=cctv13md&src=aHR0cDovLzYzLjE0MS4yMzAuMTc4OjgyL2dzbGIvemJkcTUubTN1OD9pZD1jY3R2MTNtZA==,http_error,403,HTTP 403,2026-10-21T14:08:15Z
+channel,cctv14hd,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=cctv14hd&src=aHR0cDovLzYzLjE0MS4yMzAuMTc4OjgyL2dzbGIvemJkcTUubTN1OD9pZD1jY3R2MTRoZA==,http_error,403,HTTP 403,2026-10-21T14:08:15Z
+channel,cctv15hd,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=cctv15hd&src=aHR0cDovLzYzLjE0MS4yMzAuMTc4OjgyL2dzbGIvemJkcTUubTN1OD9pZD1jY3R2MTVoZA==,http_error,403,HTTP 403,2026-10-21T14:08:15Z
+channel,cctv16hd,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=cctv16hd&src=aHR0cDovLzYzLjE0MS4yMzAuMTc4OjgyL2dzbGIvemJkcTUubTN1OD9pZD1jY3R2MTZoZA==,http_error,403,HTTP 403,2026-10-21T14:08:15Z
+channel,cctv17hd,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=cctv17hd&src=aHR0cDovLzYzLjE0MS4yMzAuMTc4OjgyL2dzbGIvemJkcTUubTN1OD9pZD1jY3R2MTdoZA==,http_error,403,HTTP 403,2026-10-21T14:08:15Z
+channel,cctv5,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=cctv5&src=aHR0cHM6Ly90dHR0dHQuenB5eHhzLmNvbS9saXZldHYvaGxjYy9zdkFoZ3duSFIvc3ZBaGd3bkhSX2xpdmUubTN1OD9hdXRoX2tleT0xNzY5NzMyNDE4LTAtMC03NmYxMGQzYjU2ZTQ4MWI2NjQyMzg2NWI3N2MxMzBjZg==,http_error,403,HTTP 403,2026-10-21T14:08:14Z
+channel,cctv5+,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=cctv5%2B&src=aHR0cHM6Ly90dHR0dHQuenB5eHhzLmNvbS9saXZldHYvaGxjYy9lWVBoUlFuTmcvZVlQaFJRbk5nX2xpdmUubTN1OD9hdXRoX2tleT0xNzY5NzM0NTQ1LTAtMC1mOGZmYTY2N2ZmYjY0MDdjNTBiNGIzNDc3MTlmOTIxYQ==,http_error,403,HTTP 403,2026-10-21T14:08:14Z
+channel,cctv5hd,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=cctv5hd&src=aHR0cDovLzYzLjE0MS4yMzAuMTc4OjgyL2dzbGIvemJkcTUubTN1OD9pZD1jY3R2NWhk,http_error,403,HTTP 403,2026-10-21T14:08:15Z
+channel,tvod凤凰中文,http://php.jdshipin.com/TVOD/iptv.php?id=fhzw2,http_error,,<urlopen error [Errno -2] Name or service not known>,2026-10-21T14:08:01Z
+channel,tvod凤凰资讯,http://php.jdshipin.com/TVOD/iptv.php?id=fhzx2,http_error,,The read operation timed out,2026-10-21T14:08:01Z
+channel,tvod凤凰香港2,http://php.jdshipin.com/TVOD/iptv.php?id=fhhk2,http_error,,<urlopen error [Errno -2] Name or service not known>,2026-10-21T14:08:01Z
+channel,tvod美亚电影,http://php.jdshipin.com/TVOD/iptv.php?id=meiya,http_error,,The read operation timed out,2026-10-21T14:08:01Z
+channel,wwwe,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=wwwe&src=aHR0cDovL2lwdHYuNDY2Njg4OC54eXovaXB0djJBLnBocD9pZD01,http_error,403,HTTP 403,2026-10-21T14:08:13Z
+channel,上海东方影视,http://m.061899.xyz/mg/shys,http_error,,Remote end closed connection without response,2026-10-21T14:08:31Z
+channel,上海五星体育,http://m.061899.xyz/mg/wxty,http_error,,Remote end closed connection without response,2026-10-21T14:08:31Z
+channel,上海新闻综合,http://m.061899.xyz/mg/shxw,http_error,,Remote end closed connection without response,2026-10-21T14:08:31Z
+channel,上海第一财经,http://m.061899.xyz/mg/dycj,http_error,,Remote end closed connection without response,2026-10-21T14:08:32Z
+channel,东南卫视,http://m.061899.xyz/mg/dnws,http_error,,Remote end closed connection without response,2026-10-21T14:08:27Z
+channel,东方卫视,http://m.061899.xyz/mg/dfws,http_error,,Remote end closed connection without response,2026-10-21T14:08:25Z
+channel,东方卫视4K,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E4%B8%9C%E6%96%B9%E5%8D%AB%E8%A7%864K&src=aHR0cHM6Ly9icC1yZXNvdXJjZS1kZmwuYmVzdHYuY24vMTQ4LzMvdmlkZW8ubTN1OA==,http_error,403,HTTP 403,2026-10-21T14:08:14Z
+channel,云南卫视,http://m.061899.xyz/mg/ynws,http_error,,Remote end closed connection without response,2026-10-21T14:08:30Z
+channel,亞洲武俠台,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E4%BA%9E%E6%B4%B2%E6%AD%A6%E4%BF%A0%E5%8F%B0&src=aHR0cDovL3BocC5qZHNoaXBpbi5jb20vVFZPRC9pcHR2LnBocD9pZD15end4,http_error,403,HTTP 403,2026-10-21T14:08:10Z
+channel,八度空间,http://rihou.cc:555/tv/[Pd]八度空间,http_error,,<urlopen error timed out>,2026-10-21T14:05:45Z
+channel,八度空间,https://cdn6.163189.xyz/163189/8tv,http_error,,<urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1016)>,2026-10-21T14:05:41Z
+channel,兵团卫视,http://m.061899.xyz/mg/btws,http_error,,Remote end closed connection without response,2026-10-21T14:08:31Z
+channel,内蒙古卫视,http://m.061899.xyz/mg/nmgws,http_error,,Remote end closed connection without response,2026-10-21T14:08:28Z
+channel,凤凰中文,https://cdn6.101.qzz.io/163189/fhzw,http_error,,<urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1016)>,2026-10-21T14:07:50Z
+channel,凤凰中文,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E5%87%A4%E5%87%B0%E4%B8%AD%E6%96%87&src=aHR0cDovL3BocC5qZHNoaXBpbi5jb206ODg4MC9UVk9EL2lwdHYucGhwP2lkPWZoenc=,http_error,403,HTTP 403,2026-10-21T14:08:12Z
+channel,凤凰中文,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E5%87%A4%E5%87%B0%E4%B8%AD%E6%96%87&src=aHR0cDovL3BocC5qZHNoaXBpbi5jb20vVFZPRC9pcHR2LnBocD9pZD1maHp3Mg==,http_error,403,HTTP 403,2026-10-21T14:08:12Z
+channel,凤凰中文,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E5%87%A4%E5%87%B0%E4%B8%AD%E6%96%87&src=aHR0cDovL3IuamRzaGlwaW4uY29tL2NDQ3pX,http_error,403,HTTP 403,2026-10-21T14:08:11Z
+channel,凤凰中文,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E5%87%A4%E5%87%B0%E4%B8%AD%E6%96%87&src=aHR0cDovLzEyMi4xMTcuNzEuMTAzOjg1NzQvaHR0cC82MS4yMjIuNTMuMjUwOjgwODEvaGxzLzc1LzgxNy9jaDU5Lm0zdTg=,http_error,403,HTTP 403,2026-10-21T14:08:14Z
+channel,凤凰中文Pdtv,http://rihou.cc:555/tv/[Pd]凤凰中文,http_error,,<urlopen error timed out>,2026-10-21T14:05:50Z
+channel,凤凰资讯,http://push.cdn1.hls123.de:8080/streams/0u0qd5ovqkg/index.m3u8,http_error,,<urlopen error [Errno -2] Name or service not known>,2026-10-21T14:07:23Z
+channel,凤凰资讯,https://cdn6.101.qzz.io/163189/fhzx,http_error,,"<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'cdn6.101.qzz.io'. (_ssl.c:1016)>",2026-10-21T14:07:49Z
+channel,凤凰资讯,https://cdn6.163189.xyz/163189/fhzx,http_error,,<urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1016)>,2026-10-21T14:05:40Z
+channel,凤凰资讯,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E5%87%A4%E5%87%B0%E8%B5%84%E8%AE%AF&src=aHR0cDovL3BocC5qZHNoaXBpbi5jb206ODg4MC9UVk9EL2lwdHYucGhwP2lkPWZoeng=,http_error,403,HTTP 403,2026-10-21T14:08:12Z
+channel,凤凰资讯,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E5%87%A4%E5%87%B0%E8%B5%84%E8%AE%AF&src=aHR0cDovL3IuamRzaGlwaW4uY29tLzBScDA3,http_error,403,HTTP 403,2026-10-21T14:08:11Z
+channel,凤凰资讯Pdtv,http://rihou.cc:555/tv/[Pd]凤凰资讯,http_error,,<urlopen error timed out>,2026-10-21T14:05:50Z
+channel,凤凰香港,https://cdn6.101.qzz.io/163189/fhhk,http_error,,<urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1016)>,2026-10-21T14:07:50Z
+channel,凤凰香港,https://cdn6.163189.xyz/163189/fhhk,http_error,,<urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1016)>,2026-10-21T14:05:40Z
+channel,凤凰香港,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E5%87%A4%E5%87%B0%E9%A6%99%E6%B8%AF&src=aHR0cDovL3BocC5qZHNoaXBpbi5jb20vVFZPRC9pcHR2LnBocD9pZD1maGhr,http_error,403,HTTP 403,2026-10-21T14:08:12Z
+channel,凤凰香港,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E5%87%A4%E5%87%B0%E9%A6%99%E6%B8%AF&src=aHR0cDovL3IuamRzaGlwaW4uY29tL3lEb1RO,http_error,403,HTTP 403,2026-10-21T14:08:11Z
+channel,凤凰香港Pdtv,http://rihou.cc:555/tv/[Pd]凤凰香港,http_error,,<urlopen error timed out>,2026-10-21T14:05:52Z
+channel,北京卫视,http://m.061899.xyz/mg/bjws,http_error,,Remote end closed connection without response,2026-10-21T14:08:28Z
+channel,千禧经典1,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E5%8D%83%E7%A6%A7%E7%BB%8F%E5%85%B8&src=aHR0cDovL3BocC5qZHNoaXBpbi5jb206ODg4MC9UVk9EL2lwdHYucGhwP2lkPXR2YmM=,http_error,403,HTTP 403,2026-10-21T14:08:03Z
+channel,千禧经典2,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E5%8D%83%E7%A6%A7%E7%BB%8F%E5%85%B8%E5%8F%B0&src=aHR0cHM6Ly9vMTEuMTYzMTg5Lnh5ei9zdHJlYW0vbGl2ZS90dmJjLw==,http_error,403,HTTP 403,2026-10-21T14:08:03Z
+channel,千禧经典3,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E5%8D%83%E7%A6%A7%E7%BB%8F%E5%85%B8%E5%8F%B0&src=aHR0cDovL28xMS4xNjMxODkueHl6L3N0cmVhbS9saXZlL3R2YmMv,http_error,403,HTTP 403,2026-10-21T14:08:03Z
+channel,千禧经典台 xyz,http://cdn9.163189.xyz/smt1.1.php?id=Tvbclassic,http_error,523,HTTP 523,2026-10-21T14:05:44Z
+channel,华丽台,https://stream1.freetv.fun/bf892edacff6014fd1c147c0781de3727afc038acd476cf7a800a628b4c04110.ctv,http_error,,The read operation timed out,2026-10-21T14:07:17Z
+channel,华丽台,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E5%8D%8E%E4%B8%BD%E7%BF%A1%E7%BF%A0%E5%8F%B0&src=aHR0cDovL3IuamRzaGlwaW4uY29tL3RodVlY,http_error,403,HTTP 403,2026-10-21T14:08:03Z
+channel,华丽台 xyz,http://cdn9.163189.xyz/smt1.1.php?id=Tvbjade,http_error,523,HTTP 523,2026-10-21T14:05:44Z
+channel,博斯網球[BoSi Tennis],https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E5%8D%9A%E6%96%AF%E7%B6%B2%E7%90%83%5BBoSi%20Tennis%5D&src=aHR0cDovLzY3LjIyMC43MS4xOTk6MjM0Ny9saXZlaHR0cHBsYXk/Y2hhbm5lbF9pZD00MjAyNg==,http_error,403,HTTP 403,2026-10-21T14:08:13Z
+channel,吉林卫视,http://m.061899.xyz/mg/jlws,http_error,,Remote end closed connection without response,2026-10-21T14:08:26Z
+channel,四川卫视,http://m.061899.xyz/mg/scws,http_error,,Remote end closed connection without response,2026-10-21T14:08:30Z
+channel,天映经典,https://cdn9.163189.xyz/smt3.1.1.php?id=Celestial2,http_error,523,HTTP 523,2026-10-21T14:07:49Z
+channel,天映经典台,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E5%A4%A9%E6%98%A0%E7%BB%8F%E5%85%B8%E9%A2%91%E9%81%93&src=aHR0cDovL28xMS4xNjMxODkueHl6L3N0cmVhbS9saXZlL2NjbS8=,http_error,403,HTTP 403,2026-10-21T14:08:04Z
+channel,天映经典台2,https://stream1.freetv.fun/7f434834d32aa4f6c76142d0583ca5cba3d8b8588dd56868e89801ebbd593ce3.ctv,http_error,,The read operation timed out,2026-10-21T14:07:17Z
+channel,天映频道,http://o11.163189.xyz/stream/live/typd/,http_error,429,HTTP 429,2026-10-21T14:05:43Z
+channel,天映频道,https://cdn9.163189.xyz/smt3.1.1.php?id=Celestial,http_error,523,HTTP 523,2026-10-21T14:07:49Z
+channel,天映频道,https://virtual.anbox.dpdns.org/resolve?session=133d166d-12af-4ac9-b3c2-bcac7aae6f6c&channel=%E5%A4%A9%E6%98%A0%E9%A2%91%E9%81%93&src=aHR0cDovL28xMS4xNjMxODkueHl6L3N0cmVhbS9saXZlL3R5cGQv,http_error,403,HTTP 403,2026-10-21T14:08:04Z
+channel,天津卫视,http://m.061899.xyz/mg/tjws,http_error,,Remote end closed connection without response,2026-10-21T14:08:28Z
+channel,央视综合Pdtv,http://rihou.cc:555/tv/[Pd]央视综合,http_error,,<urlopen error timed out>,2026-10-21T14:06:16Z
+channel,娱乐新闻台,http://iptv.4666888.xyz/iptv2A.php?id=36,http_error,,<urlopen error timed out>,2026-10-21T14:07:40Z
+channel,宁夏卫视,http://m.061899.xyz/mg/nxws,http_error,,Remote end closed connection without response,2026-10-21T14:08:30Z
+channel,安徽卫视,http://m.061899.xyz/mg/ahws,http_error,,Remote end closed connection without response,2026-10-21T14:08:29Z
+channel,山东卫视,http://m.061899.xyz/mg/sdws,http_error,,Remote end closed connection without response,2026-10-21T14:08:29Z
+channel,山西卫视,http://iptv.4666888.xyz/iptv2A.php?id=16,http_error,,<urlopen error timed out>,2026-10-21T14:07:47Z
+channel,山西卫视,http://m.061899.xyz/mg/sxiws,http_error,,Remote end closed connection without response,2026-10-21T14:08:29Z
+channel,岭南戏曲,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E5%B2%AD%E5%8D%97%E6%88%8F%E6%9B%B2&src=aHR0cDovLzM4Ljc1LjEzNi4xMzc6OTgvZ3NsYi9kc2RxcHViL2dkbG54cS5tM3U4P2F1dGg9dGVzdHB1Yg==,http_error,403,HTTP 403,2026-10-21T14:08:11Z
+channel,嶺南戲曲[Lingnan Drama],https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E5%B6%BA%E5%8D%97%E6%88%B2%E6%9B%B2%5BLingnan%20Drama%5D&src=aHR0cDovLzY3LjIyMC43MS4xOTk6MjM0Ny9saXZlaHR0cHBsYXk/Y2hhbm5lbF9pZD0yMDE0Mg==,http_error,403,HTTP 403,2026-10-21T14:08:11Z
+channel,广东体育,https://cdn2.163189.xyz/163189/gdty,http_error,,<urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1016)>,2026-10-21T14:05:41Z
+channel,广东体育,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E5%B9%BF%E4%B8%9C%E4%BD%93%E8%82%B2&src=aHR0cDovLzc0LjkxLjI2LjIxODo4Mi9saXZlL2dkdHkubTN1OA==,http_error,403,HTTP 403,2026-10-21T14:08:13Z
+channel,广东体育1,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E5%B9%BF%E4%B8%9C%E4%BD%93%E8%82%B2&src=aHR0cDovL3BocC5qZHNoaXBpbi5jb20vVFZPRC9pcHR2LnBocD9pZD1nZHR5,http_error,403,HTTP 403,2026-10-21T14:08:08Z
+channel,广东体育2,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E5%B9%BF%E4%B8%9C%E4%BD%93%E8%82%B2&src=aHR0cDovL3IuamRzaGlwaW4uY29tL0xpWWRn,http_error,403,HTTP 403,2026-10-21T14:08:08Z
+channel,广东体育频,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E5%B9%BF%E4%B8%9C%E4%BD%93%E8%82%B2%E9%A2%91&src=aHR0cDovL3BocC5qZHNoaXBpbi5jb20vVFZPRC9pcHR2LnBocD9pZD1nZHR5,http_error,403,HTTP 403,2026-10-21T14:08:08Z
+channel,广东卫视,http://m.061899.xyz/mg/gdws,http_error,,Remote end closed connection without response,2026-10-21T14:08:25Z
+channel,广东卫视,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E5%B9%BF%E4%B8%9C%E5%8D%AB%E8%A7%86&src=aHR0cHM6Ly9oYzlsYnk5Ynp3OHpjYXIud2NldHYuY29tL2hscy9nZHNhdGVsbGl0ZS5tM3U4,http_error,403,HTTP 403,2026-10-21T14:08:08Z
+channel,广东卫视1,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E5%B9%BF%E4%B8%9C%E5%8D%AB%E8%A7%86&src=aHR0cHM6Ly9oNWNkbjMua3lsaW50di50di9saXZlL2dkdHZoZF9pcGhvbmUubTN1OA==,http_error,403,HTTP 403,2026-10-21T14:08:08Z
+channel,广东珠江,https://cdn2.163189.xyz/163189/gdzj,http_error,,<urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1016)>,2026-10-21T14:05:41Z
+channel,广东珠江1,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E5%B9%BF%E4%B8%9C%E7%8F%A0%E6%B1%9F%E9%A2%91&src=aHR0cDovL3BocC5qZHNoaXBpbi5jb20vVFZPRC9pcHR2LnBocD9pZD1nZHpq,http_error,403,HTTP 403,2026-10-21T14:08:05Z
+channel,广东珠江2,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E5%B9%BF%E4%B8%9C%E7%8F%A0%E6%B1%9F&src=aHR0cDovL3IuamRzaGlwaW4uY29tL3NFNXZP,http_error,403,HTTP 403,2026-10-21T14:08:05Z
+channel,广东珠江3,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E5%B9%BF%E4%B8%9C%E7%8F%A0%E6%B1%9F&src=aHR0cDovL3BocC5qZHNoaXBpbi5jb20vVFZPRC9pcHR2LnBocD9pZD1nZHpq,http_error,403,HTTP 403,2026-10-21T14:08:05Z
+channel,广东珠江4,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E7%8F%A0%E6%B1%9F%E5%8F%B0&src=aHR0cDovL3IuamRzaGlwaW4uY29tL3NFNXZP,http_error,403,HTTP 403,2026-10-21T14:08:05Z
+channel,广州南国都市,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E5%B9%BF%E5%B7%9E%E5%8D%97%E5%9B%BD%E9%83%BD%E5%B8%82&src=aHR0cDovL3IuamRzaGlwaW4uY29tL25XYVpP,http_error,403,HTTP 403,2026-10-21T14:08:11Z
+channel,广州新闻,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E5%B9%BF%E5%B7%9E%E6%96%B0%E9%97%BB&src=aHR0cHM6Ly90ZW5jZW50cGxheWd6cmIwMS5nenR2LmNvbS9saXZlL3hpbndlbi5tM3U4,http_error,403,HTTP 403,2026-10-21T14:08:13Z
+channel,广州新闻,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E5%B9%BF%E5%B7%9E%E6%96%B0%E9%97%BB&src=aHR0cHM6Ly90ZW5jZW50cGxheWdzbS5nenR2LmNvbS9saXZlL3hpbndlbi5tM3U4,http_error,403,HTTP 403,2026-10-21T14:08:13Z
+channel,广州新闻4K,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E5%B9%BF%E5%B7%9E%E6%96%B0%E9%97%BB4K&src=aHR0cDovL3RlbmNlbnRwbGF5Z3NtLmd6dHYuY29tL2xpdmUvbmFuZ3VvZHVzaGkubTN1OA==,http_error,403,HTTP 403,2026-10-21T14:08:11Z
+channel,广州综合,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E5%B9%BF%E5%B7%9E%E7%BB%BC%E5%90%88&src=aHR0cDovL3IuamRzaGlwaW4uY29tL2lSNkdx,http_error,403,HTTP 403,2026-10-21T14:08:11Z
+channel,广州综合,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E5%B9%BF%E5%B7%9E%E7%BB%BC%E5%90%88&src=aHR0cDovL3IuamRzaGlwaW4uY29tL3NuaHlh,http_error,403,HTTP 403,2026-10-21T14:08:11Z
+channel,广西卫视,http://m.061899.xyz/mg/gxws,http_error,,Remote end closed connection without response,2026-10-21T14:08:29Z
+channel,廣東體育4K[GRT-SPORTS 4K],https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E5%BB%A3%E6%9D%B1%E9%AB%94%E8%82%B24K%5BGRT-SPORTS%204K%5D&src=aHR0cDovLzY3LjIyMC43MS4xOTk6MjM0Ny9saXZlaHR0cHBsYXk/Y2hhbm5lbF9pZD0xMjAyOA==,http_error,403,HTTP 403,2026-10-21T14:08:11Z
+channel,廣東體育超清[GRT-SPORTS HD+],https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E5%BB%A3%E6%9D%B1%E9%AB%94%E8%82%B2%E8%B6%85%E6%B8%85%5BGRT-SPORTS%20HD%2B%5D&src=aHR0cDovLzY3LjIyMC43MS4xOTk6MjM0Ny9saXZlaHR0cHBsYXk/Y2hhbm5lbF9pZD0zMDAzMQ==,http_error,403,HTTP 403,2026-10-21T14:08:12Z
+channel,廣東體育高清[GRT-SPORTS HD],https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E5%BB%A3%E6%9D%B1%E9%AB%94%E8%82%B2%E9%AB%98%E6%B8%85%5BGRT-SPORTS%20HD%5D&src=aHR0cDovLzY3LjIyMC43MS4xOTk6MjM0Ny9saXZlaHR0cHBsYXk/Y2hhbm5lbF9pZD0yMDEzMA==,http_error,403,HTTP 403,2026-10-21T14:08:11Z
+channel,新疆卫视,http://m.061899.xyz/mg/xjws,http_error,,Remote end closed connection without response,2026-10-21T14:08:30Z
+channel,新纪实,http://m.061899.xyz/mg/xjs,http_error,,Remote end closed connection without response,2026-10-21T14:08:32Z
+channel,无线功夫Pdtv,http://rihou.cc:555/tv/[Pd]无线功夫,http_error,,<urlopen error timed out>,2026-10-21T14:05:49Z
+channel,无线华丽Pdtv,http://rihou.cc:555/tv/[Pd]无线华丽,http_error,,<urlopen error timed out>,2026-10-21T14:05:45Z
+channel,无线新闻,http://push.cdn1.hls123.de:8080/streams/n66wwnx3l7i/index.m3u8,http_error,,<urlopen error [Errno -2] Name or service not known>,2026-10-21T14:07:22Z
+channel,无线新闻,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E6%97%A0%E7%BA%BF%E6%96%B0%E9%97%BB&src=aHR0cDovL3IuamRzaGlwaW4uY29tL0NrdUJk,http_error,403,HTTP 403,2026-10-21T14:08:12Z
+channel,无线新闻Pdtv,http://rihou.cc:555/tv/[Pd]无线新闻,http_error,,<urlopen error timed out>,2026-10-21T14:06:15Z
+channel,无线新闻台,https://cdn6.163189.xyz/163189/wxxw,http_error,,<urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1016)>,2026-10-21T14:05:41Z
+channel,无线新闻台,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E6%97%A0%E7%BA%BF%E6%96%B0%E9%97%BB%E5%8F%B0&src=aHR0cDovL3B1bGwtdml2ZWsuc3BlZWR3cy5jb20vbGl2ZS9hYWF3eHh3LmZsdg==,http_error,403,HTTP 403,2026-10-21T14:08:12Z
+channel,无线新闻台,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E6%97%A0%E7%BA%BF%E6%96%B0%E9%97%BB%E5%8F%B0&src=aHR0cDovLzc0LjkxLjI2LjIxODo4Mi9saXZlL2luZXdzLm0zdTg=,http_error,403,HTTP 403,2026-10-21T14:08:12Z
+channel,无线新闻台 xyz,http://cdn9.163189.xyz/smt1.1.php?id=inews_twn,http_error,523,HTTP 523,2026-10-21T14:05:44Z
+channel,无线明珠Pdtv,http://rihou.cc:555/tv/[Pd]无线明珠,http_error,,<urlopen error timed out>,2026-10-21T14:05:45Z
+channel,无线星河Pdtv,http://rihou.cc:555/tv/[Pd]无线星河,http_error,,<urlopen error timed out>,2026-10-21T14:05:45Z
+channel,无线翡翠4K,https://cdn6.163189.xyz/163189/fct4k,http_error,,<urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1016)>,2026-10-21T14:05:44Z
+channel,无线翡翠4Ktv,http://rihou.cc:555/tv/[Pd]无线翡4K,http_error,,<urlopen error timed out>,2026-10-21T14:05:45Z
+channel,无线翡翠Pdtv,http://rihou.cc:555/tv/[Pd]无线翡翠,http_error,,<urlopen error timed out>,2026-10-21T14:05:45Z
+channel,无线翡翠频美,https://cdn.163189.xyz/163189/fct,http_error,,<urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1016)>,2026-10-21T14:05:45Z
+channel,明珠台,http://push.cdn1.hls123.de:8080/streams/89a8p45a15e/index.m3u8,http_error,,<urlopen error [Errno -2] Name or service not known>,2026-10-21T14:07:22Z
+channel,明珠台,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E6%98%8E%E7%8F%A0%E5%8F%B0&src=aHR0cDovL215dHYuY2RuLmxvYy5jYy9vMTIucGhwP2lkPW16dA==,http_error,403,HTTP 403,2026-10-21T14:08:11Z
+channel,明珠台,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E6%98%8E%E7%8F%A0%E5%8F%B0&src=aHR0cDovL28xMS4xNjMxODkueHl6L3N0cmVhbS90dmIvbXp0Lw==,http_error,403,HTTP 403,2026-10-21T14:08:11Z
+channel,明珠台,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E6%98%8E%E7%8F%A0%E5%8F%B0&src=aHR0cDovL3IuamRzaGlwaW4uY29tL1pRNGtO,http_error,403,HTTP 403,2026-10-21T14:08:10Z
+channel,明珠台超清[Pearl HD+],https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E6%98%8E%E7%8F%A0%E5%8F%B0%E8%B6%85%E6%B8%85%5BPearl%20HD%2B%5D&src=aHR0cDovLzY3LjIyMC43MS4xOTk6MjM0Ny9saXZlaHR0cHBsYXk/Y2hhbm5lbF9pZD0zMDAyNg==,http_error,403,HTTP 403,2026-10-21T14:08:11Z
+channel,明珠台高清[Pearl HD],https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E6%98%8E%E7%8F%A0%E5%8F%B0%E9%AB%98%E6%B8%85%5BPearl%20HD%5D&src=aHR0cDovLzY3LjIyMC43MS4xOTk6MjM0Ny9saXZlaHR0cHBsYXk/Y2hhbm5lbF9pZD0yMDEyNQ==,http_error,403,HTTP 403,2026-10-21T14:08:11Z
+channel,有线亚剧Pdtv,http://rihou.cc:555/tv/[Pd]有线亚剧,http_error,,<urlopen error timed out>,2026-10-21T14:06:15Z
+channel,有线新闻Pdtv,http://rihou.cc:555/tv/[Pd]有线新闻,http_error,,<urlopen error timed out>,2026-10-21T14:06:09Z
+channel,有线综合Pdtv,http://rihou.cc:555/tv/[Pd]有线综合,http_error,,<urlopen error timed out>,2026-10-21T14:06:09Z
+channel,欢喜台,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=ASTRO%E6%AC%A2%E5%96%9C%E5%8F%B0&src=aHR0cDovL28xMS4xNjMxODkueHl6L3N0cmVhbS9saXZlL2h4dC8=,http_error,403,HTTP 403,2026-10-21T14:08:04Z
+channel,欢喜台1,https://stream1.freetv.fun/70c698cbeadf092a778a3184cfd61eab0262bf7f5afb2a3e79fadadd45c08fe2.ctv,http_error,,The read operation timed out,2026-10-21T14:07:17Z
+channel,民视影剧,http://iptv.4666888.xyz/iptv2A.php?id=53,http_error,,<urlopen error timed out>,2026-10-21T14:07:48Z
+channel,江苏卫视,http://iptv.4666888.xyz/iptv2A.php?id=15,http_error,,<urlopen error timed out>,2026-10-21T14:07:47Z
+channel,江苏卫视,http://m.061899.xyz/mg/jsws,http_error,,Remote end closed connection without response,2026-10-21T14:08:25Z
+channel,江西卫视,http://m.061899.xyz/mg/jxws,http_error,,Remote end closed connection without response,2026-10-21T14:08:26Z
+channel,河北卫视,http://m.061899.xyz/mg/hbws,http_error,,Remote end closed connection without response,2026-10-21T14:08:29Z
+channel,河南卫视,http://m.061899.xyz/mg/hnws,http_error,,Remote end closed connection without response,2026-10-21T14:08:27Z
+channel,浙江卫视,http://iptv.4666888.xyz/iptv2A.php?id=14,http_error,,<urlopen error timed out>,2026-10-21T14:07:47Z
+channel,浙江卫视,http://m.061899.xyz/mg/zjws,http_error,,Remote end closed connection without response,2026-10-21T14:08:25Z
+channel,海南卫视,http://m.061899.xyz/mg/hinws,http_error,,Remote end closed connection without response,2026-10-21T14:08:27Z
+channel,海峡卫视,https://cdn3.163189.xyz/163189/hxws,http_error,,<urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1016)>,2026-10-21T14:05:43Z
+channel,海峡卫视,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E6%B5%B7%E5%B3%A1%E5%8D%AB%E8%A7%86&src=aHR0cDovL3IuamRzaGlwaW4uY29tL1d0WXQz,http_error,403,HTTP 403,2026-10-21T14:08:11Z
+channel,深圳卫视,http://m.061899.xyz/mg/szws,http_error,,Remote end closed connection without response,2026-10-21T14:08:29Z
+channel,港臺電視31超清[RTHK TV 31 HD+],https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E6%B8%AF%E8%87%BA%E9%9B%BB%E8%A6%9631%E8%B6%85%E6%B8%85%5BRTHK%20TV%2031%20HD%2B%5D&src=aHR0cDovLzY3LjIyMC43MS4xOTk6MjM0Ny9saXZlaHR0cHBsYXk/Y2hhbm5lbF9pZD0zMDA2Ng==,http_error,403,HTTP 403,2026-10-21T14:08:13Z
+channel,港臺電視31高清[RTHK TV 31 HD],https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E6%B8%AF%E8%87%BA%E9%9B%BB%E8%A6%9631%E9%AB%98%E6%B8%85%5BRTHK%20TV%2031%20HD%5D&src=aHR0cDovLzY3LjIyMC43MS4xOTk6MjM0Ny9saXZlaHR0cHBsYXk/Y2hhbm5lbF9pZD0yMDIwMw==,http_error,403,HTTP 403,2026-10-21T14:08:11Z
+channel,港臺電視32超清[RTHK TV 32 HD+],https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E6%B8%AF%E8%87%BA%E9%9B%BB%E8%A6%9632%E8%B6%85%E6%B8%85%5BRTHK%20TV%2032%20HD%2B%5D&src=aHR0cDovLzY3LjIyMC43MS4xOTk6MjM0Ny9saXZlaHR0cHBsYXk/Y2hhbm5lbF9pZD0zMDA2Nw==,http_error,403,HTTP 403,2026-10-21T14:08:13Z
+channel,港臺電視32高清[RTHK TV 32 HD],https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E6%B8%AF%E8%87%BA%E9%9B%BB%E8%A6%9632%E9%AB%98%E6%B8%85%5BRTHK%20TV%2032%20HD%5D&src=aHR0cDovLzY3LjIyMC43MS4xOTk6MjM0Ny9saXZlaHR0cHBsYXk/Y2hhbm5lbF9pZD0zMDAyOA==,http_error,403,HTTP 403,2026-10-21T14:08:11Z
+channel,湖北卫视,http://m.061899.xyz/mg/hubws,http_error,,Remote end closed connection without response,2026-10-21T14:08:26Z
+channel,湖南卫视,http://iptv.4666888.xyz/iptv2A.php?id=13,http_error,,<urlopen error timed out>,2026-10-21T14:07:47Z
+channel,湖南卫视,http://m.061899.xyz/mg/hunws,http_error,,Remote end closed connection without response,2026-10-21T14:08:28Z
+channel,湖南卫视4K,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E6%B9%96%E5%8D%97%E5%8D%AB%E8%A7%864K&src=aHR0cDovL2hsc2FsLWxkdnQucWluZy5tZ3R2LmNvbS9ubl9saXZlL25uX3g2NC9kV2x3UFRFeU55NHdMakF1TVNaMWFXUTljV2x1WnkxamJYTW1ibTVmZEdsdFpYcHZibVU5T0NaalpHNWxlRjlwWkQxaGJGOW9iSE5mYkdSMmRDWjFkV2xrUFRsaU9EWTRObVU1WlRNMll6WXdNbU1tWlQwMk9URTBOakEwSm5ZOU1TWnBaRDFJVGxkVFdrZFRWQ1p6UFRjd04yUmlZVGMyWXpKak5tSm1NVFE0TW1VeVpHWXpPV1UyTldNM1lXRmkvSE5XU1pHU1QubTN1OA==,http_error,403,HTTP 403,2026-10-21T14:08:14Z
+channel,澳視澳門,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E6%BE%B3%E8%A6%96%E6%BE%B3%E9%96%80&src=aHR0cDovL2lwdHYuNDY2Njg4OC54eXovaXB0djJBLnBocD9pZD00MQ==,http_error,403,HTTP 403,2026-10-21T14:08:07Z
+channel,澳视卫星,http://push.cdn1.hls123.de:8080/streams/gese9d57376/index.m3u8,http_error,,<urlopen error [Errno -2] Name or service not known>,2026-10-21T14:07:24Z
+channel,澳视卫星,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E6%BE%B3%E8%A7%86%E5%8D%AB%E6%98%9F&src=aHR0cDovL3BocC5qZHNoaXBpbi5jb20vVFZPRC9pcHR2LnBocD9pZD1hcw==,http_error,403,HTTP 403,2026-10-21T14:08:13Z
+channel,澳视卫星,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E6%BE%B3%E8%A7%86%E5%8D%AB%E6%98%9F&src=aHR0cDovL3IuamRzaGlwaW4uY29tL1FGaENx,http_error,403,HTTP 403,2026-10-21T14:08:11Z
+channel,澳视卫星Pdtv,http://rihou.cc:555/tv/[Pd]澳视卫星,http_error,,<urlopen error timed out>,2026-10-21T14:06:16Z
+channel,澳视澳门,http://push.cdn1.hls123.de:8080/streams/2r8ba88ujh6/index.m3u8,http_error,,<urlopen error [Errno -2] Name or service not known>,2026-10-21T14:07:23Z
+channel,澳视澳门,https://cdn6.101.qzz.io/163189/asam,http_error,,"<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'cdn6.101.qzz.io'. (_ssl.c:1016)>",2026-10-21T14:07:50Z
+channel,澳视澳门,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E6%BE%B3%E8%A7%86%E6%BE%B3%E9%97%A8&src=aHR0cDovL3BocC5qZHNoaXBpbi5jb20vVFZPRC9pcHR2LnBocD9pZD1hc2Ft,http_error,403,HTTP 403,2026-10-21T14:08:13Z
+channel,澳视澳门,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E6%BE%B3%E8%A7%86%E6%BE%B3%E9%97%A8&src=aHR0cDovL3IuamRzaGlwaW4uY29tL24yWVpJ,http_error,403,HTTP 403,2026-10-21T14:08:11Z
+channel,澳视澳门,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E6%BE%B3%E8%A7%86%E6%BE%B3%E9%97%A8&src=aHR0cDovLzEwMy4yMzMuMTkxLjEzMzoxOTM1L2NoMS9jaDEubGl2ZS9wbGF5bGlzdC5tM3U4,http_error,403,HTTP 403,2026-10-21T14:08:13Z
+channel,澳视澳门Pdtv,http://rihou.cc:555/tv/[Pd]澳视澳门,http_error,,<urlopen error timed out>,2026-10-21T14:06:15Z
+channel,澳门MACAU,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E6%BE%B3%E9%97%A8MACAU&src=aHR0cHM6Ly9saXZlNS50ZG0uY29tLm1vL2NoMy9jaDMubGl2ZS9jaHVua2xpc3RfdzE4MzkyMzYwNTUubTN1OA==,http_error,403,HTTP 403,2026-10-21T14:08:13Z
+channel,澳门体育Pdtv,http://rihou.cc:555/tv/[Pd]澳门体育,http_error,,<urlopen error timed out>,2026-10-21T14:06:16Z
+channel,澳门卫视,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E6%BE%B3%E9%97%A8%E5%8D%AB%E8%A7%86&src=aHR0cHM6Ly9saXZlNS50ZG0uY29tLm1vL2NoMS9jaDEubGl2ZS9jaHVua2xpc3RfdzI3NTkzMzAzLm0zdTg=,http_error,403,HTTP 403,2026-10-21T14:08:13Z
+channel,澳门综艺Pdtv,http://rihou.cc:555/tv/[Pd]澳门综艺,http_error,,<urlopen error timed out>,2026-10-21T14:06:16Z
+channel,澳门莲花,http://push.cdn1.hls123.de:8080/streams/8nsrl4s4evv/index.m3u8,http_error,,<urlopen error [Errno -2] Name or service not known>,2026-10-21T14:07:24Z
+channel,澳门莲花Pdtv,http://rihou.cc:555/tv/[Pd]澳门莲花,http_error,,<urlopen error timed out>,2026-10-21T14:06:16Z
+channel,澳门资讯,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E6%BE%B3%E9%97%A8%E8%B5%84%E8%AE%AF&src=aHR0cHM6Ly9saXZlNS50ZG0uY29tLm1vL2NoNS9pbmZvX2NoNS5saXZlL2NodW5rbGlzdF93OTI5NDEwMzk2Lm0zdTg=,http_error,403,HTTP 403,2026-10-21T14:08:13Z
+channel,無綫新聞台1,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E7%84%A1%E7%B6%AB%E6%96%B0%E8%81%9E%E5%8F%B0&src=aHR0cDovL3BocC5qZHNoaXBpbi5jb20vVFZPRC9pcHR2LnBocD9pZD10dmJ4dw==,http_error,403,HTTP 403,2026-10-21T14:08:08Z
+channel,無綫新聞台2,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E7%84%A1%E7%B6%AB%E6%96%B0%E8%81%9E%E5%8F%B0&src=aHR0cHM6Ly9obHMuaWlsbC50b3AvYXBpL1RWQi1OZXdzL2luZGV4Lm0zdTg=,http_error,403,HTTP 403,2026-10-21T14:08:08Z
+channel,無綫新聞台3,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E7%84%A1%E7%B6%AB%E6%96%B0%E8%81%9E%E5%8F%B0&src=aHR0cDovL3IuamRzaGlwaW4uY29tL0NrdUJk,http_error,403,HTTP 403,2026-10-21T14:08:08Z
+channel,無線新聞台超清[TVB News HD+],https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E7%84%A1%E7%B7%9A%E6%96%B0%E8%81%9E%E5%8F%B0%E8%B6%85%E6%B8%85%5BTVB%20News%20HD%2B%5D&src=aHR0cDovLzY3LjIyMC43MS4xOTk6MjM0Ny9saXZlaHR0cHBsYXk/Y2hhbm5lbF9pZD0zMDAyNA==,http_error,403,HTTP 403,2026-10-21T14:08:12Z
+channel,無線新聞台高清[TVB News,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E7%84%A1%E7%B7%9A%E6%96%B0%E8%81%9E%E5%8F%B0%E9%AB%98%E6%B8%85%5BTVB%20News&src=aHR0cDovLzY3LjIyMC43MS4xOTk6MjM0Ny9saXZlaHR0cHBsYXk/Y2hhbm5lbF9pZD0yMDEyMw==,http_error,403,HTTP 403,2026-10-21T14:08:12Z
+channel,爱奇艺,http://iptv.4666888.xyz/iptv2A.php?id=21,http_error,,<urlopen error timed out>,2026-10-21T14:07:24Z
+channel,爱奇艺,https://stream1.freetv.fun/e10abc08c093f0f73a62df353b3ad8d1c9bfdae7394e14f665df926ac84096ce.ctv,http_error,,The read operation timed out,2026-10-21T14:07:17Z
+channel,爱奇艺,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=IQIYI&src=aHR0cDovL28xMS4xNjMxODkueHl6L3N0cmVhbS9saXZlL2lxaXlpLw==,http_error,403,HTTP 403,2026-10-21T14:08:04Z
+channel,甘肃卫视,http://m.061899.xyz/mg/gsws,http_error,,Remote end closed connection without response,2026-10-21T14:08:29Z
+channel,美亚电影(台),http://iptv.4666888.xyz/iptv2A.php?id=30,http_error,,<urlopen error timed out>,2026-10-21T14:07:48Z
+channel,美亚电影粤 TVOD,https://php.jdshipin.com:2096/TVOD/iptv.php?id=meiya,http_error,,The read operation timed out,2026-10-21T14:07:57Z
+channel,翡翠剧集,https://6.cdn.loc.cc/163189.php?id=tvbd,http_error,,<urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1016)>,2026-10-21T14:05:43Z
+channel,翡翠剧集台,https://cdn6.163189.xyz/163189/tvbd,http_error,,<urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1016)>,2026-10-21T14:05:41Z
+channel,翡翠台,http://iptv.4666888.xyz/iptv2A.php?id=34,http_error,,<urlopen error timed out>,2026-10-21T14:07:24Z
+channel,翡翠台,http://push.cdn1.hls123.de:8080/streams/ef5addc0849/index.m3u8,http_error,,<urlopen error [Errno -2] Name or service not known>,2026-10-21T14:07:21Z
+channel,翡翠台,https://cdn6.163189.xyz/163189/fct,http_error,,<urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1016)>,2026-10-21T14:05:41Z
+channel,翡翠台 xyz,http://cdn9.163189.xyz/smt1.1.php?id=jade_twn,http_error,523,HTTP 523,2026-10-21T14:05:44Z
+channel,翡翠台1,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E7%BF%A1%E7%BF%A0%E5%8F%B0&src=aHR0cDovL3BocC5qZHNoaXBpbi5jb206ODg4MC9UVk9EL2lwdHYucGhwP2lkPWZjdDI=,http_error,403,HTTP 403,2026-10-21T14:08:05Z
+channel,翡翠台10,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E7%BF%A1%E7%BF%A0%E5%8F%B02&src=aHR0cDovL3IuamRzaGlwaW4uY29tL3FyZmJn,http_error,403,HTTP 403,2026-10-21T14:08:06Z
+channel,翡翠台11,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E7%BF%A1%E7%BF%A0%E5%8F%B0&src=aHR0cDovLzc0LjkxLjI2LjIxODo4Mi9saXZlL2phZGUubTN1OA==,http_error,403,HTTP 403,2026-10-21T14:08:07Z
+channel,翡翠台12,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E7%BF%A1%E7%BF%A0%E5%8F%B0&src=aHR0cHM6Ly9obHMuaWlsbC50b3AvYXBpL1RWQi1KYWRlL2luZGV4Lm0zdTg=,http_error,403,HTTP 403,2026-10-21T14:08:07Z
+channel,翡翠台2,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E7%BF%A1%E7%BF%A0%E5%8F%B0&src=aHR0cDovL3BocC5qZHNoaXBpbi5jb206ODg4MC9UVk9EL2lwdHYucGhwP2lkPWZjdDM=,http_error,403,HTTP 403,2026-10-21T14:08:05Z
+channel,翡翠台3,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E7%BF%A1%E7%BF%A0%E5%8F%B0&src=aHR0cDovL3BocC5qZHNoaXBpbi5jb20vVFZPRC9pcHR2LnBocD9pZD1mY3Q=,http_error,403,HTTP 403,2026-10-21T14:08:05Z
+channel,翡翠台4,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E7%BF%A1%E7%BF%A0%E5%8F%B0&src=aHR0cDovL3BocC5qZHNoaXBpbi5jb20vVFZPRC9pcHR2LnBocD9pZD1mY3Qz,http_error,403,HTTP 403,2026-10-21T14:08:06Z
+channel,翡翠台5,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E7%BF%A1%E7%BF%A0%E5%8F%B0&src=aHR0cDovL3BocC5qZHNoaXBpbi5jb20vVFZPRC9pcHR2LnBocD9pZD1mY3Q0,http_error,403,HTTP 403,2026-10-21T14:08:06Z
+channel,翡翠台9,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E7%BF%A1%E7%BF%A0%E5%8F%B0&src=aHR0cDovL3IuamRzaGlwaW4uY29tLzYyV003,http_error,403,HTTP 403,2026-10-21T14:08:06Z
+channel,翡翠台超清[Jade HD+],https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E7%BF%A1%E7%BF%A0%E5%8F%B0%E8%B6%85%E6%B8%85%5BJade%20HD%2B%5D&src=aHR0cDovLzY3LjIyMC43MS4xOTk6MjM0Ny9saXZlaHR0cHBsYXk/Y2hhbm5lbF9pZD0zMDAyNQ==,http_error,403,HTTP 403,2026-10-21T14:08:06Z
+channel,耀才财经,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E8%80%80%E6%89%8D%E8%B4%A2%E7%BB%8F&src=aHR0cHM6Ly92My5tZWRpYWNhc3QuaGsvd2ViY2FzdC9ic2hkbGl2ZS1wYy9wbGF5bGlzdC5tM3U4,http_error,403,HTTP 403,2026-10-21T14:08:13Z
+channel,耀才财经频道,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E8%80%80%E6%89%8D%E8%B4%A2%E7%BB%8F%E9%A2%91%E9%81%93&src=aHR0cHM6Ly92My5tZWRpYWNhc3QuaGsvd2ViY2FzdC9ic2hkbGl2ZS1wYy9jaHVua2xpc3Rfdzk5NzcxMTY1Lm0zdTg=,http_error,403,HTTP 403,2026-10-21T14:08:13Z
+channel,西藏卫视,http://m.061899.xyz/mg/xzws,http_error,,Remote end closed connection without response,2026-10-21T14:08:30Z
+channel,贵州卫视,http://m.061899.xyz/mg/gzws,http_error,,Remote end closed connection without response,2026-10-21T14:08:30Z
+channel,辽宁卫视,http://m.061899.xyz/mg/lnws,http_error,,Remote end closed connection without response,2026-10-21T14:08:28Z
+channel,邵氏动作,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E9%82%B5%E6%B0%8F%E5%8A%A8%E4%BD%9C&src=aHR0cDovLzM4Ljc1LjEzNi4xMzc6OTgvZ3NsYi9kc2RxcHViL2xic3Nkei5tM3U4P2F1dGg9dGVzdHB1Yg==,http_error,403,HTTP 403,2026-10-21T14:08:12Z
+channel,邵氏喜剧,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E9%82%B5%E6%B0%8F%E5%96%9C%E5%89%A7&src=aHR0cDovLzM4Ljc1LjEzNi4xMzc6OTgvZ3NsYi9kc2RxcHViL2xic3N4ai5tM3U4P2F1dGg9dGVzdHB1Yg==,http_error,403,HTTP 403,2026-10-21T14:08:12Z
+channel,邵氏武侠,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E9%82%B5%E6%B0%8F%E6%AD%A6%E4%BE%A0&src=aHR0cDovLzM4Ljc1LjEzNi4xMzc6OTgvZ3NsYi9kc2RxcHViL2xic3N3eC5tM3U4P2F1dGg9dGVzdHB1Yg==,http_error,403,HTTP 403,2026-10-21T14:08:12Z
+channel,邵氏电影,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E9%82%B5%E6%B0%8F%E7%94%B5%E5%BD%B1&src=aHR0cDovLzM4Ljc1LjEzNi4xMzc6OTgvZ3NsYi9kc2RxcHViL2xic3NkeS5tM3U4P2F1dGg9dGVzdHB1Yg==,http_error,403,HTTP 403,2026-10-21T14:08:12Z
+channel,都市频道,http://m.061899.xyz/mg/shds,http_error,,Remote end closed connection without response,2026-10-21T14:08:32Z
+channel,重庆卫视,http://m.061899.xyz/mg/cqws,http_error,,Remote end closed connection without response,2026-10-21T14:08:28Z
+channel,重温经典,http://m.061899.xyz/mg/cwjd,http_error,,Remote end closed connection without response,2026-10-21T14:08:31Z
+channel,重温经典,http://push.cdn1.hls123.de:8080/streams/g0jj471jied/index.m3u8,http_error,,<urlopen error [Errno -2] Name or service not known>,2026-10-21T14:07:24Z
+channel,重温经典,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E9%87%8D%E6%B8%A9%E7%BB%8F%E5%85%B8&src=aHR0cDovL3BocC5qZHNoaXBpbi5jb20vVFZPRC9pcHR2LnBocD9pZD1jd2pk,http_error,403,HTTP 403,2026-10-21T14:08:13Z
+channel,重温经典Pdtv,http://rihou.cc:555/tv/[Pd]重温经典,http_error,,<urlopen error timed out>,2026-10-21T14:06:16Z
+channel,陕西卫视,http://m.061899.xyz/mg/sxws,http_error,,Remote end closed connection without response,2026-10-21T14:08:26Z
+channel,青海卫视,http://m.061899.xyz/mg/qhws,http_error,,Remote end closed connection without response,2026-10-21T14:08:26Z
+channel,面包台,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E9%9D%A2%E5%8C%85%E5%8F%B0&src=aHR0cHM6Ly92aWRlby5icmVhZC10di5jb206ODA5MS9obHMtbGl2ZTI0L29ubGluZS9pbmRleC5tM3U4,http_error,403,HTTP 403,2026-10-21T14:08:13Z
+channel,香港卫视 TVOD,http://zhibo.hkstv.tv/livestream/mutfysrq/playlist.m3u8,http_error,,<urlopen error [Errno -2] Name or service not known>,2026-10-21T14:07:58Z
+channel,魔都眼,http://m.061899.xyz/mg/mdy,http_error,,Remote end closed connection without response,2026-10-21T14:08:32Z
+channel,鳳凰中文,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E9%B3%B3%E5%87%B0%E4%B8%AD%E6%96%87&src=aHR0cDovL3BocC5qZHNoaXBpbi5jb20vVFZPRC9pcHR2LnBocD9pZD1maHp3,http_error,403,HTTP 403,2026-10-21T14:08:12Z
+channel,鳳凰中文,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E9%B3%B3%E5%87%B0%E4%B8%AD%E6%96%87&src=aHR0cDovL3IuamRzaGlwaW4uY29tL2NDQ3pX,http_error,403,HTTP 403,2026-10-21T14:08:12Z
+channel,鳳凰中文,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E9%B3%B3%E5%87%B0%E4%B8%AD%E6%96%87&src=aHR0cHM6Ly9rNDQ5OTEua3lsaW50di50di9saXZlL3B4bmFfaXBob25lLm0zdTg=,http_error,403,HTTP 403,2026-10-21T14:08:14Z
+channel,鳳凰中文台,http://iptv.4666888.xyz/iptv2A.php?id=27,http_error,,<urlopen error timed out>,2026-10-21T14:07:24Z
+channel,鳳凰資訊,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E9%B3%B3%E5%87%B0%E8%B3%87%E8%A8%8A&src=aHR0cDovL3BocC5qZHNoaXBpbi5jb20vVFZPRC9pcHR2LnBocD9pZD1maHp4,http_error,403,HTTP 403,2026-10-21T14:08:12Z
+channel,鳳凰資詢,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E9%B3%B3%E5%87%B0%E8%B3%87%E8%A9%A2&src=aHR0cDovL3IuamRzaGlwaW4uY29tLzBScDA3,http_error,403,HTTP 403,2026-10-21T14:08:12Z
+channel,鳳凰香港,https://virtual.anbox.dpdns.org/resolve?session=8a23bce2-46e6-437e-9994-bb7437396694&channel=%E9%B3%B3%E5%87%B0%E9%A6%99%E6%B8%AF&src=aHR0cDovL3IuamRzaGlwaW4uY29tL3lEb1RO,http_error,403,HTTP 403,2026-10-21T14:08:12Z
+channel,黑龙江卫视,http://m.061899.xyz/mg/hljws,http_error,,Remote end closed connection without response,2026-10-21T14:08:28Z
+channel,龙华偶像Pdtv,http://rihou.cc:555/tv/[Pd]龙华偶像,http_error,,<urlopen error timed out>,2026-10-21T14:06:20Z
+channel,龙华戏剧Pdtv,http://rihou.cc:555/tv/[Pd]龙华戏剧,http_error,,<urlopen error timed out>,2026-10-21T14:06:23Z
+channel,龙华日韩Pdtv,http://rihou.cc:555/tv/[Pd]龙华日韩,http_error,,<urlopen error timed out>,2026-10-21T14:06:21Z
+channel,龙华电影Pdtv,http://rihou.cc:555/tv/[Pd]龙华电影,http_error,,<urlopen error timed out>,2026-10-21T14:06:19Z
+channel,龙华经典Pdtv,http://rihou.cc:555/tv/[Pd]龙华经典,http_error,,<urlopen error timed out>,2026-10-21T14:06:20Z
+live,👖裤佬百战直播,https://baizhan.445569.xyz/live.m3u,http_error,,The read operation timed out,2026-10-21T14:05:39Z
+site,👖奈飞,https://api.wsyzy.net/api.php/provide/vod,http_error,,The read operation timed out,2026-10-21T14:05:39Z

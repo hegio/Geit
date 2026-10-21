@@ -1,12 +1,12 @@
 {
-  "updated": "2026-10-21T13:36:31Z",
+  "updated": "2026-10-21T14:05:37Z",
   "repository": "hegio/Geit",
   "branch": "main",
   "count": 3,
   "sources": [
     {
       "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-      "effective_url": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+      "effective_url": "https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
       "kind": "txt",
       "status": "reachable",
       "http_status": 200,
@@ -19,7 +19,7 @@
     },
     {
       "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
-      "effective_url": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "effective_url": "https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
       "kind": "tvbox_json",
       "status": "reachable",
       "http_status": 200,
@@ -32,7 +32,7 @@
     },
     {
       "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-      "effective_url": "https://gh-proxy.com/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
+      "effective_url": "https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
       "kind": "txt",
       "status": "reachable",
       "http_status": 200,
