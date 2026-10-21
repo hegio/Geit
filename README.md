@@ -47,7 +47,9 @@ GitHub 的 `/blob/` 地址打开的是 HTML 网页，不是 JSON 文件，不能
 | `py/` | 去重后、通过 Python AST 与 Spider 核心方法检查的 Python 站点 |
 | `回收/` | 清理前旧目录和重复文件，仅作追溯，不参与构建 |
 
-`spider.jar` 使用仓库根目录中的文件，并在配置里写成绝对 raw 地址。不要把本地相对路径 `./spider.jar` 用在远程订阅中，否则 App 无法确定 JAR 的位置。
+`spider.jar` 在配置里写成绝对 HTTPS 地址，默认使用 `https://cnb.cool/fish2035/xs/-/git/raw/main/spider.jar`：这份镜像在影视 App 侧实测可以加载，而 `raw.githubusercontent.com` 的 JAR 在部分网络下取不到，会直接导致「配置取得失败」。仓库根目录仍保留一份同名 JAR 作为备份，不要用相对路径 `./spider.jar` 作为远程订阅地址，否则 App 无法确定 JAR 的位置。
+
+`geit-fish.txt` / `geitpy-fish.txt` 的 `spider`、`logo`、`wallpaper` 三个字段会被保留：手动改过一次之后，后续自动聚合不会再把它们覆盖回空值。只有旧的 `raw.githubusercontent.com` JAR 地址会被强制换回 cnb.cool。
 
 ## 来源格式
 

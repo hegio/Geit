@@ -1,0 +1,13 @@
+# 统一换行符：本地 Windows 检出为 CRLF，但仓库内一律存 LF。
+# 这样 fetch_tvbox.py 的内容哈希、CI 静态校验和 py/ 去重在本地与 Actions 上完全一致。
+* text=auto eol=lf
+
+*.py text eol=lf
+*.json text eol=lf
+*.txt text eol=lf
+*.md text eol=lf
+*.m3u text eol=lf
+*.html text eol=lf
+*.csv text eol=lf
+*.yml text eol=lf
+*.jar binary

@@ -73,6 +73,12 @@ PROXY_FALLBACKS = (
     "https://ghfast.top/",
 )
 
+# 影视 App 侧实测可用：raw.githubusercontent.com 的 spider.jar 在部分网络下
+# 取不到，cnb.cool 这份镜像 HEAD 200 且 App 能正常加载。
+SPIDER_JAR_URL = "https://cnb.cool/fish2035/xs/-/git/raw/main/spider.jar"
+# 旧版本写入的地址，App 侧取不到 JAR，发现残留时强制换回 SPIDER_JAR_URL。
+LEGACY_SPIDER_URL = "https://raw.githubusercontent.com/hegio/Geit/main/spider.jar"
+
 
 @dataclass
 class Channel:
@@ -183,6 +189,15 @@ def decode_text(data: bytes) -> str:
         except UnicodeDecodeError:
             continue
     return data.decode("utf-8", "replace")
+
+
+def normalized_bytes(data: bytes) -> bytes:
+    """Collapse CRLF to LF so hashing is stable across Windows and CI checkouts."""
+    return data.replace(b"\r\n", b"\n")
+
+
+def content_digest(data: bytes) -> str:
+    return hashlib.sha256(normalized_bytes(data)).hexdigest()
 
 
 def is_encrypted_payload(text: str) -> bool:
@@ -411,7 +426,7 @@ def safe_python_name(url: str, data: bytes, existing: dict[str, bytes]) -> str:
     name = re.sub(r'[<>:"/\\|?*\x00-\x1f]', "_", name).strip(" .")
     if not name:
         name = "spider.py"
-    digest = hashlib.sha256(data).hexdigest()[:10]
+    digest = content_digest(data)[:10]
     candidate = name
     if candidate in existing and existing[candidate] != data:
         candidate = "%s-%s.py" % (Path(name).stem, digest)
@@ -427,7 +442,7 @@ def python_name_rank(name: str) -> tuple[bool, int, str]:
 def deduplicate_python_data(files: dict[str, bytes]) -> dict[str, bytes]:
     groups: dict[str, list[tuple[str, bytes]]] = {}
     for name, data in files.items():
-        groups.setdefault(hashlib.sha256(data).hexdigest(), []).append((name, data))
+        groups.setdefault(content_digest(data), []).append((name, data))
     result: dict[str, bytes] = {}
     for entries in groups.values():
         canonical_name, data = min(entries, key=lambda item: python_name_rank(item[0]))
@@ -441,7 +456,7 @@ def quarantine_python(path: Path, category: str) -> None:
     target_dir.mkdir(parents=True, exist_ok=True)
     target = target_dir / path.name
     if target.exists():
-        digest = hashlib.sha256(path.read_bytes()).hexdigest()[:10]
+        digest = content_digest(path.read_bytes())[:10]
         target = target_dir / ("%s-%s%s" % (path.stem, digest, path.suffix))
     shutil.move(str(path), str(target))
     log("已移入回收/%s: %s" % (category, path.name))
@@ -457,7 +472,7 @@ def deduplicate_python_directory() -> None:
             # versions. Keep the file for inspection instead of deleting it.
             log("WARN 保留无效 Python（不参与配置）: %s" % path.name)
             continue
-        groups.setdefault(hashlib.sha256(data).hexdigest(), []).append(path)
+        groups.setdefault(content_digest(data), []).append(path)
     for paths in groups.values():
         keep = min(paths, key=lambda path: python_name_rank(path.name))
         for duplicate in paths:
@@ -606,7 +621,7 @@ def build_config(stats: BuildStats, repo: str, branch: str) -> dict[str, Any]:
         })
     config: dict[str, Any] = {
         "name": "Geit",
-        "spider": raw_url(repo, branch, "spider.jar"),
+        "spider": SPIDER_JAR_URL,
         "logo": "",
         "wallpaper": "",
         "sites": sites,
@@ -657,7 +672,24 @@ def fish_compatible_config(value: dict[str, Any]) -> dict[str, Any]:
 
 def write_fish_json(path: Path, value: dict[str, Any]) -> None:
     """Write an unencrypted JSON file for Fish/Dolphin-compatible clients."""
-    write_json(path, fish_compatible_config(value))
+    existing: dict[str, Any] = {}
+    if path.is_file():
+        try:
+            previous = json.loads(path.read_text(encoding="utf-8-sig"))
+            if isinstance(previous, dict):
+                existing = previous
+        except (OSError, json.JSONDecodeError):
+            existing = {}
+    config = fish_compatible_config(value)
+    # Manual edits to these presentation fields must survive the next CI run.
+    for key in ("spider", "logo", "wallpaper"):
+        current = str(existing.get(key, "") or "").strip()
+        if key == "spider" and current == LEGACY_SPIDER_URL:
+            # 不要把已知失效的旧 spider 地址继续保留下去。
+            continue
+        if current:
+            config[key] = existing[key]
+    write_json(path, config)
 
 
 def strip_unresolved_secret_placeholders(value: Any) -> Any:

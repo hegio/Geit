@@ -1,5 +1,5 @@
 {
-  "spider": "https://raw.githubusercontent.com/hegio/Geit/main/spider.jar",
+  "spider": "https://cnb.cool/fish2035/xs/-/git/raw/main/spider.jar",
   "logo": "",
   "wallpaper": "",
   "sites": [
@@ -490,17 +490,6 @@
       "name": "af676592",
       "type": 3,
       "api": "https://raw.githubusercontent.com/hegio/Geit/main/py/af676592.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "py-cec31b11-3278653034",
-      "name": "cec31b11-3278653034",
-      "type": 3,
-      "api": "https://raw.githubusercontent.com/hegio/Geit/main/py/cec31b11-3278653034.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
