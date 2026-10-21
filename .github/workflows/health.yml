@@ -50,6 +50,9 @@ jobs:
         with:
           python-version: '3.11'
 
+      - name: 安装 ffprobe
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+
       - name: 检查链接健康状态
         env:
           PYTHONIOENCODING: utf-8

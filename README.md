@@ -83,7 +83,7 @@ GitHub 的 `/blob/` 地址打开的是网页，不是 JSON 文件，不能作为
 python check_health.py --workers 16 --max-channels 500
 ```
 
-`check_health.py` 读取来源、站点、直播和合并频道，输出 `docs/health.json`、`docs/health.csv` 与 `docs/blocked.csv`。常见状态：
+`check_health.py` 读取来源、站点、直播和合并频道，输出 `docs/health.json`、`docs/health.csv` 与 `docs/blocked.csv`。健康工作流会安装 `ffprobe`，对支持的直链和 HLS 首条媒体流做播放探测。常见状态：
 
 - `reachable`：HTTP 可访问。
 - `http_error`：403、404、超时或连接失败。

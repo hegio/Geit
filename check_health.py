@@ -117,10 +117,14 @@ def load_items() -> list[Item]:
                     detail="待检查",
                 ))
                 pending = None
+    # Keep duplicate channel URLs: the same stream can appear under several
+    # channel names, and a failure for one name must not hide another.
     seen: set[tuple[str, str, str]] = set()
     unique: list[Item] = []
     for item in items:
-        key = (item.kind, item.name, item.url)
+        key = (item.kind, item.url)
+        if item.kind == "channel":
+            key = (item.kind, item.name, item.url)
         if key not in seen:
             seen.add(key)
             unique.append(item)
