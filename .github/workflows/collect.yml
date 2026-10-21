@@ -3,7 +3,7 @@ name: Geit 自动聚合与校验
 on:
   schedule:
     # GitHub cron 无法直接表达 18 小时；每 6 小时唤醒一次，由 gate 只放行每 3 个时间片。
-    - cron: '0 */6 * * *'
+    - cron: '0 */18 * * *'
   workflow_dispatch:
   push:
     paths:
