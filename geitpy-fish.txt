@@ -1,7 +1,7 @@
 {
-  "spider": "https://cnb.cool/fish2035/xs/-/git/raw/main/spider.jar",
-  "logo": "https://img.freepik.com/free-vector/cute-dolphin-swimming-cartoon-vector-icon-illustration-animal-nature-icon-isolated-flat-vector_138676-12582.jpg?semt=ais_hybrid&w=740&q=80",
-  "wallpaper": "http://127.0.0.1:9978/proxy?do=wallpaper",
+  "spider": "https://raw.githubusercontent.com/hegio/Geit/main/spider.jar",
+  "logo": "",
+  "wallpaper": "",
   "sites": [
     {
       "key": "裤佬片单导航",
