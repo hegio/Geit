@@ -1,0 +1,4932 @@
+{
+  "updated": "2026-10-21T13:40:50Z",
+  "summary": {
+    "probe_ok": 31,
+    "http_error": 140,
+    "probe_failed": 5,
+    "playback_unverified": 341,
+    "manifest_ok": 1,
+    "requires_app": 22,
+    "reachable": 6
+  },
+  "coverage": {
+    "checked_items": 546,
+    "note": "频道检查默认抽样；HTTP 200 不等于可播放，playback_unverified 需在影视 App 中复测"
+  },
+  "items": [
+    {
+      "kind": "channel",
+      "name": "1990赌侠",
+      "url": "https://play.modujx11.com/20241224/mBSx76B4/index.m3u8",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "ffprobe 检测到媒体流: video\r,audio\r,\r,video\r,audio",
+      "checked_at": "2026-10-21T13:37:47Z"
+    },
+    {
+      "kind": "channel",
+      "name": "1991逃学威龙",
+      "url": "https://vip.dytt-film.com/20250311/12297_35fcfa9e/index.m3u8",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "ffprobe 检测到媒体流: video\r,audio\r,\r,video\r,audio",
+      "checked_at": "2026-10-21T13:37:46Z"
+    },
+    {
+      "kind": "channel",
+      "name": "1992鹿鼎记2神龙教",
+      "url": "https://play.modujx16.com/20240830/hhzZN6Th/index.m3u8",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "ffprobe 检测到媒体流: video\r,audio\r,\r,video\r,audio",
+      "checked_at": "2026-10-21T13:37:44Z"
+    },
+    {
+      "kind": "channel",
+      "name": "1993唐伯虎点秋香",
+      "url": "https://vip.dytt-film.com/20250311/12292_2fdf132b/index.m3u8",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "ffprobe 检测到媒体流: video\r,audio\r,\r,video\r,audio",
+      "checked_at": "2026-10-21T13:37:43Z"
+    },
+    {
+      "kind": "channel",
+      "name": "1993逃学威龙3之龙过鸡年",
+      "url": "https://play.modujx15.com/20240825/VgswEazn/index.m3u8",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "ffprobe 检测到媒体流: video\r,audio\r,\r,video\r,audio",
+      "checked_at": "2026-10-21T13:37:43Z"
+    },
+    {
+      "kind": "channel",
+      "name": "1994九品芝麻官",
+      "url": "https://vip.dytt-live.com/20250330/2684_7c4bf50b/index.m3u8",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "ffprobe 检测到媒体流: video\r,audio\r,\r,video\r,audio",
+      "checked_at": "2026-10-21T13:37:43Z"
+    },
+    {
+      "kind": "channel",
+      "name": "1994破坏之王",
+      "url": "https://cdn7.ryplay7.com/20240915/380_11f89ab4/index.m3u8",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error _ssl.c:983: The handshake operation timed out>",
+      "checked_at": "2026-10-21T13:37:41Z"
+    },
+    {
+      "kind": "channel",
+      "name": "1996食神",
+      "url": "https://play.modujx15.com/20240826/pUDgrWmX/index.m3u8",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "ffprobe 检测到媒体流: video\r,audio\r,\r,video\r,audio",
+      "checked_at": "2026-10-21T13:37:40Z"
+    },
+    {
+      "kind": "channel",
+      "name": "1997家有喜事",
+      "url": "https://cdn7.ryplay7.com/20250208/10599_69233b69/index.m3u8",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "ffprobe 检测到媒体流: video\r,audio\r,\r,video\r,audio",
+      "checked_at": "2026-10-21T13:37:39Z"
+    },
+    {
+      "kind": "channel",
+      "name": "2001少林足球",
+      "url": "https://vip.lzcdn2.com/20220521/7147_3b73302c/index.m3u8",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "ffprobe 检测到媒体流: video\r,audio\r,\r,video\r,audio",
+      "checked_at": "2026-10-21T13:37:39Z"
+    },
+    {
+      "kind": "channel",
+      "name": "2004功夫",
+      "url": "https://cdn1.ryplay1.com/20240910/7703_9dc7d493/index.m3u8",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "ffprobe 检测到媒体流: video\r,audio\r,\r,video\r,audio",
+      "checked_at": "2026-10-21T13:37:39Z"
+    },
+    {
+      "kind": "channel",
+      "name": "2016美人鱼",
+      "url": "https://cdn1.ryplay1.com/20240910/7734_c602d62b/index.m3u8",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "ffprobe 检测到媒体流: video\r,audio\r,\r,video\r,audio",
+      "checked_at": "2026-10-21T13:37:39Z"
+    },
+    {
+      "kind": "channel",
+      "name": "2019哪吒之魔童降世",
+      "url": "http://111.229.219.148:808/Cache/lzgg/67f35a41a439e00540d0d88f62d3d56a.m3u8",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T13:37:36Z"
+    },
+    {
+      "kind": "channel",
+      "name": "2025哪吒之魔童闹海",
+      "url": "https://play.modujx11.com/20250802/Cha4M4YU/index.m3u8",
+      "status": "probe_failed",
+      "http_status": 200,
+      "detail": "https://play.modujx11.com/20250802/Cha4M4YU/index.m3u8: End of file",
+      "checked_at": "2026-10-21T13:37:38Z"
+    },
+    {
+      "kind": "channel",
+      "name": "2026 功夫女足",
+      "url": "https://vip.dytt-network.com/20260723/36526_9c21455c/index.m3u8",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "ffprobe 检测到媒体流: video\r,audio\r,\r,video\r,audio",
+      "checked_at": "2026-10-21T13:37:35Z"
+    },
+    {
+      "kind": "channel",
+      "name": "2026八仙",
+      "url": "http://111.229.219.148:808/Cache/lzgg/7a367b98744276dba9ea2844bf13ab1e.m3u8",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T13:37:35Z"
+    },
+    {
+      "kind": "channel",
+      "name": "2026功夫 女足",
+      "url": "https://v.fengbao11.com/video/gongfunvzu/618845436188/index.m3u8",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "ffprobe 检测到媒体流: video\r,audio\r,\r,video\r,audio",
+      "checked_at": "2026-10-21T13:37:35Z"
+    },
+    {
+      "kind": "channel",
+      "name": "2026功夫女足",
+      "url": "https://v.lfthirtytwo.com/20260723/8846_f4084a75/index.m3u8",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "ffprobe 检测到媒体流: video\r,audio\r,\r,video\r,audio",
+      "checked_at": "2026-10-21T13:37:34Z"
+    },
+    {
+      "kind": "channel",
+      "name": "AGA-孤雏",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000cp22lt3c77u3sp4g96u0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:09Z"
+    },
+    {
+      "kind": "channel",
+      "name": "Alone-marshmello",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200f290000brtup22lsr1a6l8qmgn0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:33Z"
+    },
+    {
+      "kind": "channel",
+      "name": "Anyone Of Us",
+      "url": "https://m.douyin.com/aweme/v1/playwm/?video_id=v0200fg10000cq49ctvog65h6153dks0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:32Z"
+    },
+    {
+      "kind": "channel",
+      "name": "Astro AEC",
+      "url": "https://cdn3.indevs.in/stream/live/aec/",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:39:35Z"
+    },
+    {
+      "kind": "channel",
+      "name": "Astro AOD",
+      "url": "https://cdn3.indevs.in/stream/live/aod/",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:39:34Z"
+    },
+    {
+      "kind": "channel",
+      "name": "Astro QJ",
+      "url": "https://cdn3.indevs.in/stream/live/qj/",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:39:35Z"
+    },
+    {
+      "kind": "channel",
+      "name": "Astro欢喜台",
+      "url": "https://cdn3.indevs.in/stream/live/hxt/",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:39:35Z"
+    },
+    {
+      "kind": "channel",
+      "name": "Beyond-光辉岁月",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000ccu4ldjc77u4nmf3f54g&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:03Z"
+    },
+    {
+      "kind": "channel",
+      "name": "Beyond-冷雨夜",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cdqcbe3c77ucgubud6i0&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:37:03Z"
+    },
+    {
+      "kind": "channel",
+      "name": "Beyond-大地",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cojstabc77uerhn878qg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:03Z"
+    },
+    {
+      "kind": "channel",
+      "name": "Beyond-岁月无声",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000cfhoeq3c77u4flt6fni0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:04Z"
+    },
+    {
+      "kind": "channel",
+      "name": "Beyond-海阔天空",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000chfntjrc77uf4o64t5qg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:04Z"
+    },
+    {
+      "kind": "channel",
+      "name": "Beyond-真的爱你",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000ceksa4bc77u77da91tfg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:03Z"
+    },
+    {
+      "kind": "channel",
+      "name": "Burning",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300f2b0000bti8l4nm1ok3like33ag&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:31Z"
+    },
+    {
+      "kind": "channel",
+      "name": "By Your side",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?line=0&logo_name=aweme_diversion_search&ratio=720p&video_id=v0200fg10000cohhg2bc77u7p44oqrsg",
+      "status": "http_error",
+      "http_status": 403,
+      "detail": "HTTP 403",
+      "checked_at": "2026-10-21T13:37:33Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CAllStar-天梯",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cisenvvog65r87k65dr0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:36:57Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CCTV13",
+      "url": "https://10.fast.hidns.vip/163189/cctv13/",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:38:23Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CCTV1港澳版",
+      "url": "https://cdn6.cc.cd/163189/cctv1",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T13:38:22Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CH5",
+      "url": "https://cdn6.cc.cd/163189/ch5",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T13:38:58Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CH8",
+      "url": "https://cdn6.cc.cd/163189/ch8",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T13:39:00Z"
+    },
+    {
+      "kind": "channel",
+      "name": "CHU",
+      "url": "https://cdn6.cc.cd/163189/chu",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T13:39:03Z"
+    },
+    {
+      "kind": "channel",
+      "name": "Colbie Caillat-Try",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000ckblmvrc77u7sbpm2vjg&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 403,
+      "detail": "HTTP 403",
+      "checked_at": "2026-10-21T13:37:28Z"
+    },
+    {
+      "kind": "channel",
+      "name": "Creepin' Up On You",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cq5ji0vog65vhisof6m0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:32Z"
+    },
+    {
+      "kind": "channel",
+      "name": "Cry On My Shoulder",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200f560000bt8c31an6tf9cl2gpmsg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:31Z"
+    },
+    {
+      "kind": "channel",
+      "name": "DJ369-全粤语Electro音乐打造廿四味鬼佬凉茶包房上头串烧",
+      "url": "https://mp4.djuu.com/c2/16/2026/9282f410b5437e16.m4a",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:22Z"
+    },
+    {
+      "kind": "channel",
+      "name": "DJVinCent-全粤语Electro港台女声唱K必点粤听粤过瘾DJ串烧",
+      "url": "https://mp4.djuu.com/c2/16/2026/b355cd7e4ac8489d.m4a",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:23Z"
+    },
+    {
+      "kind": "channel",
+      "name": "DJ伦少-全粤语Electro超正喜爱夜蒲Woerland全女生串烧",
+      "url": "https://mp4.djuu.com/c2/16/2026/4583210357701894.m4a",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:22Z"
+    },
+    {
+      "kind": "channel",
+      "name": "DJ傑少-全粤语Electro音乐受够我的骄傲全女声动感DJ串烧",
+      "url": "https://mp4.djuu.com/c2/16/2025/72ad9cbcca850695.m4a",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:21Z"
+    },
+    {
+      "kind": "channel",
+      "name": "DJ傑少-全粤语Electro音乐结他恋爱如何天平坐劲爆DJ串烧",
+      "url": "https://mp4.djuu.com/c2/16/2025/8ffc09282d550467.m4a",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:20Z"
+    },
+    {
+      "kind": "channel",
+      "name": "DJ傑少-全粤语Electro音乐谢谢对不起幻想已醒劲爆 DJ串烧",
+      "url": "https://mp4.djuu.com/c2/16/2026/8c57a69300a7f7bb.m4a",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:22Z"
+    },
+    {
+      "kind": "channel",
+      "name": "DJ小超-全粤语Electro音乐精选2025经典宝丽金DJ慢摇串烧",
+      "url": "https://mp4.djuu.com/c2/16/2025/a65d68e2c7ca00ac.m4a",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:19Z"
+    },
+    {
+      "kind": "channel",
+      "name": "DJ珺宝-全粤语Electro音乐抖音热播全女声专辑车载串烧",
+      "url": "https://mp4.djuu.com/c2/16/2025/154b9db16b9c2203.m4a",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:21Z"
+    },
+    {
+      "kind": "channel",
+      "name": "Dance Monkey",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200f310000bt8c334lftubd6erba3g&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:31Z"
+    },
+    {
+      "kind": "channel",
+      "name": "Dancer in the dark",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000c7qaabrc77ucr5apups0&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 403,
+      "detail": "HTTP 403",
+      "checked_at": "2026-10-21T13:37:33Z"
+    },
+    {
+      "kind": "channel",
+      "name": "Dilemma",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cq4uhjvog65ui5mm0pcg&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 403,
+      "detail": "HTTP 403",
+      "checked_at": "2026-10-21T13:37:32Z"
+    },
+    {
+      "kind": "channel",
+      "name": "DjErwin-全粤语Electro音乐不只爱情粤式情歌劲爆DJ串烧",
+      "url": "https://mp4.djuu.com/c2/16/2025/4331430d1d6a6b5e.m4a",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:22Z"
+    },
+    {
+      "kind": "channel",
+      "name": "DjMcYummy-全粤语Electro音乐纷花游乐场不只爱情港台串烧",
+      "url": "https://mp4.djuu.com/c2/16/2026/2813bff6a8388701.m4a",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:22Z"
+    },
+    {
+      "kind": "channel",
+      "name": "DjMut-全粤语Electro精选广东小丸子vs广西科目老表串烧",
+      "url": "https://mp4.djuu.com/c2/16/2025/df52073c940e645f.m4a",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:21Z"
+    },
+    {
+      "kind": "channel",
+      "name": "Dj柏豪-全粤语Electro音乐我的骄傲16号爱人Dj星仔专属串烧",
+      "url": "https://mp4.djuu.com/c2/16/2025/fc06603b2c9c6a24.m4a",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:19Z"
+    },
+    {
+      "kind": "channel",
+      "name": "Dj维少-全粤语Electro精选苦情人情歌高音质DJ车载串烧",
+      "url": "https://mp4.djuu.com/c2/16/2025/38470f92aff3f280.m4a",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:20Z"
+    },
+    {
+      "kind": "channel",
+      "name": "Dj维少-全粤语Electro音乐精选16号爱人高音质车载串烧",
+      "url": "https://mp4.djuu.com/c2/16/2025/e013a85c41c6c479.m4a",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:20Z"
+    },
+    {
+      "kind": "channel",
+      "name": "Dj钟仔-全粤语Electro风格港台情歌对碰吴雨霏vs关心妍DJ串烧",
+      "url": "https://mp4.djuu.com/c2/16/2025/0c30fc654c36ebe2.m4a",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:19Z"
+    },
+    {
+      "kind": "channel",
+      "name": "Dusk Till Dawn",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cp9tgnnog65mqc12febg&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 403,
+      "detail": "HTTP 403",
+      "checked_at": "2026-10-21T13:37:33Z"
+    },
+    {
+      "kind": "channel",
+      "name": "Electro风格全粤语女声串烧DJ",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v1e00fgi0000ct65p5fog65r7qkgveu0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:18Z"
+    },
+    {
+      "kind": "channel",
+      "name": "F4-决不能失去你",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000clpfsjbc77u46m77t630&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 403,
+      "detail": "HTTP 403",
+      "checked_at": "2026-10-21T13:37:14Z"
+    },
+    {
+      "kind": "channel",
+      "name": "F4-流星雨",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000ctps9ffog65q3ledq7i0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:13Z"
+    },
+    {
+      "kind": "channel",
+      "name": "Fool for you",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cp79alnog65ukeu0tka0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:33Z"
+    },
+    {
+      "kind": "channel",
+      "name": "Free Loop",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fd90000bu2n37d2kepoqmgibfng&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 403,
+      "detail": "HTTP 403",
+      "checked_at": "2026-10-21T13:37:31Z"
+    },
+    {
+      "kind": "channel",
+      "name": "HOY TV",
+      "url": "https://cc.123.rr.kg/163189/hoy",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:51Z"
+    },
+    {
+      "kind": "channel",
+      "name": "HOY TV",
+      "url": "https://cdn6.cc.cd/163189/hoy",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T13:38:06Z"
+    },
+    {
+      "kind": "channel",
+      "name": "HOY TV",
+      "url": "https://fast.hidns.vip/163189/hoy",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:38:06Z"
+    },
+    {
+      "kind": "channel",
+      "name": "HOY国际财经台",
+      "url": "https://cdn11.163189.xyz/163189/hoy76",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:38:11Z"
+    },
+    {
+      "kind": "channel",
+      "name": "HOY资讯台",
+      "url": "https://fast.hidns.vip/163189/hoy78",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:38:07Z"
+    },
+    {
+      "kind": "channel",
+      "name": "I Wanted You",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cpchumnog65q36id9o10&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:33Z"
+    },
+    {
+      "kind": "channel",
+      "name": "I do",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200f260000bu416dd6mgceo9a0ume0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:31Z"
+    },
+    {
+      "kind": "channel",
+      "name": "I'll Do It",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000ch9m0jjc77u31dq1i4b0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:34Z"
+    },
+    {
+      "kind": "channel",
+      "name": "Like I Love you",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cj9sd4fog65k6lhdmrp0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:33Z"
+    },
+    {
+      "kind": "channel",
+      "name": "Love You like a Love Song",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cnbjh5rc77u8no9th78g&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:30Z"
+    },
+    {
+      "kind": "channel",
+      "name": "Love story",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cosdf4bc77uf5rjg3770&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:26Z"
+    },
+    {
+      "kind": "channel",
+      "name": "My Love",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200f050000bt8c30ibn0fk5akcthh0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:31Z"
+    },
+    {
+      "kind": "channel",
+      "name": "NOW新闻台",
+      "url": "https://fast.hidns.vip/163189/now",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:38:17Z"
+    },
+    {
+      "kind": "channel",
+      "name": "Nevada",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300ff30000but4f2452a13sf6temog&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:23Z"
+    },
+    {
+      "kind": "channel",
+      "name": "Nothin' on me",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cmm6k83c77u8g6f05uf0&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 403,
+      "detail": "HTTP 403",
+      "checked_at": "2026-10-21T13:37:33Z"
+    },
+    {
+      "kind": "channel",
+      "name": "Nothing's gonna change my love for you",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200f680000btisjnvh3f2dgbhasf6g&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:31Z"
+    },
+    {
+      "kind": "channel",
+      "name": "One Last Time",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000co6atujc77u007hc7bs0&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 403,
+      "detail": "HTTP 403",
+      "checked_at": "2026-10-21T13:37:33Z"
+    },
+    {
+      "kind": "channel",
+      "name": "Play",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000ca5nc43c77u72ekj6rpg&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:37:33Z"
+    },
+    {
+      "kind": "channel",
+      "name": "Please Don't Go",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cpl46avog65gueg43ogg&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 403,
+      "detail": "HTTP 403",
+      "checked_at": "2026-10-21T13:37:32Z"
+    },
+    {
+      "kind": "channel",
+      "name": "Pretty Boy",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cpv0lcnog65imtn4isig&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 403,
+      "detail": "HTTP 403",
+      "checked_at": "2026-10-21T13:37:32Z"
+    },
+    {
+      "kind": "channel",
+      "name": "RTHK31",
+      "url": "https://fast.hidns.vip/163189/rthk31",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:38:22Z"
+    },
+    {
+      "kind": "channel",
+      "name": "RTHK32",
+      "url": "https://fast.hidns.vip/163189/rthk32",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:38:22Z"
+    },
+    {
+      "kind": "channel",
+      "name": "Reality",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fb00000bup46gpu718r2jkqr92g&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:31Z"
+    },
+    {
+      "kind": "channel",
+      "name": "SHE-67首合集",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cp7v5hvog65pib9gvgr0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:36:59Z"
+    },
+    {
+      "kind": "channel",
+      "name": "Sold Out",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000coop9krc77u2ah4aikq0&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 403,
+      "detail": "HTTP 403",
+      "checked_at": "2026-10-21T13:37:33Z"
+    },
+    {
+      "kind": "channel",
+      "name": "Star Sky",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300f9c0000bt8c32me4f98gqkmvu00&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:29Z"
+    },
+    {
+      "kind": "channel",
+      "name": "TVB Plus(WebVTT字幕)",
+      "url": "https://10.fast.hidns.vip/163189/tvbp/",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:39:46Z"
+    },
+    {
+      "kind": "channel",
+      "name": "TVB Plus(字幕)",
+      "url": "https://cdn3.indevs.in/stream/tvb/tvbp/",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:38:06Z"
+    },
+    {
+      "kind": "channel",
+      "name": "TVB plus备",
+      "url": "https://vdm6-hw.nbgdsygs.com/live/h6-2.flv",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "ffprobe 检测到媒体流: audio\r,video",
+      "checked_at": "2026-10-21T13:37:34Z"
+    },
+    {
+      "kind": "channel",
+      "name": "TVB1",
+      "url": "https://cdn6.cc.cd/163189/tvb1",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T13:38:37Z"
+    },
+    {
+      "kind": "channel",
+      "name": "TVBJ1",
+      "url": "https://cdn6.cc.cd/163189/j1",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T13:38:38Z"
+    },
+    {
+      "kind": "channel",
+      "name": "TVB亚洲武侠",
+      "url": "https://cdn6.cc.cd/163189/yzwx",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T13:39:21Z"
+    },
+    {
+      "kind": "channel",
+      "name": "TVB娱乐新闻台",
+      "url": "https://cdn6.cc.cd/163189/ylxw",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T13:39:22Z"
+    },
+    {
+      "kind": "channel",
+      "name": "TVB星河",
+      "url": "https://10.fast.hidns.vip/163189/xinghe/",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:39:24Z"
+    },
+    {
+      "kind": "channel",
+      "name": "TVB星河",
+      "url": "https://cdn3.indevs.in/stream/live/tvbxh/",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:39:41Z"
+    },
+    {
+      "kind": "channel",
+      "name": "TVB星河",
+      "url": "https://cdn6.cc.cd/163189/tvbxh",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T13:39:23Z"
+    },
+    {
+      "kind": "channel",
+      "name": "Talking to the moon",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300f0e0000btktaso6de4h3n6m8mug&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 403,
+      "detail": "HTTP 403",
+      "checked_at": "2026-10-21T13:37:31Z"
+    },
+    {
+      "kind": "channel",
+      "name": "That's Why You Go Away",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300f2b0000btjbvrnm1ok3likh5big&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:31Z"
+    },
+    {
+      "kind": "channel",
+      "name": "TiK ToK",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cp3amqjc77u4t8chnn9g&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:33Z"
+    },
+    {
+      "kind": "channel",
+      "name": "Trouble Is a Friend",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000ce4sahbc77u86e1eone0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:31Z"
+    },
+    {
+      "kind": "channel",
+      "name": "Twins-下一站天后",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000c9hsmhrc77u8bcep14rg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:07Z"
+    },
+    {
+      "kind": "channel",
+      "name": "Twins-恋爱大过天",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cfvdrjrc77ud5nlujjag&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:07Z"
+    },
+    {
+      "kind": "channel",
+      "name": "Twins-朋友仔",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cdsbamrc77u2p0aq3a00&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:08Z"
+    },
+    {
+      "kind": "channel",
+      "name": "Twins-风筝与风",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fda0000bshv5b74vs5fah61kna0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:08Z"
+    },
+    {
+      "kind": "channel",
+      "name": "Twins/boyz-死性不改",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cfvjrkbc77u74v6btr50&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:07Z"
+    },
+    {
+      "kind": "channel",
+      "name": "Unstoppable",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000ce4av3bc77u7mqoje2kg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:23Z"
+    },
+    {
+      "kind": "channel",
+      "name": "Victory",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200f310000bt8c32klftubd6erb6ig&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:29Z"
+    },
+    {
+      "kind": "channel",
+      "name": "ViuTV",
+      "url": "https://10.fast.hidns.vip/163189/viu/",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:38:12Z"
+    },
+    {
+      "kind": "channel",
+      "name": "ViuTVsix",
+      "url": "https://10.fast.hidns.vip/163189/viu6/",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:38:13Z"
+    },
+    {
+      "kind": "channel",
+      "name": "You Don't Know me",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200ffd0000bughtrht4rmmsdcm6fu0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:31Z"
+    },
+    {
+      "kind": "channel",
+      "name": "alone",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fff0000bugiemqsocvbkm7ilit0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:24Z"
+    },
+    {
+      "kind": "channel",
+      "name": "anyone of us",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300faf0000c08j4u35esuptakp4ltg&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 403,
+      "detail": "HTTP 403",
+      "checked_at": "2026-10-21T13:37:27Z"
+    },
+    {
+      "kind": "channel",
+      "name": "apologize",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300f2b0000btoqjanm1ok3lil6c8f0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:28Z"
+    },
+    {
+      "kind": "channel",
+      "name": "as long as you love me",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cl271gfog65vcqh4qbq0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:32Z"
+    },
+    {
+      "kind": "channel",
+      "name": "baby",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v1e00fgi0000ctq63sfog65oesmmlnfg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:24Z"
+    },
+    {
+      "kind": "channel",
+      "name": "bad romance",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cv55iuvog65uhoogkirg&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 403,
+      "detail": "HTTP 403",
+      "checked_at": "2026-10-21T13:37:30Z"
+    },
+    {
+      "kind": "channel",
+      "name": "because of you",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cn5vg13c77u9kllf7rng&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:26Z"
+    },
+    {
+      "kind": "channel",
+      "name": "booty music",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000cjm702jc77ue24dr770g&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:29Z"
+    },
+    {
+      "kind": "channel",
+      "name": "by my side DJ",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cg6q69jc77u50fea8qog&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:17Z"
+    },
+    {
+      "kind": "channel",
+      "name": "by2-你并不懂我",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000c8bids3c77ufr1d2duag&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:00Z"
+    },
+    {
+      "kind": "channel",
+      "name": "by2-你并不懂我",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000crhpin7og65vnbko3vm0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:00Z"
+    },
+    {
+      "kind": "channel",
+      "name": "by2-我知道",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000citn8ivog65usodfhif0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:00Z"
+    },
+    {
+      "kind": "channel",
+      "name": "by2-我知道",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000ct0ushnog65rec0oavug&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:37:00Z"
+    },
+    {
+      "kind": "channel",
+      "name": "by2-爱丫爱丫",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000croe187og65pl22ksg00&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:00Z"
+    },
+    {
+      "kind": "channel",
+      "name": "by2/汪苏泷-有点甜",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cb5bsu3c77ucgqht5pj0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:00Z"
+    },
+    {
+      "kind": "channel",
+      "name": "call me maybe",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000csl040fog65p2l58uqdg&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 403,
+      "detail": "HTTP 403",
+      "checked_at": "2026-10-21T13:37:30Z"
+    },
+    {
+      "kind": "channel",
+      "name": "call me now",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000crh7kdvog65s0rf9jp3g&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:25Z"
+    },
+    {
+      "kind": "channel",
+      "name": "closer",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000c6c60frc77u7j9o2ecs0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:34Z"
+    },
+    {
+      "kind": "channel",
+      "name": "dancing with your ghost",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?line=0&logo_name=aweme_diversion_search&ratio=720p&video_id=v1e00fgi0000ctf6s1vog65kfs6o3iq0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:37:32Z"
+    },
+    {
+      "kind": "channel",
+      "name": "diamonds",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fe40000bvm4vsl2kepgd0uu7i50&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:27Z"
+    },
+    {
+      "kind": "channel",
+      "name": "faded",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000ctbhakfog65pugm8msu0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:23Z"
+    },
+    {
+      "kind": "channel",
+      "name": "far away from home",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000ca1ttbrc77u57r2ktc0g&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:29Z"
+    },
+    {
+      "kind": "channel",
+      "name": "fire",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300f7e0000bt9epjpk950m5pm5itog&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:31Z"
+    },
+    {
+      "kind": "channel",
+      "name": "gamgamDJ",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cr8r23nog65mnbf3616g&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:16Z"
+    },
+    {
+      "kind": "channel",
+      "name": "god is a girl",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cl4vjifog65htupeja50&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:26Z"
+    },
+    {
+      "kind": "channel",
+      "name": "good time",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300f0e0000btpfugg6de4h3n78ccig&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 403,
+      "detail": "HTTP 403",
+      "checked_at": "2026-10-21T13:37:31Z"
+    },
+    {
+      "kind": "channel",
+      "name": "handsome lau/HYPEEZY/冯泳-梦醒",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cd2h8erc77u41qn32org&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:36:52Z"
+    },
+    {
+      "kind": "channel",
+      "name": "heartbeats",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000clm5h5vog65n7m96h5o0&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 403,
+      "detail": "HTTP 403",
+      "checked_at": "2026-10-21T13:37:31Z"
+    },
+    {
+      "kind": "channel",
+      "name": "here with me",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cl898rnog65i0hbffnv0&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 403,
+      "detail": "HTTP 403",
+      "checked_at": "2026-10-21T13:37:32Z"
+    },
+    {
+      "kind": "channel",
+      "name": "hero",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?line=0&logo_name=aweme_diversion_search&ratio=720p&video_id=v0200f040000bvqofe74s1nnb5npm2mg",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:26Z"
+    },
+    {
+      "kind": "channel",
+      "name": "hymn  for the weekend",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300f360000bv64mkrphouv4f2o1kpg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:28Z"
+    },
+    {
+      "kind": "channel",
+      "name": "i want you to know",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cvn75nnog65u3q261730&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 403,
+      "detail": "HTTP 403",
+      "checked_at": "2026-10-21T13:37:30Z"
+    },
+    {
+      "kind": "channel",
+      "name": "i want you to know",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000cl46f1jc77udgi44b3cg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:33Z"
+    },
+    {
+      "kind": "channel",
+      "name": "insomnia",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cmso8mjc77u3n6klkh40&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:29Z"
+    },
+    {
+      "kind": "channel",
+      "name": "legends never die",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fff0000bujdacisocvbkm7qhtqg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:29Z"
+    },
+    {
+      "kind": "channel",
+      "name": "lone Ranger",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000c67opt3c77u4kb9gjuu0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:29Z"
+    },
+    {
+      "kind": "channel",
+      "name": "lonely DJ",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000c34cmjq90k9n62f21tfg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:17Z"
+    },
+    {
+      "kind": "channel",
+      "name": "love story",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200f410000buj6ial4q2a6rctrcdv0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:26Z"
+    },
+    {
+      "kind": "channel",
+      "name": "love the way you lie",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000csk8qsvog65nldrobpag&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 403,
+      "detail": "HTTP 403",
+      "checked_at": "2026-10-21T13:37:29Z"
+    },
+    {
+      "kind": "channel",
+      "name": "lovefool",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200f0c0000c0air5omu7ok6882l380&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:25Z"
+    },
+    {
+      "kind": "channel",
+      "name": "monsters",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cl270lfog65hf7m2f3j0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:25Z"
+    },
+    {
+      "kind": "channel",
+      "name": "moshi moshi",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cl4vd2vog65v766s3lag&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 403,
+      "detail": "HTTP 403",
+      "checked_at": "2026-10-21T13:37:32Z"
+    },
+    {
+      "kind": "channel",
+      "name": "move up",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300f6d0000c1110e3c60j1d8ttn99g&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:24Z"
+    },
+    {
+      "kind": "channel",
+      "name": "move your body",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000clkl27bc77u100fn3qo0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:30Z"
+    },
+    {
+      "kind": "channel",
+      "name": "moves like jagger",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fb10000bvesniikbj343hhac8eg&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 403,
+      "detail": "HTTP 403",
+      "checked_at": "2026-10-21T13:37:27Z"
+    },
+    {
+      "kind": "channel",
+      "name": "mr-森林",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000c2ofpk3c77u6arm34eeg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:12Z"
+    },
+    {
+      "kind": "channel",
+      "name": "natural",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000caj6qnrc77u88k20m8jg&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:37:28Z"
+    },
+    {
+      "kind": "channel",
+      "name": "normal no more",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cvvrm4vog65v9p2sp2hg&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 403,
+      "detail": "HTTP 403",
+      "checked_at": "2026-10-21T13:37:25Z"
+    },
+    {
+      "kind": "channel",
+      "name": "oao-wake",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000cssap9fog65j9je20u7g&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:37:24Z"
+    },
+    {
+      "kind": "channel",
+      "name": "once upon a time",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cumt1mfog65krksdg31g&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:23Z"
+    },
+    {
+      "kind": "channel",
+      "name": "outside",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cp8jcdnog65ic6gplqf0&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 403,
+      "detail": "HTTP 403",
+      "checked_at": "2026-10-21T13:37:33Z"
+    },
+    {
+      "kind": "channel",
+      "name": "phut hon",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000coms82jc77u4flecs0bg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:33Z"
+    },
+    {
+      "kind": "channel",
+      "name": "pink-try",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000ctft5s7og65u0hdbnig0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:28Z"
+    },
+    {
+      "kind": "channel",
+      "name": "please dont go",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200f180000bvco837d9i7eq4ai1jmg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:27Z"
+    },
+    {
+      "kind": "channel",
+      "name": "poker face",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?line=0&logo_name=aweme_diversion_search&ratio=720p&video_id=v0200fg10000cpoe5uvog65h83t50rsg",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:37:32Z"
+    },
+    {
+      "kind": "channel",
+      "name": "reality",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300f080000c02l8d5f84f3ru33id50&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:26Z"
+    },
+    {
+      "kind": "channel",
+      "name": "remember our summer",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?line=0&logo_name=aweme_diversion_search&ratio=720p&video_id=v0200fg10000cocdiqjc77u8mnj0qmgg",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:25Z"
+    },
+    {
+      "kind": "channel",
+      "name": "right now",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200f4e0000bs8n4m6fbk5pph8knf2g&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:28Z"
+    },
+    {
+      "kind": "channel",
+      "name": "rolling in the deep",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v1e00fgi0000ct11konog65sgjaem0n0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:28Z"
+    },
+    {
+      "kind": "channel",
+      "name": "run free",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000c6bn043c77u9bihknaj0&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:37:25Z"
+    },
+    {
+      "kind": "channel",
+      "name": "salt",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v1e00fgi0000cstvnkfog65p72v2jrrg&ratio=720p&line=0b",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:28Z"
+    },
+    {
+      "kind": "channel",
+      "name": "see you again",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200f3e0000bt8c30sebj9j64kkop2g&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:28Z"
+    },
+    {
+      "kind": "channel",
+      "name": "shape of you",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200f060000bsvqd8hl43bkt6rc4sv0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:29Z"
+    },
+    {
+      "kind": "channel",
+      "name": "shots",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v1e00fgi0000ctqgk5vog65vl902jf8g&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:30Z"
+    },
+    {
+      "kind": "channel",
+      "name": "sing me to sleep",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000clhho2fog65otdj4luag&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:24Z"
+    },
+    {
+      "kind": "channel",
+      "name": "something just like this",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000cs4hhsvog65kgk2fa28g&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:28Z"
+    },
+    {
+      "kind": "channel",
+      "name": "sound of my dream",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cu8hr8fog65sbnn5265g&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 403,
+      "detail": "HTTP 403",
+      "checked_at": "2026-10-21T13:37:17Z"
+    },
+    {
+      "kind": "channel",
+      "name": "stronger",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000c63kkorc77u71r5ch5o0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:26Z"
+    },
+    {
+      "kind": "channel",
+      "name": "summer air",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?line=0&logo_name=aweme_diversion_search&ratio=720p&video_id=v0200fg10000cm20flnog65j08qqtmh0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:25Z"
+    },
+    {
+      "kind": "channel",
+      "name": "sweet but psycho",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000c7hnn53c77uej28ntkig&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:27Z"
+    },
+    {
+      "kind": "channel",
+      "name": "sweety-樱花草",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000c9rreibc77u0n5mpg0o0&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:37:13Z"
+    },
+    {
+      "kind": "channel",
+      "name": "take me hand",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000clnfk87og65tv4479500&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:25Z"
+    },
+    {
+      "kind": "channel",
+      "name": "take me to infinity",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300f2d0000c00mcdk080ke0g3td2eg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:25Z"
+    },
+    {
+      "kind": "channel",
+      "name": "that girl",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cl1ot2fog65otdmkp0t0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:26Z"
+    },
+    {
+      "kind": "channel",
+      "name": "the cure",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000ctc4cd7og65hrog41isg&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 403,
+      "detail": "HTTP 403",
+      "checked_at": "2026-10-21T13:37:30Z"
+    },
+    {
+      "kind": "channel",
+      "name": "the day you went away",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000crchtlnog65ud12ifgd0&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 403,
+      "detail": "HTTP 403",
+      "checked_at": "2026-10-21T13:37:30Z"
+    },
+    {
+      "kind": "channel",
+      "name": "the spectre",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000ctv3ntnog65htc7dg9k0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:24Z"
+    },
+    {
+      "kind": "channel",
+      "name": "this Is what you came for",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cpeh6v7og65u1fbjqs9g&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 403,
+      "detail": "HTTP 403",
+      "checked_at": "2026-10-21T13:37:33Z"
+    },
+    {
+      "kind": "channel",
+      "name": "touch",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cmhn50rc77ucfc970np0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:34Z"
+    },
+    {
+      "kind": "channel",
+      "name": "umbrella",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000c75hnj3c77uboleql2vg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:28Z"
+    },
+    {
+      "kind": "channel",
+      "name": "until you",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cl2e71fog65v764v4ibg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:32Z"
+    },
+    {
+      "kind": "channel",
+      "name": "wakawaka",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fbe0000buqeue7bs17qid7thla0&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 403,
+      "detail": "HTTP 403",
+      "checked_at": "2026-10-21T13:37:28Z"
+    },
+    {
+      "kind": "channel",
+      "name": "wake",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000c9pk6hbc77u57r42sd9g&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:24Z"
+    },
+    {
+      "kind": "channel",
+      "name": "way back",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000c4gdkrbc77u8ohrj50n0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:27Z"
+    },
+    {
+      "kind": "channel",
+      "name": "we don't talk anymore",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cfb0e4bc77u38s842ah0&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 403,
+      "detail": "HTTP 403",
+      "checked_at": "2026-10-21T13:37:30Z"
+    },
+    {
+      "kind": "channel",
+      "name": "wolves",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200f3e0000bt8c32cebj9j64kkp230&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:37:30Z"
+    },
+    {
+      "kind": "channel",
+      "name": "wonder girls-Nobody",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000c6loblbc77u7hd3mel20&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:36:51Z"
+    },
+    {
+      "kind": "channel",
+      "name": "上帝是女孩DJ",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000chhlaijc77u2jkqvf1h0&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:37:17Z"
+    },
+    {
+      "kind": "channel",
+      "name": "东方卫视4K",
+      "url": "http://go.bkpcp.top/mg/dfws",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "[WinError 10054] 远程主机强迫关闭了一个现有的连接。",
+      "checked_at": "2026-10-21T13:37:34Z"
+    },
+    {
+      "kind": "channel",
+      "name": "东方卫视4K",
+      "url": "https://bp-resource-dfl.bestv.cn/148/3/video.m3u8",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "ffprobe 检测到媒体流: video\r,audio\r,\r,video\r,audio",
+      "checked_at": "2026-10-21T13:37:34Z"
+    },
+    {
+      "kind": "channel",
+      "name": "中山Dj添仔-全粤语Electro风格90后热播远途望出车外串烧",
+      "url": "https://mp4.djuu.com/c2/16/2025/b32dcc1dc2767643.m4a",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:19Z"
+    },
+    {
+      "kind": "channel",
+      "name": "五星体育",
+      "url": "https://cdn15.163189.xyz/163189/wxty",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:39:53Z"
+    },
+    {
+      "kind": "channel",
+      "name": "仙村Dj健仔-全粤语Electro音乐中文流行热播车载DJ慢摇串烧",
+      "url": "https://mp4.djuu.com/c2/16/2025/b0cd93e548b83c5f.m4a",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:19Z"
+    },
+    {
+      "kind": "channel",
+      "name": "任然-飞鸟和蝉",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000chgciibc77u4m8k4edog&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:37:13Z"
+    },
+    {
+      "kind": "channel",
+      "name": "何仟仟-魔鬼邂逅",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000c9i1th3c77u5pdfcatng&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:37:13Z"
+    },
+    {
+      "kind": "channel",
+      "name": "何润东-我记得我爱过",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000cm12qa3c77u3pbdnrr00&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:15Z"
+    },
+    {
+      "kind": "channel",
+      "name": "侧田-kong",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000clc94u3c77uf0uv06v80&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:08Z"
+    },
+    {
+      "kind": "channel",
+      "name": "侧田-命硬",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000clpvvpbc77udpkv629d0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:08Z"
+    },
+    {
+      "kind": "channel",
+      "name": "光良-童话",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cmhcjp3c77u6lekc7am0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:36:58Z"
+    },
+    {
+      "kind": "channel",
+      "name": "全粤语8090经典劲爆DJ",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cnamtabc77u54nj2kh6g&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:17Z"
+    },
+    {
+      "kind": "channel",
+      "name": "全粤语Club风格汽车慢摇串烧DJ",
+      "url": "http://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cpp7b2nog65rhkqq6tpg",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:37:18Z"
+    },
+    {
+      "kind": "channel",
+      "name": "全粤语女声失恋治愈串烧",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v1e00fgi0000ct7hj5vog65n714a1fd0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:18Z"
+    },
+    {
+      "kind": "channel",
+      "name": "全粤语女声深情DJ串烧",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000ctbb4kvog65q67op5tug&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:37:18Z"
+    },
+    {
+      "kind": "channel",
+      "name": "全粤语港台经典老歌DJ",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cs5om8nog65vrmmn2g4g&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:37:18Z"
+    },
+    {
+      "kind": "channel",
+      "name": "全英文洗脑神曲dj串烧",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000ctpdosvog65ofsrkov0g&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:18Z"
+    },
+    {
+      "kind": "channel",
+      "name": "八度空间",
+      "url": "https://cdn6.cc.cd/163189/8tv",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T13:38:54Z"
+    },
+    {
+      "kind": "channel",
+      "name": "公视戏剧",
+      "url": "https://cdn12.178.indevs.in/163189/gsxj",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:39:53Z"
+    },
+    {
+      "kind": "channel",
+      "name": "关淑怡-难得有情人",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cockvfrc77uecmqmqq40&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 403,
+      "detail": "HTTP 403",
+      "checked_at": "2026-10-21T13:37:00Z"
+    },
+    {
+      "kind": "channel",
+      "name": "凤凰中文",
+      "url": "https://cdn6.cc.cd/163189/fhzw",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T13:37:51Z"
+    },
+    {
+      "kind": "channel",
+      "name": "凤凰资讯",
+      "url": "https://cdn6.cc.cd/163189/fhzx",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T13:38:36Z"
+    },
+    {
+      "kind": "channel",
+      "name": "凤凰香港",
+      "url": "https://cdn6.cc.cd/163189/fhhk",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T13:38:36Z"
+    },
+    {
+      "kind": "channel",
+      "name": "刘小慧-初恋情人",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000cc9cli3c77u4vdavpd70&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:37:00Z"
+    },
+    {
+      "kind": "channel",
+      "name": "刘德华-一起走过的日子",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cl9255rc77uagabjkqkg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:02Z"
+    },
+    {
+      "kind": "channel",
+      "name": "刘德华-暗里着迷",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000c8rv9cjc77u58p5sd07g&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:37:02Z"
+    },
+    {
+      "kind": "channel",
+      "name": "刘波-全粤语Electro音乐打造百听不厌车载v79串烧",
+      "url": "https://mp4.djuu.com/c2/16/2025/54d15d8040f8256f.m4a",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:21Z"
+    },
+    {
+      "kind": "channel",
+      "name": "区文诗-不只爱情",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000csl1fqnog65lrb9gntd0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:13Z"
+    },
+    {
+      "kind": "channel",
+      "name": "千禧经典台",
+      "url": "https://cdn3.indevs.in/stream/live/tvbc/",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:39:42Z"
+    },
+    {
+      "kind": "channel",
+      "name": "华丽翡翠台",
+      "url": "https://cdn3.indevs.in/stream/live/hlt/",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:39:26Z"
+    },
+    {
+      "kind": "channel",
+      "name": "华丽翡翠台",
+      "url": "https://cdn6.cc.cd/163189/hlfct",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T13:39:12Z"
+    },
+    {
+      "kind": "channel",
+      "name": "华丽翡翠台(新加坡)",
+      "url": "https://cdn3.indevs.in/stream/live/jade/",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:39:30Z"
+    },
+    {
+      "kind": "channel",
+      "name": "华丽翡翠台(硬字幕)",
+      "url": "https://cdn6.cc.cd/163189/jade",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T13:39:29Z"
+    },
+    {
+      "kind": "channel",
+      "name": "卓文萱/曹格-梁山伯与朱丽叶",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000ckd02j3c77uc41nk2co0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:15Z"
+    },
+    {
+      "kind": "channel",
+      "name": "南征北战-我的天空",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fbf0000bt8nuaevamb718qchkt0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:12Z"
+    },
+    {
+      "kind": "channel",
+      "name": "卫兰-my cokie can",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000ckpa68bc77u0e09rgs6g&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:36:54Z"
+    },
+    {
+      "kind": "channel",
+      "name": "卫兰-大哥",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cc50gabc77ue2vb9akd0&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 403,
+      "detail": "HTTP 403",
+      "checked_at": "2026-10-21T13:36:54Z"
+    },
+    {
+      "kind": "channel",
+      "name": "卫兰-就算世界无童话",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000chnenb3c77u2moocu08g&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:36:55Z"
+    },
+    {
+      "kind": "channel",
+      "name": "卫兰-心有不甘",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000ch5k663c77u3qu84l3t0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:36:55Z"
+    },
+    {
+      "kind": "channel",
+      "name": "卫兰-残酷游戏",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cfhlbnrc77u33819un70&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:36:54Z"
+    },
+    {
+      "kind": "channel",
+      "name": "卫兰-离家出走",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000cj9nctrc77u9f26arls0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:36:54Z"
+    },
+    {
+      "kind": "channel",
+      "name": "卫兰/24味-Wonderlanad",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000ce1gm2jc77u9vqku0lk0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:36:54Z"
+    },
+    {
+      "kind": "channel",
+      "name": "卫诗-宁愿你永不知道",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000c8ehvsbc77ue6b6p56hg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:36:55Z"
+    },
+    {
+      "kind": "channel",
+      "name": "古巨基-必杀技",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cekv06jc77udpp4ltm90&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:37:10Z"
+    },
+    {
+      "kind": "channel",
+      "name": "古巨基-爱与诚",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cq20gevog65vbni5bjpg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:11Z"
+    },
+    {
+      "kind": "channel",
+      "name": "叶丽仪-上海滩",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000c56uiubc77uc6dubb3q0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:04Z"
+    },
+    {
+      "kind": "channel",
+      "name": "叶蒨文-情人知己",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cmcmv33c77uer3e2mdag&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:04Z"
+    },
+    {
+      "kind": "channel",
+      "name": "叶蒨文-祝福",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000c8rfd1bc77u0gvo4f8b0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:04Z"
+    },
+    {
+      "kind": "channel",
+      "name": "吕方-你的浅笑",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cmp585fog65v3t4i0v80&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:03Z"
+    },
+    {
+      "kind": "channel",
+      "name": "吴若希-爱要撑下去",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cdm727rc77u3lnlca32g&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:12Z"
+    },
+    {
+      "kind": "channel",
+      "name": "吴若希-越难越爱",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000chcdhdfog65g2p9hdi7g&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:37:12Z"
+    },
+    {
+      "kind": "channel",
+      "name": "吴若希-错过了",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cton3mvog65nv5hqgf50&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:13Z"
+    },
+    {
+      "kind": "channel",
+      "name": "吴雨霏-吴哥窿",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000cp8v8l7og65vel2a1ls0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:09Z"
+    },
+    {
+      "kind": "channel",
+      "name": "吴雨霏-座右铭",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000csgeobvog65skv513bv0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:09Z"
+    },
+    {
+      "kind": "channel",
+      "name": "吴雨霏-我本人",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cpk55svog65tsdrf872g&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:09Z"
+    },
+    {
+      "kind": "channel",
+      "name": "吴雨霏-明知做戏",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000ce0r8hjc77u3c0th1spg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:09Z"
+    },
+    {
+      "kind": "channel",
+      "name": "吴雨霏-留不低",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000cae08n3c77u2lghi4a9g&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:09Z"
+    },
+    {
+      "kind": "channel",
+      "name": "周慧敏-最爱",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000cihdb9rc77uaaibdjvl0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:01Z"
+    },
+    {
+      "kind": "channel",
+      "name": "周杰伦-一路向北",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000ctdf26vog65kmvqmvk1g&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:36:58Z"
+    },
+    {
+      "kind": "channel",
+      "name": "周杰伦-七里香",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?line=0&logo_name=aweme_diversion_search_app&ratio=720p&video_id=v0200fg10000cpbvhp7og65tm36f7f9g",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:36:57Z"
+    },
+    {
+      "kind": "channel",
+      "name": "周杰伦-不能说的秘密",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cum99unog65osqdmttig&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:36:58Z"
+    },
+    {
+      "kind": "channel",
+      "name": "周杰伦-告白气球",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000ci86emrc77ualbim8bv0&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:36:58Z"
+    },
+    {
+      "kind": "channel",
+      "name": "周杰伦-我不配",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000ctckvvnog65m6b34rft0&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:36:58Z"
+    },
+    {
+      "kind": "channel",
+      "name": "周杰伦-我落泪情绪零碎",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000ctt2hmvog65usvfqcpf0&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:36:58Z"
+    },
+    {
+      "kind": "channel",
+      "name": "周杰伦-搁浅",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cuflqnvog65rdj8jqpc0&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:36:58Z"
+    },
+    {
+      "kind": "channel",
+      "name": "周杰伦-晴天",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000ctrtl67og65qlnn3p6q0&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:36:58Z"
+    },
+    {
+      "kind": "channel",
+      "name": "周杰伦-珊瑚海",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cu53j17og65mdmh6uuvg&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:36:57Z"
+    },
+    {
+      "kind": "channel",
+      "name": "周杰伦-稻香",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000ctlmcvvog65o5ds0167g&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:36:58Z"
+    },
+    {
+      "kind": "channel",
+      "name": "周杰伦-等你下课",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cu1nfonog65trp6p79ug&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:36:57Z"
+    },
+    {
+      "kind": "channel",
+      "name": "周杰伦-简单爱",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000csnbkmqljht17n76quv0&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:36:58Z"
+    },
+    {
+      "kind": "channel",
+      "name": "周杰伦-花海",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000ct25167og65te5cdbhj0&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:36:58Z"
+    },
+    {
+      "kind": "channel",
+      "name": "周杰伦-蒲公英的约定",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cu16plvog65nf0t5gj8g&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:36:58Z"
+    },
+    {
+      "kind": "channel",
+      "name": "周杰伦-说好不哭",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cu1rh9vog65imnpbre70&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:36:57Z"
+    },
+    {
+      "kind": "channel",
+      "name": "周杰伦-说好的幸福呢",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cssvfd7og65s05l6fb30&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:36:57Z"
+    },
+    {
+      "kind": "channel",
+      "name": "周杰伦-退后",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cu4gqmvog65ugg1to2qg&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:36:57Z"
+    },
+    {
+      "kind": "channel",
+      "name": "周杰伦-青花瓷",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cslnpcnog65tu8njd7pg&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:36:58Z"
+    },
+    {
+      "kind": "channel",
+      "name": "周杰伦-龙卷风",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000crd9uj7og65v04u0dc7g&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:36:58Z"
+    },
+    {
+      "kind": "channel",
+      "name": "周柏豪-传闻",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000c9d38o3c77u1jf2r3r6g&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:36:56Z"
+    },
+    {
+      "kind": "channel",
+      "name": "周柏豪-够钟",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cmbebvbc77u6p4blmqtg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:36:56Z"
+    },
+    {
+      "kind": "channel",
+      "name": "周柏豪-小白",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000c9go7bjc77u3qv0480gg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:36:56Z"
+    },
+    {
+      "kind": "channel",
+      "name": "周柏豪-我的宣言",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000c7sm6u3c77uace3houd0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:36:56Z"
+    },
+    {
+      "kind": "channel",
+      "name": "周柏豪-还记得",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000ca9qcubc77u3d3jrsp9g&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:36:56Z"
+    },
+    {
+      "kind": "channel",
+      "name": "周柏豪/郑融-一事无成",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000cbcbg2jc77u4rikmlblg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:36:56Z"
+    },
+    {
+      "kind": "channel",
+      "name": "天心Dj炜-全粤语Electro音乐打造百听不厌包房必备Hi串",
+      "url": "https://mp4.djuu.com/c2/16/2025/994ed34bb17d07db.m4a",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:21Z"
+    },
+    {
+      "kind": "channel",
+      "name": "天心Dj炜-全粤语Electro音乐飞花细界经典港风DJ串烧",
+      "url": "https://mp4.djuu.com/c2/16/2025/717718324a98d401.m4a",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:21Z"
+    },
+    {
+      "kind": "channel",
+      "name": "天映新加坡",
+      "url": "https://10.fast.hidns.vip/163189/typd/",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:39:25Z"
+    },
+    {
+      "kind": "channel",
+      "name": "天映经典",
+      "url": "https://10.fast.hidns.vip/163189/ccm/",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:39:26Z"
+    },
+    {
+      "kind": "channel",
+      "name": "天映经典",
+      "url": "https://cdn3.indevs.in/stream/live/ccm/",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:39:40Z"
+    },
+    {
+      "kind": "channel",
+      "name": "天映频道",
+      "url": "https://cdn3.indevs.in/stream/live/typd/",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:39:40Z"
+    },
+    {
+      "kind": "channel",
+      "name": "女孩DJ",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v1e00fgi0000d2aa0qfog65vmvgg5sjg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:16Z"
+    },
+    {
+      "kind": "channel",
+      "name": "孙耀威-爱的故上集",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000c60cbq3c77u4kbdnbc3g&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:37:05Z"
+    },
+    {
+      "kind": "channel",
+      "name": "容祖儿-16号爱人",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000ckl4ehrc77u5t25hkci0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:06Z"
+    },
+    {
+      "kind": "channel",
+      "name": "容祖儿-习惯失恋",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000cdhtuo3c77u4qg4mdmq0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:05Z"
+    },
+    {
+      "kind": "channel",
+      "name": "容祖儿-心淡",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cep4bprc77u0o4umqlt0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:05Z"
+    },
+    {
+      "kind": "channel",
+      "name": "容祖儿-怯",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000c383g33c77u99amrpkl0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:06Z"
+    },
+    {
+      "kind": "channel",
+      "name": "容祖儿-续集",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000cdaap5bc77u0ioga7ah0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:05Z"
+    },
+    {
+      "kind": "channel",
+      "name": "容祖儿-连续剧",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cm5avjbc77u543s8e3b0&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:37:06Z"
+    },
+    {
+      "kind": "channel",
+      "name": "小米SU7 ultra",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cv4jntnog65skq4ct860&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:36:50Z"
+    },
+    {
+      "kind": "channel",
+      "name": "小米YU7",
+      "url": "http://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000d0nrolvog65uva9acetg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:36:50Z"
+    },
+    {
+      "kind": "channel",
+      "name": "小米澎程N90",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?line=0&logo_name=aweme_diversion_search&ratio=720p&video_id=v1e00fgi0000d9lklmfog65t7jl676f0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:36:50Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东体育",
+      "url": "https://2.fast.hidns.vip/163189/gdty",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:38:54Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广东珠江",
+      "url": "https://2.fast.hidns.vip/163189/gdzj",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:38:53Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广州南国都市",
+      "url": "https://cdn15.163189.xyz/163189/ngds",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:39:51Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广州南国都市4K",
+      "url": "http://tencentplaygsm.gztv.com/live/nanguodushi.m3u8",
+      "status": "http_error",
+      "http_status": 403,
+      "detail": "HTTP 403",
+      "checked_at": "2026-10-21T13:37:34Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广州新闻",
+      "url": "https://168.sryze.cc/163189/gzxw",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:39:51Z"
+    },
+    {
+      "kind": "channel",
+      "name": "广州综合",
+      "url": "https://168.sryze.cc/163189/gzzh",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:39:51Z"
+    },
+    {
+      "kind": "channel",
+      "name": "张国荣-沉默是金",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000cgjuqvbc77uc1cnf47ag&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:01Z"
+    },
+    {
+      "kind": "channel",
+      "name": "张学友-只想一生跟你走",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000ci8ljnbc77u7qp8pt7cg&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:37:03Z"
+    },
+    {
+      "kind": "channel",
+      "name": "张学友-饿狼传说",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cfapr43c77u621266pjg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:03Z"
+    },
+    {
+      "kind": "channel",
+      "name": "张敬轩-酷爱",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000ck1q5v3c77ucqtq44b4g&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:11Z"
+    },
+    {
+      "kind": "channel",
+      "name": "张芸京-偏爱",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v1e00fgi0000csmuo9fog65j08392110&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:15Z"
+    },
+    {
+      "kind": "channel",
+      "name": "张韶涵-12首合集",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000ct7cdovog65o09j282vg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:15Z"
+    },
+    {
+      "kind": "channel",
+      "name": "张韶涵-无名的人",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000ctari87og65ksgs0rnpg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:15Z"
+    },
+    {
+      "kind": "channel",
+      "name": "徐小凤-风的季节",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000c9v0f3bc77u2pia8a8vg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:00Z"
+    },
+    {
+      "kind": "channel",
+      "name": "思南Dj禹豪-全英文Electro精选Right Now经典包房慢摇串烧",
+      "url": "https://mp4.djuu.com/c2/17/2024/048c01b9d4f5dc5b.m4a",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:19Z"
+    },
+    {
+      "kind": "channel",
+      "name": "恩平DJ基仔-全粤语Electro音乐港式潮流越听越正DJ慢摇串烧",
+      "url": "https://mp4.djuu.com/c2/16/2026/ded571d03559a9ae.m4a",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:22Z"
+    },
+    {
+      "kind": "channel",
+      "name": "抖音流行DJ串烧",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cppi1hvog65mc9vujp30&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:18Z"
+    },
+    {
+      "kind": "channel",
+      "name": "拉拉爱英文版",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v1e00fgi0000cvaf6cnog65vestq92k0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:17Z"
+    },
+    {
+      "kind": "channel",
+      "name": "新澳门直播",
+      "url": "https://play3636.zdwafis.com/live/mosixmark.flv",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [Errno 11001] getaddrinfo failed>",
+      "checked_at": "2026-10-21T13:37:34Z"
+    },
+    {
+      "kind": "channel",
+      "name": "无线新闻台",
+      "url": "http://cc.123.rr.kg/163189/wxxwt",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:50Z"
+    },
+    {
+      "kind": "channel",
+      "name": "无线新闻台",
+      "url": "https://cdn6.cc.cd/163189/wxxw",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T13:38:05Z"
+    },
+    {
+      "kind": "channel",
+      "name": "无线新闻台",
+      "url": "https://cdn6.cc.cd/163189/wxxwt",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T13:38:03Z"
+    },
+    {
+      "kind": "channel",
+      "name": "无言感激DJ",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000ctqjasfog65pch7akso0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:18Z"
+    },
+    {
+      "kind": "channel",
+      "name": "时代进行曲",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cujiftvog65jokluhvng&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:37:26Z"
+    },
+    {
+      "kind": "channel",
+      "name": "明珠台(WebVTT字幕)",
+      "url": "https://10.fast.hidns.vip/163189/mzt/",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:39:43Z"
+    },
+    {
+      "kind": "channel",
+      "name": "明珠台(字幕)",
+      "url": "https://cdn3.indevs.in/stream/tvb/mzt/",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:38:01Z"
+    },
+    {
+      "kind": "channel",
+      "name": "朴彩英-APT",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v02f52g10003css23uiljht5d6b6mnq0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:36:51Z"
+    },
+    {
+      "kind": "channel",
+      "name": "李克勤-护花使者",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cit40pbc77uae67r96cg&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:37:00Z"
+    },
+    {
+      "kind": "channel",
+      "name": "李克勤-红日",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000co87rbjc77ueeb2bpbbg&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:37:00Z"
+    },
+    {
+      "kind": "channel",
+      "name": "李玖哲-夏天",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cjhde3fog65upiashhr0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:11Z"
+    },
+    {
+      "kind": "channel",
+      "name": "杨丞琳-匿名的好友",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cdjohqjc77u3hrvhg3lg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:14Z"
+    },
+    {
+      "kind": "channel",
+      "name": "杨丞琳-暧昧",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cncatmbc77ufr0d46jsg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:14Z"
+    },
+    {
+      "kind": "channel",
+      "name": "杨丞琳-雨爱",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000c25llp3c77uemntbq6o0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:14Z"
+    },
+    {
+      "kind": "channel",
+      "name": "杨千嬅-可惜我是水瓶座",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000ce88qmbc77uem4d0e4bg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:07Z"
+    },
+    {
+      "kind": "channel",
+      "name": "杨千嬅-处处吻",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000crdghifog65nm151qkh0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:07Z"
+    },
+    {
+      "kind": "channel",
+      "name": "杨千嬅-少年的祈祷",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000c5ju2krc77u41p3mgv50&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:37:07Z"
+    },
+    {
+      "kind": "channel",
+      "name": "杨千嬅-野孩子",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000co0lujbc77ub5fefi6p0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:07Z"
+    },
+    {
+      "kind": "channel",
+      "name": "林俊杰-Always Online",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000ck65c1rc77ucdedd9tpg&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:36:59Z"
+    },
+    {
+      "kind": "channel",
+      "name": "林俊杰-不为谁而做的歌",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cfrkaljc77ue6grom5qg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:36:59Z"
+    },
+    {
+      "kind": "channel",
+      "name": "林俊杰-不潮不用花钱",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000c7kn32bc77u538kgoopg&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:37:00Z"
+    },
+    {
+      "kind": "channel",
+      "name": "林俊杰-修炼爱情",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000chdi71rc77u1eim5a4t0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:36:59Z"
+    },
+    {
+      "kind": "channel",
+      "name": "林俊杰-可惜没如果",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cc04j43c77ucueo1ls5g&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:36:59Z"
+    },
+    {
+      "kind": "channel",
+      "name": "林俊杰-她说",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000c7kn4r3c77u8dq4r1vo0&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:36:59Z"
+    },
+    {
+      "kind": "channel",
+      "name": "林俊杰-小酒窝",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cg5ghijc77ud4ehka23g&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:36:59Z"
+    },
+    {
+      "kind": "channel",
+      "name": "林俊杰-当你",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000c7kn3mjc77u760cntbs0&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:36:59Z"
+    },
+    {
+      "kind": "channel",
+      "name": "林俊杰-手心的蔷薇",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000c4p3rrbc77u5vns816r0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:36:59Z"
+    },
+    {
+      "kind": "channel",
+      "name": "林俊杰-江南",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000c8t5ac3c77u822ppftmg&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 403,
+      "detail": "HTTP 403",
+      "checked_at": "2026-10-21T13:36:59Z"
+    },
+    {
+      "kind": "channel",
+      "name": "林俊杰-背对背拥抱",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000c5a6qjbc77u4nhrr8s0g&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:36:59Z"
+    },
+    {
+      "kind": "channel",
+      "name": "林奕匡-高山低谷",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cms7f7nog65tv408a84g&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:36:56Z"
+    },
+    {
+      "kind": "channel",
+      "name": "林子祥-男儿当自强",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300f4a0000bt4chkq5lp9jpvrs4u0g&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:05Z"
+    },
+    {
+      "kind": "channel",
+      "name": "林峯-幼稚完",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000c3c8tolfurq0t8hl20cg&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:37:10Z"
+    },
+    {
+      "kind": "channel",
+      "name": "林峯-爱不疚",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cbi9p5rc77u8fordilm0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:10Z"
+    },
+    {
+      "kind": "channel",
+      "name": "林峯-爱在记忆中找你",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cbidlubc77u4luk3uth0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:10Z"
+    },
+    {
+      "kind": "channel",
+      "name": "林峯/泳儿-明天以后",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000clg15bnog65otdhtama0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:10Z"
+    },
+    {
+      "kind": "channel",
+      "name": "林忆莲-假如让你吻下去",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cm13h63c77u825g1pq90&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:01Z"
+    },
+    {
+      "kind": "channel",
+      "name": "林韵乔/叶梓晴-机场北",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cp32qpjc77uf5eu3igtg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:12Z"
+    },
+    {
+      "kind": "channel",
+      "name": "梁咏琪-灰姑娘",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000c3r9krjc77u4v5e0hcig&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:05Z"
+    },
+    {
+      "kind": "channel",
+      "name": "梁咏琪/李荣浩-紫荆花盛开",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000cs9se97og65n0tue68vg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:05Z"
+    },
+    {
+      "kind": "channel",
+      "name": "梁汉文-缠绵游戏",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cjo6odrc77u9f4if7ub0&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:37:10Z"
+    },
+    {
+      "kind": "channel",
+      "name": "梁静茹-没有如果",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000crofuu7og65j64cj0thg&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 403,
+      "detail": "HTTP 403",
+      "checked_at": "2026-10-21T13:37:15Z"
+    },
+    {
+      "kind": "channel",
+      "name": "欧阳耀莹-戒不掉",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cpa5fhvog65hgvocq0vg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:36:52Z"
+    },
+    {
+      "kind": "channel",
+      "name": "民视影剧台",
+      "url": "https://cdn12.178.indevs.in/163189/msyj",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:39:53Z"
+    },
+    {
+      "kind": "channel",
+      "name": "江语晨-最后一页",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cn5q3rbc77ubqm4m4jsg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:36:58Z"
+    },
+    {
+      "kind": "channel",
+      "name": "江语晨-浪漫爱",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fd80000bqt2lkroe0ndof6sf6d0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:36:58Z"
+    },
+    {
+      "kind": "channel",
+      "name": "河北4K",
+      "url": "https://event.pull.hebtv.com:443/live/live101.m3u8",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "ffprobe 检测到媒体流: video\r,audio\r,\r,video\r,audio",
+      "checked_at": "2026-10-21T13:37:34Z"
+    },
+    {
+      "kind": "channel",
+      "name": "河北电视4K",
+      "url": "http://106.53.99.30/tv/api.php?id=hebtv4k",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。>",
+      "checked_at": "2026-10-21T13:37:34Z"
+    },
+    {
+      "kind": "channel",
+      "name": "泳儿-24首合集",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000celom73c77u7maj81qo0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:10Z"
+    },
+    {
+      "kind": "channel",
+      "name": "泳儿-无心恋唱",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cd72dobc77u85rlotlp0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:10Z"
+    },
+    {
+      "kind": "channel",
+      "name": "浙江卫视4K",
+      "url": "http://ali-xwl.cztv.com/live/channel4k2160p.m3u8",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "ffprobe 检测到媒体流: audio\r,video\r,\r,audio\r,video",
+      "checked_at": "2026-10-21T13:37:34Z"
+    },
+    {
+      "kind": "channel",
+      "name": "浙江卫视4K",
+      "url": "http://go.bkpcp.top/mg/zjws",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "[WinError 10054] 远程主机强迫关闭了一个现有的连接。",
+      "checked_at": "2026-10-21T13:37:34Z"
+    },
+    {
+      "kind": "channel",
+      "name": "海先生B001Dj串烧",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cvg46evog65uaon0vs10&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:18Z"
+    },
+    {
+      "kind": "channel",
+      "name": "海峡卫视",
+      "url": "https://10.fast.hidns.vip/163189/hxws/",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:39:24Z"
+    },
+    {
+      "kind": "channel",
+      "name": "海峡卫视",
+      "url": "https://168.sryze.cc/163189/hxws",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:39:24Z"
+    },
+    {
+      "kind": "channel",
+      "name": "海明威/泳儿-我的回忆不是我的",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000crob83nog65jioid2pv0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:10Z"
+    },
+    {
+      "kind": "channel",
+      "name": "游京DJ",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000cu2h3qvog65irkuioh50&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:16Z"
+    },
+    {
+      "kind": "channel",
+      "name": "游京女版DJ",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?line=0&logo_name=aweme_diversion_search&ratio=720p&video_id=v2700fgi0000d4l0kifog65jh64e9670",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:16Z"
+    },
+    {
+      "kind": "channel",
+      "name": "湖南卫视4K",
+      "url": "http://go.bkpcp.top/mg/hunws",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "[WinError 10054] 远程主机强迫关闭了一个现有的连接。",
+      "checked_at": "2026-10-21T13:37:34Z"
+    },
+    {
+      "kind": "channel",
+      "name": "湖南卫视4K",
+      "url": "http://hlsal-ldvt.qing.mgtv.com/nn_live/nn_x64/dWlwPTEyNy4wLjAuMSZ1aWQ9cWluZy1jbXMmbm5fdGltZXpvbmU9OCZjZG5leF9pZD1hbF9obHNfbGR2dCZ1dWlkPTliODY4NmU5ZTM2YzYwMmMmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNWSZGST.m3u8",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "ffprobe 检测到媒体流: video\r,audio\r,\r,video\r,audio",
+      "checked_at": "2026-10-21T13:37:34Z"
+    },
+    {
+      "kind": "channel",
+      "name": "潘玮柏/弦子-不得不爱",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000ct4mq2vog65i8p1hflg0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:36:57Z"
+    },
+    {
+      "kind": "channel",
+      "name": "澳视卫星",
+      "url": "https://cdn6.cc.cd/163189/as",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T13:38:23Z"
+    },
+    {
+      "kind": "channel",
+      "name": "澳视澳门",
+      "url": "https://cdn6.cc.cd/163189/asam",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T13:38:23Z"
+    },
+    {
+      "kind": "channel",
+      "name": "澳门体育",
+      "url": "https://cdn6.cc.cd/163189/amty",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T13:38:28Z"
+    },
+    {
+      "kind": "channel",
+      "name": "澳门综艺",
+      "url": "https://cdn6.cc.cd/163189/amzy",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T13:38:29Z"
+    },
+    {
+      "kind": "channel",
+      "name": "澳门莲花",
+      "url": "https://cdn6.cc.cd/163189/amlh",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T13:38:33Z"
+    },
+    {
+      "kind": "channel",
+      "name": "爱奇艺",
+      "url": "https://cdn3.indevs.in/stream/live/iqiyi/",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:39:39Z"
+    },
+    {
+      "kind": "channel",
+      "name": "爱是一场梦DJ",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000csppmffog65uhi36ibtg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:16Z"
+    },
+    {
+      "kind": "channel",
+      "name": "王心凌-当你",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000ciro1jbc77u72t4qmdpg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:36:52Z"
+    },
+    {
+      "kind": "channel",
+      "name": "王心凌-第一次爱的人",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000c8kod7rc77u382vs27jg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:36:52Z"
+    },
+    {
+      "kind": "channel",
+      "name": "王杰-不浪漫罪名",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000c9bvck3c77ucqkhpnfd0&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:37:02Z"
+    },
+    {
+      "kind": "channel",
+      "name": "王杰-谁明浪子心",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000c5knm9rc77uboe0h3rgg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:02Z"
+    },
+    {
+      "kind": "channel",
+      "name": "王菲-容易受伤的女人",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000coul6kjc77u020n5vnvg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:05Z"
+    },
+    {
+      "kind": "channel",
+      "name": "王蓝茵-恶作剧",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000ciocl7jc77u2jkq998s0&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 403,
+      "detail": "HTTP 403",
+      "checked_at": "2026-10-21T13:37:14Z"
+    },
+    {
+      "kind": "channel",
+      "name": "甄妮-友谊太阳",
+      "url": "https://m.douyin.com/aweme/v1/playwm/?video_id=v0d00fg10000c7dm1ojc77udvrshcceg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:04Z"
+    },
+    {
+      "kind": "channel",
+      "name": "甄妮-我曾用心爱着你",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000c61mgpjc77u30e9dfqa0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:05Z"
+    },
+    {
+      "kind": "channel",
+      "name": "离开我的依赖DJ",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v1e00fgi0000d2hio3nog65lre771jt0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:16Z"
+    },
+    {
+      "kind": "channel",
+      "name": "窒Suffocating",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v1e00fgi0000cugku9vog65immg30nmg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:26Z"
+    },
+    {
+      "kind": "channel",
+      "name": "粤语伤感情歌嗨曲串烧DJ",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cph1etnog65mpr23b990&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:18Z"
+    },
+    {
+      "kind": "channel",
+      "name": "粤语打碟现场串烧DJ",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000crom7dnog65uq525ar4g&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:37:17Z"
+    },
+    {
+      "kind": "channel",
+      "name": "粤语经典重温DJ",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000cp06gijc77ue69pt0spg&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:37:18Z"
+    },
+    {
+      "kind": "channel",
+      "name": "精选粤语dj串烧",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cpucv77og65tcsi9n2hg&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:37:18Z"
+    },
+    {
+      "kind": "channel",
+      "name": "经典粤语DJ私人订制",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000crdl34vog65v7e9of17g&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:17Z"
+    },
+    {
+      "kind": "channel",
+      "name": "罗志祥-爱不单行",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000ck0eshjc77uf7o7ivnpg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:14Z"
+    },
+    {
+      "kind": "channel",
+      "name": "罗志祥-爱转角",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cjn0p03c77u6rj0bkt80&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:14Z"
+    },
+    {
+      "kind": "channel",
+      "name": "罗文-几许风雨",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000co6fijvog65rloj3i5n0&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:37:01Z"
+    },
+    {
+      "kind": "channel",
+      "name": "翡翠剧集台",
+      "url": "https://cdn6.cc.cd/163189/tvbd",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T13:38:38Z"
+    },
+    {
+      "kind": "channel",
+      "name": "翡翠台",
+      "url": "http://cc.123.rr.kg/163189/fct",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:48Z"
+    },
+    {
+      "kind": "channel",
+      "name": "翡翠台",
+      "url": "https://cdn6.cc.cd/163189/fct",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T13:37:53Z"
+    },
+    {
+      "kind": "channel",
+      "name": "翡翠台(WebVTT字幕)",
+      "url": "https://10.fast.hidns.vip/163189/fct/",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:39:42Z"
+    },
+    {
+      "kind": "channel",
+      "name": "翡翠台(字幕)",
+      "url": "https://cdn3.indevs.in/stream/tvb/fct/",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:58Z"
+    },
+    {
+      "kind": "channel",
+      "name": "翡翠台4K(字幕)",
+      "url": "https://cdn3.indevs.in/stream/tvb/fct4k/",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:51Z"
+    },
+    {
+      "kind": "channel",
+      "name": "老澳门直播",
+      "url": "https://vdm6-ali.hrypl168.com/live/a6.flv",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "ffprobe 检测到媒体流: audio\r,video",
+      "checked_at": "2026-10-21T13:37:34Z"
+    },
+    {
+      "kind": "channel",
+      "name": "胜利之舞Dj",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000cv9rjm7og65g7nltudt0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:17Z"
+    },
+    {
+      "kind": "channel",
+      "name": "苏州4K",
+      "url": "https://tylive.kan0512.com/norecord/csztv4k_4k.m3u8",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "ffprobe 检测到媒体流: video\r,audio\r,\r,video\r,audio",
+      "checked_at": "2026-10-21T13:37:34Z"
+    },
+    {
+      "kind": "channel",
+      "name": "苏州修复4K",
+      "url": "http://106.53.99.30/tv/api.php?id=sztv4k",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。>",
+      "checked_at": "2026-10-21T13:37:34Z"
+    },
+    {
+      "kind": "channel",
+      "name": "菊梓乔-忘掉我自己",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cr7ia6vog65n4msgpru0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:12Z"
+    },
+    {
+      "kind": "channel",
+      "name": "萧亚轩-爱的主打歌",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000ca3eb8rc77ub0tj3kl2g&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:14Z"
+    },
+    {
+      "kind": "channel",
+      "name": "萧亚轩-突然想起你",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000cr2kg7vog65lkksge090&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:15Z"
+    },
+    {
+      "kind": "channel",
+      "name": "萧亚轩-遗失的心跳",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000ck491ufog65vq1gb76i0&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:37:15Z"
+    },
+    {
+      "kind": "channel",
+      "name": "萧亚轩-错的人",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fd00000br0711gi8qol0f2n3720&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:15Z"
+    },
+    {
+      "kind": "channel",
+      "name": "葛东琪-悬溺",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cg7gf7rc77ufgvikae50&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:36:57Z"
+    },
+    {
+      "kind": "channel",
+      "name": "蒋小呢-for ya",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000c4k69ujc77u3f5l37i50&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:11Z"
+    },
+    {
+      "kind": "channel",
+      "name": "蓝又时-孤单心事",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cr897onog65sgcniupd0&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:37:15Z"
+    },
+    {
+      "kind": "channel",
+      "name": "蔡依林-日不落",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000ch00eijc77u0akslavig&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:36:53Z"
+    },
+    {
+      "kind": "channel",
+      "name": "蔡依林/陶喆-今天你要嫁给我",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cj0h9mrc77ubbgnamamg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:36:53Z"
+    },
+    {
+      "kind": "channel",
+      "name": "蔡卓妍-二缺一",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000c2s2m1bc77u5age1b03g&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:08Z"
+    },
+    {
+      "kind": "channel",
+      "name": "蔡旻佑-我可以",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000c70vjubc77u9ubc7ofdg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:14Z"
+    },
+    {
+      "kind": "channel",
+      "name": "蚂蚁牙嘿",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000c98qrmbc77ucqknl90ag&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:16Z"
+    },
+    {
+      "kind": "channel",
+      "name": "街道办GDC/欧阳耀莹-春娇与志明",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200f890000bt2sn535j22kbcal83p0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:36:52Z"
+    },
+    {
+      "kind": "channel",
+      "name": "謝安琪-喜帖街",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200f580000bqulipikgg1hr4eidvvg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:36:55Z"
+    },
+    {
+      "kind": "channel",
+      "name": "謝安琪-钟无艳",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000chq2bsjc77uc3k8tcp5g&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:36:55Z"
+    },
+    {
+      "kind": "channel",
+      "name": "许廷铿-面具",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200ffe0000bsma66222nggd3hrnnrg&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:37:10Z"
+    },
+    {
+      "kind": "channel",
+      "name": "许绍洋-花香",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200f290000bt10bsspfrfvn0rsvfhg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:13Z"
+    },
+    {
+      "kind": "channel",
+      "name": "谢霆锋-活着viva",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000ccdmdsbc77u0hvhjiuc0&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:36:57Z"
+    },
+    {
+      "kind": "channel",
+      "name": "谭咏麟-一生中最爱",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000cni9357og65hefir2gf0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:02Z"
+    },
+    {
+      "kind": "channel",
+      "name": "谭咏麟-讲不出再见",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000co5ch8rc77u2dtata9sg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:02Z"
+    },
+    {
+      "kind": "channel",
+      "name": "连诗雅-到此为止",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cf3vrrjc77uc2imn4ad0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:08Z"
+    },
+    {
+      "kind": "channel",
+      "name": "连诗雅-好好过",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000chjmaarc77u1lp7ig8c0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:08Z"
+    },
+    {
+      "kind": "channel",
+      "name": "邓丽君-漫步人生路",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cgg6rljc77ub1k9u4dug&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:03Z"
+    },
+    {
+      "kind": "channel",
+      "name": "邓丽欣-电灯胆",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000cmhsnt3c77u2ra2n3e2g&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:03Z"
+    },
+    {
+      "kind": "channel",
+      "name": "邓丽欣/傅颖-亲朋勿友",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000ccs4uirc77u12f0g60vg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:03Z"
+    },
+    {
+      "kind": "channel",
+      "name": "邓岳章-不做情人",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cfrhffjc77ua9ospmb0g&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:37:13Z"
+    },
+    {
+      "kind": "channel",
+      "name": "邓紫棋-17首合集",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000cucbtmfog65l35tmqu7g&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:13Z"
+    },
+    {
+      "kind": "channel",
+      "name": "郁南DJ筱何-全粤语Electro音乐精选个人开始恋爱的DJ串烧",
+      "url": "https://mp4.djuu.com/c2/16/2025/0b6860ae467410a1.m4a",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:19Z"
+    },
+    {
+      "kind": "channel",
+      "name": "郑中基-无赖",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cmaj7d7og65vg4bdm0h0&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:37:05Z"
+    },
+    {
+      "kind": "channel",
+      "name": "郑欣宜-上心",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cmvk5cnog65judt62tcg&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:36:55Z"
+    },
+    {
+      "kind": "channel",
+      "name": "郭静-心墙",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000cjb9s3bc77u14r09k960&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:36:59Z"
+    },
+    {
+      "kind": "channel",
+      "name": "采昌影剧台",
+      "url": "https://cdn12.178.indevs.in/163189/ccyj",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:39:54Z"
+    },
+    {
+      "kind": "channel",
+      "name": "重温经典",
+      "url": "https://168.sryze.cc/163189/cwjd",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:39:51Z"
+    },
+    {
+      "kind": "channel",
+      "name": "重温经典",
+      "url": "https://cdn6.cc.cd/163189/cwjd",
+      "status": "http_error",
+      "http_status": null,
+      "detail": "<urlopen error timed out>",
+      "checked_at": "2026-10-21T13:38:34Z"
+    },
+    {
+      "kind": "channel",
+      "name": "金光布袋戏",
+      "url": "https://cdn3.indevs.in/stream/live/jgbdx/",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:39:10Z"
+    },
+    {
+      "kind": "channel",
+      "name": "钟嘉欣-我结婚了",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000c2utibbc77u7pgisaep0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:36:53Z"
+    },
+    {
+      "kind": "channel",
+      "name": "钟镇涛-让一切随风",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000clvs8cjc77u7555h0er0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:02Z"
+    },
+    {
+      "kind": "channel",
+      "name": "阳山辉仔-全粤语Electro音乐打造粤E173AJ车载",
+      "url": "https://mp4.djuu.com/c2/16/2025/0cdb0fe9277a48f4.m4a",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:19Z"
+    },
+    {
+      "kind": "channel",
+      "name": "阿细-细界",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000ck02v0rc77u87sj16lcg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:36:56Z"
+    },
+    {
+      "kind": "channel",
+      "name": "陈僖仪-忘川",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000ca6gn83c77ufug96j7cg&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 403,
+      "detail": "HTTP 403",
+      "checked_at": "2026-10-21T13:37:11Z"
+    },
+    {
+      "kind": "channel",
+      "name": "陈冠希-战争",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000ch5hv2jc77udla7jom10&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:36:52Z"
+    },
+    {
+      "kind": "channel",
+      "name": "陈奕迅-十面埋伏",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000csjohunog65ideqnh670&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:07Z"
+    },
+    {
+      "kind": "channel",
+      "name": "陈奕迅-单车",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000ctpv5tvog65qksofvds0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:06Z"
+    },
+    {
+      "kind": "channel",
+      "name": "陈奕迅-富士山下",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cnu3p4jc77u9i1pe18qg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:06Z"
+    },
+    {
+      "kind": "channel",
+      "name": "陈奕迅-明年今日",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000ccqqbarc77u3c0tjm46g&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:06Z"
+    },
+    {
+      "kind": "channel",
+      "name": "陈奕迅-落花流水",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000cngumojc77ubsn73764g&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:06Z"
+    },
+    {
+      "kind": "channel",
+      "name": "陈婉箐-不负众望",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cu95487og65l3i02957g&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:13Z"
+    },
+    {
+      "kind": "channel",
+      "name": "陈慧娴-人生何处不相逢",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000chrn8sjc77u9t0ofndkg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:01Z"
+    },
+    {
+      "kind": "channel",
+      "name": "陈慧娴-傻女",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000ccg7jsrc77u3n0hmrrn0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:01Z"
+    },
+    {
+      "kind": "channel",
+      "name": "陈慧娴-千千阙歌",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cobq6e3c77udq71olmb0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:01Z"
+    },
+    {
+      "kind": "channel",
+      "name": "陈慧娴-夜半小夜曲",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fc30000bu3s66l91uupo5jllq40&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:37:01Z"
+    },
+    {
+      "kind": "channel",
+      "name": "陈慧娴-情意结",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000c7mte0bc77u646crfqj0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:01Z"
+    },
+    {
+      "kind": "channel",
+      "name": "陈文缓-时光中飞舞",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cab99tbc77u5slfids90&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:11Z"
+    },
+    {
+      "kind": "channel",
+      "name": "陈柏宇-你瞒我瞒",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000ccrgjdrc77ua76fkf6sg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:08Z"
+    },
+    {
+      "kind": "channel",
+      "name": "陈百强-一生何求",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000c62hppbc77u6phu370hg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:01Z"
+    },
+    {
+      "kind": "channel",
+      "name": "陈百强-偏偏喜欢你",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000c4sd0hjc77uadn62vdpg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:01Z"
+    },
+    {
+      "kind": "channel",
+      "name": "陈芯怡-不需要挽留",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cmj9767og65mocrpq5fg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:36:52Z"
+    },
+    {
+      "kind": "channel",
+      "name": "陶喆-就是爱你",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000c2j1oprc77u04674qfu0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:36:58Z"
+    },
+    {
+      "kind": "channel",
+      "name": "青山黛玛-留在我身边",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000caf9b1jc77u3vnrog8mg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:15Z"
+    },
+    {
+      "kind": "channel",
+      "name": "靖天戏剧台",
+      "url": "https://cdn12.178.indevs.in/163189/jtxj",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:39:56Z"
+    },
+    {
+      "kind": "channel",
+      "name": "靖天映画",
+      "url": "https://cdn12.178.indevs.in/163189/jtyh",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:39:55Z"
+    },
+    {
+      "kind": "channel",
+      "name": "靖天电影台",
+      "url": "https://cdn12.178.indevs.in/163189/jtdy",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:39:56Z"
+    },
+    {
+      "kind": "channel",
+      "name": "韩安旭-多幸运",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?line=0&logo_name=aweme_diversion_search&ratio=720p&video_id=v0300fg10000d0m9etvog65nglhodq2g",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:36:53Z"
+    },
+    {
+      "kind": "channel",
+      "name": "顺德DJLwei-全英文Electro音乐百听不厌APT经典金曲DJ串烧",
+      "url": "https://mp4.djuu.com/c2/17/2025/78486efeb94e7f79.m4a",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:19Z"
+    },
+    {
+      "kind": "channel",
+      "name": "飞儿乐团-lydia",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v1e00fgi0000cu0hhh7og65rn9pfdt0g&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:13Z"
+    },
+    {
+      "kind": "channel",
+      "name": "飞儿乐团-你的微笑",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000c9t0f8rc77u1ksr5jbj0&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:13Z"
+    },
+    {
+      "kind": "channel",
+      "name": "飞儿乐团-我们的爱",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000c895oo3c77ud27p9ic50&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:13Z"
+    },
+    {
+      "kind": "channel",
+      "name": "飞儿乐团-月牙湾",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000c4tmklbc77u4upig9730&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:13Z"
+    },
+    {
+      "kind": "channel",
+      "name": "飞儿乐团/彭佳慧-心之火",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cvhd32vog65lgnkfuh30&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:13Z"
+    },
+    {
+      "kind": "channel",
+      "name": "麦浚龙-耿耿于怀",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cf2gn93c77uam6kuerdg&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 403,
+      "detail": "HTTP 403",
+      "checked_at": "2026-10-21T13:37:12Z"
+    },
+    {
+      "kind": "channel",
+      "name": "黄凯芹-雨中的恋人们",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cjli7rfog65o4vh2p4ug&ratio=720p&line=0",
+      "status": "http_error",
+      "http_status": 404,
+      "detail": "HTTP 404",
+      "checked_at": "2026-10-21T13:36:57Z"
+    },
+    {
+      "kind": "channel",
+      "name": "黄金华剧台(WebVTT字幕)",
+      "url": "https://10.fast.hidns.vip/163189/hjhjt/",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:39:49Z"
+    },
+    {
+      "kind": "channel",
+      "name": "黎瑞恩-一人有一个的梦想",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000ce4s2g3c77ub64mff9qg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:11Z"
+    },
+    {
+      "kind": "channel",
+      "name": "黑girl-123木头人",
+      "url": "https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v1e00fgi0000d458thnog65ra7c0c9fg&ratio=720p&line=0",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:37:13Z"
+    },
+    {
+      "kind": "channel",
+      "name": "龙华偶像",
+      "url": "https://8.fast.hidns.vip/163189/lhox",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:39:07Z"
+    },
+    {
+      "kind": "channel",
+      "name": "龙华卡通",
+      "url": "https://8.fast.hidns.vip/163189/lhkt",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:39:10Z"
+    },
+    {
+      "kind": "channel",
+      "name": "龙华戏剧",
+      "url": "https://8.fast.hidns.vip/163189/lhxj",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:39:08Z"
+    },
+    {
+      "kind": "channel",
+      "name": "龙华日韩",
+      "url": "https://8.fast.hidns.vip/163189/lhrh",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:39:08Z"
+    },
+    {
+      "kind": "channel",
+      "name": "龙华洋片",
+      "url": "https://8.fast.hidns.vip/163189/lhyp",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:39:09Z"
+    },
+    {
+      "kind": "channel",
+      "name": "龙华电影",
+      "url": "https://8.fast.hidns.vip/163189/lhdy",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:39:04Z"
+    },
+    {
+      "kind": "channel",
+      "name": "龙华经典",
+      "url": "https://8.fast.hidns.vip/163189/lhjd",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:39:06Z"
+    },
+    {
+      "kind": "live",
+      "name": "🍿乌拉TV直播",
+      "url": "https://ilook.epg.one/5CM5SY98BF24PL/2",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:36:47Z"
+    },
+    {
+      "kind": "live",
+      "name": "🍿全球TV直播",
+      "url": "https://seep.eu.org/iptv-org.github.io/iptv/index.m3u",
+      "status": "probe_failed",
+      "http_status": 200,
+      "detail": "播放列表可下载，但首条媒体流探测失败：https://jmp2.uk/plu-62ba60f059624e000781c436.m3u8: Server returned 400 Bad Request",
+      "checked_at": "2026-10-21T13:36:49Z"
+    },
+    {
+      "kind": "live",
+      "name": "🍿华视TV直播",
+      "url": "https://445569.pages.dev/https://raw.githubusercontent.com/swhtv/111/refs/heads/main/%E5%8D%8E%E8%A7%86box%E5%8D%8E%E8%A7%86%E5%A4%A7%E5%85%A8swtv",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:36:46Z"
+    },
+    {
+      "kind": "live",
+      "name": "🍿易发TV直播",
+      "url": "https://445569.pages.dev/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+      "status": "manifest_ok",
+      "http_status": 200,
+      "detail": "文本列表可下载；不是可直接探测的单条 HLS 播放列表",
+      "checked_at": "2026-10-21T13:36:47Z"
+    },
+    {
+      "kind": "live",
+      "name": "🏆PPV体育赛事直播",
+      "url": "https://www.korice.eu.org/ppv_m3u.php",
+      "status": "playback_unverified",
+      "http_status": 200,
+      "detail": "HTTP 可访问，但无法仅凭状态码确认可播放",
+      "checked_at": "2026-10-21T13:36:44Z"
+    },
+    {
+      "kind": "live",
+      "name": "👖裤佬IPTV直播",
+      "url": "https://iptv.445569.xyz/live.m3u",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "播放列表首条媒体流：ffprobe 检测到媒体流: video\r,audio",
+      "checked_at": "2026-10-21T13:36:43Z"
+    },
+    {
+      "kind": "live",
+      "name": "👖裤佬TikTok直播",
+      "url": "https://tiktok.445569.xyz/live.m3u",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "播放列表首条媒体流：ffprobe 检测到媒体流: audio\r,video",
+      "checked_at": "2026-10-21T13:36:43Z"
+    },
+    {
+      "kind": "live",
+      "name": "👖裤佬Twitch直播",
+      "url": "https://twitch.445569.xyz/live.m3u",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "播放列表首条媒体流：ffprobe 检测到媒体流: audio\r,video\r,data\r,\r,audio\r,video\r,data\r,\r,audio\r,video\r,data\r,\r,audio\r,video\r,data\r,\r,audio\r,video\r,data\r,\r,audio\r,data\r,\r,audio\r,video\r,data\r,audio\r,video\r,data\r,audio\r,video\r,data\r,audio\r,video\r,data\r,audio\r,video\r,data\r,audio\r,data",
+      "checked_at": "2026-10-21T13:36:43Z"
+    },
+    {
+      "kind": "live",
+      "name": "👖裤佬YY直播",
+      "url": "https://yy.445569.xyz/live.m3u",
+      "status": "probe_failed",
+      "http_status": 200,
+      "detail": "播放列表可下载，但首条媒体流探测失败：http://nas.jqcykj.com:88/yy?id=54880976: Error number -138 occurred",
+      "checked_at": "2026-10-21T13:36:43Z"
+    },
+    {
+      "kind": "live",
+      "name": "👖裤佬体育直播[主]",
+      "url": "https://jsnzkpg.de5.net/all.m3u",
+      "status": "probe_failed",
+      "http_status": 200,
+      "detail": "播放列表可下载，但首条媒体流探测失败：https://k0u3cydy43y9zw2408x8760xfx5xx9z.djvod.ndcimgs.com/upic/2026/03/07/21/BMjAyNjAzMDcyMTIyMzlfNDI0MDI5NTBfMTg5Nzk0ODUxNjg5XzFfMw==_b_Bc33d39ac3524c256f9ddabce4588794b.mp4: I/O error",
+      "checked_at": "2026-10-21T13:36:43Z"
+    },
+    {
+      "kind": "live",
+      "name": "👖裤佬体育直播[备]",
+      "url": "https://stymei.pages.dev/live.m3u",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "播放列表首条媒体流：ffprobe 检测到媒体流: video\r,audio",
+      "checked_at": "2026-10-21T13:36:43Z"
+    },
+    {
+      "kind": "live",
+      "name": "👖裤佬快手直播",
+      "url": "https://kuaishou.445569.xyz/list.m3u",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "播放列表首条媒体流：ffprobe 检测到媒体流: video\r,audio",
+      "checked_at": "2026-10-21T13:36:43Z"
+    },
+    {
+      "kind": "live",
+      "name": "👖裤佬抖音直播",
+      "url": "https://douyin.445569.xyz/live.m3u",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "播放列表首条媒体流：ffprobe 检测到媒体流: audio\r,video\r,\r,audio\r,video",
+      "checked_at": "2026-10-21T13:36:43Z"
+    },
+    {
+      "kind": "live",
+      "name": "👖裤佬斗鱼直播",
+      "url": "https://douyu.445569.xyz/live.m3u",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "播放列表首条媒体流：ffprobe 检测到媒体流: audio\r,video",
+      "checked_at": "2026-10-21T13:36:43Z"
+    },
+    {
+      "kind": "live",
+      "name": "👖裤佬来疯直播",
+      "url": "https://laifeng.445569.xyz/live.m3u",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "播放列表首条媒体流：ffprobe 检测到媒体流: video\r,audio\r,\r,video\r,audio",
+      "checked_at": "2026-10-21T13:36:43Z"
+    },
+    {
+      "kind": "live",
+      "name": "👖裤佬百战直播",
+      "url": "https://baizhan.445569.xyz/live.m3u",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "播放列表首条媒体流：ffprobe 检测到媒体流: audio\r,video",
+      "checked_at": "2026-10-21T13:36:43Z"
+    },
+    {
+      "kind": "live",
+      "name": "👖裤佬虎牙直播",
+      "url": "https://huya.445569.xyz/live.m3u",
+      "status": "probe_failed",
+      "http_status": 200,
+      "detail": "播放列表可下载，但首条媒体流探测失败：https://huya.445569.xyz/live/998: Server returned 403 Forbidden (access denied)",
+      "checked_at": "2026-10-21T13:36:43Z"
+    },
+    {
+      "kind": "live",
+      "name": "👖裤佬酷狗直播",
+      "url": "https://kugou.445569.xyz/live.m3u",
+      "status": "probe_ok",
+      "http_status": 200,
+      "detail": "播放列表首条媒体流：ffprobe 检测到媒体流: video\r,audio\r,\r,video\r,audio",
+      "checked_at": "2026-10-21T13:36:43Z"
+    },
+    {
+      "kind": "site",
+      "name": "✈️TG频道@stymei",
+      "url": "csp_Douban",
+      "status": "requires_app",
+      "http_status": null,
+      "detail": "站点播放依赖影视 App 与 spider 解析",
+      "checked_at": "2026-10-21T13:36:43Z"
+    },
+    {
+      "kind": "site",
+      "name": "👖4k",
+      "url": "https://jsnz.pages.dev/f/af676592.py",
+      "status": "requires_app",
+      "http_status": null,
+      "detail": "站点播放依赖影视 App 与 spider 解析",
+      "checked_at": "2026-10-21T13:36:43Z"
+    },
+    {
+      "kind": "site",
+      "name": "👖API",
+      "url": "https://jsnz.pages.dev/f/cf616b2f.py",
+      "status": "requires_app",
+      "http_status": null,
+      "detail": "站点播放依赖影视 App 与 spider 解析",
+      "checked_at": "2026-10-21T13:36:43Z"
+    },
+    {
+      "kind": "site",
+      "name": "👖APP",
+      "url": "https://jsnz.pages.dev/f/04b5c0b4.js",
+      "status": "requires_app",
+      "http_status": null,
+      "detail": "站点播放依赖影视 App 与 spider 解析",
+      "checked_at": "2026-10-21T13:36:43Z"
+    },
+    {
+      "kind": "site",
+      "name": "👖Emby",
+      "url": "https://jsnz.pages.dev/f/696546f2.js",
+      "status": "requires_app",
+      "http_status": null,
+      "detail": "站点播放依赖影视 App 与 spider 解析",
+      "checked_at": "2026-10-21T13:36:43Z"
+    },
+    {
+      "kind": "site",
+      "name": "👖IPTV",
+      "url": "https://jsnz.pages.dev/f/f05e3b39.js",
+      "status": "requires_app",
+      "http_status": null,
+      "detail": "站点播放依赖影视 App 与 spider 解析",
+      "checked_at": "2026-10-21T13:36:43Z"
+    },
+    {
+      "kind": "site",
+      "name": "👖JS",
+      "url": "https://jsnz.pages.dev/f/f7b46c7f.js",
+      "status": "requires_app",
+      "http_status": null,
+      "detail": "站点播放依赖影视 App 与 spider 解析",
+      "checked_at": "2026-10-21T13:36:43Z"
+    },
+    {
+      "kind": "site",
+      "name": "👖PHP",
+      "url": "http://jiduo.3116598.xyz/PHP/pkty.php",
+      "status": "reachable",
+      "http_status": 200,
+      "detail": "HTTP 可访问",
+      "checked_at": "2026-10-21T13:36:43Z"
+    },
+    {
+      "kind": "site",
+      "name": "👖PY",
+      "url": "https://jsnz.pages.dev/f/e1aeef83.py",
+      "status": "requires_app",
+      "http_status": null,
+      "detail": "站点播放依赖影视 App 与 spider 解析",
+      "checked_at": "2026-10-21T13:36:43Z"
+    },
+    {
+      "kind": "site",
+      "name": "👖体育",
+      "url": "https://jsnzkpg.de5.net/t4.json",
+      "status": "reachable",
+      "http_status": 200,
+      "detail": "HTTP 可访问",
+      "checked_at": "2026-10-21T13:36:43Z"
+    },
+    {
+      "kind": "site",
+      "name": "👖动漫",
+      "url": "https://jsnz.pages.dev/f/7e20bdb7.py",
+      "status": "requires_app",
+      "http_status": null,
+      "detail": "站点播放依赖影视 App 与 spider 解析",
+      "checked_at": "2026-10-21T13:36:43Z"
+    },
+    {
+      "kind": "site",
+      "name": "👖听书",
+      "url": "https://jsnz.pages.dev/f/d44dd2cf.py",
+      "status": "requires_app",
+      "http_status": null,
+      "detail": "站点播放依赖影视 App 与 spider 解析",
+      "checked_at": "2026-10-21T13:36:43Z"
+    },
+    {
+      "kind": "site",
+      "name": "👖奈飞",
+      "url": "https://api.wsyzy.net/api.php/provide/vod",
+      "status": "reachable",
+      "http_status": 200,
+      "detail": "HTTP 可访问",
+      "checked_at": "2026-10-21T13:36:43Z"
+    },
+    {
+      "kind": "site",
+      "name": "👖少儿",
+      "url": "https://jsnz.pages.dev/f/6b9e7fca.js",
+      "status": "requires_app",
+      "http_status": null,
+      "detail": "站点播放依赖影视 App 与 spider 解析",
+      "checked_at": "2026-10-21T13:36:43Z"
+    },
+    {
+      "kind": "site",
+      "name": "👖广播",
+      "url": "https://jsnz.pages.dev/f/cec31b11.py",
+      "status": "requires_app",
+      "http_status": null,
+      "detail": "站点播放依赖影视 App 与 spider 解析",
+      "checked_at": "2026-10-21T13:36:43Z"
+    },
+    {
+      "kind": "site",
+      "name": "👖影视",
+      "url": "https://jsnz.pages.dev/f/9e53615c.py",
+      "status": "requires_app",
+      "http_status": null,
+      "detail": "站点播放依赖影视 App 与 spider 解析",
+      "checked_at": "2026-10-21T13:36:43Z"
+    },
+    {
+      "kind": "site",
+      "name": "👖戏曲",
+      "url": "https://iduo.us.ci/gt/leevi0709/one/main/js/drpy2.min.js",
+      "status": "requires_app",
+      "http_status": null,
+      "detail": "站点播放依赖影视 App 与 spider 解析",
+      "checked_at": "2026-10-21T13:36:43Z"
+    },
+    {
+      "kind": "site",
+      "name": "👖有声",
+      "url": "https://jsnz.pages.dev/f/e126d1e4.py",
+      "status": "requires_app",
+      "http_status": null,
+      "detail": "站点播放依赖影视 App 与 spider 解析",
+      "checked_at": "2026-10-21T13:36:43Z"
+    },
+    {
+      "kind": "site",
+      "name": "👖短剧",
+      "url": "https://jsnz.pages.dev/f/29b94aff.py",
+      "status": "requires_app",
+      "http_status": null,
+      "detail": "站点播放依赖影视 App 与 spider 解析",
+      "checked_at": "2026-10-21T13:36:43Z"
+    },
+    {
+      "kind": "site",
+      "name": "👖网盘",
+      "url": "https://jsnz.pages.dev/f/261c1664.py",
+      "status": "requires_app",
+      "http_status": null,
+      "detail": "站点播放依赖影视 App 与 spider 解析",
+      "checked_at": "2026-10-21T13:36:43Z"
+    },
+    {
+      "kind": "site",
+      "name": "👖聚合",
+      "url": "https://jsnz.pages.dev/f/4df9fb60.py",
+      "status": "requires_app",
+      "http_status": null,
+      "detail": "站点播放依赖影视 App 与 spider 解析",
+      "checked_at": "2026-10-21T13:36:43Z"
+    },
+    {
+      "kind": "site",
+      "name": "👖采集",
+      "url": "https://jsnz.pages.dev/f/72b7239d.py",
+      "status": "requires_app",
+      "http_status": null,
+      "detail": "站点播放依赖影视 App 与 spider 解析",
+      "checked_at": "2026-10-21T13:36:43Z"
+    },
+    {
+      "kind": "site",
+      "name": "👖韩国",
+      "url": "https://jsnz.pages.dev/f/26511242.py",
+      "status": "requires_app",
+      "http_status": null,
+      "detail": "站点播放依赖影视 App 与 spider 解析",
+      "checked_at": "2026-10-21T13:36:43Z"
+    },
+    {
+      "kind": "site",
+      "name": "👖音乐",
+      "url": "https://jsnz.pages.dev/f/eded33cf.py",
+      "status": "requires_app",
+      "http_status": null,
+      "detail": "站点播放依赖影视 App 与 spider 解析",
+      "checked_at": "2026-10-21T13:36:43Z"
+    },
+    {
+      "kind": "site",
+      "name": "📌测试",
+      "url": "https://jsnz.pages.dev/f/e7124867.py",
+      "status": "requires_app",
+      "http_status": null,
+      "detail": "站点播放依赖影视 App 与 spider 解析",
+      "checked_at": "2026-10-21T13:36:43Z"
+    },
+    {
+      "kind": "source",
+      "name": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "url": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "status": "reachable",
+      "http_status": 200,
+      "detail": "HTTP 可访问",
+      "checked_at": "2026-10-21T13:36:43Z"
+    },
+    {
+      "kind": "source",
+      "name": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+      "url": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+      "status": "reachable",
+      "http_status": 200,
+      "detail": "HTTP 可访问",
+      "checked_at": "2026-10-21T13:36:43Z"
+    },
+    {
+      "kind": "source",
+      "name": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
+      "url": "https://gh-proxy.com/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
+      "status": "reachable",
+      "http_status": 200,
+      "detail": "HTTP 可访问",
+      "checked_at": "2026-10-21T13:36:43Z"
+    }
+  ]
+}

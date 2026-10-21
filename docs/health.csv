@@ -1,0 +1,547 @@
+﻿kind,name,url,status,http_status,detail,checked_at
+channel,1990赌侠,https://play.modujx11.com/20241224/mBSx76B4/index.m3u8,probe_ok,200,"ffprobe 检测到媒体流: video,audio,,video,audio",2026-10-21T13:37:47Z
+channel,1991逃学威龙,https://vip.dytt-film.com/20250311/12297_35fcfa9e/index.m3u8,probe_ok,200,"ffprobe 检测到媒体流: video,audio,,video,audio",2026-10-21T13:37:46Z
+channel,1992鹿鼎记2神龙教,https://play.modujx16.com/20240830/hhzZN6Th/index.m3u8,probe_ok,200,"ffprobe 检测到媒体流: video,audio,,video,audio",2026-10-21T13:37:44Z
+channel,1993唐伯虎点秋香,https://vip.dytt-film.com/20250311/12292_2fdf132b/index.m3u8,probe_ok,200,"ffprobe 检测到媒体流: video,audio,,video,audio",2026-10-21T13:37:43Z
+channel,1993逃学威龙3之龙过鸡年,https://play.modujx15.com/20240825/VgswEazn/index.m3u8,probe_ok,200,"ffprobe 检测到媒体流: video,audio,,video,audio",2026-10-21T13:37:43Z
+channel,1994九品芝麻官,https://vip.dytt-live.com/20250330/2684_7c4bf50b/index.m3u8,probe_ok,200,"ffprobe 检测到媒体流: video,audio,,video,audio",2026-10-21T13:37:43Z
+channel,1994破坏之王,https://cdn7.ryplay7.com/20240915/380_11f89ab4/index.m3u8,http_error,,<urlopen error _ssl.c:983: The handshake operation timed out>,2026-10-21T13:37:41Z
+channel,1996食神,https://play.modujx15.com/20240826/pUDgrWmX/index.m3u8,probe_ok,200,"ffprobe 检测到媒体流: video,audio,,video,audio",2026-10-21T13:37:40Z
+channel,1997家有喜事,https://cdn7.ryplay7.com/20250208/10599_69233b69/index.m3u8,probe_ok,200,"ffprobe 检测到媒体流: video,audio,,video,audio",2026-10-21T13:37:39Z
+channel,2001少林足球,https://vip.lzcdn2.com/20220521/7147_3b73302c/index.m3u8,probe_ok,200,"ffprobe 检测到媒体流: video,audio,,video,audio",2026-10-21T13:37:39Z
+channel,2004功夫,https://cdn1.ryplay1.com/20240910/7703_9dc7d493/index.m3u8,probe_ok,200,"ffprobe 检测到媒体流: video,audio,,video,audio",2026-10-21T13:37:39Z
+channel,2016美人鱼,https://cdn1.ryplay1.com/20240910/7734_c602d62b/index.m3u8,probe_ok,200,"ffprobe 检测到媒体流: video,audio,,video,audio",2026-10-21T13:37:39Z
+channel,2019哪吒之魔童降世,http://111.229.219.148:808/Cache/lzgg/67f35a41a439e00540d0d88f62d3d56a.m3u8,http_error,,<urlopen error timed out>,2026-10-21T13:37:36Z
+channel,2025哪吒之魔童闹海,https://play.modujx11.com/20250802/Cha4M4YU/index.m3u8,probe_failed,200,https://play.modujx11.com/20250802/Cha4M4YU/index.m3u8: End of file,2026-10-21T13:37:38Z
+channel,2026 功夫女足,https://vip.dytt-network.com/20260723/36526_9c21455c/index.m3u8,probe_ok,200,"ffprobe 检测到媒体流: video,audio,,video,audio",2026-10-21T13:37:35Z
+channel,2026八仙,http://111.229.219.148:808/Cache/lzgg/7a367b98744276dba9ea2844bf13ab1e.m3u8,http_error,,<urlopen error timed out>,2026-10-21T13:37:35Z
+channel,2026功夫 女足,https://v.fengbao11.com/video/gongfunvzu/618845436188/index.m3u8,probe_ok,200,"ffprobe 检测到媒体流: video,audio,,video,audio",2026-10-21T13:37:35Z
+channel,2026功夫女足,https://v.lfthirtytwo.com/20260723/8846_f4084a75/index.m3u8,probe_ok,200,"ffprobe 检测到媒体流: video,audio,,video,audio",2026-10-21T13:37:34Z
+channel,AGA-孤雏,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000cp22lt3c77u3sp4g96u0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:09Z
+channel,Alone-marshmello,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200f290000brtup22lsr1a6l8qmgn0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:33Z
+channel,Anyone Of Us,https://m.douyin.com/aweme/v1/playwm/?video_id=v0200fg10000cq49ctvog65h6153dks0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:32Z
+channel,Astro AEC,https://cdn3.indevs.in/stream/live/aec/,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:39:35Z
+channel,Astro AOD,https://cdn3.indevs.in/stream/live/aod/,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:39:34Z
+channel,Astro QJ,https://cdn3.indevs.in/stream/live/qj/,http_error,404,HTTP 404,2026-10-21T13:39:35Z
+channel,Astro欢喜台,https://cdn3.indevs.in/stream/live/hxt/,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:39:35Z
+channel,Beyond-光辉岁月,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000ccu4ldjc77u4nmf3f54g&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:03Z
+channel,Beyond-冷雨夜,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cdqcbe3c77ucgubud6i0&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:03Z
+channel,Beyond-大地,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cojstabc77uerhn878qg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:03Z
+channel,Beyond-岁月无声,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000cfhoeq3c77u4flt6fni0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:04Z
+channel,Beyond-海阔天空,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000chfntjrc77uf4o64t5qg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:04Z
+channel,Beyond-真的爱你,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000ceksa4bc77u77da91tfg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:03Z
+channel,Burning,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300f2b0000bti8l4nm1ok3like33ag&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:31Z
+channel,By Your side,https://www.iesdouyin.com/aweme/v1/playwm/?line=0&logo_name=aweme_diversion_search&ratio=720p&video_id=v0200fg10000cohhg2bc77u7p44oqrsg,http_error,403,HTTP 403,2026-10-21T13:37:33Z
+channel,CAllStar-天梯,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cisenvvog65r87k65dr0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:36:57Z
+channel,CCTV13,https://10.fast.hidns.vip/163189/cctv13/,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:38:23Z
+channel,CCTV1港澳版,https://cdn6.cc.cd/163189/cctv1,http_error,,<urlopen error timed out>,2026-10-21T13:38:22Z
+channel,CH5,https://cdn6.cc.cd/163189/ch5,http_error,,<urlopen error timed out>,2026-10-21T13:38:58Z
+channel,CH8,https://cdn6.cc.cd/163189/ch8,http_error,,<urlopen error timed out>,2026-10-21T13:39:00Z
+channel,CHU,https://cdn6.cc.cd/163189/chu,http_error,,<urlopen error timed out>,2026-10-21T13:39:03Z
+channel,Colbie Caillat-Try,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000ckblmvrc77u7sbpm2vjg&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:28Z
+channel,Creepin' Up On You,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cq5ji0vog65vhisof6m0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:32Z
+channel,Cry On My Shoulder,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200f560000bt8c31an6tf9cl2gpmsg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:31Z
+channel,DJ369-全粤语Electro音乐打造廿四味鬼佬凉茶包房上头串烧,https://mp4.djuu.com/c2/16/2026/9282f410b5437e16.m4a,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:22Z
+channel,DJVinCent-全粤语Electro港台女声唱K必点粤听粤过瘾DJ串烧,https://mp4.djuu.com/c2/16/2026/b355cd7e4ac8489d.m4a,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:23Z
+channel,DJ伦少-全粤语Electro超正喜爱夜蒲Woerland全女生串烧,https://mp4.djuu.com/c2/16/2026/4583210357701894.m4a,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:22Z
+channel,DJ傑少-全粤语Electro音乐受够我的骄傲全女声动感DJ串烧,https://mp4.djuu.com/c2/16/2025/72ad9cbcca850695.m4a,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:21Z
+channel,DJ傑少-全粤语Electro音乐结他恋爱如何天平坐劲爆DJ串烧,https://mp4.djuu.com/c2/16/2025/8ffc09282d550467.m4a,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:20Z
+channel,DJ傑少-全粤语Electro音乐谢谢对不起幻想已醒劲爆 DJ串烧,https://mp4.djuu.com/c2/16/2026/8c57a69300a7f7bb.m4a,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:22Z
+channel,DJ小超-全粤语Electro音乐精选2025经典宝丽金DJ慢摇串烧,https://mp4.djuu.com/c2/16/2025/a65d68e2c7ca00ac.m4a,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:19Z
+channel,DJ珺宝-全粤语Electro音乐抖音热播全女声专辑车载串烧,https://mp4.djuu.com/c2/16/2025/154b9db16b9c2203.m4a,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:21Z
+channel,Dance Monkey,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200f310000bt8c334lftubd6erba3g&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:31Z
+channel,Dancer in the dark,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000c7qaabrc77ucr5apups0&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:33Z
+channel,Dilemma,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cq4uhjvog65ui5mm0pcg&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:32Z
+channel,DjErwin-全粤语Electro音乐不只爱情粤式情歌劲爆DJ串烧,https://mp4.djuu.com/c2/16/2025/4331430d1d6a6b5e.m4a,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:22Z
+channel,DjMcYummy-全粤语Electro音乐纷花游乐场不只爱情港台串烧,https://mp4.djuu.com/c2/16/2026/2813bff6a8388701.m4a,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:22Z
+channel,DjMut-全粤语Electro精选广东小丸子vs广西科目老表串烧,https://mp4.djuu.com/c2/16/2025/df52073c940e645f.m4a,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:21Z
+channel,Dj柏豪-全粤语Electro音乐我的骄傲16号爱人Dj星仔专属串烧,https://mp4.djuu.com/c2/16/2025/fc06603b2c9c6a24.m4a,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:19Z
+channel,Dj维少-全粤语Electro精选苦情人情歌高音质DJ车载串烧,https://mp4.djuu.com/c2/16/2025/38470f92aff3f280.m4a,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:20Z
+channel,Dj维少-全粤语Electro音乐精选16号爱人高音质车载串烧,https://mp4.djuu.com/c2/16/2025/e013a85c41c6c479.m4a,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:20Z
+channel,Dj钟仔-全粤语Electro风格港台情歌对碰吴雨霏vs关心妍DJ串烧,https://mp4.djuu.com/c2/16/2025/0c30fc654c36ebe2.m4a,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:19Z
+channel,Dusk Till Dawn,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cp9tgnnog65mqc12febg&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:33Z
+channel,Electro风格全粤语女声串烧DJ,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v1e00fgi0000ct65p5fog65r7qkgveu0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:18Z
+channel,F4-决不能失去你,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000clpfsjbc77u46m77t630&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:14Z
+channel,F4-流星雨,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000ctps9ffog65q3ledq7i0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:13Z
+channel,Fool for you,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cp79alnog65ukeu0tka0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:33Z
+channel,Free Loop,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fd90000bu2n37d2kepoqmgibfng&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:31Z
+channel,HOY TV,https://cc.123.rr.kg/163189/hoy,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:51Z
+channel,HOY TV,https://cdn6.cc.cd/163189/hoy,http_error,,<urlopen error timed out>,2026-10-21T13:38:06Z
+channel,HOY TV,https://fast.hidns.vip/163189/hoy,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:38:06Z
+channel,HOY国际财经台,https://cdn11.163189.xyz/163189/hoy76,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:38:11Z
+channel,HOY资讯台,https://fast.hidns.vip/163189/hoy78,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:38:07Z
+channel,I Wanted You,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cpchumnog65q36id9o10&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:33Z
+channel,I do,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200f260000bu416dd6mgceo9a0ume0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:31Z
+channel,I'll Do It,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000ch9m0jjc77u31dq1i4b0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:34Z
+channel,Like I Love you,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cj9sd4fog65k6lhdmrp0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:33Z
+channel,Love You like a Love Song,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cnbjh5rc77u8no9th78g&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:30Z
+channel,Love story,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cosdf4bc77uf5rjg3770&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:26Z
+channel,My Love,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200f050000bt8c30ibn0fk5akcthh0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:31Z
+channel,NOW新闻台,https://fast.hidns.vip/163189/now,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:38:17Z
+channel,Nevada,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300ff30000but4f2452a13sf6temog&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:23Z
+channel,Nothin' on me,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cmm6k83c77u8g6f05uf0&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:33Z
+channel,Nothing's gonna change my love for you,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200f680000btisjnvh3f2dgbhasf6g&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:31Z
+channel,One Last Time,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000co6atujc77u007hc7bs0&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:33Z
+channel,Play,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000ca5nc43c77u72ekj6rpg&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:33Z
+channel,Please Don't Go,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cpl46avog65gueg43ogg&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:32Z
+channel,Pretty Boy,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cpv0lcnog65imtn4isig&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:32Z
+channel,RTHK31,https://fast.hidns.vip/163189/rthk31,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:38:22Z
+channel,RTHK32,https://fast.hidns.vip/163189/rthk32,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:38:22Z
+channel,Reality,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fb00000bup46gpu718r2jkqr92g&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:31Z
+channel,SHE-67首合集,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cp7v5hvog65pib9gvgr0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:36:59Z
+channel,Sold Out,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000coop9krc77u2ah4aikq0&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:33Z
+channel,Star Sky,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300f9c0000bt8c32me4f98gqkmvu00&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:29Z
+channel,TVB Plus(WebVTT字幕),https://10.fast.hidns.vip/163189/tvbp/,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:39:46Z
+channel,TVB Plus(字幕),https://cdn3.indevs.in/stream/tvb/tvbp/,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:38:06Z
+channel,TVB plus备,https://vdm6-hw.nbgdsygs.com/live/h6-2.flv,probe_ok,200,"ffprobe 检测到媒体流: audio,video",2026-10-21T13:37:34Z
+channel,TVB1,https://cdn6.cc.cd/163189/tvb1,http_error,,<urlopen error timed out>,2026-10-21T13:38:37Z
+channel,TVBJ1,https://cdn6.cc.cd/163189/j1,http_error,,<urlopen error timed out>,2026-10-21T13:38:38Z
+channel,TVB亚洲武侠,https://cdn6.cc.cd/163189/yzwx,http_error,,<urlopen error timed out>,2026-10-21T13:39:21Z
+channel,TVB娱乐新闻台,https://cdn6.cc.cd/163189/ylxw,http_error,,<urlopen error timed out>,2026-10-21T13:39:22Z
+channel,TVB星河,https://10.fast.hidns.vip/163189/xinghe/,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:39:24Z
+channel,TVB星河,https://cdn3.indevs.in/stream/live/tvbxh/,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:39:41Z
+channel,TVB星河,https://cdn6.cc.cd/163189/tvbxh,http_error,,<urlopen error timed out>,2026-10-21T13:39:23Z
+channel,Talking to the moon,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300f0e0000btktaso6de4h3n6m8mug&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:31Z
+channel,That's Why You Go Away,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300f2b0000btjbvrnm1ok3likh5big&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:31Z
+channel,TiK ToK,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cp3amqjc77u4t8chnn9g&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:33Z
+channel,Trouble Is a Friend,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000ce4sahbc77u86e1eone0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:31Z
+channel,Twins-下一站天后,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000c9hsmhrc77u8bcep14rg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:07Z
+channel,Twins-恋爱大过天,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cfvdrjrc77ud5nlujjag&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:07Z
+channel,Twins-朋友仔,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cdsbamrc77u2p0aq3a00&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:08Z
+channel,Twins-风筝与风,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fda0000bshv5b74vs5fah61kna0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:08Z
+channel,Twins/boyz-死性不改,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cfvjrkbc77u74v6btr50&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:07Z
+channel,Unstoppable,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000ce4av3bc77u7mqoje2kg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:23Z
+channel,Victory,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200f310000bt8c32klftubd6erb6ig&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:29Z
+channel,ViuTV,https://10.fast.hidns.vip/163189/viu/,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:38:12Z
+channel,ViuTVsix,https://10.fast.hidns.vip/163189/viu6/,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:38:13Z
+channel,You Don't Know me,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200ffd0000bughtrht4rmmsdcm6fu0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:31Z
+channel,alone,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fff0000bugiemqsocvbkm7ilit0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:24Z
+channel,anyone of us,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300faf0000c08j4u35esuptakp4ltg&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:27Z
+channel,apologize,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300f2b0000btoqjanm1ok3lil6c8f0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:28Z
+channel,as long as you love me,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cl271gfog65vcqh4qbq0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:32Z
+channel,baby,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v1e00fgi0000ctq63sfog65oesmmlnfg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:24Z
+channel,bad romance,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cv55iuvog65uhoogkirg&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:30Z
+channel,because of you,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cn5vg13c77u9kllf7rng&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:26Z
+channel,booty music,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000cjm702jc77ue24dr770g&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:29Z
+channel,by my side DJ,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cg6q69jc77u50fea8qog&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:17Z
+channel,by2-你并不懂我,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000c8bids3c77ufr1d2duag&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:00Z
+channel,by2-你并不懂我,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000crhpin7og65vnbko3vm0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:00Z
+channel,by2-我知道,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000citn8ivog65usodfhif0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:00Z
+channel,by2-我知道,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000ct0ushnog65rec0oavug&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:00Z
+channel,by2-爱丫爱丫,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000croe187og65pl22ksg00&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:00Z
+channel,by2/汪苏泷-有点甜,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cb5bsu3c77ucgqht5pj0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:00Z
+channel,call me maybe,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000csl040fog65p2l58uqdg&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:30Z
+channel,call me now,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000crh7kdvog65s0rf9jp3g&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:25Z
+channel,closer,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000c6c60frc77u7j9o2ecs0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:34Z
+channel,dancing with your ghost,https://www.iesdouyin.com/aweme/v1/playwm/?line=0&logo_name=aweme_diversion_search&ratio=720p&video_id=v1e00fgi0000ctf6s1vog65kfs6o3iq0,http_error,404,HTTP 404,2026-10-21T13:37:32Z
+channel,diamonds,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fe40000bvm4vsl2kepgd0uu7i50&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:27Z
+channel,faded,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000ctbhakfog65pugm8msu0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:23Z
+channel,far away from home,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000ca1ttbrc77u57r2ktc0g&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:29Z
+channel,fire,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300f7e0000bt9epjpk950m5pm5itog&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:31Z
+channel,gamgamDJ,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cr8r23nog65mnbf3616g&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:16Z
+channel,god is a girl,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cl4vjifog65htupeja50&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:26Z
+channel,good time,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300f0e0000btpfugg6de4h3n78ccig&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:31Z
+channel,handsome lau/HYPEEZY/冯泳-梦醒,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cd2h8erc77u41qn32org&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:36:52Z
+channel,heartbeats,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000clm5h5vog65n7m96h5o0&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:31Z
+channel,here with me,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cl898rnog65i0hbffnv0&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:32Z
+channel,hero,https://www.iesdouyin.com/aweme/v1/playwm/?line=0&logo_name=aweme_diversion_search&ratio=720p&video_id=v0200f040000bvqofe74s1nnb5npm2mg,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:26Z
+channel,hymn  for the weekend,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300f360000bv64mkrphouv4f2o1kpg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:28Z
+channel,i want you to know,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cvn75nnog65u3q261730&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:30Z
+channel,i want you to know,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000cl46f1jc77udgi44b3cg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:33Z
+channel,insomnia,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cmso8mjc77u3n6klkh40&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:29Z
+channel,legends never die,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fff0000bujdacisocvbkm7qhtqg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:29Z
+channel,lone Ranger,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000c67opt3c77u4kb9gjuu0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:29Z
+channel,lonely DJ,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000c34cmjq90k9n62f21tfg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:17Z
+channel,love story,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200f410000buj6ial4q2a6rctrcdv0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:26Z
+channel,love the way you lie,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000csk8qsvog65nldrobpag&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:29Z
+channel,lovefool,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200f0c0000c0air5omu7ok6882l380&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:25Z
+channel,monsters,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cl270lfog65hf7m2f3j0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:25Z
+channel,moshi moshi,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cl4vd2vog65v766s3lag&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:32Z
+channel,move up,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300f6d0000c1110e3c60j1d8ttn99g&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:24Z
+channel,move your body,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000clkl27bc77u100fn3qo0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:30Z
+channel,moves like jagger,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fb10000bvesniikbj343hhac8eg&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:27Z
+channel,mr-森林,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000c2ofpk3c77u6arm34eeg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:12Z
+channel,natural,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000caj6qnrc77u88k20m8jg&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:28Z
+channel,normal no more,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cvvrm4vog65v9p2sp2hg&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:25Z
+channel,oao-wake,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000cssap9fog65j9je20u7g&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:24Z
+channel,once upon a time,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cumt1mfog65krksdg31g&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:23Z
+channel,outside,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cp8jcdnog65ic6gplqf0&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:33Z
+channel,phut hon,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000coms82jc77u4flecs0bg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:33Z
+channel,pink-try,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000ctft5s7og65u0hdbnig0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:28Z
+channel,please dont go,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200f180000bvco837d9i7eq4ai1jmg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:27Z
+channel,poker face,https://www.iesdouyin.com/aweme/v1/playwm/?line=0&logo_name=aweme_diversion_search&ratio=720p&video_id=v0200fg10000cpoe5uvog65h83t50rsg,http_error,404,HTTP 404,2026-10-21T13:37:32Z
+channel,reality,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300f080000c02l8d5f84f3ru33id50&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:26Z
+channel,remember our summer,https://www.iesdouyin.com/aweme/v1/playwm/?line=0&logo_name=aweme_diversion_search&ratio=720p&video_id=v0200fg10000cocdiqjc77u8mnj0qmgg,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:25Z
+channel,right now,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200f4e0000bs8n4m6fbk5pph8knf2g&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:28Z
+channel,rolling in the deep,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v1e00fgi0000ct11konog65sgjaem0n0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:28Z
+channel,run free,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000c6bn043c77u9bihknaj0&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:25Z
+channel,salt,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v1e00fgi0000cstvnkfog65p72v2jrrg&ratio=720p&line=0b,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:28Z
+channel,see you again,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200f3e0000bt8c30sebj9j64kkop2g&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:28Z
+channel,shape of you,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200f060000bsvqd8hl43bkt6rc4sv0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:29Z
+channel,shots,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v1e00fgi0000ctqgk5vog65vl902jf8g&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:30Z
+channel,sing me to sleep,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000clhho2fog65otdj4luag&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:24Z
+channel,something just like this,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000cs4hhsvog65kgk2fa28g&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:28Z
+channel,sound of my dream,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cu8hr8fog65sbnn5265g&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:17Z
+channel,stronger,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000c63kkorc77u71r5ch5o0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:26Z
+channel,summer air,https://www.iesdouyin.com/aweme/v1/playwm/?line=0&logo_name=aweme_diversion_search&ratio=720p&video_id=v0200fg10000cm20flnog65j08qqtmh0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:25Z
+channel,sweet but psycho,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000c7hnn53c77uej28ntkig&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:27Z
+channel,sweety-樱花草,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000c9rreibc77u0n5mpg0o0&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:13Z
+channel,take me hand,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000clnfk87og65tv4479500&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:25Z
+channel,take me to infinity,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300f2d0000c00mcdk080ke0g3td2eg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:25Z
+channel,that girl,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cl1ot2fog65otdmkp0t0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:26Z
+channel,the cure,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000ctc4cd7og65hrog41isg&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:30Z
+channel,the day you went away,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000crchtlnog65ud12ifgd0&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:30Z
+channel,the spectre,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000ctv3ntnog65htc7dg9k0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:24Z
+channel,this Is what you came for,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cpeh6v7og65u1fbjqs9g&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:33Z
+channel,touch,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cmhn50rc77ucfc970np0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:34Z
+channel,umbrella,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000c75hnj3c77uboleql2vg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:28Z
+channel,until you,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cl2e71fog65v764v4ibg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:32Z
+channel,wakawaka,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fbe0000buqeue7bs17qid7thla0&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:28Z
+channel,wake,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000c9pk6hbc77u57r42sd9g&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:24Z
+channel,way back,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000c4gdkrbc77u8ohrj50n0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:27Z
+channel,we don't talk anymore,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cfb0e4bc77u38s842ah0&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:30Z
+channel,wolves,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200f3e0000bt8c32cebj9j64kkp230&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:30Z
+channel,wonder girls-Nobody,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000c6loblbc77u7hd3mel20&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:36:51Z
+channel,上帝是女孩DJ,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000chhlaijc77u2jkqvf1h0&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:17Z
+channel,东方卫视4K,http://go.bkpcp.top/mg/dfws,http_error,,[WinError 10054] 远程主机强迫关闭了一个现有的连接。,2026-10-21T13:37:34Z
+channel,东方卫视4K,https://bp-resource-dfl.bestv.cn/148/3/video.m3u8,probe_ok,200,"ffprobe 检测到媒体流: video,audio,,video,audio",2026-10-21T13:37:34Z
+channel,中山Dj添仔-全粤语Electro风格90后热播远途望出车外串烧,https://mp4.djuu.com/c2/16/2025/b32dcc1dc2767643.m4a,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:19Z
+channel,五星体育,https://cdn15.163189.xyz/163189/wxty,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:39:53Z
+channel,仙村Dj健仔-全粤语Electro音乐中文流行热播车载DJ慢摇串烧,https://mp4.djuu.com/c2/16/2025/b0cd93e548b83c5f.m4a,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:19Z
+channel,任然-飞鸟和蝉,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000chgciibc77u4m8k4edog&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:13Z
+channel,何仟仟-魔鬼邂逅,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000c9i1th3c77u5pdfcatng&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:13Z
+channel,何润东-我记得我爱过,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000cm12qa3c77u3pbdnrr00&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:15Z
+channel,侧田-kong,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000clc94u3c77uf0uv06v80&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:08Z
+channel,侧田-命硬,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000clpvvpbc77udpkv629d0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:08Z
+channel,光良-童话,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cmhcjp3c77u6lekc7am0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:36:58Z
+channel,全粤语8090经典劲爆DJ,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cnamtabc77u54nj2kh6g&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:17Z
+channel,全粤语Club风格汽车慢摇串烧DJ,http://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cpp7b2nog65rhkqq6tpg,http_error,404,HTTP 404,2026-10-21T13:37:18Z
+channel,全粤语女声失恋治愈串烧,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v1e00fgi0000ct7hj5vog65n714a1fd0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:18Z
+channel,全粤语女声深情DJ串烧,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000ctbb4kvog65q67op5tug&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:18Z
+channel,全粤语港台经典老歌DJ,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cs5om8nog65vrmmn2g4g&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:18Z
+channel,全英文洗脑神曲dj串烧,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000ctpdosvog65ofsrkov0g&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:18Z
+channel,八度空间,https://cdn6.cc.cd/163189/8tv,http_error,,<urlopen error timed out>,2026-10-21T13:38:54Z
+channel,公视戏剧,https://cdn12.178.indevs.in/163189/gsxj,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:39:53Z
+channel,关淑怡-难得有情人,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cockvfrc77uecmqmqq40&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:00Z
+channel,凤凰中文,https://cdn6.cc.cd/163189/fhzw,http_error,,<urlopen error timed out>,2026-10-21T13:37:51Z
+channel,凤凰资讯,https://cdn6.cc.cd/163189/fhzx,http_error,,<urlopen error timed out>,2026-10-21T13:38:36Z
+channel,凤凰香港,https://cdn6.cc.cd/163189/fhhk,http_error,,<urlopen error timed out>,2026-10-21T13:38:36Z
+channel,刘小慧-初恋情人,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000cc9cli3c77u4vdavpd70&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:00Z
+channel,刘德华-一起走过的日子,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cl9255rc77uagabjkqkg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:02Z
+channel,刘德华-暗里着迷,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000c8rv9cjc77u58p5sd07g&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:02Z
+channel,刘波-全粤语Electro音乐打造百听不厌车载v79串烧,https://mp4.djuu.com/c2/16/2025/54d15d8040f8256f.m4a,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:21Z
+channel,区文诗-不只爱情,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000csl1fqnog65lrb9gntd0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:13Z
+channel,千禧经典台,https://cdn3.indevs.in/stream/live/tvbc/,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:39:42Z
+channel,华丽翡翠台,https://cdn3.indevs.in/stream/live/hlt/,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:39:26Z
+channel,华丽翡翠台,https://cdn6.cc.cd/163189/hlfct,http_error,,<urlopen error timed out>,2026-10-21T13:39:12Z
+channel,华丽翡翠台(新加坡),https://cdn3.indevs.in/stream/live/jade/,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:39:30Z
+channel,华丽翡翠台(硬字幕),https://cdn6.cc.cd/163189/jade,http_error,,<urlopen error timed out>,2026-10-21T13:39:29Z
+channel,卓文萱/曹格-梁山伯与朱丽叶,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000ckd02j3c77uc41nk2co0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:15Z
+channel,南征北战-我的天空,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fbf0000bt8nuaevamb718qchkt0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:12Z
+channel,卫兰-my cokie can,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000ckpa68bc77u0e09rgs6g&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:36:54Z
+channel,卫兰-大哥,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cc50gabc77ue2vb9akd0&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:36:54Z
+channel,卫兰-就算世界无童话,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000chnenb3c77u2moocu08g&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:36:55Z
+channel,卫兰-心有不甘,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000ch5k663c77u3qu84l3t0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:36:55Z
+channel,卫兰-残酷游戏,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cfhlbnrc77u33819un70&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:36:54Z
+channel,卫兰-离家出走,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000cj9nctrc77u9f26arls0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:36:54Z
+channel,卫兰/24味-Wonderlanad,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000ce1gm2jc77u9vqku0lk0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:36:54Z
+channel,卫诗-宁愿你永不知道,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000c8ehvsbc77ue6b6p56hg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:36:55Z
+channel,古巨基-必杀技,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cekv06jc77udpp4ltm90&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:10Z
+channel,古巨基-爱与诚,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cq20gevog65vbni5bjpg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:11Z
+channel,叶丽仪-上海滩,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000c56uiubc77uc6dubb3q0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:04Z
+channel,叶蒨文-情人知己,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cmcmv33c77uer3e2mdag&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:04Z
+channel,叶蒨文-祝福,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000c8rfd1bc77u0gvo4f8b0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:04Z
+channel,吕方-你的浅笑,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cmp585fog65v3t4i0v80&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:03Z
+channel,吴若希-爱要撑下去,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cdm727rc77u3lnlca32g&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:12Z
+channel,吴若希-越难越爱,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000chcdhdfog65g2p9hdi7g&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:12Z
+channel,吴若希-错过了,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cton3mvog65nv5hqgf50&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:13Z
+channel,吴雨霏-吴哥窿,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000cp8v8l7og65vel2a1ls0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:09Z
+channel,吴雨霏-座右铭,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000csgeobvog65skv513bv0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:09Z
+channel,吴雨霏-我本人,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cpk55svog65tsdrf872g&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:09Z
+channel,吴雨霏-明知做戏,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000ce0r8hjc77u3c0th1spg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:09Z
+channel,吴雨霏-留不低,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000cae08n3c77u2lghi4a9g&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:09Z
+channel,周慧敏-最爱,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000cihdb9rc77uaaibdjvl0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:01Z
+channel,周杰伦-一路向北,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000ctdf26vog65kmvqmvk1g&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:36:58Z
+channel,周杰伦-七里香,https://www.iesdouyin.com/aweme/v1/playwm/?line=0&logo_name=aweme_diversion_search_app&ratio=720p&video_id=v0200fg10000cpbvhp7og65tm36f7f9g,http_error,404,HTTP 404,2026-10-21T13:36:57Z
+channel,周杰伦-不能说的秘密,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cum99unog65osqdmttig&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:36:58Z
+channel,周杰伦-告白气球,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000ci86emrc77ualbim8bv0&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:36:58Z
+channel,周杰伦-我不配,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000ctckvvnog65m6b34rft0&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:36:58Z
+channel,周杰伦-我落泪情绪零碎,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000ctt2hmvog65usvfqcpf0&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:36:58Z
+channel,周杰伦-搁浅,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cuflqnvog65rdj8jqpc0&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:36:58Z
+channel,周杰伦-晴天,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000ctrtl67og65qlnn3p6q0&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:36:58Z
+channel,周杰伦-珊瑚海,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cu53j17og65mdmh6uuvg&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:36:57Z
+channel,周杰伦-稻香,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000ctlmcvvog65o5ds0167g&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:36:58Z
+channel,周杰伦-等你下课,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cu1nfonog65trp6p79ug&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:36:57Z
+channel,周杰伦-简单爱,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000csnbkmqljht17n76quv0&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:36:58Z
+channel,周杰伦-花海,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000ct25167og65te5cdbhj0&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:36:58Z
+channel,周杰伦-蒲公英的约定,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cu16plvog65nf0t5gj8g&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:36:58Z
+channel,周杰伦-说好不哭,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cu1rh9vog65imnpbre70&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:36:57Z
+channel,周杰伦-说好的幸福呢,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cssvfd7og65s05l6fb30&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:36:57Z
+channel,周杰伦-退后,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cu4gqmvog65ugg1to2qg&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:36:57Z
+channel,周杰伦-青花瓷,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cslnpcnog65tu8njd7pg&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:36:58Z
+channel,周杰伦-龙卷风,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000crd9uj7og65v04u0dc7g&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:36:58Z
+channel,周柏豪-传闻,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000c9d38o3c77u1jf2r3r6g&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:36:56Z
+channel,周柏豪-够钟,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cmbebvbc77u6p4blmqtg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:36:56Z
+channel,周柏豪-小白,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000c9go7bjc77u3qv0480gg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:36:56Z
+channel,周柏豪-我的宣言,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000c7sm6u3c77uace3houd0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:36:56Z
+channel,周柏豪-还记得,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000ca9qcubc77u3d3jrsp9g&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:36:56Z
+channel,周柏豪/郑融-一事无成,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000cbcbg2jc77u4rikmlblg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:36:56Z
+channel,天心Dj炜-全粤语Electro音乐打造百听不厌包房必备Hi串,https://mp4.djuu.com/c2/16/2025/994ed34bb17d07db.m4a,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:21Z
+channel,天心Dj炜-全粤语Electro音乐飞花细界经典港风DJ串烧,https://mp4.djuu.com/c2/16/2025/717718324a98d401.m4a,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:21Z
+channel,天映新加坡,https://10.fast.hidns.vip/163189/typd/,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:39:25Z
+channel,天映经典,https://10.fast.hidns.vip/163189/ccm/,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:39:26Z
+channel,天映经典,https://cdn3.indevs.in/stream/live/ccm/,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:39:40Z
+channel,天映频道,https://cdn3.indevs.in/stream/live/typd/,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:39:40Z
+channel,女孩DJ,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v1e00fgi0000d2aa0qfog65vmvgg5sjg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:16Z
+channel,孙耀威-爱的故上集,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000c60cbq3c77u4kbdnbc3g&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:05Z
+channel,容祖儿-16号爱人,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000ckl4ehrc77u5t25hkci0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:06Z
+channel,容祖儿-习惯失恋,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000cdhtuo3c77u4qg4mdmq0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:05Z
+channel,容祖儿-心淡,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cep4bprc77u0o4umqlt0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:05Z
+channel,容祖儿-怯,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000c383g33c77u99amrpkl0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:06Z
+channel,容祖儿-续集,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000cdaap5bc77u0ioga7ah0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:05Z
+channel,容祖儿-连续剧,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cm5avjbc77u543s8e3b0&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:06Z
+channel,小米SU7 ultra,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cv4jntnog65skq4ct860&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:36:50Z
+channel,小米YU7,http://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000d0nrolvog65uva9acetg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:36:50Z
+channel,小米澎程N90,https://www.iesdouyin.com/aweme/v1/playwm/?line=0&logo_name=aweme_diversion_search&ratio=720p&video_id=v1e00fgi0000d9lklmfog65t7jl676f0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:36:50Z
+channel,广东体育,https://2.fast.hidns.vip/163189/gdty,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:38:54Z
+channel,广东珠江,https://2.fast.hidns.vip/163189/gdzj,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:38:53Z
+channel,广州南国都市,https://cdn15.163189.xyz/163189/ngds,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:39:51Z
+channel,广州南国都市4K,http://tencentplaygsm.gztv.com/live/nanguodushi.m3u8,http_error,403,HTTP 403,2026-10-21T13:37:34Z
+channel,广州新闻,https://168.sryze.cc/163189/gzxw,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:39:51Z
+channel,广州综合,https://168.sryze.cc/163189/gzzh,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:39:51Z
+channel,张国荣-沉默是金,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000cgjuqvbc77uc1cnf47ag&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:01Z
+channel,张学友-只想一生跟你走,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000ci8ljnbc77u7qp8pt7cg&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:03Z
+channel,张学友-饿狼传说,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cfapr43c77u621266pjg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:03Z
+channel,张敬轩-酷爱,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000ck1q5v3c77ucqtq44b4g&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:11Z
+channel,张芸京-偏爱,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v1e00fgi0000csmuo9fog65j08392110&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:15Z
+channel,张韶涵-12首合集,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000ct7cdovog65o09j282vg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:15Z
+channel,张韶涵-无名的人,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000ctari87og65ksgs0rnpg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:15Z
+channel,徐小凤-风的季节,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000c9v0f3bc77u2pia8a8vg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:00Z
+channel,思南Dj禹豪-全英文Electro精选Right Now经典包房慢摇串烧,https://mp4.djuu.com/c2/17/2024/048c01b9d4f5dc5b.m4a,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:19Z
+channel,恩平DJ基仔-全粤语Electro音乐港式潮流越听越正DJ慢摇串烧,https://mp4.djuu.com/c2/16/2026/ded571d03559a9ae.m4a,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:22Z
+channel,抖音流行DJ串烧,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cppi1hvog65mc9vujp30&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:18Z
+channel,拉拉爱英文版,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v1e00fgi0000cvaf6cnog65vestq92k0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:17Z
+channel,新澳门直播,https://play3636.zdwafis.com/live/mosixmark.flv,http_error,,<urlopen error [Errno 11001] getaddrinfo failed>,2026-10-21T13:37:34Z
+channel,无线新闻台,http://cc.123.rr.kg/163189/wxxwt,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:50Z
+channel,无线新闻台,https://cdn6.cc.cd/163189/wxxw,http_error,,<urlopen error timed out>,2026-10-21T13:38:05Z
+channel,无线新闻台,https://cdn6.cc.cd/163189/wxxwt,http_error,,<urlopen error timed out>,2026-10-21T13:38:03Z
+channel,无言感激DJ,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000ctqjasfog65pch7akso0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:18Z
+channel,时代进行曲,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cujiftvog65jokluhvng&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:26Z
+channel,明珠台(WebVTT字幕),https://10.fast.hidns.vip/163189/mzt/,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:39:43Z
+channel,明珠台(字幕),https://cdn3.indevs.in/stream/tvb/mzt/,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:38:01Z
+channel,朴彩英-APT,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v02f52g10003css23uiljht5d6b6mnq0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:36:51Z
+channel,李克勤-护花使者,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cit40pbc77uae67r96cg&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:00Z
+channel,李克勤-红日,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000co87rbjc77ueeb2bpbbg&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:00Z
+channel,李玖哲-夏天,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cjhde3fog65upiashhr0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:11Z
+channel,杨丞琳-匿名的好友,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cdjohqjc77u3hrvhg3lg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:14Z
+channel,杨丞琳-暧昧,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cncatmbc77ufr0d46jsg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:14Z
+channel,杨丞琳-雨爱,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000c25llp3c77uemntbq6o0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:14Z
+channel,杨千嬅-可惜我是水瓶座,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000ce88qmbc77uem4d0e4bg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:07Z
+channel,杨千嬅-处处吻,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000crdghifog65nm151qkh0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:07Z
+channel,杨千嬅-少年的祈祷,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000c5ju2krc77u41p3mgv50&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:07Z
+channel,杨千嬅-野孩子,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000co0lujbc77ub5fefi6p0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:07Z
+channel,林俊杰-Always Online,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000ck65c1rc77ucdedd9tpg&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:36:59Z
+channel,林俊杰-不为谁而做的歌,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cfrkaljc77ue6grom5qg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:36:59Z
+channel,林俊杰-不潮不用花钱,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000c7kn32bc77u538kgoopg&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:00Z
+channel,林俊杰-修炼爱情,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000chdi71rc77u1eim5a4t0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:36:59Z
+channel,林俊杰-可惜没如果,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cc04j43c77ucueo1ls5g&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:36:59Z
+channel,林俊杰-她说,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000c7kn4r3c77u8dq4r1vo0&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:36:59Z
+channel,林俊杰-小酒窝,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cg5ghijc77ud4ehka23g&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:36:59Z
+channel,林俊杰-当你,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000c7kn3mjc77u760cntbs0&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:36:59Z
+channel,林俊杰-手心的蔷薇,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000c4p3rrbc77u5vns816r0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:36:59Z
+channel,林俊杰-江南,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000c8t5ac3c77u822ppftmg&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:36:59Z
+channel,林俊杰-背对背拥抱,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000c5a6qjbc77u4nhrr8s0g&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:36:59Z
+channel,林奕匡-高山低谷,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cms7f7nog65tv408a84g&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:36:56Z
+channel,林子祥-男儿当自强,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300f4a0000bt4chkq5lp9jpvrs4u0g&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:05Z
+channel,林峯-幼稚完,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000c3c8tolfurq0t8hl20cg&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:10Z
+channel,林峯-爱不疚,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cbi9p5rc77u8fordilm0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:10Z
+channel,林峯-爱在记忆中找你,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cbidlubc77u4luk3uth0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:10Z
+channel,林峯/泳儿-明天以后,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000clg15bnog65otdhtama0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:10Z
+channel,林忆莲-假如让你吻下去,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cm13h63c77u825g1pq90&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:01Z
+channel,林韵乔/叶梓晴-机场北,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cp32qpjc77uf5eu3igtg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:12Z
+channel,梁咏琪-灰姑娘,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000c3r9krjc77u4v5e0hcig&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:05Z
+channel,梁咏琪/李荣浩-紫荆花盛开,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000cs9se97og65n0tue68vg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:05Z
+channel,梁汉文-缠绵游戏,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cjo6odrc77u9f4if7ub0&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:10Z
+channel,梁静茹-没有如果,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000crofuu7og65j64cj0thg&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:15Z
+channel,欧阳耀莹-戒不掉,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cpa5fhvog65hgvocq0vg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:36:52Z
+channel,民视影剧台,https://cdn12.178.indevs.in/163189/msyj,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:39:53Z
+channel,江语晨-最后一页,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cn5q3rbc77ubqm4m4jsg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:36:58Z
+channel,江语晨-浪漫爱,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fd80000bqt2lkroe0ndof6sf6d0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:36:58Z
+channel,河北4K,https://event.pull.hebtv.com:443/live/live101.m3u8,probe_ok,200,"ffprobe 检测到媒体流: video,audio,,video,audio",2026-10-21T13:37:34Z
+channel,河北电视4K,http://106.53.99.30/tv/api.php?id=hebtv4k,http_error,,<urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。>,2026-10-21T13:37:34Z
+channel,泳儿-24首合集,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000celom73c77u7maj81qo0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:10Z
+channel,泳儿-无心恋唱,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cd72dobc77u85rlotlp0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:10Z
+channel,浙江卫视4K,http://ali-xwl.cztv.com/live/channel4k2160p.m3u8,probe_ok,200,"ffprobe 检测到媒体流: audio,video,,audio,video",2026-10-21T13:37:34Z
+channel,浙江卫视4K,http://go.bkpcp.top/mg/zjws,http_error,,[WinError 10054] 远程主机强迫关闭了一个现有的连接。,2026-10-21T13:37:34Z
+channel,海先生B001Dj串烧,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cvg46evog65uaon0vs10&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:18Z
+channel,海峡卫视,https://10.fast.hidns.vip/163189/hxws/,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:39:24Z
+channel,海峡卫视,https://168.sryze.cc/163189/hxws,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:39:24Z
+channel,海明威/泳儿-我的回忆不是我的,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000crob83nog65jioid2pv0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:10Z
+channel,游京DJ,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000cu2h3qvog65irkuioh50&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:16Z
+channel,游京女版DJ,https://www.iesdouyin.com/aweme/v1/playwm/?line=0&logo_name=aweme_diversion_search&ratio=720p&video_id=v2700fgi0000d4l0kifog65jh64e9670,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:16Z
+channel,湖南卫视4K,http://go.bkpcp.top/mg/hunws,http_error,,[WinError 10054] 远程主机强迫关闭了一个现有的连接。,2026-10-21T13:37:34Z
+channel,湖南卫视4K,http://hlsal-ldvt.qing.mgtv.com/nn_live/nn_x64/dWlwPTEyNy4wLjAuMSZ1aWQ9cWluZy1jbXMmbm5fdGltZXpvbmU9OCZjZG5leF9pZD1hbF9obHNfbGR2dCZ1dWlkPTliODY4NmU5ZTM2YzYwMmMmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNWSZGST.m3u8,probe_ok,200,"ffprobe 检测到媒体流: video,audio,,video,audio",2026-10-21T13:37:34Z
+channel,潘玮柏/弦子-不得不爱,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000ct4mq2vog65i8p1hflg0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:36:57Z
+channel,澳视卫星,https://cdn6.cc.cd/163189/as,http_error,,<urlopen error timed out>,2026-10-21T13:38:23Z
+channel,澳视澳门,https://cdn6.cc.cd/163189/asam,http_error,,<urlopen error timed out>,2026-10-21T13:38:23Z
+channel,澳门体育,https://cdn6.cc.cd/163189/amty,http_error,,<urlopen error timed out>,2026-10-21T13:38:28Z
+channel,澳门综艺,https://cdn6.cc.cd/163189/amzy,http_error,,<urlopen error timed out>,2026-10-21T13:38:29Z
+channel,澳门莲花,https://cdn6.cc.cd/163189/amlh,http_error,,<urlopen error timed out>,2026-10-21T13:38:33Z
+channel,爱奇艺,https://cdn3.indevs.in/stream/live/iqiyi/,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:39:39Z
+channel,爱是一场梦DJ,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000csppmffog65uhi36ibtg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:16Z
+channel,王心凌-当你,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000ciro1jbc77u72t4qmdpg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:36:52Z
+channel,王心凌-第一次爱的人,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000c8kod7rc77u382vs27jg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:36:52Z
+channel,王杰-不浪漫罪名,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000c9bvck3c77ucqkhpnfd0&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:02Z
+channel,王杰-谁明浪子心,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000c5knm9rc77uboe0h3rgg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:02Z
+channel,王菲-容易受伤的女人,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000coul6kjc77u020n5vnvg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:05Z
+channel,王蓝茵-恶作剧,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000ciocl7jc77u2jkq998s0&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:14Z
+channel,甄妮-友谊太阳,https://m.douyin.com/aweme/v1/playwm/?video_id=v0d00fg10000c7dm1ojc77udvrshcceg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:04Z
+channel,甄妮-我曾用心爱着你,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000c61mgpjc77u30e9dfqa0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:05Z
+channel,离开我的依赖DJ,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v1e00fgi0000d2hio3nog65lre771jt0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:16Z
+channel,窒Suffocating,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v1e00fgi0000cugku9vog65immg30nmg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:26Z
+channel,粤语伤感情歌嗨曲串烧DJ,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cph1etnog65mpr23b990&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:18Z
+channel,粤语打碟现场串烧DJ,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000crom7dnog65uq525ar4g&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:17Z
+channel,粤语经典重温DJ,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000cp06gijc77ue69pt0spg&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:18Z
+channel,精选粤语dj串烧,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cpucv77og65tcsi9n2hg&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:18Z
+channel,经典粤语DJ私人订制,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000crdl34vog65v7e9of17g&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:17Z
+channel,罗志祥-爱不单行,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000ck0eshjc77uf7o7ivnpg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:14Z
+channel,罗志祥-爱转角,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cjn0p03c77u6rj0bkt80&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:14Z
+channel,罗文-几许风雨,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000co6fijvog65rloj3i5n0&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:01Z
+channel,翡翠剧集台,https://cdn6.cc.cd/163189/tvbd,http_error,,<urlopen error timed out>,2026-10-21T13:38:38Z
+channel,翡翠台,http://cc.123.rr.kg/163189/fct,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:48Z
+channel,翡翠台,https://cdn6.cc.cd/163189/fct,http_error,,<urlopen error timed out>,2026-10-21T13:37:53Z
+channel,翡翠台(WebVTT字幕),https://10.fast.hidns.vip/163189/fct/,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:39:42Z
+channel,翡翠台(字幕),https://cdn3.indevs.in/stream/tvb/fct/,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:58Z
+channel,翡翠台4K(字幕),https://cdn3.indevs.in/stream/tvb/fct4k/,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:51Z
+channel,老澳门直播,https://vdm6-ali.hrypl168.com/live/a6.flv,probe_ok,200,"ffprobe 检测到媒体流: audio,video",2026-10-21T13:37:34Z
+channel,胜利之舞Dj,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000cv9rjm7og65g7nltudt0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:17Z
+channel,苏州4K,https://tylive.kan0512.com/norecord/csztv4k_4k.m3u8,probe_ok,200,"ffprobe 检测到媒体流: video,audio,,video,audio",2026-10-21T13:37:34Z
+channel,苏州修复4K,http://106.53.99.30/tv/api.php?id=sztv4k,http_error,,<urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。>,2026-10-21T13:37:34Z
+channel,菊梓乔-忘掉我自己,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cr7ia6vog65n4msgpru0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:12Z
+channel,萧亚轩-爱的主打歌,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000ca3eb8rc77ub0tj3kl2g&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:14Z
+channel,萧亚轩-突然想起你,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000cr2kg7vog65lkksge090&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:15Z
+channel,萧亚轩-遗失的心跳,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000ck491ufog65vq1gb76i0&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:15Z
+channel,萧亚轩-错的人,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fd00000br0711gi8qol0f2n3720&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:15Z
+channel,葛东琪-悬溺,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cg7gf7rc77ufgvikae50&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:36:57Z
+channel,蒋小呢-for ya,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000c4k69ujc77u3f5l37i50&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:11Z
+channel,蓝又时-孤单心事,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cr897onog65sgcniupd0&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:15Z
+channel,蔡依林-日不落,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000ch00eijc77u0akslavig&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:36:53Z
+channel,蔡依林/陶喆-今天你要嫁给我,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cj0h9mrc77ubbgnamamg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:36:53Z
+channel,蔡卓妍-二缺一,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000c2s2m1bc77u5age1b03g&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:08Z
+channel,蔡旻佑-我可以,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000c70vjubc77u9ubc7ofdg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:14Z
+channel,蚂蚁牙嘿,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000c98qrmbc77ucqknl90ag&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:16Z
+channel,街道办GDC/欧阳耀莹-春娇与志明,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200f890000bt2sn535j22kbcal83p0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:36:52Z
+channel,謝安琪-喜帖街,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200f580000bqulipikgg1hr4eidvvg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:36:55Z
+channel,謝安琪-钟无艳,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000chq2bsjc77uc3k8tcp5g&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:36:55Z
+channel,许廷铿-面具,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200ffe0000bsma66222nggd3hrnnrg&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:10Z
+channel,许绍洋-花香,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200f290000bt10bsspfrfvn0rsvfhg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:13Z
+channel,谢霆锋-活着viva,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000ccdmdsbc77u0hvhjiuc0&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:36:57Z
+channel,谭咏麟-一生中最爱,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000cni9357og65hefir2gf0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:02Z
+channel,谭咏麟-讲不出再见,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000co5ch8rc77u2dtata9sg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:02Z
+channel,连诗雅-到此为止,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cf3vrrjc77uc2imn4ad0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:08Z
+channel,连诗雅-好好过,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000chjmaarc77u1lp7ig8c0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:08Z
+channel,邓丽君-漫步人生路,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cgg6rljc77ub1k9u4dug&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:03Z
+channel,邓丽欣-电灯胆,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000cmhsnt3c77u2ra2n3e2g&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:03Z
+channel,邓丽欣/傅颖-亲朋勿友,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000ccs4uirc77u12f0g60vg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:03Z
+channel,邓岳章-不做情人,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cfrhffjc77ua9ospmb0g&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:13Z
+channel,邓紫棋-17首合集,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000cucbtmfog65l35tmqu7g&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:13Z
+channel,郁南DJ筱何-全粤语Electro音乐精选个人开始恋爱的DJ串烧,https://mp4.djuu.com/c2/16/2025/0b6860ae467410a1.m4a,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:19Z
+channel,郑中基-无赖,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cmaj7d7og65vg4bdm0h0&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:05Z
+channel,郑欣宜-上心,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cmvk5cnog65judt62tcg&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:36:55Z
+channel,郭静-心墙,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000cjb9s3bc77u14r09k960&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:36:59Z
+channel,采昌影剧台,https://cdn12.178.indevs.in/163189/ccyj,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:39:54Z
+channel,重温经典,https://168.sryze.cc/163189/cwjd,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:39:51Z
+channel,重温经典,https://cdn6.cc.cd/163189/cwjd,http_error,,<urlopen error timed out>,2026-10-21T13:38:34Z
+channel,金光布袋戏,https://cdn3.indevs.in/stream/live/jgbdx/,http_error,404,HTTP 404,2026-10-21T13:39:10Z
+channel,钟嘉欣-我结婚了,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000c2utibbc77u7pgisaep0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:36:53Z
+channel,钟镇涛-让一切随风,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000clvs8cjc77u7555h0er0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:02Z
+channel,阳山辉仔-全粤语Electro音乐打造粤E173AJ车载,https://mp4.djuu.com/c2/16/2025/0cdb0fe9277a48f4.m4a,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:19Z
+channel,阿细-细界,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000ck02v0rc77u87sj16lcg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:36:56Z
+channel,陈僖仪-忘川,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000ca6gn83c77ufug96j7cg&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:11Z
+channel,陈冠希-战争,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000ch5hv2jc77udla7jom10&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:36:52Z
+channel,陈奕迅-十面埋伏,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000csjohunog65ideqnh670&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:07Z
+channel,陈奕迅-单车,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000ctpv5tvog65qksofvds0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:06Z
+channel,陈奕迅-富士山下,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cnu3p4jc77u9i1pe18qg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:06Z
+channel,陈奕迅-明年今日,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000ccqqbarc77u3c0tjm46g&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:06Z
+channel,陈奕迅-落花流水,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000cngumojc77ubsn73764g&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:06Z
+channel,陈婉箐-不负众望,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cu95487og65l3i02957g&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:13Z
+channel,陈慧娴-人生何处不相逢,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000chrn8sjc77u9t0ofndkg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:01Z
+channel,陈慧娴-傻女,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000ccg7jsrc77u3n0hmrrn0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:01Z
+channel,陈慧娴-千千阙歌,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cobq6e3c77udq71olmb0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:01Z
+channel,陈慧娴-夜半小夜曲,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fc30000bu3s66l91uupo5jllq40&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:37:01Z
+channel,陈慧娴-情意结,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000c7mte0bc77u646crfqj0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:01Z
+channel,陈文缓-时光中飞舞,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cab99tbc77u5slfids90&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:11Z
+channel,陈柏宇-你瞒我瞒,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000ccrgjdrc77ua76fkf6sg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:08Z
+channel,陈百强-一生何求,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000c62hppbc77u6phu370hg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:01Z
+channel,陈百强-偏偏喜欢你,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000c4sd0hjc77uadn62vdpg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:01Z
+channel,陈芯怡-不需要挽留,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cmj9767og65mocrpq5fg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:36:52Z
+channel,陶喆-就是爱你,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000c2j1oprc77u04674qfu0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:36:58Z
+channel,青山黛玛-留在我身边,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000caf9b1jc77u3vnrog8mg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:15Z
+channel,靖天戏剧台,https://cdn12.178.indevs.in/163189/jtxj,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:39:56Z
+channel,靖天映画,https://cdn12.178.indevs.in/163189/jtyh,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:39:55Z
+channel,靖天电影台,https://cdn12.178.indevs.in/163189/jtdy,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:39:56Z
+channel,韩安旭-多幸运,https://www.iesdouyin.com/aweme/v1/playwm/?line=0&logo_name=aweme_diversion_search&ratio=720p&video_id=v0300fg10000d0m9etvog65nglhodq2g,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:36:53Z
+channel,顺德DJLwei-全英文Electro音乐百听不厌APT经典金曲DJ串烧,https://mp4.djuu.com/c2/17/2025/78486efeb94e7f79.m4a,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:19Z
+channel,飞儿乐团-lydia,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v1e00fgi0000cu0hhh7og65rn9pfdt0g&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:13Z
+channel,飞儿乐团-你的微笑,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000c9t0f8rc77u1ksr5jbj0&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:13Z
+channel,飞儿乐团-我们的爱,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000c895oo3c77ud27p9ic50&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:13Z
+channel,飞儿乐团-月牙湾,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000c4tmklbc77u4upig9730&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:13Z
+channel,飞儿乐团/彭佳慧-心之火,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cvhd32vog65lgnkfuh30&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:13Z
+channel,麦浚龙-耿耿于怀,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cf2gn93c77uam6kuerdg&ratio=720p&line=0,http_error,403,HTTP 403,2026-10-21T13:37:12Z
+channel,黄凯芹-雨中的恋人们,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cjli7rfog65o4vh2p4ug&ratio=720p&line=0,http_error,404,HTTP 404,2026-10-21T13:36:57Z
+channel,黄金华剧台(WebVTT字幕),https://10.fast.hidns.vip/163189/hjhjt/,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:39:49Z
+channel,黎瑞恩-一人有一个的梦想,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000ce4s2g3c77ub64mff9qg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:11Z
+channel,黑girl-123木头人,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v1e00fgi0000d458thnog65ra7c0c9fg&ratio=720p&line=0,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:37:13Z
+channel,龙华偶像,https://8.fast.hidns.vip/163189/lhox,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:39:07Z
+channel,龙华卡通,https://8.fast.hidns.vip/163189/lhkt,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:39:10Z
+channel,龙华戏剧,https://8.fast.hidns.vip/163189/lhxj,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:39:08Z
+channel,龙华日韩,https://8.fast.hidns.vip/163189/lhrh,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:39:08Z
+channel,龙华洋片,https://8.fast.hidns.vip/163189/lhyp,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:39:09Z
+channel,龙华电影,https://8.fast.hidns.vip/163189/lhdy,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:39:04Z
+channel,龙华经典,https://8.fast.hidns.vip/163189/lhjd,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:39:06Z
+live,🍿乌拉TV直播,https://ilook.epg.one/5CM5SY98BF24PL/2,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:36:47Z
+live,🍿全球TV直播,https://seep.eu.org/iptv-org.github.io/iptv/index.m3u,probe_failed,200,播放列表可下载，但首条媒体流探测失败：https://jmp2.uk/plu-62ba60f059624e000781c436.m3u8: Server returned 400 Bad Request,2026-10-21T13:36:49Z
+live,🍿华视TV直播,https://445569.pages.dev/https://raw.githubusercontent.com/swhtv/111/refs/heads/main/%E5%8D%8E%E8%A7%86box%E5%8D%8E%E8%A7%86%E5%A4%A7%E5%85%A8swtv,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:36:46Z
+live,🍿易发TV直播,https://445569.pages.dev/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt,manifest_ok,200,文本列表可下载；不是可直接探测的单条 HLS 播放列表,2026-10-21T13:36:47Z
+live,🏆PPV体育赛事直播,https://www.korice.eu.org/ppv_m3u.php,playback_unverified,200,HTTP 可访问，但无法仅凭状态码确认可播放,2026-10-21T13:36:44Z
+live,👖裤佬IPTV直播,https://iptv.445569.xyz/live.m3u,probe_ok,200,"播放列表首条媒体流：ffprobe 检测到媒体流: video,audio",2026-10-21T13:36:43Z
+live,👖裤佬TikTok直播,https://tiktok.445569.xyz/live.m3u,probe_ok,200,"播放列表首条媒体流：ffprobe 检测到媒体流: audio,video",2026-10-21T13:36:43Z
+live,👖裤佬Twitch直播,https://twitch.445569.xyz/live.m3u,probe_ok,200,"播放列表首条媒体流：ffprobe 检测到媒体流: audio,video,data,,audio,video,data,,audio,video,data,,audio,video,data,,audio,video,data,,audio,data,,audio,video,data,audio,video,data,audio,video,data,audio,video,data,audio,video,data,audio,data",2026-10-21T13:36:43Z
+live,👖裤佬YY直播,https://yy.445569.xyz/live.m3u,probe_failed,200,播放列表可下载，但首条媒体流探测失败：http://nas.jqcykj.com:88/yy?id=54880976: Error number -138 occurred,2026-10-21T13:36:43Z
+live,👖裤佬体育直播[主],https://jsnzkpg.de5.net/all.m3u,probe_failed,200,播放列表可下载，但首条媒体流探测失败：https://k0u3cydy43y9zw2408x8760xfx5xx9z.djvod.ndcimgs.com/upic/2026/03/07/21/BMjAyNjAzMDcyMTIyMzlfNDI0MDI5NTBfMTg5Nzk0ODUxNjg5XzFfMw==_b_Bc33d39ac3524c256f9ddabce4588794b.mp4: I/O error,2026-10-21T13:36:43Z
+live,👖裤佬体育直播[备],https://stymei.pages.dev/live.m3u,probe_ok,200,"播放列表首条媒体流：ffprobe 检测到媒体流: video,audio",2026-10-21T13:36:43Z
+live,👖裤佬快手直播,https://kuaishou.445569.xyz/list.m3u,probe_ok,200,"播放列表首条媒体流：ffprobe 检测到媒体流: video,audio",2026-10-21T13:36:43Z
+live,👖裤佬抖音直播,https://douyin.445569.xyz/live.m3u,probe_ok,200,"播放列表首条媒体流：ffprobe 检测到媒体流: audio,video,,audio,video",2026-10-21T13:36:43Z
+live,👖裤佬斗鱼直播,https://douyu.445569.xyz/live.m3u,probe_ok,200,"播放列表首条媒体流：ffprobe 检测到媒体流: audio,video",2026-10-21T13:36:43Z
+live,👖裤佬来疯直播,https://laifeng.445569.xyz/live.m3u,probe_ok,200,"播放列表首条媒体流：ffprobe 检测到媒体流: video,audio,,video,audio",2026-10-21T13:36:43Z
+live,👖裤佬百战直播,https://baizhan.445569.xyz/live.m3u,probe_ok,200,"播放列表首条媒体流：ffprobe 检测到媒体流: audio,video",2026-10-21T13:36:43Z
+live,👖裤佬虎牙直播,https://huya.445569.xyz/live.m3u,probe_failed,200,播放列表可下载，但首条媒体流探测失败：https://huya.445569.xyz/live/998: Server returned 403 Forbidden (access denied),2026-10-21T13:36:43Z
+live,👖裤佬酷狗直播,https://kugou.445569.xyz/live.m3u,probe_ok,200,"播放列表首条媒体流：ffprobe 检测到媒体流: video,audio,,video,audio",2026-10-21T13:36:43Z
+site,✈️TG频道@stymei,csp_Douban,requires_app,,站点播放依赖影视 App 与 spider 解析,2026-10-21T13:36:43Z
+site,👖4k,https://jsnz.pages.dev/f/af676592.py,requires_app,,站点播放依赖影视 App 与 spider 解析,2026-10-21T13:36:43Z
+site,👖API,https://jsnz.pages.dev/f/cf616b2f.py,requires_app,,站点播放依赖影视 App 与 spider 解析,2026-10-21T13:36:43Z
+site,👖APP,https://jsnz.pages.dev/f/04b5c0b4.js,requires_app,,站点播放依赖影视 App 与 spider 解析,2026-10-21T13:36:43Z
+site,👖Emby,https://jsnz.pages.dev/f/696546f2.js,requires_app,,站点播放依赖影视 App 与 spider 解析,2026-10-21T13:36:43Z
+site,👖IPTV,https://jsnz.pages.dev/f/f05e3b39.js,requires_app,,站点播放依赖影视 App 与 spider 解析,2026-10-21T13:36:43Z
+site,👖JS,https://jsnz.pages.dev/f/f7b46c7f.js,requires_app,,站点播放依赖影视 App 与 spider 解析,2026-10-21T13:36:43Z
+site,👖PHP,http://jiduo.3116598.xyz/PHP/pkty.php,reachable,200,HTTP 可访问,2026-10-21T13:36:43Z
+site,👖PY,https://jsnz.pages.dev/f/e1aeef83.py,requires_app,,站点播放依赖影视 App 与 spider 解析,2026-10-21T13:36:43Z
+site,👖体育,https://jsnzkpg.de5.net/t4.json,reachable,200,HTTP 可访问,2026-10-21T13:36:43Z
+site,👖动漫,https://jsnz.pages.dev/f/7e20bdb7.py,requires_app,,站点播放依赖影视 App 与 spider 解析,2026-10-21T13:36:43Z
+site,👖听书,https://jsnz.pages.dev/f/d44dd2cf.py,requires_app,,站点播放依赖影视 App 与 spider 解析,2026-10-21T13:36:43Z
+site,👖奈飞,https://api.wsyzy.net/api.php/provide/vod,reachable,200,HTTP 可访问,2026-10-21T13:36:43Z
+site,👖少儿,https://jsnz.pages.dev/f/6b9e7fca.js,requires_app,,站点播放依赖影视 App 与 spider 解析,2026-10-21T13:36:43Z
+site,👖广播,https://jsnz.pages.dev/f/cec31b11.py,requires_app,,站点播放依赖影视 App 与 spider 解析,2026-10-21T13:36:43Z
+site,👖影视,https://jsnz.pages.dev/f/9e53615c.py,requires_app,,站点播放依赖影视 App 与 spider 解析,2026-10-21T13:36:43Z
+site,👖戏曲,https://iduo.us.ci/gt/leevi0709/one/main/js/drpy2.min.js,requires_app,,站点播放依赖影视 App 与 spider 解析,2026-10-21T13:36:43Z
+site,👖有声,https://jsnz.pages.dev/f/e126d1e4.py,requires_app,,站点播放依赖影视 App 与 spider 解析,2026-10-21T13:36:43Z
+site,👖短剧,https://jsnz.pages.dev/f/29b94aff.py,requires_app,,站点播放依赖影视 App 与 spider 解析,2026-10-21T13:36:43Z
+site,👖网盘,https://jsnz.pages.dev/f/261c1664.py,requires_app,,站点播放依赖影视 App 与 spider 解析,2026-10-21T13:36:43Z
+site,👖聚合,https://jsnz.pages.dev/f/4df9fb60.py,requires_app,,站点播放依赖影视 App 与 spider 解析,2026-10-21T13:36:43Z
+site,👖采集,https://jsnz.pages.dev/f/72b7239d.py,requires_app,,站点播放依赖影视 App 与 spider 解析,2026-10-21T13:36:43Z
+site,👖韩国,https://jsnz.pages.dev/f/26511242.py,requires_app,,站点播放依赖影视 App 与 spider 解析,2026-10-21T13:36:43Z
+site,👖音乐,https://jsnz.pages.dev/f/eded33cf.py,requires_app,,站点播放依赖影视 App 与 spider 解析,2026-10-21T13:36:43Z
+site,📌测试,https://jsnz.pages.dev/f/e7124867.py,requires_app,,站点播放依赖影视 App 与 spider 解析,2026-10-21T13:36:43Z
+source,https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg,https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg,reachable,200,HTTP 可访问,2026-10-21T13:36:43Z
+source,https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt,https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt,reachable,200,HTTP 可访问,2026-10-21T13:36:43Z
+source,https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt,https://gh-proxy.com/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt,reachable,200,HTTP 可访问,2026-10-21T13:36:43Z

@@ -1,211 +1,268 @@
 {
-  "updated": "2026-10-21 08:49 UTC",
-  "count": 41,
-  "sources": [
+  "name": "Geit",
+  "spider": "https://raw.githubusercontent.com/hegio/Geit/main/spider.jar",
+  "wallpaper": "",
+  "sites": [
     {
-      "name": "yiyifafa.txt",
-      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/yiyifafa.txt",
-      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/yiyifafa.txt"
+      "key": "裤佬片单导航",
+      "name": "✈️TG频道@stymei",
+      "type": 3,
+      "api": "csp_Douban",
+      "jar": "https://jsnz.pages.dev/f/8788241d.jar",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 1,
+      "ext": "https://jsnz.pages.dev/f/e8cd0ee0.txt"
     },
     {
-      "name": "Jsnzkpg.json",
-      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/Jsnzkpg.json",
-      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/Jsnzkpg.json"
+      "key": "1",
+      "name": "👖IPTV",
+      "type": 3,
+      "api": "https://jsnz.pages.dev/f/f05e3b39.js"
     },
     {
-      "name": "live.m3u",
-      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/live.m3u",
-      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/live.m3u"
+      "key": "2",
+      "name": "👖体育",
+      "type": 1,
+      "api": "https://jsnzkpg.de5.net/t4.json"
     },
     {
-      "name": "live.m3u",
-      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/live.m3u",
-      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/live.m3u"
+      "key": "韩国",
+      "name": "👖韩国",
+      "type": 3,
+      "api": "https://jsnz.pages.dev/f/26511242.py"
     },
     {
-      "name": "live.m3u",
-      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/live.m3u",
-      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/live.m3u"
+      "key": "聚合",
+      "name": "👖聚合",
+      "type": 3,
+      "api": "https://jsnz.pages.dev/f/4df9fb60.py"
     },
     {
-      "name": "live.m3u",
-      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/live.m3u",
-      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/live.m3u"
+      "key": "5",
+      "name": "👖影视",
+      "type": 3,
+      "api": "https://jsnz.pages.dev/f/9e53615c.py"
     },
     {
-      "name": "drpy2.min.js",
-      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/drpy2.min.js",
-      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/drpy2.min.js"
+      "key": "采集",
+      "name": "👖采集",
+      "type": 3,
+      "api": "https://jsnz.pages.dev/f/72b7239d.py"
     },
     {
-      "name": "戏曲大全.js",
-      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/%E6%88%8F%E6%9B%B2%E5%A4%A7%E5%85%A8.js",
-      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/%E6%88%8F%E6%9B%B2%E5%A4%A7%E5%85%A8.js"
+      "key": "11",
+      "name": "👖短剧",
+      "type": 3,
+      "api": "https://jsnz.pages.dev/f/29b94aff.py"
     },
     {
-      "name": "live.m3u",
-      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/live.m3u",
-      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/live.m3u"
+      "key": "12",
+      "name": "👖音乐",
+      "type": 3,
+      "api": "https://jsnz.pages.dev/f/eded33cf.py"
     },
     {
-      "name": "04b5c0b4.js",
-      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/04b5c0b4.js",
-      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/04b5c0b4.js"
+      "key": "13",
+      "name": "👖动漫",
+      "type": 3,
+      "api": "https://jsnz.pages.dev/f/7e20bdb7.py"
     },
     {
-      "name": "261c1664.py",
-      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/261c1664.py",
-      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/261c1664.py"
+      "key": "3",
+      "name": "👖奈飞",
+      "type": 1,
+      "api": "https://api.wsyzy.net/api.php/provide/vod",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "categories": [
+        "Netflix电影",
+        "Netflix自制剧"
+      ]
     },
     {
-      "name": "26511242.py",
-      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/26511242.py",
-      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/26511242.py"
+      "key": "网盘",
+      "name": "👖网盘",
+      "type": 3,
+      "api": "https://jsnz.pages.dev/f/261c1664.py"
     },
     {
-      "name": "29b94aff.py",
-      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/29b94aff.py",
-      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/29b94aff.py"
+      "key": "4k",
+      "name": "👖4k",
+      "type": 3,
+      "api": "https://jsnz.pages.dev/f/af676592.py"
     },
     {
-      "name": "4df9fb60.py",
-      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/4df9fb60.py",
-      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/4df9fb60.py"
+      "key": "6",
+      "name": "👖APP",
+      "type": 3,
+      "api": "https://jsnz.pages.dev/f/04b5c0b4.js"
     },
     {
-      "name": "696546f2.js",
-      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/696546f2.js",
-      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/696546f2.js"
+      "key": "7",
+      "name": "👖PY",
+      "type": 3,
+      "api": "https://jsnz.pages.dev/f/e1aeef83.py"
     },
     {
-      "name": "6b9e7fca.js",
-      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/6b9e7fca.js",
-      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/6b9e7fca.js"
+      "key": "8",
+      "name": "👖JS",
+      "type": 3,
+      "api": "https://jsnz.pages.dev/f/f7b46c7f.js"
     },
     {
-      "name": "72b7239d.py",
-      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/72b7239d.py",
-      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/72b7239d.py"
+      "key": "9",
+      "name": "👖PHP",
+      "type": 4,
+      "api": "http://jiduo.3116598.xyz/PHP/pkty.php"
     },
     {
-      "name": "7e20bdb7.py",
-      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/7e20bdb7.py",
-      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/7e20bdb7.py"
+      "key": "emby",
+      "name": "👖Emby",
+      "type": 3,
+      "api": "https://jsnz.pages.dev/f/696546f2.js"
     },
     {
-      "name": "9e53615c.py",
-      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/9e53615c.py",
-      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/9e53615c.py"
+      "key": "API",
+      "name": "👖API",
+      "type": 3,
+      "api": "https://jsnz.pages.dev/f/cf616b2f.py"
     },
     {
-      "name": "af676592.py",
-      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/af676592.py",
-      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/af676592.py"
+      "key": "14",
+      "name": "👖少儿",
+      "type": 3,
+      "api": "https://jsnz.pages.dev/f/6b9e7fca.js"
     },
     {
-      "name": "cec31b11.py",
-      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/cec31b11.py",
-      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/cec31b11.py"
+      "key": "15",
+      "name": "👖听书",
+      "type": 3,
+      "api": "https://jsnz.pages.dev/f/d44dd2cf.py"
     },
     {
-      "name": "cf616b2f.py",
-      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/cf616b2f.py",
-      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/cf616b2f.py"
+      "key": "17",
+      "name": "👖广播",
+      "type": 3,
+      "api": "https://jsnz.pages.dev/f/cec31b11.py"
     },
     {
-      "name": "d44dd2cf.py",
-      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/d44dd2cf.py",
-      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/d44dd2cf.py"
+      "key": "18",
+      "name": "👖有声",
+      "type": 3,
+      "api": "https://jsnz.pages.dev/f/e126d1e4.py"
     },
     {
-      "name": "e126d1e4.py",
-      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/e126d1e4.py",
-      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/e126d1e4.py"
+      "key": "19",
+      "name": "👖戏曲",
+      "type": 3,
+      "api": "https://iduo.us.ci/gt/leevi0709/one/main/js/drpy2.min.js",
+      "ext": "https://iduo.us.ci/gt/leevi0709/one/main/js/%E6%88%8F%E6%9B%B2%E5%A4%A7%E5%85%A8.js"
     },
     {
-      "name": "e1aeef83.py",
-      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/e1aeef83.py",
-      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/e1aeef83.py"
+      "key": "测试",
+      "name": "📌测试",
+      "type": 3,
+      "api": "https://jsnz.pages.dev/f/e7124867.py"
+    }
+  ],
+  "lives": [
+    {
+      "name": "👖裤佬IPTV直播",
+      "type": 0,
+      "url": "https://iptv.445569.xyz/live.m3u"
     },
     {
-      "name": "e7124867.py",
-      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/e7124867.py",
-      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/e7124867.py"
+      "name": "👖裤佬体育直播[主]",
+      "type": 0,
+      "url": "https://jsnzkpg.de5.net/all.m3u"
     },
     {
-      "name": "e8cd0ee0.txt",
-      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/e8cd0ee0.txt",
-      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/e8cd0ee0.txt"
+      "name": "👖裤佬体育直播[备]",
+      "type": 0,
+      "url": "https://stymei.pages.dev/live.m3u"
     },
     {
-      "name": "eded33cf.py",
-      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/eded33cf.py",
-      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/eded33cf.py"
+      "name": "👖裤佬抖音直播",
+      "type": 0,
+      "url": "https://douyin.445569.xyz/live.m3u"
     },
     {
-      "name": "f05e3b39.js",
-      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/f05e3b39.js",
-      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/f05e3b39.js"
+      "name": "👖裤佬快手直播",
+      "type": 0,
+      "url": "https://kuaishou.445569.xyz/list.m3u"
     },
     {
-      "name": "f7b46c7f.js",
-      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/f7b46c7f.js",
-      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/f7b46c7f.js"
+      "name": "👖裤佬虎牙直播",
+      "type": 0,
+      "url": "https://huya.445569.xyz/live.m3u"
     },
     {
-      "name": "all.m3u",
-      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/all.m3u",
-      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/all.m3u"
+      "name": "👖裤佬斗鱼直播",
+      "type": 0,
+      "url": "https://douyu.445569.xyz/live.m3u"
     },
     {
-      "name": "t4.json",
-      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/t4.json",
-      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/t4.json"
+      "name": "👖裤佬酷狗直播",
+      "type": 0,
+      "url": "https://kugou.445569.xyz/live.m3u"
     },
     {
-      "name": "list.m3u",
-      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/list.m3u",
-      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/list.m3u"
+      "name": "👖裤佬来疯直播",
+      "type": 0,
+      "url": "https://laifeng.445569.xyz/live.m3u"
     },
     {
-      "name": "live.m3u",
-      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/live.m3u",
-      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/live.m3u"
+      "name": "👖裤佬百战直播",
+      "type": 0,
+      "url": "https://baizhan.445569.xyz/live.m3u"
     },
     {
-      "name": "live.m3u",
-      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/live.m3u",
-      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/live.m3u"
+      "name": "👖裤佬YY直播",
+      "type": 0,
+      "url": "https://yy.445569.xyz/live.m3u"
     },
     {
-      "name": "index.m3u",
-      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/index.m3u",
-      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/index.m3u"
+      "name": "👖裤佬Twitch直播",
+      "type": 0,
+      "url": "https://twitch.445569.xyz/live.m3u"
     },
     {
-      "name": "live.m3u",
-      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/live.m3u",
-      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/live.m3u"
+      "name": "👖裤佬TikTok直播",
+      "type": 0,
+      "url": "https://tiktok.445569.xyz/live.m3u"
     },
     {
-      "name": "live.m3u",
-      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/live.m3u",
-      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/live.m3u"
+      "name": "🏆PPV体育赛事直播",
+      "type": 0,
+      "url": "https://www.korice.eu.org/ppv_m3u.php"
     },
     {
-      "name": "live.m3u",
-      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/live.m3u",
-      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/live.m3u"
+      "name": "🍿华视TV直播",
+      "type": 1,
+      "url": "https://445569.pages.dev/https://raw.githubusercontent.com/swhtv/111/refs/heads/main/%E5%8D%8E%E8%A7%86box%E5%8D%8E%E8%A7%86%E5%A4%A7%E5%85%A8swtv"
     },
     {
-      "name": "live.m3u",
-      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/live.m3u",
-      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/live.m3u"
+      "name": "🍿易发TV直播",
+      "type": 1,
+      "url": "https://445569.pages.dev/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
     },
     {
-      "name": "2027update.txt",
-      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/2027update.txt",
-      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/2027update.txt"
+      "name": "🍿乌拉TV直播",
+      "type": 0,
+      "url": "https://ilook.epg.one/5CM5SY98BF24PL/2"
+    },
+    {
+      "name": "🍿全球TV直播",
+      "type": 0,
+      "url": "https://seep.eu.org/iptv-org.github.io/iptv/index.m3u"
+    },
+    {
+      "name": "Geit 聚合直播",
+      "type": 0,
+      "url": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/lives/merged.m3u",
+      "group": "聚合"
     }
   ]
 }
