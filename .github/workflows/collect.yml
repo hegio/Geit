@@ -15,6 +15,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: geit-collect
@@ -74,16 +75,25 @@ jobs:
         run: python check_health.py --workers 16 --max-channels 500 --probe
 
       - name: 提交生成结果
+        id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add geit.json geitpy.json py tvbox/lives docs/health.json docs/health.csv docs/blocked.csv docs/sources.json docs/tvbox.json docs/index.html
           if git diff --cached --quiet; then
             echo "没有变化，跳过提交"
+            echo "pushed=false" >> "$GITHUB_OUTPUT"
           else
             git commit -m "chore: 自动聚合 TVBox 配置 $(TZ=Asia/Shanghai date +'%Y-%m-%d %H:%M')"
             git push "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "HEAD:${GITHUB_REF_NAME}"
+            echo "pushed=true" >> "$GITHUB_OUTPUT"
           fi
+
+      - name: 推送生成结果后继续校验
+        if: steps.commit.outputs.pushed == 'true' && github.event_name != 'schedule'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run collect.yml --ref "${GITHUB_REF_NAME}"
 
       - name: 上传诊断文件
         if: always()
