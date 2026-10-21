@@ -79,6 +79,11 @@ SPIDER_JAR_URL = "https://cnb.cool/fish2035/xs/-/git/raw/main/spider.jar"
 # 旧版本写入的地址，App 侧取不到 JAR，发现残留时强制换回 SPIDER_JAR_URL。
 LEGACY_SPIDER_URL = "https://raw.githubusercontent.com/hegio/Geit/main/spider.jar"
 
+# 影视 App 侧直连 raw.githubusercontent.com 不稳定，仓库自带 py 统一走 ghfast.top 镜像。
+PY_PROXY_PREFIX = "https://ghfast.top/"
+# ghfast.top 只代理 GitHub 主机，其他域名的 py 链接加前缀会得到 403，必须保持原样。
+PROXIED_PY_HOSTS = ("raw.githubusercontent.com",)
+
 
 @dataclass
 class Channel:
@@ -155,6 +160,21 @@ def normalize_url(value: str) -> str:
     path = urllib.parse.quote(urllib.parse.unquote(parts.path), safe="/%:@!$&'()*+,;=-._~")
     query = urllib.parse.quote(urllib.parse.unquote(parts.query), safe="=&?/:@!$'()*+,;%-._~")
     return urllib.parse.urlunsplit((parts.scheme, parts.netloc, path, query, parts.fragment))
+
+
+def proxied_py_url(url: str) -> str:
+    """Prepend the ghfast.top mirror to py links hosted on proxied GitHub hosts.
+
+    Non-GitHub hosts (for example third-party jsnz.pages.dev) are returned
+    unchanged because ghfast.top answers those with HTTP 403.
+    """
+    # normalize_url strips any existing proxy prefix and re-encodes the path,
+    # so this is safe to apply to a URL that already went through it.
+    value = normalize_url(url)
+    host = urllib.parse.urlsplit(value).netloc.lower()
+    if host not in PROXIED_PY_HOSTS:
+        return value
+    return PY_PROXY_PREFIX + value
 
 
 def fetch(url: str) -> tuple[bytes, int, str, str]:
@@ -644,7 +664,7 @@ def python_site(name: str, repo: str, branch: str) -> dict[str, Any]:
         "key": "py-" + Path(name).stem,
         "name": Path(name).stem,
         "type": 3,
-        "api": raw_url(repo, branch, "py/" + name),
+        "api": proxied_py_url(raw_url(repo, branch, "py/" + name)),
         "searchable": 1,
         "quickSearch": 1,
         "filterable": 0,
@@ -866,9 +886,15 @@ def validate_outputs(config: dict[str, Any], py_config: dict[str, Any], repo: st
         raise ValueError("geitpy.json 存在重复站点 API")
     for site in py_config.get("sites", []):
         api = str(site.get("api", ""))
+        if ".py" not in api.lower() and ".js" not in api.lower():
+            continue
+        host = urllib.parse.urlsplit(api).netloc.lower()
+        if host not in PROXIED_PY_HOSTS:
+            continue
+        bare = proxied_py_url(api)
         prefix = raw_url(repo, branch, "py/")
-        if api.startswith(prefix):
-            name = urllib.parse.unquote(api[len(prefix):])
+        if bare.startswith(prefix):
+            name = urllib.parse.unquote(bare[len(prefix):])
             if not (PY_DIR / name).is_file():
                 raise ValueError("geitpy.json 引用了不存在的 Python 文件: %s" % name)
 

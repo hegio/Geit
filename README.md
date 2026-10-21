@@ -51,6 +51,8 @@ GitHub 的 `/blob/` 地址打开的是 HTML 网页，不是 JSON 文件，不能
 
 `geit-fish.txt` / `geitpy-fish.txt` 的 `spider`、`logo`、`wallpaper` 三个字段会被保留：手动改过一次之后，后续自动聚合不会再把它们覆盖回空值。只有旧的 `raw.githubusercontent.com` JAR 地址会被强制换回 cnb.cool。
 
+仓库自带 `py/` 目录下的 Python 站点地址统一加上 `https://ghfast.top/` 前缀，例如 `https://ghfast.top/https://raw.githubusercontent.com/hegio/Geit/main/py/xxx.py`，避免影视 App 直连 `raw.githubusercontent.com` 取不到文件。只对 GitHub 主机的地址加前缀：`ghfast.top` 不代理其他域名，第三方 `py`/`js` 链接（如 `jsnz.pages.dev`）保持原样，加前缀只会得到 HTTP 403。
+
 ## 来源格式
 
 编辑 `sources.txt`，每行一个地址。空行和 `#` 开头的行会跳过。

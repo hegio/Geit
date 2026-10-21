@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-21T17:44:52Z",
+  "updated": "2026-10-21T18:11:58Z",
   "summary": {
     "sources": 3,
     "sites": 25,
@@ -10,7 +10,7 @@
     {
       "kind": "source",
       "name": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-      "url": "https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+      "url": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
       "status": "reachable",
       "http_status": 200,
       "detail": ""
