@@ -1,5 +1,211 @@
 {
-  "updated": "2026-10-20 14:08 UTC",
-  "count": 0,
-  "sources": []
+  "updated": "2026-10-21 08:45 UTC",
+  "count": 41,
+  "sources": [
+    {
+      "name": "yiyifafa.txt",
+      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/yiyifafa.txt",
+      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/yiyifafa.txt"
+    },
+    {
+      "name": "Jsnzkpg.json",
+      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/Jsnzkpg.json",
+      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/Jsnzkpg.json"
+    },
+    {
+      "name": "live.m3u",
+      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/live.m3u",
+      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/live.m3u"
+    },
+    {
+      "name": "live.m3u",
+      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/live.m3u",
+      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/live.m3u"
+    },
+    {
+      "name": "live.m3u",
+      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/live.m3u",
+      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/live.m3u"
+    },
+    {
+      "name": "live.m3u",
+      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/live.m3u",
+      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/live.m3u"
+    },
+    {
+      "name": "drpy2.min.js",
+      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/drpy2.min.js",
+      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/drpy2.min.js"
+    },
+    {
+      "name": "戏曲大全.js",
+      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/%E6%88%8F%E6%9B%B2%E5%A4%A7%E5%85%A8.js",
+      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/%E6%88%8F%E6%9B%B2%E5%A4%A7%E5%85%A8.js"
+    },
+    {
+      "name": "live.m3u",
+      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/live.m3u",
+      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/live.m3u"
+    },
+    {
+      "name": "04b5c0b4.js",
+      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/04b5c0b4.js",
+      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/04b5c0b4.js"
+    },
+    {
+      "name": "261c1664.py",
+      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/261c1664.py",
+      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/261c1664.py"
+    },
+    {
+      "name": "26511242.py",
+      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/26511242.py",
+      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/26511242.py"
+    },
+    {
+      "name": "29b94aff.py",
+      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/29b94aff.py",
+      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/29b94aff.py"
+    },
+    {
+      "name": "4df9fb60.py",
+      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/4df9fb60.py",
+      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/4df9fb60.py"
+    },
+    {
+      "name": "696546f2.js",
+      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/696546f2.js",
+      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/696546f2.js"
+    },
+    {
+      "name": "6b9e7fca.js",
+      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/6b9e7fca.js",
+      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/6b9e7fca.js"
+    },
+    {
+      "name": "72b7239d.py",
+      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/72b7239d.py",
+      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/72b7239d.py"
+    },
+    {
+      "name": "7e20bdb7.py",
+      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/7e20bdb7.py",
+      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/7e20bdb7.py"
+    },
+    {
+      "name": "9e53615c.py",
+      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/9e53615c.py",
+      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/9e53615c.py"
+    },
+    {
+      "name": "af676592.py",
+      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/af676592.py",
+      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/af676592.py"
+    },
+    {
+      "name": "cec31b11.py",
+      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/cec31b11.py",
+      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/cec31b11.py"
+    },
+    {
+      "name": "cf616b2f.py",
+      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/cf616b2f.py",
+      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/cf616b2f.py"
+    },
+    {
+      "name": "d44dd2cf.py",
+      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/d44dd2cf.py",
+      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/d44dd2cf.py"
+    },
+    {
+      "name": "e126d1e4.py",
+      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/e126d1e4.py",
+      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/e126d1e4.py"
+    },
+    {
+      "name": "e1aeef83.py",
+      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/e1aeef83.py",
+      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/e1aeef83.py"
+    },
+    {
+      "name": "e7124867.py",
+      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/e7124867.py",
+      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/e7124867.py"
+    },
+    {
+      "name": "e8cd0ee0.txt",
+      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/e8cd0ee0.txt",
+      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/e8cd0ee0.txt"
+    },
+    {
+      "name": "eded33cf.py",
+      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/eded33cf.py",
+      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/eded33cf.py"
+    },
+    {
+      "name": "f05e3b39.js",
+      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/f05e3b39.js",
+      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/f05e3b39.js"
+    },
+    {
+      "name": "f7b46c7f.js",
+      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/f7b46c7f.js",
+      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/f7b46c7f.js"
+    },
+    {
+      "name": "all.m3u",
+      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/all.m3u",
+      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/all.m3u"
+    },
+    {
+      "name": "t4.json",
+      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/t4.json",
+      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/t4.json"
+    },
+    {
+      "name": "list.m3u",
+      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/list.m3u",
+      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/list.m3u"
+    },
+    {
+      "name": "live.m3u",
+      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/live.m3u",
+      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/live.m3u"
+    },
+    {
+      "name": "live.m3u",
+      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/live.m3u",
+      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/live.m3u"
+    },
+    {
+      "name": "index.m3u",
+      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/index.m3u",
+      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/index.m3u"
+    },
+    {
+      "name": "live.m3u",
+      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/live.m3u",
+      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/live.m3u"
+    },
+    {
+      "name": "live.m3u",
+      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/live.m3u",
+      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/live.m3u"
+    },
+    {
+      "name": "live.m3u",
+      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/live.m3u",
+      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/live.m3u"
+    },
+    {
+      "name": "live.m3u",
+      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/live.m3u",
+      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/live.m3u"
+    },
+    {
+      "name": "2027update.txt",
+      "raw": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/2027update.txt",
+      "url": "https://cdn.jsdelivr.net/gh/hegio/Geit@main/tvbox/2027update.txt"
+    }
+  ]
 }

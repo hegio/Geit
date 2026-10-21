@@ -7,6 +7,101 @@
       "url": "https://wget.la/https://github.com/yanghanhanyingshi/iptv/blob/main/live.txt",
       "epg": "https://iptv-sources2.pages.dev/epg/pw-7/{date}/{name}.json",
       "logo": "https://epg.51zmt.top:8000/logo/{name}.png"
+    },
+    {
+      "name": "👖裤佬IPTV直播",
+      "type": 0,
+      "url": "https://iptv.445569.xyz/live.m3u"
+    },
+    {
+      "name": "👖裤佬体育直播[主]",
+      "type": 0,
+      "url": "https://jsnzkpg.de5.net/all.m3u"
+    },
+    {
+      "name": "👖裤佬体育直播[备]",
+      "type": 0,
+      "url": "https://stymei.pages.dev/live.m3u"
+    },
+    {
+      "name": "👖裤佬抖音直播",
+      "type": 0,
+      "url": "https://douyin.445569.xyz/live.m3u"
+    },
+    {
+      "name": "👖裤佬快手直播",
+      "type": 0,
+      "url": "https://kuaishou.445569.xyz/list.m3u"
+    },
+    {
+      "name": "👖裤佬虎牙直播",
+      "type": 0,
+      "url": "https://huya.445569.xyz/live.m3u"
+    },
+    {
+      "name": "👖裤佬斗鱼直播",
+      "type": 0,
+      "url": "https://douyu.445569.xyz/live.m3u"
+    },
+    {
+      "name": "👖裤佬酷狗直播",
+      "type": 0,
+      "url": "https://kugou.445569.xyz/live.m3u"
+    },
+    {
+      "name": "👖裤佬来疯直播",
+      "type": 0,
+      "url": "https://laifeng.445569.xyz/live.m3u"
+    },
+    {
+      "name": "👖裤佬百战直播",
+      "type": 0,
+      "url": "https://baizhan.445569.xyz/live.m3u"
+    },
+    {
+      "name": "👖裤佬YY直播",
+      "type": 0,
+      "url": "https://yy.445569.xyz/live.m3u"
+    },
+    {
+      "name": "👖裤佬Twitch直播",
+      "type": 0,
+      "url": "https://twitch.445569.xyz/live.m3u"
+    },
+    {
+      "name": "👖裤佬TikTok直播",
+      "type": 0,
+      "url": "https://tiktok.445569.xyz/live.m3u"
+    },
+    {
+      "name": "🏆PPV体育赛事直播",
+      "type": 0,
+      "url": "https://www.korice.eu.org/ppv_m3u.php"
+    },
+    {
+      "name": "🍿涛涛TV直播",
+      "type": 1,
+      "url": "https://445569.pages.dev/https://raw.githubusercontent.com/taoBox2620/taoBox2620/refs/heads/main/logo1.png"
+    },
+    {
+      "name": "🍿华视TV直播",
+      "type": 1,
+      "url": "https://445569.pages.dev/https://raw.githubusercontent.com/swhtv/111/refs/heads/main/华视box华视大全swtv"
+    },
+    {
+      "name": "🍿易发TV直播",
+      "type": 1,
+      "url": "https://445569.pages.dev/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
+    },
+    {
+      "name": "🍿乌拉TV直播",
+      "type": 0,
+      "url": "https://ilook.epg.one/5CM5SY98BF24PL/2"
+    },
+    {
+      "name": "🍿全球TV直播",
+      "type": 0,
+      "url": "https://seep.eu.org/iptv-org.github.io/iptv/index.m3u"
     }
   ],
   "rules": [
@@ -600,5 +695,171 @@
     "aliyuncs.com/ad",
     "qiniu.com/ad"
   ],
-  "sites": []
+  "sites": [
+    {
+      "key": "261c1664.py",
+      "name": "261c1664.py",
+      "type": 3,
+      "api": "./py/261c1664.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
+      "key": "26511242.py",
+      "name": "26511242.py",
+      "type": 3,
+      "api": "./py/26511242.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
+      "key": "29b94aff.py",
+      "name": "29b94aff.py",
+      "type": 3,
+      "api": "./py/29b94aff.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
+      "key": "4df9fb60.py",
+      "name": "4df9fb60.py",
+      "type": 3,
+      "api": "./py/4df9fb60.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
+      "key": "72b7239d.py",
+      "name": "72b7239d.py",
+      "type": 3,
+      "api": "./py/72b7239d.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
+      "key": "7e20bdb7.py",
+      "name": "7e20bdb7.py",
+      "type": 3,
+      "api": "./py/7e20bdb7.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
+      "key": "9e53615c.py",
+      "name": "9e53615c.py",
+      "type": 3,
+      "api": "./py/9e53615c.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
+      "key": "af676592.py",
+      "name": "af676592.py",
+      "type": 3,
+      "api": "./py/af676592.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
+      "key": "cec31b11.py",
+      "name": "cec31b11.py",
+      "type": 3,
+      "api": "./py/cec31b11.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
+      "key": "cf616b2f.py",
+      "name": "cf616b2f.py",
+      "type": 3,
+      "api": "./py/cf616b2f.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
+      "key": "d44dd2cf.py",
+      "name": "d44dd2cf.py",
+      "type": 3,
+      "api": "./py/d44dd2cf.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
+      "key": "e126d1e4.py",
+      "name": "e126d1e4.py",
+      "type": 3,
+      "api": "./py/e126d1e4.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
+      "key": "e1aeef83.py",
+      "name": "e1aeef83.py",
+      "type": 3,
+      "api": "./py/e1aeef83.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
+      "key": "e7124867.py",
+      "name": "e7124867.py",
+      "type": 3,
+      "api": "./py/e7124867.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
+      "key": "eded33cf.py",
+      "name": "eded33cf.py",
+      "type": 3,
+      "api": "./py/eded33cf.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    }
+  ]
 }
