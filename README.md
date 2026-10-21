@@ -16,6 +16,13 @@ https://raw.githubusercontent.com/hegio/Geit/main/geit.json
 https://raw.githubusercontent.com/hegio/Geit/main/geitpy.json
 ```
 
+鱼壳/海豚等需要“前缀 + Base64”包装格式的客户端：
+
+```text
+https://raw.githubusercontent.com/hegio/Geit/main/geit-fish.txt
+https://raw.githubusercontent.com/hegio/Geit/main/geitpy-fish.txt
+```
+
 兼容旧入口的同一份完整配置：
 
 ```text
@@ -30,6 +37,8 @@ GitHub 的 `/blob/` 地址打开的是网页，不是 JSON 文件，不能作为
 |---|---|
 | `geit.json` | 聚合来源中的站点、直播源和 `spider.jar`，TVBox 可直接导入 |
 | `geitpy.json` | 在 `geit.json` 基础上追加 `py/` 内全部有效 Python 站点 |
+| `geit-fish.txt` | 与 `geit.json` 内容相同的鱼壳/海豚包装格式 |
+| `geitpy-fish.txt` | 与 `geitpy.json` 内容相同的鱼壳/海豚包装格式 |
 | `tvbox/lives/merged.m3u` | 从 TXT/M3U 来源合并并按 URL 去重的直播列表 |
 | `docs/tvbox.json` | `geit.json` 的兼容副本，旧链接可直接使用 |
 | `docs/sources.json` | 每个来源的抓取状态和解析结果 |
@@ -56,7 +65,7 @@ GitHub 的 `/blob/` 地址打开的是网页，不是 JSON 文件，不能作为
 
 ## 自动流程
 
-工作流位于 `.github/workflows/collect.yml`，默认每 6 小时运行一次，也可在 Actions 页面手动触发。
+工作流位于 `.github/workflows/collect.yml`，默认每 18 小时运行一次，也可在 Actions 页面手动触发。链接健康检查独立位于 `.github/workflows/health.yml`，默认每 72 小时运行一次。
 
 每次运行会：
 

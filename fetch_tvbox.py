@@ -18,6 +18,7 @@ configurations.
 from __future__ import annotations
 
 import ast
+import base64
 import csv
 import hashlib
 import io
@@ -48,6 +49,8 @@ LIVE_DIR = TVBOX_DIR / "lives"
 DOCS_DIR = HERE / "docs"
 GEIT_PATH = HERE / "geit.json"
 GEITPY_PATH = HERE / "geitpy.json"
+GEIT_FISH_PATH = HERE / "geit-fish.txt"
+GEITPY_FISH_PATH = HERE / "geitpy-fish.txt"
 MERGED_M3U_PATH = LIVE_DIR / "merged.m3u"
 
 USER_AGENT = "Mozilla/5.0 (compatible; GeitCollector/2.0; +https://github.com/hegio/Geit)"
@@ -228,6 +231,13 @@ def parse_json(data: bytes) -> Any | None:
     try:
         return json.loads(text)
     except json.JSONDecodeError:
+        wrapped = re.fullmatch(r"[A-Za-z0-9_-]{8}\*\*([A-Za-z0-9+/=\s]+)", text)
+        if wrapped:
+            try:
+                plain = base64.b64decode(re.sub(r"\s+", "", wrapped.group(1)), validate=True)
+                return json.loads(plain.decode("utf-8-sig"))
+            except (ValueError, UnicodeDecodeError, json.JSONDecodeError):
+                pass
         if not is_encrypted_payload(text):
             return None
         plain = decrypt_payload(text)
@@ -576,6 +586,13 @@ def write_json(path: Path, value: Any) -> None:
     path.write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
+def write_fish_wrapped(path: Path, value: Any) -> None:
+    """Write the wrapped payload used by the Fish/海豚 TVBox clients."""
+    plain = json.dumps(value, ensure_ascii=False, indent=4).encode("utf-8")
+    prefix = base64.urlsafe_b64encode(hashlib.sha256(plain).digest()).decode("ascii").rstrip("=")[:8]
+    path.write_text(prefix + "**" + base64.b64encode(plain).decode("ascii"), encoding="utf-8")
+
+
 def write_docs(stats: BuildStats, repo: str, branch: str) -> None:
     DOCS_DIR.mkdir(parents=True, exist_ok=True)
     source_manifest = {
@@ -790,12 +807,15 @@ def main() -> int:
     validate_outputs(config, py_config, repo, branch)
     write_json(GEIT_PATH, config)
     write_json(GEITPY_PATH, py_config)
+    write_fish_wrapped(GEIT_FISH_PATH, config)
+    write_fish_wrapped(GEITPY_FISH_PATH, py_config)
     write_docs(stats, repo, branch)
     write_health_report(stats)
     write_index(stats, repo, branch)
 
     log("生成 geit.json：%d 个站点，%d 个直播源" % (len(config["sites"]), len(config["lives"])))
     log("生成 geitpy.json：%d 个站点（含 %d 个 Python）" % (len(py_config["sites"]), len(local_python)))
+    log("生成鱼壳兼容文件：geit-fish.txt、geitpy-fish.txt")
     log("合并直播频道：%d 条" % len(stats.channels))
     return 0
 
