@@ -1,292 +1,389 @@
 ﻿kind,name,url,status,http_status,detail,checked_at
-channel,-汕尾生活,https://iswtv.swrtv.com/live/whshpd.m3u8,http_error,404,HTTP 404,2026-10-21T18:23:43Z
-channel,14,https://stream.ads.ottera.tv/playlist.m3u8?network_id=14,http_error,400,HTTP 400,2026-10-21T18:23:02Z
-channel,CCTV1,http://111.29.9.33:6610/000000001000/1000000001000021973/index.m3u8?channel-id=bestzb&Contentid=1000000001000021973&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:10Z
-channel,CCTV10,http://111.29.9.33:6610/000000001000/1000000001000023734/index.m3u8?channel-id=bestzb&Contentid=1000000001000023734&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:13Z
-channel,CCTV10科教,"http://120.87.19.109:80/PLTV/88888973/224/3221225744/10000100000000060000000000334567_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:29:43Z
-channel,CCTV10科教高清,"http://120.87.19.109:80/PLTV/88888973/224/3221225745/10000100000000060000000000334569_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:30:14Z
-channel,CCTV11,http://111.29.9.33:6610/000000001000/1000000002000019789/index.m3u8?channel-id=bestzb&Contentid=1000000002000019789&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:13Z
-channel,CCTV11戏曲,"http://120.87.19.109:80/PLTV/88888973/224/3221225746/10000100000000060000000000334570_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:29:43Z
-channel,CCTV11戏曲高清,"http://120.87.19.109:80/PLTV/88888973/224/3221226644/10000100000000060000000002070289_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:30:14Z
-channel,CCTV12,http://111.29.9.33:6610/000000001000/1000000001000001640/index.m3u8?channel-id=bestzb&Contentid=1000000001000001640&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:16Z
-channel,CCTV12社会与法,"http://120.87.19.109:80/PLTV/88888973/224/3221225748/10000100000000060000000000334583_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:29:43Z
-channel,CCTV12社会与法高清,"http://120.87.19.109:80/PLTV/88888973/224/3221225742/10000100000000060000000000334548_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:30:15Z
-channel,CCTV13,http://111.29.9.33:6610/000000001000/1000000002000021303/index.m3u8?channel-id=bestzb&Contentid=1000000002000021303&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:18Z
-channel,CCTV13新闻,"http://120.87.19.109:80/PLTV/88888973/224/3221225751/10000100000000060000000000334589_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:29:43Z
-channel,CCTV13新闻高清,"http://120.87.19.109:80/PLTV/88888973/224/3221226669/10000100000000060000000002070290_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:30:16Z
-channel,CCTV14,http://111.29.9.33:6610/000000001000/1000000001000008170/index.m3u8?channel-id=bestzb&Contentid=1000000001000008170&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:22Z
-channel,CCTV14少儿,"http://120.87.19.109:80/PLTV/88888973/224/3221225753/10000100000000060000000000334592_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:29:44Z
-channel,CCTV14少儿高清,"http://120.87.19.109:80/PLTV/88888973/224/3221225740/10000100000000060000000000334546_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:30:16Z
-channel,CCTV15,http://111.29.9.33:6610/000000001000/1000000002000008163/index.m3u8?channel-id=bestzb&Contentid=1000000002000008163&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:22Z
-channel,CCTV15音乐,"http://120.87.19.109:80/PLTV/88888973/224/3221225756/10000100000000060000000000334620_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:29:44Z
-channel,CCTV15音乐高清,"http://120.87.19.109:80/PLTV/88888973/224/3221226647/10000100000000060000000002070293_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:30:16Z
-channel,CCTV16奥林匹克高清,"http://120.87.19.109:80/PLTV/88888973/224/3221226645/10000100000000060000000001772867_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:30:19Z
-channel,CCTV17,http://111.29.9.33:6610/000000001000/1000000005000056836/index.m3u8?channel-id=bestzb&Contentid=1000000005000056836&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:40Z
-channel,CCTV17农业农村,"http://120.87.19.109:80/PLTV/88888973/224/3221226566/10000100000000060000000001504118_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:29:45Z
-channel,CCTV17农业农村,"http://120.87.19.109:80/PLTV/88888973/224/3221226661/10000100000000060000000002070294_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:29:46Z
-channel,CCTV1综合,"http://120.87.19.109:80/PLTV/88888973/224/3221225737/10000100000000060000000000334541_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:29:15Z
-channel,CCTV1综合高清,"http://120.87.19.109:80/PLTV/88888973/224/3221225768/10000100000000060000000000337107_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:29:49Z
-channel,CCTV2,http://111.29.9.33:6610/000000001000/1000000001000012442/index.m3u8?channel-id=bestzb&Contentid=1000000001000012442&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:10Z
-channel,CCTV2财经,"http://120.87.19.109:80/PLTV/88888973/224/3221225738/10000100000000060000000000334543_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:29:15Z
-channel,CCTV2财经高清,"http://120.87.19.109:80/PLTV/88888973/224/3221225767/10000100000000060000000000337109_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:29:51Z
-channel,CCTV3,http://111.29.9.33:6610/000000001000/1000000001000011218/index.m3u8?channel-id=bestzb&Contentid=1000000001000011218&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:10Z
-channel,CCTV3综艺,"http://120.87.19.109:80/PLTV/88888973/224/3221225814/10000100000000060000000000388928_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:29:18Z
-channel,CCTV3综艺高清,"http://120.87.19.109:80/PLTV/88888973/224/3221226350/10000100000000060000000001464865_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:29:55Z
-channel,CCTV4,http://111.29.9.33:6610/000000001000/1000000002000031664/index.m3u8?channel-id=bestzb&Contentid=1000000002000031664&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:10Z
-channel,CCTV4,http://cfss.cc/cdn/dy/CCTV4...flv,probe_failed,200,http://cfss.cc/cdn/dy/CCTV4...flv: Invalid data found when processing input,2026-10-21T18:23:22Z
-channel,CCTV4K超高清,"http://120.87.19.109:80/PLTV/88888973/224/3221226217/10000100000000060000000001339123_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:30:21Z
-channel,CCTV4中文国际,"http://120.87.19.109:80/PLTV/88888973/224/3221225739/10000100000000060000000000334545_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:29:20Z
-channel,CCTV4中文国际高清,"http://120.87.19.109:80/PLTV/88888973/224/3221226356/10000100000000060000000001481216_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:29:55Z
-channel,CCTV5,http://111.29.9.33:6610/000000001000/1000000001000004794/index.m3u8?channel-id=bestzb&Contentid=1000000001000004794&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:10Z
-channel,CCTV5+,http://111.29.9.33:6610/000000001000/1000000001000020505/index.m3u8?channel-id=bestzb&Contentid=1000000001000020505&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:10Z
-channel,CCTV5+体育赛事高清,"http://120.87.19.109:80/PLTV/88888973/224/3221225705/10000100000000060000000000334542_0.smil/01.m3u8?fmt=ts2hls,744,01.m3u8&accountinfo=<redacted>&GuardEncType=8601",http_error,,<urlopen error timed out>,2026-10-21T18:30:13Z
-channel,CCTV5体育,"http://120.87.19.109:80/PLTV/88888973/224/3221225815/10000100000000060000000000389197_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:29:25Z
-channel,CCTV5体育高清,"http://120.87.19.109:80/PLTV/88888973/224/3221226352/10000100000000060000000001464824_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:30:13Z
-channel,CCTV6,http://111.29.9.33:6610/000000001000/1000000001000016466/index.m3u8?channel-id=bestzb&Contentid=1000000001000016466&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:10Z
-channel,CCTV6电影,"http://120.87.19.109:80/PLTV/88888973/224/3221225816/10000100000000060000000000389199_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:29:25Z
-channel,CCTV6电影高清,"http://120.87.19.109:80/PLTV/88888973/224/3221226351/10000100000000060000000001464856_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:30:13Z
-channel,CCTV7,http://111.29.9.33:6610/000000001000/1000000001000017218/index.m3u8?channel-id=bestzb&Contentid=1000000001000017218&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:11Z
-channel,CCTV7国防军事,"http://120.87.19.109:80/PLTV/88888973/224/3221225741/10000100000000060000000000334547_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:29:43Z
-channel,CCTV7国防军事高清,"http://120.87.19.109:80/PLTV/88888973/224/3221225749/10000100000000060000000000334584_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:30:13Z
-channel,CCTV8,http://111.29.9.33:6610/000000001000/1000000001000003736/index.m3u8?channel-id=bestzb&Contentid=1000000001000003736&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:12Z
-channel,CCTV8电视剧,"http://120.87.19.109:80/PLTV/88888973/224/3221225817/10000100000000060000000000389200_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:29:43Z
-channel,CCTV8电视剧高清,"http://120.87.19.109:80/PLTV/88888973/224/3221226349/10000100000000060000000001464866_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:30:13Z
-channel,CCTV9,http://111.29.9.33:6610/000000001000/1000000001000014583/index.m3u8?channel-id=bestzb&Contentid=1000000001000014583&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:13Z
-channel,CCTV9纪录,"http://120.87.19.109:80/PLTV/88888973/224/3221225743/10000100000000060000000000334557_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:29:43Z
-channel,CCTV9纪录高清,"http://120.87.19.109:80/PLTV/88888973/224/3221225747/10000100000000060000000000334581_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:30:13Z
-channel,CCTV远方的家,http://cfss.cc/cdn/dy/44931143492.flv,probe_failed,200,http://cfss.cc/cdn/dy/44931143492.flv: Invalid data found when processing input,2026-10-21T18:23:23Z
-channel,CGTN,"http://120.87.19.109:80/PLTV/88888973/224/3221225718/10000100000000060000000000334622_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:29:46Z
-channel,DV现场,http://cfss.cc/cdn/dy/gdtvdvxc.flv,probe_failed,200,http://cfss.cc/cdn/dy/gdtvdvxc.flv: Invalid data found when processing input,2026-10-21T18:23:24Z
-channel,HBTV,http://hoabinhtvlive.746b3ddb.cdnviet.com/hoabinhtv/chunklist.m3u8,http_error,502,HTTP 502,2026-10-21T18:23:07Z
-channel,Lumina,https://cdn.ttvb.eu.org/douyin/86292842871,http_error,,<urlopen error [Errno -2] Name or service not known>,2026-10-21T18:23:20Z
-channel,TV4,https://stream.ads.ottera.tv/playlist.m3u8?network_id=644,probe_failed,200,ffprobe 未检测到媒体流,2026-10-21T18:23:01Z
-channel,The,https://cdn.ttvb.eu.org/douyin/91425370684,http_error,,<urlopen error [Errno -2] Name or service not known>,2026-10-21T18:23:20Z
-channel,东南卫视,http://111.29.9.33:6610/000000001000/1000000002000009263/index.m3u8?channel-id=bestzb&Contentid=1000000002000009263&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:14Z
-channel,东方卫视,http://111.29.9.33:6610/000000001000/1000000001000005866/index.m3u8?channel-id=bestzb&Contentid=1000000001000005866&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:41Z
-channel,东方卫视,"http://120.87.19.109:80/PLTV/88888973/224/3221225686/10000100000000060000000000333818_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:30:44Z
-channel,东莞生活资讯,http://stream.sun0769.com/dgrtv1/mp4tv2_1500/index.m3u8,http_error,404,HTTP 404,2026-10-21T18:23:51Z
-channel,东莞生活资讯,https://stream.sun0769.com/dgrtv1/mp4tv2_1500/index.m3u8,http_error,404,HTTP 404,2026-10-21T18:23:33Z
-channel,中国交通广播,http://cfss.cc/cdn/dy/CMG_ZGJTGB.flv,probe_failed,200,http://cfss.cc/cdn/dy/CMG_ZGJTGB.flv: Invalid data found when processing input,2026-10-21T18:23:26Z
-channel,中国教育1台,http://111.29.9.33:6610/000000001000/5000000002000002652/index.m3u8?channel-id=bestzb&Contentid=5000000002000002652&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:19Z
-channel,中国教育4台,http://111.29.9.33:6610/000000001000/5000000011000031126/index.m3u8?channel-id=bestzb&Contentid=5000000011000031126&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:24Z
-channel,中山综合,http://v.zsbtv.com.cn/lsdream/qTl38me/1000/live.m3u8,http_error,,<urlopen error timed out>,2026-10-21T18:23:33Z
-channel,丰顺综合,https://p2.vzan.com/701678271/024926084736123670/live.m3u8,http_error,404,HTTP 404,2026-10-21T18:23:38Z
-channel,乐游,http://111.29.9.33:6610/000000001000/5000000011000031112/index.m3u8?channel-id=bestzb&Contentid=5000000011000031112&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:29:15Z
-channel,云南卫视,http://111.29.9.33:6610/000000001000/1000000002000024694/index.m3u8?channel-id=bestzb&Contentid=1000000002000024694&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:11Z
-channel,云浮文旅,https://livestream.oeeee.com/slive/28284.m3u8,http_error,404,HTTP 404,2026-10-21T18:23:36Z
-channel,云浮综合,https://livestream.oeeee.com/slive/28283.m3u8,http_error,404,HTTP 404,2026-10-21T18:23:34Z
-channel,五华综合,http://p2hs.vzan.com/slowlive/621139761151691240/live.m3u8,http_error,404,HTTP 404,2026-10-21T18:23:51Z
-channel,动漫秀场,http://111.29.9.33:6610/000000001000/5000000011000031113/index.m3u8?channel-id=bestzb&Contentid=5000000011000031113&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:29:13Z
-channel,北京卫视,http://111.29.9.33:6610/000000001000/1000000001000017156/index.m3u8?channel-id=bestzb&Contentid=1000000001000017156&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:41Z
-channel,北京卫视,"http://120.87.19.109:80/PLTV/88888973/224/3221225688/10000100000000060000000000333853_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:30:44Z
-channel,北京纪实科教,http://111.29.9.33:6610/000000001000/1000000001000028380/index.m3u8?channel-id=bestzb&Contentid=1000000001000028380&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:42Z
-channel,十四小天使,https://cdn.ttvb.eu.org/douyin/50055338591,http_error,,<urlopen error [Errno -2] Name or service not known>,2026-10-21T18:23:19Z
-channel,吉林卫视,http://111.29.9.33:6610/000000001000/5000000011000031117/index.m3u8?channel-id=bestzb&Contentid=5000000011000031117&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:11Z
-channel,哈哈炫动,http://111.29.9.33:6610/000000001000/5000000011000031123/index.m3u8?channel-id=bestzb&Contentid=5000000011000031123&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:29:12Z
-channel,嘉佳卡通,http://111.29.9.33:6610/000000001000/1000000002000025964/index.m3u8?channel-id=bestzb&Contentid=1000000002000025964&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:29:12Z
-channel,四川卫视,http://111.29.9.33:6610/000000001000/1000000002000016825/index.m3u8?channel-id=bestzb&Contentid=1000000002000016825&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:11Z
-channel,声优广播,http://www.uniqueradio.jp/agplayerf/hls/Active.m3u8,http_error,503,HTTP 503,2026-10-21T18:23:05Z
-channel,大湾区卫视,http://8.138.7.223/tv/dwq.m3u8,probe_failed,200,http://8.138.7.223/tv/dwq.m3u8: Server returned 403 Forbidden (access denied),2026-10-21T18:23:40Z
-channel,大湾区卫视,http://k.061899.xyz/k.php?id=dwqws,http_error,,Remote end closed connection without response,2026-10-21T18:23:33Z
-channel,大湾区卫视高清,http://119.29.142.81:4022/udp/239.77.0.215:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:23:57Z
-channel,大湾区卫视高清,http://gdyd.7259.cc.cd:4014/udp/239.77.0.215:5146,http_error,,<urlopen error timed out>,2026-10-21T18:25:27Z
-channel,大湾区卫视高清,http://gdyd.7259.cc.cd:4111/udp/239.77.0.215:5146,http_error,,<urlopen error timed out>,2026-10-21T18:24:23Z
-channel,大湾区卫视高清,http://www.maomizi.cn:9527/udp/239.77.0.215:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:27:04Z
-channel,大湾区卫视高清,http://www.syy3.top:3861/udp/239.77.0.215:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:26:24Z
-channel,天津卫视,http://111.29.9.33:6610/000000001000/1000000001000000831/index.m3u8?channel-id=bestzb&Contentid=1000000001000000831&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:41Z
-channel,天津卫视,"http://120.87.19.109:80/PLTV/88888973/224/3221225689/10000100000000060000000000333854_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:30:44Z
-channel,央视三农,http://cfss.cc/cdn/dy/letus17.flv,probe_failed,200,http://cfss.cc/cdn/dy/letus17.flv: Invalid data found when processing input,2026-10-21T18:23:24Z
-channel,央视网,http://cfss.cc/cdn/dy/cctv.com.flv,probe_failed,302,http://cfss.cc/cdn/dy/cctv.com.flv: Invalid data found when processing input,2026-10-21T18:23:22Z
-channel,央视网新闻,http://cfss.cc/cdn/dy/1606137427.flv,probe_failed,200,http://cfss.cc/cdn/dy/1606137427.flv: Invalid data found when processing input,2026-10-21T18:23:24Z
-channel,央视网财经,http://cfss.cc/cdn/dy/nuanxinnengl.flv,probe_failed,200,http://cfss.cc/cdn/dy/nuanxinnengl.flv: Invalid data found when processing input,2026-10-21T18:23:31Z
-channel,央视财经,http://cfss.cc/cdn/dy/yscjxmt.flv,probe_failed,200,http://cfss.cc/cdn/dy/yscjxmt.flv: Invalid data found when processing input,2026-10-21T18:23:31Z
-channel,宁夏卫视,http://111.29.9.33:6610/000000001000/1000000002000031451/index.m3u8?channel-id=bestzb&Contentid=1000000002000031451&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:14Z
-channel,安徽卫视,http://111.29.9.33:6610/000000001000/1000000001000020780/index.m3u8?channel-id=bestzb&Contentid=1000000001000020780&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:53Z
-channel,安徽卫视,"http://120.87.19.109:80/PLTV/88888973/224/3221225687/10000100000000060000000000333836_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:30:44Z
-channel,家庭剧场,http://111.29.9.33:6610/000000001000/1000000004000008284/index.m3u8?channel-id=bestzb&Contentid=1000000004000008284&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:45Z
-channel,小强热线浙江教科,http://cfss.cc/cdn/dy/ZTV4.flv,probe_failed,200,http://cfss.cc/cdn/dy/ZTV4.flv: Invalid data found when processing input,2026-10-21T18:23:31Z
-channel,小糯米,https://cdn.ttvb.eu.org/douyin/84904405660,http_error,,<urlopen error [Errno -2] Name or service not known>,2026-10-21T18:23:19Z
-channel,山东卫视,http://111.29.9.33:6610/000000001000/1000000001000012807/index.m3u8?channel-id=bestzb&Contentid=1000000001000012807&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:47Z
-channel,山东卫视,"http://120.87.19.109:80/PLTV/88888973/224/3221225690/10000100000000060000000000333859_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:30:44Z
-channel,广东体育高清,http://119.29.142.81:4022/udp/239.77.0.112:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:23:57Z
-channel,广东体育高清,http://gdyd.7259.cc.cd:4014/udp/239.77.0.112:5146,http_error,,<urlopen error timed out>,2026-10-21T18:25:24Z
-channel,广东体育高清,http://gdyd.7259.cc.cd:4111/udp/239.77.0.112:5146,http_error,,<urlopen error timed out>,2026-10-21T18:24:23Z
-channel,广东体育高清,http://www.maomizi.cn:9527/udp/239.77.0.112:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:27:04Z
-channel,广东体育高清,http://www.syy3.top:3861/udp/239.77.0.112:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:26:24Z
-channel,广东体育高清,http://www.yahao.host:4022/udp/239.77.0.112:5146,http_error,503,HTTP 503,2026-10-21T18:24:19Z
-channel,广东卫视,http://111.29.9.33:6610/000000001000/1000000001000014176/index.m3u8?channel-id=bestzb&Contentid=1000000001000014176&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:11Z
-channel,广东卫视高清,http://119.29.142.81:4022/udp/239.77.0.84:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:23:56Z
-channel,广东卫视高清,http://gdyd.7259.cc.cd:4014/udp/239.77.0.84:5146,http_error,,<urlopen error timed out>,2026-10-21T18:25:23Z
-channel,广东卫视高清,http://gdyd.7259.cc.cd:4111/udp/239.77.0.84:5146,http_error,,<urlopen error timed out>,2026-10-21T18:24:22Z
-channel,广东卫视高清,http://www.maomizi.cn:9527/udp/239.77.0.84:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:27:03Z
-channel,广东卫视高清,http://www.syy3.top:3861/udp/239.77.0.84:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:26:23Z
-channel,广东大湾区卫视,http://gx.484947.xyz/PLTV/77777777/224/3221225748/index.m3u8,http_error,403,HTTP 403,2026-10-21T18:23:40Z
-channel,广东好女人,https://cdn.ttvb.eu.org/douyin/69766729938,http_error,,<urlopen error [Errno -2] Name or service not known>,2026-10-21T18:23:20Z
-channel,广东少儿高清,http://119.29.142.81:4022/udp/239.77.0.250:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:23:58Z
-channel,广东少儿高清,http://gdyd.7259.cc.cd:4014/udp/239.77.0.250:5146,http_error,,<urlopen error timed out>,2026-10-21T18:26:22Z
-channel,广东少儿高清,http://gdyd.7259.cc.cd:4111/udp/239.77.0.250:5146,http_error,,<urlopen error timed out>,2026-10-21T18:25:21Z
-channel,广东少儿高清,http://www.maomizi.cn:9527/udp/239.77.0.250:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:27:04Z
-channel,广东少儿高清,http://www.syy3.top:3861/udp/239.77.0.250:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:26:25Z
-channel,广东影视,http://k.061899.xyz/k.php?id=gdys,http_error,,Remote end closed connection without response,2026-10-21T18:23:32Z
-channel,广东影视高清,http://119.29.142.81:4022/udp/239.77.0.217:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:23:58Z
-channel,广东影视高清,http://gdyd.7259.cc.cd:4014/udp/239.77.0.217:5146,http_error,,<urlopen error timed out>,2026-10-21T18:26:22Z
-channel,广东影视高清,http://gdyd.7259.cc.cd:4111/udp/239.77.0.217:5146,http_error,,<urlopen error timed out>,2026-10-21T18:24:26Z
-channel,广东影视高清,http://www.maomizi.cn:9527/udp/239.77.0.217:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:27:04Z
-channel,广东影视高清,http://www.syy3.top:3861/udp/239.77.0.217:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:26:25Z
-channel,广东影视高清,http://www.yahao.host:4022/udp/239.77.0.217:5146,http_error,503,HTTP 503,2026-10-21T18:24:19Z
-channel,广东新闻,http://k.061899.xyz/k.php?id=gdxw,http_error,,Remote end closed connection without response,2026-10-21T18:23:32Z
-channel,广东新闻高清,http://119.29.142.81:4022/udp/239.77.0.173:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:23:56Z
-channel,广东新闻高清,http://gdyd.7259.cc.cd:4014/udp/239.77.0.173:5146,http_error,,<urlopen error timed out>,2026-10-21T18:25:23Z
-channel,广东新闻高清,http://gdyd.7259.cc.cd:4111/udp/239.77.0.173:5146,http_error,,<urlopen error timed out>,2026-10-21T18:24:22Z
-channel,广东新闻高清,http://www.maomizi.cn:9527/udp/239.77.0.173:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:27:03Z
-channel,广东新闻高清,http://www.syy3.top:3861/udp/239.77.0.173:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:26:24Z
-channel,广东新闻高清,http://www.yahao.host:4022/udp/239.77.0.173:5146,http_error,503,HTTP 503,2026-10-21T18:24:18Z
-channel,广东民生,http://k.061899.xyz/k.php?id=gdms,http_error,,Remote end closed connection without response,2026-10-21T18:23:32Z
-channel,广东民生(晚7点),http://tv1288.xyz/douyin.php?type=rid&rid=gdtvdvxc,http_error,400,HTTP 400,2026-10-21T18:23:41Z
-channel,广东民生高清,http://119.29.142.81:4022/udp/239.77.0.225:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:23:56Z
-channel,广东民生高清,http://gdyd.7259.cc.cd:4014/udp/239.77.0.225:5146,http_error,,<urlopen error timed out>,2026-10-21T18:25:24Z
-channel,广东民生高清,http://gdyd.7259.cc.cd:4111/udp/239.77.0.225:5146,http_error,,<urlopen error timed out>,2026-10-21T18:24:22Z
-channel,广东民生高清,http://www.maomizi.cn:9527/udp/239.77.0.225:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:27:03Z
-channel,广东民生高清,http://www.syy3.top:3861/udp/239.77.0.225:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:26:24Z
-channel,广东民生高清,http://www.yahao.host:4022/udp/239.77.0.225:5146,http_error,503,HTTP 503,2026-10-21T18:24:18Z
-channel,广东珠江,http://8.138.7.223/tv/gdzj.m3u8,probe_failed,200,http://8.138.7.223/tv/gdzj.m3u8: Server returned 403 Forbidden (access denied),2026-10-21T18:23:39Z
-channel,广东珠江,http://k.061899.xyz/k.php?id=gdzj,http_error,,Remote end closed connection without response,2026-10-21T18:23:32Z
-channel,广东珠江(晚6点),http://tv1288.xyz/douyin.php?type=rid&rid=gdtvzjpd,http_error,400,HTTP 400,2026-10-21T18:23:41Z
-channel,广东珠江频道,https://gx.484947.xyz/PLTV/77777777/224/3221225717/index.m3u8,http_error,403,HTTP 403,2026-10-21T18:23:40Z
-channel,广东珠江高清,http://119.29.142.81:4022/udp/239.77.0.1:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:23:56Z
-channel,广东珠江高清,http://gdyd.7259.cc.cd:4014/udp/239.77.0.1:5146,http_error,,<urlopen error timed out>,2026-10-21T18:25:23Z
-channel,广东珠江高清,http://gdyd.7259.cc.cd:4111/udp/239.77.0.1:5146,http_error,,<urlopen error timed out>,2026-10-21T18:24:22Z
-channel,广东珠江高清,http://www.maomizi.cn:9527/udp/239.77.0.1:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:27:03Z
-channel,广东珠江高清,http://www.syy3.top:3861/udp/239.77.0.1:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:26:24Z
-channel,广东经济,https://jsv-live-play.sfccn.com/live/jsv_3920_fhd.m3u8,http_error,,The read operation timed out,2026-10-21T18:23:41Z
-channel,广州法治,https://tencentplay.gztv.com/live/fazhi.m3u8?txSecret=4400d75d2114b2db07d86eda8f8218ee&txTime=191b60ce0f6,http_error,,The read operation timed out,2026-10-21T18:23:46Z
-channel,广西卫视,http://111.29.9.33:6610/000000001000/1000000002000019837/index.m3u8?channel-id=bestzb&Contentid=1000000002000019837&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:11Z
-channel,延边新闻,http://cfss.cc/cdn/dy/YBnews.flv,probe_failed,200,http://cfss.cc/cdn/dy/YBnews.flv: Invalid data found when processing input,2026-10-21T18:23:30Z
-channel,快乐垂钓,http://111.29.9.33:6610/000000001000/5000000011000031206/index.m3u8?channel-id=bestzb&Contentid=5000000011000031206&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:42Z
-channel,怀集综合,https://www.zqhjtv.com/hls/hjzhpd.m3u8,probe_failed,200,https://www.zqhjtv.com/hls/hjzhpd.m3u8: Connection timed out,2026-10-21T18:23:53Z
-channel,惊悚悬疑,http://111.29.9.33:6610/000000001000/1000000004000024282/index.m3u8?channel-id=bestzb&Contentid=1000000004000024282&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:45Z
-channel,揭阳生活,http://hls-jyrtv.jyrtv.tv/stjy2020/ggpd.m3u8,http_error,,<urlopen error [Errno -5] No address associated with hostname>,2026-10-21T18:23:37Z
-channel,揭阳生活高清,http://119.29.142.81:4022/udp/239.77.0.251:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:23:53Z
-channel,揭阳生活高清,http://gdyd.7259.cc.cd:4014/udp/239.77.0.251:5146,http_error,,<urlopen error timed out>,2026-10-21T18:25:21Z
-channel,揭阳生活高清,http://gdyd.7259.cc.cd:4111/udp/239.77.0.251:5146,http_error,,<urlopen error timed out>,2026-10-21T18:24:20Z
-channel,揭阳生活高清,http://www.maomizi.cn:9527/udp/239.77.0.251:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:27:02Z
-channel,揭阳生活高清,http://www.syy3.top:3861/udp/239.77.0.251:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:26:22Z
-channel,揭阳综合,http://hls-jyrtv.jyrtv.tv/stjy2020/zhpd.m3u8,http_error,,<urlopen error [Errno -5] No address associated with hostname>,2026-10-21T18:23:37Z
-channel,揭阳综合高清,http://119.29.142.81:4022/udp/239.77.0.229:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:23:53Z
-channel,揭阳综合高清,http://gdyd.7259.cc.cd:4014/udp/239.77.0.229:5146,http_error,,<urlopen error timed out>,2026-10-21T18:25:21Z
-channel,揭阳综合高清,http://gdyd.7259.cc.cd:4111/udp/239.77.0.229:5146,http_error,,<urlopen error timed out>,2026-10-21T18:24:20Z
-channel,揭阳综合高清,http://www.maomizi.cn:9527/udp/239.77.0.229:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:27:01Z
-channel,揭阳综合高清,http://www.syy3.top:3861/udp/239.77.0.229:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:26:22Z
-channel,新疆卫视,http://111.29.9.33:6610/000000001000/1000000002000029441/index.m3u8?channel-id=bestzb&Contentid=1000000002000029441&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:17Z
-channel,新疆卫视,"http://120.87.19.109:80/PLTV/88888973/224/3221225694/10000100000000060000000000334004_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:30:46Z
-channel,明星大片,http://111.29.9.33:6610/000000001000/1000000004000019008/index.m3u8?channel-id=bestzb&Contentid=1000000004000019008&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:50Z
-channel,晓晓,https://cdn.ttvb.eu.org/douyin/147258247158d,http_error,,<urlopen error [Errno -2] Name or service not known>,2026-10-21T18:23:19Z
-channel,朱朱,https://cdn.ttvb.eu.org/douyin/36914825720a,http_error,,<urlopen error [Errno -2] Name or service not known>,2026-10-21T18:23:19Z
-channel,极目新闻,http://cfss.cc/cdn/dy/ctdsbdy.flv,probe_failed,200,http://cfss.cc/cdn/dy/ctdsbdy.flv: Invalid data found when processing input,2026-10-21T18:23:30Z
-channel,格格睡不醒,https://cdn.ttvb.eu.org/douyin/41753242146,http_error,,<urlopen error [Errno -2] Name or service not known>,2026-10-21T18:23:19Z
-channel,欢笑剧场4K,http://111.29.9.33:6610/000000001000/5000000002000009455/index.m3u8?channel-id=bestzb&Contentid=5000000002000009455&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:42Z
-channel,每日经济新闻,http://cfss.cc/cdn/dy/nbdnews.flv,probe_failed,200,http://cfss.cc/cdn/dy/nbdnews.flv: Invalid data found when processing input,2026-10-21T18:23:26Z
-channel,汕头生活高清,http://119.29.142.81:4022/udp/239.253.43.46:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:23:55Z
-channel,汕头生活高清,http://gdyd.7259.cc.cd:4014/udp/239.253.43.46:5146,http_error,,<urlopen error timed out>,2026-10-21T18:25:21Z
-channel,汕头生活高清,http://gdyd.7259.cc.cd:4111/udp/239.253.43.46:5146,http_error,,<urlopen error timed out>,2026-10-21T18:24:21Z
-channel,汕头生活高清,http://www.maomizi.cn:9527/udp/239.253.43.46:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:27:03Z
-channel,汕头生活高清,http://www.syy3.top:3861/udp/239.253.43.46:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:26:23Z
-channel,汕头综合高清,http://119.29.142.81:4022/udp/239.253.43.45:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:23:54Z
-channel,汕头综合高清,http://gdyd.7259.cc.cd:4014/udp/239.253.43.45:5146,http_error,,<urlopen error timed out>,2026-10-21T18:25:21Z
-channel,汕头综合高清,http://gdyd.7259.cc.cd:4111/udp/239.253.43.45:5146,http_error,,<urlopen error timed out>,2026-10-21T18:24:20Z
-channel,汕头综合高清,http://www.maomizi.cn:9527/udp/239.253.43.45:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:27:03Z
-channel,汕头综合高清,http://www.syy3.top:3861/udp/239.253.43.45:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:26:23Z
-channel,汕尾生活高清,http://119.29.142.81:4022/udp/239.77.0.187:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:23:54Z
-channel,汕尾生活高清,http://gdyd.7259.cc.cd:4014/udp/239.77.0.187:5146,http_error,,<urlopen error timed out>,2026-10-21T18:25:21Z
-channel,汕尾生活高清,http://gdyd.7259.cc.cd:4111/udp/239.77.0.187:5146,http_error,,<urlopen error timed out>,2026-10-21T18:24:20Z
-channel,汕尾生活高清,http://www.maomizi.cn:9527/udp/239.77.0.187:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:27:03Z
-channel,汕尾生活高清,http://www.syy3.top:3861/udp/239.77.0.187:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:26:23Z
-channel,汕尾综合高清,http://119.29.142.81:4022/udp/239.77.0.25:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:23:54Z
-channel,汕尾综合高清,http://gdyd.7259.cc.cd:4014/udp/239.77.0.25:5146,http_error,,<urlopen error timed out>,2026-10-21T18:25:21Z
-channel,汕尾综合高清,http://gdyd.7259.cc.cd:4111/udp/239.77.0.25:5146,http_error,,<urlopen error timed out>,2026-10-21T18:24:20Z
-channel,汕尾综合高清,http://www.maomizi.cn:9527/udp/239.77.0.25:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:27:02Z
-channel,汕尾综合高清,http://www.syy3.top:3861/udp/239.77.0.25:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:26:23Z
-channel,江苏卫视,http://111.29.9.33:6610/000000001000/1000000001000001828/index.m3u8?channel-id=bestzb&Contentid=1000000001000001828&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:53Z
-channel,江苏卫视,"http://120.87.19.109:80/PLTV/88888973/224/3221225685/10000100000000060000000000333755_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:30:44Z
-channel,江西卫视,http://111.29.9.33:6610/000000001000/1000000001000013731/index.m3u8?channel-id=bestzb&Contentid=1000000001000013731&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:11Z
-channel,江西卫视,"http://120.87.19.109:80/PLTV/88888973/224/3221225691/10000100000000060000000000333873_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:30:44Z
-channel,河北卫视,http://111.29.9.33:6610/000000001000/1000000002000017118/index.m3u8?channel-id=bestzb&Contentid=1000000002000017118&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:41Z
-channel,河南卫视,http://111.29.9.33:6610/000000001000/5000000011000031119/index.m3u8?channel-id=bestzb&Contentid=5000000011000031119&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:44Z
-channel,河源公共,https://tmpstream.hyrtv.cn/hygg/sd/live.m3u8,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:23:51Z
-channel,河源公共1,http://tmpstream.hyrtv.cn/hygg/sd/live.m3u8,http_error,,Remote end closed connection without response,2026-10-21T18:23:37Z
-channel,河源综合,https://tmpstream.hyrtv.cn/xwzh/sd/live.m3u8,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:23:51Z
-channel,河源综合1,http://tmpstream.hyrtv.cn/xwzh/sd/live.m3u8,http_error,,Remote end closed connection without response,2026-10-21T18:23:37Z
-channel,浙江卫视,http://111.29.9.33:6610/000000001000/1000000001000009806/index.m3u8?channel-id=bestzb&Contentid=1000000001000009806&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:43Z
-channel,浙江卫视,"http://120.87.19.109:80/PLTV/88888973/224/3221225684/10000100000000060000000000334089_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:30:26Z
-channel,海南卫视,http://111.29.9.33:6610/000000001000/5000000004000006211/index.m3u8?channel-id=bestzb&Contentid=5000000004000006211&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:14Z
-channel,深圳卫视,http://111.29.9.33:6610/000000001000/1000000001000009227/index.m3u8?channel-id=bestzb&Contentid=1000000001000009227&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:44Z
-channel,深圳卫视,"http://120.87.19.109:80/PLTV/88888973/224/3221225692/10000100000000060000000000333949_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:30:45Z
-channel,深圳新闻网,http://cfss.cc/cdn/dy/1057124186.flv,probe_failed,200,http://cfss.cc/cdn/dy/1057124186.flv: Invalid data found when processing input,2026-10-21T18:23:31Z
-channel,深圳都市,http://livepull-tcms.sztv.com.cn/live/dslive.m3u8,http_error,403,HTTP 403,2026-10-21T18:23:33Z
-channel,深圳龙岗,http://zhfw-t.szlg.com:8080/live/television1.m3u8,http_error,404,HTTP 404,2026-10-21T18:23:39Z
-channel,清远文旅生活,http://zmylivestream.nfnews.com/zmy_slive/20811.m3u8,http_error,,<urlopen error timed out>,2026-10-21T18:23:52Z
-channel,清远文旅生活,http://zmylivestream.nfnews.com/zmy_slive/25321.m3u8,http_error,,<urlopen error timed out>,2026-10-21T18:23:34Z
-channel,清远新闻综合,http://zmylivestream.nfnews.com/zmy_slive/25319.m3u8,http_error,,<urlopen error timed out>,2026-10-21T18:23:34Z
-channel,游戏风云,http://111.29.9.33:6610/000000001000/5000000011000031114/index.m3u8?channel-id=bestzb&Contentid=5000000011000031114&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:42Z
-channel,湖北卫视,http://111.29.9.33:6610/000000001000/1000000001000010355/index.m3u8?channel-id=bestzb&Contentid=1000000001000010355&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:49Z
-channel,湖南卫视,http://111.29.9.33:6610/000000001000/1000000001000009115/index.m3u8?channel-id=bestzb&Contentid=1000000001000009115&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:42Z
-channel,湖南卫视,"http://120.87.19.109:80/PLTV/88888973/224/3221225682/10000100000000060000000000333514_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:30:26Z
-channel,湛江公共,http://gbtv-hls-wjq.zjwtv.com/zjtv/ggpd.m3u8,http_error,,<urlopen error [Errno -2] Name or service not known>,2026-10-21T18:23:36Z
-channel,湛江新闻综合,http://gbtv-hls-wjq.zjwtv.com/zjtv/zhpd.m3u8,http_error,,<urlopen error [Errno -2] Name or service not known>,2026-10-21T18:23:36Z
-channel,潮州民生1,http://livezhpd.czbtv.com:38880/live/ggpd.m3u8?secret=<redacted>,http_error,,<urlopen error timed out>,2026-10-21T18:23:38Z
-channel,潮州民生高清,http://119.29.142.81:4022/udp/239.253.43.75:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:23:55Z
-channel,潮州民生高清,http://gdyd.7259.cc.cd:4014/udp/239.253.43.75:5146,http_error,,<urlopen error timed out>,2026-10-21T18:25:23Z
-channel,潮州民生高清,http://gdyd.7259.cc.cd:4111/udp/239.253.43.75:5146,http_error,,<urlopen error timed out>,2026-10-21T18:24:21Z
-channel,潮州民生高清,http://www.maomizi.cn:9527/udp/239.253.43.75:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:27:03Z
-channel,潮州民生高清,http://www.syy3.top:3861/udp/239.253.43.75:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:26:23Z
-channel,潮州综合1,http://livezhpd.czbtv.com:38880/live/ctvzhpd.m3u8?secret=<redacted>,http_error,,<urlopen error timed out>,2026-10-21T18:23:37Z
-channel,潮州综合高清,http://119.29.142.81:4022/udp/239.253.43.70:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:23:55Z
-channel,潮州综合高清,http://gdyd.7259.cc.cd:4014/udp/239.253.43.70:5146,http_error,,<urlopen error timed out>,2026-10-21T18:25:23Z
-channel,潮州综合高清,http://gdyd.7259.cc.cd:4111/udp/239.253.43.70:5146,http_error,,<urlopen error timed out>,2026-10-21T18:24:21Z
-channel,潮州综合高清,http://www.maomizi.cn:9527/udp/239.253.43.70:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:27:03Z
-channel,潮州综合高清,http://www.syy3.top:3861/udp/239.253.43.70:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:26:23Z
-channel,炫舞未来,http://111.29.9.33:6610/000000001000/1000000001000000515/index.m3u8?channel-id=bestzb&Contentid=1000000001000000515&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:29:12Z
-channel,特区新闻广场,http://cfss.cc/cdn/dy/tqxwgc.flv,probe_failed,200,http://cfss.cc/cdn/dy/tqxwgc.flv: Invalid data found when processing input,2026-10-21T18:23:31Z
-channel,环球时报,http://cfss.cc/cdn/dy/HuanQiuShiBao.flv,probe_failed,200,http://cfss.cc/cdn/dy/HuanQiuShiBao.flv: Invalid data found when processing input,2026-10-21T18:23:31Z
-channel,珠江频道,http://cfss.cc/cdn/dy/gdtvzjpd.flv,probe_failed,200,http://cfss.cc/cdn/dy/gdtvzjpd.flv: Invalid data found when processing input,2026-10-21T18:23:24Z
-channel,甘肃卫视,http://111.29.9.33:6610/000000001000/1000000002000017827/index.m3u8?channel-id=bestzb&Contentid=1000000002000017827&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:12Z
-channel,生活时尚,http://111.29.9.33:6610/000000001000/5000000002000019634/index.m3u8?channel-id=bestzb&Contentid=5000000002000019634&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:43Z
-channel,电影频道央影传媒,http://cfss.cc/cdn/dy/cctv6media..flv,probe_failed,200,http://cfss.cc/cdn/dy/cctv6media..flv: Invalid data found when processing input,2026-10-21T18:23:24Z
-channel,番禺电视台,http://video.epaper.pybtv.cn:8080/live/rtmp_live_demo.m3u8,http_error,,<urlopen error timed out>,2026-10-21T18:23:50Z
-channel,番禺综合,http://video.epaper.pybtv.cn:8080/live/rtmp_live_demo.flv,http_error,,<urlopen error timed out>,2026-10-21T18:23:38Z
-channel,第一财团,http://cfss.cc/cdn/dy/Diyicaituan.flv,probe_failed,200,http://cfss.cc/cdn/dy/Diyicaituan.flv: Invalid data found when processing input,2026-10-21T18:23:31Z
-channel,粤TV-广东台荔枝网,http://cfss.cc/cdn/dy/ZK8763.flv,probe_failed,200,http://cfss.cc/cdn/dy/ZK8763.flv: Invalid data found when processing input,2026-10-21T18:23:24Z
-channel,精品大剧,http://111.29.9.33:6610/000000001000/1000000004000013968/index.m3u8?channel-id=bestzb&Contentid=1000000004000013968&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:48Z
-channel,纯享4K,http://111.29.9.33:6610/000000001000/1000000004000011651/index.m3u8?channel-id=bestzb&Contentid=1000000004000011651&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:29:14Z
-channel,经济科教高清,http://119.29.142.81:4022/udp/239.77.0.85:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:23:57Z
-channel,经济科教高清,http://gdyd.7259.cc.cd:4014/udp/239.77.0.85:5146,http_error,,<urlopen error timed out>,2026-10-21T18:25:24Z
-channel,经济科教高清,http://gdyd.7259.cc.cd:4111/udp/239.77.0.85:5146,http_error,,<urlopen error timed out>,2026-10-21T18:24:23Z
-channel,经济科教高清,http://www.maomizi.cn:9527/udp/239.77.0.85:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:27:04Z
-channel,经济科教高清,http://www.syy3.top:3861/udp/239.77.0.85:5146,http_error,,<urlopen error [Errno 111] Connection refused>,2026-10-21T18:26:24Z
-channel,经济科教高清,http://www.yahao.host:4022/udp/239.77.0.85:5146,http_error,503,HTTP 503,2026-10-21T18:24:19Z
-channel,维度新闻,http://cfss.cc/cdn/dy/975107749.flv,probe_failed,200,http://cfss.cc/cdn/dy/975107749.flv: Invalid data found when processing input,2026-10-21T18:23:31Z
-channel,肇庆生活服务,http://zmylivestream.nfnews.com/zmy_slive/27871.m3u8,http_error,,<urlopen error timed out>,2026-10-21T18:23:34Z
-channel,肇庆综合,http://zmylivestream.nfnews.com/zmy_slive/27872.m3u8,http_error,,<urlopen error timed out>,2026-10-21T18:23:33Z
-channel,育见新闻,http://cfss.cc/cdn/dy/CETVxinwen.flv,probe_failed,200,http://cfss.cc/cdn/dy/CETVxinwen.flv: Invalid data found when processing input,2026-10-21T18:23:31Z
-channel,茶频道,http://111.29.9.33:6610/000000001000/5000000011000031209/index.m3u8?channel-id=bestzb&Contentid=5000000011000031209&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:29:13Z
-channel,西藏卫视,"http://120.87.19.109:80/PLTV/88888973/224/3221225693/10000100000000060000000000333969_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-21T18:30:45Z
-channel,财联社,http://cfss.cc/cdn/dy/clscccaijing.flv,probe_failed,200,http://cfss.cc/cdn/dy/clscccaijing.flv: Invalid data found when processing input,2026-10-21T18:23:31Z
-channel,贵州卫视,http://111.29.9.33:6610/000000001000/1000000002000003169/index.m3u8?channel-id=bestzb&Contentid=1000000002000003169&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:40Z
-channel,超级体育,http://111.29.9.33:6610/000000001000/1000000004000007755/index.m3u8?channel-id=bestzb&Contentid=1000000004000007755&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:54Z
-channel,超级电影,http://111.29.9.33:6610/000000001000/1000000001000012884/index.m3u8?channel-id=bestzb&Contentid=1000000001000012884&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:44Z
-channel,超级电视剧,http://111.29.9.33:6610/000000001000/1000000001000008139/index.m3u8?channel-id=bestzb&Contentid=1000000001000008139&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:24Z
-channel,超级综艺,http://111.29.9.33:6610/000000001000/1000000004000023658/index.m3u8?channel-id=bestzb&Contentid=1000000004000023658&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:54Z
-channel,辽宁卫视,http://111.29.9.33:6610/000000001000/1000000001000001945/index.m3u8?channel-id=bestzb&Contentid=1000000001000001945&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:11Z
-channel,都市剧场,http://111.29.9.33:6610/000000001000/5000000011000031111/index.m3u8?channel-id=bestzb&Contentid=5000000011000031111&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:42Z
-channel,重庆卫视,http://111.29.9.33:6610/000000001000/1000000001000001096/index.m3u8?channel-id=bestzb&Contentid=1000000001000001096&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:42Z
-channel,金牌综艺,http://111.29.9.33:6610/000000001000/1000000004000026167/index.m3u8?channel-id=bestzb&Contentid=1000000004000026167&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:29:12Z
-channel,金鹰卡通,http://111.29.9.33:6610/000000001000/5000000006000040024/index.m3u8?channel-id=bestzb&Contentid=5000000006000040024&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:29:12Z
-channel,金鹰纪实,http://111.29.9.33:6610/000000001000/5000000011000031203/index.m3u8?channel-id=bestzb&Contentid=5000000011000031203&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:42Z
-channel,阳江-1,https://live.yjtvw.com:8081/live/yjtv1.m3u8,http_error,,<urlopen error [Errno -2] Name or service not known>,2026-10-21T18:23:36Z
-channel,阳江-2,https://live.yjtvw.com:8081/live/yjtv2.m3u8,http_error,,<urlopen error [Errno -2] Name or service not known>,2026-10-21T18:23:36Z
-channel,青海卫视,http://111.29.9.33:6610/000000001000/1000000002000013359/index.m3u8?channel-id=bestzb&Contentid=1000000002000013359&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:13Z
-channel,魅力足球,http://111.29.9.33:6610/000000001000/5000000011000031207/index.m3u8?channel-id=bestzb&Contentid=5000000011000031207&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:42Z
-channel,黑莓动画,http://111.29.9.33:6610/000000001000/1000000004000021734/index.m3u8?channel-id=bestzb&Contentid=1000000004000021734&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:29:12Z
-channel,黑莓电影,http://111.29.9.33:6610/000000001000/1000000004000019624/index.m3u8?channel-id=bestzb&Contentid=1000000004000019624&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:28:43Z
-channel,黑龙江卫视,http://111.29.9.33:6610/000000001000/1000000001000001925/index.m3u8?channel-id=bestzb&Contentid=1000000001000001925&livemode=1&stbId=3,http_error,,<urlopen error timed out>,2026-10-21T18:27:40Z
-live,👖裤佬TikTok直播,https://tiktok.445569.xyz/live.m3u,probe_failed,200,播放列表可下载，但首条媒体流探测失败：ffprobe 超时,2026-10-21T18:22:59Z
+channel,BRTV体育休闲,http://k.061899.xyz/k.php?id=bjty,http_error,567,HTTP 567,2026-10-22T03:23:13Z
+channel,BRTV影视,http://k.061899.xyz/k.php?id=bjys,http_error,567,HTTP 567,2026-10-22T03:23:13Z
+channel,BRTV文艺,http://k.061899.xyz/k.php?id=bjwy,http_error,567,HTTP 567,2026-10-22T03:23:13Z
+channel,BRTV新闻,http://k.061899.xyz/k.php?id=bjxw,http_error,567,HTTP 567,2026-10-22T03:23:13Z
+channel,BRTV生活,http://k.061899.xyz/k.php?id=bjsh,http_error,567,HTTP 567,2026-10-22T03:23:13Z
+channel,BRTV纪实科教,http://k.061899.xyz/k.php?id=bjjs,http_error,567,HTTP 567,2026-10-22T03:23:13Z
+channel,BRTV财经,http://k.061899.xyz/k.php?id=bjcj,http_error,567,HTTP 567,2026-10-22T03:23:13Z
+channel,CCTV-10科教,http://k.061899.xyz/k.php?id=cctv10,http_error,567,HTTP 567,2026-10-22T03:23:11Z
+channel,CCTV-11戏曲,http://k.061899.xyz/k.php?id=cctv11,http_error,567,HTTP 567,2026-10-22T03:23:11Z
+channel,CCTV-12社会与法,http://k.061899.xyz/k.php?id=cctv12,http_error,567,HTTP 567,2026-10-22T03:23:11Z
+channel,CCTV-13新闻,http://k.061899.xyz/k.php?id=cctv13,http_error,567,HTTP 567,2026-10-22T03:23:11Z
+channel,CCTV-14少儿,http://k.061899.xyz/k.php?id=cctv14,http_error,567,HTTP 567,2026-10-22T03:23:11Z
+channel,CCTV-15音乐,http://k.061899.xyz/k.php?id=cctv15,http_error,567,HTTP 567,2026-10-22T03:23:11Z
+channel,CCTV-16奥运,http://k.061899.xyz/k.php?id=cctv16,http_error,567,HTTP 567,2026-10-22T03:23:11Z
+channel,CCTV-17农业农村,http://k.061899.xyz/k.php?id=cctv17,http_error,567,HTTP 567,2026-10-22T03:23:11Z
+channel,CCTV-1综合,http://k.061899.xyz/k.php?id=cctv1,http_error,,Remote end closed connection without response,2026-10-22T03:23:06Z
+channel,CCTV-2财经,http://k.061899.xyz/k.php?id=cctv2,http_error,,Remote end closed connection without response,2026-10-22T03:23:07Z
+channel,CCTV-3综艺,http://k.061899.xyz/k.php?id=cctv3,http_error,,Remote end closed connection without response,2026-10-22T03:23:07Z
+channel,CCTV-4中文国际,http://k.061899.xyz/k.php?id=cctv4,http_error,567,HTTP 567,2026-10-22T03:23:09Z
+channel,CCTV-4欧洲,http://k.061899.xyz/k.php?id=cctv4o,http_error,567,HTTP 567,2026-10-22T03:23:09Z
+channel,CCTV-4美洲,http://k.061899.xyz/k.php?id=cctv4m,http_error,567,HTTP 567,2026-10-22T03:23:09Z
+channel,CCTV-5+体育赛事,http://k.061899.xyz/k.php?id=cctv5p,http_error,567,HTTP 567,2026-10-22T03:23:10Z
+channel,CCTV-5体育,http://k.061899.xyz/k.php?id=cctv5,http_error,567,HTTP 567,2026-10-22T03:23:10Z
+channel,CCTV-6电影,http://k.061899.xyz/k.php?id=cctv6,http_error,567,HTTP 567,2026-10-22T03:23:10Z
+channel,CCTV-7国防军事,http://k.061899.xyz/k.php?id=cctv7,http_error,567,HTTP 567,2026-10-22T03:23:10Z
+channel,CCTV-8电视剧,http://k.061899.xyz/k.php?id=cctv8,http_error,567,HTTP 567,2026-10-22T03:23:10Z
+channel,CCTV-9纪录,http://k.061899.xyz/k.php?id=cctv9,http_error,567,HTTP 567,2026-10-22T03:23:10Z
+channel,CCTV1,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226737/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:19:01Z
+channel,CCTV10,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226708/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:19:21Z
+channel,CCTV11,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226714/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:19:24Z
+channel,CCTV12,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226723/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:19:25Z
+channel,CCTV12,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226748/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:19:24Z
+channel,CCTV13,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226717/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:19:26Z
+channel,CCTV14,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226645/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:19:32Z
+channel,CCTV14,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226663/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:19:33Z
+channel,CCTV15,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226648/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:19:33Z
+channel,CCTV16,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226825/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:19:36Z
+channel,CCTV17,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226660/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:19:36Z
+channel,CCTV17,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226727/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:19:46Z
+channel,CCTV2,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226739/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:19:02Z
+channel,CCTV3,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226720/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:19:03Z
+channel,CCTV4,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226725/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:19:05Z
+channel,CCTV5,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226731/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:19:06Z
+channel,CCTV5+,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226711/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:19:16Z
+channel,CCTV6,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226699/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:19:16Z
+channel,CCTV7,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226721/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:19:16Z
+channel,CCTV8,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226715/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:19:17Z
+channel,CCTV9,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226651/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:19:21Z
+channel,CCTV9,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226657/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:19:18Z
+channel,CCTV中学生,http://k.061899.xyz/k.php?id=zxs,http_error,567,HTTP 567,2026-10-22T03:23:11Z
+channel,CCTV俄语,http://k.061899.xyz/k.php?id=cgtnr,http_error,567,HTTP 567,2026-10-22T03:23:11Z
+channel,CCTV发现之旅,http://k.061899.xyz/k.php?id=fxzl,http_error,567,HTTP 567,2026-10-22T03:23:11Z
+channel,CCTV法语,http://k.061899.xyz/k.php?id=cgtnf,http_error,567,HTTP 567,2026-10-22T03:23:11Z
+channel,CCTV老故事,http://k.061899.xyz/k.php?id=lgs,http_error,567,HTTP 567,2026-10-22T03:23:11Z
+channel,CCTV西班牙语,http://k.061899.xyz/k.php?id=cgtne,http_error,567,HTTP 567,2026-10-22T03:23:11Z
+channel,CCTV阿拉伯语,http://k.061899.xyz/k.php?id=cgtna,http_error,567,HTTP 567,2026-10-22T03:23:11Z
+channel,CETV 1 中国教育,http://k.061899.xyz/k.php?id=cetv1,http_error,567,HTTP 567,2026-10-22T03:23:11Z
+channel,CETV 2 中国教育,http://k.061899.xyz/k.php?id=cetv2,http_error,567,HTTP 567,2026-10-22T03:23:11Z
+channel,CETV 4 中国教育,http://k.061899.xyz/k.php?id=cetv4,http_error,567,HTTP 567,2026-10-22T03:23:11Z
+channel,CETV1,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226673/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:19:47Z
+channel,CETV1,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226712/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:19:47Z
+channel,CETV2,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226718/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:19:48Z
+channel,CETV3,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226722/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:19:51Z
+channel,CETV4,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226724/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:19:51Z
+channel,CGTN,http://k.061899.xyz/k.php?id=cgtn,http_error,567,HTTP 567,2026-10-22T03:23:11Z
+channel,CGTN,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226666/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:19:46Z
+channel,CGTN纪录,http://k.061899.xyz/k.php?id=cgtnjl,http_error,567,HTTP 567,2026-10-22T03:23:11Z
+channel,CHC动作电影,http://k.061899.xyz/k.php?id=dzdy,http_error,567,HTTP 567,2026-10-22T03:23:11Z
+channel,CHC家庭影院,http://k.061899.xyz/k.php?id=jtyy,http_error,567,HTTP 567,2026-10-22T03:23:11Z
+channel,CHC影迷电影,http://k.061899.xyz/k.php?id=ymdy,http_error,567,HTTP 567,2026-10-22T03:23:11Z
+channel,IPTV3+,"http://120.87.19.109:80/PLTV/88888973/224/3221226111/10000100000000060000000000916593_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:18:15Z
+channel,IPTV5+,"http://120.87.19.109:80/PLTV/88888973/224/3221225704/10000100000000060000000000334519_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:18:16Z
+channel,IPTV5+,"http://120.87.19.109:80/PLTV/88888973/224/3221226112/10000100000000060000000000916596_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:18:16Z
+channel,IPTV6+,"http://120.87.19.109:80/PLTV/88888973/224/3221226107/10000100000000060000000000916409_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:18:20Z
+channel,IPTV8+,"http://120.87.19.109:80/PLTV/88888973/224/3221226109/10000100000000060000000000916552_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:18:20Z
+channel,IPTV少儿动画,"http://120.87.19.109:80/PLTV/88888973/224/3221226113/10000100000000060000000000916600_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:18:32Z
+channel,IPTV影视推荐,"http://120.87.19.109:80/PLTV/88888973/224/3221225700/10000100000000060000000000334090_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:18:45Z
+channel,IPTV影视推荐,"http://120.87.19.109:80/PLTV/88888973/224/3221226642/10000100000000060000000001651528_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:18:45Z
+channel,IPTV收视指南,"http://120.87.19.109:80/PLTV/88888973/224/3221226115/10000100000000060000000000916605_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:18:35Z
+channel,IPTV法治,"http://120.87.19.109:80/PLTV/88888973/224/3221226106/10000100000000060000000000916322_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:18:24Z
+channel,IPTV热播剧场,"http://120.87.19.109:80/PLTV/88888973/224/3221226110/10000100000000060000000000916570_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:18:31Z
+channel,IPTV相声小品,"http://120.87.19.109:80/PLTV/88888973/224/3221226117/10000100000000060000000000923560_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:18:35Z
+channel,IPTV经典电影,"http://120.87.19.109:80/PLTV/88888973/224/3221226108/10000100000000060000000000916419_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:18:25Z
+channel,IPTV谍战剧场,"http://120.87.19.109:80/PLTV/88888973/224/3221226103/10000100000000060000000000915850_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:18:23Z
+channel,IPTV野外,"http://120.87.19.109:80/PLTV/88888973/224/3221226105/10000100000000060000000000916304_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:18:23Z
+channel,IPTV魅力时尚,"http://120.87.19.109:80/PLTV/88888973/224/3221226114/10000100000000060000000000916601_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:18:32Z
+channel,NBA 经典,http://k.061899.xyz/k.php?id=nba,http_error,567,HTTP 567,2026-10-22T03:23:12Z
+channel,三沙卫视,"http://120.87.19.109:80/PLTV/88888973/224/3221226649/10000100000000060000000002048494_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:14:46Z
+channel,三沙卫视高清,"http://120.87.19.109:80/PLTV/88888973/224/3221226641/10000100000000060000000002048493_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:15:44Z
+channel,上海东方影视,http://k.061899.xyz/k.php?id=shys,http_error,567,HTTP 567,2026-10-22T03:23:12Z
+channel,上海新闻综合,http://k.061899.xyz/k.php?id=shxw,http_error,567,HTTP 567,2026-10-22T03:23:12Z
+channel,上海第一财经,http://k.061899.xyz/k.php?id=dycj,http_error,567,HTTP 567,2026-10-22T03:23:12Z
+channel,世界地理,"http://120.87.19.109:80/PLTV/88888973/224/3221226617/10000100000000060000000001611742_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:17:24Z
+channel,世界地理,"http://120.87.4.9:80/PLTV/88888973/224/3221226617/10000100000000060000000001611742_0.smil/01.m3u8?fmt=ts2hls,123,01.m3u8,0,8593,0,0&accountinfo=<redacted>&GuardEncType=2&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:17:23Z
+channel,东南卫视,"http://120.87.19.109:80/PLTV/88888973/224/3221225673/10000100000000060000000000332976_0.smil/01.m3u8?fmt=ts2hls,744,01.m3u8&accountinfo=<redacted>&GuardEncType=8601",http_error,,<urlopen error timed out>,2026-10-22T03:14:30Z
+channel,东南卫视,http://k.061899.xyz/k.php?id=dnws,http_error,567,HTTP 567,2026-10-22T03:23:12Z
+channel,东南卫视,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226670/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:20:17Z
+channel,东南卫视,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226675/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:20:17Z
+channel,东南卫视高清,"http://120.87.19.109:80/PLTV/88888973/224/3221226636/10000100000000060000000001621393_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:15:42Z
+channel,东方卫视,http://k.061899.xyz/k.php?id=dfws,http_error,567,HTTP 567,2026-10-22T03:23:11Z
+channel,东方卫视,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226734/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:20:03Z
+channel,东方卫视4k,"http://120.87.19.109:80/PLTV/88888973/224/3221226691/371266902.smil/01.m3u8?fmt=ts2hls,1,01.m3u8&rrsip=120.87.4.103:80&zoneoffset=0&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=<redacted>&GuardEncType=2",http_error,,<urlopen error timed out>,2026-10-22T03:18:50Z
+channel,东方卫视高清,"http://120.87.19.109:80/PLTV/88888973/224/3221225707/10000100000000060000000000334659_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:14:59Z
+channel,中国教育1,"http://120.87.19.109:80/PLTV/88888973/224/3221225701/10000100000000060000000000334092_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:17:49Z
+channel,中国教育1,"http://120.87.19.109:80/PLTV/88888973/224/3221226633/10000100000000060000000001621392_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:17:49Z
+channel,中国教育1,"http://120.87.19.109:80/PLTV/88888973/224/3221226675/10000100000000060000000002070301_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:17:54Z
+channel,中国教育2,"http://120.87.19.109:80/PLTV/88888973/224/3221226588/10000100000000060000000001558064_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:17:52Z
+channel,中国教育4,"http://120.87.19.109:80/PLTV/88888973/224/3221226583/10000100000000060000000001558067_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:17:53Z
+channel,中国教育4,"http://120.87.19.109:80/PLTV/88888973/224/3221226638/10000100000000060000000001977379_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:17:55Z
+channel,中国足球风云,http://k.061899.xyz/k.php?id=zqfy,http_error,567,HTTP 567,2026-10-22T03:23:12Z
+channel,中央新影中学生,"http://120.87.19.109:80/PLTV/88888973/224/3221226156/10000100000000060000000001091890_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:17:45Z
+channel,中央新影老故事,"http://120.87.19.109:80/PLTV/88888973/224/3221226159/10000100000000060000000001091893_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:17:46Z
+channel,中山综合,"http://120.87.19.109:80/PLTV/88888973/224/3221226358/10000100000000060000000001483642_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:16:51Z
+channel,乡村振兴,http://k.061899.xyz/k.php?id=xczx,http_error,567,HTTP 567,2026-10-22T03:23:13Z
+channel,云南卫视,"http://120.87.19.109:80/PLTV/88888973/224/3221225670/10000100000000060000000000331495_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:14:27Z
+channel,云南卫视,http://k.061899.xyz/k.php?id=ynws,http_error,567,HTTP 567,2026-10-22T03:23:12Z
+channel,云南卫视,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226709/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:20:34Z
+channel,云南卫视高清,"http://120.87.19.109:80/PLTV/88888973/224/3221226650/10000100000000060000000002070296_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:15:32Z
+channel,五大联赛经典,http://k.061899.xyz/k.php?id=lsjd,http_error,567,HTTP 567,2026-10-22T03:23:12Z
+channel,体坛名栏汇,http://k.061899.xyz/k.php?id=ttmlh,http_error,567,HTTP 567,2026-10-22T03:23:13Z
+channel,佛山城市生活,"http://120.87.19.109:80/PLTV/88888973/224/3221226674/10000100000000060000000002162257_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:16:44Z
+channel,佛山综合,"http://120.87.19.109:80/PLTV/88888973/224/3221226668/10000100000000060000000002162264_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:16:44Z
+channel,兵器科技,"http://120.87.19.109:80/PLTV/88888973/224/3221226613/10000100000000060000000001611737_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:17:01Z
+channel,兵器科技,"http://120.87.4.10:80/PLTV/88888973/224/3221226613/10000100000000060000000001611737_0.smil/01.m3u8?fmt=ts2hls,123,01.m3u8,0,8592,0,0&accountinfo=<redacted>&GuardEncType=2&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:17:00Z
+channel,兵团卫视,"http://120.87.19.109:80/PLTV/88888973/224/3221225696/10000100000000060000000000334045_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:14:12Z
+channel,兵团卫视,http://k.061899.xyz/k.php?id=btws,http_error,567,HTTP 567,2026-10-22T03:23:12Z
+channel,兵团卫视,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226661/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:21:18Z
+channel,内蒙古卫视,"http://120.87.19.109:80/PLTV/88888973/224/3221225678/10000100000000060000000000332984_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&GuardEncType=8601",http_error,,<urlopen error timed out>,2026-10-22T03:14:42Z
+channel,内蒙古卫视,http://k.061899.xyz/k.php?id=nmgws,http_error,567,HTTP 567,2026-10-22T03:23:12Z
+channel,内蒙古卫视,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226685/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:20:56Z
+channel,军事迷必看大片,http://k.061899.xyz/k.php?id=jsm,http_error,567,HTTP 567,2026-10-22T03:23:12Z
+channel,凤凰中文,http://k.061899.xyz/k.php?id=fhzw,http_error,567,HTTP 567,2026-10-22T03:23:13Z
+channel,凤凰资讯,http://k.061899.xyz/k.php?id=fhzx,http_error,567,HTTP 567,2026-10-22T03:23:13Z
+channel,凤凰香港,http://k.061899.xyz/k.php?id=fhhk,http_error,567,HTTP 567,2026-10-22T03:23:13Z
+channel,北京卫视,http://k.061899.xyz/k.php?id=bjws,http_error,567,HTTP 567,2026-10-22T03:23:12Z
+channel,北京卫视,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226719/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:20:03Z
+channel,北京卫视4K,"http://120.87.19.109:80/PLTV/88888973/224/3221226685/371059429.smil/01.m3u8?fmt=ts2hls,1,01.m3u8&rrsip=120.87.4.103:80&zoneoffset=0&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=<redacted>&GuardEncType=2",http_error,,<urlopen error timed out>,2026-10-22T03:18:56Z
+channel,北京卫视4K超高清,"http://120.87.19.109:80/PLTV/88888973/224/3221226680/371059534.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:15:47Z
+channel,北京卫视4K超高清,"http://120.87.19.109:80/PLTV/88888973/224/3221226685/371059429.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:15:47Z
+channel,北京卫视高清,"http://120.87.19.109:80/PLTV/88888973/224/3221225706/10000100000000060000000000334665_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:14:57Z
+channel,北京卫视高清,"http://120.87.19.109:80/PLTV/88888973/224/3221226693/10000100000000060000000002365332_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:14:58Z
+channel,北京纪实科教,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226656/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:21:20Z
+channel,北京纪实科教,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226658/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:21:19Z
+channel,北京纪实科教,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226730/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:21:23Z
+channel,南方购物高清,"http://120.87.19.109:80/PLTV/88888973/224/3221225729/10000100000000060000000000334202_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:16:43Z
+channel,南海频道,"http://120.87.19.109:80/PLTV/88888973/224/3221226677/10000100000000060000000002331997_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:16:48Z
+channel,南海频道,"http://120.87.19.109:80/PLTV/88888973/224/3221226687/10000100000000060000000002162261_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:16:48Z
+channel,卡酷动画,"http://120.87.19.109:80/PLTV/88888973/224/3221225698/10000100000000060000000000334056_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:18:15Z
+channel,卡酷少儿,http://k.061899.xyz/k.php?id=bjkk,http_error,567,HTTP 567,2026-10-22T03:23:13Z
+channel,卡酷少儿,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226677/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:21:18Z
+channel,厦门卫视,"http://120.87.19.109:80/PLTV/88888973/224/3221225703/10000100000000060000000000334140_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:14:50Z
+channel,厦门卫视,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226695/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:20:18Z
+channel,吉林卫视,"http://120.87.19.109:80/PLTV/88888973/224/3221225674/10000100000000060000000000332979_0.smil/01.m3u8?fmt=ts2hls,143,01.m3u8&accountinfo=<redacted>&GuardEncType=8601",http_error,,<urlopen error timed out>,2026-10-22T03:14:31Z
+channel,吉林卫视,http://k.061899.xyz/k.php?id=jlws,http_error,567,HTTP 567,2026-10-22T03:23:11Z
+channel,吉林卫视,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226671/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:20:57Z
+channel,吉林卫视高清,"http://120.87.19.109:80/PLTV/88888973/224/3221226623/10000100000000060000000001621397_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:15:13Z
+channel,周杰伦现场,http://k.061899.xyz/k.php?id=zjlxc,http_error,567,HTTP 567,2026-10-22T03:23:13Z
+channel,咪咕24小时体育台,http://k.061899.xyz/k.php?id=mgty,http_error,567,HTTP 567,2026-10-22T03:23:12Z
+channel,咪咕4K-1,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226938/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:19:54Z
+channel,咪咕4K-1,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226989/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:21:35Z
+channel,咪咕4K-2,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226991/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:21:35Z
+channel,咪咕视频1,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226909/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:21:58Z
+channel,咪咕视频10,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226929/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:22:19Z
+channel,咪咕视频11,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226932/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:22:20Z
+channel,咪咕视频12,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226935/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:22:21Z
+channel,咪咕视频13,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226936/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:22:24Z
+channel,咪咕视频14,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226941/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:22:24Z
+channel,咪咕视频15,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226944/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:22:27Z
+channel,咪咕视频16,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226947/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:22:27Z
+channel,咪咕视频17,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226948/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:22:28Z
+channel,咪咕视频18,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226950/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:22:29Z
+channel,咪咕视频19,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226951/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:22:35Z
+channel,咪咕视频2,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226912/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:21:59Z
+channel,咪咕视频20,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226953/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:22:36Z
+channel,咪咕视频21,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226954/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:22:37Z
+channel,咪咕视频22,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226956/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:22:39Z
+channel,咪咕视频23,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226982/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:22:40Z
+channel,咪咕视频24,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226985/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:22:49Z
+channel,咪咕视频25,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226995/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:22:49Z
+channel,咪咕视频26,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226997/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:22:50Z
+channel,咪咕视频27,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221227000/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:22:51Z
+channel,咪咕视频28,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221227003/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:22:51Z
+channel,咪咕视频29,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221227006/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:22:54Z
+channel,咪咕视频3,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226915/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:22:05Z
+channel,咪咕视频30,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221227009/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:22:55Z
+channel,咪咕视频31,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221227012/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:22:58Z
+channel,咪咕视频32,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221227024/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:22:58Z
+channel,咪咕视频33,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221227027/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:22:59Z
+channel,咪咕视频34,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221227030/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:23:00Z
+channel,咪咕视频4,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226918/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:22:05Z
+channel,咪咕视频5,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226921/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:22:06Z
+channel,咪咕视频6,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226923/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:22:08Z
+channel,咪咕视频7,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226924/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:22:09Z
+channel,咪咕视频8,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226926/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:22:19Z
+channel,咪咕视频9,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226927/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:22:19Z
+channel,哈哈炫动,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226703/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:21:26Z
+channel,哒啵电竞,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226891/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:21:27Z
+channel,哒啵赛事,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226905/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:21:28Z
+channel,嘉佳卡通,"http://120.87.19.109:80/PLTV/88888973/224/3221225728/10000100000000060000000000334188_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:16:12Z
+channel,嘉佳卡通,http://k.061899.xyz/k.php?id=jjkt,http_error,567,HTTP 567,2026-10-22T03:23:13Z
+channel,嘉佳卡通高清,"http://120.87.19.109:80/PLTV/88888973/224/3221226663/10000100000000060000000002048489_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:16:33Z
+channel,四川卫视,"http://120.87.19.109:80/PLTV/88888973/224/3221225668/10000100000000060000000000331423_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:14:20Z
+channel,四川卫视,http://k.061899.xyz/k.php?id=scws,http_error,567,HTTP 567,2026-10-22T03:23:12Z
+channel,四川卫视,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226659/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:20:26Z
+channel,四川卫视,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226697/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:20:27Z
+channel,四川卫视4k,"http://120.87.19.109:80/PLTV/88888973/224/3221226689/371266867.smil/01.m3u8?fmt=ts2hls,1,01.m3u8&rrsip=120.87.4.103:80&zoneoffset=0&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=<redacted>&GuardEncType=2",http_error,,<urlopen error timed out>,2026-10-22T03:18:50Z
+channel,四川卫视高清,"http://120.87.19.109:80/PLTV/88888973/224/3221225712/10000100000000060000000000334651_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:15:28Z
+channel,国学频道,"http://120.87.19.109:80/PLTV/88888973/224/3221226152/10000100000000060000000001091886_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:18:00Z
+channel,大湾区卫视,"http://120.87.19.109:80/PLTV/88888973/224/3221225724/10000100000000060000000000334167_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:16:00Z
+channel,大湾区卫视高清,"http://120.87.19.109:80/PLTV/88888973/224/3221226652/10000100000000060000000002048490_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:16:29Z
+channel,天津卫视,http://k.061899.xyz/k.php?id=tjws,http_error,567,HTTP 567,2026-10-22T03:23:12Z
+channel,天津卫视,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226686/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:20:37Z
+channel,天津卫视高清,"http://120.87.19.109:80/PLTV/88888973/224/3221225715/10000100000000060000000000334647_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:15:16Z
+channel,央视台球,"http://120.87.19.109:80/PLTV/88888973/224/3221226611/10000100000000060000000001611741_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:17:31Z
+channel,央视台球,"http://120.87.4.25:80/PLTV/88888973/224/3221226611/10000100000000060000000001611741_0.smil/01.m3u8?fmt=ts2hls,363,01.m3u8,0,8595,0,0&accountinfo=<redacted>&GuardEncType=2&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:17:30Z
+channel,央视文件精品,"http://120.87.4.28:80/PLTV/88888973/224/3221226630/10000100000000060000000001611768_0.smil/01.m3u8?fmt=ts2hls,1666,01.m3u8,0,8595,0,0&accountinfo=<redacted>&GuardEncType=2&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:17:44Z
+channel,央视文化精品,"http://120.87.19.109:80/PLTV/88888973/224/3221226630/10000100000000060000000001611768_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:17:45Z
+channel,女性时尚,"http://120.87.19.109:80/PLTV/88888973/224/3221226621/10000100000000060000000001611740_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:17:44Z
+channel,女性时尚,"http://120.87.4.9:80/PLTV/88888973/224/3221226621/10000100000000060000000001611740_0.smil/01.m3u8?fmt=ts2hls,123,01.m3u8,0,8594,0,0&accountinfo=<redacted>&GuardEncType=2&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:17:34Z
+channel,宁夏卫视,"http://120.87.19.109:80/PLTV/88888973/224/3221225681/10000100000000060000000000332989_0.smil/01.m3u8?fmt=ts2hls,744,01.m3u8&accountinfo=<redacted>&GuardEncType=8601",http_error,,<urlopen error timed out>,2026-10-22T03:14:49Z
+channel,宁夏卫视,http://k.061899.xyz/k.php?id=nxws,http_error,567,HTTP 567,2026-10-22T03:23:12Z
+channel,宁夏卫视,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226691/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:20:52Z
+channel,安多卫视,http://k.061899.xyz/k.php?id=adws,http_error,567,HTTP 567,2026-10-22T03:23:12Z
+channel,安徽卫视,http://k.061899.xyz/k.php?id=ahws,http_error,567,HTTP 567,2026-10-22T03:23:12Z
+channel,安徽卫视,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226655/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:20:25Z
+channel,安徽卫视,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226664/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:20:25Z
+channel,安徽卫视高清,"http://120.87.19.109:80/PLTV/88888973/224/3221225759/10000100000000060000000000335582_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:15:20Z
+channel,山东卫视,http://k.061899.xyz/k.php?id=sdws,http_error,567,HTTP 567,2026-10-22T03:23:12Z
+channel,山东卫视,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226693/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:20:55Z
+channel,山东卫视4k,"http://120.87.19.109:80/PLTV/88888973/224/3221226694/371266914.smil/01.m3u8?fmt=ts2hls,1,01.m3u8&rrsip=120.87.4.103:80&zoneoffset=0&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=<redacted>&GuardEncType=2",http_error,,<urlopen error timed out>,2026-10-22T03:18:53Z
+channel,山东卫视高清,"http://120.87.19.109:80/PLTV/88888973/224/3221225758/10000100000000060000000000334623_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:15:21Z
+channel,山东教育卫视,"http://120.87.19.109:80/PLTV/88888973/224/3221225760/10000100000000060000000000336017_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:14:51Z
+channel,山东教育卫视,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226701/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:21:34Z
+channel,山西卫视,"http://120.87.19.109:80/PLTV/88888973/224/3221225677/10000100000000060000000000332983_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:14:42Z
+channel,山西卫视,http://k.061899.xyz/k.php?id=sxiws,http_error,567,HTTP 567,2026-10-22T03:23:12Z
+channel,山西卫视,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226704/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:21:05Z
+channel,岭南戏曲,"http://120.87.19.109:80/PLTV/88888973/224/3221225731/10000100000000060000000000334250_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:16:12Z
+channel,岭南戏曲高清,"http://120.87.19.109:80/PLTV/88888973/224/3221226678/10000100000000060000000002086628_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:16:43Z
+channel,幸福中国年,http://k.061899.xyz/k.php?id=xfzgn,http_error,567,HTTP 567,2026-10-22T03:23:13Z
+channel,广东4K超高清,"http://120.87.19.109:80/PLTV/88888973/224/3221226174/10000100000000060000000001154677_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:16:53Z
+channel,广东体育,"http://120.87.19.109:80/PLTV/88888973/224/3221225721/10000100000000060000000000334146_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:15:58Z
+channel,广东体育高清,"http://120.87.19.109:80/PLTV/88888973/224/3221225750/10000100000000060000000000334588_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:16:21Z
+channel,广东卫视,"http://120.87.19.109:80/PLTV/88888973/224/3221225766/10000100000000060000000000337111_0.smil/01.m3u8?fmt=ts2hls,504,01.m3u8&accountinfo=<redacted>&GuardEncType=8601",http_error,,<urlopen error timed out>,2026-10-22T03:15:50Z
+channel,广东卫视,http://k.061899.xyz/k.php?id=gdws,http_error,567,HTTP 567,2026-10-22T03:23:11Z
+channel,广东卫视,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221227161/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:19:55Z
+channel,广东卫视4K超高清,"http://120.87.19.109:80/PLTV/88888973/224/3221226699/371163697.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:16:54Z
+channel,广东卫视4k,"http://120.87.19.109:80/PLTV/88888973/224/3221226702/371164168.smil/01.m3u8?fmt=ts2hls,1,01.m3u8&rrsip=120.87.4.103:80&zoneoffset=0&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=<redacted>&GuardEncType=2",http_error,,<urlopen error timed out>,2026-10-22T03:18:54Z
+channel,广东卫视高清,"http://120.87.19.109:80/PLTV/88888973/224/3221225770/10000100000000060000000000337082_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:16:14Z
+channel,广东少儿,"http://120.87.19.109:80/PLTV/88888973/224/3221225727/10000100000000060000000000334183_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:16:03Z
+channel,广东少儿高清,"http://120.87.19.109:80/PLTV/88888973/224/3221226666/10000100000000060000000002048491_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:16:30Z
+channel,广东影视,"http://120.87.19.109:80/PLTV/88888973/224/3221225726/10000100000000060000000000334170_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:16:02Z
+channel,广东影视高清,"http://120.87.19.109:80/PLTV/88888973/224/3221226658/10000100000000060000000002070277_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:16:30Z
+channel,广东新闻,"http://120.87.19.109:80/PLTV/88888973/224/3221225719/10000100000000060000000000334142_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:15:52Z
+channel,广东新闻高清,"http://120.87.19.109:80/PLTV/88888973/224/3221226655/10000100000000060000000002048492_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:16:21Z
+channel,广东民生,"http://120.87.19.109:80/PLTV/88888973/224/3221225720/10000100000000060000000000334144_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:15:53Z
+channel,广东民生高清,"http://120.87.19.109:80/PLTV/88888973/224/3221226660/10000100000000060000000002048488_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:16:22Z
+channel,广东珠江,"http://120.87.19.109:80/PLTV/88888973/224/3221225765/10000100000000060000000000337113_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:15:51Z
+channel,广东珠江高清,"http://120.87.19.109:80/PLTV/88888973/224/3221226219/10000100000000060000000001339127_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:16:17Z
+channel,广东珠江高清,"http://120.87.19.109:80/PLTV/88888973/224/3221226220/10000100000000060000000001339130_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:16:18Z
+channel,广东移动,"http://120.87.19.109:80/PLTV/88888973/224/3221225735/10000100000000060000000000334521_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:16:14Z
+channel,广东经济科教,"http://120.87.19.109:80/PLTV/88888973/224/3221225723/10000100000000060000000000334156_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:15:59Z
+channel,广东经济科教高清,"http://120.87.19.109:80/PLTV/88888973/224/3221225752/10000100000000060000000000334591_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:16:23Z
+channel,广西卫视,"http://120.87.19.109:80/PLTV/88888973/224/3221225675/10000100000000060000000000332978_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:14:41Z
+channel,广西卫视,http://k.061899.xyz/k.php?id=gxws,http_error,567,HTTP 567,2026-10-22T03:23:12Z
+channel,广西卫视,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226681/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:20:19Z
+channel,广西卫视高清,"http://120.87.19.109:80/PLTV/88888973/224/3221226355/10000100000000060000000001481217_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:15:32Z
+channel,怀旧剧场,"http://120.87.19.109:80/PLTV/88888973/224/3221226614/10000100000000060000000001611743_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:17:15Z
+channel,怀旧剧场,"http://120.87.4.10:80/PLTV/88888973/224/3221226614/10000100000000060000000001611743_0.smil/01.m3u8?fmt=ts2hls,123,01.m3u8,0,8594,0,0&accountinfo=<redacted>&GuardEncType=2&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:17:15Z
+channel,掼蛋精英赛,http://k.061899.xyz/k.php?id=dds,http_error,567,HTTP 567,2026-10-22T03:23:12Z
+channel,新片放映厅,http://k.061899.xyz/k.php?id=xpdy,http_error,567,HTTP 567,2026-10-22T03:23:12Z
+channel,新疆卫视,http://k.061899.xyz/k.php?id=xjws,http_error,567,HTTP 567,2026-10-22T03:23:12Z
+channel,新疆卫视,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226700/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:21:08Z
+channel,最强综艺趴,http://k.061899.xyz/k.php?id=zqzyp,http_error,567,HTTP 567,2026-10-22T03:23:13Z
+channel,欢笑剧场,http://k.061899.xyz/k.php?id=hxjc,http_error,567,HTTP 567,2026-10-22T03:23:12Z
+channel,江苏卫视,http://k.061899.xyz/k.php?id=jsws,http_error,567,HTTP 567,2026-10-22T03:23:11Z
+channel,江苏卫视,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226692/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:20:06Z
+channel,江苏卫视4k,"http://120.87.19.109:80/PLTV/88888973/224/3221226714/371266888.smil/01.m3u8?fmt=ts2hls,1,01.m3u8&rrsip=120.87.4.103:80&zoneoffset=0&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=<redacted>&GuardEncType=2",http_error,,<urlopen error timed out>,2026-10-22T03:18:47Z
+channel,江苏卫视高清,"http://120.87.19.109:80/PLTV/88888973/224/3221225710/10000100000000060000000000334652_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:15:02Z
+channel,江西卫视,http://k.061899.xyz/k.php?id=jxws,http_error,567,HTTP 567,2026-10-22T03:23:11Z
+channel,江西卫视,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226682/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:20:17Z
+channel,江西卫视,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226726/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:20:07Z
+channel,江西卫视高清,"http://120.87.19.109:80/PLTV/88888973/224/3221226626/10000100000000060000000001621396_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:15:42Z
+channel,汽摩,"http://120.87.19.109:80/PLTV/88888973/224/3221226163/10000100000000060000000001091897_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:18:01Z
+channel,河北卫视,"http://120.87.19.109:80/PLTV/88888973/224/3221225672/10000100000000060000000000331498_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:14:28Z
+channel,河北卫视,http://k.061899.xyz/k.php?id=hbws,http_error,567,HTTP 567,2026-10-22T03:23:12Z
+channel,河北卫视,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226665/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:21:04Z
+channel,河北卫视,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226684/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:20:47Z
+channel,河北卫视高清,"http://120.87.19.109:80/PLTV/88888973/224/3221226622/10000100000000060000000001621395_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:15:17Z
+channel,河南卫视,"http://120.87.19.109:80/PLTV/88888973/224/3221225669/10000100000000060000000000331451_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:14:21Z
+channel,河南卫视,http://k.061899.xyz/k.php?id=hnws,http_error,567,HTTP 567,2026-10-22T03:23:12Z
+channel,河南卫视,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226668/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:20:48Z
+channel,河南卫视,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226687/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:20:49Z
+channel,河南卫视高清,"http://120.87.19.109:80/PLTV/88888973/224/3221226672/10000100000000060000000002070295_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:15:20Z
+channel,河源生活,"http://120.87.19.109:80/PLTV/88888973/224/3221226605/10000100000000060000000001565708_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:16:52Z
+channel,浙江卫视,http://k.061899.xyz/k.php?id=zjws,http_error,567,HTTP 567,2026-10-22T03:23:11Z
+channel,浙江卫视,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226690/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:20:04Z
+channel,浙江卫视4k,"http://120.87.19.109:80/PLTV/88888973/224/3221226717/371266855.smil/01.m3u8?fmt=ts2hls,1,01.m3u8&rrsip=120.87.4.103:80&zoneoffset=0&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=<redacted>&GuardEncType=2",http_error,,<urlopen error timed out>,2026-10-22T03:18:46Z
+channel,浙江卫视高清,"http://120.87.19.109:80/PLTV/88888973/224/3221225713/10000100000000060000000000334649_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:15:11Z
+channel,海南卫视,"http://120.87.19.109:80/PLTV/88888973/224/3221225680/10000100000000060000000000332987_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&GuardEncType=8601",http_error,,<urlopen error timed out>,2026-10-22T03:14:46Z
+channel,海南卫视,http://k.061899.xyz/k.php?id=hinws,http_error,567,HTTP 567,2026-10-22T03:23:12Z
+channel,海南卫视,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226679/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:20:22Z
+channel,海南卫视,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226683/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:20:22Z
+channel,海南卫视高清,"http://120.87.19.109:80/PLTV/88888973/224/3221226653/10000100000000060000000002070297_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:15:43Z
+channel,深圳卫视,http://k.061899.xyz/k.php?id=szws,http_error,567,HTTP 567,2026-10-22T03:23:12Z
+channel,深圳卫视,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226688/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:19:56Z
+channel,深圳卫视4K超高清,"http://120.87.19.109:80/PLTV/88888973/224/3221226683/371164180.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:16:59Z
+channel,深圳卫视4k,"http://120.87.19.109:80/PLTV/88888973/224/3221226683/371164180.smil/01.m3u8?fmt=ts2hls,1,01.m3u8&rrsip=120.87.4.103:80&zoneoffset=0&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=<redacted>&GuardEncType=2",http_error,,<urlopen error timed out>,2026-10-22T03:18:55Z
+channel,深圳卫视高清,"http://120.87.19.109:80/PLTV/88888973/224/3221225708/10000100000000060000000000334657_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:15:01Z
+channel,湖北卫视,"http://120.87.19.109:80/PLTV/88888973/224/3221225664/10000100000000060000000000331311_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:14:12Z
+channel,湖北卫视,http://k.061899.xyz/k.php?id=hubws,http_error,567,HTTP 567,2026-10-22T03:23:11Z
+channel,湖北卫视,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226713/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:20:47Z
+channel,湖北卫视高清,"http://120.87.19.109:80/PLTV/88888973/224/3221225714/10000100000000060000000000334648_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:15:11Z
+channel,湖南卫视,http://k.061899.xyz/k.php?id=hunws,http_error,567,HTTP 567,2026-10-22T03:23:12Z
+channel,湖南卫视,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226698/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:19:57Z
+channel,湖南卫视4k,"http://120.87.19.109:80/PLTV/88888973/224/3221226686/371266843.smil/01.m3u8?fmt=ts2hls,1,01.m3u8&rrsip=120.87.4.103:80&zoneoffset=0&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=<redacted>&GuardEncType=2",http_error,,<urlopen error timed out>,2026-10-22T03:18:46Z
+channel,湖南卫视高清,"http://120.87.19.109:80/PLTV/88888973/224/3221225716/10000100000000060000000000334645_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:14:52Z
+channel,玫瑰轮播台,http://k.061899.xyz/k.php?id=mglbt,http_error,567,HTTP 567,2026-10-22T03:23:13Z
+channel,现代教育,"http://120.87.19.109:80/PLTV/88888973/224/3221225733/10000100000000060000000000334513_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:16:13Z
+channel,现代教育高清,"http://120.87.19.109:80/PLTV/88888973/224/3221226659/10000100000000060000000002087529_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:16:33Z
+channel,甘肃卫视,"http://120.87.19.109:80/PLTV/88888973/224/3221225695/10000100000000060000000000334037_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:14:11Z
+channel,甘肃卫视,http://k.061899.xyz/k.php?id=gsws,http_error,567,HTTP 567,2026-10-22T03:23:12Z
+channel,甘肃卫视,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226662/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:21:04Z
+channel,甘肃卫视高清,"http://120.87.19.109:80/PLTV/88888973/224/3221226656/10000100000000060000000002070300_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:15:43Z
+channel,电视指南,"http://120.87.19.109:80/PLTV/88888973/224/3221226624/10000100000000060000000001611738_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:17:04Z
+channel,电视指南,"http://120.87.4.9:80/PLTV/88888973/224/3221226624/10000100000000060000000001611738_0.smil/01.m3u8?fmt=ts2hls,123,01.m3u8,0,8594,0,0&accountinfo=<redacted>&GuardEncType=2&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:17:03Z
+channel,睛彩广场舞,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226933/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:21:57Z
+channel,睛彩广场舞,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221227036/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:21:57Z
+channel,睛彩竞技,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226870/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:21:38Z
+channel,睛彩竞技,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226969/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:21:38Z
+channel,睛彩竞技,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226988/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:21:48Z
+channel,睛彩篮球,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226952/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:21:50Z
+channel,睛彩篮球,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226966/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:21:53Z
+channel,睛彩篮球,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226994/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:21:53Z
+channel,睛彩青少,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226930/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:21:49Z
+channel,睛彩青少,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226965/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:21:50Z
+channel,睛彩青少,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226992/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:21:48Z
+channel,第一剧场,"http://120.87.19.109:80/PLTV/88888973/224/3221226619/10000100000000060000000001611770_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:17:22Z
+channel,第一剧场,"http://120.87.4.28:80/PLTV/88888973/224/3221226619/10000100000000060000000001611770_0.smil/01.m3u8?fmt=ts2hls,1666,01.m3u8,0,8594,0,0&accountinfo=<redacted>&GuardEncType=2&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:17:22Z
+channel,红色轮播台,http://k.061899.xyz/k.php?id=hslb,http_error,567,HTTP 567,2026-10-22T03:23:12Z
+channel,经典动画大集合,http://k.061899.xyz/k.php?id=dhdjh,http_error,567,HTTP 567,2026-10-22T03:23:13Z
+channel,经典香港电影,http://k.061899.xyz/k.php?id=xgdy,http_error,567,HTTP 567,2026-10-22T03:23:12Z
+channel,西藏卫视,http://k.061899.xyz/k.php?id=xzws,http_error,567,HTTP 567,2026-10-22T03:23:12Z
+channel,西藏卫视,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226710/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:21:18Z
+channel,财富天下,"http://120.87.19.109:80/PLTV/88888973/224/3221225702/10000100000000060000000000334135_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:18:02Z
+channel,贵州卫视,"http://120.87.19.109:80/PLTV/88888973/224/3221225667/10000100000000060000000000331358_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:14:19Z
+channel,贵州卫视,http://k.061899.xyz/k.php?id=gzws,http_error,567,HTTP 567,2026-10-22T03:23:12Z
+channel,贵州卫视,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226672/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:20:33Z
+channel,贵州卫视,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226676/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:20:34Z
+channel,贵州卫视高清,"http://120.87.19.109:80/PLTV/88888973/224/3221226123/10000100000000060000000001056887_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:15:29Z
+channel,赛事最经典,http://k.061899.xyz/k.php?id=sszjd,http_error,567,HTTP 567,2026-10-22T03:23:13Z
+channel,辽宁卫视,"http://120.87.19.109:80/PLTV/88888973/224/3221225665/10000100000000060000000000331318_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:14:15Z
+channel,辽宁卫视,http://k.061899.xyz/k.php?id=lnws,http_error,567,HTTP 567,2026-10-22T03:23:12Z
+channel,辽宁卫视,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226689/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:20:52Z
+channel,辽宁卫视高清,"http://120.87.19.109:80/PLTV/88888973/224/3221225709/10000100000000060000000000334654_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:15:13Z
+channel,重庆卫视,"http://120.87.19.109:80/PLTV/88888973/224/3221225671/10000100000000060000000000331497_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:14:28Z
+channel,重庆卫视,http://k.061899.xyz/k.php?id=cqws,http_error,567,HTTP 567,2026-10-22T03:23:12Z
+channel,重庆卫视,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226680/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:20:37Z
+channel,重庆卫视高清,"http://120.87.19.109:80/PLTV/88888973/224/3221225757/10000100000000060000000000334621_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:15:29Z
+channel,金色剧场,http://k.061899.xyz/k.php?id=jsjc,http_error,567,HTTP 567,2026-10-22T03:23:12Z
+channel,金鹰卡通,"http://120.87.19.109:80/PLTV/88888973/224/3221225699/10000100000000060000000000334067_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:18:14Z
+channel,金鹰卡通,"http://120.87.19.109:80/PLTV/88888973/224/3221226664/10000100000000060000000002070298_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:18:05Z
+channel,金鹰卡通,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226674/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:21:26Z
+channel,金鹰纪实,"http://120.87.19.109:80/PLTV/88888973/224/3221225755/10000100000000060000000000334608_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:18:04Z
+channel,金鹰纪实,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226667/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:21:23Z
+channel,陕西卫视,"http://120.87.19.109:80/PLTV/88888973/224/3221225676/10000100000000060000000000332980_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:14:41Z
+channel,陕西卫视,http://k.061899.xyz/k.php?id=sxws,http_error,567,HTTP 567,2026-10-22T03:23:11Z
+channel,陕西卫视,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226707/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:21:07Z
+channel,青海卫视,"http://120.87.19.109:80/PLTV/88888973/224/3221225679/10000100000000060000000000332986_0.smil/01.m3u8?fmt=ts2hls,744,01.m3u8&accountinfo=<redacted>&GuardEncType=8601",http_error,,<urlopen error timed out>,2026-10-22T03:14:43Z
+channel,青海卫视,http://k.061899.xyz/k.php?id=qhws,http_error,567,HTTP 567,2026-10-22T03:23:12Z
+channel,青海卫视,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226696/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:20:58Z
+channel,青海卫视高清,"http://120.87.19.109:80/PLTV/88888973/224/3221226646/10000100000000060000000002016680_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:15:22Z
+channel,顺德频道,"http://120.87.19.109:80/PLTV/88888973/224/3221226671/10000100000000060000000002162262_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:16:45Z
+channel,风云剧场,"http://120.87.19.109:80/PLTV/88888973/224/3221226620/10000100000000060000000001611762_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:17:19Z
+channel,风云剧场,"http://120.87.4.26:80/PLTV/88888973/224/3221226620/10000100000000060000000001611762_0.smil/01.m3u8?fmt=ts2hls,383,01.m3u8,0,8597,0,0&accountinfo=<redacted>&GuardEncType=2&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:17:19Z
+channel,风云足球,"http://120.87.19.109:80/PLTV/88888973/224/3221226616/10000100000000060000000001611739_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:17:14Z
+channel,风云音乐,"http://120.87.19.109:80/PLTV/88888973/224/3221226627/10000100000000060000000001611773_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:17:14Z
+channel,风云音乐,"http://120.87.4.25:80/PLTV/88888973/224/3221226627/10000100000000060000000001611773_0.smil/01.m3u8?fmt=ts2hls,363,01.m3u8,0,8592,0,0&accountinfo=<redacted>&GuardEncType=2&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:17:13Z
+channel,高尔夫网球,"http://120.87.19.109:80/PLTV/88888973/224/3221226608/10000100000000060000000001611736_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:17:34Z
+channel,高尔夫网球,"http://120.87.4.9:80/PLTV/88888973/224/3221226608/10000100000000060000000001611736_0.smil/01.m3u8?fmt=ts2hls,123,01.m3u8,0,8592,0,0&accountinfo=<redacted>&GuardEncType=2&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:17:31Z
+channel,高清大片,http://k.061899.xyz/k.php?id=gqdp,http_error,567,HTTP 567,2026-10-22T03:23:13Z
+channel,黑龙江卫视,"http://120.87.19.109:80/PLTV/88888973/224/3221225666/10000100000000060000000000331336_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:14:19Z
+channel,黑龙江卫视,http://k.061899.xyz/k.php?id=hljws,http_error,567,HTTP 567,2026-10-22T03:23:12Z
+channel,黑龙江卫视,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226716/1.m3u8,http_error,,<urlopen error [Errno 101] Network is unreachable>,2026-10-22T03:20:49Z
+channel,黑龙江卫视高清,"http://120.87.19.109:80/PLTV/88888973/224/3221225711/10000100000000060000000000334653_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=<redacted>&tenantId=8601",http_error,,<urlopen error timed out>,2026-10-22T03:15:12Z
+live,👖裤佬TikTok直播,https://tiktok.445569.xyz/live.m3u,probe_failed,200,播放列表可下载，但首条媒体流探测失败：ffprobe 超时,2026-10-22T03:14:10Z
+live,👖裤佬来疯直播,https://laifeng.445569.xyz/live.m3u,probe_failed,200,播放列表可下载，但首条媒体流探测失败：https://laifeng.445569.xyz/live/9418829: Server returned 5XX Server Error reply,2026-10-22T03:14:10Z
+live,👖裤佬百战直播,https://baizhan.445569.xyz/live.m3u,http_error,,The read operation timed out,2026-10-22T03:14:10Z
+live,👖裤佬虎牙直播,https://huya.445569.xyz/live.m3u,http_error,,The read operation timed out,2026-10-22T03:14:10Z

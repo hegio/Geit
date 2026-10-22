@@ -1,0 +1,184 @@
+{
+  "updated": "2026-10-22T03:23:31Z",
+  "policy": {
+    "fail_streak_limit": 5,
+    "scope": "仅统计 geit.json 中的 live 直播源；频道抽样轮转，不参与计数",
+    "counted_failures": "连接被拒、DNS 失败、HTTP 4xx/5xx、无效流数据",
+    "ignored_failures": "超时（境外探测对国内源误判率高）",
+    "action": "达到上限的源会在下一次聚合时自动从 geit.json 移除，其下频道同步从 merged.m3u 剔除"
+  },
+  "summary": {
+    "flagged": 0,
+    "pending": 1,
+    "clean": 17
+  },
+  "removable": [],
+  "pending": [
+    {
+      "url": "https://laifeng.445569.xyz/live.m3u",
+      "name": "👖裤佬来疯直播",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "count": 1,
+      "history": [
+        {
+          "checked_at": "2026-10-22T03:14:10Z",
+          "status": "probe_failed",
+          "detail": "播放列表可下载，但首条媒体流探测失败：https://laifeng.445569.xyz/live/9418829: Server returned 5XX Server Error reply"
+        }
+      ],
+      "removable": false
+    }
+  ],
+  "streaks": [
+    {
+      "url": "https://laifeng.445569.xyz/live.m3u",
+      "name": "👖裤佬来疯直播",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "count": 1,
+      "history": [
+        {
+          "checked_at": "2026-10-22T03:14:10Z",
+          "status": "probe_failed",
+          "detail": "播放列表可下载，但首条媒体流探测失败：https://laifeng.445569.xyz/live/9418829: Server returned 5XX Server Error reply"
+        }
+      ],
+      "removable": false
+    },
+    {
+      "url": "https://ilook.epg.one/5CM5SY98BF24PL/2",
+      "name": "🍿乌拉TV直播",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "count": 0,
+      "history": [],
+      "removable": false
+    },
+    {
+      "url": "https://seep.eu.org/iptv-org.github.io/iptv/index.m3u",
+      "name": "🍿全球TV直播",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "count": 0,
+      "history": [],
+      "removable": false
+    },
+    {
+      "url": "https://445569.pages.dev/https://raw.githubusercontent.com/swhtv/111/refs/heads/main/%E5%8D%8E%E8%A7%86box%E5%8D%8E%E8%A7%86%E5%A4%A7%E5%85%A8swtv",
+      "name": "🍿华视TV直播",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "count": 0,
+      "history": [],
+      "removable": false
+    },
+    {
+      "url": "https://445569.pages.dev/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+      "name": "🍿易发TV直播",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "count": 0,
+      "history": [],
+      "removable": false
+    },
+    {
+      "url": "https://www.korice.eu.org/ppv_m3u.php",
+      "name": "🏆PPV体育赛事直播",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "count": 0,
+      "history": [],
+      "removable": false
+    },
+    {
+      "url": "https://iptv.445569.xyz/live.m3u",
+      "name": "👖裤佬IPTV直播",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "count": 0,
+      "history": [],
+      "removable": false
+    },
+    {
+      "url": "https://tiktok.445569.xyz/live.m3u",
+      "name": "👖裤佬TikTok直播",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "count": 0,
+      "history": [],
+      "removable": false
+    },
+    {
+      "url": "https://twitch.445569.xyz/live.m3u",
+      "name": "👖裤佬Twitch直播",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "count": 0,
+      "history": [],
+      "removable": false
+    },
+    {
+      "url": "https://yy.445569.xyz/live.m3u",
+      "name": "👖裤佬YY直播",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "count": 0,
+      "history": [],
+      "removable": false
+    },
+    {
+      "url": "https://jsnzkpg.de5.net/all.m3u",
+      "name": "👖裤佬体育直播[主]",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "count": 0,
+      "history": [],
+      "removable": false
+    },
+    {
+      "url": "https://stymei.pages.dev/live.m3u",
+      "name": "👖裤佬体育直播[备]",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "count": 0,
+      "history": [],
+      "removable": false
+    },
+    {
+      "url": "https://kuaishou.445569.xyz/list.m3u",
+      "name": "👖裤佬快手直播",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "count": 0,
+      "history": [],
+      "removable": false
+    },
+    {
+      "url": "https://douyin.445569.xyz/live.m3u",
+      "name": "👖裤佬抖音直播",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "count": 0,
+      "history": [],
+      "removable": false
+    },
+    {
+      "url": "https://douyu.445569.xyz/live.m3u",
+      "name": "👖裤佬斗鱼直播",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "count": 0,
+      "history": [],
+      "removable": false
+    },
+    {
+      "url": "https://baizhan.445569.xyz/live.m3u",
+      "name": "👖裤佬百战直播",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "count": 0,
+      "history": [],
+      "removable": false
+    },
+    {
+      "url": "https://huya.445569.xyz/live.m3u",
+      "name": "👖裤佬虎牙直播",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "count": 0,
+      "history": [],
+      "removable": false
+    },
+    {
+      "url": "https://kugou.445569.xyz/live.m3u",
+      "name": "👖裤佬酷狗直播",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "count": 0,
+      "history": [],
+      "removable": false
+    }
+  ]
+}
