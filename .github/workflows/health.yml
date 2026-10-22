@@ -101,6 +101,16 @@ jobs:
             none|local|cloud|auto) ;;
             *) mode=none ;;
           esac
+          # The usual order is cloud first (a hosted endpoint is always up),
+          # then the local model, then skip the AI step entirely. "local" keeps
+          # its explicit meaning, so auto is what falls through in order.
+          if [ "$mode" = "auto" ] && [ -n "${{ vars.GEIT_AI_MODE }}" ]; then
+            mode="${{ vars.GEIT_AI_MODE }}"
+            case "$mode" in
+              none|local|cloud|auto) ;;
+              *) mode=none ;;
+            esac
+          fi
           echo "ai_mode=$mode" >> "$GITHUB_OUTPUT"
           echo "本次 AI 模式: $mode"
 
@@ -120,8 +130,20 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: 安装 ffprobe
-        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+      - name: 准备 ffprobe
+        # ubuntu-latest ships ffmpeg already. A plain apt-get install here hung
+        # for 40+ minutes on a previous run and killed the whole check, so only
+        # fall back to apt when the preinstalled binary is missing, and keep the
+        # install itself short-circuited with a timeout.
+        run: |
+          if command -v ffprobe >/dev/null 2>&1; then
+            echo "使用预装 ffprobe: $(ffprobe -version | head -n1)"
+            exit 0
+          fi
+          echo "未找到 ffprobe，尝试安装"
+          sudo timeout 300 apt-get update -qq || echo "apt-get update 超时/失败"
+          sudo timeout 300 apt-get install -y -qq ffmpeg || echo "ffmpeg 安装失败，将退化为仅 HTTP 探测"
+          command -v ffprobe >/dev/null 2>&1 && ffprobe -version | head -n1
 
       - name: 检查链接健康状态
         env:

@@ -93,11 +93,14 @@ def _provider_configs(mode: str) -> list[dict[str, str]]:
     if mode == "cloud":
         return [cloud] if cloud["base_url"] and cloud["api_key"] and cloud["model"] else []
     if mode == "auto":
+        # Cloud first: a hosted endpoint is always reachable, while the local
+        # model needs the home PC online. Fall back to local only when cloud is
+        # not configured, and skip the AI step when neither is usable.
         result = []
-        if local["base_url"]:
-            result.append(local)
         if cloud["base_url"] and cloud["api_key"] and cloud["model"]:
             result.append(cloud)
+        if local["base_url"]:
+            result.append(local)
         return result
     return []
 
