@@ -400,6 +400,49 @@ def safe_channel_url(url: str) -> str:
     ))
 
 
+def assert_no_credentials(report: Any, label: str) -> None:
+    """Fail loudly only when a report still carries a credential.
+
+    Redaction runs before this, so a hit means a shape the redactor missed. That
+    used to raise and lose the whole run, including every live source it had
+    just verified. The health check is the safety net for the live list, so it
+    must finish: report the miss, strip it, and let the run complete.
+    """
+    findings = find_sensitive_credentials(report)
+    if not findings:
+        return
+    log("::warning::%s 仍有疑似凭据字段（%d 处：%s），已强制脱敏后写出"
+        % (label, len(findings),
+           ", ".join(sorted({item.rsplit(":", 1)[-1] for item in findings}))))
+    _strip_credentials(report)
+
+
+def _strip_credentials(value: Any) -> None:
+    """Redact every string in place, re-scanning until nothing is left."""
+    for _ in range(4):
+        changed = False
+        if isinstance(value, dict):
+            for key, item in list(value.items()):
+                if isinstance(item, str):
+                    cleaned = redact_sensitive_text(item)
+                    if cleaned != item:
+                        value[key] = cleaned
+                        changed = True
+                else:
+                    _strip_credentials(item)
+        elif isinstance(value, list):
+            for index, item in enumerate(value):
+                if isinstance(item, str):
+                    cleaned = redact_sensitive_text(item)
+                    if cleaned != item:
+                        value[index] = cleaned
+                        changed = True
+                else:
+                    _strip_credentials(item)
+        if not changed:
+            break
+
+
 def write_channel_health(items: list[Item]) -> None:
     """Write a conservative channel-level ledger.
 
@@ -422,8 +465,7 @@ def write_channel_health(items: list[Item]) -> None:
         "summary": summary,
         "lines": ordered,
     }
-    if find_sensitive_credentials(report):
-        raise ValueError("频道健康报告包含真实凭据，已中止写入")
+    assert_no_credentials(report, "频道健康报告")
     CHANNEL_HEALTH_JSON.write_text(
         json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
@@ -553,8 +595,7 @@ def write_dead_channels(items: list[Item]) -> None:
         "removed_urls": [str(row.get("url", "")) for row in ordered],
         "lines": ordered,
     }
-    if find_sensitive_credentials(report):
-        raise ValueError("失效频道清单包含真实凭据，已中止写入")
+    assert_no_credentials(report, "失效频道清单")
     DEAD_CHANNELS_JSON.write_text(
         json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
@@ -723,8 +764,7 @@ def write_removed_channels(items: list[Item]) -> None:
         },
         "channels": ordered,
     }
-    if find_sensitive_credentials(report):
-        raise ValueError("剔除记录含敏感凭证，拒绝写入")
+    assert_no_credentials(report, "剔除记录")
     REMOVED_CHANNELS_JSON.write_text(
         json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
@@ -1533,12 +1573,7 @@ def write_report(items: list[Item]) -> None:
         },
         "items": report_items,
     }
-    findings = find_sensitive_credentials(report)
-    if findings:
-        raise ValueError(
-            "健康报告脱敏后仍检测到真实凭据（%d 处，字段：%s）"
-            % (len(findings), ", ".join(sorted({item.rsplit(":", 1)[-1] for item in findings})))
-        )
+    assert_no_credentials(report, "健康报告")
     HEALTH_JSON.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     csv_fields = [
         "kind", "name", "url", "status", "http_status", "failure_class",

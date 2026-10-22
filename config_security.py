@@ -57,6 +57,18 @@ HEADER_CREDENTIAL = re.compile(
     r"(?i)\b(?:authorization|cookie|set-cookie|x-api-key|api-key)\b\s*[:=]\s*[^\s,;]+"
 )
 BEARER_CREDENTIAL = re.compile(r"(?i)\b(?:bearer|basic)\s+[A-Za-z0-9._~+/=-]{8,}")
+# A bare "key=value" pair, i.e. one that is not part of a URL query string.
+# ffprobe and urllib exceptions print credentials this way ("token=ab12..."),
+# and REDACTABLE_QUERY never sees them because there is no ? & or ; prefix.
+# Everything up to the value stays as-is so a URL query is still recognisable.
+BARE_KEY_VALUE = re.compile(
+    r"(?i)(?<![\w?&;.])([A-Za-z][A-Za-z0-9_.-]*)\s*=\s*([^\s,;]+)"
+)
+# The same thing after a colon, which is how ffprobe and urllib word their
+# messages ("error: token=..." already covered, "Token: abc" not).
+BARE_KEY_COLON = re.compile(
+    r"(?i)(?<![\w?&;.])([A-Za-z][A-Za-z0-9_.-]*)\s*:\s*([^\s,;]+)"
+)
 REDACTABLE_HEADER = re.compile(
     r"(?i)\b(authorization|cookie|set-cookie|x-api-key|api-key)\b\s*[:=]\s*[^\s,;]+"
 )
@@ -172,4 +184,14 @@ def redact_sensitive_text(value: Any) -> str:
 
     text = REDACTABLE_HEADER.sub(redact_header, text)
     text = BEARER_CREDENTIAL.sub("Bearer <redacted>", text)
+
+    def redact_bare(match: re.Match[str]) -> str:
+        if _normalized_name(match.group(1)) not in SENSITIVE_NAMES:
+            return match.group(0)
+        if not _meaningful_secret(match.group(2)):
+            return match.group(0)
+        return "%s=<redacted>" % match.group(1)
+
+    text = BARE_KEY_VALUE.sub(redact_bare, text)
+    text = BARE_KEY_COLON.sub(redact_bare, text)
     return text

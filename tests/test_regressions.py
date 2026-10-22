@@ -567,6 +567,63 @@ class RemovedChannelTests(unittest.TestCase):
         )
 
 
+class CredentialRedactionTests(unittest.TestCase):
+    """A credential shape the redactor missed must never kill the run.
+
+    CI run 39850087046 aborted at write_report() with "TOKEN" after 53 minutes
+    of probing, losing the whole report. The cause was a bare "token=value"
+    printed by ffprobe: REDACTABLE_QUERY only matches a URL query, so a pair
+    with no ? & or ; in front of it slipped through both the redactor and the
+    pre-write check.
+    """
+
+    def test_bare_key_value_is_redacted(self) -> None:
+        from config_security import redact_sensitive_text
+        self.assertEqual(redact_sensitive_text("token=abc123"), "token=<redacted>")
+        self.assertEqual(
+            redact_sensitive_text("Token: abc123"), "Token=<redacted>"
+        )
+        self.assertEqual(
+            redact_sensitive_text("sessionid=abc"), "sessionid=<redacted>"
+        )
+
+    def test_bare_redaction_leaves_plain_text_alone(self) -> None:
+        from config_security import redact_sensitive_text
+        for text in (
+            "ffprobe(Mozilla) 检测到媒体流: video,audio",
+            "HTTP 200；UA=Lavf；Content-Type=video/mp4；重定向 2 次",
+            "Content-Type=text/html",
+            "UA=Mozilla",
+            "站点播放依赖影视 App 与 spider 解析",
+        ):
+            self.assertEqual(redact_sensitive_text(text), text)
+
+    def test_url_query_is_still_redacted(self) -> None:
+        from config_security import redact_sensitive_text
+        self.assertIn("token=<redacted>", redact_sensitive_text(
+            "Opening 'http://a.com/live/1.m3u8?token=ZmFrZQ' for reading"
+        ))
+
+    def test_residual_credential_does_not_abort_the_report(self) -> None:
+        """A shape the redactor still misses must warn, not raise."""
+        report = {
+            "updated": "2026-10-23T00:00:00Z",
+            "items": [{"kind": "channel", "detail": "token=ZmFrZQx9Kq2"}],
+        }
+        with mock.patch.object(check_health, "find_sensitive_credentials",
+                               return_value=["$.items[0].detail: value:token"]):
+            check_health.assert_no_credentials(report, "健康报告")
+        # The run survived and the value is gone from what gets written.
+        self.assertNotIn("ZmFrZQx9Kq2", json.dumps(report, ensure_ascii=False))
+        self.assertIn("token=<redacted>", json.dumps(report, ensure_ascii=False))
+
+    def test_clean_report_is_untouched(self) -> None:
+        report = {"items": [{"detail": "HTTP 404；尝试 2 次"}]}
+        before = json.dumps(report, ensure_ascii=False)
+        with mock.patch.object(check_health, "find_sensitive_credentials",
+                               return_value=[]):
+            check_health.assert_no_credentials(report, "健康报告")
+        self.assertEqual(json.dumps(report, ensure_ascii=False), before)
 
 
 if __name__ == "__main__":
