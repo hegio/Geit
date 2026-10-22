@@ -60,6 +60,7 @@ PROXY_FALLBACKS = (
     "https://gh-proxy.org/",
     "https://ghfast.top/",
 )
+MERGED_PROXY_PREFIX = "https://gh-proxy.com/"
 
 
 @dataclass
@@ -324,7 +325,9 @@ def default_merged_url() -> str:
             pass
     if not repo or repo == "owner/repo":
         repo = "hegio/Geit"
-    return "https://raw.githubusercontent.com/%s/%s/tvbox/lives/merged.m3u" % (repo, branch)
+    return MERGED_PROXY_PREFIX + (
+        "https://raw.githubusercontent.com/%s/%s/tvbox/lives/merged.m3u" % (repo, branch)
+    )
 
 
 def load_items() -> list[Item]:

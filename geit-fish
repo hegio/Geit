@@ -279,7 +279,7 @@
     {
       "name": "Geit 聚合直播",
       "type": 0,
-      "url": "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/lives/merged.m3u",
+      "url": "https://gh-proxy.com/https://raw.githubusercontent.com/hegio/Geit/main/tvbox/lives/merged.m3u",
       "group": "聚合",
       "source": "本仓库合并 tvbox/lives/merged.m3u"
     }

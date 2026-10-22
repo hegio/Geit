@@ -93,6 +93,9 @@ LEGACY_SPIDER_URL = "https://raw.githubusercontent.com/hegio/Geit/main/spider.ja
 PY_PROXY_PREFIX = "https://ghfast.top/"
 # ghfast.top 只代理 GitHub 主机，其他域名的 py 链接加前缀会得到 403，必须保持原样。
 PROXIED_PY_HOSTS = ("raw.githubusercontent.com",)
+# 影视 App 侧读取本仓库聚合 M3U 时统一走这个镜像；只代理仓库文件引用，
+# 不能给 M3U 内部的直播流地址加前缀，否则播放器会把镜像当成直播域名。
+MERGED_PROXY_PREFIX = "https://gh-proxy.com/"
 
 
 @dataclass
@@ -715,6 +718,10 @@ def channel_identity(name: str) -> str:
 def normalize_group(group: str, name: str = "") -> str:
     """Replace opaque source labels with a small, stable category set."""
     raw = group.strip()
+    # Keep the upstream private-channel bucket exactly as published.  These
+    # entries are intentionally not folded into the public TV categories.
+    if raw.startswith("私密频道"):
+        return raw
     # Source labels such as "咪咕央视2" describe the upstream provider, not
     # the channel itself. Do not let their "央视" substring misclassify a
     # local or documentary channel.
@@ -914,7 +921,7 @@ def drop_dead_lives(lives: list[dict[str, Any]]) -> list[dict[str, Any]]:
 def build_config(stats: BuildStats, repo: str, branch: str) -> dict[str, Any]:
     sites = merge_dicts(stats.sites, ("key", "api"))
     lives = merge_dicts(stats.lives, ("name", "url"))
-    merged_live_url = raw_url(repo, branch, "tvbox/lives/merged.m3u")
+    merged_live_url = MERGED_PROXY_PREFIX + raw_url(repo, branch, "tvbox/lives/merged.m3u")
     lives = [live for live in lives if live.get("url") != merged_live_url]
     lives = drop_dead_lives(lives)
     if stats.channels:
