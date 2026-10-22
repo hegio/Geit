@@ -33,6 +33,9 @@ CHANNEL_HEALTH_JSON = DOCS_DIR / "channel_health.json"
 CLASSIFICATION_REVIEW_JSON = DOCS_DIR / "classification_review.json"
 REMOVABLE_JSON = DOCS_DIR / "removable.json"
 
+MAX_OUTPUT_TOKENS = 6000
+
+
 ALLOWED_CATEGORIES = {
     "央视频道",
     "卫视频道",
@@ -138,8 +141,16 @@ def _call_chat(config: dict[str, str], prompt: str) -> dict[str, Any]:
             {"role": "user", "content": prompt},
         ],
         "temperature": 0.1,
-        "max_tokens": 1800,
+        # The 1800-token budget was not enough once reasoning is billed against
+        # the same allowance: the visible answer got truncated mid-JSON and the
+        # review failed with a parse error. A larger budget plus a disabled
+        # thinking channel keeps the whole answer inside the allowance.
+        "max_tokens": MAX_OUTPUT_TOKENS,
     }
+    if config.get("wire_api") == "chat":
+        # Local Qwen-style servers expose a thinking toggle; disabling it keeps
+        # the budget for the JSON answer instead of an invisible reasoning pass.
+        payload["chat_template_kwargs"] = {"enable_thinking": False}
     headers = {"Content-Type": "application/json", "Accept": "application/json"}
     if config["api_key"]:
         headers["Authorization"] = "Bearer " + config["api_key"]
@@ -166,7 +177,7 @@ def _call_responses(config: dict[str, str], prompt: str) -> dict[str, Any]:
     payload = {
         "model": config["model"],
         "input": prompt,
-        "max_output_tokens": 1800,
+        "max_output_tokens": MAX_OUTPUT_TOKENS,
     }
     headers = {"Content-Type": "application/json", "Accept": "application/json"}
     if config["api_key"]:
