@@ -41,6 +41,9 @@ REMOVABLE_JSON = DOCS_DIR / "removable.json"
 DEAD_CHANNELS_JSON = DOCS_DIR / "dead_channels.json"
 CHANNEL_LEDGER_JSON = DOCS_DIR / "channel_ledger.json"
 CHANNEL_HEALTH_JSON = DOCS_DIR / "channel_health.json"
+# 人可读的剔除记录：每个被剔除的频道名字 + URL + 头负责人可手动恢复的位置。
+REMOVED_CHANNELS_JSON = DOCS_DIR / "removed_channels.json"
+REMOVED_CHANNELS_CSV = DOCS_DIR / "removed_channels.csv"
 HEALTH_STATE_JSON = DOCS_DIR / "health_state.json"
 USER_AGENT = "Mozilla/5.0 (compatible; GeitHealth/3.0)"
 # Many IPTV gateways behave differently for player, ffmpeg, Android and Exo
@@ -56,7 +59,9 @@ TIMEOUT = 15
 MAX_PROBE_BYTES = 2 * 1024 * 1024
 MAX_MANIFEST_BYTES = 512 * 1024
 # 连续失败超过 5 次（即第 6 次）才自动删除对应直播源。
-FAIL_STREAK_LIMIT = 6
+# 失效判定次数：连续 3 次确定性失效即从 merged.m3u 剔除。
+# 超时、403/429/451、临时 5xx、登录/版权闺门、上游故障都不计入。
+FAIL_STREAK_LIMIT = 3
 # 超时不计入删除判定：境外探测对国内源超时很常见，属于误判高发区。
 SOFT_FAILURE_MARKERS = ("timed out", "read operation timed out", "超时")
 SOFT_NETWORK_MARKERS = (
@@ -76,6 +81,21 @@ SOFT_NETWORK_MARKERS = (
 # These status codes often mean region lock, authorization or rate limiting.
 # They are useful diagnostics but must not count toward auto-removal.
 SOFT_HTTP_STATUSES = {401, 403, 407, 408, 425, 429, 451}
+# A 200 whose body is a JSON gate ("由于版权原因，请登录后观看")
+# means the source needs a session, not that it is gone.
+AUTH_GATE_MARKERS = (
+    "请登录",
+    "登录后观看",
+    "版权原因",
+    "需要登录",
+    "未授权",
+    "please login",
+    "please sign in",
+    "sign in to",
+    "log in to",
+    "unauthorized",
+    "authentication required",
+)
 HARD_HTTP_STATUSES = {404, 410}
 PROXY_FALLBACKS = (
     "https://gh-proxy.com/",
@@ -198,6 +218,8 @@ def is_soft_failure(item: "Item") -> bool:
 def _soft_failure_text(detail: str) -> bool:
     """Return True when a probe/error message is environmental, not decisive."""
     text = str(detail or "").lower()
+    if any(marker in text for marker in AUTH_GATE_MARKERS):
+        return True
     if any(marker in text for marker in SOFT_FAILURE_MARKERS + SOFT_NETWORK_MARKERS):
         return True
     return bool(
@@ -541,6 +563,105 @@ def write_dead_channels(items: list[Item]) -> None:
                 row.get("url"),
                 row.get("source") or "未知",
             ))
+
+
+def write_removed_channels(items: list[Item]) -> None:
+    """Record every channel URL dropped from merged.m3u, with its name.
+
+    A human needs three things to act on a removal: which channel it was, the
+    URL to test by hand, and where it came from so the upstream can be fixed.
+    The JSON keeps the full record; the CSV opens directly in a spreadsheet.
+    Entries accumulate across runs and are cleared only when a URL comes back
+    as probe_ok, so the file stays a complete removal history.
+    """
+    doomed = [
+        row for row in _channel_health_rows(items)
+        if row.get("verdict") == "candidate_remove"
+    ]
+    # Preserve history: an entry stays listed until its URL recovers.
+    previous: list[dict[str, Any]] = []
+    if REMOVED_CHANNELS_JSON.is_file():
+        try:
+            data = json.loads(REMOVED_CHANNELS_JSON.read_text(encoding="utf-8"))
+            rows = data.get("channels", []) if isinstance(data, dict) else []
+            previous = [r for r in rows if isinstance(r, dict)]
+        except (OSError, json.JSONDecodeError):
+            previous = []
+    recovered = {
+        str(row.get("url", ""))
+        for row in _channel_health_rows(items)
+        if row.get("verdict") in {"keep", "observe_soft", "observe_upstream", "observe"}
+    }
+    history = {
+        str(row.get("url", "")): row
+        for row in previous
+        if str(row.get("url", "")) not in recovered
+    }
+    for row in doomed:
+        key = str(row.get("url", ""))
+        entry = dict(history.get(key) or {})
+        entry.update({
+            "name": row.get("name", ""),
+            "url": key,
+            "category": row.get("category", ""),
+            "host": row.get("host", ""),
+            "source": row.get("source", ""),
+            "source_line": row.get("source_line", ""),
+            "failure_class": row.get("failure_class", ""),
+            "http_status": row.get("http_status", ""),
+            "evidence": row.get("evidence", ""),
+            "decisive_failures": row.get("decisive_failures", 0),
+            "removed_at": entry.get("removed_at")
+            or time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+            "last_checked": row.get("checked_at", ""),
+        })
+        history[key] = entry
+    ordered = sorted(
+        history.values(),
+        key=lambda r: (str(r.get("removed_at", "")), str(r.get("name", ""))),
+        reverse=True,
+    )
+    report = {
+        "updated": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+        "policy": {
+            "scope": "从 merged.m3u 剔除的单个频道 URL；直播大类从不自动剔除",
+            "remove_limit": FAIL_STREAK_LIMIT,
+            "counted_failures": "仅硬失效：404/410、明确拒绝、分片无法解码",
+            "ignored_failures": "超时、403/429/451、临时 5xx、登录/版权闺门、上游故障不计入",
+            "recovery": "恢复为 probe_ok 后自动从本清单移除并重新录入 merged.m3u",
+        },
+        "summary": {
+            "removed_total": len(ordered),
+            "removed_this_run": len(doomed),
+            "hosts": len({str(r.get("host", "")) for r in ordered if r.get("host")}),
+        },
+        "channels": ordered,
+    }
+    if find_sensitive_credentials(report):
+        raise ValueError("剔除记录含敏感凭证，拒绝写入")
+    REMOVED_CHANNELS_JSON.write_text(
+        json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
+    header = "removed_at,name,category,url,host,source,source_line,http_status,decisive_failures,evidence"
+    lines = [header]
+    for row in ordered:
+        cells = [
+            str(row.get("removed_at", "")),
+            str(row.get("name", "")),
+            str(row.get("category", "")),
+            str(row.get("url", "")),
+            str(row.get("host", "")),
+            str(row.get("source", "")),
+            str(row.get("source_line", "")),
+            str(row.get("http_status", "")),
+            str(row.get("decisive_failures", 0)),
+            str(row.get("evidence", "")).replace("\n", " ")[:200],
+        ]
+        lines.append(",".join('"%s"' % c.replace('"', '""') for c in cells))
+    REMOVED_CHANNELS_CSV.write_text("\n".join(lines) + "\n", encoding="utf-8-sig")
+    if doomed:
+        log("本轮剔除 %d 个失效频道 URL，详情见 %s"
+            % (len(doomed), REMOVED_CHANNELS_JSON.name))
 
 
 def default_merged_url() -> str:
@@ -999,7 +1120,14 @@ def _ffprobe_headers(user_agent: str, referer: str = "") -> list[str]:
     return headers
 
 
-def probe(url: str, ffprobe: str, user_agent: str = "") -> tuple[str, str]:
+def probe(
+    url: str,
+    ffprobe: str,
+    user_agent: str = "",
+    referer: str = "",
+) -> tuple[str, str]:
+    """Probe one media URL. A referer is forwarded because several hosts
+    (the 163189 family) reject requests that arrive without one."""
     if not ffprobe:
         return "playback_unverified", "未找到 ffprobe"
     # A binary that segfaults on the first real stream reports rc=139 for
@@ -1012,7 +1140,7 @@ def probe(url: str, ffprobe: str, user_agent: str = "") -> tuple[str, str]:
         command = [
             ffprobe, "-v", "error", "-rw_timeout", "15000000",
             "-analyzeduration", "5000000", "-probesize", "5000000",
-            *_ffprobe_headers(agent),
+            *_ffprobe_headers(agent, referer),
             "-show_entries", "stream=codec_type", "-of", "csv=p=0", url,
         ]
         try:
@@ -1110,7 +1238,7 @@ def probe_manifest(url: str, ffprobe: str, user_agent: str = "") -> tuple[str, s
                 return "manifest_ok", "文本列表可下载；不是可直接探测的单条 HLS 播放列表"
             errors: list[str] = []
             for candidate in candidates[:5]:
-                status, detail = probe(candidate, ffprobe, agent)
+                status, detail = probe(candidate, ffprobe, agent, final_url)
                 if status == "probe_ok":
                     return "probe_ok", "播放列表媒体分片可解码：" + detail
                 errors.append(detail)
@@ -1171,15 +1299,30 @@ def check(item: Item, ffprobe: str, do_probe: bool) -> Item:
         return item
     if item.kind in {"live", "channel"}:
         body_prefix = http_result.body[:4096].lstrip()
+        body_head = http_result.body[:8192].upper()
         is_playlist = (
-            b"#EXTM3U" in http_result.body[:8192].upper()
+            b"#EXTM3U" in body_head
             or "mpegurl" in http_result.content_type.lower()
+        )
+        # A playlist body proves HLS even when the server says text/plain and
+        # the URL carries no extension. Such links are playable in a real
+        # client; only ffprobe cannot guess the format, so resolve the media
+        # lines and probe a segment instead of declaring the link dead.
+        is_extensionless_hls = (
+            b"#EXTM3U" in body_head
+            and not item.url.lower().split("?", 1)[0].endswith(
+                (".m3u8", ".m3u", ".mpd", ".mp4", ".flv", ".ts", ".txt")
+            )
         )
         is_manifest_list = item.url.lower().split("?", 1)[0].endswith((".m3u", ".txt"))
         media_suffix = item.url.lower().split("?", 1)[0].endswith((".m3u8", ".mpd", ".mp4", ".flv", ".ts"))
         if is_manifest_list and do_probe:
             # A TXT/M3U channel bundle can contain hundreds of channels. Never
             # hand that list to ffprobe as if it were one media stream.
+            item.status, item.detail = probe_manifest(
+                http_result.final_url or item.url, ffprobe, http_result.user_agent
+            )
+        elif is_extensionless_hls and do_probe:
             item.status, item.detail = probe_manifest(
                 http_result.final_url or item.url, ffprobe, http_result.user_agent
             )
@@ -1200,6 +1343,13 @@ def check(item: Item, ffprobe: str, do_probe: bool) -> Item:
         else:
             item.status = "playback_unverified"
             item.detail = "HTTP 可访问，但正文/类型未能确认是媒体或 HLS 播放列表"
+        # A JSON gate body (login/copyright) is an auth requirement, not a
+        # dead link. Append it so the soft-failure gate can see it.
+        gate_text = http_result.body[:2048].decode("utf-8", "replace")
+        if _soft_failure_text(gate_text):
+            item.detail = "%s | 响应体要求登录/授权: %s" % (
+                item.detail, gate_text.strip().replace("\n", " ")[:160]
+            )
         if item.status in {"probe_failed", "manifest_ok"} and _soft_failure_text(item.detail):
             item.failure_class = "soft"
         elif item.status == "probe_failed":
@@ -1444,6 +1594,9 @@ def main() -> int:
     DEAD_CHANNELS_JSON = args.output_dir / "dead_channels.json"
     global CHANNEL_HEALTH_JSON
     CHANNEL_HEALTH_JSON = args.output_dir / "channel_health.json"
+    global REMOVED_CHANNELS_JSON, REMOVED_CHANNELS_CSV
+    REMOVED_CHANNELS_JSON = args.output_dir / "removed_channels.json"
+    REMOVED_CHANNELS_CSV = args.output_dir / "removed_channels.csv"
     apply_host_circuit_breaker(checked)
     write_report(checked)
     write_removable(checked)
@@ -1451,6 +1604,7 @@ def main() -> int:
     # Channel URLs are the unit of removal; the live group that carries them
     # is only reported so a human can decide.
     write_dead_channels(checked)
+    write_removed_channels(checked)
     write_health_state(
         all_items,
         checked,

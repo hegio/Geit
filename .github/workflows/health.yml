@@ -2,7 +2,7 @@ name: Geit 链接健康检查
 
 on:
   schedule:
-    # 每小时唤醒一次，由 gate 按上一次成功运行时间放行，实际间隔 48 小时。
+    # 每小时唤醒一次，由 gate 按上一次成功运行时间放行，实际间隔 24 小时。
     - cron: '0 * * * *'
   workflow_dispatch:
     inputs:
@@ -36,7 +36,7 @@ jobs:
         with:
           fetch-depth: 1
 
-      - name: 判断是否到 48 小时执行窗口
+      - name: 判断是否到 24 小时执行窗口
         id: gate
         shell: bash
         run: |
@@ -50,7 +50,7 @@ jobs:
           import os
           from pathlib import Path
 
-          interval = 48 * 3600
+          interval = 24 * 3600
           now = dt.datetime.now(dt.timezone.utc)
           state = {}
           path = Path("docs/health_state.json")
@@ -118,7 +118,7 @@ jobs:
     needs: schedule-gate
     if: needs.schedule-gate.outputs.should_run == 'true'
     runs-on: ubuntu-latest
-    timeout-minutes: 100
+    timeout-minutes: 130
     steps:
       - name: 检出仓库
         uses: actions/checkout@v4
@@ -206,9 +206,9 @@ jobs:
           AI_API_KEY: ${{ secrets.AI_API_KEY || secrets.MAAS_API_KEY }}
         run: |
           python check_health.py \
-            --workers 24 \
-            --max-channels 2000 \
-            --budget-seconds 4200 \
+            --workers 28 \
+            --max-channels 6500 \
+            --budget-seconds 6600 \
             --probe
 
       - name: 提交健康报告
@@ -224,6 +224,8 @@ jobs:
             docs/removable.json \
             docs/dead_channels.json \
             docs/channel_health.json \
+            docs/removed_channels.json \
+            docs/removed_channels.csv \
             docs/health_state.json \
             docs/ai_review.json
           if git diff --cached --quiet; then
@@ -254,6 +256,8 @@ jobs:
             docs/removable.json
             docs/dead_channels.json
             docs/channel_health.json
+            docs/removed_channels.json
+            docs/removed_channels.csv
             docs/health_state.json
             docs/ai_review.json
           if-no-files-found: warn

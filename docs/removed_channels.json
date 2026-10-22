@@ -1,0 +1,16 @@
+{
+  "updated": "2026-10-22T18:36:49Z",
+  "policy": {
+    "scope": "从 merged.m3u 剔除的单个频道 URL；直播大类从不自动剔除",
+    "remove_limit": 3,
+    "counted_failures": "仅硬失效：404/410、明确拒绝、分片无法解码",
+    "ignored_failures": "超时、403/429/451、临时 5xx、登录/版权闺门、上游故障不计入",
+    "recovery": "恢复为 probe_ok 后自动从本清单移除并重新录入 merged.m3u"
+  },
+  "summary": {
+    "removed_total": 0,
+    "removed_this_run": 0,
+    "hosts": 0
+  },
+  "channels": []
+}

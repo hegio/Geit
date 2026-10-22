@@ -6,6 +6,7 @@ from __future__ import annotations
 
 import json
 import tempfile
+import subprocess
 import unittest
 from pathlib import Path
 from unittest import mock
@@ -84,13 +85,14 @@ class HealthTests(unittest.TestCase):
         finally:
             check_health.load_streaks = original
 
-    def test_fifth_failure_is_report_only_and_sixth_is_removable(self) -> None:
+    def test_third_failure_is_removable(self) -> None:
+        """A channel URL is dropped after 3 decisive failures."""
         original = check_health.load_streaks
         prior = {
             "url": "https://example.com/live.m3u8",
             "name": "测试直播",
             "source": "https://example.com/source",
-            "count": 4,
+            "count": 2,
             "history": [],
             "removable": False,
         }
@@ -98,13 +100,29 @@ class HealthTests(unittest.TestCase):
         try:
             item = self.item("http_error", 404, "HTTP 404")
             item.failure_class = "hard"
-            fifth = check_health.update_streaks([item])["https://example.com/live.m3u8"]
-            self.assertEqual(fifth["count"], 5)
-            self.assertFalse(fifth["removable"])
-            prior["count"] = 5
-            sixth = check_health.update_streaks([item])["https://example.com/live.m3u8"]
-            self.assertEqual(sixth["count"], 6)
-            self.assertTrue(sixth["removable"])
+            third = check_health.update_streaks([item])["https://example.com/live.m3u8"]
+            self.assertEqual(third["count"], 3)
+            self.assertTrue(third["removable"])
+        finally:
+            check_health.load_streaks = original
+
+    def test_second_failure_is_report_only(self) -> None:
+        original = check_health.load_streaks
+        prior = {
+            "url": "https://example.com/live.m3u8",
+            "name": "测试直播",
+            "source": "https://example.com/source",
+            "count": 1,
+            "history": [],
+            "removable": False,
+        }
+        check_health.load_streaks = lambda: {"https://example.com/live.m3u8": dict(prior)}
+        try:
+            item = self.item("http_error", 404, "HTTP 404")
+            item.failure_class = "hard"
+            second = check_health.update_streaks([item])["https://example.com/live.m3u8"]
+            self.assertEqual(second["count"], 2)
+            self.assertFalse(second["removable"])
         finally:
             check_health.load_streaks = original
 
@@ -244,6 +262,202 @@ class HealthTests(unittest.TestCase):
                 self.assertTrue((root / "blocked.csv").is_file())
             finally:
                 check_health.HEALTH_JSON, check_health.HEALTH_CSV = original
+
+
+class FalsePositiveTests(unittest.TestCase):
+    """A playable link must never be labelled dead.
+
+    Each case below was measured against the real host: the link serves a valid
+    stream, yet the previous classifier counted it toward auto-removal.
+    """
+
+    def test_extensionless_hls_is_routed_to_manifest_probe(self) -> None:
+        # fast.hidns.vip serves HLS with Content-Type: text/plain and no
+        # extension. ffprobe refuses it, so it must go through probe_manifest(),
+        # which resolves the media lines and probes a real segment.
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            body = b"#EXTM3U\n#EXT-X-TARGETDURATION:8\n/api/hoy/1\n/api/hoy/2\n"
+            original = (check_health.HEALTH_JSON, check_health.HEALTH_CSV,
+                        check_health.DEAD_CHANNELS_JSON,
+                        check_health.CHANNEL_HEALTH_JSON)
+            check_health.HEALTH_JSON = root / "health.json"
+            check_health.HEALTH_CSV = root / "health.csv"
+            check_health.DEAD_CHANNELS_JSON = root / "dead_channels.json"
+            check_health.CHANNEL_HEALTH_JSON = root / "channel_health.json"
+            try:
+                with mock.patch.object(check_health, "http_check",
+                                       return_value=check_health.HttpResult(
+                                           status=200,
+                                           detail="ok",
+                                           body=body,
+                                           content_type="text/plain",
+                                           user_agent="Mozilla/5.0",
+                                           final_url="https://fast.hidns.vip/163189/hoy")), \
+                     mock.patch.object(check_health, "probe_manifest",
+                                       return_value=("probe_ok", "segment decoded")):
+                    item = check_health.Item(
+                        kind="channel", name="HOY TV",
+                        url="https://fast.hidns.vip/163189/hoy",
+                        status="unverified", source="s",
+                    )
+                    result = check_health.check(item, "ffprobe", True)
+                self.assertEqual(result.status, "probe_ok")
+                self.assertEqual(result.failure_class, "")
+            finally:
+                (check_health.HEALTH_JSON, check_health.HEALTH_CSV,
+                 check_health.DEAD_CHANNELS_JSON,
+                 check_health.CHANNEL_HEALTH_JSON) = original
+
+    def test_auth_gate_body_is_soft(self) -> None:
+        # "644368714 由于版权原因，请登录后观看" arrives with HTTP 200. It is an
+        # auth requirement, not a dead source, so it must not count toward
+        # removal (873 channels depend on this).
+        body = "644368714 由于版权原因，请登录后观看".encode("utf-8")
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            original = (check_health.HEALTH_JSON, check_health.HEALTH_CSV,
+                        check_health.DEAD_CHANNELS_JSON,
+                        check_health.CHANNEL_HEALTH_JSON)
+            check_health.HEALTH_JSON = root / "health.json"
+            check_health.HEALTH_CSV = root / "health.csv"
+            check_health.DEAD_CHANNELS_JSON = root / "dead_channels.json"
+            check_health.CHANNEL_HEALTH_JSON = root / "channel_health.json"
+            try:
+                with mock.patch.object(check_health, "http_check",
+                                       return_value=check_health.HttpResult(
+                                           status=200,
+                                           detail="ok",
+                                           body=body,
+                                           content_type="application/json",
+                                           user_agent="Mozilla/5.0",
+                                           final_url="http://my1nas.dpdns.org:1234/644368714")), \
+                     mock.patch.object(check_health, "probe",
+                                       return_value=("probe_failed",
+                                                     "Invalid data found when processing input")):
+                    item = check_health.Item(
+                        kind="channel", name="CHC动作电影",
+                        url="http://my1nas.dpdns.org:1234/644368714",
+                        status="unverified", source="s",
+                    )
+                    result = check_health.check(item, "ffprobe", True)
+                self.assertEqual(result.failure_class, "soft")
+                self.assertTrue(check_health.is_soft_failure(result))
+                self.assertFalse(check_health.is_decisive_failure(result))
+            finally:
+                (check_health.HEALTH_JSON, check_health.HEALTH_CSV,
+                 check_health.DEAD_CHANNELS_JSON,
+                 check_health.CHANNEL_HEALTH_JSON) = original
+
+    def test_probe_forwards_referer(self) -> None:
+        # The 163189 family only serves segments when a Referer is present.
+        seen = {}
+
+        def fake_run(command, capture_output, timeout):
+            seen["command"] = command
+            return subprocess.CompletedProcess(command, 0, b"video\naudio\n", b"")
+
+        with mock.patch.object(check_health.subprocess, "run", side_effect=fake_run):
+            status, detail = check_health.probe(
+                "https://fast.hidns.vip/api/hoy/1", "ffprobe",
+                "Mozilla/5.0", "https://fast.hidns.vip/163189/hoy")
+        self.assertEqual(status, "probe_ok")
+        joined = " ".join(seen["command"])
+        self.assertIn("Referer: https://fast.hidns.vip/163189/hoy", joined)
+
+    def test_offline_programme_is_still_decisive(self) -> None:
+        # "节目已下线" means the channel really is gone; it must stay decisive.
+        body = "961930269 节目已下线，请尝试其他节目".encode("utf-8")
+        self.assertFalse(check_health._soft_failure_text(body.decode("utf-8")))
+
+
+
+class RemovedChannelTests(unittest.TestCase):
+    """The removal record is the only place a human can see what was dropped."""
+
+    def setUp(self) -> None:
+        self._dir = tempfile.TemporaryDirectory()
+        self.root = Path(self._dir.name)
+        self._json = check_health.REMOVED_CHANNELS_JSON
+        self._csv = check_health.REMOVED_CHANNELS_CSV
+        self._health = check_health.CHANNEL_HEALTH_JSON
+        check_health.REMOVED_CHANNELS_JSON = self.root / "removed_channels.json"
+        check_health.REMOVED_CHANNELS_CSV = self.root / "removed_channels.csv"
+        check_health.CHANNEL_HEALTH_JSON = self.root / "channel_health.json"
+
+    def tearDown(self) -> None:
+        check_health.REMOVED_CHANNELS_JSON = self._json
+        check_health.REMOVED_CHANNELS_CSV = self._csv
+        check_health.CHANNEL_HEALTH_JSON = self._health
+        self._dir.cleanup()
+
+    def _seed(self, entries: list[dict]) -> None:
+        check_health.REMOVED_CHANNELS_JSON.write_text(
+            json.dumps({"updated": "x", "channels": entries}, ensure_ascii=False),
+            encoding="utf-8",
+        )
+
+    def test_removal_record_keeps_channel_name_and_source(self) -> None:
+        self._fail_three_times("http://gone.example/live.m3u8")
+        check_health.write_removed_channels([self._channel("http://gone.example/live.m3u8", "probe_failed", 404)])
+        data = json.loads(check_health.REMOVED_CHANNELS_JSON.read_text(encoding="utf-8"))
+        self.assertEqual(data["summary"]["removed_total"], 1)
+        row = data["channels"][0]
+        self.assertEqual(row["name"], "CCTV-测试")
+        self.assertEqual(row["url"], "http://gone.example/live.m3u8")
+        self.assertEqual(row["source"], "https://example.com/source")
+        self.assertTrue(row["removed_at"])
+
+    def test_unsampled_history_is_retained(self) -> None:
+        self._seed([{
+            "name": "旧记录", "url": "http://old.example/live.m3u8",
+            "removed_at": "2026-10-20T00:00:00Z",
+        }])
+        item = self._channel("http://other.example/live.m3u8", "probe_ok")
+        check_health.write_removed_channels([item])
+        data = json.loads(check_health.REMOVED_CHANNELS_JSON.read_text(encoding="utf-8"))
+        urls = [row["url"] for row in data["channels"]]
+        self.assertIn("http://old.example/live.m3u8", urls)
+
+    def test_recovered_url_leaves_the_record(self) -> None:
+        self._seed([{
+            "name": "恢复频道", "url": "http://back.example/live.m3u8",
+            "removed_at": "2026-10-20T00:00:00Z",
+        }])
+        item = self._channel("http://back.example/live.m3u8", "probe_ok")
+        check_health.write_removed_channels([item])
+        data = json.loads(check_health.REMOVED_CHANNELS_JSON.read_text(encoding="utf-8"))
+        self.assertEqual(data["channels"], [])
+
+    def test_csv_header_names_every_field(self) -> None:
+        self._fail_three_times("http://gone.example/live.m3u8")
+        check_health.write_removed_channels([self._channel("http://gone.example/live.m3u8", "probe_failed", 404)])
+        text = check_health.REMOVED_CHANNELS_CSV.read_text(encoding="utf-8-sig")
+        header = text.splitlines()[0]
+        for field in ("name", "url", "host", "source", "removed_at", "evidence"):
+            self.assertIn(field, header)
+
+    def _fail_three_times(self, url: str) -> None:
+        for _ in range(3):
+            check_health.write_channel_health([self._channel(url, "probe_failed", 404)])
+
+    def _channel(self, url: str, status: str, http_status: int | None = None):
+        return check_health.Item(
+            kind="channel",
+            name="CCTV-测试",
+            url=url,
+            status=status,
+            http_status=http_status,
+            detail="HTTP 404",
+            checked_at="2026-10-23T00:00:00Z",
+            source="https://example.com/source",
+            category="央视频道",
+            evidence="HTTP 404",
+            failure_class="hard",
+            host="gone.example",
+        )
+
+
 
 
 if __name__ == "__main__":
