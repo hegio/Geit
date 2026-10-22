@@ -2,10 +2,10 @@
   "updated": "2026-10-22T03:23:31Z",
   "policy": {
     "fail_streak_limit": 5,
-    "scope": "仅统计 geit.json 中的 live 直播源；频道抽样轮转，不参与计数",
+    "scope": "仅统计 geit-fish 中的 live 直播源；频道抽样轮转，不参与计数",
     "counted_failures": "连接被拒、DNS 失败、HTTP 4xx/5xx、无效流数据",
     "ignored_failures": "超时（境外探测对国内源误判率高）",
-    "action": "达到上限的源会在下一次聚合时自动从 geit.json 移除，其下频道同步从 merged.m3u 剔除"
+    "action": "达到上限的源会在下一次聚合时自动从 geit-fish 移除，其下频道同步从 merged.m3u 剔除"
   },
   "summary": {
     "flagged": 0,

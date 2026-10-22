@@ -1,5 +1,4 @@
 {
-  "name": "Geit",
   "spider": "https://cnb.cool/fish2035/xs/-/git/raw/main/spider.jar",
   "logo": "",
   "wallpaper": "",
@@ -480,6 +479,17 @@
       "name": "VS影院🍀TG @hshsjk9",
       "type": 3,
       "api": "https://ghfast.top/https://raw.githubusercontent.com/hegio/Geit/main/py/VS%E5%BD%B1%E9%99%A2%F0%9F%8D%80TG%20@hshsjk9.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
+      "key": "py-af676592-a31b9e44ca",
+      "name": "af676592-a31b9e44ca",
+      "type": 3,
+      "api": "https://ghfast.top/https://raw.githubusercontent.com/hegio/Geit/main/py/af676592-a31b9e44ca.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,

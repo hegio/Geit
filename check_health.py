@@ -142,6 +142,24 @@ def update_streaks(items: list["Item"]) -> dict[str, dict[str, Any]]:
     return current
 
 
+def default_merged_url() -> str:
+    """Mirror fetch_tvbox.py: repo.txt locally, GITHUB_REPOSITORY in Actions."""
+    repo = os.environ.get("GITHUB_REPOSITORY", "").strip()
+    branch = os.environ.get("GITHUB_REF_NAME", "main").strip() or "main"
+    if not repo:
+        try:
+            for raw in (HERE / "repo.txt").read_text(encoding="utf-8-sig").splitlines():
+                line = raw.strip()
+                if line and not line.startswith("#") and "/" in line and line != "owner/repo":
+                    repo = line
+                    break
+        except OSError:
+            pass
+    if not repo or repo == "owner/repo":
+        repo = "hegio/Geit"
+    return "https://raw.githubusercontent.com/%s/%s/tvbox/lives/merged.m3u" % (repo, branch)
+
+
 def load_items() -> list[Item]:
     items: list[Item] = []
     sources_path = DOCS_DIR / "sources.json"
@@ -156,10 +174,10 @@ def load_items() -> list[Item]:
                 http_status=source.get("http_status"),
                 detail=str(source.get("detail", "")),
             ))
-    geit_path = HERE / "geit.json"
+    geit_path = HERE / "geit-fish"
     if geit_path.is_file():
         config = json.loads(geit_path.read_text(encoding="utf-8"))
-        merged_url = "https://raw.githubusercontent.com/hegio/Geit/main/tvbox/lives/merged.m3u"
+        merged_url = default_merged_url()
         for site in config.get("sites", []):
             if not isinstance(site, dict):
                 continue
@@ -231,7 +249,7 @@ def rotate_channel_sample(items: list[Item], limit: int) -> list[Item]:
 
 def validate_generated_configs() -> None:
     """Validate the generated configurations before writing a health report."""
-    for name in ("geit.json", "geitpy.json"):
+    for name in ("geit-fish", "geitpy-fish"):
         path = HERE / name
         if not path.is_file():
             raise ValueError("缺少 %s" % name)
@@ -247,7 +265,7 @@ def validate_generated_configs() -> None:
         if findings:
             fields = ", ".join(sorted({item.rsplit(":", 1)[-1] for item in findings}))
             raise ValueError("%s 仍包含真实凭据（%d 处，字段：%s）" % (name, len(findings), fields))
-    for name in ("geit-fish.txt", "geitpy-fish.txt"):
+    for name in ("geit-fish", "geitpy-fish"):
         path = HERE / name
         if not path.is_file():
             raise ValueError("缺少 %s" % name)
@@ -452,7 +470,7 @@ def write_report(items: list[Item]) -> None:
 def write_removable(items: list[Item]) -> None:
     """Record decisive live failures and flag sources that hit the streak limit.
 
-    Reaching FAIL_STREAK_LIMIT means the source is auto-removed from geit.json
+    Reaching FAIL_STREAK_LIMIT means the source is auto-removed from geit-fish
     on the next aggregation run; below the limit it is only reported.
     """
     streaks = update_streaks(items)
@@ -463,10 +481,10 @@ def write_removable(items: list[Item]) -> None:
         "updated": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
         "policy": {
             "fail_streak_limit": FAIL_STREAK_LIMIT,
-            "scope": "仅统计 geit.json 中的 live 直播源；频道抽样轮转，不参与计数",
+            "scope": "仅统计 geit-fish 中的 live 直播源；频道抽样轮转，不参与计数",
             "counted_failures": "连接被拒、DNS 失败、HTTP 4xx/5xx、无效流数据",
             "ignored_failures": "超时（境外探测对国内源误判率高）",
-            "action": "达到上限的源会在下一次聚合时自动从 geit.json 移除，其下频道同步从 merged.m3u 剔除",
+            "action": "达到上限的源会在下一次聚合时自动从 geit-fish 移除，其下频道同步从 merged.m3u 剔除",
         },
         "summary": {
             "flagged": len(flagged),
@@ -491,7 +509,7 @@ def main() -> int:
     parser.add_argument("--max-channels", type=int, default=0,
                         help="限制合并 M3U 的抽样频道数；0 表示不抽样")
     parser.add_argument("--items-file", type=Path,
-                        help="只检查 geit.json 中的指定条目，供工作流分批覆盖全部条目")
+                        help="只检查 geit-fish 中的指定条目，供工作流分批覆盖全部条目")
     parser.add_argument("--output-dir", type=Path, default=DOCS_DIR,
                         help="健康报告输出目录")
     args = parser.parse_args()

@@ -2,13 +2,17 @@
 # -*- coding: utf-8 -*-
 """Build TVBox configurations from the sources listed in sources.txt.
 
-The collector deliberately writes derived files only:
+The collector publishes exactly two subscription files, both as plain
+(unencrypted) JSON written to extension-less paths:
 
-* geit.json: playable TVBox configuration with sites and live entries
-* geitpy.json: geit.json plus every valid Python spider in py/
-* geit-fish.txt / geitpy-fish.txt: unencrypted Fish-compatible JSON profiles
+* geit-fish: playable TVBox configuration with sites and live entries
+* geitpy-fish: geit-fish plus every valid Python spider in py/
+
+Supporting derived files:
+
 * tvbox/lives/merged.m3u: de-duplicated live channels from TXT/M3U sources
 * docs/sources.json: a human-readable source inventory
+* docs/tvbox.json: compatibility copy of geit-fish for the legacy endpoint
 * docs/health.json and docs/health.csv: link health report
 
 Third-party source files are not committed verbatim. This avoids leaking
@@ -49,10 +53,9 @@ RECYCLE_DIR = HERE / "回收"
 TVBOX_DIR = HERE / "tvbox"
 LIVE_DIR = TVBOX_DIR / "lives"
 DOCS_DIR = HERE / "docs"
-GEIT_PATH = HERE / "geit.json"
-GEITPY_PATH = HERE / "geitpy.json"
-GEIT_FISH_PATH = HERE / "geit-fish.txt"
-GEITPY_FISH_PATH = HERE / "geitpy-fish.txt"
+# 两个订阅文件都没有后缀，影视 App 会直接按 JSON 解析；带 .txt 后缀的旧名已停用。
+GEIT_PATH = HERE / "geit-fish"
+GEITPY_PATH = HERE / "geitpy-fish"
 MERGED_M3U_PATH = LIVE_DIR / "merged.m3u"
 # 直播源出处：健康报告据此标注每个 live 来自 sources.txt 的哪一行。
 LIVE_SOURCE_KEY = "source"
@@ -717,8 +720,8 @@ def write_json(path: Path, value: Any) -> None:
     path.write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
-def fish_compatible_config(value: dict[str, Any]) -> dict[str, Any]:
-    """Build a plain JSON profile matching common Fish/Dolphin clients."""
+def subscription_config(value: dict[str, Any]) -> dict[str, Any]:
+    """Build the plain JSON payload written to the subscription files."""
     config = json.loads(json.dumps(value, ensure_ascii=False))
     # The working Fish/Dolphin examples do not require this TVBox-only field.
     config.pop("name", None)
@@ -729,8 +732,8 @@ def fish_compatible_config(value: dict[str, Any]) -> dict[str, Any]:
     return config
 
 
-def write_fish_json(path: Path, value: dict[str, Any]) -> None:
-    """Write an unencrypted JSON file for Fish/Dolphin-compatible clients."""
+def write_subscription_json(path: Path, value: dict[str, Any]) -> None:
+    """Write an unencrypted JSON subscription file."""
     existing: dict[str, Any] = {}
     if path.is_file():
         try:
@@ -739,7 +742,7 @@ def write_fish_json(path: Path, value: dict[str, Any]) -> None:
                 existing = previous
         except (OSError, json.JSONDecodeError):
             existing = {}
-    config = fish_compatible_config(value)
+    config = subscription_config(value)
     # Manual edits to these presentation fields must survive the next CI run.
     for key in ("spider", "logo", "wallpaper"):
         current = str(existing.get(key, "") or "").strip()
@@ -791,7 +794,7 @@ def write_docs(stats: BuildStats, repo: str, branch: str) -> None:
     if source_findings:
         raise ValueError("来源清单包含真实凭据，已中止写入")
     write_json(DOCS_DIR / "sources.json", source_manifest)
-    # Keep the legacy TVBox endpoint identical to the root config.
+    # docs/tvbox.json is the legacy endpoint; keep it byte-identical to geit-fish.
     write_json(DOCS_DIR / "tvbox.json", json.loads(GEIT_PATH.read_text(encoding="utf-8")))
 
 
@@ -849,10 +852,8 @@ def write_health_report(stats: BuildStats) -> None:
 
 
 def write_index(stats: BuildStats, repo: str, branch: str) -> None:
-    geit = raw_url(repo, branch, "geit.json")
-    geitpy = raw_url(repo, branch, "geitpy.json")
-    geit_fish = raw_url(repo, branch, "geit-fish.txt")
-    geitpy_fish = raw_url(repo, branch, "geitpy-fish.txt")
+    geit_fish = raw_url(repo, branch, "geit-fish")
+    geitpy_fish = raw_url(repo, branch, "geitpy-fish")
     health = raw_url(repo, branch, "docs/health.csv")
     html = """<!doctype html>
 <html lang="zh-CN"><head><meta charset="utf-8">
@@ -874,18 +875,14 @@ code{display:block;background:#eee8db;border-radius:10px;padding:10px;word-break
 <h1>Geit</h1>
 <p class="lead">由 sources.txt 自动聚合、去重和校验。第三方原始配置不会原样提交，密钥占位符和相对路径会在生成阶段剔除。</p>
 <section class="grid">
-<article class="card"><h2>geit.json</h2><p>聚合站点、直播源和 spider.jar 的完整播放配置。</p><code>__GEIT__</code></article>
-<article class="card"><h2>geitpy.json</h2><p>在 geit.json 基础上追加 py/ 目录中的有效 Python 站点。</p><code>__GEITPY__</code></article>
-<article class="card"><h2>geit-fish.txt</h2><p>明文 JSON，无前缀、Base64 或加密，补齐鱼壳/海豚常用顶层字段。</p><code>__GEIT_FISH__</code></article>
-<article class="card"><h2>geitpy-fish.txt</h2><p>明文 fish JSON，包含 geitpy.json 中的 Python 站点。</p><code>__GEITPY_FISH__</code></article>
+<article class="card"><h2>geit-fish</h2><p>聚合站点、直播源和 spider.jar 的明文 JSON 订阅。</p><code>__GEIT_FISH__</code></article>
+<article class="card"><h2>geitpy-fish</h2><p>在 geit-fish 基础上追加 py/ 目录中的有效 Python 站点。</p><code>__GEITPY_FISH__</code></article>
 <article class="card"><h2>健康报告</h2><p>记录 HTTP 可达性、配置解析状态与播放验证状态。</p><code>__HEALTH__</code></article>
 </section>
 <div class="stats"><span><b>__SITES__</b>站点</span><span><b>__LIVES__</b>直播配置</span><span><b>__CHANNELS__</b>去重频道</span><span><b>__SOURCES__</b>来源</span></div>
 <p class="note">GitHub 网页中的 /blob/ 地址是 HTML 页面，不能直接作为订阅；请使用上方 raw 地址。HTTP 200 只表示文件可下载，并不保证每个频道都能播放。</p>
 </main></body></html>"""
     replacements = {
-        "__GEIT__": geit,
-        "__GEITPY__": geitpy,
         "__GEIT_FISH__": geit_fish,
         "__GEITPY_FISH__": geitpy_fish,
         "__HEALTH__": health,
@@ -900,7 +897,7 @@ code{display:block;background:#eee8db;border-radius:10px;padding:10px;word-break
 
 
 def validate_outputs(config: dict[str, Any], py_config: dict[str, Any], repo: str, branch: str) -> None:
-    for label, value in (("geit.json", config), ("geitpy.json", py_config)):
+    for label, value in (("geit-fish", config), ("geitpy-fish", py_config)):
         if not isinstance(value.get("sites"), list) or not isinstance(value.get("lives"), list):
             raise ValueError("%s 缺少 sites/lives" % label)
         if not str(value.get("spider", "")).startswith("https://"):
@@ -922,7 +919,7 @@ def validate_outputs(config: dict[str, Any], py_config: dict[str, Any], repo: st
                 raise ValueError("%s 包含图片型直播地址: %s" % (label, url))
     api_values = [str(site.get("api", "")) for site in py_config.get("sites", []) if site.get("type") == 3]
     if len(api_values) != len(set(api_values)):
-        raise ValueError("geitpy.json 存在重复站点 API")
+        raise ValueError("geitpy-fish 存在重复站点 API")
     for site in py_config.get("sites", []):
         api = str(site.get("api", ""))
         if ".py" not in api.lower() and ".js" not in api.lower():
@@ -935,10 +932,10 @@ def validate_outputs(config: dict[str, Any], py_config: dict[str, Any], repo: st
         if bare.startswith(prefix):
             name = urllib.parse.unquote(bare[len(prefix):])
             if not (PY_DIR / name).is_file():
-                raise ValueError("geitpy.json 引用了不存在的 Python 文件: %s" % name)
+                raise ValueError("geitpy-fish 引用了不存在的 Python 文件: %s" % name)
 
 
-def validate_fish_config(value: dict[str, Any], label: str) -> None:
+def validate_subscription_config(value: dict[str, Any], label: str) -> None:
     expected_lists = ("sites", "lives", "parses", "rules", "doh", "flags", "ijk", "ads")
     for key in expected_lists:
         if not isinstance(value.get(key), list):
@@ -1006,21 +1003,19 @@ def main() -> int:
     config = strip_unresolved_secret_placeholders(config)
     py_config = strip_unresolved_secret_placeholders(py_config)
     validate_outputs(config, py_config, repo, branch)
-    fish_config = fish_compatible_config(config)
-    py_fish_config = fish_compatible_config(py_config)
-    validate_fish_config(fish_config, "geit-fish.txt")
-    validate_fish_config(py_fish_config, "geitpy-fish.txt")
-    write_json(GEIT_PATH, config)
-    write_json(GEITPY_PATH, py_config)
-    write_fish_json(GEIT_FISH_PATH, config)
-    write_fish_json(GEITPY_FISH_PATH, py_config)
+    subscription = subscription_config(config)
+    py_subscription = subscription_config(py_config)
+    validate_subscription_config(subscription, "geit-fish")
+    validate_subscription_config(py_subscription, "geitpy-fish")
+    write_subscription_json(GEIT_PATH, config)
+    write_subscription_json(GEITPY_PATH, py_config)
     write_docs(stats, repo, branch)
     write_health_report(stats)
     write_index(stats, repo, branch)
 
-    log("生成 geit.json：%d 个站点，%d 个直播源" % (len(config["sites"]), len(config["lives"])))
-    log("生成 geitpy.json：%d 个站点（含 %d 个 Python）" % (len(py_config["sites"]), len(local_python)))
-    log("生成明文鱼壳兼容文件：geit-fish.txt、geitpy-fish.txt")
+    log("生成 geit-fish：%d 个站点，%d 个直播源" % (len(config["sites"]), len(config["lives"])))
+    log("生成 geitpy-fish：%d 个站点（含 %d 个 Python）" % (len(py_config["sites"]), len(local_python)))
+    log("生成明文订阅文件：geit-fish、geitpy-fish")
     log("合并直播频道：%d 条" % len(stats.channels))
     return 0
 

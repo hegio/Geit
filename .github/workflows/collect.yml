@@ -10,7 +10,9 @@ on:
       - 'sources.txt'
       - 'fetch_tvbox.py'
       - 'config_security.py'
+      - 'check_health.py'
       - 'py/**.py'
+      - 'docs/removable.json'
       - '.github/workflows/collect.yml'
 
 permissions:
@@ -72,29 +74,23 @@ jobs:
           from pathlib import Path
           from config_security import find_sensitive_credentials
 
-          for name in ("geit.json", "geitpy.json"):
-              config = json.loads(Path(name).read_text(encoding="utf-8"))
+          legacy = json.loads(Path("docs/tvbox.json").read_text(encoding="utf-8"))
+          for name in ("geit-fish", "geitpy-fish"):
+              raw = Path(name).read_text(encoding="utf-8-sig")
+              # 旧版会写成 8 字符**Base64，影视 App 无法解析；必须保持明文 JSON。
+              assert "**" not in raw[:16], f"{name} is still wrapped"
+              config = json.loads(raw)
               assert isinstance(config, dict), name
-              assert isinstance(config.get("sites"), list), name
-              assert isinstance(config.get("lives"), list), name
+              for key in ("sites", "lives", "parses", "rules", "doh", "flags", "ijk", "ads"):
+                  assert isinstance(config.get(key), list), f"{name}: {key}"
+              assert isinstance(config.get("logo"), str), name
               assert str(config.get("spider", "")).startswith("https://"), name
               assert not find_sensitive_credentials(config), name
 
-          pairs = (
-              ("geit-fish.txt", "geit.json"),
-              ("geitpy-fish.txt", "geitpy.json"),
-          )
-          for fish_name, json_name in pairs:
-              raw = Path(fish_name).read_text(encoding="utf-8-sig")
-              assert "**" not in raw[:16], f"{fish_name} is still wrapped"
-              fish = json.loads(raw)
-              source = json.loads(Path(json_name).read_text(encoding="utf-8"))
-              assert fish["sites"] == source["sites"], fish_name
-              assert fish["lives"] == source["lives"], fish_name
-              for key in ("sites", "lives", "parses", "rules", "doh", "flags", "ijk", "ads"):
-                  assert isinstance(fish.get(key), list), f"{fish_name}: {key}"
-              assert isinstance(fish.get("logo"), str), fish_name
-              assert not find_sensitive_credentials(fish), fish_name
+          # 兼容入口必须和根目录订阅文件内容一致，旧链接才不会失效。
+          base = json.loads(Path("geit-fish").read_text(encoding="utf-8"))
+          assert legacy["sites"] == base["sites"], "docs/tvbox.json 与 geit-fish 不一致"
+          assert legacy["lives"] == base["lives"], "docs/tvbox.json 与 geit-fish 不一致"
 
           import hashlib
           hashes = {}
@@ -113,7 +109,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add geit.json geitpy.json geit-fish.txt geitpy-fish.txt py tvbox/lives docs/sources.json docs/tvbox.json docs/index.html
+          git add geit-fish geitpy-fish py tvbox/lives docs/sources.json docs/tvbox.json docs/index.html
           if git diff --cached --quiet; then
             echo "没有变化，跳过提交"
           else
@@ -136,10 +132,8 @@ jobs:
         with:
           name: geit-diagnostics
           path: |
-            geit.json
-            geitpy.json
-            geit-fish.txt
-            geitpy-fish.txt
+            geit-fish
+            geitpy-fish
             docs/sources.json
           if-no-files-found: warn
           retention-days: 7
