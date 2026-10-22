@@ -67,9 +67,9 @@ GitHub 的 `/blob/` 地址打开的是 HTML 网页，不是 JSON 文件，不能
 
 ## 自动流程
 
-工作流位于 `.github/workflows/collect.yml`，默认每 18 小时运行一次，也可在 Actions 页面手动触发。链接健康检查独立位于 `.github/workflows/health.yml`，默认每 48 小时运行一次。
+工作流位于 `.github/workflows/collect.yml`，默认每 18 小时运行一次，也可在 Actions 页面手动触发。链接健康检查独立位于 `.github/workflows/health.yml`，默认每 24 小时运行一次。
 
-GitHub Actions 的 cron 不能直接表达“每 18 小时”：`0 */18 * * *` 只会在 00、18 点触发，实际间隔是 18/6 小时交替。因此 `collect.yml` 每小时唤醒一次，再用 epoch 小时对 18 取模放行。`health.yml` 也每小时唤醒一次，但会读取 `docs/health_state.json` 中上一次成功完成的 `last_run.finished_at`，只有满 48 小时才真正执行；没有状态文件时立即执行。手动触发不受 48 小时 gate 限制。
+GitHub Actions 的 cron 不能直接表达“每 18 小时”：`0 */18 * * *` 只会在 00、18 点触发，实际间隔是 18/6 小时交替。因此 `collect.yml` 每小时唤醒一次，再用 epoch 小时对 18 取模放行。`health.yml` 也每小时唤醒一次，但会读取 `docs/health_state.json` 中上一次成功完成的 `last_run.finished_at`，只有满 24 小时才真正执行；没有状态文件时立即执行。手动触发不受 24 小时 gate 限制。
 
 每次运行会：
 

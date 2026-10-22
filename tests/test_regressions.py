@@ -139,10 +139,16 @@ class HealthTests(unittest.TestCase):
     def test_404_requires_all_user_agents_to_fail(self) -> None:
         hard = check_health.HttpResult(404, "HTTP 404", user_agent="ua")
         soft = check_health.HttpResult(503, "HTTP 503", user_agent="ua")
-        with mock.patch.object(check_health, "_request_once", return_value=hard):
+        # Every UA gets one retry after a hard status, so a persistent 404
+        # costs 2 x len(USER_AGENTS) requests.
+        with mock.patch.object(check_health, "_request_once", return_value=hard), \
+             mock.patch.object(check_health.time, "sleep"):
             result = check_health.http_check("https://example.com/live.m3u8")
             self.assertEqual(result.failure_class, "hard")
-        with mock.patch.object(check_health, "_request_once", side_effect=[hard, soft, hard, hard]):
+        responses = [hard, soft, hard, hard]
+        responses += [hard] * (len(check_health.USER_AGENTS) * 2 - len(responses))
+        with mock.patch.object(check_health, "_request_once", side_effect=responses), \
+             mock.patch.object(check_health.time, "sleep"):
             result = check_health.http_check("https://example.com/live.m3u8")
             self.assertEqual(result.failure_class, "soft")
 
@@ -370,6 +376,55 @@ class FalsePositiveTests(unittest.TestCase):
         body = "961930269 节目已下线，请尝试其他节目".encode("utf-8")
         self.assertFalse(check_health._soft_failure_text(body.decode("utf-8")))
 
+    def test_404_flap_is_retried_before_being_decisive(self) -> None:
+        """A 404 that a retry turns into 200 is a CDN flap, not a dead source.
+
+        Measured: v.lfthirtytwo.com and vip.lzcdn2.com return 404 for 25-50%
+        of single requests while the stream plays. Four UAs hitting the same
+        bad node in one instant used to look like "all clients failed" and
+        count toward removal.
+        """
+        hard = check_health.HttpResult(404, "HTTP 404", user_agent="ua")
+        ok = check_health.HttpResult(200, "", user_agent="ua")
+        with mock.patch.object(check_health, "_request_once",
+                               side_effect=[hard, ok]), \
+             mock.patch.object(check_health.time, "sleep"):
+            result = check_health.http_check("https://example.com/live.m3u8")
+        self.assertEqual(result.status, 200)
+
+    def test_persistent_404_stays_decisive(self) -> None:
+        hard = check_health.HttpResult(404, "HTTP 404", user_agent="ua")
+        with mock.patch.object(check_health, "_request_once", return_value=hard), \
+             mock.patch.object(check_health.time, "sleep"):
+            result = check_health.http_check("https://example.com/live.m3u8")
+        self.assertEqual(result.status, 404)
+        self.assertEqual(result.failure_class, "hard")
+
+    def test_retry_does_not_rescue_a_soft_failure(self) -> None:
+        # 5xx, 403/429/451 and timeouts are already environmental; they must
+        # not spend an extra request, and must never become decisive.
+        soft = check_health.HttpResult(503, "HTTP 503", user_agent="ua")
+        with mock.patch.object(check_health, "_request_once",
+                               side_effect=[soft] * 4), \
+             mock.patch.object(check_health.time, "sleep") as sleep_mock:
+            result = check_health.http_check("https://example.com/live.m3u8")
+        self.assertEqual(result.failure_class, "soft")
+        sleep_mock.assert_not_called()
+
+    def test_hard_verdict_requires_every_attempt_to_be_hard(self) -> None:
+        hard = check_health.HttpResult(404, "HTTP 404", user_agent="ua")
+        timeout = check_health.HttpResult(None, "timed out", user_agent="ua")
+        # First UA 404s twice, second UA times out. The verdict must be soft,
+        # because a hard status from one client cannot prove the source is
+        # gone when another client could not get an answer at all.
+        responses = [hard, hard, timeout, timeout]
+        responses += [timeout] * (len(check_health.USER_AGENTS) * 2 - len(responses))
+        with mock.patch.object(check_health, "_request_once",
+                               side_effect=responses), \
+             mock.patch.object(check_health.time, "sleep"):
+            result = check_health.http_check("https://example.com/live.m3u8")
+        self.assertEqual(result.failure_class, "soft")
+
 
 
 class RemovedChannelTests(unittest.TestCase):
@@ -436,6 +491,60 @@ class RemovedChannelTests(unittest.TestCase):
         header = text.splitlines()[0]
         for field in ("name", "url", "host", "source", "removed_at", "evidence"):
             self.assertIn(field, header)
+
+    def test_unsampled_removed_url_is_rechecked(self) -> None:
+        """A removed URL the cursor never reached must still be probed.
+
+        Removal is permanent until the URL is sampled again. With a 6500 of
+        9816 sample that can take several runs, so a transient failure would
+        keep a working channel out of merged.m3u far longer than intended.
+        """
+        self._seed([{
+            "name": "恢复频道", "url": "http://back.example/live.m3u8",
+            "removed_at": "2026-10-20T00:00:00Z",
+        }])
+        # An unrelated channel that WAS sampled this run.
+        sampled = [self._channel("http://sampled.example/live.m3u8", "probe_ok")]
+        with mock.patch.object(check_health, "check",
+                               side_effect=lambda item, fp, dp: self._channel(
+                                   item.url, "probe_ok")) as check_mock:
+            recovered = check_health.recover_removed_channels(sampled, "ffprobe", True)
+        self.assertEqual(len(recovered), 1)
+        self.assertEqual(recovered[0].url, "http://back.example/live.m3u8")
+        self.assertEqual(recovered[0].status, "probe_ok")
+        self.assertEqual(check_mock.call_count, 1)
+
+    def test_removed_url_sampled_this_run_is_not_rechecked(self) -> None:
+        self._seed([{
+            "name": "已抽样", "url": "http://back.example/live.m3u8",
+            "removed_at": "2026-10-20T00:00:00Z",
+        }])
+        sampled = [self._channel("http://back.example/live.m3u8", "probe_ok")]
+        with mock.patch.object(check_health, "check") as check_mock:
+            recovered = check_health.recover_removed_channels(sampled, "ffprobe", True)
+        self.assertEqual(recovered, [])
+        check_mock.assert_not_called()
+
+    def test_recovered_url_leaves_the_record_after_recheck(self) -> None:
+        """A recovered URL must leave the record and re-enter merged.m3u."""
+        self._seed([{
+            "name": "恢复频道", "url": "http://back.example/live.m3u8",
+            "removed_at": "2026-10-20T00:00:00Z",
+        }])
+        recovered = [self._channel("http://back.example/live.m3u8", "probe_ok")]
+        check_health.write_removed_channels(recovered)
+        data = json.loads(check_health.REMOVED_CHANNELS_JSON.read_text(encoding="utf-8"))
+        self.assertEqual(data["channels"], [])
+
+    def test_internal_removed_url_is_not_rechecked(self) -> None:
+        self._seed([{
+            "name": "内网频道", "url": "http://rrs03.hw.gmcc.net/live/cctv1.m3u8",
+            "removed_at": "2026-10-20T00:00:00Z",
+        }])
+        with mock.patch.object(check_health, "check") as check_mock:
+            recovered = check_health.recover_removed_channels([], "ffprobe", True)
+        self.assertEqual(recovered, [])
+        check_mock.assert_not_called()
 
     def _fail_three_times(self, url: str) -> None:
         for _ in range(3):

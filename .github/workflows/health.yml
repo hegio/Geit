@@ -215,7 +215,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          # health_state.json drives the 48h gate and failure streaks; without
+          # health_state.json drives the 24h gate and failure streaks; without
           # it the gate sees "no state file" and runs on every hourly wake.
           git add \
             docs/health.json \

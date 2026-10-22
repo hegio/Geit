@@ -97,6 +97,9 @@ AUTH_GATE_MARKERS = (
     "authentication required",
 )
 HARD_HTTP_STATUSES = {404, 410}
+# 单条 404 的重试间隔（秒）。只对硬失效重试一次，用于区分 CDN 节点抖动
+# 与真实下线；v.lfthirtytwo.com / vip.lzcdn2.com 实测单请求 404 率 25-50%。
+CONFIRM_RETRY_DELAY = 1.5
 PROXY_FALLBACKS = (
     "https://gh-proxy.com/",
     "https://gh-proxy.org/",
@@ -565,6 +568,75 @@ def write_dead_channels(items: list[Item]) -> None:
             ))
 
 
+def recover_removed_channels(items: list[Item], ffprobe: str = "", do_probe: bool = True) -> list[Item]:
+    """Re-probe URLs that a previous run removed but this run never sampled.
+
+    Removal is driven by the channel ledger, and the sampling cursor only
+    covers a slice of it per run. A URL deleted during one run can therefore
+    stay absent from merged.m3u for several runs even after it recovers. The
+    removed list is small (tens to a few hundred entries), so re-checking all
+    of it every run is cheap and removes that blind spot entirely.
+
+    Returns the freshly checked items; they carry a probe_ok status when the
+    URL is playable again, which clears the decisive-failure streak and pulls
+    the URL back into merged.m3u on the next aggregation.
+    """
+    if not REMOVED_CHANNELS_JSON.is_file():
+        return []
+    try:
+        data = json.loads(REMOVED_CHANNELS_JSON.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return []
+    previous = data.get("channels", []) if isinstance(data, dict) else []
+    if not isinstance(previous, list):
+        return []
+    already_checked = {item.url for item in items if item.kind == "channel"}
+    candidates = [
+        row for row in previous
+        if isinstance(row, dict) and str(row.get("url", "")) not in already_checked
+    ]
+    if not candidates:
+        return []
+    # Private/ISP-intranet hosts are skipped by check(); probing them again
+    # every run would waste the budget and could resurrect a dead entry.
+    probeable: list[Item] = []
+    for row in candidates:
+        item = Item(
+            kind="channel",
+            name=str(row.get("name", "")),
+            url=str(row.get("url", "")),
+            status="unverified",
+            source=str(row.get("source", "") or ""),
+            source_line=int(row.get("source_line", 0) or 0),
+            channel_key=str(row.get("channel_key", "") or ""),
+            category=str(row.get("category", "") or ""),
+        )
+        if channel_is_private_or_internal(item):
+            continue
+        probeable.append(item)
+    if not probeable:
+        return []
+    log("复检 %d 个历史剔除 URL（不在本轮抽样范围内）" % len(probeable))
+    recovered: list[Item] = []
+    with ThreadPoolExecutor(max_workers=max(1, min(8, len(probeable)))) as pool:
+        futures = {pool.submit(check, item, ffprobe, do_probe): item for item in probeable}
+        for future in as_completed(futures):
+            try:
+                recovered.append(future.result())
+            except Exception as exc:
+                item = futures[future]
+                item.status = "http_error"
+                item.failure_class = "soft"
+                item.detail = "复检异常：%s" % exc
+                item.checked_at = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
+                recovered.append(item)
+    recovered.sort(key=lambda item: (item.name, item.url))
+    healthy = sum(1 for item in recovered if item.status == "probe_ok")
+    if healthy:
+        log("复检发现 %d 个已恢复的频道 URL，将重新录入 merged.m3u" % healthy)
+    return recovered
+
+
 def write_removed_channels(items: list[Item]) -> None:
     """Record every channel URL dropped from merged.m3u, with its name.
 
@@ -573,6 +645,10 @@ def write_removed_channels(items: list[Item]) -> None:
     The JSON keeps the full record; the CSV opens directly in a spreadsheet.
     Entries accumulate across runs and are cleared only when a URL comes back
     as probe_ok, so the file stays a complete removal history.
+
+    URLs removed by an earlier run are re-checked by recover_removed_channels()
+    before this runs, so a source deleted during a CDN flap recovers within one
+    run instead of staying out of merged.m3u until the cursor reaches it again.
     """
     doomed = [
         row for row in _channel_health_rows(items)
@@ -590,12 +666,21 @@ def write_removed_channels(items: list[Item]) -> None:
     recovered = {
         str(row.get("url", ""))
         for row in _channel_health_rows(items)
-        if row.get("verdict") in {"keep", "observe_soft", "observe_upstream", "observe"}
+        if row.get("verdict") in {"keep", "observe_soft", "observe_upstream", "observe", "skip_internal"}
     }
     history = {
         str(row.get("url", "")): row
         for row in previous
         if str(row.get("url", "")) not in recovered
+    }
+    # A URL leaves this file only when it is re-probed and no longer counts as
+    # a removal candidate. Anything still doomed must stay listed, so the
+    # "recovered" count is exactly the set that dropped out.
+    doomed_urls = {str(row.get("url", "")) for row in doomed}
+    recovered_urls = {
+        str(row.get("url", "")) for row in previous
+        if str(row.get("url", "")) in recovered
+        and str(row.get("url", "")) not in doomed_urls
     }
     for row in doomed:
         key = str(row.get("url", ""))
@@ -633,6 +718,7 @@ def write_removed_channels(items: list[Item]) -> None:
         "summary": {
             "removed_total": len(ordered),
             "removed_this_run": len(doomed),
+            "recovered_this_run": len(recovered_urls),
             "hosts": len({str(r.get("host", "")) for r in ordered if r.get("host")}),
         },
         "channels": ordered,
@@ -662,6 +748,8 @@ def write_removed_channels(items: list[Item]) -> None:
     if doomed:
         log("本轮剔除 %d 个失效频道 URL，详情见 %s"
             % (len(doomed), REMOVED_CHANNELS_JSON.name))
+    if recovered_urls:
+        log("本轮恢复 %d 个此前剔除的频道 URL，已重新录入 merged.m3u" % len(recovered_urls))
 
 
 def default_merged_url() -> str:
@@ -1075,6 +1163,13 @@ def http_check(url: str, read_bytes: int = 4096) -> HttpResult:
     parts = urllib.parse.urlsplit(url)
     if parts.netloc.lower() == "raw.githubusercontent.com":
         candidates.extend(prefix + url for prefix in PROXY_FALLBACKS)
+    # A hard 404 that comes back as 200 on a retry proves the failure was a
+    # CDN node hiccup, not a dead link. Measured on v.lfthirtytwo.com and
+    # vip.lzcdn2.com: roughly 25-50% of single requests return 404 while the
+    # stream plays fine. Without a retry, four UAs hitting the same bad node
+    # in one instant produced "all UAs failed" and pushed live sources toward
+    # the removal threshold.
+    confirm_delay = CONFIRM_RETRY_DELAY
     attempts = 0
     errors: list[str] = []
     attempt_results: list[HttpResult] = []
@@ -1088,6 +1183,22 @@ def http_check(url: str, read_bytes: int = 4096) -> HttpResult:
             if result.status is not None and result.status < 400:
                 return result
             errors.append("%s %s" % (user_agent.split("/", 1)[0], result.detail))
+            # Only a hard status earns a retry. Timeouts, 5xx, 403/429/451 and
+            # network errors are already treated as environmental and must not
+            # cost an extra request.
+            if result.failure_class == "hard" and confirm_delay:
+                time.sleep(confirm_delay)
+                confirm_delay = 0
+                attempts += 1
+                retry = _request_once(candidate, user_agent, read_bytes)
+                retry.attempts = attempts
+                retry.failure_class = _classify_http_result(retry)
+                attempt_results.append(retry)
+                if retry.status is not None and retry.status < 400:
+                    return retry
+                errors.append("%s(重试) %s" % (
+                    user_agent.split("/", 1)[0], retry.detail
+                ))
             # A 5xx/403/429 from every client is still environmental. Continue
             # trying UAs because some gateways only reject unknown clients.
             if result.status is not None and result.status not in HARD_HTTP_STATUSES:
@@ -1110,6 +1221,13 @@ def http_check(url: str, read_bytes: int = 4096) -> HttpResult:
     result.detail = " | ".join(errors[-4:]) or result.detail
     if any(_soft_failure_text(item) for item in errors):
         result.failure_class = "soft"
+    if result.failure_class == "hard":
+        # A hard verdict requires a clean sweep: every request in this call
+        # must have returned a hard status. One retry per UA is allowed, so a
+        # CDN node that flaps 404/200 cannot look like a dead source.
+        result.failure_class = "hard" if all(
+            row.status in HARD_HTTP_STATUSES for row in attempt_results
+        ) else "soft"
     return result
 
 
@@ -1584,7 +1702,6 @@ def main() -> int:
         finally:
             for pending_future in futures:
                 pending_future.cancel()
-    checked.sort(key=lambda item: (item.kind, item.name, item.url))
     global HEALTH_JSON, HEALTH_CSV
     HEALTH_JSON = args.output_dir / "health.json"
     HEALTH_CSV = args.output_dir / "health.csv"
@@ -1597,6 +1714,12 @@ def main() -> int:
     global REMOVED_CHANNELS_JSON, REMOVED_CHANNELS_CSV
     REMOVED_CHANNELS_JSON = args.output_dir / "removed_channels.json"
     REMOVED_CHANNELS_CSV = args.output_dir / "removed_channels.csv"
+    # URLs removed by an earlier run are re-checked even when the cursor never
+    # reaches them, so a source deleted during a CDN flap recovers within one
+    # run instead of staying out of merged.m3u for several runs.
+    if REMOVED_CHANNELS_JSON.is_file():
+        checked.extend(recover_removed_channels(checked, ffprobe, args.probe))
+        checked.sort(key=lambda item: (item.kind, item.name, item.url))
     apply_host_circuit_breaker(checked)
     write_report(checked)
     write_removable(checked)
