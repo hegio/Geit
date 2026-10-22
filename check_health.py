@@ -82,6 +82,20 @@ PROXY_FALLBACKS = (
     "https://gh-proxy.org/",
     "https://ghfast.top/",
 )
+# Domestic carrier headends and intranet-only domains. A GitHub runner cannot
+# reach these, so probing them would only produce false dead-link verdicts.
+# Everything else is probed, including private/adult sections.
+ISP_INTRANET_SUFFIXES = (
+    ".gmcc.net",       # 广东移动 OTT 头端
+    ".itv.cmvideo.cn",  # 移动咪咕
+    ".chinanetcenter.com",
+)
+ISP_INTRANET_HOST_MARKERS = (
+    "ott.cctv.cn",
+    ".hw.gmcc.net",
+    "gslbserv.",
+    "rrs0",
+)
 MERGED_PROXY_PREFIX = "https://gh-proxy.com/"
 # Public HLS stream used once per run to prove ffprobe can actually decode.
 # Without it a crashing binary mislabels every link as dead.
@@ -298,16 +312,33 @@ def update_streaks(items: list["Item"]) -> dict[str, dict[str, Any]]:
 
 
 def channel_is_private_or_internal(item: "Item") -> bool:
-    """Domestic ISP intranet streams cannot be validated from GitHub runners."""
-    text = " ".join((item.name, item.category, item.source))
-    if re.search(r"内网|内网源|私密频道|JAV點播|JAV点播|联通|移动|电信|天翼|广电", text):
-        return True
-    host = urllib.parse.urlsplit(item.url).hostname or ""
+    """True only for sources that a GitHub runner genuinely cannot reach.
+
+    The earlier keyword list matched on the group title, so every channel in
+    "私密频道_169169" and "JAV點播_169169" was skipped forever even though they
+    are ordinary public CDN hosts such as t33.cdn2020.com. That left 3,467
+    channels unmonitored. Now only真·内网 targets are exempt: a private or
+    loopback IP literal, or an ISP intranet hostname. Everything else,
+    including the private/adult sections, is probed like any other channel.
+    """
+    # A literal private/loopback address is unreachable from outside by design.
+    host = urllib.parse.urlsplit(str(item.url)).hostname or ""
     try:
         address = ipaddress.ip_address(host)
     except ValueError:
+        pass
+    else:
+        return address.is_private or address.is_loopback
+    host_l = host.lower()
+    if not host_l:
         return False
-    return address.is_private or address.is_loopback
+    # Domestic ISP intranet hostnames: multicast/OTT headends and carrier
+    # domains that only resolve inside the carrier network.
+    if host_l.endswith(ISP_INTRANET_SUFFIXES):
+        return True
+    if any(marker in host_l for marker in ISP_INTRANET_HOST_MARKERS):
+        return True
+    return False
 
 
 def url_digest(url: str) -> str:

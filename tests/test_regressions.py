@@ -186,13 +186,33 @@ class HealthTests(unittest.TestCase):
             finally:
                 check_health.HEALTH_STATE_JSON = original
 
-    def test_private_channel_is_not_probed(self) -> None:
+    def test_group_title_alone_does_not_skip_a_channel(self) -> None:
+        """A group title must never decide reachability.
+
+        "私密频道2_169169" is served by the public CDN t33.cdn2020.com, so
+        probing it is both possible and required. Only a genuinely unreachable
+        target (private IP literal or ISP intranet host) is exempt.
+        """
         item = self.item("unverified")
         item.kind = "channel"
         item.category = "私密频道2_169169"
+        item.url = "https://t33.cdn2020.com/private/index.m3u8"
+        result = check_health.check(item, "", True)
+        self.assertNotEqual(result.status, "skip_internal")
+
+    def test_isp_intranet_host_is_skipped(self) -> None:
+        item = self.item("unverified")
+        item.kind = "channel"
+        item.url = "http://rrs03.hw.gmcc.net/live/cctv1.m3u8"
         result = check_health.check(item, "", True)
         self.assertEqual(result.status, "skip_internal")
 
+    def test_private_ip_literal_is_skipped(self) -> None:
+        item = self.item("unverified")
+        item.kind = "channel"
+        item.url = "http://192.168.1.10/live/cctv1.m3u8"
+        result = check_health.check(item, "", True)
+        self.assertEqual(result.status, "skip_internal")
     def test_ai_none_preserves_report_without_timestamp_commit(self) -> None:
         import ai_assist
 
