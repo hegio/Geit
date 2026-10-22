@@ -1,25 +1,67 @@
 {
-  "updated": "2026-10-22T15:31:46Z",
-  "mode": "local",
+  "updated": "2026-10-22T19:16:33Z",
+  "mode": "auto",
   "safety": "AI 只生成分类建议和错误解释；不参与失效判定、不修改 merged.m3u、不写入 removable.json、不接收含凭据的完整 URL。",
   "inputs": {
     "pending_channels": 4,
     "failure_clusters": 30,
     "removable": {
-      "flagged": 0,
-      "pending": 17,
+      "flagged": 2,
+      "pending": 0,
       "policy": {
-        "fail_streak_limit": 6,
+        "fail_streak_limit": 3,
         "scope": "仅统计 geit-fish 中的 live 直播源；频道抽样轮转，不参与计数",
         "counted_failures": "仅高置信确定性失效：404/410、明确拒绝、持续无效媒体流等",
         "ignored_failures": "超时、403/429/451 等地区限制/鉴权/限流、临时 5xx；不计入也不清空既有失败历史",
         "recovery": "只有 probe_ok（ffprobe 成功解码媒体流）才清零；reachable、manifest_ok、playback_unverified 均保留历史",
-        "action": "连续失败超过 5 次（第 6 次）的源会在下一次聚合时自动从 geit-fish 移除；merged.m3u 中的频道仍按独立频道链路处理，不因一个 live 配置项被删而批量删除"
+        "action": "仅报告，不自动删除任何直播大类；直播大类由人工增减",
+        "channel_urls": "真正会被停止录入的是 merged.m3u 中的单个频道 URL，见 dead_channels.json"
       }
     }
   },
-  "status": "unavailable",
-  "errors": [
-    "local-strata: HTTP Error 502: Bad Gateway"
-  ]
+  "status": "ok",
+  "provider": "cloud",
+  "model": "atria-dawn-preview",
+  "result": {
+    "classification_suggestions": [
+      {
+        "channel_key": "zgqx",
+        "category": "待人工确认",
+        "confidence": "low",
+        "reason": "频道名为拼音缩写且无可识别台标信息，仅凭分组“央卫63”无法确认具体频道身份，不能臆测归属。"
+      },
+      {
+        "channel_key": "hyzxc",
+        "category": "待人工确认",
+        "confidence": "low",
+        "reason": "频道名不具备可辨识度，分组名称仅表示来源分区，不能据此判定为央视或卫视。"
+      },
+      {
+        "channel_key": "hycxldb",
+        "category": "待人工确认",
+        "confidence": "low",
+        "reason": "频道名疑似拼音缩写但无法对应到确定频道，缺少名称、台标或节目单佐证。"
+      },
+      {
+        "channel_key": "hylzy",
+        "category": "待人工确认",
+        "confidence": "low",
+        "reason": "频道身份不明，分组“央卫63”不等于频道归属，需人工补全名称后再归类。"
+      }
+    ],
+    "incident_summary": "失败以软失败为主：451集中在 t33.cdn2020.com，多为内容审查/区域限制；403集中在 virtual.anbox.dpdns.org，疑似防盗链或来源校验；429集中在 m.061899.xyz，为限流；无状态码的连接失败集中在多个 IP 与 rrs03.hw.gmcc.net、live.chinacert.cftest5.cn，疑似网络不可达、DNS或源站异常；200但探测失败集中在 38.75.136.137，说明能连接但无法确认播放；iesdouyin.com 返回200却播放未验证，可能是页面式或非直链源。",
+    "recommended_actions": [
+      "优先复核 t33.cdn2020.com 的 451，确认是否因区域限制或内容合规导致，不应当作失效删除。",
+      "对 virtual.anbox.dpdns.org 的 403 检查请求头、Referer 与 UA 是否缺失或被拦截。",
+      "对 m.061899.xyz 的 429 降低探测频率并加入间隔，避免被源站限流误判。",
+      "对无状态码的 IP 类源进行连通性与 DNS 复核，区分内网地址、运营商线路与公网不可达。",
+      "对 200 但 playback_unverified 的抖音类源核实是否为网页源或需要额外解析，不直接判定失效。",
+      "待归类频道需人工补全真实频道名后再归类，当前均保持“待人工确认”。"
+    ],
+    "warnings": [
+      "451/403/429 与超时、5xx 均不能直接判定为失效。",
+      "频道名仅为拼音缩写，禁止根据分组名猜测频道身份。",
+      "本结果不包含任何删除建议，也不输出或猜测凭据。"
+    ]
+  }
 }
