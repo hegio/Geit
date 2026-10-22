@@ -131,19 +131,25 @@ jobs:
           python-version: '3.12'
 
       - name: 准备 ffprobe
-        # ubuntu-latest ships ffmpeg already. A plain apt-get install here hung
-        # for 40+ minutes on a previous run and killed the whole check, so only
-        # fall back to apt when the preinstalled binary is missing, and keep the
-        # install itself short-circuited with a timeout.
+        # probe_ok is the only status that clears a failure streak, so a missing
+        # ffprobe silently disables the whole dead-source mechanism. The current
+        # ubuntu-latest image has no ffprobe and apt-get is too slow to finish,
+        # so fetch a standalone binary instead. Never fail the job here: the
+        # check still runs and degrades to HTTP-only probing.
         run: |
           if command -v ffprobe >/dev/null 2>&1; then
             echo "使用预装 ffprobe: $(ffprobe -version | head -n1)"
             exit 0
           fi
-          echo "未找到 ffprobe，尝试安装"
-          sudo timeout 300 apt-get update -qq || echo "apt-get update 超时/失败"
-          sudo timeout 300 apt-get install -y -qq ffmpeg || echo "ffmpeg 安装失败，将退化为仅 HTTP 探测"
-          command -v ffprobe >/dev/null 2>&1 && ffprobe -version | head -n1
+          mkdir -p "$HOME/.local/bin"
+          url="https://github.com/eugeneware/ffmpeg-static/releases/download/b6.1.1/ffprobe-linux-x64.gz"
+          if curl -fsSL --connect-timeout 20 --max-time 300 "$url" | gunzip -c > "$HOME/.local/bin/ffprobe"; then
+            chmod +x "$HOME/.local/bin/ffprobe"
+            echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+            echo "已安装独立 ffprobe: $("$HOME/.local/bin/ffprobe" -version | head -n1)"
+          else
+            echo "::warning::ffprobe 下载失败，本次退化为仅 HTTP 探测（不会判定失效，也不会清零失败历史）"
+          fi
 
       - name: 检查链接健康状态
         env:
