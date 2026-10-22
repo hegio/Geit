@@ -39,6 +39,8 @@ GitHub 的 `/blob/` 地址打开的是 HTML 网页，不是 JSON 文件，不能
 | `docs/sources.json` | 每个来源的抓取状态和解析结果 |
 | `docs/health.json` / `.csv` | 链接健康与播放验证状态 |
 | `docs/channel_health.json` | 频道级保守判定：保留、观察、候选淘汰；不自动删除 |
+| `docs/health_state.json` | 健康检查游标、抽样进度和逐 URL 最近证据；供下一轮续跑 |
+| `docs/ai_review.json` | 可选 AI 辅助报告：分类建议和失败聚类解释，不参与删除 |
 | `docs/blocked.csv` | 已明确失败的链接，供人工复查或临时屏蔽 |
 | `py/` | 去重后、通过 Python AST 与 Spider 核心方法检查的 Python 站点 |
 | `回收/` | 清理前旧目录和重复文件，仅作追溯，不参与构建 |
@@ -65,9 +67,9 @@ GitHub 的 `/blob/` 地址打开的是 HTML 网页，不是 JSON 文件，不能
 
 ## 自动流程
 
-工作流位于 `.github/workflows/collect.yml`，默认每 18 小时运行一次，也可在 Actions 页面手动触发。链接健康检查独立位于 `.github/workflows/health.yml`，默认每 72 小时运行一次。
+工作流位于 `.github/workflows/collect.yml`，默认每 18 小时运行一次，也可在 Actions 页面手动触发。链接健康检查独立位于 `.github/workflows/health.yml`，默认每 48 小时运行一次。
 
-GitHub Actions 的 cron 不能直接表达“每 18 小时”：`0 */18 * * *` 只会在 00、18 点触发，实际间隔是 18/6 小时交替。因此 `collect.yml` 每小时唤醒一次，再用 epoch 小时对 18 取模放行；`health.yml` 每天唤醒一次，再按 UTC 日数对 3 取模放行，实际约 72 小时一次。手动触发不受 gate 限制。
+GitHub Actions 的 cron 不能直接表达“每 18 小时”：`0 */18 * * *` 只会在 00、18 点触发，实际间隔是 18/6 小时交替。因此 `collect.yml` 每小时唤醒一次，再用 epoch 小时对 18 取模放行。`health.yml` 也每小时唤醒一次，但会读取 `docs/health_state.json` 中上一次成功完成的 `last_run.finished_at`，只有满 48 小时才真正执行；没有状态文件时立即执行。手动触发不受 48 小时 gate 限制。
 
 每次运行会：
 
@@ -96,11 +98,13 @@ python check_health.py --workers 16 --max-channels 500
 - `playback_unverified`：HTTP 200，不能证明视频真的能播放。
 - `probe_ok` / `probe_failed`：使用 `ffprobe` 探测到或未探测到媒体流。
 
-健康状态是带时间戳的诊断结果，不会因为一次失败就永久删除来源。HTTP 200 不等于可播放，完整频道验证应结合播放列表内容、媒体分片和影视 App 实测。
+健康状态是带时间戳的诊断结果，不会因为一次失败就永久删除来源。HTTP 200 不等于可播放，完整频道验证应结合播放列表内容、媒体分片和影视 App 实测。HTTP 探测会依次尝试默认客户端、Lavf、okhttp 和 ExoPlayer 四种 UA；只有所有兼容客户端都明确返回 404/410 时才记为确定性失败。任一客户端成功即视为可达。
 
 `docs/blocked.csv` 会汇总明确 HTTP 失败、ffprobe 失败和配置无法解析的条目；`requires_app`、`reachable` 和 `playback_unverified` 不会被当作永久失效。地区限制、CDN、UA、代理和临时超时都可能造成误判，因此标记用于复查，不会自动改动 `sources.txt`。
 
-`docs/channel_health.json` 是频道级台账，记录每条 URL 的频道键、来源、原始分组、确定性失败次数和处置建议。当前只报告 `keep`、`observe`、`observe_soft`、`skip_internal`、`candidate_remove`，不会自动修改 `merged.m3u`。健康工作流每轮只抽检一部分频道，未抽到的线路会保留上一轮记录；已经不在频道台账中的旧 URL 才会被移除。超时、网络不可达、运营商内网地址和 `playback_unverified` 都不会被当作删除依据；只有连续多次确定性失败才进入 `candidate_remove`。恢复判定同样保守：只有 `probe_ok`（ffprobe 成功解码媒体流）才清零失败次数，`reachable`、`manifest_ok`、`playback_unverified` 都保留历史。
+`docs/channel_health.json` 是频道级台账，记录每条 URL 的频道键、来源、原始分组、确定性失败次数和处置建议。当前只报告 `keep`、`observe`、`observe_soft`、`observe_upstream`、`skip_internal`、`candidate_remove`，不会自动修改 `merged.m3u`。健康工作流每轮只抽检一部分频道，未抽到的线路会保留上一轮记录；已经不在频道台账中的旧 URL 才会被移除。超时、网络不可达、5xx、403/429/451、运营商内网地址和 `playback_unverified` 都不会被当作删除依据；只有连续多次确定性失败才进入 `candidate_remove`。恢复判定同样保守：只有 `probe_ok`（ffprobe 成功解码媒体流）才清零失败次数，`reachable`、`manifest_ok`、`playback_unverified` 都保留历史。
+
+同一主机在本轮同时失败至少 6 条、且失败占该主机已检查线路一半以上，并至少有 3 条硬失败时，会整体降级为 `upstream_incident` / `observe_upstream`。这是为了区分“单条线路坏了”和“整个上游临时挂了”，上游故障绝不累计删除次数。
 
 频道台账为每条线路保存 `url_hash`（原始 URL 的 SHA-256）和脱敏后的 `url`。健康检查使用哈希匹配，因此带 token、签名等敏感参数的直播地址也能稳定关联，同时不会把真实凭据写进公开报告。
 
@@ -108,13 +112,25 @@ python check_health.py --workers 16 --max-channels 500
 
 健康工作流会把每一轮的结果累加到 `docs/removable.json`，只统计 `geit-fish` 里的 `live` 直播源（它们每轮全量检查，能真正凑够连续次数；频道是抽样轮转的，同一条很可能连续几轮都没被抽到，因此不参与计数）。
 
-- 计入失败：连接被拒、DNS 解析失败、404/410、明确拒绝、ffprobe 报告持续无效流数据。
-- 不计入失败：**超时**、403/429/451 等地区限制/鉴权/限流、临时 5xx。健康工作流跑在 GitHub 境外 runner 上，国内直播源超时率很高，按超时计数会误删活着的源。
+- 计入失败：仅高置信确定性失效，例如所有兼容 UA 都返回 404/410，或 ffprobe 在无网络异常的前提下明确报告媒体流不可解码。
+- 不计入失败：**超时**、连接被拒、DNS 解析失败、网络不可达、TLS/证书错误、5xx、403/429/451 等地区限制/鉴权/限流。健康工作流跑在 GitHub 境外 runner 上，国内直播源超时率很高，按这些环境因素计数会误删活着的源。
 - 恢复判定：只有 `probe_ok` 才清零；`reachable`、`manifest_ok`、`playback_unverified` 不会清空已有失败历史。
 
-连续失败达到 5 次（`FAIL_STREAK_LIMIT`）后，该源进入 `removable` 列表并在日志里打印名称与来源；下一次聚合运行 `fetch_tvbox.py` 时会自动把它从 `geit-fish`、`geitpy-fish` 中移除，其下频道也不再进入 `merged.m3u`。`docs/removable.json` 的 `pending` 列表记录失败 1-4 次的源，仅供人工预判，不会触发任何删除。
+前 5 次连续失败只写入 `pending` 供人工预判，不会删除；超过 5 次（即第 6 次，`FAIL_STREAK_LIMIT = 6`）后该源才进入 `removable` 列表并在日志里打印名称与来源。下一次聚合运行 `fetch_tvbox.py` 时会自动把它从 `geit-fish`、`geitpy-fish` 中移除，其下频道也不再进入 `merged.m3u`。
 
 `fetch_tvbox.py` 读取 `removable.json` 时是容错的：文件缺失、为空或无法解析都直接跳过清理，所以聚合不依赖健康报告存在。
+
+### 可选 AI 辅助
+
+AI 默认关闭，主工作流不依赖任何模型 API。它只读取已脱敏的待归类频道和失败聚类，生成 `docs/ai_review.json` 中的分类建议、错误解释和人工复核方向；AI **不决定失效、不删除线路、不修改 `merged.m3u`、不写 `removable.json`**。API 不可用、超时或返回格式错误时自动 fail-open，健康检查照常完成。
+
+健康工作流手动触发时可选择 `none` / `local` / `cloud` / `auto`。定时运行默认读取仓库变量 `GEIT_AI_MODE`，未设置就是 `none`。可选配置：
+
+- `local`：`STRATA_BASE_URL`、`STRATA_MODEL`、`STRATA_WIRE_API`（`chat` 或 `responses`）、`STRATA_API_KEY`（可回退 `LOCAL_API_KEY`）。
+- `cloud`：`AI_BASE_URL`、`AI_MODEL`、`AI_API_KEY`（可回退 `MAAS_API_KEY`）。
+- `auto`：先尝试本地，失败后尝试云端；两者都不可用只写失败状态，不影响主流程。
+
+模型输出会再次经过凭据扫描；检测到疑似真实凭据时拒绝写盘。
 
 ## 本地运行
 

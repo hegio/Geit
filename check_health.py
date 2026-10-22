@@ -40,11 +40,22 @@ HEALTH_CSV = DOCS_DIR / "health.csv"
 REMOVABLE_JSON = DOCS_DIR / "removable.json"
 CHANNEL_LEDGER_JSON = DOCS_DIR / "channel_ledger.json"
 CHANNEL_HEALTH_JSON = DOCS_DIR / "channel_health.json"
-USER_AGENT = "Mozilla/5.0 (compatible; GeitHealth/2.0)"
+HEALTH_STATE_JSON = DOCS_DIR / "health_state.json"
+USER_AGENT = "Mozilla/5.0 (compatible; GeitHealth/3.0)"
+# Many IPTV gateways behave differently for player, ffmpeg, Android and Exo
+# clients. Trying all of them before declaring an HTTP failure prevents the
+# single-UA false negatives seen with k.061899.xyz and similar providers.
+USER_AGENTS = (
+    USER_AGENT,
+    "Lavf/58.76.100",
+    "okhttp/4.9.0",
+    "ExoPlayerLib/2.18.1",
+)
 TIMEOUT = 15
 MAX_PROBE_BYTES = 2 * 1024 * 1024
-# 连续失败达到这个次数就自动删除对应直播源。
-FAIL_STREAK_LIMIT = 5
+MAX_MANIFEST_BYTES = 512 * 1024
+# 连续失败超过 5 次（即第 6 次）才自动删除对应直播源。
+FAIL_STREAK_LIMIT = 6
 # 超时不计入删除判定：境外探测对国内源超时很常见，属于误判高发区。
 SOFT_FAILURE_MARKERS = ("timed out", "read operation timed out", "超时")
 SOFT_NETWORK_MARKERS = (
@@ -54,10 +65,17 @@ SOFT_NETWORK_MARKERS = (
     "nodename nor servname",
     "connection reset",
     "remote end closed connection",
+    "connection refused",
+    "connection aborted",
+    "ssl",
+    "certificate",
+    "temporary",
+    "server returned 5xx",
 )
 # These status codes often mean region lock, authorization or rate limiting.
 # They are useful diagnostics but must not count toward auto-removal.
-SOFT_HTTP_STATUSES = {401, 403, 407, 408, 425, 429, 451, 500, 502, 503, 504}
+SOFT_HTTP_STATUSES = {401, 403, 407, 408, 425, 429, 451}
+HARD_HTTP_STATUSES = {404, 410}
 PROXY_FALLBACKS = (
     "https://gh-proxy.com/",
     "https://gh-proxy.org/",
@@ -80,6 +98,27 @@ class Item:
     channel_key: str = ""
     category: str = ""
     url_hash: str = ""
+    final_url: str = ""
+    content_type: str = ""
+    failure_class: str = ""
+    evidence: str = ""
+    attempts: int = 0
+    host: str = ""
+    redirect_count: int = 0
+
+
+@dataclass
+class HttpResult:
+    status: int | None
+    detail: str
+    final_url: str = ""
+    content_type: str = ""
+    body: bytes = b""
+    redirects: list[str] | None = None
+    user_agent: str = ""
+    attempts: int = 0
+    error: str = ""
+    failure_class: str = ""
 
 
 def log(message: str) -> None:
@@ -103,13 +142,23 @@ def is_decisive_failure(item: "Item") -> bool:
     if item.status not in {"http_error", "probe_failed", "invalid_config", "invalid_placeholder"}:
         return False
     detail = str(item.detail or "")
-    if item.http_status in SOFT_HTTP_STATUSES:
+    # Check environmental/soft evidence before trusting failure_class.  A
+    # probe can be labelled hard by an older caller and still contain a
+    # timeout or 5XX detail; that must never count toward deletion.
+    if item.failure_class in {"soft", "internal", "unverified"}:
         return False
-    if any(marker in detail for marker in SOFT_FAILURE_MARKERS):
+    if is_soft_failure(item):
         return False
-    if re.search(r"\b(?:HTTP\s*)?(?:401|403|407|408|425|429|451|500|502|503|504)\b", detail):
+    if item.failure_class == "hard":
+        return (
+            item.http_status in HARD_HTTP_STATUSES
+            or item.status in {"probe_failed", "invalid_config", "invalid_placeholder"}
+        )
+    if item.http_status in HARD_HTTP_STATUSES:
+        return True
+    if item.http_status is not None and item.http_status >= 400:
         return False
-    return True
+    return item.status in {"probe_failed", "invalid_config", "invalid_placeholder"}
 
 
 def is_soft_failure(item: "Item") -> bool:
@@ -117,9 +166,26 @@ def is_soft_failure(item: "Item") -> bool:
     detail = str(item.detail or "").lower()
     if item.http_status in SOFT_HTTP_STATUSES:
         return True
-    if re.search(r"\b(?:http\s*)?(?:401|403|407|408|425|429|451|500|502|503|504)\b", detail):
+    if item.http_status is not None and item.http_status >= 500:
+        return True
+    if item.failure_class == "soft":
+        return True
+    if re.search(r"\b(?:http\s*)?(?:401|403|407|408|425|429|451|5\d\d)\b", detail, re.I):
+        return True
+    if re.search(r"\b5xx\b", detail, re.I):
         return True
     return any(marker in detail for marker in SOFT_FAILURE_MARKERS + SOFT_NETWORK_MARKERS)
+
+
+def _soft_failure_text(detail: str) -> bool:
+    """Return True when a probe/error message is environmental, not decisive."""
+    text = str(detail or "").lower()
+    if any(marker in text for marker in SOFT_FAILURE_MARKERS + SOFT_NETWORK_MARKERS):
+        return True
+    return bool(
+        re.search(r"\b(?:http\s*)?(?:401|403|407|408|425|429|451|5\d\d)\b", text, re.I)
+        or re.search(r"\b5xx\b", text, re.I)
+    )
 
 
 def load_streaks() -> dict[str, dict[str, Any]]:
@@ -159,6 +225,9 @@ def update_streaks(items: list["Item"]) -> dict[str, dict[str, Any]]:
                 "checked_at": item.checked_at,
                 "status": item.status,
                 "detail": str(item.detail or "")[:300],
+                "failure_class": item.failure_class,
+                "http_status": item.http_status,
+                "host": item.host,
             })
             current[url] = {
                 "url": url,
@@ -167,6 +236,8 @@ def update_streaks(items: list["Item"]) -> dict[str, dict[str, Any]]:
                 "count": count,
                 "history": history[-FAIL_STREAK_LIMIT:],
                 "removable": count >= FAIL_STREAK_LIMIT,
+                "failure_class": item.failure_class,
+                "host": item.host,
             }
         elif item.status == "probe_ok":
             # Only a decoded media stream is strong evidence that the source
@@ -179,7 +250,21 @@ def update_streaks(items: list["Item"]) -> dict[str, dict[str, Any]]:
                 "count": 0,
                 "history": [],
                 "removable": False,
+                "failure_class": "",
+                "host": item.host,
             }
+        elif item.status == "skip_internal":
+            # Private/adult feeds are never probed. Preserve their prior state
+            # instead of inventing a recovery or another decisive failure.
+            if prior:
+                current[url] = {
+                    **prior,
+                    "url": url,
+                    "name": item.name,
+                    "source": str(getattr(item, "source", "") or ""),
+                    "removable": False,
+                    "host": item.host,
+                }
         else:
             # Preserve decisive-failure history for every non-probe result,
             # including soft failures and playback_unverified. Otherwise a
@@ -192,6 +277,7 @@ def update_streaks(items: list["Item"]) -> dict[str, dict[str, Any]]:
                     "name": item.name,
                     "source": str(getattr(item, "source", "") or ""),
                     "removable": False,
+                    "host": item.host,
                 }
             else:
                 current[url] = {
@@ -201,6 +287,8 @@ def update_streaks(items: list["Item"]) -> dict[str, dict[str, Any]]:
                     "count": 0,
                     "history": [],
                     "removable": False,
+                    "failure_class": "",
+                    "host": item.host,
                 }
     return current
 
@@ -220,6 +308,13 @@ def channel_is_private_or_internal(item: "Item") -> bool:
 
 def url_digest(url: str) -> str:
     return hashlib.sha256(str(url).encode("utf-8")).hexdigest()
+
+
+def host_of(url: str) -> str:
+    try:
+        return (urllib.parse.urlsplit(str(url)).hostname or "").lower()
+    except ValueError:
+        return ""
 
 
 def safe_channel_url(url: str) -> str:
@@ -274,6 +369,7 @@ def write_channel_health(items: list[Item]) -> None:
         except (OSError, json.JSONDecodeError):
             current_hashes = set()
     # Preserve unsampled channel history, but drop URLs that no longer exist.
+    # An empty ledger means a build problem, not that every old URL vanished.
     lines: dict[str, dict[str, Any]] = {
         key: entry for key, entry in previous.items()
         if not current_hashes or key in current_hashes
@@ -283,10 +379,14 @@ def write_channel_health(items: list[Item]) -> None:
             continue
         key = item.url_hash or url_digest(item.url)
         old = previous.get(key, {})
-        decisive = is_decisive_failure(item) or (
-            item.status in {"http_error", "probe_failed"} and not is_soft_failure(item)
+        decisive = (
+            item.failure_class == "hard"
+            and item.status != "upstream_incident"
+            and not is_soft_failure(item)
         )
-        soft = is_soft_failure(item) or item.status in {"playback_unverified", "manifest_ok"}
+        soft = is_soft_failure(item) or item.status in {
+            "playback_unverified", "manifest_ok", "upstream_incident", "skip_internal",
+        }
         internal = channel_is_private_or_internal(item)
         count = int(old.get("decisive_failures", 0) or 0)
         if decisive and not internal:
@@ -297,6 +397,8 @@ def write_channel_health(items: list[Item]) -> None:
             count = 0
         if internal:
             verdict = "skip_internal"
+        elif item.status == "upstream_incident":
+            verdict = "observe_upstream"
         elif decisive and count >= FAIL_STREAK_LIMIT:
             verdict = "candidate_remove"
         elif decisive:
@@ -315,6 +417,13 @@ def write_channel_health(items: list[Item]) -> None:
             "source_line": item.source_line,
             "status": item.status,
             "http_status": item.http_status,
+            "final_url": safe_channel_url(item.final_url),
+            "content_type": item.content_type,
+            "failure_class": item.failure_class,
+            "evidence": redact_sensitive_text(item.evidence),
+            "attempts": item.attempts,
+            "host": item.host,
+            "redirect_count": item.redirect_count,
             "detail": redact_sensitive_text(item.detail),
             "checked_at": item.checked_at,
             "decisive_failures": count,
@@ -334,8 +443,9 @@ def write_channel_health(items: list[Item]) -> None:
         "policy": {
             "scope": "仅频道 URL；只报告，不自动删除 merged.m3u；未抽样频道保留历史记录",
             "remove_limit": FAIL_STREAK_LIMIT,
-            "soft_failures": "超时、网络不可达、播放未验证只观察，不计入删除",
+            "soft_failures": "超时、网络不可达、5xx、403/429、播放未验证只观察，不计入删除",
             "internal_sources": "运营商内网/私网地址跳过，不因境外探测失败判定失效",
+            "evidence": "每条记录保存最终 URL、Content-Type、失败类别、尝试 UA 数和重定向次数",
         },
         "summary": summary,
         "lines": ordered,
@@ -468,18 +578,150 @@ def load_items() -> list[Item]:
     return items
 
 
+def apply_host_circuit_breaker(items: list[Item]) -> None:
+    """Downgrade host-wide failures so one upstream outage cannot delete lines.
+
+    A host is considered suspect when at least six of its checked lines failed
+    in the same run and at least half of the host's checked lines failed.
+    Those results stay visible as ``upstream_incident`` and never count toward
+    the per-URL decisive-failure streak.
+    """
+    checked = [item for item in items if item.kind in {"channel", "live"}]
+    by_host: dict[str, list[Item]] = {}
+    for item in checked:
+        if item.host:
+            by_host.setdefault(item.host, []).append(item)
+    for host, rows in by_host.items():
+        failures = [row for row in rows if row.status in {"http_error", "probe_failed"}]
+        if len(rows) < 6 or len(failures) < 6 or len(failures) * 2 < len(rows):
+            continue
+        hard = [row for row in failures if row.failure_class == "hard"]
+        if len(hard) < 3 or len(hard) * 2 < len(rows):
+            continue
+        for row in failures:
+            row.failure_class = "soft"
+            row.status = "upstream_incident"
+            row.detail = "同一主机本轮 %d/%d 条同时失败，按上游故障处理，不累计删除" % (
+                len(failures), len(rows)
+            )
+
+
 def rotate_channel_sample(items: list[Item], limit: int) -> list[Item]:
-    """Rotate through channels across runs so long lists are covered over time."""
+    """Rotate through channels using a persistent cursor, not run numbers."""
     if limit <= 0:
         return items
     channels = [item for item in items if item.kind == "channel"]
     others = [item for item in items if item.kind != "channel"]
     if not channels:
         return others
-    run_index = int(os.environ.get("GITHUB_RUN_NUMBER", "0") or "0")
-    start = (run_index * limit) % len(channels)
-    rotated = channels[start:] + channels[:start]
+    state = load_health_state()
+    urls = state.get("urls", {}) if isinstance(state.get("urls", {}), dict) else {}
+    # New or recently failing URLs are checked first. A probe_ok URL remains
+    # eligible, but only after the backlog has had a fair chance.
+    def priority(item: Item) -> tuple[int, str]:
+        record = urls.get(item.url_hash or url_digest(item.url), {})
+        if not record:
+            return (0, item.url)
+        if record.get("failure_class") in {"hard", "soft"}:
+            return (1, str(record.get("last_checked", "")))
+        if record.get("status") == "probe_ok":
+            return (3, str(record.get("last_checked", "")))
+        return (2, str(record.get("last_checked", "")))
+
+    ordered = sorted(channels, key=priority)
+    # Preserve a round-robin cursor inside each priority band. This prevents a
+    # large backlog from starving one host while still covering new entries.
+    start = int(state.get("next_channel_offset", 0) or 0) % len(ordered)
+    rotated = ordered[start:] + ordered[:start]
     return others + rotated[:limit]
+
+
+def load_health_state() -> dict[str, Any]:
+    if not HEALTH_STATE_JSON.is_file():
+        return {}
+    try:
+        value = json.loads(HEALTH_STATE_JSON.read_text(encoding="utf-8"))
+        return value if isinstance(value, dict) else {}
+    except (OSError, json.JSONDecodeError):
+        return {}
+
+
+def write_health_state(
+    all_items: list[Item],
+    checked_items: list[Item],
+    sample_limit: int,
+    budget_seconds: int,
+    started_at: float,
+    attempted_at: str = "",
+) -> None:
+    """Persist a stable cursor and per-URL evidence across workflow runs."""
+    previous = load_health_state()
+    previous_offset = int(previous.get("next_channel_offset", 0) or 0)
+    previous_run = previous.get("last_run", {})
+    if not isinstance(previous_run, dict):
+        previous_run = {}
+    old_urls = previous.get("urls", {}) if isinstance(previous.get("urls", {}), dict) else {}
+    # Only retain entries that still exist in this run's generated inputs.
+    # Otherwise the committed state file grows forever as sources are removed.
+    current_hashes = {
+        item.url_hash or url_digest(item.url)
+        for item in all_items
+        if item.kind in {"live", "channel"}
+    }
+    urls = {
+        key: value
+        for key, value in old_urls.items()
+        if isinstance(value, dict) and (not current_hashes or key in current_hashes)
+    }
+    for item in checked_items:
+        key = item.url_hash or url_digest(item.url)
+        prior = urls.get(key, {})
+        urls[key] = {
+            **prior,
+            "url_hash": key,
+            "url": safe_channel_url(item.url),
+            "name": item.name,
+            "kind": item.kind,
+            "host": item.host,
+            "status": item.status,
+            "failure_class": item.failure_class,
+            "http_status": item.http_status,
+            "content_type": item.content_type,
+            "attempts": item.attempts,
+            "last_checked": item.checked_at,
+            "last_success": item.checked_at if item.status == "probe_ok" else str(prior.get("last_success", "") or ""),
+            "last_evidence": redact_sensitive_text(item.evidence)[:500],
+        }
+    channel_count = sum(1 for item in all_items if item.kind == "channel")
+    checked_channels = sum(1 for item in checked_items if item.kind == "channel")
+    # The cursor is advanced by the full requested sample. The priority queue
+    # ensures URLs not reached because of a timeout budget remain at the front
+    # on the next run, while URLs already probed move behind them.
+    requested_channels = min(
+        sample_limit if sample_limit > 0 else channel_count,
+        channel_count,
+    )
+    next_offset = (previous_offset + requested_channels) % channel_count if channel_count else 0
+    finished_at = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
+    state = {
+        "updated": finished_at,
+        "next_channel_offset": next_offset,
+        "channel_count": channel_count,
+        "sample_limit": sample_limit,
+        "last_run": {
+            "started_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime(started_at)),
+            "attempted_at": attempted_at or str(previous_run.get("attempted_at", "") or ""),
+            "finished_at": finished_at,
+            "checked_items": len(checked_items),
+            "checked_channels": checked_channels,
+            "budget_seconds": budget_seconds,
+        },
+        "urls": urls,
+    }
+    HEALTH_STATE_JSON.write_text(
+        json.dumps(state, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
 
 
 def validate_generated_configs() -> None:
@@ -517,108 +759,262 @@ def validate_generated_configs() -> None:
             raise ValueError("%s 仍包含真实凭据" % name)
 
 
-def http_check(url: str) -> tuple[int | None, str]:
+def encode_url(url: str) -> str:
+    """Percent-encode only the path/query so urllib accepts non-ASCII URLs."""
+    parts = urllib.parse.urlsplit(url)
+    return urllib.parse.urlunsplit((
+        parts.scheme,
+        parts.netloc,
+        urllib.parse.quote(urllib.parse.unquote(parts.path), safe="/%:@!$&'()*+,;=-._~"),
+        urllib.parse.quote(urllib.parse.unquote(parts.query), safe="=&?/:@!$'()*+,;%-._~"),
+        parts.fragment,
+    ))
+
+
+class _RedirectRecorder(urllib.request.HTTPRedirectHandler):
+    def __init__(self) -> None:
+        super().__init__()
+        self.chain: list[str] = []
+
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        self.chain.append(newurl)
+        return super().redirect_request(req, fp, code, msg, headers, newurl)
+
+
+def _request_once(url: str, user_agent: str, read_bytes: int) -> HttpResult:
+    redirects = _RedirectRecorder()
+    opener = urllib.request.build_opener(redirects)
+    request = urllib.request.Request(
+        encode_url(url),
+        headers={
+            "User-Agent": user_agent,
+            "Accept": "*/*",
+            "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.5",
+        },
+    )
+    try:
+        with opener.open(request, timeout=TIMEOUT) as response:
+            body = response.read(max(1, read_bytes))
+            return HttpResult(
+                status=int(response.status),
+                detail="",
+                final_url=response.geturl(),
+                content_type=response.headers.get("Content-Type", ""),
+                body=body,
+                redirects=redirects.chain,
+                user_agent=user_agent,
+                attempts=1,
+            )
+    except urllib.error.HTTPError as exc:
+        body = b""
+        try:
+            body = exc.read(4096)
+        except Exception:
+            pass
+        return HttpResult(
+            status=int(exc.code),
+            detail="HTTP %s" % exc.code,
+            final_url=exc.geturl(),
+            content_type=exc.headers.get("Content-Type", "") if exc.headers else "",
+            body=body,
+            redirects=redirects.chain,
+            user_agent=user_agent,
+            attempts=1,
+            error=str(exc),
+        )
+    except Exception as exc:
+        return HttpResult(
+            status=None,
+            detail=str(exc),
+            redirects=redirects.chain,
+            user_agent=user_agent,
+            attempts=1,
+            error=str(exc),
+        )
+
+
+def _classify_http_result(result: HttpResult) -> str:
+    status = result.status
+    if status is None:
+        return "soft"
+    if status in HARD_HTTP_STATUSES:
+        return "hard"
+    if status in SOFT_HTTP_STATUSES or status >= 500:
+        return "soft"
+    if status >= 400:
+        return "soft"
+    return ""
+
+
+def http_check(url: str, read_bytes: int = 4096) -> HttpResult:
+    """Try compatible player UAs before treating an HTTP failure as decisive."""
     if not url.startswith(("http://", "https://")):
-        return None, "不是 HTTP(S) 地址"
+        return HttpResult(None, "不是 HTTP(S) 地址", failure_class="soft")
     candidates = [url]
     parts = urllib.parse.urlsplit(url)
     if parts.netloc.lower() == "raw.githubusercontent.com":
         candidates.extend(prefix + url for prefix in PROXY_FALLBACKS)
-    last_detail = ""
+    attempts = 0
+    errors: list[str] = []
+    attempt_results: list[HttpResult] = []
     for candidate in candidates:
-        # Requests cannot contain non-ASCII characters; quote only the path/query.
-        parts = urllib.parse.urlsplit(candidate)
-        encoded = urllib.parse.urlunsplit((
-            parts.scheme,
-            parts.netloc,
-            urllib.parse.quote(urllib.parse.unquote(parts.path), safe="/%:@!$&'()*+,;=-._~"),
-            urllib.parse.quote(urllib.parse.unquote(parts.query), safe="=&?/:@!$'()*+,;%-._~"),
-            parts.fragment,
-        ))
-        for attempt in range(2):
-            request = urllib.request.Request(encoded, headers={"User-Agent": USER_AGENT, "Accept": "*/*"})
-            try:
-                with urllib.request.urlopen(request, timeout=TIMEOUT) as response:
-                    response.read(MAX_PROBE_BYTES)
-                    return int(response.status), ""
-            except urllib.error.HTTPError as exc:
-                last_detail = "HTTP %s" % exc.code
-                # A definitive HTTP error should not trigger proxy retries.
-                return int(exc.code), last_detail
-            except Exception as exc:
-                last_detail = str(exc)
-                if attempt == 0:
-                    time.sleep(0.5)
-    return None, last_detail
+        for user_agent in USER_AGENTS:
+            attempts += 1
+            result = _request_once(candidate, user_agent, read_bytes)
+            result.attempts = attempts
+            result.failure_class = _classify_http_result(result)
+            attempt_results.append(result)
+            if result.status is not None and result.status < 400:
+                return result
+            errors.append("%s %s" % (user_agent.split("/", 1)[0], result.detail))
+            # A 5xx/403/429 from every client is still environmental. Continue
+            # trying UAs because some gateways only reject unknown clients.
+            if result.status is not None and result.status not in HARD_HTTP_STATUSES:
+                continue
+            # For 404/410, another UA may still succeed; only stop after all
+            # compatible clients have independently failed.
+    # Keep the strongest evidence from the final attempt rather than issuing
+    # a fifth request. If that result is a hard status, require every UA to
+    # have failed before allowing it to count as decisive.
+    # A hard status is decisive only when every compatible client received a
+    # hard status. If one client timed out, hit a 5xx, or was rejected, the
+    # result remains environmental and cannot contribute to deletion.
+    if attempt_results and all(
+        row.status in HARD_HTTP_STATUSES for row in attempt_results
+    ):
+        result.failure_class = "hard"
+    else:
+        result.failure_class = "soft"
+    result.attempts = attempts
+    result.detail = " | ".join(errors[-4:]) or result.detail
+    if any(_soft_failure_text(item) for item in errors):
+        result.failure_class = "soft"
+    return result
 
 
-def probe(url: str, ffprobe: str) -> tuple[str, str]:
+def _ffprobe_headers(user_agent: str, referer: str = "") -> list[str]:
+    headers = ["-user_agent", user_agent]
+    if referer:
+        headers.extend(["-headers", "Referer: %s\r\n" % referer])
+    return headers
+
+
+def probe(url: str, ffprobe: str, user_agent: str = "") -> tuple[str, str]:
     if not ffprobe:
         return "playback_unverified", "未找到 ffprobe"
-    command = [
-        ffprobe, "-v", "error", "-rw_timeout", "15000000",
-        "-analyzeduration", "5000000", "-probesize", "5000000",
-        "-show_entries", "stream=codec_type", "-of", "csv=p=0", url,
-    ]
-    try:
-        result = subprocess.run(command, capture_output=True, timeout=35)
-        output = (result.stdout or b"").decode("utf-8", "replace").strip()
-        if result.returncode == 0 and output:
-            return "probe_ok", "ffprobe 检测到媒体流: %s" % output.replace("\n", ",")
-        error = (result.stderr or b"").decode("utf-8", "replace").strip().splitlines()
-        return "probe_failed", error[-1][:300] if error else "ffprobe 未检测到媒体流"
-    except subprocess.TimeoutExpired:
-        return "probe_failed", "ffprobe 超时"
-    except Exception as exc:
-        return "probe_failed", str(exc)
+    agents = [user_agent] if user_agent else list(USER_AGENTS)
+    errors: list[str] = []
+    for agent in agents:
+        command = [
+            ffprobe, "-v", "error", "-rw_timeout", "15000000",
+            "-analyzeduration", "5000000", "-probesize", "5000000",
+            *_ffprobe_headers(agent),
+            "-show_entries", "stream=codec_type", "-of", "csv=p=0", url,
+        ]
+        try:
+            result = subprocess.run(command, capture_output=True, timeout=35)
+            output = (result.stdout or b"").decode("utf-8", "replace").strip()
+            if result.returncode == 0 and output:
+                return "probe_ok", "ffprobe(%s) 检测到媒体流: %s" % (
+                    agent.split("/", 1)[0],
+                    output.replace("\n", ","),
+                )
+            error = (result.stderr or b"").decode("utf-8", "replace").strip().splitlines()
+            errors.append(error[-1][:220] if error else "ffprobe 未检测到媒体流")
+        except subprocess.TimeoutExpired:
+            errors.append("ffprobe 超时")
+        except Exception as exc:
+            errors.append(str(exc))
+        if _soft_failure_text(errors[-1]):
+            break
+    joined = " | ".join(errors)
+    if _soft_failure_text(joined):
+        return "manifest_ok", "探测超时/网络抖动，保留观察：" + joined[:300]
+    return "probe_failed", joined[:300] if joined else "ffprobe 未检测到媒体流"
 
 
-def probe_manifest(url: str, ffprobe: str) -> tuple[str, str]:
-    """Download a manifest and verify a media segment, not just HTTP 200."""
+def _manifest_media_lines(text: str, base_url: str) -> tuple[list[str], list[str]]:
+    """Return HLS variants and media references, resolving relative URLs."""
+    variants: list[str] = []
+    media: list[str] = []
+    lines = text.splitlines()
+    variant_lines: set[int] = set()
+    for index, raw in enumerate(lines):
+        if index in variant_lines:
+            continue
+        line = raw.strip()
+        if not line:
+            continue
+        upper = line.upper()
+        if upper.startswith("#EXT-X-STREAM-INF"):
+            for child_index, child in enumerate(lines[index + 1:], index + 1):
+                child = child.strip()
+                if not child:
+                    continue
+                if child.startswith("#"):
+                    break
+                joined = urllib.parse.urljoin(base_url, child)
+                if joined.startswith(("http://", "https://")):
+                    variants.append(joined)
+                    variant_lines.add(child_index)
+                break
+            continue
+        if line.startswith("#"):
+            match = re.search(r'URI="([^"]+)"', line, re.I)
+            if upper.startswith("#EXT-X-MAP") and match:
+                joined = urllib.parse.urljoin(base_url, match.group(1))
+                if joined.startswith(("http://", "https://")):
+                    media.append(joined)
+            continue
+        if "," in line:
+            continue
+        joined = urllib.parse.urljoin(base_url, line)
+        if joined.startswith(("http://", "https://")):
+            media.append(joined)
+    return variants, media
+
+
+def probe_manifest(url: str, ffprobe: str, user_agent: str = "") -> tuple[str, str]:
+    """Download a manifest, follow master variants, and verify media segments."""
     if not ffprobe:
         return "manifest_ok", "播放列表可下载；无 ffprobe，未验证媒体分片"
-    try:
-        request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-        with urllib.request.urlopen(request, timeout=TIMEOUT) as response:
-            text = response.read(MAX_PROBE_BYTES).decode("utf-8", "replace")
-        media_lines = [
-            line.strip() for line in text.splitlines()
-            if line.strip() and not line.strip().startswith("#")
-        ]
-        candidates: list[str] = []
-        for candidate in media_lines:
-            # A TXT channel list is not an HLS playlist. Only follow media
-            # references, not "channel,http://..." rows. Relative HLS
-            # segments are valid and must be resolved against the manifest.
-            if "," in candidate:
-                continue
-            joined = urllib.parse.urljoin(url, candidate)
-            if joined.startswith(("http://", "https://")):
-                candidates.append(joined)
-        if not candidates:
-            return "manifest_ok", "文本列表可下载；不是可直接探测的单条 HLS 播放列表"
-        # Check a small rotating set of segments. A single broken segment is
-        # often an ad/edge issue, while a playlist whose sampled segments all
-        # fail is much stronger evidence of an invalid stream.
-        errors: list[str] = []
-        for candidate in candidates[:3]:
-            status, detail = probe(candidate, ffprobe)
-            if status == "probe_ok":
-                return "probe_ok", "播放列表媒体分片可解码：" + detail
-            errors.append(detail)
-        joined_errors = " | ".join(error for error in errors if error)
-        if any(marker in joined_errors.lower() for marker in SOFT_FAILURE_MARKERS):
-            return "manifest_ok", "播放列表可下载，分片探测超时/网络抖动，保留观察：" + joined_errors[:300]
-        return "probe_failed", "播放列表可下载，但采样分片均不可解码：" + joined_errors[:300]
-    except Exception as exc:
-        detail = str(exc)
-        if any(marker in detail.lower() for marker in SOFT_FAILURE_MARKERS):
-            return "manifest_ok", "播放列表探测超时，保留观察：" + detail[:200]
-        return "manifest_ok", "播放列表可下载，媒体分片探测未完成：" + detail[:200]
+    agents = [user_agent] if user_agent else list(USER_AGENTS)
+    last_error = ""
+    for agent in agents:
+        try:
+            request = urllib.request.Request(url, headers={"User-Agent": agent})
+            with urllib.request.urlopen(request, timeout=TIMEOUT) as response:
+                text = response.read(MAX_MANIFEST_BYTES).decode("utf-8", "replace")
+                final_url = response.geturl()
+            variants, candidates = _manifest_media_lines(text, final_url)
+            if variants:
+                # Prefer the last (usually lowest-bandwidth) variant for a
+                # quick health check, then fall back to the first few variants.
+                candidates = list(reversed(variants))[:3] + candidates
+            if not candidates:
+                return "manifest_ok", "文本列表可下载；不是可直接探测的单条 HLS 播放列表"
+            errors: list[str] = []
+            for candidate in candidates[:5]:
+                status, detail = probe(candidate, ffprobe, agent)
+                if status == "probe_ok":
+                    return "probe_ok", "播放列表媒体分片可解码：" + detail
+                errors.append(detail)
+            joined_errors = " | ".join(error for error in errors if error)
+            if _soft_failure_text(joined_errors):
+                return "manifest_ok", "播放列表可下载，分片探测超时/网络抖动，保留观察：" + joined_errors[:300]
+            last_error = joined_errors
+        except Exception as exc:
+            last_error = str(exc)
+            if _soft_failure_text(last_error):
+                return "manifest_ok", "播放列表探测超时，保留观察：" + last_error[:200]
+    if _soft_failure_text(last_error):
+        return "manifest_ok", "播放列表可下载，分片探测遇到网络/上游错误，保留观察：" + last_error[:300]
+    return "probe_failed", "播放列表可下载，但采样分片均不可解码：" + last_error[:300]
 
 
 def check(item: Item, ffprobe: str, do_probe: bool) -> Item:
     item.checked_at = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
+    item.host = host_of(item.url)
     # Private/adult sections are intentionally excluded from automated health
     # probes: their upstreams require app-side context and should not be
     # requested or published in a health report.
@@ -635,34 +1031,86 @@ def check(item: Item, ffprobe: str, do_probe: bool) -> Item:
         item.detail = "站点使用内置 spider 标识，无法在服务端验证播放"
         return item
     was_requires_app = item.kind == "site" and item.status == "requires_app"
-    status, detail = http_check(item.url)
-    item.http_status = status
-    if status is None:
+    http_result = http_check(item.url, 64 * 1024 if item.kind in {"live", "channel"} else 4096)
+    item.http_status = http_result.status
+    item.final_url = http_result.final_url
+    item.content_type = http_result.content_type
+    item.attempts = http_result.attempts
+    item.redirect_count = len(http_result.redirects or [])
+    if http_result.status is None:
         item.status = "http_error"
-        item.detail = redact_sensitive_text(detail)
+        item.failure_class = "soft"
+        item.evidence = "所有兼容 UA 均未取得 HTTP 响应"
+        item.detail = redact_sensitive_text(http_result.detail)
         return item
-    if status >= 400:
+    if http_result.status >= 400:
         item.status = "http_error"
-        item.detail = redact_sensitive_text(detail)
+        item.failure_class = http_result.failure_class or "soft"
+        item.evidence = "HTTP %s；尝试 %d 次；Content-Type=%s；重定向 %d 次" % (
+            http_result.status,
+            http_result.attempts,
+            http_result.content_type or "未知",
+            item.redirect_count,
+        )
+        item.detail = redact_sensitive_text(http_result.detail)
         return item
     if item.kind in {"live", "channel"}:
-        if do_probe and item.url.lower().split("?", 1)[0].endswith((".m3u8", ".mpd", ".mp4", ".flv", ".ts")):
-            item.status, item.detail = probe(item.url, ffprobe)
-        elif item.url.lower().split("?", 1)[0].endswith((".m3u", ".txt")):
-            if do_probe:
-                item.status, item.detail = probe_manifest(item.url, ffprobe)
+        body_prefix = http_result.body[:4096].lstrip()
+        is_playlist = (
+            b"#EXTM3U" in http_result.body[:8192].upper()
+            or "mpegurl" in http_result.content_type.lower()
+        )
+        is_manifest_list = item.url.lower().split("?", 1)[0].endswith((".m3u", ".txt"))
+        media_suffix = item.url.lower().split("?", 1)[0].endswith((".m3u8", ".mpd", ".mp4", ".flv", ".ts"))
+        if is_manifest_list and do_probe:
+            # A TXT/M3U channel bundle can contain hundreds of channels. Never
+            # hand that list to ffprobe as if it were one media stream.
+            item.status, item.detail = probe_manifest(
+                http_result.final_url or item.url, ffprobe, http_result.user_agent
+            )
+        elif is_playlist and do_probe:
+            if b"#EXT-X-STREAM-INF" in http_result.body[:MAX_MANIFEST_BYTES].upper():
+                item.status, item.detail = probe_manifest(
+                    http_result.final_url or item.url, ffprobe, http_result.user_agent
+                )
             else:
-                item.status = "manifest_ok"
-                item.detail = "播放列表可下载，具体频道仍需实测"
+                item.status, item.detail = probe(
+                    http_result.final_url or item.url, ffprobe, http_result.user_agent
+                )
+        elif (media_suffix or (body_prefix and not body_prefix.startswith((b"<", b"{", b"[")))) and do_probe:
+            item.status, item.detail = probe(http_result.final_url or item.url, ffprobe, http_result.user_agent)
+        elif is_manifest_list:
+            item.status = "manifest_ok"
+            item.detail = "播放列表可下载，具体频道仍需实测"
         else:
             item.status = "playback_unverified"
-            item.detail = "HTTP 可访问，但无法仅凭状态码确认可播放"
+            item.detail = "HTTP 可访问，但正文/类型未能确认是媒体或 HLS 播放列表"
+        if item.status in {"probe_failed", "manifest_ok"} and _soft_failure_text(item.detail):
+            item.failure_class = "soft"
+        elif item.status == "probe_failed":
+            item.failure_class = "hard"
+        else:
+            item.failure_class = ""
+        item.evidence = "HTTP %s；UA=%s；Content-Type=%s；重定向 %d 次" % (
+            http_result.status,
+            http_result.user_agent.split("/", 1)[0],
+            http_result.content_type or "未知",
+            item.redirect_count,
+        )
     elif was_requires_app:
         item.status = "requires_app"
         item.detail = "API 地址可访问；播放仍需影视 App 与对应 spider 解析"
+        item.evidence = "HTTP %s；Content-Type=%s" % (
+            http_result.status,
+            http_result.content_type or "未知",
+        )
     else:
         item.status = "reachable"
         item.detail = "HTTP 可访问"
+        item.evidence = "HTTP %s；Content-Type=%s" % (
+            http_result.status,
+            http_result.content_type or "未知",
+        )
     return item
 
 
@@ -679,6 +1127,13 @@ def write_report(items: list[Item]) -> None:
             "url": redact_sensitive_text(item.url),
             "status": item.status,
             "http_status": item.http_status,
+            "final_url": safe_channel_url(item.final_url),
+            "content_type": item.content_type,
+            "failure_class": item.failure_class,
+            "evidence": redact_sensitive_text(item.evidence),
+            "attempts": item.attempts,
+            "host": item.host,
+            "redirect_count": item.redirect_count,
             "detail": redact_sensitive_text(item.detail),
             "checked_at": item.checked_at,
             "source": redact_sensitive_text(item.source),
@@ -691,7 +1146,7 @@ def write_report(items: list[Item]) -> None:
         "summary": counts,
         "coverage": {
             "checked_items": len(items),
-            "note": "频道检查默认抽样；HTTP 200 不等于可播放，playback_unverified 需在影视 App 中复测",
+            "note": "多 UA、重定向、Content-Type 和 HLS/ffprobe 联合探测；HTTP 200 不等于可播放",
         },
         "items": report_items,
     }
@@ -702,11 +1157,17 @@ def write_report(items: list[Item]) -> None:
             % (len(findings), ", ".join(sorted({item.rsplit(":", 1)[-1] for item in findings})))
         )
     HEALTH_JSON.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    csv_fields = [
+        "kind", "name", "url", "status", "http_status", "failure_class",
+        "host", "attempts", "content_type", "detail", "checked_at",
+        "source", "source_line", "final_url", "evidence", "redirect_count",
+    ]
     with HEALTH_CSV.open("w", encoding="utf-8-sig", newline="") as handle:
         writer = csv.DictWriter(
             handle,
-            fieldnames=["kind", "name", "url", "status", "http_status", "detail", "checked_at"],
+            fieldnames=csv_fields,
             lineterminator="\n",
+            extrasaction="ignore",
         )
         writer.writeheader()
         writer.writerows(report["items"])
@@ -714,8 +1175,9 @@ def write_report(items: list[Item]) -> None:
     with blocked.open("w", encoding="utf-8-sig", newline="") as handle:
         writer = csv.DictWriter(
             handle,
-            fieldnames=["kind", "name", "url", "status", "http_status", "detail", "checked_at"],
+            fieldnames=csv_fields,
             lineterminator="\n",
+            extrasaction="ignore",
         )
         writer.writeheader()
         writer.writerows(
@@ -742,7 +1204,7 @@ def write_removable(items: list[Item]) -> None:
             "counted_failures": "仅高置信确定性失效：404/410、明确拒绝、持续无效媒体流等",
             "ignored_failures": "超时、403/429/451 等地区限制/鉴权/限流、临时 5xx；不计入也不清空既有失败历史",
             "recovery": "只有 probe_ok（ffprobe 成功解码媒体流）才清零；reachable、manifest_ok、playback_unverified 均保留历史",
-            "action": "达到上限的源会在下一次聚合时自动从 geit-fish 移除；merged.m3u 中的频道仍按独立频道链路处理，不因一个 live 配置项被删而批量删除",
+            "action": "连续失败超过 5 次（第 6 次）的源会在下一次聚合时自动从 geit-fish 移除；merged.m3u 中的频道仍按独立频道链路处理，不因一个 live 配置项被删而批量删除",
         },
         "summary": {
             "flagged": len(flagged),
@@ -760,17 +1222,48 @@ def write_removable(items: list[Item]) -> None:
                 % (entry["count"], entry["name"], entry.get("source") or "未知"))
 
 
+def write_ai_review(output_dir: Path | None = None) -> dict[str, Any]:
+    """Run the optional AI review without ever affecting health decisions."""
+    try:
+        import ai_assist
+
+        mode = os.environ.get("AI_MODE", "none").strip().lower()
+        return ai_assist.write_ai_review(mode, output_dir)
+    except Exception as exc:
+        log("AI 辅助失败，健康检查继续（fail-open）: %s" % exc)
+        return {"status": "unavailable", "provider": "", "suggestions": 0}
+
+
 def main() -> int:
+    started_at = time.time()
+    attempted_at = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime(started_at))
     parser = argparse.ArgumentParser()
     parser.add_argument("--probe", action="store_true", help="用 ffprobe 探测直接媒体地址")
     parser.add_argument("--workers", type=int, default=12)
     parser.add_argument("--max-channels", type=int, default=0,
                         help="限制合并 M3U 的抽样频道数；0 表示不抽样")
+    parser.add_argument("--budget-seconds", type=int, default=0,
+                        help="本轮时间预算；到达后保留游标，剩余频道留给下一轮")
     parser.add_argument("--items-file", type=Path,
                         help="只检查 geit-fish 中的指定条目，供工作流分批覆盖全部条目")
     parser.add_argument("--output-dir", type=Path, default=DOCS_DIR,
                         help="健康报告输出目录")
     args = parser.parse_args()
+    global HEALTH_STATE_JSON
+    HEALTH_STATE_JSON = args.output_dir / "health_state.json"
+    # Record the attempt before network work. If this run is cancelled or its
+    # report cannot be committed, the gate can retry instead of waiting
+    # another full 48 hours from a failed attempt.
+    attempt_state = load_health_state()
+    old_run = attempt_state.get("last_run", {})
+    if not isinstance(old_run, dict):
+        old_run = {}
+    attempt_state["last_run"] = {**old_run, "attempted_at": attempted_at}
+    HEALTH_STATE_JSON.parent.mkdir(parents=True, exist_ok=True)
+    HEALTH_STATE_JSON.write_text(
+        json.dumps(attempt_state, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
     validate_generated_configs()
     items = load_items()
     if args.items_file and args.items_file.is_file():
@@ -781,6 +1274,7 @@ def main() -> int:
             if isinstance(item, dict)
         }
         items = [item for item in items if (item.kind, item.name, item.url) in wanted]
+    all_items = items
     items = rotate_channel_sample(items, args.max_channels)
     ffprobe = shutil.which("ffprobe") or ""
     if not ffprobe and Path(r"C:\ffmpeg\bin\ffprobe.exe").is_file():
@@ -789,17 +1283,25 @@ def main() -> int:
     checked: list[Item] = []
     with ThreadPoolExecutor(max_workers=max(1, args.workers)) as pool:
         futures = {pool.submit(check, item, ffprobe, args.probe): item for item in items}
-        for index, future in enumerate(as_completed(futures), 1):
-            try:
-                checked.append(future.result())
-            except Exception as exc:
-                item = futures[future]
-                item.status = "http_error"
-                item.detail = str(exc)
-                item.checked_at = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
-                checked.append(item)
-            if index % 50 == 0:
-                log("已检查 %d/%d" % (index, len(items)))
+        try:
+            for index, future in enumerate(as_completed(futures), 1):
+                if args.budget_seconds and time.time() - started_at >= args.budget_seconds:
+                    log("达到 %d 秒时间预算，本轮提前结束" % args.budget_seconds)
+                    break
+                try:
+                    checked.append(future.result())
+                except Exception as exc:
+                    item = futures[future]
+                    item.status = "http_error"
+                    item.failure_class = "soft"
+                    item.detail = str(exc)
+                    item.checked_at = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
+                    checked.append(item)
+                if index % 50 == 0:
+                    log("已检查 %d/%d" % (index, len(items)))
+        finally:
+            for pending_future in futures:
+                pending_future.cancel()
     checked.sort(key=lambda item: (item.kind, item.name, item.url))
     global HEALTH_JSON, HEALTH_CSV
     HEALTH_JSON = args.output_dir / "health.json"
@@ -808,9 +1310,20 @@ def main() -> int:
     REMOVABLE_JSON = args.output_dir / "removable.json"
     global CHANNEL_HEALTH_JSON
     CHANNEL_HEALTH_JSON = args.output_dir / "channel_health.json"
+    apply_host_circuit_breaker(checked)
     write_report(checked)
     write_removable(checked)
     write_channel_health(checked)
+    write_health_state(
+        all_items,
+        checked,
+        args.max_channels,
+        args.budget_seconds,
+        started_at,
+        attempted_at,
+    )
+    ai_status = write_ai_review(args.output_dir)
+    log("AI 辅助状态: %s" % ai_status.get("status", "unknown"))
     log("健康报告已写入 %s" % args.output_dir)
     return 0
 
