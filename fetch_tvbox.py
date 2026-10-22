@@ -67,6 +67,7 @@ CHANNEL_RULES_PATH = TVBOX_DIR / "channel_rules.json"
 LIVE_SOURCE_KEY = "source"
 # 健康工作流写出的失效频道 URL 清单，达到连续失败上限即不再录入 merged.m3u。
 DEAD_CHANNELS_PATH = DOCS_DIR / "dead_channels.json"
+WHITELIST_PATH = HERE / "tvbox" / "whitelist.txt"
 
 USER_AGENT = "Mozilla/5.0 (compatible; GeitCollector/2.0; +https://github.com/hegio/Geit)"
 TIMEOUT = 30
@@ -930,6 +931,64 @@ def url_digest(url: str) -> str:
     return hashlib.sha256(url.encode("utf-8")).hexdigest()
 
 
+def load_whitelist() -> tuple[set[str], set[str]]:
+    """Read the manual veto list that protects sources from auto-removal.
+
+    Kept in sync with check_health.load_whitelist(): one entry per line, '#'
+    starts a comment, a URL entry also protects its host, and a bare host or
+    domain suffix matches that host and every subdomain. A missing or
+    unreadable file simply returns empty sets and disables the feature.
+    """
+    urls: set[str] = set()
+    hosts: set[str] = set()
+    if not WHITELIST_PATH.is_file():
+        return urls, hosts
+    try:
+        raw = WHITELIST_PATH.read_text(encoding="utf-8-sig", errors="replace")
+    except OSError:
+        return urls, hosts
+    for line in raw.splitlines():
+        entry = line.strip()
+        if not entry or entry.startswith("#"):
+            continue
+        entry = entry.split("#", 1)[0].strip()
+        if not entry:
+            continue
+        if entry.lower().startswith(("http://", "https://")):
+            urls.add(entry)
+            try:
+                hosts.add((urllib.parse.urlsplit(entry).hostname or "").lower())
+            except ValueError:
+                pass
+        else:
+            hosts.add(entry.lower().lstrip("."))
+    hosts.discard("")
+    return urls, hosts
+
+
+def is_whitelisted(url: str, whitelist: tuple[set[str], set[str]]) -> bool:
+    """True when a channel URL is protected from automatic removal."""
+    urls, hosts = whitelist
+    if not urls and not hosts:
+        return False
+    target = str(url).strip()
+    if target in urls:
+        return True
+    lowered = target.lower()
+    if any(entry and entry in lowered for entry in urls):
+        return True
+    try:
+        host = (urllib.parse.urlsplit(target).hostname or "").lower()
+    except ValueError:
+        return False
+    if not host:
+        return False
+    return any(
+        candidate and (host == candidate or host.endswith("." + candidate))
+        for candidate in hosts
+    )
+
+
 def channel_quality(name: str) -> str:
     value = name.lower()
     if re.search(r"8k", value):
@@ -1125,7 +1184,26 @@ def load_dead_channel_urls() -> set[str]:
     urls = data.get("removed_urls", []) if isinstance(data, dict) else []
     if not isinstance(urls, list):
         return set()
-    return {str(url) for url in urls if str(url)}
+    # tvbox/whitelist.txt is the owner's veto and wins over a stale report:
+    # docs/dead_channels.json is only rewritten by the health workflow, so
+    # without this a freshly whitelisted URL would keep being dropped from
+    # merged.m3u until the next health run finished.
+    whitelist = load_whitelist()
+    if not any(whitelist):
+        return {str(url) for url in urls if str(url)}
+    kept_out = 0
+    result: set[str] = set()
+    for url in urls:
+        value = str(url)
+        if not value:
+            continue
+        if is_whitelisted(value, whitelist):
+            kept_out += 1
+            continue
+        result.add(value)
+    if kept_out:
+        log("白名单保护 %d 个频道 URL，本轮不剔除" % kept_out)
+    return result
 
 
 def drop_dead_lives(lives: list[dict[str, Any]]) -> list[dict[str, Any]]:

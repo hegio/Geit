@@ -645,6 +645,59 @@ class RemovedChannelTests(unittest.TestCase):
         )
 
 
+class WhitelistAggregationTests(unittest.TestCase):
+    """The aggregator must honour the whitelist even against a stale report.
+
+    docs/dead_channels.json is only rewritten by the health workflow, so a
+    URL added to tvbox/whitelist.txt right now would otherwise keep being
+    dropped from merged.m3u until the next health run completed.
+    """
+
+    def setUp(self) -> None:
+        self._dir = tempfile.TemporaryDirectory()
+        self.root = Path(self._dir.name)
+        self._dead = fetch_tvbox.DEAD_CHANNELS_PATH
+        self._wl = fetch_tvbox.WHITELIST_PATH
+        fetch_tvbox.DEAD_CHANNELS_PATH = self.root / "dead_channels.json"
+        fetch_tvbox.WHITELIST_PATH = self.root / "whitelist.txt"
+
+    def tearDown(self) -> None:
+        fetch_tvbox.DEAD_CHANNELS_PATH = self._dead
+        fetch_tvbox.WHITELIST_PATH = self._wl
+        self._dir.cleanup()
+
+    def _seed_dead(self, urls: list[str]) -> None:
+        fetch_tvbox.DEAD_CHANNELS_PATH.write_text(json.dumps({
+            "updated": "x",
+            "removed_urls": urls,
+        }), encoding="utf-8")
+
+    def _write_whitelist(self, text: str) -> None:
+        fetch_tvbox.WHITELIST_PATH.write_text(text, encoding="utf-8")
+
+    def test_stale_dead_list_does_not_remove_whitelisted_url(self) -> None:
+        target = "http://gone.example/live/cctv1.m3u8"
+        self._seed_dead([target, "http://other.example/live.m3u8"])
+        self._write_whitelist("gone.example\n")
+        dead = fetch_tvbox.load_dead_channel_urls()
+        self.assertNotIn(target, dead)
+        self.assertIn("http://other.example/live.m3u8", dead)
+
+    def test_missing_whitelist_keeps_legacy_behaviour(self) -> None:
+        target = "http://gone.example/live/cctv1.m3u8"
+        self._seed_dead([target])
+        # No whitelist file at all.
+        self.assertIn(target, fetch_tvbox.load_dead_channel_urls())
+
+    def test_url_entry_protects_host_and_subdomains(self) -> None:
+        self._write_whitelist("http://gone.example/live/cctv1.m3u8\n")
+        whitelist = fetch_tvbox.load_whitelist()
+        self.assertTrue(fetch_tvbox.is_whitelisted(
+            "http://cdn.gone.example/live/other.m3u8", whitelist))
+        self.assertFalse(fetch_tvbox.is_whitelisted(
+            "http://gone.example.evil.com/live.m3u8", whitelist))
+
+
 class CredentialRedactionTests(unittest.TestCase):
     """A credential shape the redactor missed must never kill the run.
 
