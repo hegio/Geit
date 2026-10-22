@@ -82,6 +82,9 @@ PROXY_FALLBACKS = (
     "https://ghfast.top/",
 )
 MERGED_PROXY_PREFIX = "https://gh-proxy.com/"
+# Public HLS stream used once per run to prove ffprobe can actually decode.
+# Without it a crashing binary mislabels every link as dead.
+PROBE_SELF_TEST_URL = "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
 
 
 @dataclass
@@ -614,6 +617,14 @@ def rotate_channel_sample(items: list[Item], limit: int) -> list[Item]:
     others = [item for item in items if item.kind != "channel"]
     if not channels:
         return others
+    # Private/ISP-intranet channels are never probed (see check()), so they must
+    # not consume the sample budget. Otherwise a cursor that lands inside a
+    # private block returns nothing but skipped lines and the run loses its
+    # probe capacity entirely.
+    probeable = [item for item in channels if not channel_is_private_or_internal(item)]
+    if not probeable:
+        return others
+    channels = probeable
     state = load_health_state()
     urls = state.get("urls", {}) if isinstance(state.get("urls", {}), dict) else {}
     # New or recently failing URLs are checked first. A probe_ok URL remains
@@ -692,7 +703,13 @@ def write_health_state(
             "last_success": item.checked_at if item.status == "probe_ok" else str(prior.get("last_success", "") or ""),
             "last_evidence": redact_sensitive_text(item.evidence)[:500],
         }
-    channel_count = sum(1 for item in all_items if item.kind == "channel")
+    # The cursor indexes the same filtered list rotate_channel_sample() uses.
+    # Counting every channel here (including never-probed private ones) would
+    # desynchronise the cursor from the sampled list and skip real channels.
+    channel_count = sum(
+        1 for item in all_items
+        if item.kind == "channel" and not channel_is_private_or_internal(item)
+    )
     checked_channels = sum(1 for item in checked_items if item.kind == "channel")
     # The cursor is advanced by the full requested sample. The priority queue
     # ensures URLs not reached because of a timeout budget remain at the front
@@ -902,6 +919,10 @@ def _ffprobe_headers(user_agent: str, referer: str = "") -> list[str]:
 def probe(url: str, ffprobe: str, user_agent: str = "") -> tuple[str, str]:
     if not ffprobe:
         return "playback_unverified", "未找到 ffprobe"
+    # A binary that segfaults on the first real stream reports rc=139 for
+    # every URL, which used to be recorded as "probe_failed" and pushed
+    # healthy live sources toward the deletion threshold. Treat a crash as an
+    # unavailable probe instead of a dead link.
     agents = [user_agent] if user_agent else list(USER_AGENTS)
     errors: list[str] = []
     for agent in agents:
@@ -918,6 +939,17 @@ def probe(url: str, ffprobe: str, user_agent: str = "") -> tuple[str, str]:
                 return "probe_ok", "ffprobe(%s) 检测到媒体流: %s" % (
                     agent.split("/", 1)[0],
                     output.replace("\n", ","),
+                )
+            # Negative return codes are the shell reporting a signal: -11 is
+            # SIGSEGV, -6 SIGABRT. A crash says nothing about the stream.
+            # Shells also report a signal as 128+n (139 = SIGSEGV), so cover
+            # both encodings.
+            if result.returncode is not None and (
+                result.returncode < 0 or result.returncode >= 128
+            ):
+                return "playback_unverified", (
+                    "ffprobe 进程崩溃（信号 %d），本机探测不可用，不判定失效"
+                    % (result.returncode if result.returncode >= 128 else -result.returncode)
                 )
             error = (result.stderr or b"").decode("utf-8", "replace").strip().splitlines()
             errors.append(error[-1][:220] if error else "ffprobe 未检测到媒体流")
@@ -1279,6 +1311,18 @@ def main() -> int:
     ffprobe = shutil.which("ffprobe") or ""
     if not ffprobe and Path(r"C:\ffmpeg\bin\ffprobe.exe").is_file():
         ffprobe = r"C:\ffmpeg\bin\ffprobe.exe"
+    # A ffprobe that crashes on real streams would label every URL
+    # probe_failed and push healthy sources toward deletion. Verify the
+    # binary against a public test stream once, then drop it for the whole
+    # run if it cannot decode anything. HTTP checks still happen.
+    if args.probe and ffprobe:
+        status, detail = probe(PROBE_SELF_TEST_URL, ffprobe)
+        if status != "probe_ok":
+            log("WARN ffprobe 自检未通过（%s: %s），本轮退化为仅 HTTP 探测" % (status, detail[:200]))
+            ffprobe = ""
+            args.probe = False
+        else:
+            log("ffprobe 自检通过: %s" % detail[:160])
     log("检查 %d 个条目，ffprobe=%s" % (len(items), ffprobe or "不可用"))
     checked: list[Item] = []
     with ThreadPoolExecutor(max_workers=max(1, args.workers)) as pool:

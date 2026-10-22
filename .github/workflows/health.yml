@@ -136,20 +136,62 @@ jobs:
         # ubuntu-latest image has no ffprobe and apt-get is too slow to finish,
         # so fetch a standalone binary instead. Never fail the job here: the
         # check still runs and degrades to HTTP-only probing.
+        #
+        # Two builds segfault on the runner the moment they open a network
+        # stream (rc=139 "dumped core"): eugeneware/ffmpeg-static b6.1.1 and
+        # johnvansickle ffmpeg 7.0.2. Both print a healthy -version, so the
+        # only way to catch them is a real probe, which is why the self test
+        # below is mandatory. BtbN's git-master build and Ubuntu's apt ffprobe
+        # 6.1.1 both decode fine.
         run: |
           if command -v ffprobe >/dev/null 2>&1; then
             echo "使用预装 ffprobe: $(ffprobe -version | head -n1)"
             exit 0
           fi
           mkdir -p "$HOME/.local/bin"
-          url="https://github.com/eugeneware/ffmpeg-static/releases/download/b6.1.1/ffprobe-linux-x64.gz"
-          if curl -fsSL --connect-timeout 20 --max-time 300 "$url" | gunzip -c > "$HOME/.local/bin/ffprobe"; then
+          # Prefer apt (Ubuntu 6.1.1, verified working) but never let it block
+          # the job: a slow mirror used to hang it for the whole run.
+          if timeout 420 bash -c 'sudo apt-get update -qq >/dev/null 2>&1 && sudo apt-get install -y -qq ffmpeg >/dev/null 2>&1' \
+             && command -v ffprobe >/dev/null 2>&1; then
+            echo "已通过 apt 安装 ffprobe: $(ffprobe -version | head -n1)"
+            exit 0
+          fi
+          echo "::warning::apt 安装 ffprobe 未成功，改用独立二进制"
+          url="https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-linux64-lgpl.tar.xz"
+          tmpdir="$(mktemp -d)"
+          if curl -fsSL --connect-timeout 20 --max-time 420 "$url" | tar -xJf - -C "$tmpdir" --wildcards '*/bin/ffprobe' 2>/dev/null \
+             && [ -n "$(find "$tmpdir" -name ffprobe -type f 2>/dev/null)" ]; then
+            cp "$(find "$tmpdir" -name ffprobe -type f | head -n1)" "$HOME/.local/bin/ffprobe"
             chmod +x "$HOME/.local/bin/ffprobe"
             echo "$HOME/.local/bin" >> "$GITHUB_PATH"
             echo "已安装独立 ffprobe: $("$HOME/.local/bin/ffprobe" -version | head -n1)"
+            # A ffprobe that starts but cannot decode anything turns every
+            # stream into a hard failure, which is worse than having none.
+            # Probe one public test stream and report the raw verdict so a
+            # broken binary is visible instead of silently mislabelling links.
+            self_test() {
+              local probe="$1"
+              local out rc
+              out=$(timeout 90 "$probe" -v error -rw_timeout 15000000 \
+                -analyzeduration 5000000 -probesize 5000000 \
+                -user_agent "Mozilla/5.0" -show_entries stream=codec_type \
+                -of csv=p=0 "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8" 2>&1)
+              rc=$?
+              echo "自检 rc=$rc 输出=[$out]"
+              [ "$rc" -eq 0 ] && [ -n "$out" ]
+            }
+            if self_test "$HOME/.local/bin/ffprobe"; then
+              echo "ffprobe 自检通过"
+            else
+              echo "::warning::ffprobe 自检未通过，本次将退化为仅 HTTP 探测（不会判定失效，也不会清零失败历史）"
+              rm -f "$HOME/.local/bin/ffprobe"
+              grep -v "^$HOME/.local/bin$" "$GITHUB_PATH" > "$GITHUB_PATH.tmp" || true
+              mv "$GITHUB_PATH.tmp" "$GITHUB_PATH" || true
+            fi
           else
             echo "::warning::ffprobe 下载失败，本次退化为仅 HTTP 探测（不会判定失效，也不会清零失败历史）"
           fi
+          rm -rf "$tmpdir"
 
       - name: 检查链接健康状态
         env:
