@@ -16,6 +16,7 @@ on:
       - 'tvbox/channel_rules.json'
       - 'py/**.py'
       - 'docs/removable.json'
+      - 'docs/dead_channels.json'
       - '.github/workflows/collect.yml'
 
 permissions:

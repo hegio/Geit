@@ -222,6 +222,7 @@ jobs:
             docs/health.csv \
             docs/blocked.csv \
             docs/removable.json \
+            docs/dead_channels.json \
             docs/channel_health.json \
             docs/health_state.json \
             docs/ai_review.json
@@ -251,6 +252,7 @@ jobs:
             docs/health.csv
             docs/blocked.csv
             docs/removable.json
+            docs/dead_channels.json
             docs/channel_health.json
             docs/health_state.json
             docs/ai_review.json

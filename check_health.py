@@ -38,6 +38,7 @@ DOCS_DIR = HERE / "docs"
 HEALTH_JSON = DOCS_DIR / "health.json"
 HEALTH_CSV = DOCS_DIR / "health.csv"
 REMOVABLE_JSON = DOCS_DIR / "removable.json"
+DEAD_CHANNELS_JSON = DOCS_DIR / "dead_channels.json"
 CHANNEL_LEDGER_JSON = DOCS_DIR / "channel_ledger.json"
 CHANNEL_HEALTH_JSON = DOCS_DIR / "channel_health.json"
 HEALTH_STATE_JSON = DOCS_DIR / "health_state.json"
@@ -349,6 +350,31 @@ def write_channel_health(items: list[Item]) -> None:
     This report never removes a channel. It classifies each URL into
     keep/observe/candidate so a later, separately reviewed step can act.
     """
+    ordered = _channel_health_rows(items)
+    summary: dict[str, int] = {}
+    for row in ordered:
+        summary[row["verdict"]] = summary.get(row["verdict"], 0) + 1
+    report = {
+        "updated": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+        "policy": {
+            "scope": "仅频道 URL；只报告，不自动删除 merged.m3u；未抽样频道保留历史记录",
+            "remove_limit": FAIL_STREAK_LIMIT,
+            "soft_failures": "超时、网络不可达、5xx、403/429、播放未验证只观察，不计入删除",
+            "internal_sources": "运营商内网/私网地址跳过，不因境外探测失败判定失效",
+            "evidence": "每条记录保存最终 URL、Content-Type、失败类别、尝试 UA 数和重定向次数",
+        },
+        "summary": summary,
+        "lines": ordered,
+    }
+    if find_sensitive_credentials(report):
+        raise ValueError("频道健康报告包含真实凭据，已中止写入")
+    CHANNEL_HEALTH_JSON.write_text(
+        json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
+
+
+def _channel_health_rows(items: list[Item]) -> list[dict[str, Any]]:
+    """Build one health row per channel URL, carrying history across runs."""
     previous: dict[str, dict[str, Any]] = {}
     current_hashes: set[str] = set()
     if CHANNEL_HEALTH_JSON.is_file():
@@ -438,26 +464,52 @@ def write_channel_health(items: list[Item]) -> None:
         lines.values(),
         key=lambda row: (row["verdict"], row["name"], row.get("url", "")),
     )
-    summary: dict[str, int] = {}
-    for row in ordered:
-        summary[row["verdict"]] = summary.get(row["verdict"], 0) + 1
+    return ordered
+
+
+def write_dead_channels(items: list[Item]) -> None:
+    """List channel URLs that failed decisively often enough to stop re-listing.
+
+    The unit of removal is a single channel URL, never the live group that
+    carries it: a group such as "裤佬IPTV直播" may hold hundreds of URLs and
+    only the dead ones should stop being written to merged.m3u. Groups are
+    added and removed by hand, so the aggregator must never drop a whole group
+    on its own.
+    """
+    doomed = [
+        row for row in _channel_health_rows(items)
+        if row.get("verdict") == "candidate_remove"
+    ]
+    ordered = sorted(doomed, key=lambda row: (str(row.get("name", "")), str(row.get("url", ""))))
     report = {
         "updated": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
         "policy": {
-            "scope": "仅频道 URL；只报告，不自动删除 merged.m3u；未抽样频道保留历史记录",
+            "scope": "仅 merged.m3u 中的单个频道 URL；不删除直播大类，不改 geit-fish",
             "remove_limit": FAIL_STREAK_LIMIT,
-            "soft_failures": "超时、网络不可达、5xx、403/429、播放未验证只观察，不计入删除",
-            "internal_sources": "运营商内网/私网地址跳过，不因境外探测失败判定失效",
-            "evidence": "每条记录保存最终 URL、Content-Type、失败类别、尝试 UA 数和重定向次数",
+            "action": "达到连续失败上限的频道 URL 不再写入 merged.m3u；恢复为 probe_ok 后自动重新录入",
+            "counted_failures": "仅高置信确定性失效：404/410、明确拒绝、持续无效媒体流等",
+            "ignored_failures": "超时、403/429/451、临时 5xx、上游整体故障不计入也不清空",
         },
-        "summary": summary,
+        "summary": {
+            "dead": len(ordered),
+            "hosts": len({str(row.get("host", "")) for row in ordered if row.get("host")}),
+        },
+        "removed_urls": [str(row.get("url", "")) for row in ordered],
         "lines": ordered,
     }
     if find_sensitive_credentials(report):
-        raise ValueError("频道健康报告包含真实凭据，已中止写入")
-    CHANNEL_HEALTH_JSON.write_text(
+        raise ValueError("失效频道清单包含真实凭据，已中止写入")
+    DEAD_CHANNELS_JSON.write_text(
         json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
+    if ordered:
+        for row in ordered:
+            log("失效频道 URL（连续失败 %d 次，不再录入 merged.m3u）: %s | %s | 来源: %s" % (
+                row.get("decisive_failures", 0),
+                row.get("name"),
+                row.get("url"),
+                row.get("source") or "未知",
+            ))
 
 
 def default_merged_url() -> str:
@@ -1219,10 +1271,14 @@ def write_report(items: list[Item]) -> None:
 
 
 def write_removable(items: list[Item]) -> None:
-    """Record decisive live failures and flag sources that hit the streak limit.
+    """Record decisive live failures for humans to act on.
 
-    Reaching FAIL_STREAK_LIMIT means the source is auto-removed from geit-fish
-    on the next aggregation run; below the limit it is only reported.
+    Live groups are never removed automatically. A group is a hand-curated
+    category such as "裤佬IPTV直播"; deleting it would take every channel it
+    carries with it, including healthy ones. This report therefore only
+    reports the streak, and the aggregation workflow no longer reads it to
+    drop anything. The thing that actually stops being re-listed is a single
+    dead channel URL, written by write_dead_channels().
     """
     streaks = update_streaks(items)
     ordered = sorted(streaks.values(), key=lambda entry: (-int(entry.get("count", 0)), str(entry.get("name", ""))))
@@ -1236,7 +1292,8 @@ def write_removable(items: list[Item]) -> None:
             "counted_failures": "仅高置信确定性失效：404/410、明确拒绝、持续无效媒体流等",
             "ignored_failures": "超时、403/429/451 等地区限制/鉴权/限流、临时 5xx；不计入也不清空既有失败历史",
             "recovery": "只有 probe_ok（ffprobe 成功解码媒体流）才清零；reachable、manifest_ok、playback_unverified 均保留历史",
-            "action": "连续失败超过 5 次（第 6 次）的源会在下一次聚合时自动从 geit-fish 移除；merged.m3u 中的频道仍按独立频道链路处理，不因一个 live 配置项被删而批量删除",
+            "action": "仅报告，不自动删除任何直播大类；直播大类由人工增减",
+            "channel_urls": "真正会被停止录入的是 merged.m3u 中的单个频道 URL，见 dead_channels.json",
         },
         "summary": {
             "flagged": len(flagged),
@@ -1250,7 +1307,7 @@ def write_removable(items: list[Item]) -> None:
     REMOVABLE_JSON.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     if flagged:
         for entry in flagged:
-            log("可删除直播源（连续失败 %d 次）: %s | 来源: %s"
+            log("直播大类连续失败 %d 次（仅报告，不自动删除）: %s | 来源: %s"
                 % (entry["count"], entry["name"], entry.get("source") or "未知"))
 
 
@@ -1352,12 +1409,17 @@ def main() -> int:
     HEALTH_CSV = args.output_dir / "health.csv"
     global REMOVABLE_JSON
     REMOVABLE_JSON = args.output_dir / "removable.json"
+    global DEAD_CHANNELS_JSON
+    DEAD_CHANNELS_JSON = args.output_dir / "dead_channels.json"
     global CHANNEL_HEALTH_JSON
     CHANNEL_HEALTH_JSON = args.output_dir / "channel_health.json"
     apply_host_circuit_breaker(checked)
     write_report(checked)
     write_removable(checked)
     write_channel_health(checked)
+    # Channel URLs are the unit of removal; the live group that carries them
+    # is only reported so a human can decide.
+    write_dead_channels(checked)
     write_health_state(
         all_items,
         checked,

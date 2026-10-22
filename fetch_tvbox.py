@@ -65,8 +65,8 @@ MERGED_M3U_PATH = LIVE_DIR / "merged.m3u"
 CHANNEL_RULES_PATH = TVBOX_DIR / "channel_rules.json"
 # 直播源出处：健康报告据此标注每个 live 来自 sources.txt 的哪一行。
 LIVE_SOURCE_KEY = "source"
-# 健康工作流写出的待删除直播源清单，达到连续失败上限即自动移除。
-REMOVABLE_PATH = DOCS_DIR / "removable.json"
+# 健康工作流写出的失效频道 URL 清单，达到连续失败上限即不再录入 merged.m3u。
+DEAD_CHANNELS_PATH = DOCS_DIR / "dead_channels.json"
 
 USER_AGENT = "Mozilla/5.0 (compatible; GeitCollector/2.0; +https://github.com/hegio/Geit)"
 TIMEOUT = 30
@@ -1106,36 +1106,37 @@ def write_classification_review(entries: list[dict[str, Any]]) -> None:
     write_json(DOCS_DIR / "classification_review.json", report)
 
 
-def drop_dead_lives(lives: list[dict[str, Any]]) -> list[dict[str, Any]]:
-    """Remove live sources the health workflow flagged as repeatedly dead.
+def load_dead_channel_urls() -> set[str]:
+    """Read the channel URLs that failed decisively often enough to stop listing.
 
-    docs/removable.json lists live URLs that failed decisive checks
-    FAIL_STREAK_LIMIT times in a row. Only those URLs are dropped; a missing or
-    unreadable file means nothing is removed, so aggregation never depends on
-    the health report being present.
+    docs/dead_channels.json is written by the health workflow. Only individual
+    channel URLs appear there; a live group is never removed, because groups
+    are curated by hand and dropping one would take healthy channels with it.
+    A missing or unreadable file means nothing is filtered, so aggregation
+    never depends on the health report being present.
     """
-    if not REMOVABLE_PATH.is_file():
-        return lives
+    if not DEAD_CHANNELS_PATH.is_file():
+        return set()
     try:
-        data = json.loads(REMOVABLE_PATH.read_text(encoding="utf-8"))
+        data = json.loads(DEAD_CHANNELS_PATH.read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError):
-        log("WARN removable.json 无法解析，跳过直播源清理")
-        return lives
-    flagged = data.get("removable", []) if isinstance(data, dict) else []
-    doomed: dict[str, str] = {}
-    for entry in flagged:
-        if isinstance(entry, dict) and str(entry.get("url", "")):
-            doomed[str(entry["url"])] = str(entry.get("name", "")) or str(entry["url"])
-    if not doomed:
-        return lives
-    kept: list[dict[str, Any]] = []
-    for live in lives:
-        url = str(live.get("url", ""))
-        if url in doomed:
-            log("移除失效直播源（连续失败已达上限）: %s" % (live.get("name") or url))
-            continue
-        kept.append(live)
-    return kept
+        log("WARN dead_channels.json 无法解析，本轮不跳过任何频道")
+        return set()
+    urls = data.get("removed_urls", []) if isinstance(data, dict) else []
+    if not isinstance(urls, list):
+        return set()
+    return {str(url) for url in urls if str(url)}
+
+
+def drop_dead_lives(lives: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Keep every live group; nothing here is removed automatically.
+
+    A live group is a hand-maintained category and may carry hundreds of
+    channel URLs. Deleting it would discard healthy channels, so the health
+    workflow only reports live streaks and the aggregator leaves geit-fish
+    untouched. Dead channel URLs are filtered out of merged.m3u instead.
+    """
+    return lives
 
 
 def build_config(stats: BuildStats, repo: str, branch: str) -> dict[str, Any]:
@@ -1471,6 +1472,13 @@ def main() -> int:
     stats.sites = merge_dicts(stats.sites, ("key", "api"))
     stats.lives = merge_dicts(stats.lives, ("name", "url"))
     stats.channels = merge_channels(stats.channels)
+    # Drop individual channel URLs the health workflow proved dead. Groups are
+    # kept as-is; a group disappearing is always a manual edit.
+    dead_urls = load_dead_channel_urls()
+    if dead_urls:
+        before = len(stats.channels)
+        stats.channels = [ch for ch in stats.channels if ch.url.strip() not in dead_urls]
+        log("跳过 %d 个失效频道 URL（连续失败达上限），保留 %d 个" % (before - len(stats.channels), len(stats.channels)))
     write_m3u(stats.channels)
     write_channel_ledger(stats.channels)
 
