@@ -1,63 +1,25 @@
 {
-  "updated": "2026-10-22T12:12:34Z",
+  "updated": "2026-10-22T13:38:18Z",
   "mode": "local",
   "safety": "AI 只生成分类建议和错误解释；不参与失效判定、不修改 merged.m3u、不写入 removable.json、不接收含凭据的完整 URL。",
   "inputs": {
     "pending_channels": 4,
-    "failure_clusters": 0,
+    "failure_clusters": 30,
     "removable": {
       "flagged": 0,
-      "pending": 1,
+      "pending": 4,
       "policy": {
-        "fail_streak_limit": 5,
+        "fail_streak_limit": 6,
         "scope": "仅统计 geit-fish 中的 live 直播源；频道抽样轮转，不参与计数",
-        "counted_failures": "连接被拒、DNS 失败、HTTP 4xx/5xx、无效流数据",
-        "ignored_failures": "超时（境外探测对国内源误判率高）",
-        "action": "达到上限的源会在下一次聚合时自动从 geit-fish 移除，其下频道同步从 merged.m3u 剔除"
+        "counted_failures": "仅高置信确定性失效：404/410、明确拒绝、持续无效媒体流等",
+        "ignored_failures": "超时、403/429/451 等地区限制/鉴权/限流、临时 5xx；不计入也不清空既有失败历史",
+        "recovery": "只有 probe_ok（ffprobe 成功解码媒体流）才清零；reachable、manifest_ok、playback_unverified 均保留历史",
+        "action": "连续失败超过 5 次（第 6 次）的源会在下一次聚合时自动从 geit-fish 移除；merged.m3u 中的频道仍按独立频道链路处理，不因一个 live 配置项被删而批量删除"
       }
     }
   },
-  "status": "ok",
-  "provider": "local-strata",
-  "model": "qwen3.8-flash-next-iq2_xs",
-  "result": {
-    "classification_suggestions": [
-      {
-        "channel_key": "zgqx",
-        "category": "待人工确认",
-        "confidence": "low",
-        "reason": "仅有分组“央卫63”，无法确认频道具体身份或所属类别。"
-      },
-      {
-        "channel_key": "hyzxc",
-        "category": "待人工确认",
-        "confidence": "low",
-        "reason": "仅有分组“央卫63”，无法确认频道具体身份或所属类别。"
-      },
-      {
-        "channel_key": "hycxldb",
-        "category": "待人工确认",
-        "confidence": "low",
-        "reason": "仅有分组“央卫63”，无法确认频道具体身份或所属类别。"
-      },
-      {
-        "channel_key": "hylzy",
-        "category": "待人工确认",
-        "confidence": "low",
-        "reason": "仅有分组“央卫63”，无法确认频道具体身份或所属类别。"
-      }
-    ],
-    "incident_summary": "当前失败聚类为空，未发现可归因的失败；可能为无异常或数据未采集。建议人工复核失败聚类来源与日志完整性。",
-    "recommended_actions": [
-      "人工核对“央卫63”分组的含义及频道归属。",
-      "确认各频道名称是否对应官方频道或内部频道。",
-      "检查是否存在别名、重复频道或分组映射错误。",
-      "若后续出现失败聚类，再按失败类型进行人工复核。"
-    ],
-    "warnings": [
-      "仅凭分组信息不能确定频道类别。",
-      "失败聚类为空不能判断频道失效。",
-      "不应将超时、5xx、403/429 直接视为失效。"
-    ]
-  }
+  "status": "unavailable",
+  "errors": [
+    "local-strata: HTTP Error 401: Unauthorized"
+  ]
 }

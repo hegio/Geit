@@ -1,56 +1,173 @@
 {
-  "updated": "2026-10-22T03:23:31Z",
+  "updated": "2026-10-22T13:38:18Z",
   "policy": {
-    "fail_streak_limit": 5,
+    "fail_streak_limit": 6,
     "scope": "仅统计 geit-fish 中的 live 直播源；频道抽样轮转，不参与计数",
-    "counted_failures": "连接被拒、DNS 失败、HTTP 4xx/5xx、无效流数据",
-    "ignored_failures": "超时（境外探测对国内源误判率高）",
-    "action": "达到上限的源会在下一次聚合时自动从 geit-fish 移除，其下频道同步从 merged.m3u 剔除"
+    "counted_failures": "仅高置信确定性失效：404/410、明确拒绝、持续无效媒体流等",
+    "ignored_failures": "超时、403/429/451 等地区限制/鉴权/限流、临时 5xx；不计入也不清空既有失败历史",
+    "recovery": "只有 probe_ok（ffprobe 成功解码媒体流）才清零；reachable、manifest_ok、playback_unverified 均保留历史",
+    "action": "连续失败超过 5 次（第 6 次）的源会在下一次聚合时自动从 geit-fish 移除；merged.m3u 中的频道仍按独立频道链路处理，不因一个 live 配置项被删而批量删除"
   },
   "summary": {
     "flagged": 0,
-    "pending": 1,
-    "clean": 17
+    "pending": 4,
+    "clean": 14
   },
   "removable": [],
   "pending": [
     {
-      "url": "https://laifeng.445569.xyz/live.m3u",
-      "name": "👖裤佬来疯直播",
+      "url": "https://ilook.epg.one/5CM5SY98BF24PL/2",
+      "name": "🍿乌拉TV直播",
       "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
       "count": 1,
       "history": [
         {
-          "checked_at": "2026-10-22T03:14:10Z",
+          "checked_at": "2026-10-22T13:21:53Z",
           "status": "probe_failed",
-          "detail": "播放列表可下载，但首条媒体流探测失败：https://laifeng.445569.xyz/live/9418829: Server returned 5XX Server Error reply"
+          "detail": "https://ilook.epg.one/5CM5SY98BF24PL/2: Invalid data found when processing input",
+          "failure_class": "hard",
+          "http_status": 200,
+          "host": "ilook.epg.one"
         }
       ],
-      "removable": false
+      "removable": false,
+      "failure_class": "hard",
+      "host": "ilook.epg.one"
+    },
+    {
+      "url": "https://445569.pages.dev/https://raw.githubusercontent.com/swhtv/111/refs/heads/main/%E5%8D%8E%E8%A7%86box%E5%8D%8E%E8%A7%86%E5%A4%A7%E5%85%A8swtv",
+      "name": "🍿华视TV直播",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "count": 1,
+      "history": [
+        {
+          "checked_at": "2026-10-22T13:21:53Z",
+          "status": "probe_failed",
+          "detail": "https://445569.pages.dev/https://raw.githubusercontent.com/swhtv/111/refs/heads/main/%E5%8D%8E%E8%A7%86box%E5%8D%8E%E8%A7%86%E5%A4%A7%E5%85%A8swtv: Invalid data found when processing input",
+          "failure_class": "hard",
+          "http_status": 200,
+          "host": "445569.pages.dev"
+        }
+      ],
+      "removable": false,
+      "failure_class": "hard",
+      "host": "445569.pages.dev"
+    },
+    {
+      "url": "https://445569.pages.dev/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+      "name": "🍿易发TV直播",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "count": 1,
+      "history": [
+        {
+          "checked_at": "2026-10-22T13:21:53Z",
+          "status": "probe_failed",
+          "detail": "播放列表可下载，但采样分片均不可解码：https://445569.pages.dev/https:/raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/盗源狗si全家 全家下地狱: Server returned 404 Not Found | https://445569.pages.dev/https:/raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/盗源狗si全家 全家下地狱: Server returned 404 Not Found | https://4",
+          "failure_class": "hard",
+          "http_status": 200,
+          "host": "445569.pages.dev"
+        }
+      ],
+      "removable": false,
+      "failure_class": "hard",
+      "host": "445569.pages.dev"
+    },
+    {
+      "url": "https://www.korice.eu.org/ppv_m3u.php",
+      "name": "🏆PPV体育赛事直播",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "count": 1,
+      "history": [
+        {
+          "checked_at": "2026-10-22T13:21:53Z",
+          "status": "probe_failed",
+          "detail": "https://www.korice.eu.org/ppv_m3u.php: Invalid data found when processing input",
+          "failure_class": "hard",
+          "http_status": 200,
+          "host": "www.korice.eu.org"
+        }
+      ],
+      "removable": false,
+      "failure_class": "hard",
+      "host": "www.korice.eu.org"
     }
   ],
   "streaks": [
     {
-      "url": "https://laifeng.445569.xyz/live.m3u",
-      "name": "👖裤佬来疯直播",
+      "url": "https://ilook.epg.one/5CM5SY98BF24PL/2",
+      "name": "🍿乌拉TV直播",
       "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
       "count": 1,
       "history": [
         {
-          "checked_at": "2026-10-22T03:14:10Z",
+          "checked_at": "2026-10-22T13:21:53Z",
           "status": "probe_failed",
-          "detail": "播放列表可下载，但首条媒体流探测失败：https://laifeng.445569.xyz/live/9418829: Server returned 5XX Server Error reply"
+          "detail": "https://ilook.epg.one/5CM5SY98BF24PL/2: Invalid data found when processing input",
+          "failure_class": "hard",
+          "http_status": 200,
+          "host": "ilook.epg.one"
         }
       ],
-      "removable": false
+      "removable": false,
+      "failure_class": "hard",
+      "host": "ilook.epg.one"
     },
     {
-      "url": "https://ilook.epg.one/5CM5SY98BF24PL/2",
-      "name": "🍿乌拉TV直播",
+      "url": "https://445569.pages.dev/https://raw.githubusercontent.com/swhtv/111/refs/heads/main/%E5%8D%8E%E8%A7%86box%E5%8D%8E%E8%A7%86%E5%A4%A7%E5%85%A8swtv",
+      "name": "🍿华视TV直播",
       "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
-      "count": 0,
-      "history": [],
-      "removable": false
+      "count": 1,
+      "history": [
+        {
+          "checked_at": "2026-10-22T13:21:53Z",
+          "status": "probe_failed",
+          "detail": "https://445569.pages.dev/https://raw.githubusercontent.com/swhtv/111/refs/heads/main/%E5%8D%8E%E8%A7%86box%E5%8D%8E%E8%A7%86%E5%A4%A7%E5%85%A8swtv: Invalid data found when processing input",
+          "failure_class": "hard",
+          "http_status": 200,
+          "host": "445569.pages.dev"
+        }
+      ],
+      "removable": false,
+      "failure_class": "hard",
+      "host": "445569.pages.dev"
+    },
+    {
+      "url": "https://445569.pages.dev/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+      "name": "🍿易发TV直播",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "count": 1,
+      "history": [
+        {
+          "checked_at": "2026-10-22T13:21:53Z",
+          "status": "probe_failed",
+          "detail": "播放列表可下载，但采样分片均不可解码：https://445569.pages.dev/https:/raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/盗源狗si全家 全家下地狱: Server returned 404 Not Found | https://445569.pages.dev/https:/raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/盗源狗si全家 全家下地狱: Server returned 404 Not Found | https://4",
+          "failure_class": "hard",
+          "http_status": 200,
+          "host": "445569.pages.dev"
+        }
+      ],
+      "removable": false,
+      "failure_class": "hard",
+      "host": "445569.pages.dev"
+    },
+    {
+      "url": "https://www.korice.eu.org/ppv_m3u.php",
+      "name": "🏆PPV体育赛事直播",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "count": 1,
+      "history": [
+        {
+          "checked_at": "2026-10-22T13:21:53Z",
+          "status": "probe_failed",
+          "detail": "https://www.korice.eu.org/ppv_m3u.php: Invalid data found when processing input",
+          "failure_class": "hard",
+          "http_status": 200,
+          "host": "www.korice.eu.org"
+        }
+      ],
+      "removable": false,
+      "failure_class": "hard",
+      "host": "www.korice.eu.org"
     },
     {
       "url": "https://seep.eu.org/iptv-org.github.io/iptv/index.m3u",
@@ -58,31 +175,9 @@
       "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
       "count": 0,
       "history": [],
-      "removable": false
-    },
-    {
-      "url": "https://445569.pages.dev/https://raw.githubusercontent.com/swhtv/111/refs/heads/main/%E5%8D%8E%E8%A7%86box%E5%8D%8E%E8%A7%86%E5%A4%A7%E5%85%A8swtv",
-      "name": "🍿华视TV直播",
-      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
-      "count": 0,
-      "history": [],
-      "removable": false
-    },
-    {
-      "url": "https://445569.pages.dev/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-      "name": "🍿易发TV直播",
-      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
-      "count": 0,
-      "history": [],
-      "removable": false
-    },
-    {
-      "url": "https://www.korice.eu.org/ppv_m3u.php",
-      "name": "🏆PPV体育赛事直播",
-      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
-      "count": 0,
-      "history": [],
-      "removable": false
+      "removable": false,
+      "failure_class": "",
+      "host": "seep.eu.org"
     },
     {
       "url": "https://iptv.445569.xyz/live.m3u",
@@ -90,7 +185,9 @@
       "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
       "count": 0,
       "history": [],
-      "removable": false
+      "removable": false,
+      "failure_class": "",
+      "host": "iptv.445569.xyz"
     },
     {
       "url": "https://tiktok.445569.xyz/live.m3u",
@@ -98,7 +195,9 @@
       "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
       "count": 0,
       "history": [],
-      "removable": false
+      "removable": false,
+      "failure_class": "",
+      "host": "tiktok.445569.xyz"
     },
     {
       "url": "https://twitch.445569.xyz/live.m3u",
@@ -106,7 +205,9 @@
       "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
       "count": 0,
       "history": [],
-      "removable": false
+      "removable": false,
+      "failure_class": "",
+      "host": "twitch.445569.xyz"
     },
     {
       "url": "https://yy.445569.xyz/live.m3u",
@@ -114,7 +215,9 @@
       "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
       "count": 0,
       "history": [],
-      "removable": false
+      "removable": false,
+      "failure_class": "",
+      "host": "yy.445569.xyz"
     },
     {
       "url": "https://jsnzkpg.de5.net/all.m3u",
@@ -122,7 +225,9 @@
       "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
       "count": 0,
       "history": [],
-      "removable": false
+      "removable": false,
+      "failure_class": "",
+      "host": "jsnzkpg.de5.net"
     },
     {
       "url": "https://stymei.pages.dev/live.m3u",
@@ -130,7 +235,9 @@
       "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
       "count": 0,
       "history": [],
-      "removable": false
+      "removable": false,
+      "failure_class": "",
+      "host": "stymei.pages.dev"
     },
     {
       "url": "https://kuaishou.445569.xyz/list.m3u",
@@ -138,7 +245,9 @@
       "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
       "count": 0,
       "history": [],
-      "removable": false
+      "removable": false,
+      "failure_class": "",
+      "host": "kuaishou.445569.xyz"
     },
     {
       "url": "https://douyin.445569.xyz/live.m3u",
@@ -146,7 +255,9 @@
       "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
       "count": 0,
       "history": [],
-      "removable": false
+      "removable": false,
+      "failure_class": "",
+      "host": "douyin.445569.xyz"
     },
     {
       "url": "https://douyu.445569.xyz/live.m3u",
@@ -154,7 +265,19 @@
       "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
       "count": 0,
       "history": [],
-      "removable": false
+      "removable": false,
+      "failure_class": "",
+      "host": "douyu.445569.xyz"
+    },
+    {
+      "url": "https://laifeng.445569.xyz/live.m3u",
+      "name": "👖裤佬来疯直播",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "count": 0,
+      "history": [],
+      "removable": false,
+      "failure_class": "",
+      "host": "laifeng.445569.xyz"
     },
     {
       "url": "https://baizhan.445569.xyz/live.m3u",
@@ -162,7 +285,9 @@
       "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
       "count": 0,
       "history": [],
-      "removable": false
+      "removable": false,
+      "failure_class": "",
+      "host": "baizhan.445569.xyz"
     },
     {
       "url": "https://huya.445569.xyz/live.m3u",
@@ -170,7 +295,8 @@
       "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
       "count": 0,
       "history": [],
-      "removable": false
+      "removable": false,
+      "host": "huya.445569.xyz"
     },
     {
       "url": "https://kugou.445569.xyz/live.m3u",
@@ -178,7 +304,9 @@
       "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
       "count": 0,
       "history": [],
-      "removable": false
+      "removable": false,
+      "failure_class": "",
+      "host": "kugou.445569.xyz"
     }
   ]
 }
