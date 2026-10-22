@@ -1,9 +1,9 @@
 {
-  "updated": "2026-10-22T18:45:03Z",
+  "updated": "2026-10-22T20:35:16Z",
   "summary": {
-    "channels": 9974,
-    "channel_keys": 6990,
-    "multi_line_keys": 579,
+    "channels": 9887,
+    "channel_keys": 6932,
+    "multi_line_keys": 567,
     "untraced": 0
   },
   "channels": [
@@ -15566,10 +15566,10 @@
     },
     {
       "channel_key": "2026功夫女足",
-      "name": "2026功夫女足",
+      "name": "2026 功夫女足",
       "category": "影视少儿",
       "quality": "",
-      "line_count": 3,
+      "line_count": 1,
       "sources": [
         "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
       ],
@@ -15586,31 +15586,9 @@
         "https"
       ],
       "urls": [
-        "https://v.lfthirtytwo.com/20260723/8846_f4084a75/index.m3u8",
-        "https://v.fengbao11.com/video/gongfunvzu/618845436188/index.m3u8",
         "https://vip.dytt-network.com/20260723/36526_9c21455c/index.m3u8"
       ],
       "lines": [
-        {
-          "url": "https://v.lfthirtytwo.com/20260723/8846_f4084a75/index.m3u8",
-          "url_hash": "7ff28db0cf3bb4d14248c89b2f6e9b18a2ce0ddd10c044dff327b0716bf43359",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "AK电影",
-          "source_section": "AK电影",
-          "protocol": "https",
-          "quality": ""
-        },
-        {
-          "url": "https://v.fengbao11.com/video/gongfunvzu/618845436188/index.m3u8",
-          "url_hash": "21fb20323fcecffd4a25281712f3d19c58d56ddf334404a56526be20be04e3b1",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "AK电影",
-          "source_section": "AK电影",
-          "protocol": "https",
-          "quality": ""
-        },
         {
           "url": "https://vip.dytt-network.com/20260723/36526_9c21455c/index.m3u8",
           "url_hash": "bf9392bb033309e8acc4e5abb6c6d4a9eea8631912023d47a5df3708eaaf189e",
@@ -15762,43 +15740,6 @@
         {
           "url": "https://cdn1.ryplay1.com/20240910/7734_c602d62b/index.m3u8",
           "url_hash": "57a87cc82c629725f30e9002849ca683364867762a0c0b8bb6dd1222f8d995c0",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "AK电影",
-          "source_section": "AK电影",
-          "protocol": "https",
-          "quality": ""
-        }
-      ]
-    },
-    {
-      "channel_key": "2001少林足球",
-      "name": "2001少林足球",
-      "category": "体育频道",
-      "quality": "",
-      "line_count": 1,
-      "sources": [
-        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
-      ],
-      "source_lines": [
-        3
-      ],
-      "groups_raw": [
-        "AK电影"
-      ],
-      "source_sections": [
-        "AK电影"
-      ],
-      "protocols": [
-        "https"
-      ],
-      "urls": [
-        "https://vip.lzcdn2.com/20220521/7147_3b73302c/index.m3u8"
-      ],
-      "lines": [
-        {
-          "url": "https://vip.lzcdn2.com/20220521/7147_3b73302c/index.m3u8",
-          "url_hash": "671db02bd31ac20f10b4c00b733345da6336a8dc668e8689088860414456f0af",
           "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
           "source_line": 3,
           "group_raw": "AK电影",
@@ -17190,58 +17131,6 @@
           "group_raw": "香港streams",
           "source_section": "香港streams",
           "protocol": "http",
-          "quality": ""
-        }
-      ]
-    },
-    {
-      "channel_key": "hoy国际财经台",
-      "name": "HOY国际财经台",
-      "category": "港澳台",
-      "quality": "",
-      "line_count": 2,
-      "sources": [
-        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-        "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt"
-      ],
-      "source_lines": [
-        3,
-        5
-      ],
-      "groups_raw": [
-        "DE=3",
-        "马港频道o11"
-      ],
-      "source_sections": [
-        "极速港台（挂梯）",
-        "马港频道o11"
-      ],
-      "protocols": [
-        "https"
-      ],
-      "urls": [
-        "https://cdn11.163189.xyz/163189/hoy76",
-        "https://cdn11.163189.xyz/163189/2c86601a7180416e"
-      ],
-      "lines": [
-        {
-          "url": "https://cdn11.163189.xyz/163189/hoy76",
-          "url_hash": "20d7f211d2d9132d254184c449e587b4ac3db13127fc24e42577b45d8751722c",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "DE=3",
-          "source_section": "极速港台（挂梯）",
-          "protocol": "https",
-          "quality": ""
-        },
-        {
-          "url": "https://cdn11.163189.xyz/163189/2c86601a7180416e",
-          "url_hash": "35869808f3c1daa13a1a684589a64afe450e6938782dd56b62a88f174bdcad51",
-          "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-          "source_line": 5,
-          "group_raw": "马港频道o11",
-          "source_section": "马港频道o11",
-          "protocol": "https",
           "quality": ""
         }
       ]
@@ -27596,43 +27485,6 @@
       ]
     },
     {
-      "channel_key": "cbccomedy",
-      "name": "CBC Comedy",
-      "category": "海外频道",
-      "quality": "",
-      "line_count": 1,
-      "sources": [
-        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
-      ],
-      "source_lines": [
-        3
-      ],
-      "groups_raw": [
-        "美国UA(挂梯子)"
-      ],
-      "source_sections": [
-        "美国UA(挂梯子)"
-      ],
-      "protocols": [
-        "https"
-      ],
-      "urls": [
-        "https://amagi-streams.akamaized.net/hls/live/2110963/cbccomedy/master1080p.m3u8"
-      ],
-      "lines": [
-        {
-          "url": "https://amagi-streams.akamaized.net/hls/live/2110963/cbccomedy/master1080p.m3u8",
-          "url_hash": "950fa86e27fd9c1ea538117ade1ab3f0bcebd3859a81f595cc66e2a01a6268d7",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "美国UA(挂梯子)",
-          "source_section": "美国UA(挂梯子)",
-          "protocol": "https",
-          "quality": ""
-        }
-      ]
-    },
-    {
       "channel_key": "ntvcanada",
       "name": "NTV CANADA",
       "category": "海外频道",
@@ -29521,10 +29373,10 @@
     },
     {
       "channel_key": "bbcearth",
-      "name": "BBC EARTH",
+      "name": "BBC Earth",
       "category": "海外频道",
       "quality": "",
-      "line_count": 3,
+      "line_count": 2,
       "sources": [
         "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
       ],
@@ -29541,21 +29393,10 @@
         "https"
       ],
       "urls": [
-        "https://amg00793-amg00793c6-xumo-us-2669.playouts.now.amagi.tv/BBCStudios-BBCEarthA-hls/playlist540p.m3u8",
         "https://dbrb49pjoymg4.cloudfront.net/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_xumo-ams-aws/58366634-aa54-41fa-8923-4938bc769f8a/0.m3u8",
         "https://dbrb49pjoymg4.cloudfront.net/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_xumo-ams-aws/91f66dd6-f06c-4386-8452-5befcbd4c77f/0.m3u8"
       ],
       "lines": [
-        {
-          "url": "https://amg00793-amg00793c6-xumo-us-2669.playouts.now.amagi.tv/BBCStudios-BBCEarthA-hls/playlist540p.m3u8",
-          "url_hash": "167c2eea6124ae8ef7268519608351fbe74a7a09b8096c89c99f905f754fcce1",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "美国UA(挂梯子)",
-          "source_section": "美国UA(挂梯子)",
-          "protocol": "https",
-          "quality": ""
-        },
         {
           "url": "https://dbrb49pjoymg4.cloudfront.net/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_xumo-ams-aws/58366634-aa54-41fa-8923-4938bc769f8a/0.m3u8",
           "url_hash": "a3293d7f81ddfac596c13afcc6bb9ce7ffbd0c1cbbca4f16e77d22838add7463",
@@ -32716,80 +32557,6 @@
       ]
     },
     {
-      "channel_key": "dancetvedmmainstagenl",
-      "name": "DanceTVEDMMainstageNL",
-      "category": "教育纪实",
-      "quality": "",
-      "line_count": 1,
-      "sources": [
-        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
-      ],
-      "source_lines": [
-        3
-      ],
-      "groups_raw": [
-        "美国UA(挂梯子)"
-      ],
-      "source_sections": [
-        "美国UA(挂梯子)"
-      ],
-      "protocols": [
-        "https"
-      ],
-      "urls": [
-        "https://mbit1.worldcast.tv/dancetelevisionseven/multibit.m3u8"
-      ],
-      "lines": [
-        {
-          "url": "https://mbit1.worldcast.tv/dancetelevisionseven/multibit.m3u8",
-          "url_hash": "547ce473600d9158da759479073227634fbfff278ed1f7890cc929852baad6f7",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "美国UA(挂梯子)",
-          "source_section": "美国UA(挂梯子)",
-          "protocol": "https",
-          "quality": ""
-        }
-      ]
-    },
-    {
-      "channel_key": "dancetvminimaltechnl",
-      "name": "DanceTVMinimalTechNL",
-      "category": "教育纪实",
-      "quality": "",
-      "line_count": 1,
-      "sources": [
-        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
-      ],
-      "source_lines": [
-        3
-      ],
-      "groups_raw": [
-        "美国UA(挂梯子)"
-      ],
-      "source_sections": [
-        "美国UA(挂梯子)"
-      ],
-      "protocols": [
-        "https"
-      ],
-      "urls": [
-        "https://mbit1.worldcast.tv/dancetelevisionsix/multibit.m3u8"
-      ],
-      "lines": [
-        {
-          "url": "https://mbit1.worldcast.tv/dancetelevisionsix/multibit.m3u8",
-          "url_hash": "2308c72b6b435bb8d306c3a2494920571b42e76fea6567f2c9a1b6f20c13bf75",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "美国UA(挂梯子)",
-          "source_section": "美国UA(挂梯子)",
-          "protocol": "https",
-          "quality": ""
-        }
-      ]
-    },
-    {
       "channel_key": "freshdanceru",
       "name": "FRESHDanceRU",
       "category": "海外频道",
@@ -34048,248 +33815,6 @@
       ]
     },
     {
-      "channel_key": "cgtn俄语",
-      "name": "CGTN俄语",
-      "category": "央视频道",
-      "quality": "",
-      "line_count": 8,
-      "sources": [
-        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-        "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt"
-      ],
-      "source_lines": [
-        3,
-        5
-      ],
-      "groups_raw": [
-        "华港央视",
-        "咪咕央视2",
-        "美国UA(挂梯子)"
-      ],
-      "source_sections": [
-        "华港央视",
-        "咪咕央视2",
-        "美国UA(挂梯子)"
-      ],
-      "protocols": [
-        "http",
-        "https"
-      ],
-      "urls": [
-        "https://0472.org/hls/cgtne.m3u8",
-        "http://my1nas.dpdns.org:1234/609006446",
-        "http://www.20260809.xyz:1234/609006446",
-        "http://xch819.cn:7788/609006446",
-        "https://tv.zhuhongxuan.cn/609006446",
-        "http://njdm.i234.me:1234/609006446",
-        "https://live.chinacert.cftest5.cn/cnmg/live/609006446",
-        "https://virtual.anbox.dpdns.org/resolve?channel=CGTN%E4%BF%84%E8%AF%AD&src=aHR0cHM6Ly8wNDcyLm9yZy9obHMvY2d0bmUubTN1OA%3D%3D"
-      ],
-      "lines": [
-        {
-          "url": "https://0472.org/hls/cgtne.m3u8",
-          "url_hash": "1e89e7ab830b5886a41f3505dd70e4c2727352e6b5b0d623c5fd4a9be3f6b36b",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "美国UA(挂梯子)",
-          "source_section": "美国UA(挂梯子)",
-          "protocol": "https",
-          "quality": ""
-        },
-        {
-          "url": "http://my1nas.dpdns.org:1234/609006446",
-          "url_hash": "67678ce03997cb908386e5ae36bf79bc3210d7b8c373bdbc53fc227fc953dfc8",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "咪咕央视2",
-          "source_section": "咪咕央视2",
-          "protocol": "http",
-          "quality": ""
-        },
-        {
-          "url": "http://www.20260809.xyz:1234/609006446",
-          "url_hash": "923037a2756ed5973a1f17365b9a62b86a8e4686dba9008b7bae453c99cb2f4b",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "咪咕央视2",
-          "source_section": "咪咕央视2",
-          "protocol": "http",
-          "quality": ""
-        },
-        {
-          "url": "http://xch819.cn:7788/609006446",
-          "url_hash": "a0b5ebd7c78b9a423672d993f751679b8e77abebf69cef1c230a828e1d450600",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "咪咕央视2",
-          "source_section": "咪咕央视2",
-          "protocol": "http",
-          "quality": ""
-        },
-        {
-          "url": "https://tv.zhuhongxuan.cn/609006446",
-          "url_hash": "e7c53b8d21834ff9ff5209a521f3acaba96addda6a1b480e96e0c8168966ae7a",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "咪咕央视2",
-          "source_section": "咪咕央视2",
-          "protocol": "https",
-          "quality": ""
-        },
-        {
-          "url": "http://njdm.i234.me:1234/609006446",
-          "url_hash": "b8150bae5e97a204a4fc5b62d7793966c501e84921ecfed2ba93139506809d22",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "咪咕央视2",
-          "source_section": "咪咕央视2",
-          "protocol": "http",
-          "quality": ""
-        },
-        {
-          "url": "https://live.chinacert.cftest5.cn/cnmg/live/609006446",
-          "url_hash": "ef2286c8ae393f7e08e8b84eae003bb38c2ab791545ca39f0a63cfeb5e694bf4",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "咪咕央视2",
-          "source_section": "咪咕央视2",
-          "protocol": "https",
-          "quality": ""
-        },
-        {
-          "url": "https://virtual.anbox.dpdns.org/resolve?channel=CGTN%E4%BF%84%E8%AF%AD&src=aHR0cHM6Ly8wNDcyLm9yZy9obHMvY2d0bmUubTN1OA%3D%3D",
-          "url_hash": "9a2cac9cf9657649eef71c783858a971e2baf6e3196698b14f5355a1abc23156",
-          "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-          "source_line": 5,
-          "group_raw": "华港央视",
-          "source_section": "华港央视",
-          "protocol": "https",
-          "quality": ""
-        }
-      ]
-    },
-    {
-      "channel_key": "cgtn法语",
-      "name": "CGTN法语",
-      "category": "央视频道",
-      "quality": "",
-      "line_count": 8,
-      "sources": [
-        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-        "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt"
-      ],
-      "source_lines": [
-        3,
-        5
-      ],
-      "groups_raw": [
-        "华港央视",
-        "咪咕央视2",
-        "美国UA(挂梯子)"
-      ],
-      "source_sections": [
-        "华港央视",
-        "咪咕央视2",
-        "美国UA(挂梯子)"
-      ],
-      "protocols": [
-        "http",
-        "https"
-      ],
-      "urls": [
-        "https://0472.org/hls/cgtnf.m3u8",
-        "http://my1nas.dpdns.org:1234/609006476",
-        "http://www.20260809.xyz:1234/609006476",
-        "http://xch819.cn:7788/609006476",
-        "https://tv.zhuhongxuan.cn/609006476",
-        "http://njdm.i234.me:1234/609006476",
-        "https://live.chinacert.cftest5.cn/cnmg/live/609006476",
-        "https://virtual.anbox.dpdns.org/resolve?channel=CGTN%E6%B3%95%E8%AF%AD&src=aHR0cHM6Ly8wNDcyLm9yZy9obHMvY2d0bmYubTN1OA%3D%3D"
-      ],
-      "lines": [
-        {
-          "url": "https://0472.org/hls/cgtnf.m3u8",
-          "url_hash": "5c4279893d844e50c55c55cc7a3db99098d8363c20fc0b3357b15f59fa1c6875",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "美国UA(挂梯子)",
-          "source_section": "美国UA(挂梯子)",
-          "protocol": "https",
-          "quality": ""
-        },
-        {
-          "url": "http://my1nas.dpdns.org:1234/609006476",
-          "url_hash": "d46fbaa361c4a16b3ece204e888f6bd88fd33956979e31b8fa6019a263d5fbbb",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "咪咕央视2",
-          "source_section": "咪咕央视2",
-          "protocol": "http",
-          "quality": ""
-        },
-        {
-          "url": "http://www.20260809.xyz:1234/609006476",
-          "url_hash": "dbb9d7c05a53dc31f5044f1991891220d589ec2904abe80a83ceca74b8b1fe49",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "咪咕央视2",
-          "source_section": "咪咕央视2",
-          "protocol": "http",
-          "quality": ""
-        },
-        {
-          "url": "http://xch819.cn:7788/609006476",
-          "url_hash": "b5229db7ddc6fb19686a131993b37d0b7dc095090400cf541cdbd799f976aaf1",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "咪咕央视2",
-          "source_section": "咪咕央视2",
-          "protocol": "http",
-          "quality": ""
-        },
-        {
-          "url": "https://tv.zhuhongxuan.cn/609006476",
-          "url_hash": "25d31aef97c134c2715acce3a89ac7e61a2edff95032aa3212e6e0d716a0848d",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "咪咕央视2",
-          "source_section": "咪咕央视2",
-          "protocol": "https",
-          "quality": ""
-        },
-        {
-          "url": "http://njdm.i234.me:1234/609006476",
-          "url_hash": "8ad9cafa667760a230a2803459105e945aad461fe746fd19f4763a590e11563d",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "咪咕央视2",
-          "source_section": "咪咕央视2",
-          "protocol": "http",
-          "quality": ""
-        },
-        {
-          "url": "https://live.chinacert.cftest5.cn/cnmg/live/609006476",
-          "url_hash": "42ae0265e4cb7197c7fe688f2a4f3e79ef344f6601a0db5718dcedd0f88babe0",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "咪咕央视2",
-          "source_section": "咪咕央视2",
-          "protocol": "https",
-          "quality": ""
-        },
-        {
-          "url": "https://virtual.anbox.dpdns.org/resolve?channel=CGTN%E6%B3%95%E8%AF%AD&src=aHR0cHM6Ly8wNDcyLm9yZy9obHMvY2d0bmYubTN1OA%3D%3D",
-          "url_hash": "fa1b16e4bc1da5dd1f2f1d15252019db95989eb6022138848d0c9d625cb0a45e",
-          "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-          "source_line": 5,
-          "group_raw": "华港央视",
-          "source_section": "华港央视",
-          "protocol": "https",
-          "quality": ""
-        }
-      ]
-    },
-    {
       "channel_key": "cgtn西语",
       "name": "CGTN西语",
       "category": "央视频道",
@@ -34526,43 +34051,6 @@
       ]
     },
     {
-      "channel_key": "pbsket2",
-      "name": "PBS KET2",
-      "category": "海外频道",
-      "quality": "",
-      "line_count": 1,
-      "sources": [
-        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
-      ],
-      "source_lines": [
-        3
-      ],
-      "groups_raw": [
-        "美国UA(挂梯子)"
-      ],
-      "source_sections": [
-        "美国UA(挂梯子)"
-      ],
-      "protocols": [
-        "https"
-      ],
-      "urls": [
-        "https://2-fss-2.streamhoster.com/pl_140/amlst:200914-1315484/playlist.m3u8"
-      ],
-      "lines": [
-        {
-          "url": "https://2-fss-2.streamhoster.com/pl_140/amlst:200914-1315484/playlist.m3u8",
-          "url_hash": "67f24f230044ff580c6e3c71e00707eb0bc62e47dd57ddb299ddfa0284472cd5",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "美国UA(挂梯子)",
-          "source_section": "美国UA(挂梯子)",
-          "protocol": "https",
-          "quality": ""
-        }
-      ]
-    },
-    {
       "channel_key": "pbstv",
       "name": "PBS TV",
       "category": "海外频道",
@@ -34590,80 +34078,6 @@
         {
           "url": "https://2-fss-2.streamhoster.com/pl_138/amlst:201814-1291584/playlist.m3u8",
           "url_hash": "dcd80857ebdc5414ca99e7f429106516c79fec1d1c6dca6662f00c8a78db0580",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "美国UA(挂梯子)",
-          "source_section": "美国UA(挂梯子)",
-          "protocol": "https",
-          "quality": ""
-        }
-      ]
-    },
-    {
-      "channel_key": "pbsketlouisvillekywkmjtv",
-      "name": "PBS KET Louisville KY (WKMJ-TV)",
-      "category": "海外频道",
-      "quality": "",
-      "line_count": 1,
-      "sources": [
-        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
-      ],
-      "source_lines": [
-        3
-      ],
-      "groups_raw": [
-        "美国UA(挂梯子)"
-      ],
-      "source_sections": [
-        "美国UA(挂梯子)"
-      ],
-      "protocols": [
-        "https"
-      ],
-      "urls": [
-        "https://2-fss-1.streamhoster.com/pl_134/amlst:200914-1282960/playlist.m3u8"
-      ],
-      "lines": [
-        {
-          "url": "https://2-fss-1.streamhoster.com/pl_134/amlst:200914-1282960/playlist.m3u8",
-          "url_hash": "0700a68e1b270c0d193a71a4aa5da13ba9c84e28c934f8a66bf28c61b19cc0e2",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "美国UA(挂梯子)",
-          "source_section": "美国UA(挂梯子)",
-          "protocol": "https",
-          "quality": ""
-        }
-      ]
-    },
-    {
-      "channel_key": "pbsketworld",
-      "name": "PBS KET World",
-      "category": "影视少儿",
-      "quality": "",
-      "line_count": 1,
-      "sources": [
-        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
-      ],
-      "source_lines": [
-        3
-      ],
-      "groups_raw": [
-        "美国UA(挂梯子)"
-      ],
-      "source_sections": [
-        "美国UA(挂梯子)"
-      ],
-      "protocols": [
-        "https"
-      ],
-      "urls": [
-        "https://2-fss-1.streamhoster.com/pl_122/amlst:200914-2942150/playlist.m3u8"
-      ],
-      "lines": [
-        {
-          "url": "https://2-fss-1.streamhoster.com/pl_122/amlst:200914-2942150/playlist.m3u8",
-          "url_hash": "fbb0ddf5b180e95803cb33a885a71bc427977357aa9743436ec47484d13cf5cf",
           "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
           "source_line": 3,
           "group_raw": "美国UA(挂梯子)",
@@ -39142,43 +38556,6 @@
       ]
     },
     {
-      "channel_key": "kbs世界",
-      "name": "KBS世界",
-      "category": "海外频道",
-      "quality": "",
-      "line_count": 1,
-      "sources": [
-        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
-      ],
-      "source_lines": [
-        3
-      ],
-      "groups_raw": [
-        "韩国KR"
-      ],
-      "source_sections": [
-        "韩国KR"
-      ],
-      "protocols": [
-        "https"
-      ],
-      "urls": [
-        "https://wms4-kortv.akamaized.net/a_live/63719963/smil:20ch011.smil/playlist.m3u8"
-      ],
-      "lines": [
-        {
-          "url": "https://wms4-kortv.akamaized.net/a_live/63719963/smil:20ch011.smil/playlist.m3u8",
-          "url_hash": "f1fe09a8d1bbf0591afd0ceab8e31c6794806f56bfd48c8e3cb1f6c195405688",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "韩国KR",
-          "source_section": "韩国KR",
-          "protocol": "https",
-          "quality": ""
-        }
-      ]
-    },
-    {
       "channel_key": "arirang",
       "name": "Arirang",
       "category": "海外频道",
@@ -43178,7 +42555,7 @@
       "name": "东莞生活资讯",
       "category": "地方频道",
       "quality": "",
-      "line_count": 3,
+      "line_count": 2,
       "sources": [
         "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
         "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt"
@@ -43193,8 +42570,7 @@
       ],
       "source_sections": [
         "广东云",
-        "广东荔枝网",
-        "广东酒店"
+        "广东荔枝网"
       ],
       "protocols": [
         "http",
@@ -43202,7 +42578,6 @@
       ],
       "urls": [
         "https://stream.sun0769.com/dgrtv1/mp4tv2_1500/index.m3u8",
-        "http://stream.sun0769.com/dgrtv1/mp4tv2_1500/index.m3u8",
         "http://8.134.175.232:4022/IPTV-广东电视台/东莞生活资讯"
       ],
       "lines": [
@@ -43214,16 +42589,6 @@
           "group_raw": "DE=3",
           "source_section": "广东荔枝网",
           "protocol": "https",
-          "quality": ""
-        },
-        {
-          "url": "http://stream.sun0769.com/dgrtv1/mp4tv2_1500/index.m3u8",
-          "url_hash": "bd233d5a8fcdcf3fa484d709eac3e93bb3901519df4050adbb13cf1462331bd0",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "DE=3",
-          "source_section": "广东酒店",
-          "protocol": "http",
           "quality": ""
         },
         {
@@ -43503,112 +42868,6 @@
           "source_line": 3,
           "group_raw": "DE=3",
           "source_section": "广东酒店",
-          "protocol": "http",
-          "quality": ""
-        }
-      ]
-    },
-    {
-      "channel_key": "云浮综合",
-      "name": "云浮综合",
-      "category": "地方频道",
-      "quality": "",
-      "line_count": 2,
-      "sources": [
-        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-        "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt"
-      ],
-      "source_lines": [
-        3,
-        5
-      ],
-      "groups_raw": [
-        "DE=3",
-        "广东云"
-      ],
-      "source_sections": [
-        "广东云",
-        "广东荔枝网"
-      ],
-      "protocols": [
-        "http",
-        "https"
-      ],
-      "urls": [
-        "https://livestream.oeeee.com/slive/28283.m3u8",
-        "http://8.134.175.232:4022/IPTV-广东电视台/云浮综合"
-      ],
-      "lines": [
-        {
-          "url": "https://livestream.oeeee.com/slive/28283.m3u8",
-          "url_hash": "633c2db727e2e063fad581c2c025fb1e5345009c95b4ca86fff83f630bb94ecf",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "DE=3",
-          "source_section": "广东荔枝网",
-          "protocol": "https",
-          "quality": ""
-        },
-        {
-          "url": "http://8.134.175.232:4022/IPTV-广东电视台/云浮综合",
-          "url_hash": "aa9ca36cb4132ad8c589dc967028817bb2749bb701c63289dfca5d9ec58ba2c2",
-          "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-          "source_line": 5,
-          "group_raw": "广东云",
-          "source_section": "广东云",
-          "protocol": "http",
-          "quality": ""
-        }
-      ]
-    },
-    {
-      "channel_key": "云浮文旅",
-      "name": "云浮文旅",
-      "category": "地方频道",
-      "quality": "",
-      "line_count": 2,
-      "sources": [
-        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-        "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt"
-      ],
-      "source_lines": [
-        3,
-        5
-      ],
-      "groups_raw": [
-        "DE=3",
-        "广东云"
-      ],
-      "source_sections": [
-        "广东云",
-        "广东荔枝网"
-      ],
-      "protocols": [
-        "http",
-        "https"
-      ],
-      "urls": [
-        "https://livestream.oeeee.com/slive/28284.m3u8",
-        "http://8.134.175.232:4022/IPTV-广东电视台/云浮文旅"
-      ],
-      "lines": [
-        {
-          "url": "https://livestream.oeeee.com/slive/28284.m3u8",
-          "url_hash": "1c8691643b7a95423c090cd940ed1921fa52eb29785881019a0814b45da20ea0",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "DE=3",
-          "source_section": "广东荔枝网",
-          "protocol": "https",
-          "quality": ""
-        },
-        {
-          "url": "http://8.134.175.232:4022/IPTV-广东电视台/云浮文旅",
-          "url_hash": "5d41e6fcbb7f81ffb72fa5ed8fe5e60f9ec66ffed8e8b49bb665a9e3f52a09aa",
-          "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-          "source_line": 5,
-          "group_raw": "广东云",
-          "source_section": "广东云",
           "protocol": "http",
           "quality": ""
         }
@@ -44786,58 +44045,6 @@
       ]
     },
     {
-      "channel_key": "深圳龙岗",
-      "name": "深圳龙岗",
-      "category": "地方频道",
-      "quality": "",
-      "line_count": 2,
-      "sources": [
-        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-        "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt"
-      ],
-      "source_lines": [
-        3,
-        5
-      ],
-      "groups_raw": [
-        "DE=3",
-        "广东云"
-      ],
-      "source_sections": [
-        "广东云",
-        "广东荔枝网"
-      ],
-      "protocols": [
-        "http"
-      ],
-      "urls": [
-        "http://zhfw-t.szlg.com:8080/live/television1.m3u8",
-        "http://8.134.175.232:4022/IPTV-广东电视台/深圳龙岗"
-      ],
-      "lines": [
-        {
-          "url": "http://zhfw-t.szlg.com:8080/live/television1.m3u8",
-          "url_hash": "63a32891b250e103339afeaa63163a52b9b7c01f471fb38aa8e9993cbb0574d5",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "DE=3",
-          "source_section": "广东荔枝网",
-          "protocol": "http",
-          "quality": ""
-        },
-        {
-          "url": "http://8.134.175.232:4022/IPTV-广东电视台/深圳龙岗",
-          "url_hash": "740acc4bff6a6b219162a6f5672116a23e9b040afc140d9c80e4423b87cfb022",
-          "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-          "source_line": 5,
-          "group_raw": "广东云",
-          "source_section": "广东云",
-          "protocol": "http",
-          "quality": ""
-        }
-      ]
-    },
-    {
       "channel_key": "广东珠江频道",
       "name": "广东珠江频道",
       "category": "地方频道",
@@ -45306,210 +44513,6 @@
         {
           "url": "http://61.145.188.90:50055/udp/239.77.0.25:5146",
           "url_hash": "824ab64985ab15ba01b03706a285c8f2f0dfb1f1ddf51da42f7d01cc2940afb9",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "DE=3",
-          "source_section": "揭阳IPTV",
-          "protocol": "http",
-          "quality": "高清"
-        }
-      ]
-    },
-    {
-      "channel_key": "汕尾生活",
-      "name": "汕尾生活",
-      "category": "地方频道",
-      "quality": "",
-      "line_count": 16,
-      "sources": [
-        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
-      ],
-      "source_lines": [
-        3
-      ],
-      "groups_raw": [
-        "DE=3"
-      ],
-      "source_sections": [
-        "广东酒店",
-        "揭阳IPTV"
-      ],
-      "protocols": [
-        "http",
-        "https"
-      ],
-      "urls": [
-        "https://iswtv.swrtv.com/live/whshpd.m3u8",
-        "http://119.29.142.81:4022/udp/239.77.0.187:5146",
-        "http://hongzhijiaoyu.net:8188/udp/239.77.0.187:5146",
-        "http://lsa.familyds.com:8188/udp/239.77.0.187:5146",
-        "http://www.yahao.host:4022/udp/239.77.0.187:5146",
-        "http://gdyd.7259.cc.cd:4111/udp/239.77.0.187:5146",
-        "http://gdyd.7259.cc.cd:4014/udp/239.77.0.187:5146",
-        "http://www.syy3.top:3861/udp/239.77.0.187:5146",
-        "http://lbyjlt.vv5678.cn:8880/udp/239.77.0.187:5146",
-        "http://plex.cyruslee.top:8888/udp/239.77.0.187:5146",
-        "http://jellyfin.cyruslee.top:8888/udp/239.77.0.187:5146",
-        "http://www.3344.uk:8888/udp/239.77.0.187:5146",
-        "http://ikuai.cyruslee.top:8888/udp/239.77.0.187:5146",
-        "http://yanshifen.top:8889/udp/239.77.0.187:5146",
-        "http://www.maomizi.cn:9527/udp/239.77.0.187:5146",
-        "http://61.145.188.90:50055/udp/239.77.0.187:5146"
-      ],
-      "lines": [
-        {
-          "url": "https://iswtv.swrtv.com/live/whshpd.m3u8",
-          "url_hash": "d63b23ed73b809d58f663b07b6a793d51366b7b3c95b751494b0e2a837086f6c",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "DE=3",
-          "source_section": "广东酒店",
-          "protocol": "https",
-          "quality": ""
-        },
-        {
-          "url": "http://119.29.142.81:4022/udp/239.77.0.187:5146",
-          "url_hash": "6a2cc3ebd5061fc44dfbf964d756247035c3c147127a950bf6c0f2e0998d1d6d",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "DE=3",
-          "source_section": "揭阳IPTV",
-          "protocol": "http",
-          "quality": "高清"
-        },
-        {
-          "url": "http://hongzhijiaoyu.net:8188/udp/239.77.0.187:5146",
-          "url_hash": "913c83d1db28137a6cb3ccdc68b6cad871f9c6f88f047e8851528f7a3b72ce7e",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "DE=3",
-          "source_section": "揭阳IPTV",
-          "protocol": "http",
-          "quality": "高清"
-        },
-        {
-          "url": "http://lsa.familyds.com:8188/udp/239.77.0.187:5146",
-          "url_hash": "b1001b3786db9be9656e8ff75c9fe4310dee2419b77cb2e493ad5f7fd16383c3",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "DE=3",
-          "source_section": "揭阳IPTV",
-          "protocol": "http",
-          "quality": "高清"
-        },
-        {
-          "url": "http://www.yahao.host:4022/udp/239.77.0.187:5146",
-          "url_hash": "f8bd47759627106f103245f94eb2592a20ef415d0f7a4c14426402eb2f738f40",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "DE=3",
-          "source_section": "揭阳IPTV",
-          "protocol": "http",
-          "quality": "高清"
-        },
-        {
-          "url": "http://gdyd.7259.cc.cd:4111/udp/239.77.0.187:5146",
-          "url_hash": "c88d5ad2fa972deb6af8a123b07b9169efedc76aeb312dfdc92767982f191be5",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "DE=3",
-          "source_section": "揭阳IPTV",
-          "protocol": "http",
-          "quality": "高清"
-        },
-        {
-          "url": "http://gdyd.7259.cc.cd:4014/udp/239.77.0.187:5146",
-          "url_hash": "68018f32b90c5c58e27d218679e902fc61494552ff47379e358f30602f39aaed",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "DE=3",
-          "source_section": "揭阳IPTV",
-          "protocol": "http",
-          "quality": "高清"
-        },
-        {
-          "url": "http://www.syy3.top:3861/udp/239.77.0.187:5146",
-          "url_hash": "059132b72bfe4bf25133488b4e2edd41c88eccc0cbcf541bbf2cff4332ec07c4",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "DE=3",
-          "source_section": "揭阳IPTV",
-          "protocol": "http",
-          "quality": "高清"
-        },
-        {
-          "url": "http://lbyjlt.vv5678.cn:8880/udp/239.77.0.187:5146",
-          "url_hash": "4ef376daa2180193719fc18aa9da4dade0c47dd5a241a03b3a4d510c233a48b1",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "DE=3",
-          "source_section": "揭阳IPTV",
-          "protocol": "http",
-          "quality": "高清"
-        },
-        {
-          "url": "http://plex.cyruslee.top:8888/udp/239.77.0.187:5146",
-          "url_hash": "df5678f3bab028d228cf5a3ea941f22b8e6630ec8afd6e877dc78e3347d39204",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "DE=3",
-          "source_section": "揭阳IPTV",
-          "protocol": "http",
-          "quality": "高清"
-        },
-        {
-          "url": "http://jellyfin.cyruslee.top:8888/udp/239.77.0.187:5146",
-          "url_hash": "d942a78b45c202bac76c28e6c4b5c9716f278612393a110daeded1e70b8307c1",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "DE=3",
-          "source_section": "揭阳IPTV",
-          "protocol": "http",
-          "quality": "高清"
-        },
-        {
-          "url": "http://www.3344.uk:8888/udp/239.77.0.187:5146",
-          "url_hash": "e3fb031d3e9bf9edb2301d313ef0294abc06ac0f0a80497899df5c833623b896",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "DE=3",
-          "source_section": "揭阳IPTV",
-          "protocol": "http",
-          "quality": "高清"
-        },
-        {
-          "url": "http://ikuai.cyruslee.top:8888/udp/239.77.0.187:5146",
-          "url_hash": "feb5eec317645a0d76e5d7ceb152d5f9ea49e73f160eaf6da64560f3aa97314e",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "DE=3",
-          "source_section": "揭阳IPTV",
-          "protocol": "http",
-          "quality": "高清"
-        },
-        {
-          "url": "http://yanshifen.top:8889/udp/239.77.0.187:5146",
-          "url_hash": "e86240bd838a6218fc9ab580646c965370110ec07c6adfd855d982c226474044",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "DE=3",
-          "source_section": "揭阳IPTV",
-          "protocol": "http",
-          "quality": "高清"
-        },
-        {
-          "url": "http://www.maomizi.cn:9527/udp/239.77.0.187:5146",
-          "url_hash": "be9717e1e7cefd5fd9fb9d1deb3e604798c01e8e0ee496e41f1e0ead04efe283",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "DE=3",
-          "source_section": "揭阳IPTV",
-          "protocol": "http",
-          "quality": "高清"
-        },
-        {
-          "url": "http://61.145.188.90:50055/udp/239.77.0.187:5146",
-          "url_hash": "149467acaef08e853e44165d0e92dcb2e76d4dbbda92a8b67bfd74fff41db494",
           "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
           "source_line": 3,
           "group_raw": "DE=3",
@@ -46304,6 +45307,197 @@
           "source_section": "广东酒店",
           "protocol": "https",
           "quality": ""
+        }
+      ]
+    },
+    {
+      "channel_key": "汕尾生活",
+      "name": "汕尾生活",
+      "category": "地方频道",
+      "quality": "高清",
+      "line_count": 15,
+      "sources": [
+        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
+      ],
+      "source_lines": [
+        3
+      ],
+      "groups_raw": [
+        "DE=3"
+      ],
+      "source_sections": [
+        "揭阳IPTV"
+      ],
+      "protocols": [
+        "http"
+      ],
+      "urls": [
+        "http://119.29.142.81:4022/udp/239.77.0.187:5146",
+        "http://hongzhijiaoyu.net:8188/udp/239.77.0.187:5146",
+        "http://lsa.familyds.com:8188/udp/239.77.0.187:5146",
+        "http://www.yahao.host:4022/udp/239.77.0.187:5146",
+        "http://gdyd.7259.cc.cd:4111/udp/239.77.0.187:5146",
+        "http://gdyd.7259.cc.cd:4014/udp/239.77.0.187:5146",
+        "http://www.syy3.top:3861/udp/239.77.0.187:5146",
+        "http://lbyjlt.vv5678.cn:8880/udp/239.77.0.187:5146",
+        "http://plex.cyruslee.top:8888/udp/239.77.0.187:5146",
+        "http://jellyfin.cyruslee.top:8888/udp/239.77.0.187:5146",
+        "http://www.3344.uk:8888/udp/239.77.0.187:5146",
+        "http://ikuai.cyruslee.top:8888/udp/239.77.0.187:5146",
+        "http://yanshifen.top:8889/udp/239.77.0.187:5146",
+        "http://www.maomizi.cn:9527/udp/239.77.0.187:5146",
+        "http://61.145.188.90:50055/udp/239.77.0.187:5146"
+      ],
+      "lines": [
+        {
+          "url": "http://119.29.142.81:4022/udp/239.77.0.187:5146",
+          "url_hash": "6a2cc3ebd5061fc44dfbf964d756247035c3c147127a950bf6c0f2e0998d1d6d",
+          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+          "source_line": 3,
+          "group_raw": "DE=3",
+          "source_section": "揭阳IPTV",
+          "protocol": "http",
+          "quality": "高清"
+        },
+        {
+          "url": "http://hongzhijiaoyu.net:8188/udp/239.77.0.187:5146",
+          "url_hash": "913c83d1db28137a6cb3ccdc68b6cad871f9c6f88f047e8851528f7a3b72ce7e",
+          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+          "source_line": 3,
+          "group_raw": "DE=3",
+          "source_section": "揭阳IPTV",
+          "protocol": "http",
+          "quality": "高清"
+        },
+        {
+          "url": "http://lsa.familyds.com:8188/udp/239.77.0.187:5146",
+          "url_hash": "b1001b3786db9be9656e8ff75c9fe4310dee2419b77cb2e493ad5f7fd16383c3",
+          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+          "source_line": 3,
+          "group_raw": "DE=3",
+          "source_section": "揭阳IPTV",
+          "protocol": "http",
+          "quality": "高清"
+        },
+        {
+          "url": "http://www.yahao.host:4022/udp/239.77.0.187:5146",
+          "url_hash": "f8bd47759627106f103245f94eb2592a20ef415d0f7a4c14426402eb2f738f40",
+          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+          "source_line": 3,
+          "group_raw": "DE=3",
+          "source_section": "揭阳IPTV",
+          "protocol": "http",
+          "quality": "高清"
+        },
+        {
+          "url": "http://gdyd.7259.cc.cd:4111/udp/239.77.0.187:5146",
+          "url_hash": "c88d5ad2fa972deb6af8a123b07b9169efedc76aeb312dfdc92767982f191be5",
+          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+          "source_line": 3,
+          "group_raw": "DE=3",
+          "source_section": "揭阳IPTV",
+          "protocol": "http",
+          "quality": "高清"
+        },
+        {
+          "url": "http://gdyd.7259.cc.cd:4014/udp/239.77.0.187:5146",
+          "url_hash": "68018f32b90c5c58e27d218679e902fc61494552ff47379e358f30602f39aaed",
+          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+          "source_line": 3,
+          "group_raw": "DE=3",
+          "source_section": "揭阳IPTV",
+          "protocol": "http",
+          "quality": "高清"
+        },
+        {
+          "url": "http://www.syy3.top:3861/udp/239.77.0.187:5146",
+          "url_hash": "059132b72bfe4bf25133488b4e2edd41c88eccc0cbcf541bbf2cff4332ec07c4",
+          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+          "source_line": 3,
+          "group_raw": "DE=3",
+          "source_section": "揭阳IPTV",
+          "protocol": "http",
+          "quality": "高清"
+        },
+        {
+          "url": "http://lbyjlt.vv5678.cn:8880/udp/239.77.0.187:5146",
+          "url_hash": "4ef376daa2180193719fc18aa9da4dade0c47dd5a241a03b3a4d510c233a48b1",
+          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+          "source_line": 3,
+          "group_raw": "DE=3",
+          "source_section": "揭阳IPTV",
+          "protocol": "http",
+          "quality": "高清"
+        },
+        {
+          "url": "http://plex.cyruslee.top:8888/udp/239.77.0.187:5146",
+          "url_hash": "df5678f3bab028d228cf5a3ea941f22b8e6630ec8afd6e877dc78e3347d39204",
+          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+          "source_line": 3,
+          "group_raw": "DE=3",
+          "source_section": "揭阳IPTV",
+          "protocol": "http",
+          "quality": "高清"
+        },
+        {
+          "url": "http://jellyfin.cyruslee.top:8888/udp/239.77.0.187:5146",
+          "url_hash": "d942a78b45c202bac76c28e6c4b5c9716f278612393a110daeded1e70b8307c1",
+          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+          "source_line": 3,
+          "group_raw": "DE=3",
+          "source_section": "揭阳IPTV",
+          "protocol": "http",
+          "quality": "高清"
+        },
+        {
+          "url": "http://www.3344.uk:8888/udp/239.77.0.187:5146",
+          "url_hash": "e3fb031d3e9bf9edb2301d313ef0294abc06ac0f0a80497899df5c833623b896",
+          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+          "source_line": 3,
+          "group_raw": "DE=3",
+          "source_section": "揭阳IPTV",
+          "protocol": "http",
+          "quality": "高清"
+        },
+        {
+          "url": "http://ikuai.cyruslee.top:8888/udp/239.77.0.187:5146",
+          "url_hash": "feb5eec317645a0d76e5d7ceb152d5f9ea49e73f160eaf6da64560f3aa97314e",
+          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+          "source_line": 3,
+          "group_raw": "DE=3",
+          "source_section": "揭阳IPTV",
+          "protocol": "http",
+          "quality": "高清"
+        },
+        {
+          "url": "http://yanshifen.top:8889/udp/239.77.0.187:5146",
+          "url_hash": "e86240bd838a6218fc9ab580646c965370110ec07c6adfd855d982c226474044",
+          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+          "source_line": 3,
+          "group_raw": "DE=3",
+          "source_section": "揭阳IPTV",
+          "protocol": "http",
+          "quality": "高清"
+        },
+        {
+          "url": "http://www.maomizi.cn:9527/udp/239.77.0.187:5146",
+          "url_hash": "be9717e1e7cefd5fd9fb9d1deb3e604798c01e8e0ee496e41f1e0ead04efe283",
+          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+          "source_line": 3,
+          "group_raw": "DE=3",
+          "source_section": "揭阳IPTV",
+          "protocol": "http",
+          "quality": "高清"
+        },
+        {
+          "url": "http://61.145.188.90:50055/udp/239.77.0.187:5146",
+          "url_hash": "149467acaef08e853e44165d0e92dcb2e76d4dbbda92a8b67bfd74fff41db494",
+          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+          "source_line": 3,
+          "group_raw": "DE=3",
+          "source_section": "揭阳IPTV",
+          "protocol": "http",
+          "quality": "高清"
         }
       ]
     },
@@ -73630,6 +72824,222 @@
       ]
     },
     {
+      "channel_key": "cgtn法语",
+      "name": "CGTN法语",
+      "category": "央视频道",
+      "quality": "",
+      "line_count": 7,
+      "sources": [
+        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+        "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt"
+      ],
+      "source_lines": [
+        3,
+        5
+      ],
+      "groups_raw": [
+        "华港央视",
+        "咪咕央视2"
+      ],
+      "source_sections": [
+        "华港央视",
+        "咪咕央视2"
+      ],
+      "protocols": [
+        "http",
+        "https"
+      ],
+      "urls": [
+        "http://my1nas.dpdns.org:1234/609006476",
+        "http://www.20260809.xyz:1234/609006476",
+        "http://xch819.cn:7788/609006476",
+        "https://tv.zhuhongxuan.cn/609006476",
+        "http://njdm.i234.me:1234/609006476",
+        "https://live.chinacert.cftest5.cn/cnmg/live/609006476",
+        "https://virtual.anbox.dpdns.org/resolve?channel=CGTN%E6%B3%95%E8%AF%AD&src=aHR0cHM6Ly8wNDcyLm9yZy9obHMvY2d0bmYubTN1OA%3D%3D"
+      ],
+      "lines": [
+        {
+          "url": "http://my1nas.dpdns.org:1234/609006476",
+          "url_hash": "d46fbaa361c4a16b3ece204e888f6bd88fd33956979e31b8fa6019a263d5fbbb",
+          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+          "source_line": 3,
+          "group_raw": "咪咕央视2",
+          "source_section": "咪咕央视2",
+          "protocol": "http",
+          "quality": ""
+        },
+        {
+          "url": "http://www.20260809.xyz:1234/609006476",
+          "url_hash": "dbb9d7c05a53dc31f5044f1991891220d589ec2904abe80a83ceca74b8b1fe49",
+          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+          "source_line": 3,
+          "group_raw": "咪咕央视2",
+          "source_section": "咪咕央视2",
+          "protocol": "http",
+          "quality": ""
+        },
+        {
+          "url": "http://xch819.cn:7788/609006476",
+          "url_hash": "b5229db7ddc6fb19686a131993b37d0b7dc095090400cf541cdbd799f976aaf1",
+          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+          "source_line": 3,
+          "group_raw": "咪咕央视2",
+          "source_section": "咪咕央视2",
+          "protocol": "http",
+          "quality": ""
+        },
+        {
+          "url": "https://tv.zhuhongxuan.cn/609006476",
+          "url_hash": "25d31aef97c134c2715acce3a89ac7e61a2edff95032aa3212e6e0d716a0848d",
+          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+          "source_line": 3,
+          "group_raw": "咪咕央视2",
+          "source_section": "咪咕央视2",
+          "protocol": "https",
+          "quality": ""
+        },
+        {
+          "url": "http://njdm.i234.me:1234/609006476",
+          "url_hash": "8ad9cafa667760a230a2803459105e945aad461fe746fd19f4763a590e11563d",
+          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+          "source_line": 3,
+          "group_raw": "咪咕央视2",
+          "source_section": "咪咕央视2",
+          "protocol": "http",
+          "quality": ""
+        },
+        {
+          "url": "https://live.chinacert.cftest5.cn/cnmg/live/609006476",
+          "url_hash": "42ae0265e4cb7197c7fe688f2a4f3e79ef344f6601a0db5718dcedd0f88babe0",
+          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+          "source_line": 3,
+          "group_raw": "咪咕央视2",
+          "source_section": "咪咕央视2",
+          "protocol": "https",
+          "quality": ""
+        },
+        {
+          "url": "https://virtual.anbox.dpdns.org/resolve?channel=CGTN%E6%B3%95%E8%AF%AD&src=aHR0cHM6Ly8wNDcyLm9yZy9obHMvY2d0bmYubTN1OA%3D%3D",
+          "url_hash": "fa1b16e4bc1da5dd1f2f1d15252019db95989eb6022138848d0c9d625cb0a45e",
+          "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
+          "source_line": 5,
+          "group_raw": "华港央视",
+          "source_section": "华港央视",
+          "protocol": "https",
+          "quality": ""
+        }
+      ]
+    },
+    {
+      "channel_key": "cgtn俄语",
+      "name": "CGTN俄语",
+      "category": "央视频道",
+      "quality": "",
+      "line_count": 7,
+      "sources": [
+        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+        "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt"
+      ],
+      "source_lines": [
+        3,
+        5
+      ],
+      "groups_raw": [
+        "华港央视",
+        "咪咕央视2"
+      ],
+      "source_sections": [
+        "华港央视",
+        "咪咕央视2"
+      ],
+      "protocols": [
+        "http",
+        "https"
+      ],
+      "urls": [
+        "http://my1nas.dpdns.org:1234/609006446",
+        "http://www.20260809.xyz:1234/609006446",
+        "http://xch819.cn:7788/609006446",
+        "https://tv.zhuhongxuan.cn/609006446",
+        "http://njdm.i234.me:1234/609006446",
+        "https://live.chinacert.cftest5.cn/cnmg/live/609006446",
+        "https://virtual.anbox.dpdns.org/resolve?channel=CGTN%E4%BF%84%E8%AF%AD&src=aHR0cHM6Ly8wNDcyLm9yZy9obHMvY2d0bmUubTN1OA%3D%3D"
+      ],
+      "lines": [
+        {
+          "url": "http://my1nas.dpdns.org:1234/609006446",
+          "url_hash": "67678ce03997cb908386e5ae36bf79bc3210d7b8c373bdbc53fc227fc953dfc8",
+          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+          "source_line": 3,
+          "group_raw": "咪咕央视2",
+          "source_section": "咪咕央视2",
+          "protocol": "http",
+          "quality": ""
+        },
+        {
+          "url": "http://www.20260809.xyz:1234/609006446",
+          "url_hash": "923037a2756ed5973a1f17365b9a62b86a8e4686dba9008b7bae453c99cb2f4b",
+          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+          "source_line": 3,
+          "group_raw": "咪咕央视2",
+          "source_section": "咪咕央视2",
+          "protocol": "http",
+          "quality": ""
+        },
+        {
+          "url": "http://xch819.cn:7788/609006446",
+          "url_hash": "a0b5ebd7c78b9a423672d993f751679b8e77abebf69cef1c230a828e1d450600",
+          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+          "source_line": 3,
+          "group_raw": "咪咕央视2",
+          "source_section": "咪咕央视2",
+          "protocol": "http",
+          "quality": ""
+        },
+        {
+          "url": "https://tv.zhuhongxuan.cn/609006446",
+          "url_hash": "e7c53b8d21834ff9ff5209a521f3acaba96addda6a1b480e96e0c8168966ae7a",
+          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+          "source_line": 3,
+          "group_raw": "咪咕央视2",
+          "source_section": "咪咕央视2",
+          "protocol": "https",
+          "quality": ""
+        },
+        {
+          "url": "http://njdm.i234.me:1234/609006446",
+          "url_hash": "b8150bae5e97a204a4fc5b62d7793966c501e84921ecfed2ba93139506809d22",
+          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+          "source_line": 3,
+          "group_raw": "咪咕央视2",
+          "source_section": "咪咕央视2",
+          "protocol": "http",
+          "quality": ""
+        },
+        {
+          "url": "https://live.chinacert.cftest5.cn/cnmg/live/609006446",
+          "url_hash": "ef2286c8ae393f7e08e8b84eae003bb38c2ab791545ca39f0a63cfeb5e694bf4",
+          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+          "source_line": 3,
+          "group_raw": "咪咕央视2",
+          "source_section": "咪咕央视2",
+          "protocol": "https",
+          "quality": ""
+        },
+        {
+          "url": "https://virtual.anbox.dpdns.org/resolve?channel=CGTN%E4%BF%84%E8%AF%AD&src=aHR0cHM6Ly8wNDcyLm9yZy9obHMvY2d0bmUubTN1OA%3D%3D",
+          "url_hash": "9a2cac9cf9657649eef71c783858a971e2baf6e3196698b14f5355a1abc23156",
+          "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
+          "source_line": 5,
+          "group_raw": "华港央视",
+          "source_section": "华港央视",
+          "protocol": "https",
+          "quality": ""
+        }
+      ]
+    },
+    {
       "channel_key": "老故事",
       "name": "老故事",
       "category": "央视频道",
@@ -74006,7 +73416,7 @@
       "name": "上视东方影视",
       "category": "影视少儿",
       "quality": "",
-      "line_count": 6,
+      "line_count": 4,
       "sources": [
         "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
       ],
@@ -74026,8 +73436,6 @@
       "urls": [
         "http://my1nas.dpdns.org:1234/617290047",
         "http://www.20260809.xyz:1234/617290047",
-        "http://xch819.cn:7788/617290047",
-        "https://tv.zhuhongxuan.cn/617290047",
         "http://njdm.i234.me:1234/617290047",
         "https://live.chinacert.cftest5.cn/cnmg/live/617290047"
       ],
@@ -74050,26 +73458,6 @@
           "group_raw": "咪咕央视2",
           "source_section": "咪咕央视2",
           "protocol": "http",
-          "quality": ""
-        },
-        {
-          "url": "http://xch819.cn:7788/617290047",
-          "url_hash": "c1a585ab9b4ef4311359670e912d2557d5ceb5f469c585ad147195bb3a084614",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "咪咕央视2",
-          "source_section": "咪咕央视2",
-          "protocol": "http",
-          "quality": ""
-        },
-        {
-          "url": "https://tv.zhuhongxuan.cn/617290047",
-          "url_hash": "bb05cda45a5bfb4e1c455e4bf3e6a3fe31c042ff2a18f5234b6388a2e899a17c",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "咪咕央视2",
-          "source_section": "咪咕央视2",
-          "protocol": "https",
           "quality": ""
         },
         {
@@ -75680,7 +75068,7 @@
       "name": "江阴新闻综合",
       "category": "央视频道",
       "quality": "",
-      "line_count": 6,
+      "line_count": 3,
       "sources": [
         "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
       ],
@@ -75699,9 +75087,6 @@
       ],
       "urls": [
         "http://my1nas.dpdns.org:1234/955227979",
-        "http://www.20260809.xyz:1234/955227979",
-        "http://xch819.cn:7788/955227979",
-        "https://tv.zhuhongxuan.cn/955227979",
         "http://njdm.i234.me:1234/955227979",
         "https://live.chinacert.cftest5.cn/cnmg/live/955227979"
       ],
@@ -75714,36 +75099,6 @@
           "group_raw": "咪咕央视2",
           "source_section": "咪咕央视2",
           "protocol": "http",
-          "quality": ""
-        },
-        {
-          "url": "http://www.20260809.xyz:1234/955227979",
-          "url_hash": "02a4b6bc6fc099fe286b6e0e954463a70c4c9941715c8317249f1953124111dd",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "咪咕央视2",
-          "source_section": "咪咕央视2",
-          "protocol": "http",
-          "quality": ""
-        },
-        {
-          "url": "http://xch819.cn:7788/955227979",
-          "url_hash": "962de43af409aa8ec0cf4dfa0f2fa18354b37855c844824a8609e8ae3e5f1df8",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "咪咕央视2",
-          "source_section": "咪咕央视2",
-          "protocol": "http",
-          "quality": ""
-        },
-        {
-          "url": "https://tv.zhuhongxuan.cn/955227979",
-          "url_hash": "a990652f772fa586c6484799437103095b5fac5f3ba8446b0ce17a049c7bdaf0",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "咪咕央视2",
-          "source_section": "咪咕央视2",
-          "protocol": "https",
           "quality": ""
         },
         {
@@ -78655,7 +78010,7 @@
       "name": "新动漫",
       "category": "影视少儿",
       "quality": "",
-      "line_count": 6,
+      "line_count": 3,
       "sources": [
         "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
       ],
@@ -78674,9 +78029,6 @@
       ],
       "urls": [
         "http://my1nas.dpdns.org:1234/961930269",
-        "http://www.20260809.xyz:1234/961930269",
-        "http://xch819.cn:7788/961930269",
-        "https://tv.zhuhongxuan.cn/961930269",
         "http://njdm.i234.me:1234/961930269",
         "https://live.chinacert.cftest5.cn/cnmg/live/961930269"
       ],
@@ -78689,36 +78041,6 @@
           "group_raw": "咪咕央视2",
           "source_section": "咪咕央视2",
           "protocol": "http",
-          "quality": ""
-        },
-        {
-          "url": "http://www.20260809.xyz:1234/961930269",
-          "url_hash": "fc7a461a2ab17d739398ad01168969638d9fd6a61c596a3108f09850bcd5966b",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "咪咕央视2",
-          "source_section": "咪咕央视2",
-          "protocol": "http",
-          "quality": ""
-        },
-        {
-          "url": "http://xch819.cn:7788/961930269",
-          "url_hash": "ff7bee9702405607e9a6497c7b16ac7b1d728e2c6050063bef114f587e923035",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "咪咕央视2",
-          "source_section": "咪咕央视2",
-          "protocol": "http",
-          "quality": ""
-        },
-        {
-          "url": "https://tv.zhuhongxuan.cn/961930269",
-          "url_hash": "4715d7a916cb06c14bc174d16bb5a10953807f28d51297c0f068ee2db0059a93",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "咪咕央视2",
-          "source_section": "咪咕央视2",
-          "protocol": "https",
           "quality": ""
         },
         {
@@ -82932,7 +82254,7 @@
       "name": "湖北经视",
       "category": "地方频道",
       "quality": "",
-      "line_count": 4,
+      "line_count": 3,
       "sources": [
         "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
       ],
@@ -82951,7 +82273,6 @@
       ],
       "urls": [
         "http://38.75.136.137:98/gslb/dsdqpub/hbjs.m3u8",
-        "http://107.150.60.122/live/hbjs.m3u8",
         "http://192.151.150.154/live/hbjs.m3u8",
         "http://198.204.228.26/live/hbjs.m3u8"
       ],
@@ -82963,16 +82284,6 @@
           "source_line": 3,
           "group_raw": "DE=3",
           "source_section": "央视频",
-          "protocol": "http",
-          "quality": ""
-        },
-        {
-          "url": "http://107.150.60.122/live/hbjs.m3u8",
-          "url_hash": "5ac79ccaaf2156c1cdf9615d69a1e4dadd19dbf7c1fa652d341da8a6daa4bce5",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "DE=3",
-          "source_section": "央视频3",
           "protocol": "http",
           "quality": ""
         },
@@ -83074,7 +82385,7 @@
       "name": "湖北垄上",
       "category": "地方频道",
       "quality": "",
-      "line_count": 4,
+      "line_count": 3,
       "sources": [
         "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
       ],
@@ -83093,7 +82404,6 @@
       ],
       "urls": [
         "http://38.75.136.137:98/gslb/dsdqpub/hbls.m3u8",
-        "http://107.150.60.122/live/hbls.m3u8",
         "http://192.151.150.154/live/hbls.m3u8",
         "http://198.204.228.26/live/hbls.m3u8"
       ],
@@ -83105,16 +82415,6 @@
           "source_line": 3,
           "group_raw": "DE=3",
           "source_section": "央视频",
-          "protocol": "http",
-          "quality": ""
-        },
-        {
-          "url": "http://107.150.60.122/live/hbls.m3u8",
-          "url_hash": "0cd300933cb76f30a3ac5975a997c70275c47867f84ca8b5808c9bba774f8bf4",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "DE=3",
-          "source_section": "央视频3",
           "protocol": "http",
           "quality": ""
         },
@@ -85671,43 +84971,6 @@
       ]
     },
     {
-      "channel_key": "猫和老鼠",
-      "name": "猫和老鼠",
-      "category": "影视轮播",
-      "quality": "",
-      "line_count": 1,
-      "sources": [
-        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
-      ],
-      "source_lines": [
-        3
-      ],
-      "groups_raw": [
-        "DE=3"
-      ],
-      "source_sections": [
-        "虎牙轮播"
-      ],
-      "protocols": [
-        "http"
-      ],
-      "urls": [
-        "http://footyun.top:35455/huya/11352879"
-      ],
-      "lines": [
-        {
-          "url": "http://footyun.top:35455/huya/11352879",
-          "url_hash": "a2a8a0e9f149ccb3df7b4829edf0e30b53b0d4fcd9359c2102edc104bd2f8dcf",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "DE=3",
-          "source_section": "虎牙轮播",
-          "protocol": "http",
-          "quality": ""
-        }
-      ]
-    },
-    {
       "channel_key": "龙珠",
       "name": "龙珠",
       "category": "影视轮播",
@@ -86361,43 +85624,6 @@
           "source_line": 5,
           "group_raw": "央74視",
           "source_section": "央74視",
-          "protocol": "http",
-          "quality": ""
-        }
-      ]
-    },
-    {
-      "channel_key": "周润发",
-      "name": "周润发",
-      "category": "影视轮播",
-      "quality": "",
-      "line_count": 1,
-      "sources": [
-        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
-      ],
-      "source_lines": [
-        3
-      ],
-      "groups_raw": [
-        "DE=3"
-      ],
-      "source_sections": [
-        "虎牙轮播"
-      ],
-      "protocols": [
-        "http"
-      ],
-      "urls": [
-        "http://footyun.top:35455/huya/11342387"
-      ],
-      "lines": [
-        {
-          "url": "http://footyun.top:35455/huya/11342387",
-          "url_hash": "c6b3308310212f198a95c6c704e2d18f98a00aac0360b69fe70062f66892cfef",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "DE=3",
-          "source_section": "虎牙轮播",
           "protocol": "http",
           "quality": ""
         }
@@ -88509,80 +87735,6 @@
         {
           "url": "http://footyun.top:35455/huya/11342384",
           "url_hash": "5f5dca5d1f0bff43fdafefe6f47df53ae1f5c7a8647fa8e7bd973f278c172c62",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "DE=3",
-          "source_section": "虎牙轮播",
-          "protocol": "http",
-          "quality": ""
-        }
-      ]
-    },
-    {
-      "channel_key": "神探狄仁杰第一部",
-      "name": "神探狄仁杰第一部",
-      "category": "影视轮播",
-      "quality": "",
-      "line_count": 1,
-      "sources": [
-        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
-      ],
-      "source_lines": [
-        3
-      ],
-      "groups_raw": [
-        "DE=3"
-      ],
-      "source_sections": [
-        "虎牙轮播"
-      ],
-      "protocols": [
-        "http"
-      ],
-      "urls": [
-        "http://footyun.top:35455/huya/11352958"
-      ],
-      "lines": [
-        {
-          "url": "http://footyun.top:35455/huya/11352958",
-          "url_hash": "c2757542cf8238951b024cb0ab758ca88a9b20a7119f3d87951ba6c726249d9e",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "DE=3",
-          "source_section": "虎牙轮播",
-          "protocol": "http",
-          "quality": ""
-        }
-      ]
-    },
-    {
-      "channel_key": "神探狄仁杰第三部",
-      "name": "神探狄仁杰第三部",
-      "category": "影视轮播",
-      "quality": "",
-      "line_count": 1,
-      "sources": [
-        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
-      ],
-      "source_lines": [
-        3
-      ],
-      "groups_raw": [
-        "DE=3"
-      ],
-      "source_sections": [
-        "虎牙轮播"
-      ],
-      "protocols": [
-        "http"
-      ],
-      "urls": [
-        "http://footyun.top:35455/huya/11342425"
-      ],
-      "lines": [
-        {
-          "url": "http://footyun.top:35455/huya/11342425",
-          "url_hash": "7c6fad16b990689fd41d7ce0d1c47f6acfc1317b6b0d606fce7fb69cbb5f8db7",
           "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
           "source_line": 3,
           "group_raw": "DE=3",
@@ -91531,43 +90683,6 @@
         {
           "url": "http://footyun.top:35455/douyu/7107176",
           "url_hash": "bca096a7037a0514c52528d56b3500791f2ddc68f8cb4c537f480decb4c7a18e",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "DE=3",
-          "source_section": "斗鱼轮播",
-          "protocol": "http",
-          "quality": ""
-        }
-      ]
-    },
-    {
-      "channel_key": "燕双鹰下饭专场我赌你碗里没菜",
-      "name": "燕双鹰·下饭专场：我赌你碗里没菜",
-      "category": "影视轮播",
-      "quality": "",
-      "line_count": 1,
-      "sources": [
-        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
-      ],
-      "source_lines": [
-        3
-      ],
-      "groups_raw": [
-        "DE=3"
-      ],
-      "source_sections": [
-        "斗鱼轮播"
-      ],
-      "protocols": [
-        "http"
-      ],
-      "urls": [
-        "http://footyun.top:35455/douyu/11931032"
-      ],
-      "lines": [
-        {
-          "url": "http://footyun.top:35455/douyu/11931032",
-          "url_hash": "321cb41f8c0f8335c0d633922ad44acb9a980842793596218d6e6d031797446b",
           "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
           "source_line": 3,
           "group_raw": "DE=3",
@@ -95009,43 +94124,6 @@
         {
           "url": "http://footyun.top:35455/douyu/3113309",
           "url_hash": "19e5c7f6abfa95c4f124b8218d9e000ecf3db3a96b47273e361de51945dd51cf",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "DE=3",
-          "source_section": "斗鱼轮播",
-          "protocol": "http",
-          "quality": ""
-        }
-      ]
-    },
-    {
-      "channel_key": "kurayun的直播间",
-      "name": "kura_yun的直播间",
-      "category": "影视轮播",
-      "quality": "",
-      "line_count": 1,
-      "sources": [
-        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
-      ],
-      "source_lines": [
-        3
-      ],
-      "groups_raw": [
-        "DE=3"
-      ],
-      "source_sections": [
-        "斗鱼轮播"
-      ],
-      "protocols": [
-        "http"
-      ],
-      "urls": [
-        "http://footyun.top:35455/douyu/4627432"
-      ],
-      "lines": [
-        {
-          "url": "http://footyun.top:35455/douyu/4627432",
-          "url_hash": "5e0f1f18675ecc005f85cca78b943afdceba41cbb924edcb1d1ba15d4969a031",
           "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
           "source_line": 3,
           "group_raw": "DE=3",
@@ -99042,43 +98120,6 @@
         {
           "url": "http://footyun.top:35455/douyu/8413092",
           "url_hash": "73d7915ce24f89f131d849ad1a6a500b8868cd0f4b2c4f2426f48bb57642a061",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "DE=3",
-          "source_section": "斗鱼轮播",
-          "protocol": "http",
-          "quality": ""
-        }
-      ]
-    },
-    {
-      "channel_key": "超级敏感的小肉腿",
-      "name": "超级敏感的小肉腿",
-      "category": "影视轮播",
-      "quality": "",
-      "line_count": 1,
-      "sources": [
-        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
-      ],
-      "source_lines": [
-        3
-      ],
-      "groups_raw": [
-        "DE=3"
-      ],
-      "source_sections": [
-        "斗鱼轮播"
-      ],
-      "protocols": [
-        "http"
-      ],
-      "urls": [
-        "http://footyun.top:35455/douyu/10308225"
-      ],
-      "lines": [
-        {
-          "url": "http://footyun.top:35455/douyu/10308225",
-          "url_hash": "3b2efb9ebec4ee19eb1017181de5a1312a79e31fa4312a2820f829176ea03adf",
           "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
           "source_line": 3,
           "group_raw": "DE=3",
@@ -125148,265 +124189,6 @@
       ]
     },
     {
-      "channel_key": "贤于葛格最会讲电影的贤于来啦",
-      "name": "【贤于葛格】最会讲电影的贤于来啦",
-      "category": "影视少儿",
-      "quality": "",
-      "line_count": 1,
-      "sources": [
-        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
-      ],
-      "source_lines": [
-        3
-      ],
-      "groups_raw": [
-        "DE=3"
-      ],
-      "source_sections": [
-        "斗鱼轮播"
-      ],
-      "protocols": [
-        "http"
-      ],
-      "urls": [
-        "http://footyun.top:35455/douyu/9461990"
-      ],
-      "lines": [
-        {
-          "url": "http://footyun.top:35455/douyu/9461990",
-          "url_hash": "5596e8f2a586ecb028e5a85a340fa1ebf681551ce676bd6a1d444abb2e483d8b",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "DE=3",
-          "source_section": "斗鱼轮播",
-          "protocol": "http",
-          "quality": ""
-        }
-      ]
-    },
-    {
-      "channel_key": "二次元放映室有味儿了!",
-      "name": "二次元放映室，有味儿了!",
-      "category": "影视轮播",
-      "quality": "",
-      "line_count": 1,
-      "sources": [
-        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
-      ],
-      "source_lines": [
-        3
-      ],
-      "groups_raw": [
-        "DE=3"
-      ],
-      "source_sections": [
-        "斗鱼轮播"
-      ],
-      "protocols": [
-        "http"
-      ],
-      "urls": [
-        "http://footyun.top:35455/douyu/8912038"
-      ],
-      "lines": [
-        {
-          "url": "http://footyun.top:35455/douyu/8912038",
-          "url_hash": "ad6750d3efa122fe1067370d212db7c3b7560fc1e1eaf34b7cb7ac30b380b190",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "DE=3",
-          "source_section": "斗鱼轮播",
-          "protocol": "http",
-          "quality": ""
-        }
-      ]
-    },
-    {
-      "channel_key": "别问了是臭男人",
-      "name": "别问了，是臭男人",
-      "category": "影视轮播",
-      "quality": "",
-      "line_count": 1,
-      "sources": [
-        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
-      ],
-      "source_lines": [
-        3
-      ],
-      "groups_raw": [
-        "DE=3"
-      ],
-      "source_sections": [
-        "斗鱼轮播"
-      ],
-      "protocols": [
-        "http"
-      ],
-      "urls": [
-        "http://footyun.top:35455/douyu/927999"
-      ],
-      "lines": [
-        {
-          "url": "http://footyun.top:35455/douyu/927999",
-          "url_hash": "dd81bb14a2a7d78cde41b99e51ea913dbfb89c4fb6f903a9dec6f70f1399785a",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "DE=3",
-          "source_section": "斗鱼轮播",
-          "protocol": "http",
-          "quality": ""
-        }
-      ]
-    },
-    {
-      "channel_key": "托腮少女猪五花",
-      "name": "托腮少女猪五花",
-      "category": "影视轮播",
-      "quality": "",
-      "line_count": 1,
-      "sources": [
-        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
-      ],
-      "source_lines": [
-        3
-      ],
-      "groups_raw": [
-        "DE=3"
-      ],
-      "source_sections": [
-        "斗鱼轮播"
-      ],
-      "protocols": [
-        "http"
-      ],
-      "urls": [
-        "http://footyun.top:35455/douyu/3508096"
-      ],
-      "lines": [
-        {
-          "url": "http://footyun.top:35455/douyu/3508096",
-          "url_hash": "50824aef00c22d91e7926f04b2c8828d7c1f11a6e15a4cb281fdc823415211f6",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "DE=3",
-          "source_section": "斗鱼轮播",
-          "protocol": "http",
-          "quality": ""
-        }
-      ]
-    },
-    {
-      "channel_key": "体育足坛事件大盘点",
-      "name": "【体育】足坛事件大盘点",
-      "category": "体育频道",
-      "quality": "",
-      "line_count": 1,
-      "sources": [
-        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
-      ],
-      "source_lines": [
-        3
-      ],
-      "groups_raw": [
-        "DE=3"
-      ],
-      "source_sections": [
-        "斗鱼轮播"
-      ],
-      "protocols": [
-        "http"
-      ],
-      "urls": [
-        "http://footyun.top:35455/douyu/4589972"
-      ],
-      "lines": [
-        {
-          "url": "http://footyun.top:35455/douyu/4589972",
-          "url_hash": "6dcf6d82b4c64c282e57e702ac66c5a2c4cde2bc653c0b2374315f1f2c068b79",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "DE=3",
-          "source_section": "斗鱼轮播",
-          "protocol": "http",
-          "quality": ""
-        }
-      ]
-    },
-    {
-      "channel_key": "出格字幕组的直播间",
-      "name": "出格字幕组的直播间",
-      "category": "影视轮播",
-      "quality": "",
-      "line_count": 1,
-      "sources": [
-        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
-      ],
-      "source_lines": [
-        3
-      ],
-      "groups_raw": [
-        "DE=3"
-      ],
-      "source_sections": [
-        "斗鱼轮播"
-      ],
-      "protocols": [
-        "http"
-      ],
-      "urls": [
-        "http://footyun.top:35455/douyu/8906162"
-      ],
-      "lines": [
-        {
-          "url": "http://footyun.top:35455/douyu/8906162",
-          "url_hash": "8770309e838a012b0419d944628719397ef3d6b134262f5c65a7d72c47756bd7",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "DE=3",
-          "source_section": "斗鱼轮播",
-          "protocol": "http",
-          "quality": ""
-        }
-      ]
-    },
-    {
-      "channel_key": "带你进入抗战年代体会热血抗战",
-      "name": "带你进入抗战年代，体会热血抗战",
-      "category": "影视轮播",
-      "quality": "",
-      "line_count": 1,
-      "sources": [
-        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
-      ],
-      "source_lines": [
-        3
-      ],
-      "groups_raw": [
-        "DE=3"
-      ],
-      "source_sections": [
-        "斗鱼轮播"
-      ],
-      "protocols": [
-        "http"
-      ],
-      "urls": [
-        "http://footyun.top:35455/douyu/9388945"
-      ],
-      "lines": [
-        {
-          "url": "http://footyun.top:35455/douyu/9388945",
-          "url_hash": "3acf93207fae58bb61d953251d1e64559a82ddc2ec1f7cc1d0df39223b1fd0fe",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "DE=3",
-          "source_section": "斗鱼轮播",
-          "protocol": "http",
-          "quality": ""
-        }
-      ]
-    },
-    {
       "channel_key": "搜罗世界上诡异的案件和恐怖故事",
       "name": "搜罗世界上诡异的案件和恐怖故事",
       "category": "影视轮播",
@@ -125444,117 +124226,6 @@
       ]
     },
     {
-      "channel_key": "最牛的特效没有想不到",
-      "name": "最牛的特效，没有想不到",
-      "category": "影视轮播",
-      "quality": "",
-      "line_count": 1,
-      "sources": [
-        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
-      ],
-      "source_lines": [
-        3
-      ],
-      "groups_raw": [
-        "DE=3"
-      ],
-      "source_sections": [
-        "斗鱼轮播"
-      ],
-      "protocols": [
-        "http"
-      ],
-      "urls": [
-        "http://footyun.top:35455/douyu/9406663"
-      ],
-      "lines": [
-        {
-          "url": "http://footyun.top:35455/douyu/9406663",
-          "url_hash": "933865da6828d30783ab2137277262ee2d028a7cebc935db413aa077bb53180c",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "DE=3",
-          "source_section": "斗鱼轮播",
-          "protocol": "http",
-          "quality": ""
-        }
-      ]
-    },
-    {
-      "channel_key": "郭教练篮球教学的直播间",
-      "name": "郭教练篮球教学的直播间",
-      "category": "体育频道",
-      "quality": "",
-      "line_count": 1,
-      "sources": [
-        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
-      ],
-      "source_lines": [
-        3
-      ],
-      "groups_raw": [
-        "DE=3"
-      ],
-      "source_sections": [
-        "斗鱼轮播"
-      ],
-      "protocols": [
-        "http"
-      ],
-      "urls": [
-        "http://footyun.top:35455/douyu/9437932"
-      ],
-      "lines": [
-        {
-          "url": "http://footyun.top:35455/douyu/9437932",
-          "url_hash": "978a339038ea24533092882ba78c4ef09a56d5860d4127ad13ac7efe70bae86e",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "DE=3",
-          "source_section": "斗鱼轮播",
-          "protocol": "http",
-          "quality": ""
-        }
-      ]
-    },
-    {
-      "channel_key": "冯二宝影视鉴赏",
-      "name": "冯二宝 影视鉴赏",
-      "category": "影视少儿",
-      "quality": "",
-      "line_count": 1,
-      "sources": [
-        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
-      ],
-      "source_lines": [
-        3
-      ],
-      "groups_raw": [
-        "DE=3"
-      ],
-      "source_sections": [
-        "斗鱼轮播"
-      ],
-      "protocols": [
-        "http"
-      ],
-      "urls": [
-        "http://footyun.top:35455/douyu/9501818"
-      ],
-      "lines": [
-        {
-          "url": "http://footyun.top:35455/douyu/9501818",
-          "url_hash": "d0466a64d70bb729a34a3cc63b2c7003cdfc2a6c9c7120ad91ffa74676a5d371",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "DE=3",
-          "source_section": "斗鱼轮播",
-          "protocol": "http",
-          "quality": ""
-        }
-      ]
-    },
-    {
       "channel_key": "罐装老k的直播间",
       "name": "罐装老K的直播间",
       "category": "影视轮播",
@@ -125582,117 +124253,6 @@
         {
           "url": "http://footyun.top:35455/douyu/9566210",
           "url_hash": "cb082c98077195da4f0c9e957b9e53f6c8955064d4a6b3ef3b78941ae80d1551",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "DE=3",
-          "source_section": "斗鱼轮播",
-          "protocol": "http",
-          "quality": ""
-        }
-      ]
-    },
-    {
-      "channel_key": "星海璃幻v的直播间",
-      "name": "星海璃幻V的直播间",
-      "category": "影视轮播",
-      "quality": "",
-      "line_count": 1,
-      "sources": [
-        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
-      ],
-      "source_lines": [
-        3
-      ],
-      "groups_raw": [
-        "DE=3"
-      ],
-      "source_sections": [
-        "斗鱼轮播"
-      ],
-      "protocols": [
-        "http"
-      ],
-      "urls": [
-        "http://footyun.top:35455/douyu/9567313"
-      ],
-      "lines": [
-        {
-          "url": "http://footyun.top:35455/douyu/9567313",
-          "url_hash": "a7652447190a0f31538e52c8adeb1a232b79813e32cd91b63be54309fa370b23",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "DE=3",
-          "source_section": "斗鱼轮播",
-          "protocol": "http",
-          "quality": ""
-        }
-      ]
-    },
-    {
-      "channel_key": "补番目录v的直播间",
-      "name": "补番目录V的直播间",
-      "category": "影视轮播",
-      "quality": "",
-      "line_count": 1,
-      "sources": [
-        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
-      ],
-      "source_lines": [
-        3
-      ],
-      "groups_raw": [
-        "DE=3"
-      ],
-      "source_sections": [
-        "斗鱼轮播"
-      ],
-      "protocols": [
-        "http"
-      ],
-      "urls": [
-        "http://footyun.top:35455/douyu/9668692"
-      ],
-      "lines": [
-        {
-          "url": "http://footyun.top:35455/douyu/9668692",
-          "url_hash": "4aab3c21f9735d72e368c54aa573ea15338475637d613be7e90623c1869ab57f",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "DE=3",
-          "source_section": "斗鱼轮播",
-          "protocol": "http",
-          "quality": ""
-        }
-      ]
-    },
-    {
-      "channel_key": "阿烦与小铃铛甜蜜日常",
-      "name": "阿烦与小铃铛甜蜜日常",
-      "category": "影视轮播",
-      "quality": "",
-      "line_count": 1,
-      "sources": [
-        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
-      ],
-      "source_lines": [
-        3
-      ],
-      "groups_raw": [
-        "DE=3"
-      ],
-      "source_sections": [
-        "斗鱼轮播"
-      ],
-      "protocols": [
-        "http"
-      ],
-      "urls": [
-        "http://footyun.top:35455/douyu/9702820"
-      ],
-      "lines": [
-        {
-          "url": "http://footyun.top:35455/douyu/9702820",
-          "url_hash": "3aa73817e3b4d50df1f07355b932429bca37fd9b7e8e7df4e697a57e3049eff4",
           "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
           "source_line": 3,
           "group_raw": "DE=3",
@@ -145544,43 +144104,6 @@
       ]
     },
     {
-      "channel_key": "🔄经典老歌刷新就是新内容",
-      "name": "🔄经典老歌[刷新就是新内容]",
-      "category": "影视少儿",
-      "quality": "",
-      "line_count": 1,
-      "sources": [
-        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
-      ],
-      "source_lines": [
-        3
-      ],
-      "groups_raw": [
-        "DE=3"
-      ],
-      "source_sections": [
-        "随机点播"
-      ],
-      "protocols": [
-        "http"
-      ],
-      "urls": [
-        "http://xjj1.716888.xyz/fenlei/mtv/mtv.php"
-      ],
-      "lines": [
-        {
-          "url": "http://xjj1.716888.xyz/fenlei/mtv/mtv.php",
-          "url_hash": "cc6dbd617354700aaeb63eff2c5989b0615daed4df5799d2d6438cbeb401d52d",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "DE=3",
-          "source_section": "随机点播",
-          "protocol": "http",
-          "quality": ""
-        }
-      ]
-    },
-    {
       "channel_key": "🔄4k视频刷新就是新内容",
       "name": "🔄4K视频[刷新就是新内容]",
       "category": "音乐点播",
@@ -146432,43 +144955,6 @@
       ]
     },
     {
-      "channel_key": "🔄美女展示20刷新就是新内容",
-      "name": "🔄美女展示20[刷新就是新内容]",
-      "category": "音乐点播",
-      "quality": "",
-      "line_count": 1,
-      "sources": [
-        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
-      ],
-      "source_lines": [
-        3
-      ],
-      "groups_raw": [
-        "DE=3"
-      ],
-      "source_sections": [
-        "随机点播"
-      ],
-      "protocols": [
-        "http"
-      ],
-      "urls": [
-        "http://xjj2.716888.xyz/fenlei/api/apiheng1.php"
-      ],
-      "lines": [
-        {
-          "url": "http://xjj2.716888.xyz/fenlei/api/apiheng1.php",
-          "url_hash": "a0aa29f091070764ed143e488659e235abf240ea58ec2c289fa2bb19de09e2cc",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "DE=3",
-          "source_section": "随机点播",
-          "protocol": "http",
-          "quality": ""
-        }
-      ]
-    },
-    {
       "channel_key": "🔄美女展示21刷新就是新内容",
       "name": "🔄美女展示21[刷新就是新内容]",
       "category": "音乐点播",
@@ -146681,43 +145167,6 @@
         {
           "url": "https://lhttp.qingting.fm/live/1262/64k.mp3",
           "url_hash": "978d1ea2c30726c984aec3def5445f078246eae6cda8d6931ca85d628d6a7579",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "DE=3",
-          "source_section": "音乐电台",
-          "protocol": "https",
-          "quality": ""
-        }
-      ]
-    },
-    {
-      "channel_key": "广东3",
-      "name": "广东3",
-      "category": "地方频道",
-      "quality": "",
-      "line_count": 1,
-      "sources": [
-        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
-      ],
-      "source_lines": [
-        3
-      ],
-      "groups_raw": [
-        "DE=3"
-      ],
-      "source_sections": [
-        "音乐电台"
-      ],
-      "protocols": [
-        "https"
-      ],
-      "urls": [
-        "https://lhttp.qingting.fm/live/1264/64k.mp3"
-      ],
-      "lines": [
-        {
-          "url": "https://lhttp.qingting.fm/live/1264/64k.mp3",
-          "url_hash": "6dd110c99a0499a053b192a2207cedc628ca6538c004dc075270877d08941ca3",
           "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
           "source_line": 3,
           "group_raw": "DE=3",
@@ -147172,43 +145621,6 @@
       ]
     },
     {
-      "channel_key": "河南音乐",
-      "name": "河南音乐",
-      "category": "地方频道",
-      "quality": "",
-      "line_count": 1,
-      "sources": [
-        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
-      ],
-      "source_lines": [
-        3
-      ],
-      "groups_raw": [
-        "DE=3"
-      ],
-      "source_sections": [
-        "音乐电台"
-      ],
-      "protocols": [
-        "https"
-      ],
-      "urls": [
-        "https://lhttp.qingting.fm/live/1206/64k.mp3"
-      ],
-      "lines": [
-        {
-          "url": "https://lhttp.qingting.fm/live/1206/64k.mp3",
-          "url_hash": "e00c32259d634cf3a6778d33ca782c5e52d08aa22f3000f4b35d24e6bf7878bf",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "DE=3",
-          "source_section": "音乐电台",
-          "protocol": "https",
-          "quality": ""
-        }
-      ]
-    },
-    {
       "channel_key": "香港古典音乐",
       "name": "香港古典音乐",
       "category": "音乐频道",
@@ -147310,43 +145722,6 @@
         {
           "url": "https://lhttp.qingting.fm/live/20067/64k.mp3",
           "url_hash": "68c2dbe47e6b13aa12db21bb1448d5dce1dd2a07b7e042d47f8146da771570c5",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "DE=3",
-          "source_section": "音乐电台",
-          "protocol": "https",
-          "quality": ""
-        }
-      ]
-    },
-    {
-      "channel_key": "湖北音乐",
-      "name": "湖北音乐",
-      "category": "地方频道",
-      "quality": "",
-      "line_count": 1,
-      "sources": [
-        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
-      ],
-      "source_lines": [
-        3
-      ],
-      "groups_raw": [
-        "DE=3"
-      ],
-      "source_sections": [
-        "音乐电台"
-      ],
-      "protocols": [
-        "https"
-      ],
-      "urls": [
-        "https://lhttp.qingting.fm/live/1289/64k.mp3"
-      ],
-      "lines": [
-        {
-          "url": "https://lhttp.qingting.fm/live/1289/64k.mp3",
-          "url_hash": "8b8cf5186bedccc2a3912a2310fbe697c6d50882f34b60b628eb26e7e9d86be3",
           "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
           "source_line": 3,
           "group_raw": "DE=3",
@@ -147495,43 +145870,6 @@
         {
           "url": "https://lhttp.qingting.fm/live/4932/64k.mp3",
           "url_hash": "4491c487560d12d77b1ddfb5a772f09ce801f05df298223e974c2927d47c7525",
-          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-          "source_line": 3,
-          "group_raw": "DE=3",
-          "source_section": "音乐电台",
-          "protocol": "https",
-          "quality": ""
-        }
-      ]
-    },
-    {
-      "channel_key": "福建音乐",
-      "name": "福建音乐",
-      "category": "地方频道",
-      "quality": "",
-      "line_count": 1,
-      "sources": [
-        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
-      ],
-      "source_lines": [
-        3
-      ],
-      "groups_raw": [
-        "DE=3"
-      ],
-      "source_sections": [
-        "音乐电台"
-      ],
-      "protocols": [
-        "https"
-      ],
-      "urls": [
-        "https://lhttp.qingting.fm/live/4585/64k.mp3"
-      ],
-      "lines": [
-        {
-          "url": "https://lhttp.qingting.fm/live/4585/64k.mp3",
-          "url_hash": "951cce121f0306a8b76e8eb21913abf52c9f7aa2dccc625e66bf7fcc00529034",
           "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
           "source_line": 3,
           "group_raw": "DE=3",
@@ -273777,7 +272115,7 @@
       "name": "广东卫视D",
       "category": "卫视频道",
       "quality": "",
-      "line_count": 2,
+      "line_count": 1,
       "sources": [
         "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt"
       ],
@@ -273785,19 +272123,16 @@
         5
       ],
       "groups_raw": [
-        "卫视C",
-        "央卫D"
+        "卫视C"
       ],
       "source_sections": [
-        "卫视C",
-        "央卫D"
+        "卫视C"
       ],
       "protocols": [
         "http"
       ],
       "urls": [
-        "http://42.193.195.163:3000/608831231",
-        "http://104.152.209.49:8181/720p/gdws.m3u8"
+        "http://42.193.195.163:3000/608831231"
       ],
       "lines": [
         {
@@ -273809,16 +272144,6 @@
           "source_section": "卫视C",
           "protocol": "http",
           "quality": ""
-        },
-        {
-          "url": "http://104.152.209.49:8181/720p/gdws.m3u8",
-          "url_hash": "0b2260c3f6298af0f87ddbf012faa043da9dc3d5c14c38376d9cf49de8f098b1",
-          "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-          "source_line": 5,
-          "group_raw": "央卫D",
-          "source_section": "央卫D",
-          "protocol": "http",
-          "quality": ""
         }
       ]
     },
@@ -273827,7 +272152,7 @@
       "name": "江苏卫视D",
       "category": "卫视频道",
       "quality": "",
-      "line_count": 2,
+      "line_count": 1,
       "sources": [
         "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt"
       ],
@@ -273835,19 +272160,16 @@
         5
       ],
       "groups_raw": [
-        "卫视C",
-        "央卫D"
+        "卫视C"
       ],
       "source_sections": [
-        "卫视C",
-        "央卫D"
+        "卫视C"
       ],
       "protocols": [
         "http"
       ],
       "urls": [
-        "http://42.193.195.163:3000/623899368",
-        "http://104.152.209.49:8181/720p/jsws.m3u8"
+        "http://42.193.195.163:3000/623899368"
       ],
       "lines": [
         {
@@ -273859,16 +272181,6 @@
           "source_section": "卫视C",
           "protocol": "http",
           "quality": ""
-        },
-        {
-          "url": "http://104.152.209.49:8181/720p/jsws.m3u8",
-          "url_hash": "62e7c3b8f442a19b5262bf5f0ed1761e83b25d0a5911b608f0aa739a48165a06",
-          "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-          "source_line": 5,
-          "group_raw": "央卫D",
-          "source_section": "央卫D",
-          "protocol": "http",
-          "quality": ""
         }
       ]
     },
@@ -273877,7 +272189,7 @@
       "name": "东方卫视D",
       "category": "卫视频道",
       "quality": "",
-      "line_count": 2,
+      "line_count": 1,
       "sources": [
         "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt"
       ],
@@ -273885,19 +272197,16 @@
         5
       ],
       "groups_raw": [
-        "卫视C",
-        "央卫D"
+        "卫视C"
       ],
       "source_sections": [
-        "卫视C",
-        "央卫D"
+        "卫视C"
       ],
       "protocols": [
         "http"
       ],
       "urls": [
-        "http://42.193.195.163:3000/651632648",
-        "http://104.152.209.49:8181/720p/dfws.m3u8"
+        "http://42.193.195.163:3000/651632648"
       ],
       "lines": [
         {
@@ -273907,16 +272216,6 @@
           "source_line": 5,
           "group_raw": "卫视C",
           "source_section": "卫视C",
-          "protocol": "http",
-          "quality": ""
-        },
-        {
-          "url": "http://104.152.209.49:8181/720p/dfws.m3u8",
-          "url_hash": "4d0b2d584f0d7e29b6c58d286c188fec64a86e3f6b27417881e0fd2acfaa1d64",
-          "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-          "source_line": 5,
-          "group_raw": "央卫D",
-          "source_section": "央卫D",
           "protocol": "http",
           "quality": ""
         }
@@ -274112,7 +272411,7 @@
       "name": "河南卫视D",
       "category": "卫视频道",
       "quality": "",
-      "line_count": 2,
+      "line_count": 1,
       "sources": [
         "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt"
       ],
@@ -274120,19 +272419,16 @@
         5
       ],
       "groups_raw": [
-        "卫视C",
-        "央卫D"
+        "卫视C"
       ],
       "source_sections": [
-        "卫视C",
-        "央卫D"
+        "卫视C"
       ],
       "protocols": [
         "http"
       ],
       "urls": [
-        "http://42.193.195.163:3000/790187291",
-        "http://104.152.209.49:8181/720p/haws.m3u8"
+        "http://42.193.195.163:3000/790187291"
       ],
       "lines": [
         {
@@ -274144,16 +272440,6 @@
           "source_section": "卫视C",
           "protocol": "http",
           "quality": ""
-        },
-        {
-          "url": "http://104.152.209.49:8181/720p/haws.m3u8",
-          "url_hash": "a1a2d2853d33d28972bbbd44766e630e48ed8113bb82d92ffa87866d8232ba48",
-          "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-          "source_line": 5,
-          "group_raw": "央卫D",
-          "source_section": "央卫D",
-          "protocol": "http",
-          "quality": ""
         }
       ]
     },
@@ -274162,7 +272448,7 @@
       "name": "北京卫视D",
       "category": "卫视频道",
       "quality": "",
-      "line_count": 2,
+      "line_count": 1,
       "sources": [
         "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt"
       ],
@@ -274170,19 +272456,16 @@
         5
       ],
       "groups_raw": [
-        "卫视C",
-        "央卫D"
+        "卫视C"
       ],
       "source_sections": [
-        "卫视C",
-        "央卫D"
+        "卫视C"
       ],
       "protocols": [
         "http"
       ],
       "urls": [
-        "http://42.193.195.163:3000/630287636",
-        "http://104.152.209.49:8181/720p/bjws.m3u8"
+        "http://42.193.195.163:3000/630287636"
       ],
       "lines": [
         {
@@ -274192,16 +272475,6 @@
           "source_line": 5,
           "group_raw": "卫视C",
           "source_section": "卫视C",
-          "protocol": "http",
-          "quality": ""
-        },
-        {
-          "url": "http://104.152.209.49:8181/720p/bjws.m3u8",
-          "url_hash": "ef8bf7b86179c8eec49f9da96fa53ce769697f925082e6adfb16c240f32b2760",
-          "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-          "source_line": 5,
-          "group_raw": "央卫D",
-          "source_section": "央卫D",
           "protocol": "http",
           "quality": ""
         }
@@ -274309,43 +272582,6 @@
         {
           "url": "http://129.211.14.102:22223/1351814644",
           "url_hash": "c33be533ffe941adcef509831e3a2ae91467b622c6123fa4eac971346ce9ee6d",
-          "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-          "source_line": 5,
-          "group_raw": "卫视C",
-          "source_section": "卫视C",
-          "protocol": "http",
-          "quality": ""
-        }
-      ]
-    },
-    {
-      "channel_key": "封神榜d",
-      "name": "封神榜D",
-      "category": "卫视频道",
-      "quality": "",
-      "line_count": 1,
-      "sources": [
-        "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt"
-      ],
-      "source_lines": [
-        5
-      ],
-      "groups_raw": [
-        "卫视C"
-      ],
-      "source_sections": [
-        "卫视C"
-      ],
-      "protocols": [
-        "http"
-      ],
-      "urls": [
-        "http://129.211.14.102:22223/1353426319"
-      ],
-      "lines": [
-        {
-          "url": "http://129.211.14.102:22223/1353426319",
-          "url_hash": "5ad0a99db422f39401b50e5a8613dc904985d48981a510e7b3d2368f38f9dee9",
           "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
           "source_line": 5,
           "group_raw": "卫视C",
@@ -275207,265 +273443,6 @@
       ]
     },
     {
-      "channel_key": "cctv第一剧场d",
-      "name": "CCTV-第一剧场D",
-      "category": "央视频道",
-      "quality": "",
-      "line_count": 1,
-      "sources": [
-        "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt"
-      ],
-      "source_lines": [
-        5
-      ],
-      "groups_raw": [
-        "央卫D"
-      ],
-      "source_sections": [
-        "央卫D"
-      ],
-      "protocols": [
-        "http"
-      ],
-      "urls": [
-        "http://104.152.209.49:8181/720p/dyjc.m3u8"
-      ],
-      "lines": [
-        {
-          "url": "http://104.152.209.49:8181/720p/dyjc.m3u8",
-          "url_hash": "c72c5fa1426fc6eda3554472136ee0dd88364e3ec8c345578d30d94add4cddf6",
-          "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-          "source_line": 5,
-          "group_raw": "央卫D",
-          "source_section": "央卫D",
-          "protocol": "http",
-          "quality": ""
-        }
-      ]
-    },
-    {
-      "channel_key": "cctv风云剧场d",
-      "name": "CCTV-风云剧场D",
-      "category": "央视频道",
-      "quality": "",
-      "line_count": 1,
-      "sources": [
-        "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt"
-      ],
-      "source_lines": [
-        5
-      ],
-      "groups_raw": [
-        "央卫D"
-      ],
-      "source_sections": [
-        "央卫D"
-      ],
-      "protocols": [
-        "http"
-      ],
-      "urls": [
-        "http://104.152.209.49:8181/720p/fyjc.m3u8"
-      ],
-      "lines": [
-        {
-          "url": "http://104.152.209.49:8181/720p/fyjc.m3u8",
-          "url_hash": "dc5c26fb404784b1bcba393da20238a4c6fd1b6c7819ef484b1b6735c31682d5",
-          "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-          "source_line": 5,
-          "group_raw": "央卫D",
-          "source_section": "央卫D",
-          "protocol": "http",
-          "quality": ""
-        }
-      ]
-    },
-    {
-      "channel_key": "cctv怀旧剧场d",
-      "name": "CCTV-怀旧剧场D",
-      "category": "央视频道",
-      "quality": "",
-      "line_count": 1,
-      "sources": [
-        "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt"
-      ],
-      "source_lines": [
-        5
-      ],
-      "groups_raw": [
-        "央卫D"
-      ],
-      "source_sections": [
-        "央卫D"
-      ],
-      "protocols": [
-        "http"
-      ],
-      "urls": [
-        "http://104.152.209.49:8181/720p/hjjc.m3u8"
-      ],
-      "lines": [
-        {
-          "url": "http://104.152.209.49:8181/720p/hjjc.m3u8",
-          "url_hash": "20d7883426df1fab483efc05d46c8811c27ed82b3133c86886e01a306a90ea32",
-          "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-          "source_line": 5,
-          "group_raw": "央卫D",
-          "source_section": "央卫D",
-          "protocol": "http",
-          "quality": ""
-        }
-      ]
-    },
-    {
-      "channel_key": "cctv兵器科技d",
-      "name": "CCTV-兵器科技D",
-      "category": "央视频道",
-      "quality": "",
-      "line_count": 1,
-      "sources": [
-        "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt"
-      ],
-      "source_lines": [
-        5
-      ],
-      "groups_raw": [
-        "央卫D"
-      ],
-      "source_sections": [
-        "央卫D"
-      ],
-      "protocols": [
-        "http"
-      ],
-      "urls": [
-        "http://104.152.209.49:8181/720p/gfjs.m3u8"
-      ],
-      "lines": [
-        {
-          "url": "http://104.152.209.49:8181/720p/gfjs.m3u8",
-          "url_hash": "474a7a08cf854ecafaf354e0aafd2d9c5a9f2e7ff41b977bee74801220f1a4e4",
-          "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-          "source_line": 5,
-          "group_raw": "央卫D",
-          "source_section": "央卫D",
-          "protocol": "http",
-          "quality": ""
-        }
-      ]
-    },
-    {
-      "channel_key": "cctv女性时尚d",
-      "name": "CCTV-女性时尚D",
-      "category": "央视频道",
-      "quality": "",
-      "line_count": 1,
-      "sources": [
-        "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt"
-      ],
-      "source_lines": [
-        5
-      ],
-      "groups_raw": [
-        "央卫D"
-      ],
-      "source_sections": [
-        "央卫D"
-      ],
-      "protocols": [
-        "http"
-      ],
-      "urls": [
-        "http://104.152.209.49:8181/720p/nxss.m3u8"
-      ],
-      "lines": [
-        {
-          "url": "http://104.152.209.49:8181/720p/nxss.m3u8",
-          "url_hash": "23b100d1a9268efac65346ed82a3cb42f0669d216d3cab56fa1235726f1fb311",
-          "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-          "source_line": 5,
-          "group_raw": "央卫D",
-          "source_section": "央卫D",
-          "protocol": "http",
-          "quality": ""
-        }
-      ]
-    },
-    {
-      "channel_key": "cctv世界地理d",
-      "name": "CCTV-世界地理D",
-      "category": "央视频道",
-      "quality": "",
-      "line_count": 1,
-      "sources": [
-        "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt"
-      ],
-      "source_lines": [
-        5
-      ],
-      "groups_raw": [
-        "央卫D"
-      ],
-      "source_sections": [
-        "央卫D"
-      ],
-      "protocols": [
-        "http"
-      ],
-      "urls": [
-        "http://104.152.209.49:8181/720p/sjdl.m3u8"
-      ],
-      "lines": [
-        {
-          "url": "http://104.152.209.49:8181/720p/sjdl.m3u8",
-          "url_hash": "a869108c6fceb433bc7d8cf7a563e613f512633ae86eba327924597926e4a834",
-          "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-          "source_line": 5,
-          "group_raw": "央卫D",
-          "source_section": "央卫D",
-          "protocol": "http",
-          "quality": ""
-        }
-      ]
-    },
-    {
-      "channel_key": "cctv卫生健康d",
-      "name": "CCTV-卫生健康D",
-      "category": "央视频道",
-      "quality": "",
-      "line_count": 1,
-      "sources": [
-        "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt"
-      ],
-      "source_lines": [
-        5
-      ],
-      "groups_raw": [
-        "央卫D"
-      ],
-      "source_sections": [
-        "央卫D"
-      ],
-      "protocols": [
-        "http"
-      ],
-      "urls": [
-        "http://104.152.209.49:8181/720p/wsjk.m3u8"
-      ],
-      "lines": [
-        {
-          "url": "http://104.152.209.49:8181/720p/wsjk.m3u8",
-          "url_hash": "30b0acbdbad7d78311000eba6bf2b94a7f307981db1c54fdec7821ded8bdf340",
-          "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-          "source_line": 5,
-          "group_raw": "央卫D",
-          "source_section": "央卫D",
-          "protocol": "http",
-          "quality": ""
-        }
-      ]
-    },
-    {
       "channel_key": "cctv央视文化精品d",
       "name": "CCTV-央视文化精品D",
       "category": "央视频道",
@@ -275493,154 +273470,6 @@
         {
           "url": "http://104.152.209.49:8181/720p/ysjp.m3u8",
           "url_hash": "8498142b3df0657afa3d20239b774817f1ab551cf69cc33c1c5c3e207692ed4c",
-          "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-          "source_line": 5,
-          "group_raw": "央卫D",
-          "source_section": "央卫D",
-          "protocol": "http",
-          "quality": ""
-        }
-      ]
-    },
-    {
-      "channel_key": "cctv风云音乐d",
-      "name": "CCTV-风云音乐D",
-      "category": "央视频道",
-      "quality": "",
-      "line_count": 1,
-      "sources": [
-        "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt"
-      ],
-      "source_lines": [
-        5
-      ],
-      "groups_raw": [
-        "央卫D"
-      ],
-      "source_sections": [
-        "央卫D"
-      ],
-      "protocols": [
-        "http"
-      ],
-      "urls": [
-        "http://104.152.209.49:8181/720p/fyyy.m3u8"
-      ],
-      "lines": [
-        {
-          "url": "http://104.152.209.49:8181/720p/fyyy.m3u8",
-          "url_hash": "26703554bd84f026a7af2d98c7ab52b41f7fc21e21ed2d2acf1a6bb994ccd508",
-          "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-          "source_line": 5,
-          "group_raw": "央卫D",
-          "source_section": "央卫D",
-          "protocol": "http",
-          "quality": ""
-        }
-      ]
-    },
-    {
-      "channel_key": "cctv央视台球d",
-      "name": "CCTV-央视台球D",
-      "category": "央视频道",
-      "quality": "",
-      "line_count": 1,
-      "sources": [
-        "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt"
-      ],
-      "source_lines": [
-        5
-      ],
-      "groups_raw": [
-        "央卫D"
-      ],
-      "source_sections": [
-        "央卫D"
-      ],
-      "protocols": [
-        "http"
-      ],
-      "urls": [
-        "http://104.152.209.49:8181/720p/ystq.m3u8"
-      ],
-      "lines": [
-        {
-          "url": "http://104.152.209.49:8181/720p/ystq.m3u8",
-          "url_hash": "8495f090e8461fc85cc98f960b26c027a63428f824a2f3d0ba625905bff96aab",
-          "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-          "source_line": 5,
-          "group_raw": "央卫D",
-          "source_section": "央卫D",
-          "protocol": "http",
-          "quality": ""
-        }
-      ]
-    },
-    {
-      "channel_key": "cctv风云足球d",
-      "name": "CCTV-风云足球D",
-      "category": "央视频道",
-      "quality": "",
-      "line_count": 1,
-      "sources": [
-        "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt"
-      ],
-      "source_lines": [
-        5
-      ],
-      "groups_raw": [
-        "央卫D"
-      ],
-      "source_sections": [
-        "央卫D"
-      ],
-      "protocols": [
-        "http"
-      ],
-      "urls": [
-        "http://104.152.209.49:8181/720p/fyzq.m3u8"
-      ],
-      "lines": [
-        {
-          "url": "http://104.152.209.49:8181/720p/fyzq.m3u8",
-          "url_hash": "70949c9612578dc05d6f7098681892ec771a5cd37e9a94dbc57d7841ff92e6d1",
-          "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-          "source_line": 5,
-          "group_raw": "央卫D",
-          "source_section": "央卫D",
-          "protocol": "http",
-          "quality": ""
-        }
-      ]
-    },
-    {
-      "channel_key": "cctv高尔夫网球d",
-      "name": "CCTV-高尔夫网球D",
-      "category": "央视频道",
-      "quality": "",
-      "line_count": 1,
-      "sources": [
-        "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt"
-      ],
-      "source_lines": [
-        5
-      ],
-      "groups_raw": [
-        "央卫D"
-      ],
-      "source_sections": [
-        "央卫D"
-      ],
-      "protocols": [
-        "http"
-      ],
-      "urls": [
-        "http://104.152.209.49:8181/720p/gefwq.m3u8"
-      ],
-      "lines": [
-        {
-          "url": "http://104.152.209.49:8181/720p/gefwq.m3u8",
-          "url_hash": "49fad237fb67797f06101681994f642afce1e49534b0d283b3aca3e071948302",
           "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
           "source_line": 5,
           "group_raw": "央卫D",
@@ -275752,117 +273581,6 @@
         {
           "url": "http://104.152.209.49:8181/720p/hews.m3u8",
           "url_hash": "348edd3609f626c2d751ef294dd0247e14e5896ef8a340e1cc3641aa3ebdb73d",
-          "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-          "source_line": 5,
-          "group_raw": "央卫D",
-          "source_section": "央卫D",
-          "protocol": "http",
-          "quality": ""
-        }
-      ]
-    },
-    {
-      "channel_key": "山东卫视d",
-      "name": "山东卫视D",
-      "category": "卫视频道",
-      "quality": "",
-      "line_count": 1,
-      "sources": [
-        "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt"
-      ],
-      "source_lines": [
-        5
-      ],
-      "groups_raw": [
-        "央卫D"
-      ],
-      "source_sections": [
-        "央卫D"
-      ],
-      "protocols": [
-        "http"
-      ],
-      "urls": [
-        "http://104.152.209.49:8181/720p/sdws.m3u8"
-      ],
-      "lines": [
-        {
-          "url": "http://104.152.209.49:8181/720p/sdws.m3u8",
-          "url_hash": "8412f93225a4f127397e419dffce19b5793b5feee13b1429b373a732a5e1f69b",
-          "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-          "source_line": 5,
-          "group_raw": "央卫D",
-          "source_section": "央卫D",
-          "protocol": "http",
-          "quality": ""
-        }
-      ]
-    },
-    {
-      "channel_key": "天津卫视d",
-      "name": "天津卫视D",
-      "category": "卫视频道",
-      "quality": "",
-      "line_count": 1,
-      "sources": [
-        "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt"
-      ],
-      "source_lines": [
-        5
-      ],
-      "groups_raw": [
-        "央卫D"
-      ],
-      "source_sections": [
-        "央卫D"
-      ],
-      "protocols": [
-        "http"
-      ],
-      "urls": [
-        "http://104.152.209.49:8181/720p/tjws.m3u8"
-      ],
-      "lines": [
-        {
-          "url": "http://104.152.209.49:8181/720p/tjws.m3u8",
-          "url_hash": "e25bf711cb8c06db3a9aa98b2736594aef4b48500403e5a49c31cd9b6a2d7403",
-          "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-          "source_line": 5,
-          "group_raw": "央卫D",
-          "source_section": "央卫D",
-          "protocol": "http",
-          "quality": ""
-        }
-      ]
-    },
-    {
-      "channel_key": "安徽卫视d",
-      "name": "安徽卫视D",
-      "category": "卫视频道",
-      "quality": "",
-      "line_count": 1,
-      "sources": [
-        "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt"
-      ],
-      "source_lines": [
-        5
-      ],
-      "groups_raw": [
-        "央卫D"
-      ],
-      "source_sections": [
-        "央卫D"
-      ],
-      "protocols": [
-        "http"
-      ],
-      "urls": [
-        "http://104.152.209.49:8181/720p/ahws.m3u8"
-      ],
-      "lines": [
-        {
-          "url": "http://104.152.209.49:8181/720p/ahws.m3u8",
-          "url_hash": "8d632716f9e310462702908a0e4f67f474bc9dc6485a631cf44868f1a5a7e552",
           "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
           "source_line": 5,
           "group_raw": "央卫D",
@@ -277251,56 +274969,6 @@
       ]
     },
     {
-      "channel_key": "tv6",
-      "name": "tv6",
-      "category": "港澳台",
-      "quality": "",
-      "line_count": 2,
-      "sources": [
-        "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt"
-      ],
-      "source_lines": [
-        5
-      ],
-      "groups_raw": [
-        "MY2(rtm)",
-        "RTM"
-      ],
-      "source_sections": [
-        "MY2(rtm)",
-        "RTM"
-      ],
-      "protocols": [
-        "https"
-      ],
-      "urls": [
-        "https://d25tgymtnqzu8s.cloudfront.net/smil:tv6/manifest.mpd?id=6",
-        "https://d25tgymtnqzu8s.cloudfront.net/smil:tv6/manifest.mpd"
-      ],
-      "lines": [
-        {
-          "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:tv6/manifest.mpd?id=6",
-          "url_hash": "179961cc343c10b3ed1a6a68980daa37401eb12b3d34ce1774290ef2f6e66a2b",
-          "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-          "source_line": 5,
-          "group_raw": "RTM",
-          "source_section": "RTM",
-          "protocol": "https",
-          "quality": ""
-        },
-        {
-          "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:tv6/manifest.mpd",
-          "url_hash": "85ee48555031851ce5360730238763bce6285bad4677d20ab2e16c1aa0416a72",
-          "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-          "source_line": 5,
-          "group_raw": "MY2(rtm)",
-          "source_section": "MY2(rtm)",
-          "protocol": "https",
-          "quality": ""
-        }
-      ]
-    },
-    {
       "channel_key": "okey",
       "name": "Okey",
       "category": "港澳台",
@@ -277365,43 +275033,6 @@
         {
           "url": "https://d25tgymtnqzu8s.cloudfront.net/live/media0/sukan/DASH/sukan.mpd?id=1",
           "url_hash": "12ea115fe40c8f5ecdd6e71b03537555ee049a28883ada57b948bae234ba5dc6",
-          "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-          "source_line": 5,
-          "group_raw": "RTM",
-          "source_section": "RTM",
-          "protocol": "https",
-          "quality": ""
-        }
-      ]
-    },
-    {
-      "channel_key": "bfifawc1",
-      "name": "BFIFA WC 1",
-      "category": "港澳台",
-      "quality": "",
-      "line_count": 1,
-      "sources": [
-        "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt"
-      ],
-      "source_lines": [
-        5
-      ],
-      "groups_raw": [
-        "RTM"
-      ],
-      "source_sections": [
-        "RTM"
-      ],
-      "protocols": [
-        "https"
-      ],
-      "urls": [
-        "https://d30aylox5wvifh.cloudfront.net/live/media0/wc1/DASH/wc1.mpd?id=35272"
-      ],
-      "lines": [
-        {
-          "url": "https://d30aylox5wvifh.cloudfront.net/live/media0/wc1/DASH/wc1.mpd?id=35272",
-          "url_hash": "2eaff983c528b9e1a59a8449b9be7267fc81b3c95daa684b36d0ba2c36266ac4",
           "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
           "source_line": 5,
           "group_raw": "RTM",
@@ -277624,6 +275255,43 @@
         {
           "url": "http://8.134.175.232:4022/IPTV-广东电视台/深圳体育健康",
           "url_hash": "af3877216e825d450a05ccb18b73d27a1c063ef2819a4c5caabb195311d16021",
+          "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
+          "source_line": 5,
+          "group_raw": "广东云",
+          "source_section": "广东云",
+          "protocol": "http",
+          "quality": ""
+        }
+      ]
+    },
+    {
+      "channel_key": "深圳龙岗",
+      "name": "深圳龙岗",
+      "category": "地方频道",
+      "quality": "",
+      "line_count": 1,
+      "sources": [
+        "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt"
+      ],
+      "source_lines": [
+        5
+      ],
+      "groups_raw": [
+        "广东云"
+      ],
+      "source_sections": [
+        "广东云"
+      ],
+      "protocols": [
+        "http"
+      ],
+      "urls": [
+        "http://8.134.175.232:4022/IPTV-广东电视台/深圳龙岗"
+      ],
+      "lines": [
+        {
+          "url": "http://8.134.175.232:4022/IPTV-广东电视台/深圳龙岗",
+          "url_hash": "740acc4bff6a6b219162a6f5672116a23e9b040afc140d9c80e4423b87cfb022",
           "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
           "source_line": 5,
           "group_raw": "广东云",
@@ -277994,6 +275662,80 @@
         {
           "url": "http://8.134.175.232:4022/IPTV-广东电视台/珠海新闻",
           "url_hash": "50137b5807bc8da22b1d9698735003a321cb5514202a46cac59f5b01463e932f",
+          "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
+          "source_line": 5,
+          "group_raw": "广东云",
+          "source_section": "广东云",
+          "protocol": "http",
+          "quality": ""
+        }
+      ]
+    },
+    {
+      "channel_key": "云浮综合",
+      "name": "云浮综合",
+      "category": "地方频道",
+      "quality": "",
+      "line_count": 1,
+      "sources": [
+        "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt"
+      ],
+      "source_lines": [
+        5
+      ],
+      "groups_raw": [
+        "广东云"
+      ],
+      "source_sections": [
+        "广东云"
+      ],
+      "protocols": [
+        "http"
+      ],
+      "urls": [
+        "http://8.134.175.232:4022/IPTV-广东电视台/云浮综合"
+      ],
+      "lines": [
+        {
+          "url": "http://8.134.175.232:4022/IPTV-广东电视台/云浮综合",
+          "url_hash": "aa9ca36cb4132ad8c589dc967028817bb2749bb701c63289dfca5d9ec58ba2c2",
+          "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
+          "source_line": 5,
+          "group_raw": "广东云",
+          "source_section": "广东云",
+          "protocol": "http",
+          "quality": ""
+        }
+      ]
+    },
+    {
+      "channel_key": "云浮文旅",
+      "name": "云浮文旅",
+      "category": "地方频道",
+      "quality": "",
+      "line_count": 1,
+      "sources": [
+        "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt"
+      ],
+      "source_lines": [
+        5
+      ],
+      "groups_raw": [
+        "广东云"
+      ],
+      "source_sections": [
+        "广东云"
+      ],
+      "protocols": [
+        "http"
+      ],
+      "urls": [
+        "http://8.134.175.232:4022/IPTV-广东电视台/云浮文旅"
+      ],
+      "lines": [
+        {
+          "url": "http://8.134.175.232:4022/IPTV-广东电视台/云浮文旅",
+          "url_hash": "5d41e6fcbb7f81ffb72fa5ed8fe5e60f9ec66ffed8e8b49bb665a9e3f52a09aa",
           "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
           "source_line": 5,
           "group_raw": "广东云",
@@ -293431,7 +291173,7 @@
       "name": "tV OKEY",
       "category": "港澳台",
       "quality": "",
-      "line_count": 3,
+      "line_count": 2,
       "sources": [
         "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt"
       ],
@@ -293449,23 +291191,12 @@
       ],
       "urls": [
         "https://d25tgymtnqzu8s.cloudfront.net/smil:okey/manifest.mpd",
-        "https://d25tgymtnqzu8s.cloudfront.net/live/media0/okey/DASH/okey.mpd?id=1",
         "https://d25tgymtnqzu8s.cloudfront.net/live/media0/okey1/DASH/okey1.mpd"
       ],
       "lines": [
         {
           "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:okey/manifest.mpd",
           "url_hash": "e28f7c5c03c1ec2e428780147417c551e0fb41b0fdda85e9916e3dc96b27a6c5",
-          "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-          "source_line": 5,
-          "group_raw": "MY2(rtm)",
-          "source_section": "MY2(rtm)",
-          "protocol": "https",
-          "quality": ""
-        },
-        {
-          "url": "https://d25tgymtnqzu8s.cloudfront.net/live/media0/okey/DASH/okey.mpd?id=1",
-          "url_hash": "5243f27d42263c419c16b04efa52d6e8f5386fbdec781f217bb107b9bac5d054",
           "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
           "source_line": 5,
           "group_raw": "MY2(rtm)",
@@ -293819,54 +291550,6 @@
       ]
     },
     {
-      "channel_key": "sukanrtm",
-      "name": "Sukan RTM",
-      "category": "港澳台",
-      "quality": "",
-      "line_count": 2,
-      "sources": [
-        "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt"
-      ],
-      "source_lines": [
-        5
-      ],
-      "groups_raw": [
-        "MY2(rtm)"
-      ],
-      "source_sections": [
-        "MY2(rtm)"
-      ],
-      "protocols": [
-        "https"
-      ],
-      "urls": [
-        "https://d25tgymtnqzu8s.cloudfront.net/smil:sukan/manifest.mpd",
-        "https://d25tgymtnqzu8s.cloudfront.net/smil:sukan/index.m3u8?id=4"
-      ],
-      "lines": [
-        {
-          "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:sukan/manifest.mpd",
-          "url_hash": "7c395e9609a908aaa2bf0a2e7783f9d873be26f1d591cdaf5e2988ebc5b0855e",
-          "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-          "source_line": 5,
-          "group_raw": "MY2(rtm)",
-          "source_section": "MY2(rtm)",
-          "protocol": "https",
-          "quality": ""
-        },
-        {
-          "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:sukan/index.m3u8?id=4",
-          "url_hash": "e7981e54864555a354361d269cea61ad4602d97b7a0a7de273992f2931d91fc9",
-          "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-          "source_line": 5,
-          "group_raw": "MY2(rtm)",
-          "source_section": "MY2(rtm)",
-          "protocol": "https",
-          "quality": ""
-        }
-      ]
-    },
-    {
       "channel_key": "rtm1",
       "name": "RTM 1",
       "category": "港澳台",
@@ -293990,6 +291673,43 @@
         {
           "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:okey/index.m3u8?id=3",
           "url_hash": "47a6349e843f4912c6e8c5d72fcb70cc98b18a78d96404b37ab81b58480d6f69",
+          "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
+          "source_line": 5,
+          "group_raw": "MY2(rtm)",
+          "source_section": "MY2(rtm)",
+          "protocol": "https",
+          "quality": ""
+        }
+      ]
+    },
+    {
+      "channel_key": "sukanrtm",
+      "name": "Sukan RTM",
+      "category": "港澳台",
+      "quality": "",
+      "line_count": 1,
+      "sources": [
+        "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt"
+      ],
+      "source_lines": [
+        5
+      ],
+      "groups_raw": [
+        "MY2(rtm)"
+      ],
+      "source_sections": [
+        "MY2(rtm)"
+      ],
+      "protocols": [
+        "https"
+      ],
+      "urls": [
+        "https://d25tgymtnqzu8s.cloudfront.net/smil:sukan/index.m3u8?id=4"
+      ],
+      "lines": [
+        {
+          "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:sukan/index.m3u8?id=4",
+          "url_hash": "e7981e54864555a354361d269cea61ad4602d97b7a0a7de273992f2931d91fc9",
           "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
           "source_line": 5,
           "group_raw": "MY2(rtm)",
@@ -294381,191 +292101,6 @@
       ]
     },
     {
-      "channel_key": "rtmworld",
-      "name": "RTM World",
-      "category": "港澳台",
-      "quality": "",
-      "line_count": 1,
-      "sources": [
-        "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt"
-      ],
-      "source_lines": [
-        5
-      ],
-      "groups_raw": [
-        "MY2(rtm)"
-      ],
-      "source_sections": [
-        "MY2(rtm)"
-      ],
-      "protocols": [
-        "https"
-      ],
-      "urls": [
-        "https://d25tgymtnqzu8s.cloudfront.net/event/smil:event1/manifest.mpd"
-      ],
-      "lines": [
-        {
-          "url": "https://d25tgymtnqzu8s.cloudfront.net/event/smil:event1/manifest.mpd",
-          "url_hash": "55982a689dfdcde0002fafacdb97ef222afcc54f82cbf485d09408896658cb0e",
-          "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-          "source_line": 5,
-          "group_raw": "MY2(rtm)",
-          "source_section": "MY2(rtm)",
-          "protocol": "https",
-          "quality": ""
-        }
-      ]
-    },
-    {
-      "channel_key": "salambaitullah2026",
-      "name": "Salam Baitullah 2026",
-      "category": "港澳台",
-      "quality": "",
-      "line_count": 1,
-      "sources": [
-        "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt"
-      ],
-      "source_lines": [
-        5
-      ],
-      "groups_raw": [
-        "MY2(rtm)"
-      ],
-      "source_sections": [
-        "MY2(rtm)"
-      ],
-      "protocols": [
-        "https"
-      ],
-      "urls": [
-        "https://d25tgymtnqzu8s.cloudfront.net/event/smil:event2/manifest.mpd"
-      ],
-      "lines": [
-        {
-          "url": "https://d25tgymtnqzu8s.cloudfront.net/event/smil:event2/manifest.mpd",
-          "url_hash": "36ee45575dea82e4db6a61f45d5bde4b20eddf24a4a3b19562dd3b218eabd6f6",
-          "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-          "source_line": 5,
-          "group_raw": "MY2(rtm)",
-          "source_section": "MY2(rtm)",
-          "protocol": "https",
-          "quality": ""
-        }
-      ]
-    },
-    {
-      "channel_key": "fifawc1",
-      "name": "FIFA WC 1",
-      "category": "港澳台",
-      "quality": "",
-      "line_count": 1,
-      "sources": [
-        "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt"
-      ],
-      "source_lines": [
-        5
-      ],
-      "groups_raw": [
-        "MY2(rtm)"
-      ],
-      "source_sections": [
-        "MY2(rtm)"
-      ],
-      "protocols": [
-        "https"
-      ],
-      "urls": [
-        "https://d30aylox5wvifh.cloudfront.net/live/media0/wc1/DASH/wc1.mpd"
-      ],
-      "lines": [
-        {
-          "url": "https://d30aylox5wvifh.cloudfront.net/live/media0/wc1/DASH/wc1.mpd",
-          "url_hash": "96e46bf572b3e12a233b5a00e21ea93c6dce380102eb1ddf4c5afa68011a010c",
-          "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-          "source_line": 5,
-          "group_raw": "MY2(rtm)",
-          "source_section": "MY2(rtm)",
-          "protocol": "https",
-          "quality": ""
-        }
-      ]
-    },
-    {
-      "channel_key": "fifawc2",
-      "name": "FIFA WC 2",
-      "category": "港澳台",
-      "quality": "",
-      "line_count": 1,
-      "sources": [
-        "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt"
-      ],
-      "source_lines": [
-        5
-      ],
-      "groups_raw": [
-        "MY2(rtm)"
-      ],
-      "source_sections": [
-        "MY2(rtm)"
-      ],
-      "protocols": [
-        "https"
-      ],
-      "urls": [
-        "https://d30aylox5wvifh.cloudfront.net/live/media0/wc2/DASH/wc2.mpd"
-      ],
-      "lines": [
-        {
-          "url": "https://d30aylox5wvifh.cloudfront.net/live/media0/wc2/DASH/wc2.mpd",
-          "url_hash": "3771e14b3b6fc8eea21742ccc0b29ac1447a07bdc9ca46ebce822a5ea7704033",
-          "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-          "source_line": 5,
-          "group_raw": "MY2(rtm)",
-          "source_section": "MY2(rtm)",
-          "protocol": "https",
-          "quality": ""
-        }
-      ]
-    },
-    {
-      "channel_key": "fifawc3",
-      "name": "FIFA WC 3",
-      "category": "港澳台",
-      "quality": "",
-      "line_count": 1,
-      "sources": [
-        "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt"
-      ],
-      "source_lines": [
-        5
-      ],
-      "groups_raw": [
-        "MY2(rtm)"
-      ],
-      "source_sections": [
-        "MY2(rtm)"
-      ],
-      "protocols": [
-        "https"
-      ],
-      "urls": [
-        "https://d30aylox5wvifh.cloudfront.net/live/media0/wc3/DASH/wc3.mpd"
-      ],
-      "lines": [
-        {
-          "url": "https://d30aylox5wvifh.cloudfront.net/live/media0/wc3/DASH/wc3.mpd",
-          "url_hash": "421d5a399eece865725488a5dd0e7d65fc62f6d694e932026a8bf5b37b780121",
-          "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-          "source_line": 5,
-          "group_raw": "MY2(rtm)",
-          "source_section": "MY2(rtm)",
-          "protocol": "https",
-          "quality": ""
-        }
-      ]
-    },
-    {
       "channel_key": "dewanrakyat",
       "name": "Dewan Rakyat",
       "category": "港澳台",
@@ -294593,43 +292128,6 @@
         {
           "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:rakyat/manifest.mpd",
           "url_hash": "7659d233e49355b12eaf910b8d8388f0858a4f0cb302b650cf1f8e9dafb2b354",
-          "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-          "source_line": 5,
-          "group_raw": "MY2(rtm)",
-          "source_section": "MY2(rtm)",
-          "protocol": "https",
-          "quality": ""
-        }
-      ]
-    },
-    {
-      "channel_key": "dewannegara",
-      "name": "Dewan Negara",
-      "category": "港澳台",
-      "quality": "",
-      "line_count": 1,
-      "sources": [
-        "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt"
-      ],
-      "source_lines": [
-        5
-      ],
-      "groups_raw": [
-        "MY2(rtm)"
-      ],
-      "source_sections": [
-        "MY2(rtm)"
-      ],
-      "protocols": [
-        "https"
-      ],
-      "urls": [
-        "https://d25tgymtnqzu8s.cloudfront.net/smil:negara/manifest.mpd"
-      ],
-      "lines": [
-        {
-          "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:negara/manifest.mpd",
-          "url_hash": "3edc1d2f2cda3d60755c0ac80b9d3475b84c31ccdba33b73ea5fd90e4961b4ae",
           "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
           "source_line": 5,
           "group_raw": "MY2(rtm)",
