@@ -13,6 +13,8 @@ from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
+import ipaddress
 import json
 import os
 import re
@@ -36,6 +38,8 @@ DOCS_DIR = HERE / "docs"
 HEALTH_JSON = DOCS_DIR / "health.json"
 HEALTH_CSV = DOCS_DIR / "health.csv"
 REMOVABLE_JSON = DOCS_DIR / "removable.json"
+CHANNEL_LEDGER_JSON = DOCS_DIR / "channel_ledger.json"
+CHANNEL_HEALTH_JSON = DOCS_DIR / "channel_health.json"
 USER_AGENT = "Mozilla/5.0 (compatible; GeitHealth/2.0)"
 TIMEOUT = 15
 MAX_PROBE_BYTES = 2 * 1024 * 1024
@@ -43,6 +47,14 @@ MAX_PROBE_BYTES = 2 * 1024 * 1024
 FAIL_STREAK_LIMIT = 5
 # 超时不计入删除判定：境外探测对国内源超时很常见，属于误判高发区。
 SOFT_FAILURE_MARKERS = ("timed out", "read operation timed out", "超时")
+SOFT_NETWORK_MARKERS = (
+    "network is unreachable",
+    "temporary failure",
+    "name or service not known",
+    "nodename nor servname",
+    "connection reset",
+    "remote end closed connection",
+)
 PROXY_FALLBACKS = (
     "https://gh-proxy.com/",
     "https://gh-proxy.org/",
@@ -60,10 +72,19 @@ class Item:
     detail: str = ""
     checked_at: str = ""
     source: str = ""
+    source_line: int = 0
+    channel_key: str = ""
+    category: str = ""
+    url_hash: str = ""
 
 
 def log(message: str) -> None:
     print("[%s] %s" % (time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), message))
+
+
+def _m3u_attr(line: str, name: str) -> str:
+    match = re.search(r'(?:^|[\s,])%s="([^"]*)"' % re.escape(name), line, re.I)
+    return match.group(1).strip() if match else ""
 
 
 def is_decisive_failure(item: "Item") -> bool:
@@ -81,6 +102,12 @@ def is_decisive_failure(item: "Item") -> bool:
     if any(marker in detail for marker in SOFT_FAILURE_MARKERS):
         return False
     return True
+
+
+def is_soft_failure(item: "Item") -> bool:
+    """True when a failure is likely environmental and must never delete a line."""
+    detail = str(item.detail or "").lower()
+    return any(marker in detail for marker in SOFT_FAILURE_MARKERS + SOFT_NETWORK_MARKERS)
 
 
 def load_streaks() -> dict[str, dict[str, Any]]:
@@ -140,6 +167,146 @@ def update_streaks(items: list["Item"]) -> dict[str, dict[str, Any]]:
                 "removable": False,
             }
     return current
+
+
+def channel_is_private_or_internal(item: "Item") -> bool:
+    """Domestic ISP intranet streams cannot be validated from GitHub runners."""
+    text = " ".join((item.name, item.category, item.source))
+    if re.search(r"内网|内网源|联通|移动|电信|天翼|广电", text):
+        return True
+    host = urllib.parse.urlsplit(item.url).hostname or ""
+    try:
+        address = ipaddress.ip_address(host)
+    except ValueError:
+        return False
+    return address.is_private or address.is_loopback
+
+
+def url_digest(url: str) -> str:
+    return hashlib.sha256(str(url).encode("utf-8")).hexdigest()
+
+
+def safe_channel_url(url: str) -> str:
+    """Remove credentials while retaining a URL that is useful for diagnostics."""
+    parts = urllib.parse.urlsplit(str(url))
+    safe_query = []
+    for key, value in urllib.parse.parse_qsl(parts.query, keep_blank_values=True):
+        normalized = re.sub(r"[^a-z0-9]", "", key.lower())
+        if normalized in {
+            "accountinfo", "accesstoken", "apikey", "auth", "authorization",
+            "authtoken", "bearer", "clientsecret", "cookie", "key", "password",
+            "passwd", "pwd", "refreshtoken", "secret", "session", "sessionid",
+            "sig", "sign", "signature", "token",
+        }:
+            continue
+        safe_query.append((key, value))
+    return urllib.parse.urlunsplit((
+        parts.scheme,
+        parts.netloc.rsplit("@", 1)[-1],
+        parts.path,
+        urllib.parse.urlencode(safe_query, doseq=True),
+        "",
+    ))
+
+
+def write_channel_health(items: list[Item]) -> None:
+    """Write a conservative channel-level ledger.
+
+    This report never removes a channel. It classifies each URL into
+    keep/observe/candidate so a later, separately reviewed step can act.
+    """
+    previous: dict[str, dict[str, Any]] = {}
+    current_hashes: set[str] = set()
+    if CHANNEL_HEALTH_JSON.is_file():
+        try:
+            data = json.loads(CHANNEL_HEALTH_JSON.read_text(encoding="utf-8"))
+            for entry in data.get("lines", []):
+                if isinstance(entry, dict):
+                    key = str(entry.get("url_hash", "") or url_digest(entry.get("url", "")))
+                    previous[key] = entry
+        except (OSError, json.JSONDecodeError):
+            previous = {}
+    if CHANNEL_LEDGER_JSON.is_file():
+        try:
+            ledger = json.loads(CHANNEL_LEDGER_JSON.read_text(encoding="utf-8"))
+            for entry in ledger.get("channels", []):
+                if not isinstance(entry, dict):
+                    continue
+                for line in entry.get("lines", []):
+                    if isinstance(line, dict) and line.get("url_hash"):
+                        current_hashes.add(str(line["url_hash"]))
+        except (OSError, json.JSONDecodeError):
+            current_hashes = set()
+    # Preserve unsampled channel history, but drop URLs that no longer exist.
+    lines: dict[str, dict[str, Any]] = {
+        key: entry for key, entry in previous.items()
+        if not current_hashes or key in current_hashes
+    }
+    for item in items:
+        if item.kind != "channel":
+            continue
+        key = item.url_hash or url_digest(item.url)
+        old = previous.get(key, {})
+        decisive = is_decisive_failure(item) or (
+            item.status in {"http_error", "probe_failed"} and not is_soft_failure(item)
+        )
+        soft = is_soft_failure(item) or item.status in {"playback_unverified", "manifest_ok"}
+        internal = channel_is_private_or_internal(item)
+        count = int(old.get("decisive_failures", 0) or 0)
+        if decisive and not internal:
+            count += 1
+        elif item.status in {"probe_ok", "reachable"}:
+            count = 0
+        if internal:
+            verdict = "skip_internal"
+        elif decisive and count >= FAIL_STREAK_LIMIT:
+            verdict = "candidate_remove"
+        elif decisive:
+            verdict = "observe"
+        elif soft:
+            verdict = "observe_soft"
+        else:
+            verdict = "keep"
+        lines[key] = {
+            "url": safe_channel_url(item.url),
+            "url_hash": key,
+            "name": item.name,
+            "channel_key": item.channel_key,
+            "category": item.category,
+            "source": item.source,
+            "source_line": item.source_line,
+            "status": item.status,
+            "http_status": item.http_status,
+            "detail": redact_sensitive_text(item.detail),
+            "checked_at": item.checked_at,
+            "decisive_failures": count,
+            "soft_failure": soft,
+            "internal": internal,
+            "verdict": verdict,
+        }
+    ordered = sorted(
+        lines.values(),
+        key=lambda row: (row["verdict"], row["name"], row.get("url", "")),
+    )
+    summary: dict[str, int] = {}
+    for row in ordered:
+        summary[row["verdict"]] = summary.get(row["verdict"], 0) + 1
+    report = {
+        "updated": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+        "policy": {
+            "scope": "仅频道 URL；只报告，不自动删除 merged.m3u；未抽样频道保留历史记录",
+            "remove_limit": FAIL_STREAK_LIMIT,
+            "soft_failures": "超时、网络不可达、播放未验证只观察，不计入删除",
+            "internal_sources": "运营商内网/私网地址跳过，不因境外探测失败判定失效",
+        },
+        "summary": summary,
+        "lines": ordered,
+    }
+    if find_sensitive_credentials(report):
+        raise ValueError("频道健康报告包含真实凭据，已中止写入")
+    CHANNEL_HEALTH_JSON.write_text(
+        json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
 
 
 def default_merged_url() -> str:
@@ -208,7 +375,8 @@ def load_items() -> list[Item]:
             if line.upper().startswith("#EXTINF"):
                 pending = {
                     "name": line.rsplit(",", 1)[-1].strip() if "," in line else "",
-                    "group": "",
+                    "group": _m3u_attr(line, "group-title"),
+                    "tvg_id": _m3u_attr(line, "tvg-id"),
                 }
             elif pending and line.startswith(("http://", "https://")):
                 items.append(Item(
@@ -216,8 +384,35 @@ def load_items() -> list[Item]:
                     name=pending["name"],
                     url=line,
                     detail="待检查",
+                    channel_key=pending["tvg_id"],
+                    category=pending["group"],
+                    url_hash=url_digest(line),
                 ))
                 pending = None
+    ledger_path = CHANNEL_LEDGER_JSON
+    if ledger_path.is_file():
+        try:
+            ledger = json.loads(ledger_path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            ledger = {}
+        by_hash: dict[str, tuple[dict[str, Any], dict[str, Any]]] = {}
+        for entry in ledger.get("channels", []):
+            if not isinstance(entry, dict):
+                continue
+            for line in entry.get("lines", []):
+                if isinstance(line, dict) and line.get("url_hash"):
+                    by_hash[str(line["url_hash"])] = (entry, line)
+        for item in items:
+            if item.kind != "channel":
+                continue
+            match = by_hash.get(item.url_hash)
+            if not match:
+                continue
+            entry, line = match
+            item.channel_key = str(entry.get("channel_key", "") or item.channel_key)
+            item.category = str(entry.get("category", "") or item.category)
+            item.source = str(line.get("source", "") or "")
+            item.source_line = int(line.get("source_line", 0) or 0)
     # Keep duplicate channel URLs: the same stream can appear under several
     # channel names, and a failure for one name must not hide another.
     seen: set[tuple[str, str, str]] = set()
@@ -548,8 +743,11 @@ def main() -> int:
     HEALTH_CSV = args.output_dir / "health.csv"
     global REMOVABLE_JSON
     REMOVABLE_JSON = args.output_dir / "removable.json"
+    global CHANNEL_HEALTH_JSON
+    CHANNEL_HEALTH_JSON = args.output_dir / "channel_health.json"
     write_report(checked)
     write_removable(checked)
+    write_channel_health(checked)
     log("健康报告已写入 %s" % args.output_dir)
     return 0
 

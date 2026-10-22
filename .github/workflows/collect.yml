@@ -102,6 +102,11 @@ jobs:
           for path in Path("py").glob("*.py"):
               ast.parse(path.read_text(encoding="utf-8-sig", errors="replace"))
           assert Path("tvbox/lives/merged.m3u").read_text(encoding="utf-8").startswith("#EXTM3U")
+          ledger = json.loads(Path("docs/channel_ledger.json").read_text(encoding="utf-8"))
+          assert ledger["summary"]["channels"] > 0, "channel ledger is empty"
+          assert ledger["summary"]["channels"] == sum(
+              entry["line_count"] for entry in ledger["channels"]
+          ), "channel ledger counts do not match"
           print("TVBox outputs validated")
           PY
 
@@ -109,7 +114,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add geit-fish geitpy-fish py tvbox/lives docs/sources.json docs/inventory.json docs/inventory.csv docs/tvbox.json docs/index.html
+          git add geit-fish geitpy-fish py tvbox/lives docs/sources.json docs/inventory.json docs/inventory.csv docs/tvbox.json docs/index.html docs/channel_ledger.json
           if git diff --cached --quiet; then
             echo "没有变化，跳过提交"
           else

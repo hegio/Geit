@@ -32,10 +32,12 @@ GitHub 的 `/blob/` 地址打开的是 HTML 网页，不是 JSON 文件，不能
 |---|---|
 | `geit-fish` | 主订阅：聚合来源中的站点、直播源和 `spider.jar`，明文 JSON 无后缀 |
 | `geitpy-fish` | 在 `geit-fish` 基础上追加 `py/` 内全部有效 Python 站点 |
-| `tvbox/lives/merged.m3u` | 从 TXT/M3U 来源合并并按 URL 去重的直播列表 |
+| `tvbox/lives/merged.m3u` | 从 TXT/M3U 来源合并并按 URL 去重的直播列表，`tvg-id` 为稳定频道键 |
+| `docs/channel_ledger.json` | 频道台账：来源、原始分组、协议、频道键和多线路关系 |
 | `docs/tvbox.json` | `geit-fish` 的兼容副本，旧链接可直接使用 |
 | `docs/sources.json` | 每个来源的抓取状态和解析结果 |
 | `docs/health.json` / `.csv` | 链接健康与播放验证状态 |
+| `docs/channel_health.json` | 频道级保守判定：保留、观察、候选淘汰；不自动删除 |
 | `docs/blocked.csv` | 已明确失败的链接，供人工复查或临时屏蔽 |
 | `py/` | 去重后、通过 Python AST 与 Spider 核心方法检查的 Python 站点 |
 | `回收/` | 清理前旧目录和重复文件，仅作追溯，不参与构建 |
@@ -68,7 +70,7 @@ GitHub 的 `/blob/` 地址打开的是 HTML 网页，不是 JSON 文件，不能
 
 1. 读取 `sources.txt`，抓取并识别 JSON / TXT / M3U。
 2. 解密加密配置，提取并校验其中的 Python 文件。
-3. 按站点 API、直播 URL 和频道 URL 去重。
+3. 按站点 API、直播 URL 和频道 URL 去重；生成稳定频道键并输出可追溯台账。
 4. 按文件内容哈希去重 Python；同一内容的重复文件移入忽略提交的 `回收/重复Python/`。
 5. 生成 `geit-fish`、`geitpy-fish`、`merged.m3u`、文档页和健康报告。
 6. 运行语法与结构校验，然后只提交生成产物和必要脚本。
@@ -93,6 +95,10 @@ python check_health.py --workers 16 --max-channels 500
 健康状态是带时间戳的诊断结果，不会因为一次失败就永久删除来源。HTTP 200 不等于可播放，完整频道验证应结合播放列表内容、媒体分片和影视 App 实测。
 
 `docs/blocked.csv` 会汇总明确 HTTP 失败、ffprobe 失败和配置无法解析的条目；`requires_app`、`reachable` 和 `playback_unverified` 不会被当作永久失效。地区限制、CDN、UA、代理和临时超时都可能造成误判，因此标记用于复查，不会自动改动 `sources.txt`。
+
+`docs/channel_health.json` 是频道级台账，记录每条 URL 的频道键、来源、原始分组、确定性失败次数和处置建议。当前只报告 `keep`、`observe`、`observe_soft`、`skip_internal`、`candidate_remove`，不会自动修改 `merged.m3u`。健康工作流每轮只抽检一部分频道，未抽到的线路会保留上一轮记录；已经不在频道台账中的旧 URL 才会被移除。超时、网络不可达、运营商内网地址和 `playback_unverified` 都不会被当作删除依据；只有连续多次确定性失败才进入 `candidate_remove`。
+
+频道台账为每条线路保存 `url_hash`（原始 URL 的 SHA-256）和脱敏后的 `url`。健康检查使用哈希匹配，因此带 token、签名等敏感参数的直播地址也能稳定关联，同时不会把真实凭据写进公开报告。
 
 ### 失效直播源自动清理
 

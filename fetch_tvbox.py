@@ -102,6 +102,13 @@ class Channel:
     group: str = ""
     logo: str = ""
     tvg_id: str = ""
+    source: str = ""
+    source_line: int = 0
+    group_raw: str = ""
+    protocol: str = ""
+    channel_key: str = ""
+    quality: str = ""
+    lines: list[str] = field(default_factory=list)
 
 
 @dataclass
@@ -313,7 +320,7 @@ def is_m3u(text: str) -> bool:
     return "#EXTM3U" in text[:2048].upper()
 
 
-def parse_txt_channels(text: str) -> list[Channel]:
+def parse_txt_channels(text: str, source: str = "", source_line: int = 0) -> list[Channel]:
     channels: list[Channel] = []
     group = ""
     for raw in text.splitlines():
@@ -334,7 +341,14 @@ def parse_txt_channels(text: str) -> list[Channel]:
         name, url = line.split(",", 1)
         name, url = name.strip(), url.strip()
         if name and re.match(r"^https?://", url, re.I):
-            channels.append(Channel(name=name, url=url, group=group))
+            channels.append(Channel(
+                name=name,
+                url=url,
+                group=group,
+                group_raw=group,
+                source=source,
+                source_line=source_line,
+            ))
     return channels
 
 
@@ -343,7 +357,7 @@ def _m3u_attr(line: str, name: str) -> str:
     return match.group(1).strip() if match else ""
 
 
-def parse_m3u_channels(text: str) -> list[Channel]:
+def parse_m3u_channels(text: str, source: str = "", source_line: int = 0) -> list[Channel]:
     channels: list[Channel] = []
     pending: dict[str, str] | None = None
     for raw in text.splitlines():
@@ -358,7 +372,13 @@ def parse_m3u_channels(text: str) -> list[Channel]:
             }
         elif line and not line.startswith("#") and re.match(r"^[a-z][a-z0-9+.-]*://", line, re.I):
             if pending and pending["name"]:
-                channels.append(Channel(url=line, **pending))
+                channels.append(Channel(
+                    url=line,
+                    source=source,
+                    source_line=source_line,
+                    group_raw=pending["group"],
+                    **pending,
+                ))
             pending = None
     return channels
 
@@ -523,7 +543,11 @@ def load_local_python() -> dict[str, bytes]:
     return result
 
 
-def collect_one(source: str, local_python: dict[str, bytes]) -> SourceResult:
+def collect_one(
+    source: str,
+    local_python: dict[str, bytes],
+    source_line: int = 0,
+) -> SourceResult:
     effective = normalize_url(source)
     result = SourceResult(source=source, effective_url=effective, kind="unknown", status="unverified")
     try:
@@ -579,13 +603,13 @@ def collect_one(source: str, local_python: dict[str, bytes]) -> SourceResult:
 
     if is_m3u(text):
         result.kind = "m3u"
-        result.channels = parse_m3u_channels(text)
+        result.channels = parse_m3u_channels(text, source, source_line)
         result.status = "reachable" if result.channels else "manifest_ok"
         return result
 
     if is_txt(text):
         result.kind = "txt"
-        result.channels = parse_txt_channels(text)
+        result.channels = parse_txt_channels(text, source, source_line)
         result.status = "reachable" if result.channels else "invalid_config"
         return result
 
@@ -608,6 +632,166 @@ def merge_dicts(items: Iterable[dict[str, Any]], key_fields: tuple[str, ...]) ->
     return list(merged.values())
 
 
+QUALITY_SUFFIX = re.compile(
+    r"(?i)(?:超高清|超清|高清|标清|蓝光|原画|"
+    r"4k|8k|uhd|fhd|hd|1080p|720p|"
+    r"60帧|50帧|25帧|备用|备用线路?|线路\d*|"
+    r"[\s\-_·]*(?:hd|4k|8k|uhd|fhd))$"
+)
+CATEGORY_RULES = (
+    ("央视频道", re.compile(r"(?i)(?:CCTV|CGTN|央视|中央电视|中国之声)")),
+    ("卫视频道", re.compile(r"卫视")),
+    ("港澳台", re.compile(r"(?i)(?:TVB|翡翠|明珠|凤凰|香港|澳门|澳門|台湾|台灣|"
+                           r"中天|东森|三立|民视|台视|华视|中视|Viu|RTHK|港台|"
+                           r"马港|新加坡|马来西亚|RTM|HOY|无线|無綫|NOW新闻|NOW新聞|"
+                           r"澳视|澳視|公视|公視|爱尔达|愛爾達|华剧|華劇|"
+                           r"Astro|TVBS|东森|東森|纬来|緯來)")),
+    ("海外频道", re.compile(r"(?i)(?:美国|英国|韩国|日本|泰国|越南|印度|俄罗斯|"
+                             r"法国|德国|意大利|西班牙|土耳其|阿拉伯|迪拜|欧洲|北美|"
+                             r"加拿大|澳大利亚|UK|USA|KBS|MBC|SBS|NHK|CNN|BBC|FOX|HBO)")),
+    ("体育频道", re.compile(r"(?i)(?:体育|體育|足球|篮球|籃球|NBA|英超|西甲|德甲|意甲|法甲|"
+                             r"欧冠|歐冠|赛车|賽車|网球|網球|羽毛球|乒乓|SPORT|ESPN|高尔夫|高爾夫|"
+                             r"博斯高球|高球)")),
+    ("音乐频道", re.compile(r"(?i)(?:音乐|音樂|MV|演唱会|演唱會|歌曲|DJ|电台|電台|广播|廣播|radio)")),
+    ("影视少儿", re.compile(r"(?i)(?:电影|電影|影院|影视|影視|剧场|劇場|电视剧|連續劇|"
+                             r"美剧|韩剧|日剧|港剧|台剧|动漫|動畫|少儿|兒童|纪录|紀錄|"
+                             r"纪实|紀實|综艺|綜藝|娱乐|娛樂|戏曲|戲曲|曲艺|经典|經典|"
+                             r"卡通|动画|動畫|大片|爱奇艺|優酷|优酷|腾讯视频|騰訊視頻|"
+                             r"映画|映畫|戏剧|戲劇|影剧|影劇|亲子|親子|布袋戏|布袋戲|"
+                             r"Cinema|World|采昌|龙祥|龍祥)")),
+    ("教育纪实", re.compile(r"(?i)(?:CETV|教育|课堂|課堂)")),
+    ("运营商/内网", re.compile(r"(?i)(?:移动|移動|联通|聯通|电信|電信|天翼|咪咕|IPTV|广电|廣電)")),
+    ("地方频道", re.compile(
+        r"^(?:(?:北京|上海|天津|重庆|重慶|河北|山西|辽宁|遼寧|吉林|黑龙江|黑龍江|"
+        r"江苏|江蘇|浙江|安徽|福建|江西|山东|山東|河南|湖北|湖南|广东|廣東|"
+        r"广西|廣西|海南|四川|贵州|貴州|云南|雲南|西藏|陕西|陝西|甘肃|甘肅|"
+        r"青海|宁夏|寧夏|新疆|内蒙古|內蒙古|深圳|广州|廣州|南京|苏州|蘇州|"
+        r"无锡|無錫|杭州|宁波|寧波|福州|厦门|廈門|济南|濟南|青岛|青島|武汉|武漢|"
+        r"长沙|長沙|成都|西安|沈阳|瀋陽|大连|大連|哈尔滨|哈爾濱|长春|長春|"
+        r"郑州|鄭州|太原|合肥|南昌|昆明|南宁|南寧|贵阳|貴陽|兰州|蘭州|"
+        r"乌鲁木齐|烏魯木齊|海口|三亚|三亞|东莞|東莞|佛山|珠海|中山|汕头|汕頭|"
+        r"潮州|揭阳|揭陽|汕尾|肇庆|肇慶|清远|清遠|云浮|雲浮|阳江|陽江|湛江|"
+        r"韶关|韶關|河源|梅州|惠州|江门|江門|茂名|南海|顺德|順德|番禺|花都|"
+        r"南国|南國|垄上|壟上|都市|生活|公共|综合|綜合|新闻|新聞|影视|影視|"
+        r"经济|經濟|科教|文旅|民生|财经|財經)"
+        r"(?:新闻|新聞|综合|綜合|公共|都市|生活|经济|經濟|科教|文旅|民生|财经|財經|"
+        r"城市|珠江|南方|岭南|嶺南|影视|影視|体育|體育|频道|頻道|台|电视|電視|"
+        r"国际|國際|公共|购物|購物|少儿|少兒|纪录|紀錄|纪实|紀實)"
+        r"(?:[-—]?\d+)?)"
+        r"|^(?:珠江|南方|岭南|嶺南|公共|城市|新闻综合|新聞綜合|综合|綜合|都市|生活|"
+        r"经济|經濟|科教|文旅|民生|财经|財經)(?:频道|頻道|台|电视|電視)?(?:[-—]?\d+)?$"
+    )),
+)
+
+RAW_GROUP_RULES = (
+    ("运营商/内网", re.compile(r"内网|內網|移动|移動|联通|聯通|电信|電信|天翼|广电|廣電")),
+    ("港澳台", re.compile(r"港澳|香港|澳门|澳門|台湾|台灣|港台")),
+    ("体育频道", re.compile(r"体育|體育|足球|篮球|籃球|网球|網球|羽毛球|乒乓")),
+    ("影视少儿", re.compile(r"电影|電影|影视|影視|剧场|劇場|少儿|兒童|动漫|動漫")),
+    ("音乐频道", re.compile(r"音乐|音樂|DJ|歌曲|演唱会|演唱會")),
+    ("地方频道", re.compile(r"新闻|新聞|地方|城市|都市|生活|经济|經濟|科教")),
+    ("综合直播", re.compile(r"综合|綜合|直播")),
+)
+
+
+def normalize_channel_name(name: str) -> str:
+    """Strip presentation-only suffixes without collapsing distinct channels."""
+    value = name.strip().replace("\u3000", " ")
+    value = re.sub(r"\s+", " ", value)
+    previous = None
+    while value and value != previous:
+        previous = value
+        value = QUALITY_SUFFIX.sub("", value).strip(" -_·")
+    return value or name.strip()
+
+
+def channel_identity(name: str) -> str:
+    """Build a stable, readable identity used for multi-line aggregation."""
+    value = normalize_channel_name(name).lower()
+    value = re.sub(r"[\s\-_·:：/\\|,，.。()（）\[\]【】]+", "", value)
+    return value
+
+
+def normalize_group(group: str, name: str = "") -> str:
+    """Replace opaque source labels with a small, stable category set."""
+    raw = group.strip()
+    # Source labels such as "咪咕央视2" describe the upstream provider, not
+    # the channel itself. Do not let their "央视" substring misclassify a
+    # local or documentary channel.
+    name_rules = CATEGORY_RULES
+    source_rules = tuple(
+        (category, pattern) for category, pattern in CATEGORY_RULES
+        if category != "央视频道"
+    )
+    for category, pattern in name_rules:
+        if pattern.search(name):
+            return category
+    for category, pattern in source_rules:
+        if pattern.search(raw):
+            return category
+    # DE=3 is a source-side bucket mixing songs and ordinary channels. Only
+    # promote clear "artist-title" entries; leave ambiguous names untouched.
+    if (
+        raw.upper() == "DE=3"
+        and re.search(r"[-—]", name)
+        and not re.search(r"频道|頻道|卫视|衛視|央视|央視|CCTV|体育|體育|电影|電影|"
+                         r"剧场|劇場|新闻|新聞|纪录|紀錄", name, re.I)
+        and not re.fullmatch(r"[^-—]{1,12}[-—]\d+", name.strip())
+    ):
+        return "音乐点播"
+    for category, pattern in RAW_GROUP_RULES:
+        if pattern.search(raw):
+            return category
+    return "待归类"
+
+
+def url_digest(url: str) -> str:
+    """Stable opaque key for matching a URL without publishing its credentials."""
+    return hashlib.sha256(url.encode("utf-8")).hexdigest()
+
+
+def channel_quality(name: str) -> str:
+    value = name.lower()
+    if re.search(r"8k", value):
+        return "8K"
+    if re.search(r"4k|uhd", value):
+        return "4K"
+    if re.search(r"超高清|超清", value):
+        return "超清"
+    if re.search(r"1080p|fhd", value):
+        return "1080P"
+    if re.search(r"720p", value):
+        return "720P"
+    if re.search(r"高清|hd", value):
+        return "高清"
+    if re.search(r"标清", value):
+        return "标清"
+    return ""
+
+
+def safe_channel_url(url: str) -> str:
+    """Keep a URL matchable for audits without publishing embedded credentials."""
+    parts = urllib.parse.urlsplit(url)
+    safe_query = []
+    for key, value in urllib.parse.parse_qsl(parts.query, keep_blank_values=True):
+        if re.sub(r"[^a-z0-9]", "", key.lower()) in {
+            "accountinfo", "accesstoken", "apikey", "auth", "authorization",
+            "authtoken", "bearer", "clientsecret", "cookie", "key", "password",
+            "passwd", "pwd", "refreshtoken", "secret", "session", "sessionid",
+            "sig", "sign", "signature", "token",
+        }:
+            continue
+        safe_query.append((key, value))
+    netloc = parts.netloc.rsplit("@", 1)[-1]
+    return urllib.parse.urlunsplit((
+        parts.scheme,
+        netloc,
+        parts.path,
+        urllib.parse.urlencode(safe_query, doseq=True),
+        "",
+    ))
+
+
 def merge_channels(channels: Iterable[Channel]) -> list[Channel]:
     merged: OrderedDict[str, Channel] = OrderedDict()
     for channel in channels:
@@ -615,6 +799,11 @@ def merge_channels(channels: Iterable[Channel]) -> list[Channel]:
         if not key.startswith(("http://", "https://")):
             continue
         if key not in merged:
+            channel.protocol = urllib.parse.urlsplit(key).scheme.lower()
+            channel.channel_key = channel_identity(channel.name)
+            channel.group = normalize_group(channel.group_raw or channel.group, channel.name)
+            channel.quality = channel_quality(channel.name)
+            channel.lines = [key]
             merged[key] = channel
         elif not merged[key].group and channel.group:
             merged[key].group = channel.group
@@ -626,16 +815,68 @@ def write_m3u(channels: list[Channel]) -> None:
     lines = ["#EXTM3U"]
     for channel in channels:
         attrs = []
-        if channel.tvg_id:
-            attrs.append('tvg-id="%s"' % channel.tvg_id.replace('"', "'"))
+        tvg_id = channel.tvg_id or channel.channel_key
+        if tvg_id:
+            attrs.append('tvg-id="%s"' % tvg_id.replace('"', "'"))
         if channel.logo:
             attrs.append('tvg-logo="%s"' % channel.logo.replace('"', "'"))
         if channel.group:
             attrs.append('group-title="%s"' % channel.group.replace('"', "'"))
+        if channel.quality:
+            attrs.append('quality="%s"' % channel.quality.replace('"', "'"))
         suffix = (" " + " ".join(attrs)) if attrs else ""
         lines.append("#EXTINF:-1%s,%s" % (suffix, channel.name))
         lines.append(channel.url)
     MERGED_M3U_PATH.write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+
+def write_channel_ledger(channels: list[Channel]) -> None:
+    """Write a compact, source-traceable channel index for audits and health checks."""
+    groups: OrderedDict[str, list[Channel]] = OrderedDict()
+    for channel in channels:
+        groups.setdefault(channel.channel_key or channel_identity(channel.name), []).append(channel)
+    entries = []
+    for key, lines in groups.items():
+        first = lines[0]
+        line_entries = []
+        for line in lines:
+            line_entries.append({
+                "url": safe_channel_url(line.url),
+                "url_hash": url_digest(line.url),
+                "source": safe_channel_url(line.source) if line.source else "",
+                "source_line": line.source_line,
+                "group_raw": line.group_raw,
+                "protocol": line.protocol,
+                "quality": line.quality,
+            })
+        entries.append({
+            "channel_key": key,
+            "name": normalize_channel_name(first.name),
+            "category": first.group,
+            "quality": first.quality,
+            "line_count": len(lines),
+            "sources": sorted({
+                safe_channel_url(line.source) for line in lines if line.source
+            }),
+            "source_lines": sorted({line.source_line for line in lines if line.source_line}),
+            "groups_raw": sorted({line.group_raw for line in lines if line.group_raw}),
+            "protocols": sorted({line.protocol for line in lines if line.protocol}),
+            "urls": [safe_channel_url(line.url) for line in lines],
+            "lines": line_entries,
+        })
+    report = {
+        "updated": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+        "summary": {
+            "channels": len(channels),
+            "channel_keys": len(entries),
+            "multi_line_keys": sum(1 for entry in entries if entry["line_count"] > 1),
+            "untraced": sum(1 for line in channels if not line.source),
+        },
+        "channels": entries,
+    }
+    if find_sensitive_credentials(report):
+        raise ValueError("频道台账包含真实凭据，已中止写入")
+    write_json(DOCS_DIR / "channel_ledger.json", report)
 
 
 def drop_dead_lives(lives: list[dict[str, Any]]) -> list[dict[str, Any]]:
@@ -966,16 +1207,22 @@ def main() -> int:
 
     local_python = load_local_python()
     stats = BuildStats()
-    source_lines: list[str] = []
-    for raw in SOURCES_FILE.read_text(encoding="utf-8-sig").splitlines():
+    source_lines: list[tuple[int, str]] = []
+    for line_number, raw in enumerate(
+        SOURCES_FILE.read_text(encoding="utf-8-sig").splitlines(), 1
+    ):
         line = raw.strip()
         if not line or line.startswith("#"):
             continue
-        source_lines.append(line)
+        source_lines.append((line_number, line))
 
-    for index, source in enumerate(source_lines, 1):
+    for index, (line_number, source) in enumerate(source_lines, 1):
         log("(%d/%d) %s" % (index, len(source_lines), redact_sensitive_text(source)))
-        result = collect_one(source, {**local_python, **stats.python_files})
+        result = collect_one(
+            source,
+            {**local_python, **stats.python_files},
+            source_line=line_number,
+        )
         stats.sources.append(result)
         stats.sites.extend(result.sites)
         stats.lives.extend(result.lives)
@@ -998,6 +1245,7 @@ def main() -> int:
     stats.lives = merge_dicts(stats.lives, ("name", "url"))
     stats.channels = merge_channels(stats.channels)
     write_m3u(stats.channels)
+    write_channel_ledger(stats.channels)
 
     config = build_config(stats, repo, branch)
     py_config = json.loads(json.dumps(config, ensure_ascii=False))
