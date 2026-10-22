@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-22T14:10:43Z",
+  "updated": "2026-10-22T15:31:46Z",
   "mode": "local",
   "safety": "AI 只生成分类建议和错误解释；不参与失效判定、不修改 merged.m3u、不写入 removable.json、不接收含凭据的完整 URL。",
   "inputs": {
@@ -7,7 +7,7 @@
     "failure_clusters": 30,
     "removable": {
       "flagged": 0,
-      "pending": 4,
+      "pending": 17,
       "policy": {
         "fail_streak_limit": 6,
         "scope": "仅统计 geit-fish 中的 live 直播源；频道抽样轮转，不参与计数",
@@ -20,6 +20,6 @@
   },
   "status": "unavailable",
   "errors": [
-    "local-strata: Expecting ',' delimiter: line 26 column 6 (char 662)"
+    "local-strata: HTTP Error 502: Bad Gateway"
   ]
 }

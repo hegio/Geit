@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-22T14:10:42Z",
+  "updated": "2026-10-22T15:31:44Z",
   "policy": {
     "fail_streak_limit": 6,
     "scope": "仅统计 geit-fish 中的 live 直播源；频道抽样轮转，不参与计数",
@@ -10,8 +10,8 @@
   },
   "summary": {
     "flagged": 0,
-    "pending": 4,
-    "clean": 14
+    "pending": 17,
+    "clean": 1
   },
   "removable": [],
   "pending": [
@@ -19,7 +19,7 @@
       "url": "https://ilook.epg.one/5CM5SY98BF24PL/2",
       "name": "🍿乌拉TV直播",
       "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
-      "count": 2,
+      "count": 3,
       "history": [
         {
           "checked_at": "2026-10-22T13:21:53Z",
@@ -33,6 +33,14 @@
           "checked_at": "2026-10-22T13:53:58Z",
           "status": "probe_failed",
           "detail": "https://ilook.epg.one/5CM5SY98BF24PL/2: Invalid data found when processing input",
+          "failure_class": "hard",
+          "http_status": 200,
+          "host": "ilook.epg.one"
+        },
+        {
+          "checked_at": "2026-10-22T15:29:18Z",
+          "status": "probe_failed",
+          "detail": "ffprobe 未检测到媒体流",
           "failure_class": "hard",
           "http_status": 200,
           "host": "ilook.epg.one"
@@ -46,7 +54,7 @@
       "url": "https://445569.pages.dev/https://raw.githubusercontent.com/swhtv/111/refs/heads/main/%E5%8D%8E%E8%A7%86box%E5%8D%8E%E8%A7%86%E5%A4%A7%E5%85%A8swtv",
       "name": "🍿华视TV直播",
       "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
-      "count": 2,
+      "count": 3,
       "history": [
         {
           "checked_at": "2026-10-22T13:21:53Z",
@@ -60,6 +68,14 @@
           "checked_at": "2026-10-22T13:53:58Z",
           "status": "probe_failed",
           "detail": "https://445569.pages.dev/https://raw.githubusercontent.com/swhtv/111/refs/heads/main/%E5%8D%8E%E8%A7%86box%E5%8D%8E%E8%A7%86%E5%A4%A7%E5%85%A8swtv: Invalid data found when processing input",
+          "failure_class": "hard",
+          "http_status": 200,
+          "host": "445569.pages.dev"
+        },
+        {
+          "checked_at": "2026-10-22T15:29:18Z",
+          "status": "probe_failed",
+          "detail": "ffprobe 未检测到媒体流",
           "failure_class": "hard",
           "http_status": 200,
           "host": "445569.pages.dev"
@@ -73,7 +89,7 @@
       "url": "https://445569.pages.dev/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
       "name": "🍿易发TV直播",
       "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
-      "count": 2,
+      "count": 3,
       "history": [
         {
           "checked_at": "2026-10-22T13:21:53Z",
@@ -87,6 +103,14 @@
           "checked_at": "2026-10-22T13:53:58Z",
           "status": "probe_failed",
           "detail": "播放列表可下载，但采样分片均不可解码：https://445569.pages.dev/https:/raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/盗源狗si全家 全家下地狱: Server returned 404 Not Found | https://445569.pages.dev/https:/raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/盗源狗si全家 全家下地狱: Server returned 404 Not Found | https://4",
+          "failure_class": "hard",
+          "http_status": 200,
+          "host": "445569.pages.dev"
+        },
+        {
+          "checked_at": "2026-10-22T15:29:18Z",
+          "status": "probe_failed",
+          "detail": "播放列表可下载，但采样分片均不可解码：ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流",
           "failure_class": "hard",
           "http_status": 200,
           "host": "445569.pages.dev"
@@ -100,7 +124,7 @@
       "url": "https://www.korice.eu.org/ppv_m3u.php",
       "name": "🏆PPV体育赛事直播",
       "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
-      "count": 2,
+      "count": 3,
       "history": [
         {
           "checked_at": "2026-10-22T13:21:53Z",
@@ -117,11 +141,266 @@
           "failure_class": "hard",
           "http_status": 200,
           "host": "www.korice.eu.org"
+        },
+        {
+          "checked_at": "2026-10-22T15:29:18Z",
+          "status": "probe_failed",
+          "detail": "ffprobe 未检测到媒体流",
+          "failure_class": "hard",
+          "http_status": 200,
+          "host": "www.korice.eu.org"
         }
       ],
       "removable": false,
       "failure_class": "hard",
       "host": "www.korice.eu.org"
+    },
+    {
+      "url": "https://iptv.445569.xyz/live.m3u",
+      "name": "👖裤佬IPTV直播",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "count": 1,
+      "history": [
+        {
+          "checked_at": "2026-10-22T15:29:18Z",
+          "status": "probe_failed",
+          "detail": "播放列表可下载，但采样分片均不可解码：ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流",
+          "failure_class": "hard",
+          "http_status": 200,
+          "host": "iptv.445569.xyz"
+        }
+      ],
+      "removable": false,
+      "failure_class": "hard",
+      "host": "iptv.445569.xyz"
+    },
+    {
+      "url": "https://tiktok.445569.xyz/live.m3u",
+      "name": "👖裤佬TikTok直播",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "count": 1,
+      "history": [
+        {
+          "checked_at": "2026-10-22T15:29:18Z",
+          "status": "probe_failed",
+          "detail": "播放列表可下载，但采样分片均不可解码：ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流",
+          "failure_class": "hard",
+          "http_status": 200,
+          "host": "tiktok.445569.xyz"
+        }
+      ],
+      "removable": false,
+      "failure_class": "hard",
+      "host": "tiktok.445569.xyz"
+    },
+    {
+      "url": "https://twitch.445569.xyz/live.m3u",
+      "name": "👖裤佬Twitch直播",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "count": 1,
+      "history": [
+        {
+          "checked_at": "2026-10-22T15:29:18Z",
+          "status": "probe_failed",
+          "detail": "播放列表可下载，但采样分片均不可解码：ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流",
+          "failure_class": "hard",
+          "http_status": 200,
+          "host": "twitch.445569.xyz"
+        }
+      ],
+      "removable": false,
+      "failure_class": "hard",
+      "host": "twitch.445569.xyz"
+    },
+    {
+      "url": "https://yy.445569.xyz/live.m3u",
+      "name": "👖裤佬YY直播",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "count": 1,
+      "history": [
+        {
+          "checked_at": "2026-10-22T15:29:18Z",
+          "status": "probe_failed",
+          "detail": "播放列表可下载，但采样分片均不可解码：ffprobe 未检测到媒体流",
+          "failure_class": "hard",
+          "http_status": 200,
+          "host": "yy.445569.xyz"
+        }
+      ],
+      "removable": false,
+      "failure_class": "hard",
+      "host": "yy.445569.xyz"
+    },
+    {
+      "url": "https://jsnzkpg.de5.net/all.m3u",
+      "name": "👖裤佬体育直播[主]",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "count": 1,
+      "history": [
+        {
+          "checked_at": "2026-10-22T15:29:18Z",
+          "status": "probe_failed",
+          "detail": "播放列表可下载，但采样分片均不可解码：ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流",
+          "failure_class": "hard",
+          "http_status": 200,
+          "host": "jsnzkpg.de5.net"
+        }
+      ],
+      "removable": false,
+      "failure_class": "hard",
+      "host": "jsnzkpg.de5.net"
+    },
+    {
+      "url": "https://stymei.pages.dev/live.m3u",
+      "name": "👖裤佬体育直播[备]",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "count": 1,
+      "history": [
+        {
+          "checked_at": "2026-10-22T15:29:18Z",
+          "status": "probe_failed",
+          "detail": "播放列表可下载，但采样分片均不可解码：ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流",
+          "failure_class": "hard",
+          "http_status": 200,
+          "host": "stymei.pages.dev"
+        }
+      ],
+      "removable": false,
+      "failure_class": "hard",
+      "host": "stymei.pages.dev"
+    },
+    {
+      "url": "https://kuaishou.445569.xyz/list.m3u",
+      "name": "👖裤佬快手直播",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "count": 1,
+      "history": [
+        {
+          "checked_at": "2026-10-22T15:29:18Z",
+          "status": "probe_failed",
+          "detail": "播放列表可下载，但采样分片均不可解码：ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流",
+          "failure_class": "hard",
+          "http_status": 200,
+          "host": "kuaishou.445569.xyz"
+        }
+      ],
+      "removable": false,
+      "failure_class": "hard",
+      "host": "kuaishou.445569.xyz"
+    },
+    {
+      "url": "https://douyin.445569.xyz/live.m3u",
+      "name": "👖裤佬抖音直播",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "count": 1,
+      "history": [
+        {
+          "checked_at": "2026-10-22T15:29:18Z",
+          "status": "probe_failed",
+          "detail": "播放列表可下载，但采样分片均不可解码：ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流",
+          "failure_class": "hard",
+          "http_status": 200,
+          "host": "douyin.445569.xyz"
+        }
+      ],
+      "removable": false,
+      "failure_class": "hard",
+      "host": "douyin.445569.xyz"
+    },
+    {
+      "url": "https://douyu.445569.xyz/live.m3u",
+      "name": "👖裤佬斗鱼直播",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "count": 1,
+      "history": [
+        {
+          "checked_at": "2026-10-22T15:29:18Z",
+          "status": "probe_failed",
+          "detail": "播放列表可下载，但采样分片均不可解码：ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流",
+          "failure_class": "hard",
+          "http_status": 200,
+          "host": "douyu.445569.xyz"
+        }
+      ],
+      "removable": false,
+      "failure_class": "hard",
+      "host": "douyu.445569.xyz"
+    },
+    {
+      "url": "https://laifeng.445569.xyz/live.m3u",
+      "name": "👖裤佬来疯直播",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "count": 1,
+      "history": [
+        {
+          "checked_at": "2026-10-22T15:29:18Z",
+          "status": "probe_failed",
+          "detail": "播放列表可下载，但采样分片均不可解码：ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流",
+          "failure_class": "hard",
+          "http_status": 200,
+          "host": "laifeng.445569.xyz"
+        }
+      ],
+      "removable": false,
+      "failure_class": "hard",
+      "host": "laifeng.445569.xyz"
+    },
+    {
+      "url": "https://baizhan.445569.xyz/live.m3u",
+      "name": "👖裤佬百战直播",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "count": 1,
+      "history": [
+        {
+          "checked_at": "2026-10-22T15:29:18Z",
+          "status": "probe_failed",
+          "detail": "播放列表可下载，但采样分片均不可解码：ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流",
+          "failure_class": "hard",
+          "http_status": 200,
+          "host": "baizhan.445569.xyz"
+        }
+      ],
+      "removable": false,
+      "failure_class": "hard",
+      "host": "baizhan.445569.xyz"
+    },
+    {
+      "url": "https://huya.445569.xyz/live.m3u",
+      "name": "👖裤佬虎牙直播",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "count": 1,
+      "history": [
+        {
+          "checked_at": "2026-10-22T15:29:18Z",
+          "status": "probe_failed",
+          "detail": "播放列表可下载，但采样分片均不可解码：ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流",
+          "failure_class": "hard",
+          "http_status": 200,
+          "host": "huya.445569.xyz"
+        }
+      ],
+      "removable": false,
+      "failure_class": "hard",
+      "host": "huya.445569.xyz"
+    },
+    {
+      "url": "https://kugou.445569.xyz/live.m3u",
+      "name": "👖裤佬酷狗直播",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "count": 1,
+      "history": [
+        {
+          "checked_at": "2026-10-22T15:29:18Z",
+          "status": "probe_failed",
+          "detail": "播放列表可下载，但采样分片均不可解码：ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流",
+          "failure_class": "hard",
+          "http_status": 200,
+          "host": "kugou.445569.xyz"
+        }
+      ],
+      "removable": false,
+      "failure_class": "hard",
+      "host": "kugou.445569.xyz"
     }
   ],
   "streaks": [
@@ -129,7 +408,7 @@
       "url": "https://ilook.epg.one/5CM5SY98BF24PL/2",
       "name": "🍿乌拉TV直播",
       "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
-      "count": 2,
+      "count": 3,
       "history": [
         {
           "checked_at": "2026-10-22T13:21:53Z",
@@ -143,6 +422,14 @@
           "checked_at": "2026-10-22T13:53:58Z",
           "status": "probe_failed",
           "detail": "https://ilook.epg.one/5CM5SY98BF24PL/2: Invalid data found when processing input",
+          "failure_class": "hard",
+          "http_status": 200,
+          "host": "ilook.epg.one"
+        },
+        {
+          "checked_at": "2026-10-22T15:29:18Z",
+          "status": "probe_failed",
+          "detail": "ffprobe 未检测到媒体流",
           "failure_class": "hard",
           "http_status": 200,
           "host": "ilook.epg.one"
@@ -156,7 +443,7 @@
       "url": "https://445569.pages.dev/https://raw.githubusercontent.com/swhtv/111/refs/heads/main/%E5%8D%8E%E8%A7%86box%E5%8D%8E%E8%A7%86%E5%A4%A7%E5%85%A8swtv",
       "name": "🍿华视TV直播",
       "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
-      "count": 2,
+      "count": 3,
       "history": [
         {
           "checked_at": "2026-10-22T13:21:53Z",
@@ -170,6 +457,14 @@
           "checked_at": "2026-10-22T13:53:58Z",
           "status": "probe_failed",
           "detail": "https://445569.pages.dev/https://raw.githubusercontent.com/swhtv/111/refs/heads/main/%E5%8D%8E%E8%A7%86box%E5%8D%8E%E8%A7%86%E5%A4%A7%E5%85%A8swtv: Invalid data found when processing input",
+          "failure_class": "hard",
+          "http_status": 200,
+          "host": "445569.pages.dev"
+        },
+        {
+          "checked_at": "2026-10-22T15:29:18Z",
+          "status": "probe_failed",
+          "detail": "ffprobe 未检测到媒体流",
           "failure_class": "hard",
           "http_status": 200,
           "host": "445569.pages.dev"
@@ -183,7 +478,7 @@
       "url": "https://445569.pages.dev/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
       "name": "🍿易发TV直播",
       "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
-      "count": 2,
+      "count": 3,
       "history": [
         {
           "checked_at": "2026-10-22T13:21:53Z",
@@ -197,6 +492,14 @@
           "checked_at": "2026-10-22T13:53:58Z",
           "status": "probe_failed",
           "detail": "播放列表可下载，但采样分片均不可解码：https://445569.pages.dev/https:/raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/盗源狗si全家 全家下地狱: Server returned 404 Not Found | https://445569.pages.dev/https:/raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/盗源狗si全家 全家下地狱: Server returned 404 Not Found | https://4",
+          "failure_class": "hard",
+          "http_status": 200,
+          "host": "445569.pages.dev"
+        },
+        {
+          "checked_at": "2026-10-22T15:29:18Z",
+          "status": "probe_failed",
+          "detail": "播放列表可下载，但采样分片均不可解码：ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流",
           "failure_class": "hard",
           "http_status": 200,
           "host": "445569.pages.dev"
@@ -210,7 +513,7 @@
       "url": "https://www.korice.eu.org/ppv_m3u.php",
       "name": "🏆PPV体育赛事直播",
       "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
-      "count": 2,
+      "count": 3,
       "history": [
         {
           "checked_at": "2026-10-22T13:21:53Z",
@@ -227,11 +530,266 @@
           "failure_class": "hard",
           "http_status": 200,
           "host": "www.korice.eu.org"
+        },
+        {
+          "checked_at": "2026-10-22T15:29:18Z",
+          "status": "probe_failed",
+          "detail": "ffprobe 未检测到媒体流",
+          "failure_class": "hard",
+          "http_status": 200,
+          "host": "www.korice.eu.org"
         }
       ],
       "removable": false,
       "failure_class": "hard",
       "host": "www.korice.eu.org"
+    },
+    {
+      "url": "https://iptv.445569.xyz/live.m3u",
+      "name": "👖裤佬IPTV直播",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "count": 1,
+      "history": [
+        {
+          "checked_at": "2026-10-22T15:29:18Z",
+          "status": "probe_failed",
+          "detail": "播放列表可下载，但采样分片均不可解码：ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流",
+          "failure_class": "hard",
+          "http_status": 200,
+          "host": "iptv.445569.xyz"
+        }
+      ],
+      "removable": false,
+      "failure_class": "hard",
+      "host": "iptv.445569.xyz"
+    },
+    {
+      "url": "https://tiktok.445569.xyz/live.m3u",
+      "name": "👖裤佬TikTok直播",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "count": 1,
+      "history": [
+        {
+          "checked_at": "2026-10-22T15:29:18Z",
+          "status": "probe_failed",
+          "detail": "播放列表可下载，但采样分片均不可解码：ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流",
+          "failure_class": "hard",
+          "http_status": 200,
+          "host": "tiktok.445569.xyz"
+        }
+      ],
+      "removable": false,
+      "failure_class": "hard",
+      "host": "tiktok.445569.xyz"
+    },
+    {
+      "url": "https://twitch.445569.xyz/live.m3u",
+      "name": "👖裤佬Twitch直播",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "count": 1,
+      "history": [
+        {
+          "checked_at": "2026-10-22T15:29:18Z",
+          "status": "probe_failed",
+          "detail": "播放列表可下载，但采样分片均不可解码：ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流",
+          "failure_class": "hard",
+          "http_status": 200,
+          "host": "twitch.445569.xyz"
+        }
+      ],
+      "removable": false,
+      "failure_class": "hard",
+      "host": "twitch.445569.xyz"
+    },
+    {
+      "url": "https://yy.445569.xyz/live.m3u",
+      "name": "👖裤佬YY直播",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "count": 1,
+      "history": [
+        {
+          "checked_at": "2026-10-22T15:29:18Z",
+          "status": "probe_failed",
+          "detail": "播放列表可下载，但采样分片均不可解码：ffprobe 未检测到媒体流",
+          "failure_class": "hard",
+          "http_status": 200,
+          "host": "yy.445569.xyz"
+        }
+      ],
+      "removable": false,
+      "failure_class": "hard",
+      "host": "yy.445569.xyz"
+    },
+    {
+      "url": "https://jsnzkpg.de5.net/all.m3u",
+      "name": "👖裤佬体育直播[主]",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "count": 1,
+      "history": [
+        {
+          "checked_at": "2026-10-22T15:29:18Z",
+          "status": "probe_failed",
+          "detail": "播放列表可下载，但采样分片均不可解码：ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流",
+          "failure_class": "hard",
+          "http_status": 200,
+          "host": "jsnzkpg.de5.net"
+        }
+      ],
+      "removable": false,
+      "failure_class": "hard",
+      "host": "jsnzkpg.de5.net"
+    },
+    {
+      "url": "https://stymei.pages.dev/live.m3u",
+      "name": "👖裤佬体育直播[备]",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "count": 1,
+      "history": [
+        {
+          "checked_at": "2026-10-22T15:29:18Z",
+          "status": "probe_failed",
+          "detail": "播放列表可下载，但采样分片均不可解码：ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流",
+          "failure_class": "hard",
+          "http_status": 200,
+          "host": "stymei.pages.dev"
+        }
+      ],
+      "removable": false,
+      "failure_class": "hard",
+      "host": "stymei.pages.dev"
+    },
+    {
+      "url": "https://kuaishou.445569.xyz/list.m3u",
+      "name": "👖裤佬快手直播",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "count": 1,
+      "history": [
+        {
+          "checked_at": "2026-10-22T15:29:18Z",
+          "status": "probe_failed",
+          "detail": "播放列表可下载，但采样分片均不可解码：ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流",
+          "failure_class": "hard",
+          "http_status": 200,
+          "host": "kuaishou.445569.xyz"
+        }
+      ],
+      "removable": false,
+      "failure_class": "hard",
+      "host": "kuaishou.445569.xyz"
+    },
+    {
+      "url": "https://douyin.445569.xyz/live.m3u",
+      "name": "👖裤佬抖音直播",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "count": 1,
+      "history": [
+        {
+          "checked_at": "2026-10-22T15:29:18Z",
+          "status": "probe_failed",
+          "detail": "播放列表可下载，但采样分片均不可解码：ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流",
+          "failure_class": "hard",
+          "http_status": 200,
+          "host": "douyin.445569.xyz"
+        }
+      ],
+      "removable": false,
+      "failure_class": "hard",
+      "host": "douyin.445569.xyz"
+    },
+    {
+      "url": "https://douyu.445569.xyz/live.m3u",
+      "name": "👖裤佬斗鱼直播",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "count": 1,
+      "history": [
+        {
+          "checked_at": "2026-10-22T15:29:18Z",
+          "status": "probe_failed",
+          "detail": "播放列表可下载，但采样分片均不可解码：ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流",
+          "failure_class": "hard",
+          "http_status": 200,
+          "host": "douyu.445569.xyz"
+        }
+      ],
+      "removable": false,
+      "failure_class": "hard",
+      "host": "douyu.445569.xyz"
+    },
+    {
+      "url": "https://laifeng.445569.xyz/live.m3u",
+      "name": "👖裤佬来疯直播",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "count": 1,
+      "history": [
+        {
+          "checked_at": "2026-10-22T15:29:18Z",
+          "status": "probe_failed",
+          "detail": "播放列表可下载，但采样分片均不可解码：ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流",
+          "failure_class": "hard",
+          "http_status": 200,
+          "host": "laifeng.445569.xyz"
+        }
+      ],
+      "removable": false,
+      "failure_class": "hard",
+      "host": "laifeng.445569.xyz"
+    },
+    {
+      "url": "https://baizhan.445569.xyz/live.m3u",
+      "name": "👖裤佬百战直播",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "count": 1,
+      "history": [
+        {
+          "checked_at": "2026-10-22T15:29:18Z",
+          "status": "probe_failed",
+          "detail": "播放列表可下载，但采样分片均不可解码：ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流",
+          "failure_class": "hard",
+          "http_status": 200,
+          "host": "baizhan.445569.xyz"
+        }
+      ],
+      "removable": false,
+      "failure_class": "hard",
+      "host": "baizhan.445569.xyz"
+    },
+    {
+      "url": "https://huya.445569.xyz/live.m3u",
+      "name": "👖裤佬虎牙直播",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "count": 1,
+      "history": [
+        {
+          "checked_at": "2026-10-22T15:29:18Z",
+          "status": "probe_failed",
+          "detail": "播放列表可下载，但采样分片均不可解码：ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流",
+          "failure_class": "hard",
+          "http_status": 200,
+          "host": "huya.445569.xyz"
+        }
+      ],
+      "removable": false,
+      "failure_class": "hard",
+      "host": "huya.445569.xyz"
+    },
+    {
+      "url": "https://kugou.445569.xyz/live.m3u",
+      "name": "👖裤佬酷狗直播",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "count": 1,
+      "history": [
+        {
+          "checked_at": "2026-10-22T15:29:18Z",
+          "status": "probe_failed",
+          "detail": "播放列表可下载，但采样分片均不可解码：ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流 | ffprobe 未检测到媒体流",
+          "failure_class": "hard",
+          "http_status": 200,
+          "host": "kugou.445569.xyz"
+        }
+      ],
+      "removable": false,
+      "failure_class": "hard",
+      "host": "kugou.445569.xyz"
     },
     {
       "url": "https://seep.eu.org/iptv-org.github.io/iptv/index.m3u",
@@ -242,136 +800,6 @@
       "removable": false,
       "failure_class": "",
       "host": "seep.eu.org"
-    },
-    {
-      "url": "https://iptv.445569.xyz/live.m3u",
-      "name": "👖裤佬IPTV直播",
-      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
-      "count": 0,
-      "history": [],
-      "removable": false,
-      "failure_class": "",
-      "host": "iptv.445569.xyz"
-    },
-    {
-      "url": "https://tiktok.445569.xyz/live.m3u",
-      "name": "👖裤佬TikTok直播",
-      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
-      "count": 0,
-      "history": [],
-      "removable": false,
-      "failure_class": "",
-      "host": "tiktok.445569.xyz"
-    },
-    {
-      "url": "https://twitch.445569.xyz/live.m3u",
-      "name": "👖裤佬Twitch直播",
-      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
-      "count": 0,
-      "history": [],
-      "removable": false,
-      "failure_class": "",
-      "host": "twitch.445569.xyz"
-    },
-    {
-      "url": "https://yy.445569.xyz/live.m3u",
-      "name": "👖裤佬YY直播",
-      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
-      "count": 0,
-      "history": [],
-      "removable": false,
-      "failure_class": "",
-      "host": "yy.445569.xyz"
-    },
-    {
-      "url": "https://jsnzkpg.de5.net/all.m3u",
-      "name": "👖裤佬体育直播[主]",
-      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
-      "count": 0,
-      "history": [],
-      "removable": false,
-      "failure_class": "",
-      "host": "jsnzkpg.de5.net"
-    },
-    {
-      "url": "https://stymei.pages.dev/live.m3u",
-      "name": "👖裤佬体育直播[备]",
-      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
-      "count": 0,
-      "history": [],
-      "removable": false,
-      "failure_class": "",
-      "host": "stymei.pages.dev"
-    },
-    {
-      "url": "https://kuaishou.445569.xyz/list.m3u",
-      "name": "👖裤佬快手直播",
-      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
-      "count": 0,
-      "history": [],
-      "removable": false,
-      "failure_class": "",
-      "host": "kuaishou.445569.xyz"
-    },
-    {
-      "url": "https://douyin.445569.xyz/live.m3u",
-      "name": "👖裤佬抖音直播",
-      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
-      "count": 0,
-      "history": [],
-      "removable": false,
-      "failure_class": "",
-      "host": "douyin.445569.xyz"
-    },
-    {
-      "url": "https://douyu.445569.xyz/live.m3u",
-      "name": "👖裤佬斗鱼直播",
-      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
-      "count": 0,
-      "history": [],
-      "removable": false,
-      "failure_class": "",
-      "host": "douyu.445569.xyz"
-    },
-    {
-      "url": "https://laifeng.445569.xyz/live.m3u",
-      "name": "👖裤佬来疯直播",
-      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
-      "count": 0,
-      "history": [],
-      "removable": false,
-      "failure_class": "",
-      "host": "laifeng.445569.xyz"
-    },
-    {
-      "url": "https://baizhan.445569.xyz/live.m3u",
-      "name": "👖裤佬百战直播",
-      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
-      "count": 0,
-      "history": [],
-      "removable": false,
-      "failure_class": "",
-      "host": "baizhan.445569.xyz"
-    },
-    {
-      "url": "https://huya.445569.xyz/live.m3u",
-      "name": "👖裤佬虎牙直播",
-      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
-      "count": 0,
-      "history": [],
-      "removable": false,
-      "failure_class": "",
-      "host": "huya.445569.xyz"
-    },
-    {
-      "url": "https://kugou.445569.xyz/live.m3u",
-      "name": "👖裤佬酷狗直播",
-      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
-      "count": 0,
-      "history": [],
-      "removable": false,
-      "failure_class": "",
-      "host": "kugou.445569.xyz"
     }
   ]
 }
