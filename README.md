@@ -34,6 +34,7 @@ GitHub 的 `/blob/` 地址打开的是 HTML 网页，不是 JSON 文件，不能
 | `geitpy-fish` | 在 `geit-fish` 基础上追加 `py/` 内全部有效 Python 站点 |
 | `tvbox/lives/merged.m3u` | 从 TXT/M3U 来源合并并按 URL 去重的直播列表，`tvg-id` 为稳定频道键 |
 | `docs/channel_ledger.json` | 频道台账：来源、原始分组、协议、频道键和多线路关系 |
+| `docs/classification_review.json` | 未命中规则的频道清单：仅报告并保留在 `merged.m3u`，便于补充 `tvbox/channel_rules.json` |
 | `docs/tvbox.json` | `geit-fish` 的兼容副本，旧链接可直接使用 |
 | `docs/sources.json` | 每个来源的抓取状态和解析结果 |
 | `docs/health.json` / `.csv` | 链接健康与播放验证状态 |
@@ -66,14 +67,17 @@ GitHub 的 `/blob/` 地址打开的是 HTML 网页，不是 JSON 文件，不能
 
 工作流位于 `.github/workflows/collect.yml`，默认每 18 小时运行一次，也可在 Actions 页面手动触发。链接健康检查独立位于 `.github/workflows/health.yml`，默认每 72 小时运行一次。
 
+GitHub Actions 的 cron 不能直接表达“每 18 小时”：`0 */18 * * *` 只会在 00、18 点触发，实际间隔是 18/6 小时交替。因此 `collect.yml` 每小时唤醒一次，再用 epoch 小时对 18 取模放行；`health.yml` 每天唤醒一次，再按 UTC 日数对 3 取模放行，实际约 72 小时一次。手动触发不受 gate 限制。
+
 每次运行会：
 
 1. 读取 `sources.txt`，抓取并识别 JSON / TXT / M3U。
 2. 解密加密配置，提取并校验其中的 Python 文件。
 3. 按站点 API、直播 URL 和频道 URL 去重；生成稳定频道键并输出可追溯台账。
 4. 按文件内容哈希去重 Python；同一内容的重复文件移入忽略提交的 `回收/重复Python/`。
-5. 生成 `geit-fish`、`geitpy-fish`、`merged.m3u`、文档页和健康报告。
-6. 运行语法与结构校验，然后只提交生成产物和必要脚本。
+5. 用 `tvbox/channel_rules.json` 分类频道；未命中项写入 `docs/classification_review.json`，但仍保留在 `merged.m3u`。
+6. 生成 `geit-fish`、`geitpy-fish`、`merged.m3u`、文档页和健康报告。
+7. 运行语法与结构校验，然后只提交生成产物和必要脚本。
 
 采集器不会把第三方原始配置原样提交。`config_security.py` 会递归检查生成配置中的 URL 参数、认证头、用户信息和敏感字段；本地生成和 GitHub Actions 静态校验都会在发现真实凭据时中止。
 
@@ -96,7 +100,7 @@ python check_health.py --workers 16 --max-channels 500
 
 `docs/blocked.csv` 会汇总明确 HTTP 失败、ffprobe 失败和配置无法解析的条目；`requires_app`、`reachable` 和 `playback_unverified` 不会被当作永久失效。地区限制、CDN、UA、代理和临时超时都可能造成误判，因此标记用于复查，不会自动改动 `sources.txt`。
 
-`docs/channel_health.json` 是频道级台账，记录每条 URL 的频道键、来源、原始分组、确定性失败次数和处置建议。当前只报告 `keep`、`observe`、`observe_soft`、`skip_internal`、`candidate_remove`，不会自动修改 `merged.m3u`。健康工作流每轮只抽检一部分频道，未抽到的线路会保留上一轮记录；已经不在频道台账中的旧 URL 才会被移除。超时、网络不可达、运营商内网地址和 `playback_unverified` 都不会被当作删除依据；只有连续多次确定性失败才进入 `candidate_remove`。
+`docs/channel_health.json` 是频道级台账，记录每条 URL 的频道键、来源、原始分组、确定性失败次数和处置建议。当前只报告 `keep`、`observe`、`observe_soft`、`skip_internal`、`candidate_remove`，不会自动修改 `merged.m3u`。健康工作流每轮只抽检一部分频道，未抽到的线路会保留上一轮记录；已经不在频道台账中的旧 URL 才会被移除。超时、网络不可达、运营商内网地址和 `playback_unverified` 都不会被当作删除依据；只有连续多次确定性失败才进入 `candidate_remove`。恢复判定同样保守：只有 `probe_ok`（ffprobe 成功解码媒体流）才清零失败次数，`reachable`、`manifest_ok`、`playback_unverified` 都保留历史。
 
 频道台账为每条线路保存 `url_hash`（原始 URL 的 SHA-256）和脱敏后的 `url`。健康检查使用哈希匹配，因此带 token、签名等敏感参数的直播地址也能稳定关联，同时不会把真实凭据写进公开报告。
 
@@ -104,9 +108,9 @@ python check_health.py --workers 16 --max-channels 500
 
 健康工作流会把每一轮的结果累加到 `docs/removable.json`，只统计 `geit-fish` 里的 `live` 直播源（它们每轮全量检查，能真正凑够连续次数；频道是抽样轮转的，同一条很可能连续几轮都没被抽到，因此不参与计数）。
 
-- 计入失败：连接被拒、DNS 解析失败、HTTP 4xx/5xx、ffprobe 报告无效流数据。
-- 不计入失败：**超时**。健康工作流跑在 GitHub 境外 runner 上，国内直播源超时率很高，按超时计数会误删活着的源。
-- 每次探测只判断该源"确定性失效"，某次只是慢不会清零已有计数外的其他影响：只要有一轮恢复 `reachable`，计数立即归零。
+- 计入失败：连接被拒、DNS 解析失败、404/410、明确拒绝、ffprobe 报告持续无效流数据。
+- 不计入失败：**超时**、403/429/451 等地区限制/鉴权/限流、临时 5xx。健康工作流跑在 GitHub 境外 runner 上，国内直播源超时率很高，按超时计数会误删活着的源。
+- 恢复判定：只有 `probe_ok` 才清零；`reachable`、`manifest_ok`、`playback_unverified` 不会清空已有失败历史。
 
 连续失败达到 5 次（`FAIL_STREAK_LIMIT`）后，该源进入 `removable` 列表并在日志里打印名称与来源；下一次聚合运行 `fetch_tvbox.py` 时会自动把它从 `geit-fish`、`geitpy-fish` 中移除，其下频道也不再进入 `merged.m3u`。`docs/removable.json` 的 `pending` 列表记录失败 1-4 次的源，仅供人工预判，不会触发任何删除。
 

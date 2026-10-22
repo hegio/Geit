@@ -55,6 +55,9 @@ SOFT_NETWORK_MARKERS = (
     "connection reset",
     "remote end closed connection",
 )
+# These status codes often mean region lock, authorization or rate limiting.
+# They are useful diagnostics but must not count toward auto-removal.
+SOFT_HTTP_STATUSES = {401, 403, 407, 408, 425, 429, 451, 500, 502, 503, 504}
 PROXY_FALLBACKS = (
     "https://gh-proxy.com/",
     "https://gh-proxy.org/",
@@ -100,7 +103,11 @@ def is_decisive_failure(item: "Item") -> bool:
     if item.status not in {"http_error", "probe_failed", "invalid_config", "invalid_placeholder"}:
         return False
     detail = str(item.detail or "")
+    if item.http_status in SOFT_HTTP_STATUSES:
+        return False
     if any(marker in detail for marker in SOFT_FAILURE_MARKERS):
+        return False
+    if re.search(r"\b(?:HTTP\s*)?(?:401|403|407|408|425|429|451|500|502|503|504)\b", detail):
         return False
     return True
 
@@ -108,6 +115,10 @@ def is_decisive_failure(item: "Item") -> bool:
 def is_soft_failure(item: "Item") -> bool:
     """True when a failure is likely environmental and must never delete a line."""
     detail = str(item.detail or "").lower()
+    if item.http_status in SOFT_HTTP_STATUSES:
+        return True
+    if re.search(r"\b(?:http\s*)?(?:401|403|407|408|425|429|451|500|502|503|504)\b", detail):
+        return True
     return any(marker in detail for marker in SOFT_FAILURE_MARKERS + SOFT_NETWORK_MARKERS)
 
 
@@ -157,8 +168,10 @@ def update_streaks(items: list["Item"]) -> dict[str, dict[str, Any]]:
                 "history": history[-FAIL_STREAK_LIMIT:],
                 "removable": count >= FAIL_STREAK_LIMIT,
             }
-        else:
-            # A healthy or merely slow result clears the streak.
+        elif item.status == "probe_ok":
+            # Only a decoded media stream is strong evidence that the source
+            # has recovered. A reachable URL, a downloadable manifest, or a
+            # timeout must not erase a prior decisive-failure streak.
             current[url] = {
                 "url": url,
                 "name": item.name,
@@ -167,13 +180,35 @@ def update_streaks(items: list["Item"]) -> dict[str, dict[str, Any]]:
                 "history": [],
                 "removable": False,
             }
+        else:
+            # Preserve decisive-failure history for every non-probe result,
+            # including soft failures and playback_unverified. Otherwise a
+            # runner outage or a URL whose container is merely reachable can
+            # silently reset the five-check safety window.
+            if prior:
+                current[url] = {
+                    **prior,
+                    "url": url,
+                    "name": item.name,
+                    "source": str(getattr(item, "source", "") or ""),
+                    "removable": False,
+                }
+            else:
+                current[url] = {
+                    "url": url,
+                    "name": item.name,
+                    "source": str(getattr(item, "source", "") or ""),
+                    "count": 0,
+                    "history": [],
+                    "removable": False,
+                }
     return current
 
 
 def channel_is_private_or_internal(item: "Item") -> bool:
     """Domestic ISP intranet streams cannot be validated from GitHub runners."""
     text = " ".join((item.name, item.category, item.source))
-    if re.search(r"内网|内网源|联通|移动|电信|天翼|广电", text):
+    if re.search(r"内网|内网源|私密频道|JAV點播|JAV点播|联通|移动|电信|天翼|广电", text):
         return True
     host = urllib.parse.urlsplit(item.url).hostname or ""
     try:
@@ -256,7 +291,9 @@ def write_channel_health(items: list[Item]) -> None:
         count = int(old.get("decisive_failures", 0) or 0)
         if decisive and not internal:
             count += 1
-        elif item.status in {"probe_ok", "reachable"}:
+        # Only a decoded media stream proves recovery. A downloadable manifest
+        # or a reachable API endpoint must not erase a decisive failure streak.
+        elif item.status == "probe_ok":
             count = 0
         if internal:
             verdict = "skip_internal"
@@ -520,10 +557,11 @@ def probe(url: str, ffprobe: str) -> tuple[str, str]:
         return "playback_unverified", "未找到 ffprobe"
     command = [
         ffprobe, "-v", "error", "-rw_timeout", "15000000",
+        "-analyzeduration", "5000000", "-probesize", "5000000",
         "-show_entries", "stream=codec_type", "-of", "csv=p=0", url,
     ]
     try:
-        result = subprocess.run(command, capture_output=True, timeout=30)
+        result = subprocess.run(command, capture_output=True, timeout=35)
         output = (result.stdout or b"").decode("utf-8", "replace").strip()
         if result.returncode == 0 and output:
             return "probe_ok", "ffprobe 检测到媒体流: %s" % output.replace("\n", ",")
@@ -536,22 +574,22 @@ def probe(url: str, ffprobe: str) -> tuple[str, str]:
 
 
 def probe_manifest(url: str, ffprobe: str) -> tuple[str, str]:
-    """Probe one media URL found inside an HLS playlist."""
+    """Download a manifest and verify a media segment, not just HTTP 200."""
     if not ffprobe:
         return "manifest_ok", "播放列表可下载；无 ffprobe，未验证媒体分片"
     try:
         request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
         with urllib.request.urlopen(request, timeout=TIMEOUT) as response:
             text = response.read(MAX_PROBE_BYTES).decode("utf-8", "replace")
-        candidates = []
-        for line in text.splitlines():
-            candidate = line.strip()
-            if not candidate or candidate.startswith("#"):
-                continue
-            if not re.match(r"^[a-z][a-z0-9+.-]*://", candidate, re.I):
-                continue
+        media_lines = [
+            line.strip() for line in text.splitlines()
+            if line.strip() and not line.strip().startswith("#")
+        ]
+        candidates: list[str] = []
+        for candidate in media_lines:
             # A TXT channel list is not an HLS playlist. Only follow media
-            # references that are valid URLs, not "channel,http://..." rows.
+            # references, not "channel,http://..." rows. Relative HLS
+            # segments are valid and must be resolved against the manifest.
             if "," in candidate:
                 continue
             joined = urllib.parse.urljoin(url, candidate)
@@ -559,16 +597,35 @@ def probe_manifest(url: str, ffprobe: str) -> tuple[str, str]:
                 candidates.append(joined)
         if not candidates:
             return "manifest_ok", "文本列表可下载；不是可直接探测的单条 HLS 播放列表"
-        status, detail = probe(candidates[0], ffprobe)
-        if status == "probe_ok":
-            return status, "播放列表首条媒体流：" + detail
-        return "probe_failed", "播放列表可下载，但首条媒体流探测失败：" + detail
+        # Check a small rotating set of segments. A single broken segment is
+        # often an ad/edge issue, while a playlist whose sampled segments all
+        # fail is much stronger evidence of an invalid stream.
+        errors: list[str] = []
+        for candidate in candidates[:3]:
+            status, detail = probe(candidate, ffprobe)
+            if status == "probe_ok":
+                return "probe_ok", "播放列表媒体分片可解码：" + detail
+            errors.append(detail)
+        joined_errors = " | ".join(error for error in errors if error)
+        if any(marker in joined_errors.lower() for marker in SOFT_FAILURE_MARKERS):
+            return "manifest_ok", "播放列表可下载，分片探测超时/网络抖动，保留观察：" + joined_errors[:300]
+        return "probe_failed", "播放列表可下载，但采样分片均不可解码：" + joined_errors[:300]
     except Exception as exc:
-        return "manifest_ok", "播放列表可下载，媒体分片探测未完成：" + str(exc)[:200]
+        detail = str(exc)
+        if any(marker in detail.lower() for marker in SOFT_FAILURE_MARKERS):
+            return "manifest_ok", "播放列表探测超时，保留观察：" + detail[:200]
+        return "manifest_ok", "播放列表可下载，媒体分片探测未完成：" + detail[:200]
 
 
 def check(item: Item, ffprobe: str, do_probe: bool) -> Item:
     item.checked_at = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
+    # Private/adult sections are intentionally excluded from automated health
+    # probes: their upstreams require app-side context and should not be
+    # requested or published in a health report.
+    if item.kind in {"live", "channel"} and channel_is_private_or_internal(item):
+        item.status = "skip_internal"
+        item.detail = "私密/运营商内网来源，跳过自动探测，避免误删与敏感请求"
+        return item
     if item.kind == "source" and item.status in {"invalid_config", "invalid_placeholder"}:
         item.detail = "生成器未能解析该来源；格式判断需等待下一轮聚合重新确认"
         return item
@@ -624,6 +681,8 @@ def write_report(items: list[Item]) -> None:
             "http_status": item.http_status,
             "detail": redact_sensitive_text(item.detail),
             "checked_at": item.checked_at,
+            "source": redact_sensitive_text(item.source),
+            "source_line": item.source_line,
         }
         for item in items
     ]
@@ -680,9 +739,10 @@ def write_removable(items: list[Item]) -> None:
         "policy": {
             "fail_streak_limit": FAIL_STREAK_LIMIT,
             "scope": "仅统计 geit-fish 中的 live 直播源；频道抽样轮转，不参与计数",
-            "counted_failures": "连接被拒、DNS 失败、HTTP 4xx/5xx、无效流数据",
-            "ignored_failures": "超时（境外探测对国内源误判率高）",
-            "action": "达到上限的源会在下一次聚合时自动从 geit-fish 移除，其下频道同步从 merged.m3u 剔除",
+            "counted_failures": "仅高置信确定性失效：404/410、明确拒绝、持续无效媒体流等",
+            "ignored_failures": "超时、403/429/451 等地区限制/鉴权/限流、临时 5xx；不计入也不清空既有失败历史",
+            "recovery": "只有 probe_ok（ffprobe 成功解码媒体流）才清零；reachable、manifest_ok、playback_unverified 均保留历史",
+            "action": "达到上限的源会在下一次聚合时自动从 geit-fish 移除；merged.m3u 中的频道仍按独立频道链路处理，不因一个 live 配置项被删而批量删除",
         },
         "summary": {
             "flagged": len(flagged),

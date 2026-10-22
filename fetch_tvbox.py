@@ -60,6 +60,9 @@ DOCS_DIR = HERE / "docs"
 GEIT_PATH = HERE / "geit-fish"
 GEITPY_PATH = HERE / "geitpy-fish"
 MERGED_M3U_PATH = LIVE_DIR / "merged.m3u"
+# 分类规则与代码分离。以后增减 sources.txt 时只需维护这份 JSON，
+# 新来源会自动套用规则；未命中项进入待确认报告，但不会从 M3U 删除。
+CHANNEL_RULES_PATH = TVBOX_DIR / "channel_rules.json"
 # 直播源出处：健康报告据此标注每个 live 来自 sources.txt 的哪一行。
 LIVE_SOURCE_KEY = "source"
 # 健康工作流写出的待删除直播源清单，达到连续失败上限即自动移除。
@@ -108,6 +111,9 @@ class Channel:
     source: str = ""
     source_line: int = 0
     group_raw: str = ""
+    # TXT 的 "#genre# 前小节名" 与 "后的分组名" 是两种信息。前者常包含
+    # 私密频道、抖音、咪咕等真实来源语义，不能因为后者是 DE=3 就丢掉。
+    source_section: str = ""
     protocol: str = ""
     channel_key: str = ""
     quality: str = ""
@@ -326,18 +332,21 @@ def is_m3u(text: str) -> bool:
 def parse_txt_channels(text: str, source: str = "", source_line: int = 0) -> list[Channel]:
     channels: list[Channel] = []
     group = ""
+    source_section = ""
     for raw in text.splitlines():
         line = raw.strip().lstrip("\ufeff")
         if not line:
             continue
         if line.startswith("#genre#"):
             group = line.split("#genre#", 1)[1].strip(" ,")
+            source_section = ""
             continue
         if line.startswith("#"):
             continue
         if "#genre#" in line:
             name, rest = line.split(",", 1) if "," in line else (line, "")
             group = rest.replace("#genre#", "").strip(" ,") or name.strip()
+            source_section = name.strip()
             continue
         if "," not in line:
             continue
@@ -349,6 +358,7 @@ def parse_txt_channels(text: str, source: str = "", source_line: int = 0) -> lis
                 url=url,
                 group=group,
                 group_raw=group,
+                source_section=source_section,
                 source=source,
                 source_line=source_line,
             ))
@@ -641,14 +651,40 @@ QUALITY_SUFFIX = re.compile(
     r"60帧|50帧|25帧|备用|备用线路?|线路\d*|"
     r"[\s\-_·]*(?:hd|4k|8k|uhd|fhd))$"
 )
+CCTV_EDITION_PATTERN = re.compile(r"(?i)(?:港澳版|香港版|台湾版|台灣版)")
+CCTV_OVERSEAS_PATTERN = re.compile(
+    r"(?i)(?:America|USA?|UK|Europe|欧洲|歐洲|美洲|北美|海外|亚洲|亞洲|"
+    r"日本|韩国|韓國|新加坡|马来西亚|馬來西亞|泰国|泰國|越南|印度|"
+    r"俄罗斯|俄羅斯|法国|法國|德国|德國|意大利|西班牙|土耳其|阿拉伯|迪拜)"
+)
+LOCAL_CHANNEL_PATTERN = re.compile(
+    r"^(?:(?:北京|上海|天津|重庆|重慶|河北|山西|辽宁|遼寧|吉林|黑龙江|黑龍江|"
+    r"江苏|江蘇|浙江|安徽|福建|江西|山东|山東|河南|湖北|湖南|广东|廣東|"
+    r"广西|廣西|海南|四川|贵州|貴州|云南|雲南|西藏|陕西|陝西|甘肃|甘肅|"
+    r"青海|宁夏|寧夏|新疆|内蒙古|內蒙古|深圳|广州|廣州|南京|苏州|蘇州|"
+    r"无锡|無錫|杭州|宁波|寧波|福州|厦门|廈門|济南|濟南|青岛|青島|武汉|武漢|"
+    r"长沙|長沙|成都|西安|沈阳|瀋陽|大连|大連|哈尔滨|哈爾濱|长春|長春|"
+    r"郑州|鄭州|太原|合肥|南昌|昆明|南宁|南寧|贵阳|貴陽|兰州|蘭州|"
+    r"乌鲁木齐|烏魯木齊|海口|三亚|三亞|东莞|東莞|佛山|珠海|中山|汕头|汕頭|"
+    r"潮州|揭阳|揭陽|汕尾|肇庆|肇慶|清远|清遠|云浮|雲浮|阳江|陽江|湛江|"
+    r"韶关|韶關|河源|梅州|惠州|江门|江門|茂名|南海|顺德|順德|番禺|花都|"
+    r"南国|南國|垄上|壟上|都市|生活|公共|综合|綜合|新闻|新聞|影视|影視|"
+    r"经济|經濟|科教|文旅|民生|财经|財經)"
+    r"(?:新闻|新聞|综合|綜合|公共|都市|生活|经济|經濟|科教|文旅|民生|财经|財經|"
+    r"城市|珠江|南方|岭南|嶺南|影视|影視|体育|體育|频道|頻道|台|电视|電視|"
+    r"国际|國際|公共|购物|購物|少儿|少兒|纪录|紀錄|纪实|紀實)"
+    r"(?:[-—]?\d+)?)"
+    r"|^(?:珠江|南方|岭南|嶺南|公共|城市|新闻综合|新聞綜合|综合|綜合|都市|生活|"
+    r"经济|經濟|科教|文旅|民生|财经|財經)(?:频道|頻道|台|电视|電視)?(?:[-—]?\d+)?$"
+)
 CATEGORY_RULES = (
     ("央视频道", re.compile(r"(?i)(?:CCTV|CGTN|央视|中央电视|中国之声)")),
-    ("卫视频道", re.compile(r"卫视")),
     ("港澳台", re.compile(r"(?i)(?:TVB|翡翠|明珠|凤凰|香港|澳门|澳門|台湾|台灣|"
                            r"中天|东森|三立|民视|台视|华视|中视|Viu|RTHK|港台|"
                            r"马港|新加坡|马来西亚|RTM|HOY|无线|無綫|NOW新闻|NOW新聞|"
                            r"澳视|澳視|公视|公視|爱尔达|愛爾達|华剧|華劇|"
                            r"Astro|TVBS|东森|東森|纬来|緯來)")),
+    ("卫视频道", re.compile(r"卫视")),
     ("海外频道", re.compile(r"(?i)(?:美国|英国|韩国|日本|泰国|越南|印度|俄罗斯|"
                              r"法国|德国|意大利|西班牙|土耳其|阿拉伯|迪拜|欧洲|北美|"
                              r"加拿大|澳大利亚|UK|USA|KBS|MBC|SBS|NHK|CNN|BBC|FOX|HBO)")),
@@ -664,26 +700,7 @@ CATEGORY_RULES = (
                              r"Cinema|World|采昌|龙祥|龍祥)")),
     ("教育纪实", re.compile(r"(?i)(?:CETV|教育|课堂|課堂)")),
     ("运营商/内网", re.compile(r"(?i)(?:移动|移動|联通|聯通|电信|電信|天翼|咪咕|IPTV|广电|廣電)")),
-    ("地方频道", re.compile(
-        r"^(?:(?:北京|上海|天津|重庆|重慶|河北|山西|辽宁|遼寧|吉林|黑龙江|黑龍江|"
-        r"江苏|江蘇|浙江|安徽|福建|江西|山东|山東|河南|湖北|湖南|广东|廣東|"
-        r"广西|廣西|海南|四川|贵州|貴州|云南|雲南|西藏|陕西|陝西|甘肃|甘肅|"
-        r"青海|宁夏|寧夏|新疆|内蒙古|內蒙古|深圳|广州|廣州|南京|苏州|蘇州|"
-        r"无锡|無錫|杭州|宁波|寧波|福州|厦门|廈門|济南|濟南|青岛|青島|武汉|武漢|"
-        r"长沙|長沙|成都|西安|沈阳|瀋陽|大连|大連|哈尔滨|哈爾濱|长春|長春|"
-        r"郑州|鄭州|太原|合肥|南昌|昆明|南宁|南寧|贵阳|貴陽|兰州|蘭州|"
-        r"乌鲁木齐|烏魯木齊|海口|三亚|三亞|东莞|東莞|佛山|珠海|中山|汕头|汕頭|"
-        r"潮州|揭阳|揭陽|汕尾|肇庆|肇慶|清远|清遠|云浮|雲浮|阳江|陽江|湛江|"
-        r"韶关|韶關|河源|梅州|惠州|江门|江門|茂名|南海|顺德|順德|番禺|花都|"
-        r"南国|南國|垄上|壟上|都市|生活|公共|综合|綜合|新闻|新聞|影视|影視|"
-        r"经济|經濟|科教|文旅|民生|财经|財經)"
-        r"(?:新闻|新聞|综合|綜合|公共|都市|生活|经济|經濟|科教|文旅|民生|财经|財經|"
-        r"城市|珠江|南方|岭南|嶺南|影视|影視|体育|體育|频道|頻道|台|电视|電視|"
-        r"国际|國際|公共|购物|購物|少儿|少兒|纪录|紀錄|纪实|紀實)"
-        r"(?:[-—]?\d+)?)"
-        r"|^(?:珠江|南方|岭南|嶺南|公共|城市|新闻综合|新聞綜合|综合|綜合|都市|生活|"
-        r"经济|經濟|科教|文旅|民生|财经|財經)(?:频道|頻道|台|电视|電視)?(?:[-—]?\d+)?$"
-    )),
+    ("地方频道", LOCAL_CHANNEL_PATTERN),
 )
 
 RAW_GROUP_RULES = (
@@ -700,6 +717,15 @@ RAW_GROUP_RULES = (
 def normalize_channel_name(name: str) -> str:
     """Strip presentation-only suffixes without collapsing distinct channels."""
     value = name.strip().replace("\u3000", " ")
+    # Upstream files mix Simplified and Traditional characters.  A compact
+    # fold table makes the existing category rules work for both forms without
+    # changing the published channel name.
+    value = value.translate(str.maketrans(
+        "衛視臺廣東深圳湖南浙江江蘇東方華民公聞資訊綜藝財經劇紀錄戲曲與社會農業奧林匹克"
+        "灣鳳凰澳門輪播點視頻頻劉龍愛",
+        "卫视台广东深圳湖南浙江江苏东方华民公闻资讯综艺财经剧纪录戏曲与社会农业奥林匹克"
+        "湾凤凰澳门轮播点视频频刘龙爱",
+    ))
     value = re.sub(r"\s+", " ", value)
     previous = None
     while value and value != previous:
@@ -716,12 +742,18 @@ def channel_identity(name: str) -> str:
 
 
 def normalize_group(group: str, name: str = "") -> str:
-    """Replace opaque source labels with a small, stable category set."""
+    """Replace opaque source labels with a small, stable category set.
+
+    ``source_section`` is intentionally not accepted through this positional
+    argument: existing callers pass the upstream group here.  The section-aware
+    wrapper below keeps the public helper backward compatible.
+    """
     raw = group.strip()
     # Keep the upstream private-channel bucket exactly as published.  These
     # entries are intentionally not folded into the public TV categories.
-    if raw.startswith("私密频道"):
+    if raw.startswith(("私密频道", "JAV點播", "JAV点播")):
         return raw
+    normalized_name = normalize_channel_name(name)
     # Source labels such as "咪咕央视2" describe the upstream provider, not
     # the channel itself. Do not let their "央视" substring misclassify a
     # local or documentary channel.
@@ -731,7 +763,9 @@ def normalize_group(group: str, name: str = "") -> str:
         if category != "央视频道"
     )
     for category, pattern in name_rules:
-        if pattern.search(name):
+        if category == "央视频道" and CCTV_EDITION_PATTERN.search(normalized_name):
+            continue
+        if pattern.search(normalized_name):
             return category
     for category, pattern in source_rules:
         if pattern.search(raw):
@@ -750,6 +784,145 @@ def normalize_group(group: str, name: str = "") -> str:
         if pattern.search(raw):
             return category
     return "待归类"
+
+
+def load_channel_rules() -> dict[str, Any]:
+    """Load maintainable classification rules from tvbox/channel_rules.json."""
+    defaults: dict[str, Any] = {
+        "private_section_prefixes": ["私密频道", "JAV點播", "JAV点播"],
+        "section_categories": {},
+        "section_prefix_categories": {},
+        "raw_group_categories": {},
+        "review_raw_groups": [],
+        "channel_name_categories": {},
+    }
+    if not CHANNEL_RULES_PATH.is_file():
+        log("WARN 缺少 tvbox/channel_rules.json，分类将使用代码内置规则")
+        return defaults
+    try:
+        data = json.loads(CHANNEL_RULES_PATH.read_text(encoding="utf-8-sig"))
+    except (OSError, json.JSONDecodeError) as exc:
+        raise ValueError("无法读取分类规则 tvbox/channel_rules.json: %s" % exc)
+    if not isinstance(data, dict):
+        raise ValueError("tvbox/channel_rules.json 顶层必须是对象")
+    result = dict(defaults)
+    for key, expected in (
+        ("private_section_prefixes", list),
+        ("section_categories", dict),
+        ("section_prefix_categories", dict),
+        ("raw_group_categories", dict),
+        ("review_raw_groups", list),
+        ("channel_name_categories", dict),
+    ):
+        value = data.get(key, defaults[key])
+        if not isinstance(value, expected):
+            raise ValueError("channel_rules.json 的 %s 类型错误" % key)
+        result[key] = value
+    return result
+
+
+CHANNEL_RULES = load_channel_rules()
+
+
+def _is_private_section(value: str) -> bool:
+    return value.strip().startswith(tuple(CHANNEL_RULES["private_section_prefixes"]))
+
+
+def normalize_group_with_section(group: str, name: str = "", source_section: str = "") -> str:
+    """Classify with the TXT section name retained alongside the upstream group."""
+    raw = group.strip()
+    section = source_section.strip()
+    if _is_private_section(section):
+        return section
+    if _is_private_section(raw):
+        return raw
+
+    normalized_name = normalize_channel_name(name)
+    lower_name = normalized_name.lower()
+    if lower_name in CHANNEL_RULES["channel_name_categories"]:
+        return str(CHANNEL_RULES["channel_name_categories"][lower_name])
+
+    # A mainland CCTV channel stays in the CCTV category even when its name
+    # also contains "体育" or "音乐".  The edition/overseas exceptions are
+    # checked first because CCTV1 港澳版 and CCTV4 America are separate feeds.
+    if (
+        re.search(r"(?i)(?:CCTV|CGTN|央视|央視)", normalized_name)
+        and not CCTV_EDITION_PATTERN.search(normalized_name)
+        and not CCTV_OVERSEAS_PATTERN.search(normalized_name)
+    ):
+        return "央视频道"
+    if CCTV_OVERSEAS_PATTERN.search(normalized_name) and re.search(
+        r"(?i)(?:CCTV|CGTN|央视|央視)", normalized_name
+    ):
+        return "海外频道"
+    # Phoenix TV is a Hong Kong/Taiwan-family broadcaster.  Its name contains
+    # "卫视", so it must be classified before the generic satellite rule.
+    if re.search(r"凤凰|鳳凰", normalized_name):
+        return "港澳台"
+    if re.search(r"卫视|衛視", normalized_name):
+        return "卫视频道"
+    if LOCAL_CHANNEL_PATTERN.search(normalized_name) or re.match(
+        r"^(?:北京|上海|天津|重庆|重慶|河北|山西|辽宁|遼寧|吉林|黑龙江|黑龍江|"
+        r"江苏|江蘇|浙江|安徽|福建|江西|山东|山東|河南|湖北|湖南|广东|廣東|"
+        r"广西|廣西|海南|四川|贵州|貴州|云南|雲南|西藏|陕西|陝西|甘肃|甘肅|"
+        r"青海|宁夏|寧夏|新疆|内蒙古|內蒙古|深圳|广州|廣州|南京|苏州|蘇州|"
+        r"杭州|宁波|寧波|福州|厦门|廈門|济南|濟南|青岛|青島|武汉|武漢|"
+        r"长沙|長沙|成都|西安|沈阳|瀋陽|大连|大連|哈尔滨|哈爾濱|长春|長春|"
+        r"郑州|鄭州|太原|合肥|南昌|昆明|南宁|南寧|贵阳|貴陽|兰州|蘭州)",
+        normalized_name,
+    ):
+        return "地方频道"
+
+    # A few names are fixed movie/personality rotation channels even though
+    # their source group looks like a generic satellite bundle.
+    if re.search(r"(?i)(?:轮播|放映厅|专场)", normalized_name):
+        return "影视轮播"
+    # "广播电视总台" is an organization name, not a music channel.  Check
+    # local/terrestrial channel suffixes before the broad 音乐/广播 rule.
+    if re.search(r"(?:广播电视总台|廣播電視總台).*(?:新闻|新聞|自贸|自貿|社会与法|社會與法|文旅|少儿|少兒|综合|綜合|都市|生活)频道?$",
+                 normalized_name):
+        return "地方频道"
+    if re.search(r"(?i)(?:周杰伦|演唱会|歌曲|音乐|电台|广播)", normalized_name):
+        return "音乐频道"
+    if re.search(r"(?i)(?:掼蛋|体坛|体育|體育|足球|篮球|籃球|网球|網球|羽毛球|乒乓)", normalized_name):
+        return "体育频道"
+
+    # A recognizable channel name is stronger evidence than the provider
+    # section it happens to arrive in. This keeps CCTV, satellite, local and
+    # sports channels stable when the same channel is present in several
+    # source bundles. Opaque names still fall through to section/group rules.
+    for category, pattern in CATEGORY_RULES:
+        # Hong Kong/Taiwan editions such as "CCTV1港澳版" are genuinely local
+        # feeds; do not turn them into mainland CCTV channels just because the
+        # name starts with CCTV.
+        if category == "央视频道" and CCTV_EDITION_PATTERN.search(normalized_name):
+            continue
+        if pattern.search(normalized_name):
+            return category
+
+    section_category = CHANNEL_RULES["section_categories"].get(section)
+    if section_category:
+        return str(section_category)
+    for prefix, category in CHANNEL_RULES["section_prefix_categories"].items():
+        if section.startswith(prefix):
+            return str(category)
+
+    if raw in CHANNEL_RULES["raw_group_categories"]:
+        category = str(CHANNEL_RULES["raw_group_categories"][raw])
+        # A local-channel name inside a Hong Kong/Taiwan bundle must retain
+        # its local classification. The existing name rules handle that.
+        if not (category == "港澳台" and LOCAL_CHANNEL_PATTERN.search(normalized_name)):
+            return category
+
+    # The source group is only a container.  Let the existing name rules
+    # decide first, then leave genuinely opaque abbreviations for review.
+    if raw in set(CHANNEL_RULES["review_raw_groups"]):
+        result = normalize_group(raw, normalized_name)
+        return "待人工确认" if result == "待归类" else result
+    if raw == "咪咕央视2":
+        return "央视频道"
+    result = normalize_group(raw, normalized_name)
+    return "待人工确认" if result == "待归类" else result
 
 
 def url_digest(url: str) -> str:
@@ -808,7 +981,11 @@ def merge_channels(channels: Iterable[Channel]) -> list[Channel]:
         if key not in merged:
             channel.protocol = urllib.parse.urlsplit(key).scheme.lower()
             channel.channel_key = channel_identity(channel.name)
-            channel.group = normalize_group(channel.group_raw or channel.group, channel.name)
+            channel.group = normalize_group_with_section(
+                channel.group_raw or channel.group,
+                channel.name,
+                channel.source_section,
+            )
             channel.quality = channel_quality(channel.name)
             channel.lines = [key]
             merged[key] = channel
@@ -853,6 +1030,7 @@ def write_channel_ledger(channels: list[Channel]) -> None:
                 "source": safe_channel_url(line.source) if line.source else "",
                 "source_line": line.source_line,
                 "group_raw": line.group_raw,
+                "source_section": line.source_section,
                 "protocol": line.protocol,
                 "quality": line.quality,
             })
@@ -867,6 +1045,9 @@ def write_channel_ledger(channels: list[Channel]) -> None:
             }),
             "source_lines": sorted({line.source_line for line in lines if line.source_line}),
             "groups_raw": sorted({line.group_raw for line in lines if line.group_raw}),
+            "source_sections": sorted({
+                line.source_section for line in lines if line.source_section
+            }),
             "protocols": sorted({line.protocol for line in lines if line.protocol}),
             "urls": [safe_channel_url(line.url) for line in lines],
             "lines": line_entries,
@@ -884,6 +1065,45 @@ def write_channel_ledger(channels: list[Channel]) -> None:
     if find_sensitive_credentials(report):
         raise ValueError("频道台账包含真实凭据，已中止写入")
     write_json(DOCS_DIR / "channel_ledger.json", report)
+    write_classification_review(entries)
+
+
+def write_classification_review(entries: list[dict[str, Any]]) -> None:
+    """Publish unresolved categories without dropping or guessing any channel."""
+    pending = [entry for entry in entries if entry["category"] in {"待归类", "待人工确认"}]
+    by_category: dict[str, int] = {}
+    for entry in entries:
+        category = str(entry.get("category", ""))
+        by_category[category] = by_category.get(category, 0) + 1
+    report = {
+        "updated": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+        "policy": {
+            "unresolved_action": "仅报告，保留在 merged.m3u，不自动删除或猜测归类",
+            "rules_file": "tvbox/channel_rules.json",
+            "private_groups": "私密频道/JAV 保留来源原分组",
+        },
+        "summary": {
+            "channels": len(entries),
+            "classified": len(entries) - len(pending),
+            "pending_review": len(pending),
+            "categories": by_category,
+        },
+        "pending": [
+            {
+                "channel_key": entry["channel_key"],
+                "name": entry["name"],
+                "category": entry["category"],
+                "groups_raw": entry["groups_raw"],
+                "source_sections": entry["source_sections"],
+                "sources": entry["sources"],
+                "line_count": entry["line_count"],
+            }
+            for entry in pending
+        ],
+    }
+    if find_sensitive_credentials(report):
+        raise ValueError("分类审核报告包含真实凭据，已中止写入")
+    write_json(DOCS_DIR / "classification_review.json", report)
 
 
 def drop_dead_lives(lives: list[dict[str, Any]]) -> list[dict[str, Any]]:
