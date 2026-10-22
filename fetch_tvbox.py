@@ -13,7 +13,10 @@ Supporting derived files:
 * tvbox/lives/merged.m3u: de-duplicated live channels from TXT/M3U sources
 * docs/sources.json: a human-readable source inventory
 * docs/tvbox.json: compatibility copy of geit-fish for the legacy endpoint
-* docs/health.json and docs/health.csv: link health report
+* docs/inventory.json and docs/inventory.csv: per-run source/site/live counts
+
+The health report (docs/health.json, docs/health.csv, docs/blocked.csv) is
+owned exclusively by check_health.py and is never written here.
 
 Third-party source files are not committed verbatim. This avoids leaking
 tokens, cookies and other credentials that are often embedded in TVBox
@@ -798,7 +801,13 @@ def write_docs(stats: BuildStats, repo: str, branch: str) -> None:
     write_json(DOCS_DIR / "tvbox.json", json.loads(GEIT_PATH.read_text(encoding="utf-8")))
 
 
-def write_health_report(stats: BuildStats) -> None:
+def write_inventory(stats: BuildStats) -> None:
+    """Write the per-run source/site/live inventory.
+
+    This deliberately does NOT touch docs/health.json or docs/health.csv:
+    those are owned by check_health.py and hold real probe results. Writing a
+    shallow inventory over them would silently destroy the health report.
+    """
     rows = []
     for item in stats.sources:
         rows.append({
@@ -839,9 +848,9 @@ def write_health_report(stats: BuildStats) -> None:
         "items": rows,
     }
     if find_sensitive_credentials(report):
-        raise ValueError("健康报告包含真实凭据，已中止写入")
-    write_json(DOCS_DIR / "health.json", report)
-    with (DOCS_DIR / "health.csv").open("w", encoding="utf-8-sig", newline="") as handle:
+        raise ValueError("清单报告包含真实凭据，已中止写入")
+    write_json(DOCS_DIR / "inventory.json", report)
+    with (DOCS_DIR / "inventory.csv").open("w", encoding="utf-8-sig", newline="") as handle:
         writer = csv.DictWriter(
             handle,
             fieldnames=["kind", "name", "url", "status", "http_status", "detail"],
@@ -1010,7 +1019,7 @@ def main() -> int:
     write_subscription_json(GEIT_PATH, config)
     write_subscription_json(GEITPY_PATH, py_config)
     write_docs(stats, repo, branch)
-    write_health_report(stats)
+    write_inventory(stats)
     write_index(stats, repo, branch)
 
     log("生成 geit-fish：%d 个站点，%d 个直播源" % (len(config["sites"]), len(config["lives"])))

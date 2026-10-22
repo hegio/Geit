@@ -1,0 +1,379 @@
+{
+  "updated": "2026-10-22T07:27:24Z",
+  "summary": {
+    "sources": 3,
+    "sites": 25,
+    "lives": 18,
+    "channels": 9974
+  },
+  "items": [
+    {
+      "kind": "source",
+      "name": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+      "url": "https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+      "status": "reachable",
+      "http_status": 200,
+      "detail": ""
+    },
+    {
+      "kind": "source",
+      "name": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "url": "https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "status": "reachable",
+      "http_status": 200,
+      "detail": "存在含真实凭据的站点，已跳过"
+    },
+    {
+      "kind": "source",
+      "name": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
+      "url": "https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
+      "status": "reachable",
+      "http_status": 200,
+      "detail": ""
+    },
+    {
+      "kind": "site",
+      "name": "✈️TG频道@stymei",
+      "url": "csp_Douban",
+      "status": "requires_app",
+      "http_status": "",
+      "detail": "需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放"
+    },
+    {
+      "kind": "site",
+      "name": "👖IPTV",
+      "url": "https://jsnz.pages.dev/f/f05e3b39.js",
+      "status": "requires_app",
+      "http_status": "",
+      "detail": "需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放"
+    },
+    {
+      "kind": "site",
+      "name": "👖体育",
+      "url": "https://jsnzkpg.de5.net/t4.json",
+      "status": "unverified",
+      "http_status": "",
+      "detail": "需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放"
+    },
+    {
+      "kind": "site",
+      "name": "👖韩国",
+      "url": "https://jsnz.pages.dev/f/26511242.py",
+      "status": "requires_app",
+      "http_status": "",
+      "detail": "需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放"
+    },
+    {
+      "kind": "site",
+      "name": "👖聚合",
+      "url": "https://jsnz.pages.dev/f/4df9fb60.py",
+      "status": "requires_app",
+      "http_status": "",
+      "detail": "需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放"
+    },
+    {
+      "kind": "site",
+      "name": "👖影视",
+      "url": "https://jsnz.pages.dev/f/9e53615c.py",
+      "status": "requires_app",
+      "http_status": "",
+      "detail": "需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放"
+    },
+    {
+      "kind": "site",
+      "name": "👖采集",
+      "url": "https://jsnz.pages.dev/f/72b7239d.py",
+      "status": "requires_app",
+      "http_status": "",
+      "detail": "需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放"
+    },
+    {
+      "kind": "site",
+      "name": "👖短剧",
+      "url": "https://jsnz.pages.dev/f/29b94aff.py",
+      "status": "requires_app",
+      "http_status": "",
+      "detail": "需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放"
+    },
+    {
+      "kind": "site",
+      "name": "👖音乐",
+      "url": "https://jsnz.pages.dev/f/eded33cf.py",
+      "status": "requires_app",
+      "http_status": "",
+      "detail": "需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放"
+    },
+    {
+      "kind": "site",
+      "name": "👖动漫",
+      "url": "https://jsnz.pages.dev/f/7e20bdb7.py",
+      "status": "requires_app",
+      "http_status": "",
+      "detail": "需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放"
+    },
+    {
+      "kind": "site",
+      "name": "👖奈飞",
+      "url": "https://api.wsyzy.net/api.php/provide/vod",
+      "status": "unverified",
+      "http_status": "",
+      "detail": "需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放"
+    },
+    {
+      "kind": "site",
+      "name": "👖网盘",
+      "url": "https://jsnz.pages.dev/f/261c1664.py",
+      "status": "requires_app",
+      "http_status": "",
+      "detail": "需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放"
+    },
+    {
+      "kind": "site",
+      "name": "👖4k",
+      "url": "https://jsnz.pages.dev/f/af676592.py",
+      "status": "requires_app",
+      "http_status": "",
+      "detail": "需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放"
+    },
+    {
+      "kind": "site",
+      "name": "👖APP",
+      "url": "https://jsnz.pages.dev/f/04b5c0b4.js",
+      "status": "requires_app",
+      "http_status": "",
+      "detail": "需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放"
+    },
+    {
+      "kind": "site",
+      "name": "👖PY",
+      "url": "https://jsnz.pages.dev/f/e1aeef83.py",
+      "status": "requires_app",
+      "http_status": "",
+      "detail": "需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放"
+    },
+    {
+      "kind": "site",
+      "name": "👖JS",
+      "url": "https://jsnz.pages.dev/f/f7b46c7f.js",
+      "status": "requires_app",
+      "http_status": "",
+      "detail": "需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放"
+    },
+    {
+      "kind": "site",
+      "name": "👖PHP",
+      "url": "http://jiduo.3116598.xyz/PHP/pkty.php",
+      "status": "unverified",
+      "http_status": "",
+      "detail": "需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放"
+    },
+    {
+      "kind": "site",
+      "name": "👖Emby",
+      "url": "https://jsnz.pages.dev/f/696546f2.js",
+      "status": "requires_app",
+      "http_status": "",
+      "detail": "需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放"
+    },
+    {
+      "kind": "site",
+      "name": "👖API",
+      "url": "https://jsnz.pages.dev/f/cf616b2f.py",
+      "status": "requires_app",
+      "http_status": "",
+      "detail": "需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放"
+    },
+    {
+      "kind": "site",
+      "name": "👖少儿",
+      "url": "https://jsnz.pages.dev/f/6b9e7fca.js",
+      "status": "requires_app",
+      "http_status": "",
+      "detail": "需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放"
+    },
+    {
+      "kind": "site",
+      "name": "👖听书",
+      "url": "https://jsnz.pages.dev/f/d44dd2cf.py",
+      "status": "requires_app",
+      "http_status": "",
+      "detail": "需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放"
+    },
+    {
+      "kind": "site",
+      "name": "👖广播",
+      "url": "https://jsnz.pages.dev/f/cec31b11.py",
+      "status": "requires_app",
+      "http_status": "",
+      "detail": "需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放"
+    },
+    {
+      "kind": "site",
+      "name": "👖有声",
+      "url": "https://jsnz.pages.dev/f/e126d1e4.py",
+      "status": "requires_app",
+      "http_status": "",
+      "detail": "需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放"
+    },
+    {
+      "kind": "site",
+      "name": "👖戏曲",
+      "url": "https://iduo.us.ci/gt/leevi0709/one/main/js/drpy2.min.js",
+      "status": "requires_app",
+      "http_status": "",
+      "detail": "需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放"
+    },
+    {
+      "kind": "site",
+      "name": "📌测试",
+      "url": "https://jsnz.pages.dev/f/e7124867.py",
+      "status": "requires_app",
+      "http_status": "",
+      "detail": "需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放"
+    },
+    {
+      "kind": "live",
+      "name": "👖裤佬IPTV直播",
+      "url": "https://iptv.445569.xyz/live.m3u",
+      "status": "unverified",
+      "http_status": "",
+      "detail": "播放能力需由 check_health.py 或影视 App 实测"
+    },
+    {
+      "kind": "live",
+      "name": "👖裤佬体育直播[主]",
+      "url": "https://jsnzkpg.de5.net/all.m3u",
+      "status": "unverified",
+      "http_status": "",
+      "detail": "播放能力需由 check_health.py 或影视 App 实测"
+    },
+    {
+      "kind": "live",
+      "name": "👖裤佬体育直播[备]",
+      "url": "https://stymei.pages.dev/live.m3u",
+      "status": "unverified",
+      "http_status": "",
+      "detail": "播放能力需由 check_health.py 或影视 App 实测"
+    },
+    {
+      "kind": "live",
+      "name": "👖裤佬抖音直播",
+      "url": "https://douyin.445569.xyz/live.m3u",
+      "status": "unverified",
+      "http_status": "",
+      "detail": "播放能力需由 check_health.py 或影视 App 实测"
+    },
+    {
+      "kind": "live",
+      "name": "👖裤佬快手直播",
+      "url": "https://kuaishou.445569.xyz/list.m3u",
+      "status": "unverified",
+      "http_status": "",
+      "detail": "播放能力需由 check_health.py 或影视 App 实测"
+    },
+    {
+      "kind": "live",
+      "name": "👖裤佬虎牙直播",
+      "url": "https://huya.445569.xyz/live.m3u",
+      "status": "unverified",
+      "http_status": "",
+      "detail": "播放能力需由 check_health.py 或影视 App 实测"
+    },
+    {
+      "kind": "live",
+      "name": "👖裤佬斗鱼直播",
+      "url": "https://douyu.445569.xyz/live.m3u",
+      "status": "unverified",
+      "http_status": "",
+      "detail": "播放能力需由 check_health.py 或影视 App 实测"
+    },
+    {
+      "kind": "live",
+      "name": "👖裤佬酷狗直播",
+      "url": "https://kugou.445569.xyz/live.m3u",
+      "status": "unverified",
+      "http_status": "",
+      "detail": "播放能力需由 check_health.py 或影视 App 实测"
+    },
+    {
+      "kind": "live",
+      "name": "👖裤佬来疯直播",
+      "url": "https://laifeng.445569.xyz/live.m3u",
+      "status": "unverified",
+      "http_status": "",
+      "detail": "播放能力需由 check_health.py 或影视 App 实测"
+    },
+    {
+      "kind": "live",
+      "name": "👖裤佬百战直播",
+      "url": "https://baizhan.445569.xyz/live.m3u",
+      "status": "unverified",
+      "http_status": "",
+      "detail": "播放能力需由 check_health.py 或影视 App 实测"
+    },
+    {
+      "kind": "live",
+      "name": "👖裤佬YY直播",
+      "url": "https://yy.445569.xyz/live.m3u",
+      "status": "unverified",
+      "http_status": "",
+      "detail": "播放能力需由 check_health.py 或影视 App 实测"
+    },
+    {
+      "kind": "live",
+      "name": "👖裤佬Twitch直播",
+      "url": "https://twitch.445569.xyz/live.m3u",
+      "status": "unverified",
+      "http_status": "",
+      "detail": "播放能力需由 check_health.py 或影视 App 实测"
+    },
+    {
+      "kind": "live",
+      "name": "👖裤佬TikTok直播",
+      "url": "https://tiktok.445569.xyz/live.m3u",
+      "status": "unverified",
+      "http_status": "",
+      "detail": "播放能力需由 check_health.py 或影视 App 实测"
+    },
+    {
+      "kind": "live",
+      "name": "🏆PPV体育赛事直播",
+      "url": "https://www.korice.eu.org/ppv_m3u.php",
+      "status": "unverified",
+      "http_status": "",
+      "detail": "播放能力需由 check_health.py 或影视 App 实测"
+    },
+    {
+      "kind": "live",
+      "name": "🍿华视TV直播",
+      "url": "https://445569.pages.dev/https://raw.githubusercontent.com/swhtv/111/refs/heads/main/%E5%8D%8E%E8%A7%86box%E5%8D%8E%E8%A7%86%E5%A4%A7%E5%85%A8swtv",
+      "status": "unverified",
+      "http_status": "",
+      "detail": "播放能力需由 check_health.py 或影视 App 实测"
+    },
+    {
+      "kind": "live",
+      "name": "🍿易发TV直播",
+      "url": "https://445569.pages.dev/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+      "status": "unverified",
+      "http_status": "",
+      "detail": "播放能力需由 check_health.py 或影视 App 实测"
+    },
+    {
+      "kind": "live",
+      "name": "🍿乌拉TV直播",
+      "url": "https://ilook.epg.one/5CM5SY98BF24PL/2",
+      "status": "unverified",
+      "http_status": "",
+      "detail": "播放能力需由 check_health.py 或影视 App 实测"
+    },
+    {
+      "kind": "live",
+      "name": "🍿全球TV直播",
+      "url": "https://seep.eu.org/iptv-org.github.io/iptv/index.m3u",
+      "status": "unverified",
+      "http_status": "",
+      "detail": "播放能力需由 check_health.py 或影视 App 实测"
+    }
+  ]
+}
