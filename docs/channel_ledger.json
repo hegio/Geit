@@ -1,8 +1,8 @@
 {
-  "updated": "2026-10-22T23:46:13Z",
+  "updated": "2026-10-22T23:52:35Z",
   "summary": {
-    "channels": 9835,
-    "channel_keys": 6915,
+    "channels": 9836,
+    "channel_keys": 6916,
     "multi_line_keys": 558,
     "untraced": 0
   },
@@ -150183,6 +150183,43 @@
         {
           "url": "https://vip4.ddyunbo.com/20191207/p0zvtDBY/index.m3u8",
           "url_hash": "61e13197c881026108aa946ebceb2d4bc12cdb811dd7be6af1e1f7a401d699a3",
+          "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+          "source_line": 3,
+          "group_raw": "私密频道_169169",
+          "source_section": "私密频道_169169",
+          "protocol": "https",
+          "quality": ""
+        }
+      ]
+    },
+    {
+      "channel_key": "1本道85",
+      "name": "1本道_85",
+      "category": "私密频道_169169",
+      "quality": "",
+      "line_count": 1,
+      "sources": [
+        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
+      ],
+      "source_lines": [
+        3
+      ],
+      "groups_raw": [
+        "私密频道_169169"
+      ],
+      "source_sections": [
+        "私密频道_169169"
+      ],
+      "protocols": [
+        "https"
+      ],
+      "urls": [
+        "https://vip4.ddyunbo.com/20191208/dw94ieYl/index.m3u8."
+      ],
+      "lines": [
+        {
+          "url": "https://vip4.ddyunbo.com/20191208/dw94ieYl/index.m3u8.",
+          "url_hash": "0fca599fd0a9d36daaf72dc5989ca3d889bcaee444777c0e94dd9407956ac2da",
           "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
           "source_line": 3,
           "group_raw": "私密频道_169169",

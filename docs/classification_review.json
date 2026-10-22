@@ -1,13 +1,13 @@
 {
-  "updated": "2026-10-22T23:46:14Z",
+  "updated": "2026-10-22T23:52:37Z",
   "policy": {
     "unresolved_action": "仅报告，保留在 merged.m3u，不自动删除或猜测归类",
     "rules_file": "tvbox/channel_rules.json",
     "private_groups": "私密频道/JAV 保留来源原分组"
   },
   "summary": {
-    "channels": 6915,
-    "classified": 6912,
+    "channels": 6916,
+    "classified": 6913,
     "pending_review": 3,
     "categories": {
       "音乐点播": 338,
@@ -23,7 +23,7 @@
       "教育纪实": 21,
       "综合直播": 25,
       "影视轮播": 1132,
-      "私密频道_169169": 713,
+      "私密频道_169169": 714,
       "私密频道2_169169": 1598,
       "私密频道3_169169": 43,
       "JAV點播_169169": 931,
