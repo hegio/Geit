@@ -1,0 +1,23 @@
+# Geit 直播源白名单（手动维护，一行一条）
+#
+# 作用：列在这里的 URL 或主机，健康检查永远判定为 whitelisted：
+#   - 不累计"确定性失败"次数，不进入 candidate_remove；
+#   - 不会从 tvbox/lives/merged.m3u 中被剔除；
+#   - 也不会写进 docs/removed_channels.json 的剔除记录。
+#
+# 写法（# 后面是注释，空行忽略）：
+#   https://example.com/live/cctv1.m3u8   完整 URL（精确匹配，也顺带保护该主机）
+#   example.com                          主机或域名后缀（example.com、a.example.com 都算）
+#   192.168.1.10                         IP 字面量
+#
+# 说明：
+#   - 这里是"人工否决自动判定"的开关，不是黑名单。想让某个源重新接受自动检测，
+#     把对应行删掉或注释掉即可，下一轮健康检查会自动复检并恢复。
+#   - 分类规则仍由 tvbox/channel_rules.json 决定；本文件只影响"是否自动剔除"。
+
+# ---- 私密频道：按要求保持原状，不参与自动剔除 ----
+vip4.ddyunbo.com
+
+# ---- 已知会误判的来源：境外 runner 无法连通，但实际在 App 内可播放 ----
+# （需要时把主机或 URL 加到这里，并说明原因）
+

@@ -39,6 +39,9 @@ GitHub 的 `/blob/` 地址打开的是 HTML 网页，不是 JSON 文件，不能
 | `docs/sources.json` | 每个来源的抓取状态和解析结果 |
 | `docs/health.json` / `.csv` | 链接健康与播放验证状态 |
 | `docs/channel_health.json` | 频道级保守判定：保留、观察、候选淘汰；不自动删除 |
+| `docs/dead_channels.json` | 连续确定性失败达上限、已从 `merged.m3u` 停止录入的频道 URL 清单 |
+| `docs/removed_channels.json` / `.csv` | 剔除历史（频道名 + URL + 来源），人工可查可恢复 |
+| `tvbox/whitelist.txt` | 手动白名单：命中即永不自动剔除 |
 | `docs/health_state.json` | 健康检查游标、抽样进度和逐 URL 最近证据；供下一轮续跑 |
 | `docs/ai_review.json` | 可选 AI 辅助报告：分类建议和失败聚类解释，不参与删除 |
 | `docs/blocked.csv` | 已明确失败的链接，供人工复查或临时屏蔽 |
@@ -116,9 +119,24 @@ python check_health.py --workers 16 --max-channels 500
 - 不计入失败：**超时**、连接被拒、DNS 解析失败、网络不可达、TLS/证书错误、5xx、403/429/451 等地区限制/鉴权/限流。健康工作流跑在 GitHub 境外 runner 上，国内直播源超时率很高，按这些环境因素计数会误删活着的源。
 - 恢复判定：只有 `probe_ok` 才清零；`reachable`、`manifest_ok`、`playback_unverified` 不会清空已有失败历史。
 
-前 5 次连续失败只写入 `pending` 供人工预判，不会删除；超过 5 次（即第 6 次，`FAIL_STREAK_LIMIT = 6`）后该源才进入 `removable` 列表并在日志里打印名称与来源。下一次聚合运行 `fetch_tvbox.py` 时会自动把它从 `geit-fish`、`geitpy-fish` 中移除，其下频道也不再进入 `merged.m3u`。
+前 2 次连续失败只写入 `pending` 供人工预判，不会删除；第 3 次确定性失败（`FAIL_STREAK_LIMIT = 3`）后该源进入 `removable` 列表并在日志里打印名称与来源。这里的 `live` 报告**只报告、不删除**；真正会被自动停止录入的是 `merged.m3u` 中的单个频道 URL（`docs/dead_channels.json`），直播大类始终由人工增减。
 
-`fetch_tvbox.py` 读取 `removable.json` 时是容错的：文件缺失、为空或无法解析都直接跳过清理，所以聚合不依赖健康报告存在。
+聚合侧的读取是容错的：`docs/dead_channels.json` 缺失、为空或无法解析都直接跳过清理，所以聚合不依赖健康报告存在。
+
+次数必须是**连续的**：`count` 只在"本轮抽到该 URL 且又是确定性失效"时 +1。同一轮里若该 URL 有一次 `probe_ok`（ffprobe 成功解码媒体流），`count` 立即归零并从剔除名单中消失；本轮没被抽到、超时、403/429/451、临时 5xx、登录/版权闸门、上游整体故障都只保留原计数，不加也不清零。
+
+### 直播源白名单（手动否决自动剔除）
+
+真正会被自动停止录入的是 `tvbox/lives/merged.m3u` 里的**单个频道 URL**（见 `docs/dead_channels.json`），直播大类从不自动删除。如果你希望某个源无论如何都保留，把它写进 `tvbox/whitelist.txt`（手动维护，一行一条）：
+
+```text
+# 完整 URL（精确匹配，同时保护该主机）
+https://example.com/live/cctv1.m3u8
+# 主机或域名后缀（example.com、a.example.com 都算）
+vip4.ddyunbo.com
+```
+
+命中白名单的频道 URL 判定为 `whitelisted`：不计失败次数、不进入 `candidate_remove`、不会从 `merged.m3u` 剔除，也不会写入 `docs/removed_channels.json`。`live` 直播源同理，`removable.json` 中会带 `whitelisted: true`。想让某个源重新接受自动检测，删掉或注释对应行即可，下一轮健康检查会自动复检，确认恢复后重新录入。该文件同时被两个工作流监听，改动会立即触发重新聚合。
 
 ### 可选 AI 辅助
 

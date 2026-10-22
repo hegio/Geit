@@ -45,6 +45,7 @@ CHANNEL_HEALTH_JSON = DOCS_DIR / "channel_health.json"
 REMOVED_CHANNELS_JSON = DOCS_DIR / "removed_channels.json"
 REMOVED_CHANNELS_CSV = DOCS_DIR / "removed_channels.csv"
 HEALTH_STATE_JSON = DOCS_DIR / "health_state.json"
+WHITELIST_PATH = HERE / "tvbox" / "whitelist.txt"
 USER_AGENT = "Mozilla/5.0 (compatible; GeitHealth/3.0)"
 # Many IPTV gateways behave differently for player, ffmpeg, Android and Exo
 # clients. Trying all of them before declaring an HTTP failure prevents the
@@ -255,6 +256,7 @@ def update_streaks(items: list["Item"]) -> dict[str, dict[str, Any]]:
     rotated, so a streak there would mostly record absence from the sample.
     """
     previous = load_streaks()
+    whitelist = load_whitelist()
     current: dict[str, dict[str, Any]] = {}
     for item in items:
         if item.kind != "live":
@@ -262,6 +264,21 @@ def update_streaks(items: list["Item"]) -> dict[str, dict[str, Any]]:
         url = str(item.url)
         prior = previous.get(url, {})
         history = list(prior.get("history", []))
+        if whitelisted(url, whitelist):
+            # tvbox/whitelist.txt is the owner's veto: report it as clean and
+            # never let a decisive failure accumulate against it.
+            current[url] = {
+                "url": url,
+                "name": item.name,
+                "source": str(getattr(item, "source", "") or ""),
+                "count": 0,
+                "history": [],
+                "removable": False,
+                "whitelisted": True,
+                "failure_class": "",
+                "host": item.host,
+            }
+            continue
         if is_decisive_failure(item):
             count = int(prior.get("count", 0)) + 1
             history.append({
@@ -377,6 +394,67 @@ def host_of(url: str) -> str:
         return ""
 
 
+def load_whitelist() -> tuple[set[str], set[str]]:
+    """Read hand-curated URLs and hosts that must never be auto-removed.
+
+    tvbox/whitelist.txt is a manual escape hatch for the auto-removal policy:
+    one entry per line, '#' starts a comment. A line that looks like a URL is
+    matched against the full channel URL (exact match first, then a
+    case-insensitive contains for hosts with variable query strings); a bare
+    host or domain suffix such as "example.com" matches every URL on that host
+    or any subdomain. A missing or unreadable file simply disables the feature.
+    """
+    urls: set[str] = set()
+    hosts: set[str] = set()
+    if not WHITELIST_PATH.is_file():
+        return urls, hosts
+    try:
+        raw = WHITELIST_PATH.read_text(encoding="utf-8-sig", errors="replace")
+    except OSError:
+        return urls, hosts
+    for line in raw.splitlines():
+        entry = line.strip()
+        if not entry or entry.startswith("#"):
+            continue
+        entry = entry.split("#", 1)[0].strip()
+        if not entry:
+            continue
+        lowered = entry.lower()
+        if lowered.startswith(("http://", "https://")):
+            urls.add(entry)
+            # A URL entry also protects the host it points at, so a moved
+            # path or a tokenised variant of the same source survives.
+            hosts.add(host_of(entry))
+        else:
+            hosts.add(lowered.lstrip("."))
+    hosts.discard("")
+    return urls, hosts
+
+
+def whitelisted(url: str, whitelist: tuple[set[str], set[str]] | None = None) -> bool:
+    """True when a channel URL is protected from automatic removal."""
+    if whitelist is None:
+        whitelist = load_whitelist()
+    urls, hosts = whitelist
+    if not urls and not hosts:
+        return False
+    target = str(url).strip()
+    if target in urls:
+        return True
+    lowered = target.lower()
+    if any(entry and entry in lowered for entry in urls):
+        return True
+    host = host_of(target)
+    if not host:
+        return False
+    for candidate in hosts:
+        if not candidate:
+            continue
+        if host == candidate or host.endswith("." + candidate):
+            return True
+    return False
+
+
 def safe_channel_url(url: str) -> str:
     """Remove credentials while retaining a URL that is useful for diagnostics."""
     parts = urllib.parse.urlsplit(str(url))
@@ -460,6 +538,7 @@ def write_channel_health(items: list[Item]) -> None:
             "remove_limit": FAIL_STREAK_LIMIT,
             "soft_failures": "超时、网络不可达、5xx、403/429、播放未验证只观察，不计入删除",
             "internal_sources": "运营商内网/私网地址跳过，不因境外探测失败判定失效",
+            "whitelist": "tvbox/whitelist.txt 中的 URL 或主机一律判定 whitelisted，不计失败、永不剔除",
             "evidence": "每条记录保存最终 URL、Content-Type、失败类别、尝试 UA 数和重定向次数",
         },
         "summary": summary,
@@ -473,6 +552,7 @@ def write_channel_health(items: list[Item]) -> None:
 
 def _channel_health_rows(items: list[Item]) -> list[dict[str, Any]]:
     """Build one health row per channel URL, carrying history across runs."""
+    whitelist = load_whitelist()
     previous: dict[str, dict[str, Any]] = {}
     current_hashes: set[str] = set()
     if CHANNEL_HEALTH_JSON.is_file():
@@ -526,6 +606,12 @@ def _channel_health_rows(items: list[Item]) -> list[dict[str, Any]]:
             verdict = "skip_internal"
         elif item.status == "upstream_incident":
             verdict = "observe_upstream"
+        elif whitelisted(item.url, whitelist):
+            # A hand-curated entry wins over every automated verdict: the
+            # owner decided this source stays, so it must never be counted
+            # toward removal nor dropped from merged.m3u.
+            verdict = "whitelisted"
+            count = 0
         elif decisive and count >= FAIL_STREAK_LIMIT:
             verdict = "candidate_remove"
         elif decisive:
@@ -707,7 +793,10 @@ def write_removed_channels(items: list[Item]) -> None:
     recovered = {
         str(row.get("url", ""))
         for row in _channel_health_rows(items)
-        if row.get("verdict") in {"keep", "observe_soft", "observe_upstream", "observe", "skip_internal"}
+        if row.get("verdict") in {
+            "keep", "observe_soft", "observe_upstream", "observe",
+            "skip_internal", "whitelisted",
+        }
     }
     history = {
         str(row.get("url", "")): row

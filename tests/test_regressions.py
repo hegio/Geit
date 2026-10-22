@@ -430,6 +430,84 @@ class FalsePositiveTests(unittest.TestCase):
 class RemovedChannelTests(unittest.TestCase):
     """The removal record is the only place a human can see what was dropped."""
 
+    def setUp_whitelist(self, text: str) -> None:
+        self._wl = tempfile.NamedTemporaryFile("w", suffix=".txt", delete=False,
+                                              encoding="utf-8")
+        self._wl.write(text)
+        self._wl.close()
+        self._orig_wl = check_health.WHITELIST_PATH
+        check_health.WHITELIST_PATH = Path(self._wl.name)
+
+    def tearDown_whitelist(self) -> None:
+        check_health.WHITELIST_PATH = self._orig_wl
+        Path(self._wl.name).unlink(missing_ok=True)
+
+    def test_whitelisted_url_is_never_candidate_remove(self) -> None:
+        """A hand-curated URL survives repeated decisive failures."""
+        self.setUp_whitelist("http://gone.example/live.m3u8\n")
+        try:
+            for _ in range(5):
+                item = self._channel("http://gone.example/live.m3u8",
+                                     "probe_failed", 404)
+                rows = {r["url"]: r for r in
+                        check_health._channel_health_rows([item])}
+            row = rows["http://gone.example/live.m3u8"]
+            self.assertEqual(row["verdict"], "whitelisted")
+            self.assertEqual(row["decisive_failures"], 0)
+        finally:
+            self.tearDown_whitelist()
+
+    def test_whitelisted_host_protects_other_paths(self) -> None:
+        """A bare host entry protects every URL on that host or a subdomain."""
+        self.setUp_whitelist("gone.example\n")
+        try:
+            item = self._channel("http://cdn.gone.example/other/live.m3u8",
+                                  "probe_failed", 404)
+            rows = check_health._channel_health_rows([item])
+            self.assertEqual(rows[0]["verdict"], "whitelisted")
+        finally:
+            self.tearDown_whitelist()
+
+    def test_whitelisted_url_never_enters_removal_record(self) -> None:
+        self.setUp_whitelist("http://gone.example/live.m3u8\n")
+        try:
+            check_health.write_removed_channels([
+                self._channel("http://gone.example/live.m3u8", "probe_failed", 404)
+            ])
+            data = json.loads(check_health.REMOVED_CHANNELS_JSON.read_text(encoding="utf-8"))
+            self.assertEqual(data["summary"]["removed_total"], 0)
+        finally:
+            self.tearDown_whitelist()
+
+    def test_whitelisted_live_source_reports_no_streak(self) -> None:
+        original = check_health.load_streaks
+        check_health.load_streaks = lambda: {}
+        self.setUp_whitelist("gone.example\n")
+        try:
+            item = check_health.Item(
+                kind="live", name="测试直播",
+                url="http://gone.example/live.m3u8",
+                status="http_error", http_status=404, detail="HTTP 404",
+                checked_at="2026-10-23T00:00:00Z",
+                source="https://example.com/source", host="gone.example",
+            )
+            item.failure_class = "hard"
+            streaks = check_health.update_streaks([item])
+            self.assertTrue(streaks["http://gone.example/live.m3u8"]["whitelisted"])
+            self.assertFalse(streaks["http://gone.example/live.m3u8"]["removable"])
+        finally:
+            self.tearDown_whitelist()
+            check_health.load_streaks = original
+
+    def test_missing_whitelist_disables_the_feature(self) -> None:
+        self.setUp_whitelist("")
+        try:
+            self.assertFalse(check_health.whitelisted("http://gone.example/live.m3u8"))
+            urls, hosts = check_health.load_whitelist()
+            self.assertEqual((urls, hosts), (set(), set()))
+        finally:
+            self.tearDown_whitelist()
+
     def setUp(self) -> None:
         self._dir = tempfile.TemporaryDirectory()
         self.root = Path(self._dir.name)
