@@ -50,7 +50,7 @@ jobs:
           import os
           from pathlib import Path
 
-          interval = 24 * 3600
+          interval = 12 * 3600
           now = dt.datetime.now(dt.timezone.utc)
           state = {}
           path = Path("docs/health_state.json")
