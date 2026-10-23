@@ -2,8 +2,16 @@ name: Geit 链接健康检查
 
 on:
   schedule:
-    # 每小时唤醒一次，由 gate 按上一次成功运行时间放行，实际间隔 24 小时。
-    - cron: '0 * * * *'
+    # 每天 00、12 点各唤醒一次，实际间隔就是 12 小时。改为稀疏 cron 后，
+    # Actions 列表里不再堆满只跑几秒的 skipped 记录。
+    #
+    # gate 保留，但只当「最小间隔护栏」，interval 取 10 小时而非 12 小时。
+    # 原因：一轮检查约 55 分钟，若 interval 设成 12 小时，则每次唤醒都只距
+    # 上次开始 11 小时出头而被跳过，实际间隔退化成 24 小时。已用模拟核对：
+    #   interval=12h -> 每天 1 跑 1 跳，间隔 24 小时
+    #   interval=10h -> 每天 2 跑 0 跳，间隔 12 小时，且可容忍 1 小时以上的
+    #                  cron 延迟。节奏由 cron 决定，gate 只挡异常过密执行。
+    - cron: '0 0,12 * * *'
   workflow_dispatch:
     inputs:
       ai_mode:
@@ -36,7 +44,7 @@ jobs:
         with:
           fetch-depth: 1
 
-      - name: 判断是否到 12 小时执行窗口
+      - name: 判断是否超过最小执行间隔
         id: gate
         shell: bash
         run: |
@@ -50,7 +58,9 @@ jobs:
           import os
           from pathlib import Path
 
-          interval = 12 * 3600
+          # 最小间隔护栏，不是目标间隔：cron 每 12 小时唤醒一次，取 10 小时
+          # 保证正常唤醒必定放行，同时挡住手动/异常导致的过密执行。
+          interval = 10 * 3600
           now = dt.datetime.now(dt.timezone.utc)
           state = {}
           path = Path("docs/health_state.json")
@@ -61,7 +71,7 @@ jobs:
           last_run = state.get("last_run", {})
           if not isinstance(last_run, dict):
               last_run = {}
-          raw = str(last_run.get("finished_at", "") or "")
+          raw = str(last_run.get("started_at", "") or "")
           attempt = str(last_run.get("attempted_at", "") or "")
           due = True
           if raw or attempt:
@@ -77,7 +87,7 @@ jobs:
                   latest = max(markers)
                   elapsed = (now - latest).total_seconds()
                   due = elapsed >= interval
-                  print("上次健康检查完成/尝试: %s / %s；已过 %.1f 小时"
+                  print("上次健康检查开始/尝试: %s / %s；已过 %.1f 小时"
                         % (raw or "无", attempt or "无", elapsed / 3600))
               except ValueError:
                   print("健康状态时间无法解析，立即执行")
