@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-22T23:52:37Z",
+  "updated": "2026-10-23T03:25:24Z",
   "policy": {
     "unresolved_action": "仅报告，保留在 merged.m3u，不自动删除或猜测归类",
     "rules_file": "tvbox/channel_rules.json",
