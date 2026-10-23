@@ -36,7 +36,7 @@ jobs:
         with:
           fetch-depth: 1
 
-      - name: 判断是否到 24 小时执行窗口
+      - name: 判断是否到 12 小时执行窗口
         id: gate
         shell: bash
         run: |
