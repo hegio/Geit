@@ -1,8 +1,8 @@
 {
-  "updated": "2026-10-24T18:35:40Z",
+  "updated": "2026-10-24T19:27:16Z",
   "repository": "hegio/Geit",
   "branch": "main",
-  "count": 4,
+  "count": 3,
   "sources": [
     {
       "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
@@ -42,19 +42,6 @@
       "lives": 0,
       "channels": 2145,
       "detail": ""
-    },
-    {
-      "source": "https://iptv.851855.xyz/sub/Zz0uFf9Cz0kp/playlist.m3u",
-      "effective_url": "https://iptv.851855.xyz/sub/Zz0uFf9Cz0kp/playlist.m3u",
-      "kind": "unknown",
-      "status": "http_error",
-      "http_status": null,
-      "content_type": "",
-      "bytes": 0,
-      "sites": 0,
-      "lives": 0,
-      "channels": 0,
-      "detail": "下载失败: HTTP Error 403: Forbidden；中转也失败: HTTP 502"
     }
   ]
 }

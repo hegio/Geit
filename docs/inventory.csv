@@ -2,7 +2,6 @@
 source,https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt,https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt,reachable,200,
 source,https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg,https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg,reachable,200,存在含真实凭据的站点，已跳过
 source,https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt,https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt,reachable,200,
-source,https://iptv.851855.xyz/sub/Zz0uFf9Cz0kp/playlist.m3u,https://iptv.851855.xyz/sub/Zz0uFf9Cz0kp/playlist.m3u,http_error,,下载失败: HTTP Error 403: Forbidden；中转也失败: HTTP 502
 site,✈️TG频道@stymei,csp_Douban,requires_app,,需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放
 site,👖IPTV,https://jsnz.pages.dev/f/f05e3b39.js,requires_app,,需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放
 site,👖体育,https://jsnzkpg.de5.net/t4.json,unverified,,需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放

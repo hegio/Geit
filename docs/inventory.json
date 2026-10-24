@@ -1,7 +1,7 @@
 {
-  "updated": "2026-10-24T18:35:40Z",
+  "updated": "2026-10-24T19:27:16Z",
   "summary": {
-    "sources": 4,
+    "sources": 3,
     "sites": 25,
     "lives": 18,
     "channels": 10225
@@ -30,14 +30,6 @@
       "status": "reachable",
       "http_status": 200,
       "detail": ""
-    },
-    {
-      "kind": "source",
-      "name": "https://iptv.851855.xyz/sub/Zz0uFf9Cz0kp/playlist.m3u",
-      "url": "https://iptv.851855.xyz/sub/Zz0uFf9Cz0kp/playlist.m3u",
-      "status": "http_error",
-      "http_status": "",
-      "detail": "下载失败: HTTP Error 403: Forbidden；中转也失败: HTTP 502"
     },
     {
       "kind": "site",
