@@ -73,6 +73,9 @@ USER_AGENT = "Mozilla/5.0 (compatible; GeitCollector/2.0; +https://github.com/he
 TIMEOUT = 30
 RETRY = 3
 MAX_SOURCE_BYTES = 32 * 1024 * 1024
+# 可选：第三方来源被源站按出口 IP 拒绝时的中转前缀。
+# 约定为 HTTPS 前缀（如 https://relay.example/fetch?url=），或包含 {url} 占位符。
+SOURCE_RELAY = os.environ.get("GEIT_SOURCE_RELAY", "").strip()
 SECRET_PLACEHOLDER = re.compile(r"\{\{\s*SECRET_[^}]+\}\}", re.I)
 PROXY_PREFIXES = (
     "https://gh-proxy.com/",
@@ -148,6 +151,15 @@ class BuildStats:
     config_meta: dict[str, Any] = field(default_factory=dict)
 
 
+@dataclass
+class FetchResult:
+    data: bytes
+    status: int
+    content_type: str
+    effective_url: str
+    via_relay: bool = False
+
+
 def log(message: str) -> None:
     print("[%s] %s" % (time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), message))
 
@@ -204,16 +216,51 @@ def proxied_py_url(url: str) -> str:
     return PY_PROXY_PREFIX + value
 
 
-def fetch(url: str) -> tuple[bytes, int, str, str]:
+def source_relay_url(url: str) -> str:
+    """Build the optional relay URL without exposing it in diagnostics."""
+    if not SOURCE_RELAY:
+        return ""
+    parts = urllib.parse.urlsplit(SOURCE_RELAY)
+    if (
+        parts.scheme != "https"
+        or not parts.netloc
+        or parts.username
+        or parts.password
+        or urllib.parse.urlsplit(url).netloc.lower() == parts.netloc.lower()
+    ):
+        return ""
+    encoded = urllib.parse.quote(url, safe="")
+    if "{url}" in SOURCE_RELAY:
+        return SOURCE_RELAY.replace("{url}", encoded)
+    return SOURCE_RELAY + encoded
+
+
+def _relay_error_label(exc: Exception) -> str:
+    """Describe a relay failure without writing the secret relay URL to reports."""
+    if isinstance(exc, urllib.error.HTTPError):
+        return "HTTP %s" % exc.code
+    if isinstance(exc, urllib.error.URLError):
+        return "网络错误: %s" % type(exc.reason).__name__
+    return type(exc).__name__
+
+
+def fetch(url: str) -> FetchResult:
     """Fetch a URL with certificate verification enabled."""
     request_headers = {"User-Agent": USER_AGENT, "Accept": "*/*"}
     normalized = normalize_url(url)
     candidates = [normalized]
     raw_parts = urllib.parse.urlsplit(normalized)
+    relay_index: int | None = None
     if raw_parts.netloc.lower() == "raw.githubusercontent.com":
         candidates.extend(prefix + normalized for prefix in PROXY_FALLBACKS)
+    else:
+        relay = source_relay_url(normalized)
+        if relay:
+            relay_index = len(candidates)
+            candidates.append(relay)
     last_error: Exception | None = None
-    for candidate in candidates:
+    relay_error: Exception | None = None
+    for index, candidate in enumerate(candidates):
         for attempt in range(RETRY):
             try:
                 req = urllib.request.Request(candidate, headers=request_headers)
@@ -221,11 +268,27 @@ def fetch(url: str) -> tuple[bytes, int, str, str]:
                     data = response.read(MAX_SOURCE_BYTES + 1)
                     if len(data) > MAX_SOURCE_BYTES:
                         raise ValueError("响应超过 32 MiB 上限")
-                    return data, int(response.status), response.headers.get("Content-Type", ""), candidate
+                    via_relay = index == relay_index
+                    return FetchResult(
+                        data=data,
+                        status=int(response.status),
+                        content_type=response.headers.get("Content-Type", ""),
+                        # Relative references must resolve against the source, not the relay.
+                        effective_url=normalized if via_relay else candidate,
+                        via_relay=via_relay,
+                    )
             except (urllib.error.URLError, TimeoutError, OSError, ValueError) as exc:
-                last_error = exc
+                if index == relay_index:
+                    relay_error = exc
+                else:
+                    last_error = exc
                 if attempt + 1 < RETRY:
                     time.sleep(1.5 * (attempt + 1))
+    if relay_error is not None:
+        raise RuntimeError(
+            "下载失败: %s；中转也失败: %s"
+            % (last_error, _relay_error_label(relay_error))
+        )
     raise RuntimeError("下载失败: %s" % last_error)
 
 
@@ -565,11 +628,15 @@ def collect_one(
     effective = normalize_url(source)
     result = SourceResult(source=source, effective_url=effective, kind="unknown", status="unverified")
     try:
-        data, status, content_type, effective = fetch(source)
+        fetched = fetch(source)
+        data = fetched.data
+        effective = fetched.effective_url
         result.effective_url = effective
-        result.http_status = status
-        result.content_type = content_type
+        result.http_status = fetched.status
+        result.content_type = fetched.content_type
         result.bytes = len(data)
+        if fetched.via_relay:
+            result.detail = "经中转回退"
     except Exception as exc:
         result.status = "http_error"
         result.detail = redact_sensitive_text(exc)
@@ -607,10 +674,14 @@ def collect_one(
                     result.detail = "存在含真实凭据的直播项，已跳过"
         for ref in extract_python_refs(parsed):
             try:
-                py_data, _, _, py_url = fetch(ref)
-                if valid_python(py_data):
-                    name = safe_python_name(py_url, py_data, {**local_python, **result.python_files})
-                    result.python_files[name] = py_data
+                fetched_py = fetch(ref)
+                if valid_python(fetched_py.data):
+                    name = safe_python_name(
+                        fetched_py.effective_url,
+                        fetched_py.data,
+                        {**local_python, **result.python_files},
+                    )
+                    result.python_files[name] = fetched_py.data
             except Exception as exc:
                 log("WARN Python 子链接失败 %s: %s" % (ref, exc))
         return result

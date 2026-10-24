@@ -75,6 +75,7 @@ jobs:
       - name: 生成 TVBox 配置
         env:
           PYTHONIOENCODING: utf-8
+          GEIT_SOURCE_RELAY: ${{ secrets.GEIT_SOURCE_RELAY }}
         run: python fetch_tvbox.py
 
       - name: 静态校验

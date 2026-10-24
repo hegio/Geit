@@ -68,6 +68,18 @@ GitHub 的 `/blob/` 地址打开的是 HTML 网页，不是 JSON 文件，不能
 
 采集器会先剥离代理前缀直连，失败时再尝试备用代理。来源中的相对路径会基于原始地址解析；含 `{{SECRET_...}}` 占位符、真实 token、API key、Cookie、密码或 Bearer 凭据的站点会被跳过，不会猜测或公开密钥。
 
+### 第三方来源可选中转
+
+如果某个第三方来源在 GitHub Actions 中返回 403、而本机可以正常打开，通常是对 Actions 出口 IP 的风控。仓库支持一个可选中转：在 GitHub 仓库的 **Settings → Secrets and variables → Actions** 新建 Secret `GEIT_SOURCE_RELAY`，值为 HTTPS 前缀：
+
+```text
+https://relay.example/fetch?url=
+```
+
+也可以使用 `{url}` 占位符，例如 `https://relay.example/fetch?target={url}`。采集器会把原始来源 URL 完整百分号编码后填入；中转必须返回原始 JSON/TXT/M3U 内容，不能返回 HTML 包装页。该回退只用于非 `raw.githubusercontent.com` 来源，并且只在原有直连和 GitHub 镜像都失败后尝试。中转成功时，配置中的相对路径仍按原始来源地址解析。
+
+未配置该 Secret 时，采集器行为与之前完全一致。中转服务能看到完整订阅 URL（其中可能含访问凭据），因此只应使用你控制或明确信任的 HTTPS 服务；不要使用来路不明的公共 CORS 代理。
+
 ## 自动流程
 
 工作流位于 `.github/workflows/collect.yml`，默认每 18 小时运行一次，也可在 Actions 页面手动触发。链接健康检查独立位于 `.github/workflows/health.yml`，默认每 12 小时运行一次。

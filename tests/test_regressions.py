@@ -15,6 +15,85 @@ import check_health
 import fetch_tvbox
 
 
+class _FakeResponse:
+    def __init__(self, data: bytes, status: int = 200, content_type: str = "text/plain") -> None:
+        self._data = data
+        self.status = status
+        self.headers = {"Content-Type": content_type}
+
+    def read(self, _size: int = -1) -> bytes:
+        return self._data
+
+    def __enter__(self) -> "_FakeResponse":
+        return self
+
+    def __exit__(self, *_args: object) -> None:
+        return None
+
+
+class SourceRelayTests(unittest.TestCase):
+    def test_relay_is_opt_in(self) -> None:
+        failure = fetch_tvbox.urllib.error.HTTPError(
+            "https://source.example/list.m3u", 403, "Forbidden", None, None
+        )
+        with mock.patch.object(fetch_tvbox, "SOURCE_RELAY", ""), \
+             mock.patch.object(fetch_tvbox.urllib.request, "urlopen",
+                               side_effect=failure) as urlopen, \
+             mock.patch.object(fetch_tvbox.time, "sleep"):
+            with self.assertRaisesRegex(RuntimeError, "HTTP Error 403"):
+                fetch_tvbox.fetch("https://source.example/list.m3u")
+        self.assertEqual(urlopen.call_count, fetch_tvbox.RETRY)
+
+    def test_direct_success_never_calls_relay(self) -> None:
+        with mock.patch.object(fetch_tvbox, "SOURCE_RELAY",
+                               "https://relay.example/fetch?url="), \
+             mock.patch.object(fetch_tvbox.urllib.request, "urlopen",
+                               return_value=_FakeResponse(b"#EXTM3U\n")) as urlopen:
+            result = fetch_tvbox.fetch("https://source.example/list.m3u")
+        self.assertFalse(result.via_relay)
+        self.assertEqual(result.effective_url, "https://source.example/list.m3u")
+        self.assertEqual(urlopen.call_count, 1)
+
+    def test_403_falls_back_to_encoded_relay_url(self) -> None:
+        failure = fetch_tvbox.urllib.error.HTTPError(
+            "https://source.example/list.m3u", 403, "Forbidden", None, None
+        )
+        with mock.patch.object(fetch_tvbox, "SOURCE_RELAY",
+                               "https://relay.example/fetch?url="), \
+             mock.patch.object(fetch_tvbox.urllib.request, "urlopen",
+                               side_effect=[failure] * fetch_tvbox.RETRY
+                               + [_FakeResponse(b"#EXTM3U\n")]) as urlopen, \
+             mock.patch.object(fetch_tvbox.time, "sleep"):
+            result = fetch_tvbox.fetch("https://source.example/list.m3u")
+        self.assertTrue(result.via_relay)
+        self.assertEqual(result.effective_url, "https://source.example/list.m3u")
+        relay_url = urlopen.call_args_list[-1].args[0].full_url
+        self.assertEqual(
+            relay_url,
+            "https://relay.example/fetch?url=https%3A%2F%2Fsource.example%2Flist.m3u",
+        )
+
+    def test_relay_template_placeholder_is_supported(self) -> None:
+        with mock.patch.object(fetch_tvbox, "SOURCE_RELAY",
+                               "https://relay.example/fetch/{url}/raw"):
+            relay = fetch_tvbox.source_relay_url("https://source.example/list.m3u")
+        self.assertEqual(
+            relay,
+            "https://relay.example/fetch/https%3A%2F%2Fsource.example%2Flist.m3u/raw",
+        )
+
+    def test_github_sources_keep_existing_mirror_chain(self) -> None:
+        with mock.patch.object(fetch_tvbox, "SOURCE_RELAY",
+                               "https://relay.example/fetch?url="), \
+             mock.patch.object(fetch_tvbox.urllib.request, "urlopen",
+                               return_value=_FakeResponse(b"{}")) as urlopen:
+            result = fetch_tvbox.fetch(
+                "https://raw.githubusercontent.com/hegio/Geit/main/config.json"
+            )
+        self.assertFalse(result.via_relay)
+        self.assertEqual(urlopen.call_count, 1)
+
+
 class ClassificationTests(unittest.TestCase):
     def classify(self, name: str, group: str = "DE=3", section: str = "") -> str:
         return fetch_tvbox.normalize_group_with_section(group, name, section)
