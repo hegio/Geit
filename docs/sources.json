@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-24T16:27:04Z",
+  "updated": "2026-10-24T18:35:40Z",
   "repository": "hegio/Geit",
   "branch": "main",
   "count": 4,
@@ -54,7 +54,7 @@
       "sites": 0,
       "lives": 0,
       "channels": 0,
-      "detail": "下载失败: HTTP Error 403: Forbidden"
+      "detail": "下载失败: HTTP Error 403: Forbidden；中转也失败: HTTP 502"
     }
   ]
 }

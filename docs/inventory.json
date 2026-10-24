@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-24T16:27:04Z",
+  "updated": "2026-10-24T18:35:40Z",
   "summary": {
     "sources": 4,
     "sites": 25,
@@ -37,7 +37,7 @@
       "url": "https://iptv.851855.xyz/sub/Zz0uFf9Cz0kp/playlist.m3u",
       "status": "http_error",
       "http_status": "",
-      "detail": "下载失败: HTTP Error 403: Forbidden"
+      "detail": "下载失败: HTTP Error 403: Forbidden；中转也失败: HTTP 502"
     },
     {
       "kind": "site",
