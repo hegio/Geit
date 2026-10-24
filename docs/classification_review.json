@@ -1,33 +1,33 @@
 {
-  "updated": "2026-10-24T14:46:12Z",
+  "updated": "2026-10-24T16:27:04Z",
   "policy": {
     "unresolved_action": "仅报告，保留在 merged.m3u，不自动删除或猜测归类",
     "rules_file": "tvbox/channel_rules.json",
     "private_groups": "私密频道/JAV 保留来源原分组"
   },
   "summary": {
-    "channels": 6931,
-    "classified": 6928,
-    "pending_review": 3,
+    "channels": 6954,
+    "classified": 6950,
+    "pending_review": 4,
     "categories": {
       "音乐点播": 338,
       "音乐频道": 95,
-      "港澳台": 388,
-      "卫视频道": 103,
-      "地方频道": 266,
-      "影视少儿": 569,
-      "央视频道": 224,
-      "体育频道": 62,
+      "港澳台": 394,
+      "卫视频道": 106,
+      "地方频道": 268,
+      "影视少儿": 571,
+      "央视频道": 228,
+      "体育频道": 66,
       "运营商/内网": 117,
-      "海外频道": 299,
+      "海外频道": 303,
       "教育纪实": 22,
       "综合直播": 25,
-      "影视轮播": 1134,
+      "影视轮播": 1131,
       "私密频道_169169": 714,
       "私密频道2_169169": 1598,
       "私密频道3_169169": 43,
       "JAV點播_169169": 931,
-      "待人工确认": 3
+      "待人工确认": 4
     }
   },
   "pending": [
@@ -49,6 +49,21 @@
     {
       "channel_key": "hyzxc",
       "name": "hyzxc",
+      "category": "待人工确认",
+      "groups_raw": [
+        "央卫63"
+      ],
+      "source_sections": [
+        "央卫63"
+      ],
+      "sources": [
+        "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt"
+      ],
+      "line_count": 1
+    },
+    {
+      "channel_key": "hycxldb",
+      "name": "hycxldb",
       "category": "待人工确认",
       "groups_raw": [
         "央卫63"
