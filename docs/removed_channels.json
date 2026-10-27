@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-26T19:00:04Z",
+  "updated": "2026-10-27T18:01:34Z",
   "policy": {
     "scope": "从 merged.m3u 剔除的单个频道 URL；直播大类从不自动剔除",
     "remove_limit": 3,
@@ -8,10 +8,10 @@
     "recovery": "恢复为 probe_ok 后自动从本清单移除并重新录入 merged.m3u"
   },
   "summary": {
-    "removed_total": 199,
-    "removed_this_run": 199,
-    "recovered_this_run": 30,
-    "hosts": 45
+    "removed_total": 198,
+    "removed_this_run": 202,
+    "recovered_this_run": 17,
+    "hosts": 43
   },
   "channels": [
     {
@@ -24,9 +24,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:18Z"
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:17:01Z"
     },
     {
       "name": "青岛生活服务",
@@ -38,9 +38,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:14Z"
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:16:55Z"
     },
     {
       "name": "青岛新闻综合",
@@ -52,9 +52,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 3,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:47:45Z"
+      "decisive_failures": 4,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:35:55Z"
     },
     {
       "name": "重温经典",
@@ -66,9 +66,23 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:14Z"
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:16:55Z"
+    },
+    {
+      "name": "重庆重广融媒",
+      "url": "http://38.75.136.137:98/gslb/dsdqpub/cqjc.m3u8",
+      "category": "地方频道",
+      "host": "38.75.136.137",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+      "source_line": 3,
+      "failure_class": "hard",
+      "http_status": 200,
+      "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
+      "decisive_failures": 3,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:35:36Z"
     },
     {
       "name": "重庆卫视",
@@ -80,9 +94,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:16Z"
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:17:00Z"
     },
     {
       "name": "辽宁卫视",
@@ -94,51 +108,37 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:16Z"
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:17:00Z"
     },
     {
-      "name": "解说：高能国产悬疑推理剧集",
-      "url": "http://footyun.top:35455/douyu/8741860",
+      "name": "车模现场，美女云集",
+      "url": "http://footyun.top:35455/douyu/10118209",
       "category": "影视轮播",
       "host": "footyun.top",
       "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
       "source_line": 3,
       "failure_class": "hard",
       "http_status": 200,
-      "evidence": "HTTP 200；UA=Lavf；Content-Type=video/x-flv；重定向 1 次",
+      "evidence": "HTTP 200；UA=Mozilla；Content-Type=video/x-flv；重定向 1 次",
       "decisive_failures": 3,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:19:41Z"
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:03:37Z"
     },
     {
-      "name": "華視教育體育文化",
-      "url": "http://74.91.26.218:82/live/ctsjy.m3u8",
-      "category": "体育频道",
-      "host": "74.91.26.218",
-      "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-      "source_line": 5,
+      "name": "老刘带你看大片",
+      "url": "http://footyun.top:35455/douyu/3985805",
+      "category": "影视少儿",
+      "host": "footyun.top",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+      "source_line": 3,
       "failure_class": "hard",
-      "http_status": 404,
-      "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 1 次",
-      "decisive_failures": 6,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:47:21Z"
-    },
-    {
-      "name": "華視",
-      "url": "http://74.91.26.218:82/live/cts.m3u8",
-      "category": "港澳台",
-      "host": "74.91.26.218",
-      "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-      "source_line": 5,
-      "failure_class": "hard",
-      "http_status": 404,
-      "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 1 次",
-      "decisive_failures": 6,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:47:20Z"
+      "http_status": 200,
+      "evidence": "HTTP 200；UA=Mozilla；Content-Type=video/x-flv；重定向 1 次",
+      "decisive_failures": 3,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:03:21Z"
     },
     {
       "name": "甘肃卫视",
@@ -150,9 +150,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:19Z"
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:17:20Z"
     },
     {
       "name": "湖南卫视",
@@ -164,9 +164,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:17Z"
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:17:01Z"
     },
     {
       "name": "湖北经视",
@@ -178,37 +178,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:14Z"
-    },
-    {
-      "name": "湖北生活",
-      "url": "http://192.151.150.154/live/hbty.m3u8",
-      "category": "地方频道",
-      "host": "192.151.150.154",
-      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-      "source_line": 3,
-      "failure_class": "hard",
-      "http_status": 200,
-      "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
       "decisive_failures": 6,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:47:21Z"
-    },
-    {
-      "name": "湖北教育",
-      "url": "http://192.151.150.154/live/hbjy.m3u8",
-      "category": "地方频道",
-      "host": "192.151.150.154",
-      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-      "source_line": 3,
-      "failure_class": "hard",
-      "http_status": 200,
-      "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 6,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:47:21Z"
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:16:55Z"
     },
     {
       "name": "湖北教育",
@@ -220,9 +192,23 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:14Z"
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:16:55Z"
+    },
+    {
+      "name": "湖北影视",
+      "url": "http://192.151.150.154/live/hbys.m3u8",
+      "category": "地方频道",
+      "host": "192.151.150.154",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+      "source_line": 3,
+      "failure_class": "hard",
+      "http_status": 200,
+      "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
+      "decisive_failures": 3,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:07:21Z"
     },
     {
       "name": "湖北影视",
@@ -234,23 +220,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:14Z"
-    },
-    {
-      "name": "湖北垄上",
-      "url": "http://192.151.150.154/live/hbls.m3u8",
-      "category": "地方频道",
-      "host": "192.151.150.154",
-      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-      "source_line": 3,
-      "failure_class": "hard",
-      "http_status": 200,
-      "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 3,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:48:14Z"
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:16:55Z"
     },
     {
       "name": "湖北垄上",
@@ -262,9 +234,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:14Z"
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:16:55Z"
     },
     {
       "name": "湖北卫视",
@@ -276,37 +248,23 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:17Z"
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:17:00Z"
     },
     {
-      "name": "深圳卫视D",
-      "url": "http://104.152.209.49:8181/720p/szws.m3u8",
-      "category": "卫视频道",
-      "host": "104.152.209.49",
-      "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-      "source_line": 5,
+      "name": "渔妹带你来赶海，来看有没有你没见过的",
+      "url": "http://footyun.top:35455/douyu/9348805",
+      "category": "影视轮播",
+      "host": "footyun.top",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+      "source_line": 3,
       "failure_class": "hard",
       "http_status": 200,
-      "evidence": "HTTP 200；UA=Mozilla；Content-Type=application/vnd.apple.mpegurl；重定向 1 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:47:20Z"
-    },
-    {
-      "name": "浙江卫视D",
-      "url": "http://104.152.209.49:8181/720p/zjws.m3u8",
-      "category": "卫视频道",
-      "host": "104.152.209.49",
-      "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-      "source_line": 5,
-      "failure_class": "hard",
-      "http_status": 200,
-      "evidence": "HTTP 200；UA=Mozilla；Content-Type=application/vnd.apple.mpegurl；重定向 1 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:47:20Z"
+      "evidence": "HTTP 200；UA=Mozilla；Content-Type=video/x-flv；重定向 1 次",
+      "decisive_failures": 3,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:03:38Z"
     },
     {
       "name": "浙江卫视",
@@ -318,23 +276,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:16Z"
-    },
-    {
-      "name": "河北卫视D",
-      "url": "http://104.152.209.49:8181/720p/hews.m3u8",
-      "category": "卫视频道",
-      "host": "104.152.209.49",
-      "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-      "source_line": 5,
-      "failure_class": "hard",
-      "http_status": 200,
-      "evidence": "HTTP 200；UA=Mozilla；Content-Type=application/vnd.apple.mpegurl；重定向 1 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:47:19Z"
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:17:00Z"
     },
     {
       "name": "没",
@@ -346,9 +290,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:17Z"
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:17:01Z"
     },
     {
       "name": "没",
@@ -360,9 +304,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:17Z"
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:17:01Z"
     },
     {
       "name": "没",
@@ -374,9 +318,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:17Z"
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:17:01Z"
     },
     {
       "name": "江苏卫视",
@@ -388,27 +332,13 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:17Z"
-    },
-    {
-      "name": "民視第一台",
-      "url": "http://74.91.26.218:82/live/ftvdy.m3u8",
-      "category": "港澳台",
-      "host": "74.91.26.218",
-      "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-      "source_line": 5,
-      "failure_class": "hard",
-      "http_status": 404,
-      "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 1 次",
       "decisive_failures": 6,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:47:22Z"
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:17:01Z"
     },
     {
-      "name": "民視台灣台",
-      "url": "http://74.91.26.218:82/live/ftvtw.m3u8",
+      "name": "民視新聞台",
+      "url": "http://74.91.26.218:82/live/ftvnews.m3u8",
       "category": "港澳台",
       "host": "74.91.26.218",
       "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
@@ -417,22 +347,22 @@
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 1 次",
       "decisive_failures": 3,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:47:44Z"
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:04:11Z"
     },
     {
-      "name": "民視",
-      "url": "http://74.91.26.218:82/live/ftv.m3u8",
-      "category": "港澳台",
-      "host": "74.91.26.218",
-      "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-      "source_line": 5,
+      "name": "本主儿的直播间",
+      "url": "http://footyun.top:35455/douyu/9565677",
+      "category": "影视轮播",
+      "host": "footyun.top",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+      "source_line": 3,
       "failure_class": "hard",
-      "http_status": 404,
-      "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 1 次",
-      "decisive_failures": 6,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:47:23Z"
+      "http_status": 200,
+      "evidence": "HTTP 200；UA=Mozilla；Content-Type=video/x-flv；重定向 1 次",
+      "decisive_failures": 3,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:07:29Z"
     },
     {
       "name": "早期教育",
@@ -444,37 +374,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 1 次",
-      "decisive_failures": 3,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:44:34Z"
-    },
-    {
-      "name": "新疆汉语体育健康",
-      "url": "http://192.151.150.154/live/xjtv7.m3u8",
-      "category": "地方频道",
-      "host": "192.151.150.154",
-      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-      "source_line": 3,
-      "failure_class": "hard",
-      "http_status": 200,
-      "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 6,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:47:21Z"
-    },
-    {
-      "name": "廣東體育台",
-      "url": "http://74.91.26.218:82/live/gdty.m3u8",
-      "category": "地方频道",
-      "host": "74.91.26.218",
-      "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-      "source_line": 5,
-      "failure_class": "hard",
-      "http_status": 404,
-      "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 1 次",
-      "decisive_failures": 3,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:47:32Z"
+      "decisive_failures": 4,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:32:48Z"
     },
     {
       "name": "广西卫视",
@@ -486,9 +388,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:17Z"
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:17:01Z"
     },
     {
       "name": "山西卫视",
@@ -500,9 +402,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:19Z"
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:17:20Z"
     },
     {
       "name": "山东卫视",
@@ -514,23 +416,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:17Z"
-    },
-    {
-      "name": "小公視",
-      "url": "http://74.91.26.218:82/live/ptsse.m3u8",
-      "category": "港澳台",
-      "host": "74.91.26.218",
-      "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-      "source_line": 5,
-      "failure_class": "hard",
-      "http_status": 404,
-      "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 1 次",
       "decisive_failures": 6,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:47:24Z"
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:17:01Z"
     },
     {
       "name": "天津卫视",
@@ -542,93 +430,23 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:16Z"
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:17:00Z"
     },
     {
-      "name": "天元围棋",
-      "url": "http://38.75.136.137:98/gslb/dsdqpub/gztywq.m3u8",
-      "category": "央视频道",
-      "host": "38.75.136.137",
+      "name": "史剧解说洪武年间大案",
+      "url": "http://footyun.top:35455/douyu/297689",
+      "category": "影视轮播",
+      "host": "footyun.top",
       "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
       "source_line": 3,
       "failure_class": "hard",
-      "http_status": 404,
-      "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 1 次",
+      "http_status": 200,
+      "evidence": "HTTP 200；UA=Mozilla；Content-Type=video/x-flv；重定向 1 次",
       "decisive_failures": 3,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:47:51Z"
-    },
-    {
-      "name": "吉林综艺文化",
-      "url": "http://107.150.60.122/live/jlfz.m3u8",
-      "category": "地方频道",
-      "host": "107.150.60.122",
-      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-      "source_line": 3,
-      "failure_class": "hard",
-      "http_status": 200,
-      "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 6,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:47:24Z"
-    },
-    {
-      "name": "吉林生活",
-      "url": "http://192.151.150.154/live/jlsh.m3u8",
-      "category": "地方频道",
-      "host": "192.151.150.154",
-      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-      "source_line": 3,
-      "failure_class": "hard",
-      "http_status": 200,
-      "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 6,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:47:24Z"
-    },
-    {
-      "name": "台視財經",
-      "url": "http://74.91.26.218:82/live/ttvcj.m3u8",
-      "category": "港澳台",
-      "host": "74.91.26.218",
-      "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-      "source_line": 5,
-      "failure_class": "hard",
-      "http_status": 404,
-      "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 1 次",
-      "decisive_failures": 3,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:47:43Z"
-    },
-    {
-      "name": "博斯高球2",
-      "url": "http://74.91.26.218:82/live/bsgq2.m3u8",
-      "category": "体育频道",
-      "host": "74.91.26.218",
-      "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-      "source_line": 5,
-      "failure_class": "hard",
-      "http_status": 200,
-      "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 6,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:47:25Z"
-    },
-    {
-      "name": "博斯網球",
-      "url": "http://74.91.26.218:82/live/bswq.m3u8",
-      "category": "体育频道",
-      "host": "74.91.26.218",
-      "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-      "source_line": 5,
-      "failure_class": "hard",
-      "http_status": 200,
-      "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 6,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:47:26Z"
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:03:39Z"
     },
     {
       "name": "北京卫视",
@@ -640,9 +458,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:16Z"
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:17:00Z"
     },
     {
       "name": "动漫秀场HD",
@@ -654,41 +472,13 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 1 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:14Z"
-    },
-    {
-      "name": "公視台語台",
-      "url": "http://74.91.26.218:82/live/ptsty.m3u8",
-      "category": "港澳台",
-      "host": "74.91.26.218",
-      "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-      "source_line": 5,
-      "failure_class": "hard",
-      "http_status": 404,
-      "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 1 次",
       "decisive_failures": 6,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:47:24Z"
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:16:55Z"
     },
     {
-      "name": "公視",
-      "url": "http://74.91.26.218:82/live/pts.m3u8",
-      "category": "港澳台",
-      "host": "74.91.26.218",
-      "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-      "source_line": 5,
-      "failure_class": "hard",
-      "http_status": 404,
-      "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 1 次",
-      "decisive_failures": 6,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:47:24Z"
-    },
-    {
-      "name": "中視經典",
-      "url": "http://74.91.26.218:82/live/ctvjd.m3u8",
+      "name": "中視菁採",
+      "url": "http://74.91.26.218:82/live/ctvjc.m3u8",
       "category": "港澳台",
       "host": "74.91.26.218",
       "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
@@ -697,36 +487,8 @@
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 1 次",
       "decisive_failures": 3,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:47:42Z"
-    },
-    {
-      "name": "中視新聞",
-      "url": "http://74.91.26.218:82/live/ctvnews.m3u8",
-      "category": "港澳台",
-      "host": "74.91.26.218",
-      "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-      "source_line": 5,
-      "failure_class": "hard",
-      "http_status": 404,
-      "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 1 次",
-      "decisive_failures": 6,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:47:25Z"
-    },
-    {
-      "name": "中国教育3",
-      "url": "http://192.151.150.154/live/cetv3.m3u8",
-      "category": "教育纪实",
-      "host": "192.151.150.154",
-      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-      "source_line": 3,
-      "failure_class": "hard",
-      "http_status": 404,
-      "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 1 次",
-      "decisive_failures": 6,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:47:26Z"
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:03:35Z"
     },
     {
       "name": "东方卫视",
@@ -738,9 +500,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:16Z"
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:17:00Z"
     },
     {
       "name": "东南卫视",
@@ -752,51 +514,37 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:17Z"
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:17:01Z"
     },
     {
-      "name": "【速看】超精彩的电影解说，等你来看",
-      "url": "http://footyun.top:35455/douyu/8808506",
-      "category": "影视少儿",
-      "host": "footyun.top",
+      "name": "东南卫视",
+      "url": "https://tv.zhuhongxuan.cn/849116810",
+      "category": "卫视频道",
+      "host": "tv.zhuhongxuan.cn",
       "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
       "source_line": 3,
       "failure_class": "hard",
       "http_status": 200,
-      "evidence": "HTTP 200；UA=Mozilla；Content-Type=video/x-flv；重定向 1 次",
-      "decisive_failures": 3,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:19:41Z"
+      "evidence": "HTTP 200；UA=Mozilla；Content-Type=application/json;charset=UTF-8；重定向 0 次",
+      "decisive_failures": 4,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:35:55Z"
     },
     {
-      "name": "zqjy",
-      "url": "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=zqjy",
-      "category": "教育纪实",
-      "host": "63.141.230.178",
-      "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-      "source_line": 5,
+      "name": "上视东方影视",
+      "url": "https://tv.zhuhongxuan.cn/617290047",
+      "category": "影视少儿",
+      "host": "tv.zhuhongxuan.cn",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+      "source_line": 3,
       "failure_class": "hard",
-      "http_status": 404,
-      "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 2 次",
+      "http_status": 200,
+      "evidence": "HTTP 200；UA=Mozilla；Content-Type=application/json;charset=UTF-8；重定向 0 次",
       "decisive_failures": 3,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:47:44Z"
-    },
-    {
-      "name": "hycxldb",
-      "url": "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=hycxldb",
-      "category": "待人工确认",
-      "host": "63.141.230.178",
-      "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-      "source_line": 5,
-      "failure_class": "hard",
-      "http_status": 404,
-      "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 2 次",
-      "decisive_failures": 6,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:47:28Z"
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:04:10Z"
     },
     {
       "name": "cctv9",
@@ -808,9 +556,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:15Z"
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:17:00Z"
     },
     {
       "name": "cctv9",
@@ -822,9 +570,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:18Z"
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:17:01Z"
     },
     {
       "name": "cctv9",
@@ -836,9 +584,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:17Z"
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:17:01Z"
     },
     {
       "name": "cctv8",
@@ -850,9 +598,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:15Z"
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:17:00Z"
     },
     {
       "name": "cctv7",
@@ -864,9 +612,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:14Z"
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:16:56Z"
     },
     {
       "name": "cctv7",
@@ -878,9 +626,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:18Z"
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:17:01Z"
     },
     {
       "name": "cctv6",
@@ -892,9 +640,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:14Z"
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:16:56Z"
     },
     {
       "name": "cctv6",
@@ -906,37 +654,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:18Z"
-    },
-    {
-      "name": "cctv5p",
-      "url": "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv5p",
-      "category": "央视频道",
-      "host": "63.141.230.178",
-      "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-      "source_line": 5,
-      "failure_class": "hard",
-      "http_status": 200,
-      "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 1 次",
       "decisive_failures": 6,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:47:27Z"
-    },
-    {
-      "name": "cctv5hd",
-      "url": "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv5hd",
-      "category": "央视频道",
-      "host": "63.141.230.178",
-      "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-      "source_line": 5,
-      "failure_class": "hard",
-      "http_status": 200,
-      "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 1 次",
-      "decisive_failures": 6,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:47:27Z"
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:17:01Z"
     },
     {
       "name": "cctv5",
@@ -948,9 +668,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:14Z"
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:16:55Z"
     },
     {
       "name": "cctv5",
@@ -962,9 +682,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:16Z"
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:17:00Z"
     },
     {
       "name": "cctv5",
@@ -976,23 +696,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:18Z"
-    },
-    {
-      "name": "cctv4",
-      "url": "http://111.43.104.93:85/tsfile/live/127/2004_1.m3u8",
-      "category": "央视频道",
-      "host": "111.43.104.93",
-      "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-      "source_line": 5,
-      "failure_class": "hard",
-      "http_status": 404,
-      "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 0 次",
-      "decisive_failures": 7,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:22:12Z"
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:17:01Z"
     },
     {
       "name": "cctv4",
@@ -1004,9 +710,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:14Z"
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:16:55Z"
     },
     {
       "name": "cctv4",
@@ -1018,9 +724,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:16Z"
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:17:00Z"
     },
     {
       "name": "cctv4",
@@ -1032,23 +738,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:18Z"
-    },
-    {
-      "name": "cctv3",
-      "url": "http://111.43.104.93:85/tsfile/live/126/2003_1.m3u8",
-      "category": "央视频道",
-      "host": "111.43.104.93",
-      "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-      "source_line": 5,
-      "failure_class": "hard",
-      "http_status": 404,
-      "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 0 次",
-      "decisive_failures": 7,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:22:12Z"
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:17:01Z"
     },
     {
       "name": "cctv3",
@@ -1060,9 +752,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:14Z"
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:16:55Z"
     },
     {
       "name": "cctv3",
@@ -1074,9 +766,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:18Z"
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:17:01Z"
     },
     {
       "name": "cctv2",
@@ -1088,9 +780,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:14Z"
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:16:55Z"
     },
     {
       "name": "cctv2",
@@ -1102,9 +794,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:17Z"
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:17:01Z"
     },
     {
       "name": "cctv17",
@@ -1116,9 +808,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:15Z"
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:17:00Z"
     },
     {
       "name": "cctv17",
@@ -1130,23 +822,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:18Z"
-    },
-    {
-      "name": "cctv16hd",
-      "url": "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv16hd",
-      "category": "央视频道",
-      "host": "63.141.230.178",
-      "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-      "source_line": 5,
-      "failure_class": "hard",
-      "http_status": 200,
-      "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 1 次",
       "decisive_failures": 6,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:47:29Z"
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:17:01Z"
     },
     {
       "name": "cctv16",
@@ -1158,9 +836,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:15Z"
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:17:00Z"
     },
     {
       "name": "cctv16",
@@ -1172,9 +850,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:18Z"
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:17:01Z"
     },
     {
       "name": "cctv15",
@@ -1186,9 +864,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:15Z"
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:17:00Z"
     },
     {
       "name": "cctv15",
@@ -1200,9 +878,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:18Z"
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:17:01Z"
     },
     {
       "name": "cctv15",
@@ -1214,9 +892,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:17Z"
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:17:01Z"
     },
     {
       "name": "cctv14",
@@ -1228,9 +906,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:15Z"
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:17:00Z"
     },
     {
       "name": "cctv14",
@@ -1242,9 +920,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:18Z"
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:17:01Z"
     },
     {
       "name": "cctv14",
@@ -1256,23 +934,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:17Z"
-    },
-    {
-      "name": "cctv13",
-      "url": "http://111.43.104.93:85/tsfile/live/136/2013_1.m3u8",
-      "category": "央视频道",
-      "host": "111.43.104.93",
-      "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-      "source_line": 5,
-      "failure_class": "hard",
-      "http_status": 404,
-      "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 0 次",
-      "decisive_failures": 7,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:22:13Z"
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:17:01Z"
     },
     {
       "name": "cctv13",
@@ -1284,9 +948,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:15Z"
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:17:00Z"
     },
     {
       "name": "cctv13",
@@ -1298,9 +962,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:17Z"
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:17:01Z"
     },
     {
       "name": "cctv13",
@@ -1312,9 +976,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:18Z"
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:17:01Z"
     },
     {
       "name": "cctv12",
@@ -1326,9 +990,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:15Z"
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:17:00Z"
     },
     {
       "name": "cctv12",
@@ -1340,9 +1004,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:18Z"
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:17:01Z"
     },
     {
       "name": "cctv11",
@@ -1354,9 +1018,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:17Z"
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:17:01Z"
     },
     {
       "name": "cctv11",
@@ -1368,9 +1032,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:15Z"
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:17:00Z"
     },
     {
       "name": "cctv11",
@@ -1382,23 +1046,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:18Z"
-    },
-    {
-      "name": "cctv10",
-      "url": "http://111.43.104.93:85/tsfile/live/134/2011_1.m3u8",
-      "category": "央视频道",
-      "host": "111.43.104.93",
-      "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
-      "source_line": 5,
-      "failure_class": "hard",
-      "http_status": 404,
-      "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 0 次",
-      "decisive_failures": 7,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:22:13Z"
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:17:01Z"
     },
     {
       "name": "cctv10",
@@ -1410,9 +1060,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:15Z"
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:17:00Z"
     },
     {
       "name": "cctv10",
@@ -1424,9 +1074,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:18Z"
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:17:01Z"
     },
     {
       "name": "cctv10",
@@ -1438,9 +1088,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:17Z"
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:17:01Z"
     },
     {
       "name": "cctv1",
@@ -1452,9 +1102,513 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 5,
+      "decisive_failures": 6,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:16:55Z"
+    },
+    {
+      "name": "QVC UK",
+      "url": "https://qvcuk-live.akamaized.net/hls/live/2097112/qvc/1/1.m3u8",
+      "category": "海外频道",
+      "host": "qvcuk-live.akamaized.net",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+      "source_line": 3,
+      "failure_class": "hard",
+      "http_status": 404,
+      "evidence": "HTTP 404；尝试 5 次；Content-Type=application/x-mpegURL；重定向 0 次",
+      "decisive_failures": 3,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:03:18Z"
+    },
+    {
+      "name": "Nino学长的直播间",
+      "url": "http://footyun.top:35455/douyu/9525473",
+      "category": "影视轮播",
+      "host": "footyun.top",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+      "source_line": 3,
+      "failure_class": "hard",
+      "http_status": 200,
+      "evidence": "HTTP 200；UA=Mozilla；Content-Type=video/x-flv；重定向 1 次",
+      "decisive_failures": 3,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:07:27Z"
+    },
+    {
+      "name": "FXX",
+      "url": "http://tvsen7.aynascope.net/fxx/tracks-v1a1/mono.ts.m3u8",
+      "category": "海外频道",
+      "host": "tvsen7.aynascope.net",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+      "source_line": 3,
+      "failure_class": "hard",
+      "http_status": 404,
+      "evidence": "HTTP 404；尝试 5 次；Content-Type=未知；重定向 0 次",
+      "decisive_failures": 4,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:36:42Z"
+    },
+    {
+      "name": "FX",
+      "url": "http://tvsen7.aynascope.net/fx/tracks-v1a1/mono.ts.m3u8",
+      "category": "海外频道",
+      "host": "tvsen7.aynascope.net",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+      "source_line": 3,
+      "failure_class": "hard",
+      "http_status": 404,
+      "evidence": "HTTP 404；尝试 5 次；Content-Type=application/vnd.apple.mpegurl；重定向 0 次",
+      "decisive_failures": 3,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:35:36Z"
+    },
+    {
+      "name": "CCTV-2HD",
+      "url": "http://38.75.136.137:98/gslb/dsdqpub/cctv2hd.m3u8",
+      "category": "央视频道",
+      "host": "38.75.136.137",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+      "source_line": 3,
+      "failure_class": "hard",
+      "http_status": 404,
+      "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 1 次",
+      "decisive_failures": 3,
+      "removed_at": "2026-10-27T18:01:34Z",
+      "last_checked": "2026-10-27T17:35:36Z"
+    },
+    {
+      "name": "解说：高能国产悬疑推理剧集",
+      "url": "http://footyun.top:35455/douyu/8741860",
+      "category": "影视轮播",
+      "host": "footyun.top",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+      "source_line": 3,
+      "failure_class": "hard",
+      "http_status": 200,
+      "evidence": "HTTP 200；UA=Mozilla；Content-Type=video/x-flv；重定向 1 次",
+      "decisive_failures": 4,
       "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:29:14Z"
+      "last_checked": "2026-10-27T17:07:30Z"
+    },
+    {
+      "name": "華視教育體育文化",
+      "url": "http://74.91.26.218:82/live/ctsjy.m3u8",
+      "category": "体育频道",
+      "host": "74.91.26.218",
+      "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
+      "source_line": 5,
+      "failure_class": "hard",
+      "http_status": 404,
+      "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 1 次",
+      "decisive_failures": 7,
+      "removed_at": "2026-10-26T19:00:04Z",
+      "last_checked": "2026-10-27T17:35:38Z"
+    },
+    {
+      "name": "華視",
+      "url": "http://74.91.26.218:82/live/cts.m3u8",
+      "category": "港澳台",
+      "host": "74.91.26.218",
+      "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
+      "source_line": 5,
+      "failure_class": "hard",
+      "http_status": 404,
+      "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 1 次",
+      "decisive_failures": 7,
+      "removed_at": "2026-10-26T19:00:04Z",
+      "last_checked": "2026-10-27T17:35:37Z"
+    },
+    {
+      "name": "湖北生活",
+      "url": "http://192.151.150.154/live/hbty.m3u8",
+      "category": "地方频道",
+      "host": "192.151.150.154",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+      "source_line": 3,
+      "failure_class": "hard",
+      "http_status": 200,
+      "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
+      "decisive_failures": 7,
+      "removed_at": "2026-10-26T19:00:04Z",
+      "last_checked": "2026-10-27T17:35:38Z"
+    },
+    {
+      "name": "湖北教育",
+      "url": "http://192.151.150.154/live/hbjy.m3u8",
+      "category": "地方频道",
+      "host": "192.151.150.154",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+      "source_line": 3,
+      "failure_class": "hard",
+      "http_status": 200,
+      "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
+      "decisive_failures": 7,
+      "removed_at": "2026-10-26T19:00:04Z",
+      "last_checked": "2026-10-27T17:35:38Z"
+    },
+    {
+      "name": "湖北垄上",
+      "url": "http://192.151.150.154/live/hbls.m3u8",
+      "category": "地方频道",
+      "host": "192.151.150.154",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+      "source_line": 3,
+      "failure_class": "hard",
+      "http_status": 200,
+      "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
+      "decisive_failures": 4,
+      "removed_at": "2026-10-26T19:00:04Z",
+      "last_checked": "2026-10-27T17:36:06Z"
+    },
+    {
+      "name": "深圳卫视D",
+      "url": "http://104.152.209.49:8181/720p/szws.m3u8",
+      "category": "卫视频道",
+      "host": "104.152.209.49",
+      "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
+      "source_line": 5,
+      "failure_class": "hard",
+      "http_status": 200,
+      "evidence": "HTTP 200；UA=Mozilla；Content-Type=application/vnd.apple.mpegurl；重定向 1 次",
+      "decisive_failures": 6,
+      "removed_at": "2026-10-26T19:00:04Z",
+      "last_checked": "2026-10-27T17:35:37Z"
+    },
+    {
+      "name": "浙江卫视D",
+      "url": "http://104.152.209.49:8181/720p/zjws.m3u8",
+      "category": "卫视频道",
+      "host": "104.152.209.49",
+      "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
+      "source_line": 5,
+      "failure_class": "hard",
+      "http_status": 200,
+      "evidence": "HTTP 200；UA=Mozilla；Content-Type=application/vnd.apple.mpegurl；重定向 1 次",
+      "decisive_failures": 6,
+      "removed_at": "2026-10-26T19:00:04Z",
+      "last_checked": "2026-10-27T17:35:37Z"
+    },
+    {
+      "name": "河北卫视D",
+      "url": "http://104.152.209.49:8181/720p/hews.m3u8",
+      "category": "卫视频道",
+      "host": "104.152.209.49",
+      "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
+      "source_line": 5,
+      "failure_class": "hard",
+      "http_status": 200,
+      "evidence": "HTTP 200；UA=Mozilla；Content-Type=application/vnd.apple.mpegurl；重定向 1 次",
+      "decisive_failures": 6,
+      "removed_at": "2026-10-26T19:00:04Z",
+      "last_checked": "2026-10-27T17:35:36Z"
+    },
+    {
+      "name": "民視台灣台",
+      "url": "http://74.91.26.218:82/live/ftvtw.m3u8",
+      "category": "港澳台",
+      "host": "74.91.26.218",
+      "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
+      "source_line": 5,
+      "failure_class": "hard",
+      "http_status": 404,
+      "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 1 次",
+      "decisive_failures": 4,
+      "removed_at": "2026-10-26T19:00:04Z",
+      "last_checked": "2026-10-27T17:35:54Z"
+    },
+    {
+      "name": "新疆汉语体育健康",
+      "url": "http://192.151.150.154/live/xjtv7.m3u8",
+      "category": "地方频道",
+      "host": "192.151.150.154",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+      "source_line": 3,
+      "failure_class": "hard",
+      "http_status": 200,
+      "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
+      "decisive_failures": 7,
+      "removed_at": "2026-10-26T19:00:04Z",
+      "last_checked": "2026-10-27T17:35:38Z"
+    },
+    {
+      "name": "廣東體育台",
+      "url": "http://74.91.26.218:82/live/gdty.m3u8",
+      "category": "地方频道",
+      "host": "74.91.26.218",
+      "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
+      "source_line": 5,
+      "failure_class": "hard",
+      "http_status": 404,
+      "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 1 次",
+      "decisive_failures": 4,
+      "removed_at": "2026-10-26T19:00:04Z",
+      "last_checked": "2026-10-27T17:35:46Z"
+    },
+    {
+      "name": "小公視",
+      "url": "http://74.91.26.218:82/live/ptsse.m3u8",
+      "category": "港澳台",
+      "host": "74.91.26.218",
+      "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
+      "source_line": 5,
+      "failure_class": "hard",
+      "http_status": 404,
+      "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 1 次",
+      "decisive_failures": 7,
+      "removed_at": "2026-10-26T19:00:04Z",
+      "last_checked": "2026-10-27T17:35:40Z"
+    },
+    {
+      "name": "吉林综艺文化",
+      "url": "http://107.150.60.122/live/jlfz.m3u8",
+      "category": "地方频道",
+      "host": "107.150.60.122",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+      "source_line": 3,
+      "failure_class": "hard",
+      "http_status": 200,
+      "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
+      "decisive_failures": 7,
+      "removed_at": "2026-10-26T19:00:04Z",
+      "last_checked": "2026-10-27T17:35:38Z"
+    },
+    {
+      "name": "吉林生活",
+      "url": "http://192.151.150.154/live/jlsh.m3u8",
+      "category": "地方频道",
+      "host": "192.151.150.154",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+      "source_line": 3,
+      "failure_class": "hard",
+      "http_status": 200,
+      "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
+      "decisive_failures": 7,
+      "removed_at": "2026-10-26T19:00:04Z",
+      "last_checked": "2026-10-27T17:35:38Z"
+    },
+    {
+      "name": "台視財經",
+      "url": "http://74.91.26.218:82/live/ttvcj.m3u8",
+      "category": "港澳台",
+      "host": "74.91.26.218",
+      "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
+      "source_line": 5,
+      "failure_class": "hard",
+      "http_status": 404,
+      "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 1 次",
+      "decisive_failures": 4,
+      "removed_at": "2026-10-26T19:00:04Z",
+      "last_checked": "2026-10-27T17:35:52Z"
+    },
+    {
+      "name": "博斯高球2",
+      "url": "http://74.91.26.218:82/live/bsgq2.m3u8",
+      "category": "体育频道",
+      "host": "74.91.26.218",
+      "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
+      "source_line": 5,
+      "failure_class": "hard",
+      "http_status": 200,
+      "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
+      "decisive_failures": 7,
+      "removed_at": "2026-10-26T19:00:04Z",
+      "last_checked": "2026-10-27T17:35:40Z"
+    },
+    {
+      "name": "博斯網球",
+      "url": "http://74.91.26.218:82/live/bswq.m3u8",
+      "category": "体育频道",
+      "host": "74.91.26.218",
+      "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
+      "source_line": 5,
+      "failure_class": "hard",
+      "http_status": 200,
+      "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
+      "decisive_failures": 7,
+      "removed_at": "2026-10-26T19:00:04Z",
+      "last_checked": "2026-10-27T17:35:41Z"
+    },
+    {
+      "name": "公視台語台",
+      "url": "http://74.91.26.218:82/live/ptsty.m3u8",
+      "category": "港澳台",
+      "host": "74.91.26.218",
+      "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
+      "source_line": 5,
+      "failure_class": "hard",
+      "http_status": 404,
+      "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 1 次",
+      "decisive_failures": 7,
+      "removed_at": "2026-10-26T19:00:04Z",
+      "last_checked": "2026-10-27T17:35:38Z"
+    },
+    {
+      "name": "公視",
+      "url": "http://74.91.26.218:82/live/pts.m3u8",
+      "category": "港澳台",
+      "host": "74.91.26.218",
+      "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
+      "source_line": 5,
+      "failure_class": "hard",
+      "http_status": 404,
+      "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 1 次",
+      "decisive_failures": 7,
+      "removed_at": "2026-10-26T19:00:04Z",
+      "last_checked": "2026-10-27T17:35:38Z"
+    },
+    {
+      "name": "中視經典",
+      "url": "http://74.91.26.218:82/live/ctvjd.m3u8",
+      "category": "港澳台",
+      "host": "74.91.26.218",
+      "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
+      "source_line": 5,
+      "failure_class": "hard",
+      "http_status": 404,
+      "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 1 次",
+      "decisive_failures": 4,
+      "removed_at": "2026-10-26T19:00:04Z",
+      "last_checked": "2026-10-27T17:35:49Z"
+    },
+    {
+      "name": "中視新聞",
+      "url": "http://74.91.26.218:82/live/ctvnews.m3u8",
+      "category": "港澳台",
+      "host": "74.91.26.218",
+      "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
+      "source_line": 5,
+      "failure_class": "hard",
+      "http_status": 404,
+      "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 1 次",
+      "decisive_failures": 7,
+      "removed_at": "2026-10-26T19:00:04Z",
+      "last_checked": "2026-10-27T17:35:40Z"
+    },
+    {
+      "name": "中国教育3",
+      "url": "http://192.151.150.154/live/cetv3.m3u8",
+      "category": "教育纪实",
+      "host": "192.151.150.154",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+      "source_line": 3,
+      "failure_class": "hard",
+      "http_status": 404,
+      "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 1 次",
+      "decisive_failures": 7,
+      "removed_at": "2026-10-26T19:00:04Z",
+      "last_checked": "2026-10-27T17:35:41Z"
+    },
+    {
+      "name": "hycxldb",
+      "url": "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=hycxldb",
+      "category": "待人工确认",
+      "host": "63.141.230.178",
+      "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
+      "source_line": 5,
+      "failure_class": "hard",
+      "http_status": 404,
+      "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 2 次",
+      "decisive_failures": 7,
+      "removed_at": "2026-10-26T19:00:04Z",
+      "last_checked": "2026-10-27T17:35:42Z"
+    },
+    {
+      "name": "cctv5p",
+      "url": "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv5p",
+      "category": "央视频道",
+      "host": "63.141.230.178",
+      "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
+      "source_line": 5,
+      "failure_class": "hard",
+      "http_status": 200,
+      "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 1 次",
+      "decisive_failures": 7,
+      "removed_at": "2026-10-26T19:00:04Z",
+      "last_checked": "2026-10-27T17:35:42Z"
+    },
+    {
+      "name": "cctv5hd",
+      "url": "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv5hd",
+      "category": "央视频道",
+      "host": "63.141.230.178",
+      "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
+      "source_line": 5,
+      "failure_class": "hard",
+      "http_status": 200,
+      "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 1 次",
+      "decisive_failures": 7,
+      "removed_at": "2026-10-26T19:00:04Z",
+      "last_checked": "2026-10-27T17:35:41Z"
+    },
+    {
+      "name": "cctv4",
+      "url": "http://111.43.104.93:85/tsfile/live/127/2004_1.m3u8",
+      "category": "央视频道",
+      "host": "111.43.104.93",
+      "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
+      "source_line": 5,
+      "failure_class": "hard",
+      "http_status": 404,
+      "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 0 次",
+      "decisive_failures": 3,
+      "removed_at": "2026-10-26T19:00:04Z",
+      "last_checked": "2026-10-27T17:59:54Z"
+    },
+    {
+      "name": "cctv3",
+      "url": "http://111.43.104.93:85/tsfile/live/126/2003_1.m3u8",
+      "category": "央视频道",
+      "host": "111.43.104.93",
+      "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
+      "source_line": 5,
+      "failure_class": "hard",
+      "http_status": 404,
+      "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 0 次",
+      "decisive_failures": 3,
+      "removed_at": "2026-10-26T19:00:04Z",
+      "last_checked": "2026-10-27T17:59:54Z"
+    },
+    {
+      "name": "cctv16hd",
+      "url": "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv16hd",
+      "category": "央视频道",
+      "host": "63.141.230.178",
+      "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
+      "source_line": 5,
+      "failure_class": "hard",
+      "http_status": 200,
+      "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 1 次",
+      "decisive_failures": 7,
+      "removed_at": "2026-10-26T19:00:04Z",
+      "last_checked": "2026-10-27T17:35:43Z"
+    },
+    {
+      "name": "cctv13",
+      "url": "http://111.43.104.93:85/tsfile/live/136/2013_1.m3u8",
+      "category": "央视频道",
+      "host": "111.43.104.93",
+      "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
+      "source_line": 5,
+      "failure_class": "hard",
+      "http_status": 404,
+      "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 0 次",
+      "decisive_failures": 3,
+      "removed_at": "2026-10-26T19:00:04Z",
+      "last_checked": "2026-10-27T17:59:54Z"
+    },
+    {
+      "name": "cctv10",
+      "url": "http://111.43.104.93:85/tsfile/live/134/2011_1.m3u8",
+      "category": "央视频道",
+      "host": "111.43.104.93",
+      "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",
+      "source_line": 5,
+      "failure_class": "hard",
+      "http_status": 404,
+      "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 0 次",
+      "decisive_failures": 3,
+      "removed_at": "2026-10-26T19:00:04Z",
+      "last_checked": "2026-10-27T17:59:55Z"
     },
     {
       "name": "TVBS新聞台",
@@ -1466,9 +1620,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 1 次",
-      "decisive_failures": 6,
+      "decisive_failures": 7,
       "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:47:27Z"
+      "last_checked": "2026-10-27T17:35:41Z"
     },
     {
       "name": "STARZ_CINEMA",
@@ -1480,9 +1634,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=未知；重定向 0 次",
-      "decisive_failures": 6,
+      "decisive_failures": 7,
       "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:47:27Z"
+      "last_checked": "2026-10-27T17:35:41Z"
     },
     {
       "name": "Nickelodeon",
@@ -1494,9 +1648,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=未知；重定向 0 次",
-      "decisive_failures": 6,
+      "decisive_failures": 7,
       "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:47:29Z"
+      "last_checked": "2026-10-27T17:35:43Z"
     },
     {
       "name": "HallmarkChannel",
@@ -1508,9 +1662,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=未知；重定向 0 次",
-      "decisive_failures": 6,
+      "decisive_failures": 7,
       "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:47:29Z"
+      "last_checked": "2026-10-27T17:35:43Z"
     },
     {
       "name": "HBO ZONE",
@@ -1522,9 +1676,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=未知；重定向 0 次",
-      "decisive_failures": 6,
+      "decisive_failures": 7,
       "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:47:28Z"
+      "last_checked": "2026-10-27T17:35:42Z"
     },
     {
       "name": "DisneyXD",
@@ -1536,9 +1690,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=未知；重定向 0 次",
-      "decisive_failures": 6,
+      "decisive_failures": 7,
       "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:47:30Z"
+      "last_checked": "2026-10-27T17:35:44Z"
     },
     {
       "name": "DISNEY_XD",
@@ -1550,9 +1704,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=未知；重定向 0 次",
-      "decisive_failures": 6,
+      "decisive_failures": 7,
       "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:47:29Z"
+      "last_checked": "2026-10-27T17:35:43Z"
     },
     {
       "name": "DISNEY_JUNIOR",
@@ -1564,9 +1718,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=未知；重定向 0 次",
-      "decisive_failures": 6,
+      "decisive_failures": 7,
       "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:47:30Z"
+      "last_checked": "2026-10-27T17:35:44Z"
     },
     {
       "name": "CartoonNetwork",
@@ -1578,9 +1732,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=未知；重定向 0 次",
-      "decisive_failures": 6,
+      "decisive_failures": 7,
       "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:47:30Z"
+      "last_checked": "2026-10-27T17:35:44Z"
     },
     {
       "name": "CCTV5體育",
@@ -1592,9 +1746,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 6,
+      "decisive_failures": 7,
       "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:47:31Z"
+      "last_checked": "2026-10-27T17:35:46Z"
     },
     {
       "name": "CCTV5+體育賽事",
@@ -1606,9 +1760,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 6,
+      "decisive_failures": 7,
       "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:47:31Z"
+      "last_checked": "2026-10-27T17:35:46Z"
     },
     {
       "name": "CCTV16奧利匹克",
@@ -1620,9 +1774,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 6,
+      "decisive_failures": 7,
       "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:47:31Z"
+      "last_checked": "2026-10-27T17:35:46Z"
     },
     {
       "name": "CCTV-央视文化精品D",
@@ -1634,107 +1788,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=application/vnd.apple.mpegurl；重定向 1 次",
-      "decisive_failures": 5,
+      "decisive_failures": 6,
       "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:47:20Z"
-    },
-    {
-      "name": "CCTV-8K 超高清",
-      "url": "http://47.100.209.208:8767/cctv8k.m3u8",
-      "category": "央视频道",
-      "host": "47.100.209.208",
-      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-      "source_line": 3,
-      "failure_class": "hard",
-      "http_status": 200,
-      "evidence": "HTTP 200；UA=Mozilla；Content-Type=application/vnd.apple.mpegurl；重定向 0 次",
-      "decisive_failures": 3,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:48:20Z"
-    },
-    {
-      "name": "CCTV-5HD",
-      "url": "http://192.151.150.154/live/cctv5hd.m3u8",
-      "category": "央视频道",
-      "host": "192.151.150.154",
-      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-      "source_line": 3,
-      "failure_class": "hard",
-      "http_status": 200,
-      "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 3,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:47:43Z"
-    },
-    {
-      "name": "CCTV-5+ 体育赛事",
-      "url": "http://47.100.209.208:8767/cctv5p.m3u8",
-      "category": "央视频道",
-      "host": "47.100.209.208",
-      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-      "source_line": 3,
-      "failure_class": "hard",
-      "http_status": 200,
-      "evidence": "HTTP 200；UA=Mozilla；Content-Type=application/vnd.apple.mpegurl；重定向 0 次",
-      "decisive_failures": 3,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:48:17Z"
-    },
-    {
-      "name": "CCTV-5 体育",
-      "url": "http://47.100.209.208:8767/cctv5.m3u8",
-      "category": "央视频道",
-      "host": "47.100.209.208",
-      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-      "source_line": 3,
-      "failure_class": "hard",
-      "http_status": 200,
-      "evidence": "HTTP 200；UA=Mozilla；Content-Type=application/vnd.apple.mpegurl；重定向 0 次",
-      "decisive_failures": 3,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:48:17Z"
-    },
-    {
-      "name": "CCTV-4K 超高清",
-      "url": "http://47.100.209.208:8767/cctv4k.m3u8",
-      "category": "央视频道",
-      "host": "47.100.209.208",
-      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-      "source_line": 3,
-      "failure_class": "hard",
-      "http_status": 200,
-      "evidence": "HTTP 200；UA=Mozilla；Content-Type=application/vnd.apple.mpegurl；重定向 0 次",
-      "decisive_failures": 3,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:48:19Z"
-    },
-    {
-      "name": "CCTV-16 4K",
-      "url": "http://47.100.209.208:8767/cctv164k.m3u8",
-      "category": "央视频道",
-      "host": "47.100.209.208",
-      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-      "source_line": 3,
-      "failure_class": "hard",
-      "http_status": 200,
-      "evidence": "HTTP 200；UA=Mozilla；Content-Type=application/vnd.apple.mpegurl；重定向 0 次",
-      "decisive_failures": 3,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:48:19Z"
-    },
-    {
-      "name": "CCTV 怀旧剧场",
-      "url": "http://51.75.118.151:20299/cctvhjjc.m3u8",
-      "category": "央视频道",
-      "host": "51.75.118.151",
-      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-      "source_line": 3,
-      "failure_class": "hard",
-      "http_status": 200,
-      "evidence": "HTTP 200；UA=okhttp；Content-Type=application/vnd.apple.mpegurl；重定向 0 次",
-      "decisive_failures": 3,
-      "removed_at": "2026-10-26T19:00:04Z",
-      "last_checked": "2026-10-26T18:48:30Z"
+      "last_checked": "2026-10-27T17:35:37Z"
     },
     {
       "name": "🔄经典老歌[刷新就是新内容]",
@@ -1746,9 +1802,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 0 次",
-      "decisive_failures": 4,
+      "decisive_failures": 5,
       "removed_at": "2026-10-26T03:10:37Z",
-      "last_checked": "2026-10-26T18:48:53Z"
+      "last_checked": "2026-10-27T17:36:50Z"
     },
     {
       "name": "新疆汉语体育健康",
@@ -1760,9 +1816,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 4,
+      "decisive_failures": 5,
       "removed_at": "2026-10-26T03:10:37Z",
-      "last_checked": "2026-10-26T18:47:44Z"
+      "last_checked": "2026-10-27T17:35:54Z"
     },
     {
       "name": "斗鱼音乐MV频道（自助点播）",
@@ -1773,10 +1829,10 @@
       "source_line": 3,
       "failure_class": "hard",
       "http_status": 200,
-      "evidence": "HTTP 200；UA=Lavf；Content-Type=video/x-flv；重定向 1 次",
-      "decisive_failures": 4,
+      "evidence": "HTTP 200；UA=Mozilla；Content-Type=video/x-flv；重定向 1 次",
+      "decisive_failures": 5,
       "removed_at": "2026-10-26T03:10:37Z",
-      "last_checked": "2026-10-26T18:48:41Z"
+      "last_checked": "2026-10-27T17:36:47Z"
     },
     {
       "name": "周星驰影院",
@@ -1788,23 +1844,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 4,
+      "decisive_failures": 5,
       "removed_at": "2026-10-26T03:10:37Z",
-      "last_checked": "2026-10-26T18:58:42Z"
-    },
-    {
-      "name": "中国教育3",
-      "url": "http://198.204.228.26/live/cetv3.m3u8",
-      "category": "教育纪实",
-      "host": "198.204.228.26",
-      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-      "source_line": 3,
-      "failure_class": "hard",
-      "http_status": 404,
-      "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 1 次",
-      "decisive_failures": 4,
-      "removed_at": "2026-10-26T03:10:37Z",
-      "last_checked": "2026-10-26T18:58:42Z"
+      "last_checked": "2026-10-27T17:41:50Z"
     },
     {
       "name": "【贤于葛格】最会讲电影的贤于来啦",
@@ -1816,9 +1858,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=未知；重定向 1 次",
-      "decisive_failures": 9,
+      "decisive_failures": 10,
       "removed_at": "2026-10-26T03:10:37Z",
-      "last_checked": "2026-10-26T18:47:31Z"
+      "last_checked": "2026-10-27T17:35:45Z"
     },
     {
       "name": "【电影黑匣子】用心去解读每一部电影",
@@ -1830,9 +1872,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=video/x-flv；重定向 1 次",
-      "decisive_failures": 4,
+      "decisive_failures": 5,
       "removed_at": "2026-10-26T03:10:37Z",
-      "last_checked": "2026-10-26T18:47:51Z"
+      "last_checked": "2026-10-27T17:35:57Z"
     },
     {
       "name": "CHC影迷电影",
@@ -1844,9 +1886,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 4,
+      "decisive_failures": 5,
       "removed_at": "2026-10-26T03:10:37Z",
-      "last_checked": "2026-10-26T18:47:52Z"
+      "last_checked": "2026-10-27T17:36:00Z"
     },
     {
       "name": "tvOKEY",
@@ -1858,9 +1900,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 0 次",
-      "decisive_failures": 6,
+      "decisive_failures": 7,
       "removed_at": "2026-10-25T02:31:05Z",
-      "last_checked": "2026-10-26T18:58:45Z"
+      "last_checked": "2026-10-27T17:41:52Z"
     },
     {
       "name": "tv6",
@@ -1872,9 +1914,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=未知；重定向 0 次",
-      "decisive_failures": 6,
+      "decisive_failures": 7,
       "removed_at": "2026-10-25T02:31:05Z",
-      "last_checked": "2026-10-26T18:58:45Z"
+      "last_checked": "2026-10-27T17:41:50Z"
     },
     {
       "name": "tV 6",
@@ -1886,9 +1928,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=未知；重定向 0 次",
-      "decisive_failures": 6,
+      "decisive_failures": 7,
       "removed_at": "2026-10-25T02:31:05Z",
-      "last_checked": "2026-10-26T18:58:47Z"
+      "last_checked": "2026-10-27T17:41:54Z"
     },
     {
       "name": "Sukan RTM",
@@ -1900,9 +1942,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=未知；重定向 0 次",
-      "decisive_failures": 6,
+      "decisive_failures": 7,
       "removed_at": "2026-10-25T02:31:05Z",
-      "last_checked": "2026-10-26T18:58:47Z"
+      "last_checked": "2026-10-27T17:41:55Z"
     },
     {
       "name": "Salam Baitullah 2026",
@@ -1914,9 +1956,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=未知；重定向 0 次",
-      "decisive_failures": 6,
+      "decisive_failures": 7,
       "removed_at": "2026-10-25T02:31:05Z",
-      "last_checked": "2026-10-26T18:58:47Z"
+      "last_checked": "2026-10-27T17:41:55Z"
     },
     {
       "name": "RTM World",
@@ -1928,9 +1970,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=未知；重定向 0 次",
-      "decisive_failures": 6,
+      "decisive_failures": 7,
       "removed_at": "2026-10-25T02:31:05Z",
-      "last_checked": "2026-10-26T18:58:47Z"
+      "last_checked": "2026-10-27T17:41:55Z"
     },
     {
       "name": "Dewan Negara",
@@ -1942,9 +1984,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=未知；重定向 0 次",
-      "decisive_failures": 6,
+      "decisive_failures": 7,
       "removed_at": "2026-10-25T02:31:05Z",
-      "last_checked": "2026-10-26T18:58:47Z"
+      "last_checked": "2026-10-27T17:41:56Z"
     },
     {
       "name": "翡翠台4K(多音轨字幕)",
@@ -1956,9 +1998,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=application/vnd.apple.mpegurl；重定向 0 次",
-      "decisive_failures": 7,
+      "decisive_failures": 8,
       "removed_at": "2026-10-24T16:08:29Z",
-      "last_checked": "2026-10-26T18:58:47Z"
+      "last_checked": "2026-10-27T17:59:55Z"
     },
     {
       "name": "宁夏卫视",
@@ -1970,23 +2012,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 1 次",
-      "decisive_failures": 7,
+      "decisive_failures": 8,
       "removed_at": "2026-10-24T16:08:29Z",
-      "last_checked": "2026-10-26T18:58:47Z"
-    },
-    {
-      "name": "中国天气",
-      "url": "http://www.20260809.xyz:1234/959986621",
-      "category": "央视频道",
-      "host": "www.20260809.xyz",
-      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-      "source_line": 3,
-      "failure_class": "hard",
-      "http_status": 200,
-      "evidence": "HTTP 200；UA=Mozilla；Content-Type=application/json;charset=UTF-8；重定向 0 次",
-      "decisive_failures": 7,
-      "removed_at": "2026-10-24T16:08:29Z",
-      "last_checked": "2026-10-26T18:58:48Z"
+      "last_checked": "2026-10-27T17:59:55Z"
     },
     {
       "name": "中国天气",
@@ -1998,23 +2026,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=application/json;charset=UTF-8；重定向 0 次",
-      "decisive_failures": 7,
+      "decisive_failures": 8,
       "removed_at": "2026-10-24T16:08:29Z",
-      "last_checked": "2026-10-26T18:58:49Z"
-    },
-    {
-      "name": "TV4",
-      "url": "https://stream.ads.ottera.tv/playlist.m3u8?network_id=644",
-      "category": "海外频道",
-      "host": "stream.ads.ottera.tv",
-      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-      "source_line": 3,
-      "failure_class": "hard",
-      "http_status": 200,
-      "evidence": "HTTP 200；UA=Mozilla；Content-Type=application/vnd.apple.mpegurl；重定向 0 次",
-      "decisive_failures": 7,
-      "removed_at": "2026-10-24T16:08:29Z",
-      "last_checked": "2026-10-26T18:58:49Z"
+      "last_checked": "2026-10-27T17:59:55Z"
     },
     {
       "name": "BRTV体育休闲",
@@ -2026,9 +2040,9 @@
       "failure_class": "hard",
       "http_status": 302,
       "evidence": "HTTP 302；UA=Lavf；Content-Type=text/plain; charset=utf-8；重定向 1 次",
-      "decisive_failures": 8,
+      "decisive_failures": 9,
       "removed_at": "2026-10-24T02:54:14Z",
-      "last_checked": "2026-10-26T18:58:49Z"
+      "last_checked": "2026-10-27T17:59:56Z"
     },
     {
       "name": "浙江卫视4K",
@@ -2040,9 +2054,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=application/x-mpegURL；重定向 0 次",
-      "decisive_failures": 9,
+      "decisive_failures": 10,
       "removed_at": "2026-10-23T16:55:36Z",
-      "last_checked": "2026-10-26T18:58:49Z"
+      "last_checked": "2026-10-27T17:59:58Z"
     },
     {
       "name": "康巴卫视",
@@ -2054,9 +2068,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html; charset=utf-8；重定向 0 次",
-      "decisive_failures": 9,
+      "decisive_failures": 10,
       "removed_at": "2026-10-23T16:55:36Z",
-      "last_checked": "2026-10-26T18:58:49Z"
+      "last_checked": "2026-10-27T17:59:58Z"
     },
     {
       "name": "厦门卫视",
@@ -2068,9 +2082,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html; charset=utf-8；重定向 0 次",
-      "decisive_failures": 9,
+      "decisive_failures": 10,
       "removed_at": "2026-10-23T16:55:36Z",
-      "last_checked": "2026-10-26T18:58:49Z"
+      "last_checked": "2026-10-27T17:59:58Z"
     },
     {
       "name": "丰顺综合",
@@ -2082,9 +2096,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html; charset=utf-8；重定向 0 次",
-      "decisive_failures": 9,
+      "decisive_failures": 10,
       "removed_at": "2026-10-23T16:55:36Z",
-      "last_checked": "2026-10-26T18:58:49Z"
+      "last_checked": "2026-10-27T17:59:58Z"
     },
     {
       "name": "东莞生活资讯",
@@ -2096,9 +2110,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 0 次",
-      "decisive_failures": 9,
+      "decisive_failures": 10,
       "removed_at": "2026-10-23T16:55:36Z",
-      "last_checked": "2026-10-26T18:58:50Z"
+      "last_checked": "2026-10-27T17:59:58Z"
     },
     {
       "name": "东方卫视",
@@ -2110,9 +2124,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html; charset=utf-8；重定向 0 次",
-      "decisive_failures": 9,
+      "decisive_failures": 10,
       "removed_at": "2026-10-23T16:55:36Z",
-      "last_checked": "2026-10-26T18:58:51Z"
+      "last_checked": "2026-10-27T17:59:58Z"
     },
     {
       "name": "上海卫视4K",
@@ -2124,9 +2138,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html; charset=utf-8；重定向 0 次",
-      "decisive_failures": 9,
+      "decisive_failures": 10,
       "removed_at": "2026-10-23T16:55:36Z",
-      "last_checked": "2026-10-26T18:58:52Z"
+      "last_checked": "2026-10-27T17:59:59Z"
     },
     {
       "name": "CCTV4K",
@@ -2138,9 +2152,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html; charset=utf-8；重定向 0 次",
-      "decisive_failures": 9,
+      "decisive_failures": 10,
       "removed_at": "2026-10-23T16:55:36Z",
-      "last_checked": "2026-10-26T18:58:52Z"
+      "last_checked": "2026-10-27T18:00:02Z"
     },
     {
       "name": "邵氏电影",
@@ -2152,9 +2166,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 0 次",
-      "decisive_failures": 10,
+      "decisive_failures": 11,
       "removed_at": "2026-10-22T23:13:19Z",
-      "last_checked": "2026-10-26T18:58:55Z"
+      "last_checked": "2026-10-27T18:00:02Z"
     },
     {
       "name": "邵氏武侠",
@@ -2166,9 +2180,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 0 次",
-      "decisive_failures": 10,
+      "decisive_failures": 11,
       "removed_at": "2026-10-22T23:13:19Z",
-      "last_checked": "2026-10-26T18:58:55Z"
+      "last_checked": "2026-10-27T18:00:02Z"
     },
     {
       "name": "邵氏喜剧",
@@ -2180,9 +2194,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 0 次",
-      "decisive_failures": 10,
+      "decisive_failures": 11,
       "removed_at": "2026-10-22T23:13:19Z",
-      "last_checked": "2026-10-26T18:58:55Z"
+      "last_checked": "2026-10-27T18:00:02Z"
     },
     {
       "name": "邵氏动作",
@@ -2194,9 +2208,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 0 次",
-      "decisive_failures": 10,
+      "decisive_failures": 11,
       "removed_at": "2026-10-22T23:13:19Z",
-      "last_checked": "2026-10-26T18:58:56Z"
+      "last_checked": "2026-10-27T18:00:03Z"
     },
     {
       "name": "翡翠台",
@@ -2208,9 +2222,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=application/x-mpegURL；重定向 0 次",
-      "decisive_failures": 10,
+      "decisive_failures": 11,
       "removed_at": "2026-10-22T23:13:19Z",
-      "last_checked": "2026-10-26T18:58:58Z"
+      "last_checked": "2026-10-27T18:00:06Z"
     },
     {
       "name": "海峡卫视",
@@ -2222,9 +2236,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html; charset=utf-8；重定向 0 次",
-      "decisive_failures": 10,
+      "decisive_failures": 11,
       "removed_at": "2026-10-22T23:13:19Z",
-      "last_checked": "2026-10-26T18:58:58Z"
+      "last_checked": "2026-10-27T18:00:07Z"
     },
     {
       "name": "五华综合",
@@ -2236,9 +2250,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html; charset=utf-8；重定向 0 次",
-      "decisive_failures": 11,
+      "decisive_failures": 12,
       "removed_at": "2026-10-22T23:13:19Z",
-      "last_checked": "2026-10-26T18:58:59Z"
+      "last_checked": "2026-10-27T18:00:07Z"
     },
     {
       "name": "MBC Andong (안동 MBC) (360p) [Not 24/7]",
@@ -2250,9 +2264,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=application/vnd.apple.mpegurl；重定向 0 次",
-      "decisive_failures": 10,
+      "decisive_failures": 11,
       "removed_at": "2026-10-22T23:13:19Z",
-      "last_checked": "2026-10-26T18:59:00Z"
+      "last_checked": "2026-10-27T18:00:07Z"
     },
     {
       "name": "CCTV1",
@@ -2264,9 +2278,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/html; charset=UTF-8；重定向 0 次",
-      "decisive_failures": 10,
+      "decisive_failures": 11,
       "removed_at": "2026-10-22T23:13:19Z",
-      "last_checked": "2026-10-26T18:59:01Z"
+      "last_checked": "2026-10-27T18:00:07Z"
     },
     {
       "name": "补番目录V的直播间",
@@ -2278,9 +2292,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=未知；重定向 1 次",
-      "decisive_failures": 12,
+      "decisive_failures": 13,
       "removed_at": "2026-10-22T19:16:33Z",
-      "last_checked": "2026-10-26T18:59:01Z"
+      "last_checked": "2026-10-27T18:00:08Z"
     },
     {
       "name": "福建音乐",
@@ -2292,9 +2306,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html; charset=utf-8；重定向 0 次",
-      "decisive_failures": 12,
+      "decisive_failures": 13,
       "removed_at": "2026-10-22T19:16:33Z",
-      "last_checked": "2026-10-26T18:59:02Z"
+      "last_checked": "2026-10-27T18:00:08Z"
     },
     {
       "name": "神探狄仁杰第三部",
@@ -2306,9 +2320,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 1 次",
-      "decisive_failures": 12,
+      "decisive_failures": 13,
       "removed_at": "2026-10-22T19:16:33Z",
-      "last_checked": "2026-10-26T18:59:03Z"
+      "last_checked": "2026-10-27T18:00:09Z"
     },
     {
       "name": "神探狄仁杰第一部",
@@ -2320,9 +2334,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 1 次",
-      "decisive_failures": 12,
+      "decisive_failures": 13,
       "removed_at": "2026-10-22T19:16:33Z",
-      "last_checked": "2026-10-26T18:59:04Z"
+      "last_checked": "2026-10-27T18:00:10Z"
     },
     {
       "name": "猫和老鼠",
@@ -2334,9 +2348,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 1 次",
-      "decisive_failures": 12,
+      "decisive_failures": 13,
       "removed_at": "2026-10-22T19:16:33Z",
-      "last_checked": "2026-10-26T18:59:05Z"
+      "last_checked": "2026-10-27T18:00:11Z"
     },
     {
       "name": "湖北音乐",
@@ -2348,9 +2362,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html; charset=utf-8；重定向 0 次",
-      "decisive_failures": 12,
+      "decisive_failures": 13,
       "removed_at": "2026-10-22T19:16:33Z",
-      "last_checked": "2026-10-26T18:59:06Z"
+      "last_checked": "2026-10-27T18:00:12Z"
     },
     {
       "name": "深圳龙岗",
@@ -2362,9 +2376,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 0 次",
-      "decisive_failures": 12,
+      "decisive_failures": 13,
       "removed_at": "2026-10-22T19:16:33Z",
-      "last_checked": "2026-10-26T18:59:09Z"
+      "last_checked": "2026-10-27T18:00:14Z"
     },
     {
       "name": "河南音乐",
@@ -2376,23 +2390,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html; charset=utf-8；重定向 0 次",
-      "decisive_failures": 12,
+      "decisive_failures": 13,
       "removed_at": "2026-10-22T19:16:33Z",
-      "last_checked": "2026-10-26T18:59:10Z"
-    },
-    {
-      "name": "江阴新闻综合",
-      "url": "http://www.20260809.xyz:1234/955227979",
-      "category": "央视频道",
-      "host": "www.20260809.xyz",
-      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-      "source_line": 3,
-      "failure_class": "hard",
-      "http_status": 200,
-      "evidence": "HTTP 200；UA=Mozilla；Content-Type=application/json;charset=UTF-8；重定向 0 次",
-      "decisive_failures": 12,
-      "removed_at": "2026-10-22T19:16:33Z",
-      "last_checked": "2026-10-26T18:59:10Z"
+      "last_checked": "2026-10-27T18:00:15Z"
     },
     {
       "name": "江阴新闻综合",
@@ -2404,9 +2404,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=application/json;charset=UTF-8；重定向 0 次",
-      "decisive_failures": 11,
+      "decisive_failures": 12,
       "removed_at": "2026-10-22T19:16:33Z",
-      "last_checked": "2026-10-26T18:59:12Z"
+      "last_checked": "2026-10-27T18:00:18Z"
     },
     {
       "name": "星海璃幻V的直播间",
@@ -2418,23 +2418,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=未知；重定向 1 次",
-      "decisive_failures": 12,
+      "decisive_failures": 13,
       "removed_at": "2026-10-22T19:16:33Z",
-      "last_checked": "2026-10-26T18:59:14Z"
-    },
-    {
-      "name": "新动漫",
-      "url": "http://www.20260809.xyz:1234/961930269",
-      "category": "影视少儿",
-      "host": "www.20260809.xyz",
-      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-      "source_line": 3,
-      "failure_class": "hard",
-      "http_status": 200,
-      "evidence": "HTTP 200；UA=Mozilla；Content-Type=application/json;charset=UTF-8；重定向 0 次",
-      "decisive_failures": 12,
-      "removed_at": "2026-10-22T19:16:33Z",
-      "last_checked": "2026-10-26T18:59:14Z"
+      "last_checked": "2026-10-27T18:00:19Z"
     },
     {
       "name": "新动漫",
@@ -2446,9 +2432,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=application/json;charset=UTF-8；重定向 0 次",
-      "decisive_failures": 11,
+      "decisive_failures": 12,
       "removed_at": "2026-10-22T19:16:33Z",
-      "last_checked": "2026-10-26T18:59:15Z"
+      "last_checked": "2026-10-27T18:00:21Z"
     },
     {
       "name": "托腮少女猪五花",
@@ -2460,9 +2446,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=未知；重定向 1 次",
-      "decisive_failures": 12,
+      "decisive_failures": 13,
       "removed_at": "2026-10-22T19:16:33Z",
-      "last_checked": "2026-10-26T18:59:16Z"
+      "last_checked": "2026-10-27T18:00:23Z"
     },
     {
       "name": "广东3",
@@ -2474,9 +2460,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html; charset=utf-8；重定向 0 次",
-      "decisive_failures": 12,
+      "decisive_failures": 13,
       "removed_at": "2026-10-22T19:16:33Z",
-      "last_checked": "2026-10-26T18:59:17Z"
+      "last_checked": "2026-10-27T18:00:25Z"
     },
     {
       "name": "周润发",
@@ -2488,9 +2474,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 1 次",
-      "decisive_failures": 12,
+      "decisive_failures": 13,
       "removed_at": "2026-10-22T19:16:33Z",
-      "last_checked": "2026-10-26T18:59:18Z"
+      "last_checked": "2026-10-27T18:00:30Z"
     },
     {
       "name": "出格字幕组的直播间",
@@ -2502,9 +2488,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=未知；重定向 1 次",
-      "decisive_failures": 12,
+      "decisive_failures": 13,
       "removed_at": "2026-10-22T19:16:33Z",
-      "last_checked": "2026-10-26T18:59:21Z"
+      "last_checked": "2026-10-27T18:00:31Z"
     },
     {
       "name": "云浮综合",
@@ -2516,9 +2502,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=application/x-mpegURL；重定向 0 次",
-      "decisive_failures": 12,
+      "decisive_failures": 13,
       "removed_at": "2026-10-22T19:16:33Z",
-      "last_checked": "2026-10-26T18:59:23Z"
+      "last_checked": "2026-10-27T18:00:38Z"
     },
     {
       "name": "云浮文旅",
@@ -2530,9 +2516,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=application/x-mpegURL；重定向 0 次",
-      "decisive_failures": 12,
+      "decisive_failures": 13,
       "removed_at": "2026-10-22T19:16:33Z",
-      "last_checked": "2026-10-26T18:59:24Z"
+      "last_checked": "2026-10-27T18:00:40Z"
     },
     {
       "name": "东莞生活资讯",
@@ -2544,9 +2530,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 0 次",
-      "decisive_failures": 12,
+      "decisive_failures": 13,
       "removed_at": "2026-10-22T19:16:33Z",
-      "last_checked": "2026-10-26T18:59:27Z"
+      "last_checked": "2026-10-27T18:00:41Z"
     },
     {
       "name": "PBS KET2",
@@ -2558,9 +2544,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=application/vnd.apple.mpegurl；重定向 0 次",
-      "decisive_failures": 12,
+      "decisive_failures": 13,
       "removed_at": "2026-10-22T19:16:33Z",
-      "last_checked": "2026-10-26T18:59:28Z"
+      "last_checked": "2026-10-27T18:00:41Z"
     },
     {
       "name": "PBS KET World",
@@ -2572,9 +2558,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=application/vnd.apple.mpegurl；重定向 0 次",
-      "decisive_failures": 12,
+      "decisive_failures": 13,
       "removed_at": "2026-10-22T19:16:33Z",
-      "last_checked": "2026-10-26T18:59:28Z"
+      "last_checked": "2026-10-27T18:00:41Z"
     },
     {
       "name": "PBS KET Louisville KY (WKMJ-TV)",
@@ -2586,9 +2572,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=application/vnd.apple.mpegurl；重定向 0 次",
-      "decisive_failures": 12,
+      "decisive_failures": 13,
       "removed_at": "2026-10-22T19:16:33Z",
-      "last_checked": "2026-10-26T18:59:29Z"
+      "last_checked": "2026-10-27T18:00:42Z"
     },
     {
       "name": "KBS世界",
@@ -2600,9 +2586,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=未知；重定向 0 次",
-      "decisive_failures": 12,
+      "decisive_failures": 13,
       "removed_at": "2026-10-22T19:16:33Z",
-      "last_checked": "2026-10-26T18:59:29Z"
+      "last_checked": "2026-10-27T18:00:42Z"
     },
     {
       "name": "HOY国际财经台",
@@ -2614,9 +2600,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=text/plain; charset=utf-8；重定向 0 次",
-      "decisive_failures": 12,
+      "decisive_failures": 13,
       "removed_at": "2026-10-22T19:16:33Z",
-      "last_checked": "2026-10-26T18:59:32Z"
+      "last_checked": "2026-10-27T18:00:42Z"
     },
     {
       "name": "HOY国际财经台",
@@ -2628,9 +2614,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=text/plain；重定向 0 次",
-      "decisive_failures": 12,
+      "decisive_failures": 13,
       "removed_at": "2026-10-22T19:16:33Z",
-      "last_checked": "2026-10-26T18:59:34Z"
+      "last_checked": "2026-10-27T18:00:44Z"
     },
     {
       "name": "FIFA WC 3",
@@ -2642,9 +2628,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 0 次",
-      "decisive_failures": 12,
+      "decisive_failures": 13,
       "removed_at": "2026-10-22T19:16:33Z",
-      "last_checked": "2026-10-26T18:59:34Z"
+      "last_checked": "2026-10-27T18:00:45Z"
     },
     {
       "name": "FIFA WC 2",
@@ -2656,9 +2642,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 0 次",
-      "decisive_failures": 12,
+      "decisive_failures": 13,
       "removed_at": "2026-10-22T19:16:33Z",
-      "last_checked": "2026-10-26T18:59:35Z"
+      "last_checked": "2026-10-27T18:00:45Z"
     },
     {
       "name": "FIFA WC 1",
@@ -2670,9 +2656,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 0 次",
-      "decisive_failures": 12,
+      "decisive_failures": 13,
       "removed_at": "2026-10-22T19:16:33Z",
-      "last_checked": "2026-10-26T18:59:35Z"
+      "last_checked": "2026-10-27T18:00:45Z"
     },
     {
       "name": "DanceTVMinimalTechNL",
@@ -2684,9 +2670,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=未知；重定向 0 次",
-      "decisive_failures": 12,
+      "decisive_failures": 13,
       "removed_at": "2026-10-22T19:16:33Z",
-      "last_checked": "2026-10-26T18:59:35Z"
+      "last_checked": "2026-10-27T18:00:47Z"
     },
     {
       "name": "DanceTVEDMMainstageNL",
@@ -2698,9 +2684,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=未知；重定向 0 次",
-      "decisive_failures": 12,
+      "decisive_failures": 13,
       "removed_at": "2026-10-22T19:16:33Z",
-      "last_checked": "2026-10-26T18:59:35Z"
+      "last_checked": "2026-10-27T18:00:47Z"
     },
     {
       "name": "CBC Comedy",
@@ -2712,9 +2698,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=application/json；重定向 0 次",
-      "decisive_failures": 12,
+      "decisive_failures": 13,
       "removed_at": "2026-10-22T19:16:33Z",
-      "last_checked": "2026-10-26T18:59:36Z"
+      "last_checked": "2026-10-27T18:00:47Z"
     },
     {
       "name": "BFIFA WC 1",
@@ -2726,9 +2712,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 0 次",
-      "decisive_failures": 12,
+      "decisive_failures": 13,
       "removed_at": "2026-10-22T19:16:33Z",
-      "last_checked": "2026-10-26T18:59:37Z"
+      "last_checked": "2026-10-27T18:00:49Z"
     },
     {
       "name": "BBC EARTH",
@@ -2740,9 +2726,9 @@
       "failure_class": "hard",
       "http_status": 200,
       "evidence": "HTTP 200；UA=Mozilla；Content-Type=application/vnd.apple.mpegurl；重定向 0 次",
-      "decisive_failures": 12,
+      "decisive_failures": 13,
       "removed_at": "2026-10-22T19:16:33Z",
-      "last_checked": "2026-10-26T18:59:37Z"
+      "last_checked": "2026-10-27T18:00:50Z"
     },
     {
       "name": "2026功夫女足",
@@ -2754,9 +2740,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html; charset=utf-8；重定向 0 次",
-      "decisive_failures": 12,
+      "decisive_failures": 13,
       "removed_at": "2026-10-22T19:16:33Z",
-      "last_checked": "2026-10-26T18:59:37Z"
+      "last_checked": "2026-10-27T18:00:51Z"
     },
     {
       "name": "2026功夫 女足",
@@ -2768,9 +2754,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html; charset=utf-8；重定向 0 次",
-      "decisive_failures": 12,
+      "decisive_failures": 13,
       "removed_at": "2026-10-22T19:16:33Z",
-      "last_checked": "2026-10-26T18:59:38Z"
+      "last_checked": "2026-10-27T18:00:53Z"
     },
     {
       "name": "2001少林足球",
@@ -2782,9 +2768,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html; charset=utf-8；重定向 0 次",
-      "decisive_failures": 12,
+      "decisive_failures": 13,
       "removed_at": "2026-10-22T19:16:33Z",
-      "last_checked": "2026-10-26T18:59:39Z"
+      "last_checked": "2026-10-27T18:00:53Z"
     },
     {
       "name": "-汕尾生活",
@@ -2796,9 +2782,9 @@
       "failure_class": "hard",
       "http_status": 404,
       "evidence": "HTTP 404；尝试 5 次；Content-Type=text/html；重定向 0 次",
-      "decisive_failures": 12,
+      "decisive_failures": 13,
       "removed_at": "2026-10-22T19:16:33Z",
-      "last_checked": "2026-10-26T18:59:39Z"
+      "last_checked": "2026-10-27T18:00:54Z"
     }
   ]
 }
