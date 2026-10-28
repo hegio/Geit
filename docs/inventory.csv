@@ -1,6 +1,6 @@
 ﻿kind,name,url,status,http_status,detail
 source,https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt,https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt,reachable,200,
-source,https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg,https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg,reachable,200,存在含真实凭据的站点，已跳过
+source,https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg,https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg,reachable,200,存在含真实凭据的直播项，已跳过
 source,https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt,https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt,reachable,200,
 site,✈️TG频道@stymei,csp_Douban,requires_app,,需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放
 site,👖IPTV,https://jsnz.pages.dev/f/f05e3b39.js,requires_app,,需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放
@@ -41,6 +41,7 @@ live,👖裤佬YY直播,https://yy.445569.xyz/live.m3u,unverified,,播放能力�
 live,👖裤佬Twitch直播,https://twitch.445569.xyz/live.m3u,unverified,,播放能力需由 check_health.py 或影视 App 实测
 live,👖裤佬TikTok直播,https://tiktok.445569.xyz/live.m3u,unverified,,播放能力需由 check_health.py 或影视 App 实测
 live,🏆PPV体育赛事直播,https://www.korice.eu.org/ppv_m3u.php,unverified,,播放能力需由 check_health.py 或影视 App 实测
+live,🇰🇷韩国Panda直播,https://xiongmao.caonizuzong.indevs.in/all.m3u,unverified,,播放能力需由 check_health.py 或影视 App 实测
 live,🍿华视TV直播,https://445569.pages.dev/https://raw.githubusercontent.com/swhtv/111/refs/heads/main/%E5%8D%8E%E8%A7%86box%E5%8D%8E%E8%A7%86%E5%A4%A7%E5%85%A8swtv,unverified,,播放能力需由 check_health.py 或影视 App 实测
 live,🍿易发TV直播,https://445569.pages.dev/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt,unverified,,播放能力需由 check_health.py 或影视 App 实测
 live,🍿乌拉TV直播,https://ilook.epg.one/5CM5SY98BF24PL/2,unverified,,播放能力需由 check_health.py 或影视 App 实测

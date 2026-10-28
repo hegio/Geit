@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-24T19:27:16Z",
+  "updated": "2026-10-28T18:59:36Z",
   "repository": "hegio/Geit",
   "branch": "main",
   "count": 3,
@@ -24,11 +24,11 @@
       "status": "reachable",
       "http_status": 200,
       "content_type": "text/plain; charset=utf-8",
-      "bytes": 12976,
+      "bytes": 13552,
       "sites": 25,
-      "lives": 18,
+      "lives": 19,
       "channels": 0,
-      "detail": "存在含真实凭据的站点，已跳过"
+      "detail": "存在含真实凭据的直播项，已跳过"
     },
     {
       "source": "https://gh-proxy.org/https://raw.githubusercontent.com/cm851228/mytxt/267415aa49140e4ba61c5d4c5dea2c4787e2fd06/2027update.txt",

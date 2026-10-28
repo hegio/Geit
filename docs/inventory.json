@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-24T19:27:16Z",
+  "updated": "2026-10-28T18:59:36Z",
   "summary": {
     "sources": 3,
     "sites": 25,
-    "lives": 18,
-    "channels": 10225
+    "lives": 19,
+    "channels": 10209
   },
   "items": [
     {
@@ -21,7 +21,7 @@
       "url": "https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
       "status": "reachable",
       "http_status": 200,
-      "detail": "存在含真实凭据的站点，已跳过"
+      "detail": "存在含真实凭据的直播项，已跳过"
     },
     {
       "kind": "source",
@@ -339,6 +339,14 @@
       "kind": "live",
       "name": "🏆PPV体育赛事直播",
       "url": "https://www.korice.eu.org/ppv_m3u.php",
+      "status": "unverified",
+      "http_status": "",
+      "detail": "播放能力需由 check_health.py 或影视 App 实测"
+    },
+    {
+      "kind": "live",
+      "name": "🇰🇷韩国Panda直播",
+      "url": "https://xiongmao.caonizuzong.indevs.in/all.m3u",
       "status": "unverified",
       "http_status": "",
       "detail": "播放能力需由 check_health.py 或影视 App 实测"
