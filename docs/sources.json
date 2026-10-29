@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-28T18:59:36Z",
+  "updated": "2026-10-29T12:02:15Z",
   "repository": "hegio/Geit",
   "branch": "main",
   "count": 3,
@@ -24,9 +24,9 @@
       "status": "reachable",
       "http_status": 200,
       "content_type": "text/plain; charset=utf-8",
-      "bytes": 13552,
+      "bytes": 11888,
       "sites": 25,
-      "lives": 19,
+      "lives": 15,
       "channels": 0,
       "detail": "存在含真实凭据的直播项，已跳过"
     },

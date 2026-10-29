@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-28T18:59:36Z",
+  "updated": "2026-10-29T12:02:15Z",
   "summary": {
     "sources": 3,
     "sites": 25,
-    "lives": 19,
-    "channels": 10209
+    "lives": 15,
+    "channels": 10253
   },
   "items": [
     {
@@ -49,6 +49,14 @@
     },
     {
       "kind": "site",
+      "name": "👖聚合",
+      "url": "https://jsnz.pages.dev/f/4df9fb60.py",
+      "status": "requires_app",
+      "http_status": "",
+      "detail": "需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放"
+    },
+    {
+      "kind": "site",
       "name": "👖体育",
       "url": "https://jsnzkpg.de5.net/t4.json",
       "status": "unverified",
@@ -57,16 +65,8 @@
     },
     {
       "kind": "site",
-      "name": "👖韩国",
+      "name": "👖娱乐",
       "url": "https://jsnz.pages.dev/f/26511242.py",
-      "status": "requires_app",
-      "http_status": "",
-      "detail": "需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放"
-    },
-    {
-      "kind": "site",
-      "name": "👖聚合",
-      "url": "https://jsnz.pages.dev/f/4df9fb60.py",
       "status": "requires_app",
       "http_status": "",
       "detail": "需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放"
@@ -138,7 +138,7 @@
     {
       "kind": "site",
       "name": "👖APP",
-      "url": "https://jsnz.pages.dev/f/04b5c0b4.js",
+      "url": "https://jsnz.pages.dev/f/77cec76a.py",
       "status": "requires_app",
       "http_status": "",
       "detail": "需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放"
@@ -347,38 +347,6 @@
       "kind": "live",
       "name": "🇰🇷韩国Panda直播",
       "url": "https://xiongmao.caonizuzong.indevs.in/all.m3u",
-      "status": "unverified",
-      "http_status": "",
-      "detail": "播放能力需由 check_health.py 或影视 App 实测"
-    },
-    {
-      "kind": "live",
-      "name": "🍿华视TV直播",
-      "url": "https://445569.pages.dev/https://raw.githubusercontent.com/swhtv/111/refs/heads/main/%E5%8D%8E%E8%A7%86box%E5%8D%8E%E8%A7%86%E5%A4%A7%E5%85%A8swtv",
-      "status": "unverified",
-      "http_status": "",
-      "detail": "播放能力需由 check_health.py 或影视 App 实测"
-    },
-    {
-      "kind": "live",
-      "name": "🍿易发TV直播",
-      "url": "https://445569.pages.dev/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-      "status": "unverified",
-      "http_status": "",
-      "detail": "播放能力需由 check_health.py 或影视 App 实测"
-    },
-    {
-      "kind": "live",
-      "name": "🍿乌拉TV直播",
-      "url": "https://ilook.epg.one/5CM5SY98BF24PL/2",
-      "status": "unverified",
-      "http_status": "",
-      "detail": "播放能力需由 check_health.py 或影视 App 实测"
-    },
-    {
-      "kind": "live",
-      "name": "🍿全球TV直播",
-      "url": "https://seep.eu.org/iptv-org.github.io/iptv/index.m3u",
       "status": "unverified",
       "http_status": "",
       "detail": "播放能力需由 check_health.py 或影视 App 实测"

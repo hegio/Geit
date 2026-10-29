@@ -4,7 +4,7 @@
   "wallpaper": "",
   "sites": [
     {
-      "key": "裤佬片单导航",
+      "key": "裤佬片单",
       "name": "✈️TG频道@stymei",
       "type": 3,
       "api": "csp_Douban",
@@ -22,21 +22,21 @@
     },
     {
       "key": "2",
+      "name": "👖聚合",
+      "type": 3,
+      "api": "https://jsnz.pages.dev/f/4df9fb60.py"
+    },
+    {
+      "key": "3",
       "name": "👖体育",
       "type": 1,
       "api": "https://jsnzkpg.de5.net/t4.json"
     },
     {
-      "key": "韩国",
-      "name": "👖韩国",
+      "key": "4",
+      "name": "👖娱乐",
       "type": 3,
       "api": "https://jsnz.pages.dev/f/26511242.py"
-    },
-    {
-      "key": "聚合",
-      "name": "👖聚合",
-      "type": 3,
-      "api": "https://jsnz.pages.dev/f/4df9fb60.py"
     },
     {
       "key": "5",
@@ -45,31 +45,31 @@
       "api": "https://jsnz.pages.dev/f/9e53615c.py"
     },
     {
-      "key": "采集",
+      "key": "6",
       "name": "👖采集",
       "type": 3,
       "api": "https://jsnz.pages.dev/f/72b7239d.py"
     },
     {
-      "key": "11",
+      "key": "7",
       "name": "👖短剧",
       "type": 3,
       "api": "https://jsnz.pages.dev/f/29b94aff.py"
     },
     {
-      "key": "12",
+      "key": "8",
       "name": "👖音乐",
       "type": 3,
       "api": "https://jsnz.pages.dev/f/eded33cf.py"
     },
     {
-      "key": "13",
+      "key": "9",
       "name": "👖动漫",
       "type": 3,
       "api": "https://jsnz.pages.dev/f/7e20bdb7.py"
     },
     {
-      "key": "3",
+      "key": "10",
       "name": "👖奈飞",
       "type": 1,
       "api": "https://api.wsyzy.net/api.php/provide/vod",
@@ -82,86 +82,86 @@
       ]
     },
     {
-      "key": "网盘",
+      "key": "11",
       "name": "👖网盘",
       "type": 3,
       "api": "https://jsnz.pages.dev/f/261c1664.py"
     },
     {
-      "key": "4k",
+      "key": "12",
       "name": "👖4k",
       "type": 3,
       "api": "https://jsnz.pages.dev/f/af676592.py"
     },
     {
-      "key": "6",
+      "key": "13",
       "name": "👖APP",
       "type": 3,
-      "api": "https://jsnz.pages.dev/f/04b5c0b4.js"
+      "api": "https://jsnz.pages.dev/f/77cec76a.py"
     },
     {
-      "key": "7",
+      "key": "14",
       "name": "👖PY",
       "type": 3,
       "api": "https://jsnz.pages.dev/f/e1aeef83.py"
     },
     {
-      "key": "8",
+      "key": "15",
       "name": "👖JS",
       "type": 3,
       "api": "https://jsnz.pages.dev/f/f7b46c7f.js"
     },
     {
-      "key": "9",
+      "key": "16",
       "name": "👖PHP",
       "type": 4,
       "api": "http://jiduo.3116598.xyz/PHP/pkty.php"
     },
     {
-      "key": "emby",
+      "key": "18",
       "name": "👖Emby",
       "type": 3,
       "api": "https://jsnz.pages.dev/f/696546f2.js"
     },
     {
-      "key": "API",
+      "key": "19",
       "name": "👖API",
       "type": 3,
       "api": "https://jsnz.pages.dev/f/cf616b2f.py"
     },
     {
-      "key": "14",
+      "key": "20",
       "name": "👖少儿",
       "type": 3,
       "api": "https://jsnz.pages.dev/f/6b9e7fca.js"
     },
     {
-      "key": "15",
+      "key": "21",
       "name": "👖听书",
       "type": 3,
       "api": "https://jsnz.pages.dev/f/d44dd2cf.py"
     },
     {
-      "key": "17",
+      "key": "22",
       "name": "👖广播",
       "type": 3,
       "api": "https://jsnz.pages.dev/f/cec31b11.py"
     },
     {
-      "key": "18",
+      "key": "23",
       "name": "👖有声",
       "type": 3,
       "api": "https://jsnz.pages.dev/f/e126d1e4.py"
     },
     {
-      "key": "19",
+      "key": "24",
       "name": "👖戏曲",
       "type": 3,
       "api": "https://iduo.us.ci/gt/leevi0709/one/main/js/drpy2.min.js",
       "ext": "https://iduo.us.ci/gt/leevi0709/one/main/js/%E6%88%8F%E6%9B%B2%E5%A4%A7%E5%85%A8.js"
     },
     {
-      "key": "测试",
+      "key": "测试专用",
       "name": "📌测试",
       "type": 3,
       "api": "https://jsnz.pages.dev/f/e7124867.py"
@@ -256,30 +256,6 @@
       "name": "🇰🇷韩国Panda直播",
       "type": 0,
       "url": "https://xiongmao.caonizuzong.indevs.in/all.m3u",
-      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg"
-    },
-    {
-      "name": "🍿华视TV直播",
-      "type": 1,
-      "url": "https://445569.pages.dev/https://raw.githubusercontent.com/swhtv/111/refs/heads/main/%E5%8D%8E%E8%A7%86box%E5%8D%8E%E8%A7%86%E5%A4%A7%E5%85%A8swtv",
-      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg"
-    },
-    {
-      "name": "🍿易发TV直播",
-      "type": 1,
-      "url": "https://445569.pages.dev/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg"
-    },
-    {
-      "name": "🍿乌拉TV直播",
-      "type": 0,
-      "url": "https://ilook.epg.one/5CM5SY98BF24PL/2",
-      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg"
-    },
-    {
-      "name": "🍿全球TV直播",
-      "type": 0,
-      "url": "https://seep.eu.org/iptv-org.github.io/iptv/index.m3u",
       "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg"
     },
     {
