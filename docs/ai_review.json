@@ -1,12 +1,12 @@
 {
-  "updated": "2026-10-28T18:57:50Z",
+  "updated": "2026-10-29T18:29:06Z",
   "mode": "auto",
   "safety": "AI 只生成分类建议和错误解释；不参与失效判定、不修改 merged.m3u、不写入 removable.json、不接收含凭据的完整 URL。",
   "inputs": {
-    "pending_channels": 4,
+    "pending_channels": 3,
     "failure_clusters": 30,
     "removable": {
-      "flagged": 2,
+      "flagged": 0,
       "pending": 0,
       "policy": {
         "fail_streak_limit": 3,
@@ -28,40 +28,34 @@
         "channel_key": "zgqx",
         "category": "待人工确认",
         "confidence": "low",
-        "reason": "频道名为拼音缩写且无可识别台标信息，无法确认真实身份，不作猜测"
+        "reason": "频道名仅为拼音缩写，无法确认对应频道身份；虽然位于“央卫63”分组，但该分组同时涵盖央视与卫视，不能据此判定具体归属。"
       },
       {
         "channel_key": "hyzxc",
         "category": "待人工确认",
         "confidence": "low",
-        "reason": "频道名为拼音缩写，缺少台名、分组语义等佐证，无法归入具体类别"
-      },
-      {
-        "channel_key": "hycxldb",
-        "category": "待人工确认",
-        "confidence": "low",
-        "reason": "频道名仅含拼音缩写，无法判断是否为影视、体育或其他频道"
+        "reason": "频道名“hyzxc”无法映射到确定的央视、卫视或地方频道，缺少台标、EPG 或频道中文名佐证。"
       },
       {
         "channel_key": "hylzy",
         "category": "待人工确认",
         "confidence": "low",
-        "reason": "频道名仅含拼音缩写，来源分组“央卫63”不足以确认频道归属"
+        "reason": "频道名“hylzy”身份不明，仅凭“央卫63”分组不足以确认其为央视或卫视，需人工核对原始播放内容。"
       }
     ],
-    "incident_summary": "失败以软失败为主：403/429集中在 virtual.anbox.dpdns.org 与 m.061899.xyz，多为鉴权或限流；大量 http_status 为 None，集中在 120.87.19.109、njdm.i234.me、xch819.cn、8.134.175.232 等域名，多为连接超时、DNS或网络不可达；567/409等异常状态码集中在 k.061899.xyz、c.123.rr.kg；另有 iesdouyin.com 返回200但播放未验证。均不能判定为失效。",
+    "incident_summary": "失败以软失败为主：t33.cdn2020.com 大量返回 451（内容审查/区域不可提供），另有多个域名返回无状态码连接错误；virtual.anbox.dpdns.org 的 403 集中在港澳台、央视；061899.xyz 出现 567 与 429；38.75.136.137 为 200 但探针失败；iesdouyin.com 为 200 但播放未验证。这些均不能判定为失效。",
     "recommended_actions": [
-      "对 http_status 为 None 的域名复核网络连通性、DNS解析与源站可用性",
-      "对 403/429 域名检查请求头、UA、防盗链与访问频控，确认是否需要降低并发或更换取流方式",
-      "对 567/409 等异常状态码源复核源站协议、鉴权参数与接口兼容性",
-      "对 playback_unverified 的 iesdouyin.com 内容复核播放协议兼容性与实际可播性",
-      "保留这些条目并继续观察，必要时联系源站或更换备用线路"
+      "优先复核 451 集中的 t33.cdn2020.com，确认是否因源站合规限制或 CDN 区域策略导致，必要时更换访问线路或源段。",
+      "对无状态码的连接错误（如 120.87.19.109、njdm.i234.me、xch819.cn、my1nas.dpdns.org）做连通性与 DNS 复核，区分网络抖动与源站异常。",
+      "复核 virtual.anbox.dpdns.org 的 403 是否与防盗链、UA 校验或访问频控有关，避免误判。",
+      "对 200 但 probe_failed 的 38.75.136.137 检查编码格式、容器与探针超时设置。",
+      "对 iesdouyin.com 的 playback_unverified 项检查播放协议与鉴权方式，确认是否需要请求头或 Cookie。",
+      "对 567、429、409 等异常做二次抽样探测，避免把临时限流当作源站失效。"
     ],
     "warnings": [
-      "403/429 属于访问受限，不代表源失效",
-      "http_status 为 None 多为连接层问题，不能直接判定失效",
-      "未输出任何凭据，也未给出删除结论",
-      "待归类频道名称均为缩写，已统一标记为待人工确认，未猜测频道身份"
+      "451、403、429、409、5xx、超时及无状态码连接错误均不代表直播源失效，禁止直接删除。",
+      "待归类频道名称均为拼音缩写且缺少身份佐证，已归入“待人工确认”，未猜测频道身份。",
+      "涉及“私密频道”“JAV點播”等分组仅作错误聚类说明，不输出任何凭据，也不提供内容判断。"
     ]
   }
 }

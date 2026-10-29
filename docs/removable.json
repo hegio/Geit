@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-28T18:57:43Z",
+  "updated": "2026-10-29T18:29:01Z",
   "policy": {
     "fail_streak_limit": 3,
     "scope": "仅统计 geit-fish 中的 live 直播源；频道抽样轮转，不参与计数",
@@ -10,173 +10,22 @@
     "channel_urls": "真正会被停止录入的是 merged.m3u 中的单个频道 URL，见 dead_channels.json"
   },
   "summary": {
-    "flagged": 2,
+    "flagged": 0,
     "pending": 0,
-    "clean": 16
+    "clean": 15
   },
-  "removable": [
-    {
-      "url": "https://445569.pages.dev/https://raw.githubusercontent.com/swhtv/111/refs/heads/main/%E5%8D%8E%E8%A7%86box%E5%8D%8E%E8%A7%86%E5%A4%A7%E5%85%A8swtv",
-      "name": "🍿华视TV直播",
-      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
-      "count": 13,
-      "history": [
-        {
-          "checked_at": "2026-10-26T17:44:45Z",
-          "status": "probe_failed",
-          "detail": "https://445569.pages.dev/https://raw.githubusercontent.com/swhtv/111/refs/heads/main/%E5%8D%8E%E8%A7%86box%E5%8D%8E%E8%A7%86%E5%A4%A7%E5%85%A8swtv: Invalid data found when processing input",
-          "failure_class": "hard",
-          "http_status": 200,
-          "host": "445569.pages.dev"
-        },
-        {
-          "checked_at": "2026-10-27T17:03:18Z",
-          "status": "probe_failed",
-          "detail": "https://445569.pages.dev/https://raw.githubusercontent.com/swhtv/111/refs/heads/main/%E5%8D%8E%E8%A7%86box%E5%8D%8E%E8%A7%86%E5%A4%A7%E5%85%A8swtv: Invalid data found when processing input",
-          "failure_class": "hard",
-          "http_status": 200,
-          "host": "445569.pages.dev"
-        },
-        {
-          "checked_at": "2026-10-28T17:30:06Z",
-          "status": "probe_failed",
-          "detail": "https://445569.pages.dev/https://raw.githubusercontent.com/swhtv/111/refs/heads/main/%E5%8D%8E%E8%A7%86box%E5%8D%8E%E8%A7%86%E5%A4%A7%E5%85%A8swtv: Invalid data found when processing input",
-          "failure_class": "hard",
-          "http_status": 200,
-          "host": "445569.pages.dev"
-        }
-      ],
-      "removable": true,
-      "failure_class": "hard",
-      "host": "445569.pages.dev"
-    },
-    {
-      "url": "https://445569.pages.dev/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-      "name": "🍿易发TV直播",
-      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
-      "count": 13,
-      "history": [
-        {
-          "checked_at": "2026-10-26T17:44:45Z",
-          "status": "probe_failed",
-          "detail": "播放列表可下载，但采样分片均不可解码：https://445569.pages.dev/https:/raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/盗源狗si全家 全家下地狱: Server returned 404 Not Found | https://445569.pages.dev/https:/raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/盗源狗si全家 全家下地狱: Server returned 404 Not Found | https://4",
-          "failure_class": "hard",
-          "http_status": 200,
-          "host": "445569.pages.dev"
-        },
-        {
-          "checked_at": "2026-10-27T17:03:18Z",
-          "status": "probe_failed",
-          "detail": "播放列表可下载，但采样分片均不可解码：https://445569.pages.dev/https:/raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/盗源狗si全家 全家下地狱: Server returned 404 Not Found | https://445569.pages.dev/https:/raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/盗源狗si全家 全家下地狱: Server returned 404 Not Found | https://4",
-          "failure_class": "hard",
-          "http_status": 200,
-          "host": "445569.pages.dev"
-        },
-        {
-          "checked_at": "2026-10-28T17:30:06Z",
-          "status": "probe_failed",
-          "detail": "播放列表可下载，但采样分片均不可解码：https://445569.pages.dev/https:/raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/盗源狗si全家 全家下地狱: Server returned 404 Not Found | https://445569.pages.dev/https:/raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/盗源狗si全家 全家下地狱: Server returned 404 Not Found | https://4",
-          "failure_class": "hard",
-          "http_status": 200,
-          "host": "445569.pages.dev"
-        }
-      ],
-      "removable": true,
-      "failure_class": "hard",
-      "host": "445569.pages.dev"
-    }
-  ],
+  "removable": [],
   "pending": [],
   "streaks": [
     {
-      "url": "https://445569.pages.dev/https://raw.githubusercontent.com/swhtv/111/refs/heads/main/%E5%8D%8E%E8%A7%86box%E5%8D%8E%E8%A7%86%E5%A4%A7%E5%85%A8swtv",
-      "name": "🍿华视TV直播",
-      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
-      "count": 13,
-      "history": [
-        {
-          "checked_at": "2026-10-26T17:44:45Z",
-          "status": "probe_failed",
-          "detail": "https://445569.pages.dev/https://raw.githubusercontent.com/swhtv/111/refs/heads/main/%E5%8D%8E%E8%A7%86box%E5%8D%8E%E8%A7%86%E5%A4%A7%E5%85%A8swtv: Invalid data found when processing input",
-          "failure_class": "hard",
-          "http_status": 200,
-          "host": "445569.pages.dev"
-        },
-        {
-          "checked_at": "2026-10-27T17:03:18Z",
-          "status": "probe_failed",
-          "detail": "https://445569.pages.dev/https://raw.githubusercontent.com/swhtv/111/refs/heads/main/%E5%8D%8E%E8%A7%86box%E5%8D%8E%E8%A7%86%E5%A4%A7%E5%85%A8swtv: Invalid data found when processing input",
-          "failure_class": "hard",
-          "http_status": 200,
-          "host": "445569.pages.dev"
-        },
-        {
-          "checked_at": "2026-10-28T17:30:06Z",
-          "status": "probe_failed",
-          "detail": "https://445569.pages.dev/https://raw.githubusercontent.com/swhtv/111/refs/heads/main/%E5%8D%8E%E8%A7%86box%E5%8D%8E%E8%A7%86%E5%A4%A7%E5%85%A8swtv: Invalid data found when processing input",
-          "failure_class": "hard",
-          "http_status": 200,
-          "host": "445569.pages.dev"
-        }
-      ],
-      "removable": true,
-      "failure_class": "hard",
-      "host": "445569.pages.dev"
-    },
-    {
-      "url": "https://445569.pages.dev/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-      "name": "🍿易发TV直播",
-      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
-      "count": 13,
-      "history": [
-        {
-          "checked_at": "2026-10-26T17:44:45Z",
-          "status": "probe_failed",
-          "detail": "播放列表可下载，但采样分片均不可解码：https://445569.pages.dev/https:/raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/盗源狗si全家 全家下地狱: Server returned 404 Not Found | https://445569.pages.dev/https:/raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/盗源狗si全家 全家下地狱: Server returned 404 Not Found | https://4",
-          "failure_class": "hard",
-          "http_status": 200,
-          "host": "445569.pages.dev"
-        },
-        {
-          "checked_at": "2026-10-27T17:03:18Z",
-          "status": "probe_failed",
-          "detail": "播放列表可下载，但采样分片均不可解码：https://445569.pages.dev/https:/raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/盗源狗si全家 全家下地狱: Server returned 404 Not Found | https://445569.pages.dev/https:/raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/盗源狗si全家 全家下地狱: Server returned 404 Not Found | https://4",
-          "failure_class": "hard",
-          "http_status": 200,
-          "host": "445569.pages.dev"
-        },
-        {
-          "checked_at": "2026-10-28T17:30:06Z",
-          "status": "probe_failed",
-          "detail": "播放列表可下载，但采样分片均不可解码：https://445569.pages.dev/https:/raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/盗源狗si全家 全家下地狱: Server returned 404 Not Found | https://445569.pages.dev/https:/raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/盗源狗si全家 全家下地狱: Server returned 404 Not Found | https://4",
-          "failure_class": "hard",
-          "http_status": 200,
-          "host": "445569.pages.dev"
-        }
-      ],
-      "removable": true,
-      "failure_class": "hard",
-      "host": "445569.pages.dev"
-    },
-    {
-      "url": "https://ilook.epg.one/5CM5SY98BF24PL/2",
-      "name": "🍿乌拉TV直播",
+      "url": "https://xiongmao.caonizuzong.indevs.in/all.m3u",
+      "name": "🇰🇷韩国Panda直播",
       "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
       "count": 0,
       "history": [],
       "removable": false,
       "failure_class": "",
-      "host": "ilook.epg.one"
-    },
-    {
-      "url": "https://seep.eu.org/iptv-org.github.io/iptv/index.m3u",
-      "name": "🍿全球TV直播",
-      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
-      "count": 0,
-      "history": [],
-      "removable": false,
-      "failure_class": "",
-      "host": "seep.eu.org"
+      "host": "xiongmao.caonizuzong.indevs.in"
     },
     {
       "url": "https://www.korice.eu.org/ppv_m3u.php",
