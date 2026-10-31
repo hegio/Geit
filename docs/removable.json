@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30T18:20:44Z",
+  "updated": "2026-10-31T17:42:30Z",
   "policy": {
     "fail_streak_limit": 3,
     "scope": "仅统计 geit-fish 中的 live 直播源；频道抽样轮转，不参与计数",
@@ -11,12 +11,51 @@
   },
   "summary": {
     "flagged": 0,
-    "pending": 0,
-    "clean": 15
+    "pending": 1,
+    "clean": 14
   },
   "removable": [],
-  "pending": [],
+  "pending": [
+    {
+      "url": "https://www.korice.eu.org/ppv_m3u.php",
+      "name": "🏆PPV体育赛事直播",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "count": 1,
+      "history": [
+        {
+          "checked_at": "2026-10-31T16:24:23Z",
+          "status": "probe_failed",
+          "detail": "播放列表可下载，但采样分片均不可解码：https://ppv.passwdwork.us.ci/?proxy=1&id=nfl-network: Invalid data found when processing input | https://ppv.passwdwork.us.ci/?proxy=1&id=cfb/2026-10-31/nd-navy: Invalid data found when processing input | https://ppv.passwdwork.us.ci/?proxy=1&id=cfb/2026-10-31/ariz-ttu: Invalid da",
+          "failure_class": "hard",
+          "http_status": 200,
+          "host": "www.korice.eu.org"
+        }
+      ],
+      "removable": false,
+      "failure_class": "hard",
+      "host": "www.korice.eu.org"
+    }
+  ],
   "streaks": [
+    {
+      "url": "https://www.korice.eu.org/ppv_m3u.php",
+      "name": "🏆PPV体育赛事直播",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "count": 1,
+      "history": [
+        {
+          "checked_at": "2026-10-31T16:24:23Z",
+          "status": "probe_failed",
+          "detail": "播放列表可下载，但采样分片均不可解码：https://ppv.passwdwork.us.ci/?proxy=1&id=nfl-network: Invalid data found when processing input | https://ppv.passwdwork.us.ci/?proxy=1&id=cfb/2026-10-31/nd-navy: Invalid data found when processing input | https://ppv.passwdwork.us.ci/?proxy=1&id=cfb/2026-10-31/ariz-ttu: Invalid da",
+          "failure_class": "hard",
+          "http_status": 200,
+          "host": "www.korice.eu.org"
+        }
+      ],
+      "removable": false,
+      "failure_class": "hard",
+      "host": "www.korice.eu.org"
+    },
     {
       "url": "https://xiongmao.caonizuzong.indevs.in/all.m3u",
       "name": "🇰🇷韩国Panda直播",
@@ -26,16 +65,6 @@
       "removable": false,
       "failure_class": "",
       "host": "xiongmao.caonizuzong.indevs.in"
-    },
-    {
-      "url": "https://www.korice.eu.org/ppv_m3u.php",
-      "name": "🏆PPV体育赛事直播",
-      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
-      "count": 0,
-      "history": [],
-      "removable": false,
-      "failure_class": "",
-      "host": "www.korice.eu.org"
     },
     {
       "url": "https://iptv.445569.xyz/live.m3u",
