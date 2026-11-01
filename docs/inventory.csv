@@ -8,22 +8,23 @@ site,👖聚合,https://jsnz.pages.dev/f/4df9fb60.py,requires_app,,需要影视 
 site,👖体育,https://jsnzkpg.de5.net/t4.json,unverified,,需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放
 site,👖娱乐,https://jsnz.pages.dev/f/26511242.py,requires_app,,需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放
 site,👖影视,https://jsnz.pages.dev/f/9e53615c.py,requires_app,,需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放
-site,👖采集,https://jsnz.pages.dev/f/72b7239d.py,requires_app,,需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放
 site,👖短剧,https://jsnz.pages.dev/f/29b94aff.py,requires_app,,需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放
+site,👖采集,https://jsnz.pages.dev/f/72b7239d.py,requires_app,,需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放
 site,👖音乐,https://jsnz.pages.dev/f/eded33cf.py,requires_app,,需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放
 site,👖动漫,https://jsnz.pages.dev/f/7e20bdb7.py,requires_app,,需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放
 site,👖奈飞,https://api.wsyzy.net/api.php/provide/vod,unverified,,需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放
 site,👖网盘,https://jsnz.pages.dev/f/261c1664.py,requires_app,,需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放
+site,👖磁力,https://jsnz.pages.dev/f/baad9656.py,requires_app,,需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放
 site,👖4k,https://jsnz.pages.dev/f/af676592.py,requires_app,,需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放
 site,👖APP,https://jsnz.pages.dev/f/77cec76a.py,requires_app,,需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放
 site,👖PY,https://jsnz.pages.dev/f/e1aeef83.py,requires_app,,需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放
 site,👖JS,https://jsnz.pages.dev/f/f7b46c7f.js,requires_app,,需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放
 site,👖PHP,http://jiduo.3116598.xyz/PHP/pkty.php,unverified,,需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放
 site,👖Emby,https://jsnz.pages.dev/f/696546f2.js,requires_app,,需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放
+site,👖FM,https://jsnz.pages.dev/f/cec31b11.py,requires_app,,需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放
 site,👖API,https://jsnz.pages.dev/f/cf616b2f.py,requires_app,,需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放
 site,👖少儿,https://jsnz.pages.dev/f/6b9e7fca.js,requires_app,,需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放
 site,👖听书,https://jsnz.pages.dev/f/d44dd2cf.py,requires_app,,需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放
-site,👖广播,https://jsnz.pages.dev/f/cec31b11.py,requires_app,,需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放
 site,👖有声,https://jsnz.pages.dev/f/e126d1e4.py,requires_app,,需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放
 site,👖戏曲,https://iduo.us.ci/gt/leevi0709/one/main/js/drpy2.min.js,requires_app,,需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放
 site,📌测试,https://jsnz.pages.dev/f/e7124867.py,requires_app,,需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放
@@ -40,5 +41,9 @@ live,👖裤佬百战直播,https://baizhan.445569.xyz/live.m3u,unverified,,播�
 live,👖裤佬YY直播,https://yy.445569.xyz/live.m3u,unverified,,播放能力需由 check_health.py 或影视 App 实测
 live,👖裤佬Twitch直播,https://twitch.445569.xyz/live.m3u,unverified,,播放能力需由 check_health.py 或影视 App 实测
 live,👖裤佬TikTok直播,https://tiktok.445569.xyz/live.m3u,unverified,,播放能力需由 check_health.py 或影视 App 实测
-live,🏆PPV体育赛事直播,https://www.korice.eu.org/ppv_m3u.php,unverified,,播放能力需由 check_health.py 或影视 App 实测
-live,🇰🇷韩国Panda直播,https://xiongmao.caonizuzong.indevs.in/all.m3u,unverified,,播放能力需由 check_health.py 或影视 App 实测
+live,🍿易发TV直播,https://445569.pages.dev/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt,unverified,,播放能力需由 check_health.py 或影视 App 实测
+live,🍿华视TV直播,https://445569.pages.dev/https://raw.githubusercontent.com/swhtv/111/refs/heads/main/%E5%8D%8E%E8%A7%86box%E5%8D%8E%E8%A7%86%E5%A4%A7%E5%85%A8swtv,unverified,,播放能力需由 check_health.py 或影视 App 实测
+live,🍿PPV体育赛事直播,https://jsnzkpg4.pages.dev/https://www.korice.eu.org/ppv_m3u.php,unverified,,播放能力需由 check_health.py 或影视 App 实测
+live,🍿韩国Panda直播,https://jsnzkpg4.pages.dev/https://xiongmao.caonizuzong.indevs.in/all.m3u,unverified,,播放能力需由 check_health.py 或影视 App 实测
+live,🍿乌拉TV直播,https://jsnzkpg4.pages.dev/https://ilook.epg.one/5CM5SY98BF24PL/2,unverified,,播放能力需由 check_health.py 或影视 App 实测
+live,🍿全球TV直播,https://jsnzkpg4.pages.dev/https://iptv-org.github.io/iptv/index.m3u,unverified,,播放能力需由 check_health.py 或影视 App 实测
