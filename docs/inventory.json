@@ -1,10 +1,10 @@
 {
-  "updated": "2026-11-07T12:11:21Z",
+  "updated": "2026-11-08T15:54:59Z",
   "summary": {
-    "sources": 3,
+    "sources": 4,
     "sites": 26,
     "lives": 19,
-    "channels": 10228
+    "channels": 10195
   },
   "items": [
     {
@@ -30,6 +30,14 @@
       "status": "reachable",
       "http_status": 200,
       "detail": ""
+    },
+    {
+      "kind": "source",
+      "name": "https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.txt",
+      "url": "https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.txt",
+      "status": "invalid_config",
+      "http_status": 200,
+      "detail": "无法识别为 TVBox JSON、TXT 或 M3U（前 200 字节: 'dm1lc3M6Ly9leUoySWpvZ0lqSWlMQ0FpY0hNaU9pQWk2Wml5Nkl5RDVhS0Q1YVNXNVlxLzVZcWI1cmlYNllDUElpd2dJbUZrWkNJNklDSXhNamN1TUM0d0xqVXpJaXdnSW5CdmNuUWlPaUE0TUN3Z0ltRnBaQ0k2SURBc0lDSnpZM2tpT2lBaVlYVjBieUlzSUNKdVpY'）"
     },
     {
       "kind": "site",
