@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12T19:57:51Z",
+  "updated": "2026-11-13T19:47:29Z",
   "mode": "auto",
   "safety": "AI 只生成分类建议和错误解释；不参与失效判定、不修改 merged.m3u、不写入 removable.json、不接收含凭据的完整 URL。",
   "inputs": {
@@ -7,7 +7,7 @@
     "failure_clusters": 30,
     "removable": {
       "flagged": 2,
-      "pending": 2,
+      "pending": 1,
       "policy": {
         "fail_streak_limit": 3,
         "scope": "仅统计 geit-fish 中的 live 直播源；频道抽样轮转，不参与计数",
@@ -19,49 +19,9 @@
       }
     }
   },
-  "status": "ok",
-  "provider": "cloud",
-  "model": "atria-dawn-preview",
-  "result": {
-    "classification_suggestions": [
-      {
-        "channel_key": "zgqx",
-        "category": "待人工确认",
-        "confidence": "low",
-        "reason": "频道名为拼音缩写且无台标信息，仅凭分组名“央卫63”无法确认具体身份。"
-      },
-      {
-        "channel_key": "hyzxc",
-        "category": "待人工确认",
-        "confidence": "low",
-        "reason": "频道名为拼音缩写，缺少可识别特征，无法安全归类。"
-      },
-      {
-        "channel_key": "hycxldb",
-        "category": "待人工确认",
-        "confidence": "low",
-        "reason": "频道名不可读，疑似拼音缩写，无法判断频道归属。"
-      },
-      {
-        "channel_key": "hylzy",
-        "category": "待人工确认",
-        "confidence": "low",
-        "reason": "频道名仅含拼音缩写，缺乏名称、台标或节目信息佐证。"
-      }
-    ],
-    "incident_summary": "失败以软失败为主：t33.cdn2020.com 出现 HTTP 451（内容审查/不可用），涉及私密频道与点播类；其余多为无状态码的连接层错误，集中在自建域名、CDN 节点与裸 IP，影响港澳台、卫视、央视、地方等分组；另有 061899.xyz 出现 567 与 429，抖音音乐点播存在 200 但播放未验证。整体不构成失效结论。",
-    "recommended_actions": [
-      "复核 HTTP 451 记录，确认是否为源站地域限制或内容策略导致，而非源失效。",
-      "对无状态码的连接错误抽查 TCP/DNS 与播放器实际表现，区分网络抖动与源站不可达。",
-      "核对 429/567 记录，评估是否因抓取频率过高触发限流，必要时调整请求间隔。",
-      "对 200 但播放未验证的条目进行实际播放复测，确认音视频是否真正可播。",
-      "补充待归类频道的名称、台标或节目单信息后再做正式分类。"
-    ],
-    "warnings": [
-      "频道 zgqx/hyzxc/hycxldb/hylzy 名称均为缩写，未确认身份前不应归入具体频道类别。",
-      "451、429、超时及无状态码错误均不能直接判定为直播源失效。",
-      "部分失败涉及私密/点播类分组，仅做错误聚类说明，不输出任何删除建议。",
-      "失败记录中包含裸 IP 与自建域名，可能受网络环境影响，需人工复核。"
-    ]
-  }
+  "status": "unavailable",
+  "errors": [
+    "cloud: HTTP Error 402: Payment Required",
+    "local-strata: HTTP Error 502: Bad Gateway"
+  ]
 }
