@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13T19:47:29Z",
+  "updated": "2026-11-14T17:52:10Z",
   "mode": "auto",
   "safety": "AI 只生成分类建议和错误解释；不参与失效判定、不修改 merged.m3u、不写入 removable.json、不接收含凭据的完整 URL。",
   "inputs": {
@@ -7,7 +7,7 @@
     "failure_clusters": 30,
     "removable": {
       "flagged": 2,
-      "pending": 1,
+      "pending": 2,
       "policy": {
         "fail_streak_limit": 3,
         "scope": "仅统计 geit-fish 中的 live 直播源；频道抽样轮转，不参与计数",
@@ -19,9 +19,49 @@
       }
     }
   },
-  "status": "unavailable",
-  "errors": [
-    "cloud: HTTP Error 402: Payment Required",
-    "local-strata: HTTP Error 502: Bad Gateway"
-  ]
+  "status": "ok",
+  "provider": "cloud",
+  "model": "atria-dawn-preview",
+  "result": {
+    "classification_suggestions": [
+      {
+        "channel_key": "zgqx",
+        "category": "待人工确认",
+        "confidence": "low",
+        "reason": "频道名为拼音缩写且无可识别台标信息，无法确认频道身份，不作猜测。"
+      },
+      {
+        "channel_key": "hyzxc",
+        "category": "待人工确认",
+        "confidence": "low",
+        "reason": "名称为不完整拼音缩写，无法对应到具体央视、卫视或地方台。"
+      },
+      {
+        "channel_key": "hycxldb",
+        "category": "待人工确认",
+        "confidence": "low",
+        "reason": "频道名含义不明，缺少归属依据，需人工核对原始播放内容。"
+      },
+      {
+        "channel_key": "hylzy",
+        "category": "待人工确认",
+        "confidence": "low",
+        "reason": "仅凭“央卫63”分组与拼音缩写不能确定频道身份，建议人工确认。"
+      }
+    ],
+    "incident_summary": "失败以软失败为主：t33.cdn2020.com 出现 451（内容不可用，可能源站拒绝或区域限制），涉及私密频道2与JAV点播；其余多为无 HTTP 状态的连接层错误，集中在 virtual.anbox.dpdns.org、120.87.19.109、live.chinacert.cftest5.cn 等域名或 IP，影响港澳台、央视、卫视、地方类。另有 061899.xyz 分别出现 567 与 429，www.iesdouyin.com 为 200 但播放未验证。",
+    "recommended_actions": [
+      "对 451 主机 t33.cdn2020.com 复核源站可用性、区域限制与请求头，确认是否为源端策略而非失效。",
+      "对无状态连接错误按主机聚合复测，区分 DNS/网络抖动与源站下线，保留多线路样本。",
+      "核查 429/567 是否因采集频率过高或源站临时限流，调整抓取节奏后重试。",
+      "对 200 但播放未验证的条目进行实际播放探测，确认是否存在伪 200。",
+      "复核无状态错误中的裸 IP 与测试域名，确认其是否仍属于有效直播源。"
+    ],
+    "warnings": [
+      "451、429、567 及无状态连接错误均不能直接判定为失效。",
+      "私密频道相关条目仅作错误聚类说明，不输出任何凭据或来源信息。",
+      "频道名无法识别时统一归为待人工确认，不猜测频道身份。",
+      "本结果不包含删除建议，最终处置需人工复核。"
+    ]
+  }
 }
