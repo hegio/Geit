@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-15T18:52:10Z",
+  "updated": "2026-11-16T21:42:28Z",
   "policy": {
     "fail_streak_limit": 3,
     "scope": "仅统计 geit-fish 中的 live 直播源；频道抽样轮转，不参与计数",
@@ -10,25 +10,17 @@
     "channel_urls": "真正会被停止录入的是 merged.m3u 中的单个频道 URL，见 dead_channels.json"
   },
   "summary": {
-    "flagged": 4,
+    "flagged": 2,
     "pending": 0,
-    "clean": 15
+    "clean": 17
   },
   "removable": [
     {
       "url": "https://445569.pages.dev/https://raw.githubusercontent.com/swhtv/111/refs/heads/main/%E5%8D%8E%E8%A7%86box%E5%8D%8E%E8%A7%86%E5%A4%A7%E5%85%A8swtv",
       "name": "🍿华视TV直播",
       "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
-      "count": 16,
+      "count": 17,
       "history": [
-        {
-          "checked_at": "2026-11-14T17:23:34Z",
-          "status": "probe_failed",
-          "detail": "https://445569.pages.dev/https://raw.githubusercontent.com/swhtv/111/refs/heads/main/%E5%8D%8E%E8%A7%86box%E5%8D%8E%E8%A7%86%E5%A4%A7%E5%85%A8swtv: Invalid data found when processing input",
-          "failure_class": "hard",
-          "http_status": 200,
-          "host": "445569.pages.dev"
-        },
         {
           "checked_at": "2026-11-15T03:24:10Z",
           "status": "probe_failed",
@@ -39,6 +31,14 @@
         },
         {
           "checked_at": "2026-11-15T18:04:19Z",
+          "status": "probe_failed",
+          "detail": "https://445569.pages.dev/https://raw.githubusercontent.com/swhtv/111/refs/heads/main/%E5%8D%8E%E8%A7%86box%E5%8D%8E%E8%A7%86%E5%A4%A7%E5%85%A8swtv: Invalid data found when processing input",
+          "failure_class": "hard",
+          "http_status": 200,
+          "host": "445569.pages.dev"
+        },
+        {
+          "checked_at": "2026-11-16T21:20:45Z",
           "status": "probe_failed",
           "detail": "https://445569.pages.dev/https://raw.githubusercontent.com/swhtv/111/refs/heads/main/%E5%8D%8E%E8%A7%86box%E5%8D%8E%E8%A7%86%E5%A4%A7%E5%85%A8swtv: Invalid data found when processing input",
           "failure_class": "hard",
@@ -54,16 +54,8 @@
       "url": "https://445569.pages.dev/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
       "name": "🍿易发TV直播",
       "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
-      "count": 16,
+      "count": 17,
       "history": [
-        {
-          "checked_at": "2026-11-14T17:23:34Z",
-          "status": "probe_failed",
-          "detail": "播放列表可下载，但采样分片均不可解码：https://445569.pages.dev/https:/raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/盗源狗si全家 全家下地狱: Server returned 404 Not Found | https://445569.pages.dev/https:/raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/盗源狗si全家 全家下地狱: Server returned 404 Not Found | https://4",
-          "failure_class": "hard",
-          "http_status": 200,
-          "host": "445569.pages.dev"
-        },
         {
           "checked_at": "2026-11-15T03:24:10Z",
           "status": "probe_failed",
@@ -74,6 +66,14 @@
         },
         {
           "checked_at": "2026-11-15T18:04:19Z",
+          "status": "probe_failed",
+          "detail": "播放列表可下载，但采样分片均不可解码：https://445569.pages.dev/https:/raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/盗源狗si全家 全家下地狱: Server returned 404 Not Found | https://445569.pages.dev/https:/raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/盗源狗si全家 全家下地狱: Server returned 404 Not Found | https://4",
+          "failure_class": "hard",
+          "http_status": 200,
+          "host": "445569.pages.dev"
+        },
+        {
+          "checked_at": "2026-11-16T21:20:45Z",
           "status": "probe_failed",
           "detail": "播放列表可下载，但采样分片均不可解码：https://445569.pages.dev/https:/raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/盗源狗si全家 全家下地狱: Server returned 404 Not Found | https://445569.pages.dev/https:/raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/盗源狗si全家 全家下地狱: Server returned 404 Not Found | https://4",
           "failure_class": "hard",
@@ -84,76 +84,6 @@
       "removable": true,
       "failure_class": "hard",
       "host": "445569.pages.dev"
-    },
-    {
-      "url": "https://jsnzkpg4.pages.dev/https://www.korice.eu.org/ppv_m3u.php",
-      "name": "🍿PPV体育赛事直播",
-      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
-      "count": 4,
-      "history": [
-        {
-          "checked_at": "2026-11-14T17:23:34Z",
-          "status": "probe_failed",
-          "detail": "播放列表可下载，但采样分片均不可解码：https://ppv.passwdwork.us.ci/?proxy=1&id=nfl-network: Invalid data found when processing input | https://ppv.passwdwork.us.ci/?proxy=1&id=cfb/2026-11-14/duke-mia: Invalid data found when processing input | https://ppv.passwdwork.us.ci/?proxy=1&id=cfb/2026-11-14/nu-osu: Invalid dat",
-          "failure_class": "hard",
-          "http_status": 200,
-          "host": "jsnzkpg4.pages.dev"
-        },
-        {
-          "checked_at": "2026-11-15T03:24:10Z",
-          "status": "probe_failed",
-          "detail": "播放列表可下载，但采样分片均不可解码：https://ppv.passwdwork.us.ci/?proxy=1&id=nfl-network: Invalid data found when processing input | https://ppv.passwdwork.us.ci/?proxy=1&id=cfb/2026-11-14/fla-uk: Invalid data found when processing input | https://ppv.passwdwork.us.ci/?proxy=1&id=cfb/2026-11-14/bay-byu: Invalid data",
-          "failure_class": "hard",
-          "http_status": 200,
-          "host": "jsnzkpg4.pages.dev"
-        },
-        {
-          "checked_at": "2026-11-15T18:04:19Z",
-          "status": "probe_failed",
-          "detail": "播放列表可下载，但采样分片均不可解码：https://ppv.passwdwork.us.ci/?proxy=1&id=nfl-network: Invalid data found when processing input | https://ppv.passwdwork.us.ci/?proxy=1&id=nfl/2026-11-15/ne-det: Invalid data found when processing input | https://ppv.passwdwork.us.ci/?proxy=1&id=nfl/2026-11-15/kc-atl: Invalid data ",
-          "failure_class": "hard",
-          "http_status": 200,
-          "host": "jsnzkpg4.pages.dev"
-        }
-      ],
-      "removable": true,
-      "failure_class": "hard",
-      "host": "jsnzkpg4.pages.dev"
-    },
-    {
-      "url": "https://jsnzkpg4.pages.dev/https://xiongmao.caonizuzong.indevs.in/all.m3u",
-      "name": "🍿韩国Panda直播",
-      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
-      "count": 3,
-      "history": [
-        {
-          "checked_at": "2026-11-14T17:23:34Z",
-          "status": "probe_failed",
-          "detail": "播放列表可下载，但采样分片均不可解码：https://xiongmao.caonizuzong.indevs.in/live/zenith6666.m3u8: Invalid data found when processing input | https://xiongmao.caonizuzong.indevs.in/live/umeceo.m3u8: Invalid data found when processing input | https://xiongmao.caonizuzong.indevs.in/live/leqazw.m3u8: Invalid data found w",
-          "failure_class": "hard",
-          "http_status": 200,
-          "host": "jsnzkpg4.pages.dev"
-        },
-        {
-          "checked_at": "2026-11-15T03:24:10Z",
-          "status": "probe_failed",
-          "detail": "播放列表可下载，但采样分片均不可解码：https://xiongmao.caonizuzong.indevs.in/live/seoul2025.m3u8: Invalid data found when processing input | https://xiongmao.caonizuzong.indevs.in/live/position00.m3u8: Invalid data found when processing input | https://xiongmao.caonizuzong.indevs.in/live/rvdonoff.m3u8: Invalid data fo",
-          "failure_class": "hard",
-          "http_status": 200,
-          "host": "jsnzkpg4.pages.dev"
-        },
-        {
-          "checked_at": "2026-11-15T18:04:19Z",
-          "status": "probe_failed",
-          "detail": "播放列表可下载，但采样分片均不可解码：https://xiongmao.caonizuzong.indevs.in/live/umeceo.m3u8: Invalid data found when processing input | https://xiongmao.caonizuzong.indevs.in/live/leqazw.m3u8: Invalid data found when processing input | https://xiongmao.caonizuzong.indevs.in/live/lonelizzy.m3u8: Invalid data found wh",
-          "failure_class": "hard",
-          "http_status": 200,
-          "host": "jsnzkpg4.pages.dev"
-        }
-      ],
-      "removable": true,
-      "failure_class": "hard",
-      "host": "jsnzkpg4.pages.dev"
     }
   ],
   "pending": [],
@@ -162,16 +92,8 @@
       "url": "https://445569.pages.dev/https://raw.githubusercontent.com/swhtv/111/refs/heads/main/%E5%8D%8E%E8%A7%86box%E5%8D%8E%E8%A7%86%E5%A4%A7%E5%85%A8swtv",
       "name": "🍿华视TV直播",
       "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
-      "count": 16,
+      "count": 17,
       "history": [
-        {
-          "checked_at": "2026-11-14T17:23:34Z",
-          "status": "probe_failed",
-          "detail": "https://445569.pages.dev/https://raw.githubusercontent.com/swhtv/111/refs/heads/main/%E5%8D%8E%E8%A7%86box%E5%8D%8E%E8%A7%86%E5%A4%A7%E5%85%A8swtv: Invalid data found when processing input",
-          "failure_class": "hard",
-          "http_status": 200,
-          "host": "445569.pages.dev"
-        },
         {
           "checked_at": "2026-11-15T03:24:10Z",
           "status": "probe_failed",
@@ -182,6 +104,14 @@
         },
         {
           "checked_at": "2026-11-15T18:04:19Z",
+          "status": "probe_failed",
+          "detail": "https://445569.pages.dev/https://raw.githubusercontent.com/swhtv/111/refs/heads/main/%E5%8D%8E%E8%A7%86box%E5%8D%8E%E8%A7%86%E5%A4%A7%E5%85%A8swtv: Invalid data found when processing input",
+          "failure_class": "hard",
+          "http_status": 200,
+          "host": "445569.pages.dev"
+        },
+        {
+          "checked_at": "2026-11-16T21:20:45Z",
           "status": "probe_failed",
           "detail": "https://445569.pages.dev/https://raw.githubusercontent.com/swhtv/111/refs/heads/main/%E5%8D%8E%E8%A7%86box%E5%8D%8E%E8%A7%86%E5%A4%A7%E5%85%A8swtv: Invalid data found when processing input",
           "failure_class": "hard",
@@ -197,16 +127,8 @@
       "url": "https://445569.pages.dev/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
       "name": "🍿易发TV直播",
       "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
-      "count": 16,
+      "count": 17,
       "history": [
-        {
-          "checked_at": "2026-11-14T17:23:34Z",
-          "status": "probe_failed",
-          "detail": "播放列表可下载，但采样分片均不可解码：https://445569.pages.dev/https:/raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/盗源狗si全家 全家下地狱: Server returned 404 Not Found | https://445569.pages.dev/https:/raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/盗源狗si全家 全家下地狱: Server returned 404 Not Found | https://4",
-          "failure_class": "hard",
-          "http_status": 200,
-          "host": "445569.pages.dev"
-        },
         {
           "checked_at": "2026-11-15T03:24:10Z",
           "status": "probe_failed",
@@ -217,6 +139,14 @@
         },
         {
           "checked_at": "2026-11-15T18:04:19Z",
+          "status": "probe_failed",
+          "detail": "播放列表可下载，但采样分片均不可解码：https://445569.pages.dev/https:/raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/盗源狗si全家 全家下地狱: Server returned 404 Not Found | https://445569.pages.dev/https:/raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/盗源狗si全家 全家下地狱: Server returned 404 Not Found | https://4",
+          "failure_class": "hard",
+          "http_status": 200,
+          "host": "445569.pages.dev"
+        },
+        {
+          "checked_at": "2026-11-16T21:20:45Z",
           "status": "probe_failed",
           "detail": "播放列表可下载，但采样分片均不可解码：https://445569.pages.dev/https:/raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/盗源狗si全家 全家下地狱: Server returned 404 Not Found | https://445569.pages.dev/https:/raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/盗源狗si全家 全家下地狱: Server returned 404 Not Found | https://4",
           "failure_class": "hard",
@@ -259,42 +189,7 @@
           "host": "jsnzkpg4.pages.dev"
         }
       ],
-      "removable": true,
-      "failure_class": "hard",
-      "host": "jsnzkpg4.pages.dev"
-    },
-    {
-      "url": "https://jsnzkpg4.pages.dev/https://xiongmao.caonizuzong.indevs.in/all.m3u",
-      "name": "🍿韩国Panda直播",
-      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
-      "count": 3,
-      "history": [
-        {
-          "checked_at": "2026-11-14T17:23:34Z",
-          "status": "probe_failed",
-          "detail": "播放列表可下载，但采样分片均不可解码：https://xiongmao.caonizuzong.indevs.in/live/zenith6666.m3u8: Invalid data found when processing input | https://xiongmao.caonizuzong.indevs.in/live/umeceo.m3u8: Invalid data found when processing input | https://xiongmao.caonizuzong.indevs.in/live/leqazw.m3u8: Invalid data found w",
-          "failure_class": "hard",
-          "http_status": 200,
-          "host": "jsnzkpg4.pages.dev"
-        },
-        {
-          "checked_at": "2026-11-15T03:24:10Z",
-          "status": "probe_failed",
-          "detail": "播放列表可下载，但采样分片均不可解码：https://xiongmao.caonizuzong.indevs.in/live/seoul2025.m3u8: Invalid data found when processing input | https://xiongmao.caonizuzong.indevs.in/live/position00.m3u8: Invalid data found when processing input | https://xiongmao.caonizuzong.indevs.in/live/rvdonoff.m3u8: Invalid data fo",
-          "failure_class": "hard",
-          "http_status": 200,
-          "host": "jsnzkpg4.pages.dev"
-        },
-        {
-          "checked_at": "2026-11-15T18:04:19Z",
-          "status": "probe_failed",
-          "detail": "播放列表可下载，但采样分片均不可解码：https://xiongmao.caonizuzong.indevs.in/live/umeceo.m3u8: Invalid data found when processing input | https://xiongmao.caonizuzong.indevs.in/live/leqazw.m3u8: Invalid data found when processing input | https://xiongmao.caonizuzong.indevs.in/live/lonelizzy.m3u8: Invalid data found wh",
-          "failure_class": "hard",
-          "http_status": 200,
-          "host": "jsnzkpg4.pages.dev"
-        }
-      ],
-      "removable": true,
+      "removable": false,
       "failure_class": "hard",
       "host": "jsnzkpg4.pages.dev"
     },
@@ -311,6 +206,16 @@
     {
       "url": "https://jsnzkpg4.pages.dev/https://iptv-org.github.io/iptv/index.m3u",
       "name": "🍿全球TV直播",
+      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
+      "count": 0,
+      "history": [],
+      "removable": false,
+      "failure_class": "",
+      "host": "jsnzkpg4.pages.dev"
+    },
+    {
+      "url": "https://jsnzkpg4.pages.dev/https://xiongmao.caonizuzong.indevs.in/all.m3u",
+      "name": "🍿韩国Panda直播",
       "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg",
       "count": 0,
       "history": [],
