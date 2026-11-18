@@ -1,10 +1,10 @@
 {
-  "updated": "2026-11-08T16:16:16Z",
+  "updated": "2026-11-18T00:17:43Z",
   "summary": {
     "sources": 3,
     "sites": 26,
-    "lives": 19,
-    "channels": 10195
+    "lives": 11,
+    "channels": 10215
   },
   "items": [
     {
@@ -249,16 +249,8 @@
     },
     {
       "kind": "live",
-      "name": "👖裤佬体育直播[主]",
+      "name": "👖裤佬体育直播",
       "url": "https://jsnzkpg.de5.net/all.m3u",
-      "status": "unverified",
-      "http_status": "",
-      "detail": "播放能力需由 check_health.py 或影视 App 实测"
-    },
-    {
-      "kind": "live",
-      "name": "👖裤佬体育直播[备]",
-      "url": "https://stymei.pages.dev/live.m3u",
       "status": "unverified",
       "http_status": "",
       "detail": "播放能力需由 check_health.py 或影视 App 实测"
@@ -282,7 +274,7 @@
     {
       "kind": "live",
       "name": "👖裤佬虎牙直播",
-      "url": "https://huya.445569.xyz/live.m3u",
+      "url": "https://yahu.445569.xyz/live.m3u",
       "status": "unverified",
       "http_status": "",
       "detail": "播放能力需由 check_health.py 或影视 App 实测"
@@ -321,14 +313,6 @@
     },
     {
       "kind": "live",
-      "name": "👖裤佬YY直播",
-      "url": "https://yy.445569.xyz/live.m3u",
-      "status": "unverified",
-      "http_status": "",
-      "detail": "播放能力需由 check_health.py 或影视 App 实测"
-    },
-    {
-      "kind": "live",
       "name": "👖裤佬Twitch直播",
       "url": "https://twitch.445569.xyz/live.m3u",
       "status": "unverified",
@@ -339,54 +323,6 @@
       "kind": "live",
       "name": "👖裤佬TikTok直播",
       "url": "https://tiktok.445569.xyz/live.m3u",
-      "status": "unverified",
-      "http_status": "",
-      "detail": "播放能力需由 check_health.py 或影视 App 实测"
-    },
-    {
-      "kind": "live",
-      "name": "🍿易发TV直播",
-      "url": "https://445569.pages.dev/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-      "status": "unverified",
-      "http_status": "",
-      "detail": "播放能力需由 check_health.py 或影视 App 实测"
-    },
-    {
-      "kind": "live",
-      "name": "🍿华视TV直播",
-      "url": "https://445569.pages.dev/https://raw.githubusercontent.com/swhtv/111/refs/heads/main/%E5%8D%8E%E8%A7%86box%E5%8D%8E%E8%A7%86%E5%A4%A7%E5%85%A8swtv",
-      "status": "unverified",
-      "http_status": "",
-      "detail": "播放能力需由 check_health.py 或影视 App 实测"
-    },
-    {
-      "kind": "live",
-      "name": "🍿PPV体育赛事直播",
-      "url": "https://jsnzkpg4.pages.dev/https://www.korice.eu.org/ppv_m3u.php",
-      "status": "unverified",
-      "http_status": "",
-      "detail": "播放能力需由 check_health.py 或影视 App 实测"
-    },
-    {
-      "kind": "live",
-      "name": "🍿韩国Panda直播",
-      "url": "https://jsnzkpg4.pages.dev/https://xiongmao.caonizuzong.indevs.in/all.m3u",
-      "status": "unverified",
-      "http_status": "",
-      "detail": "播放能力需由 check_health.py 或影视 App 实测"
-    },
-    {
-      "kind": "live",
-      "name": "🍿乌拉TV直播",
-      "url": "https://jsnzkpg4.pages.dev/https://ilook.epg.one/5CM5SY98BF24PL/2",
-      "status": "unverified",
-      "http_status": "",
-      "detail": "播放能力需由 check_health.py 或影视 App 实测"
-    },
-    {
-      "kind": "live",
-      "name": "🍿全球TV直播",
-      "url": "https://jsnzkpg4.pages.dev/https://iptv-org.github.io/iptv/index.m3u",
       "status": "unverified",
       "http_status": "",
       "detail": "播放能力需由 check_health.py 或影视 App 实测"

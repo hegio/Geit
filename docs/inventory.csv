@@ -29,21 +29,13 @@ site,👖有声,https://jsnz.pages.dev/f/e126d1e4.py,requires_app,,需要影视 
 site,👖戏曲,https://iduo.us.ci/gt/leevi0709/one/main/js/drpy2.min.js,requires_app,,需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放
 site,📌测试,https://jsnz.pages.dev/f/e7124867.py,requires_app,,需要影视 App 和对应 spider 解析，HTTP 检查不能证明可播放
 live,👖裤佬IPTV直播,https://iptv.445569.xyz/live.m3u,unverified,,播放能力需由 check_health.py 或影视 App 实测
-live,👖裤佬体育直播[主],https://jsnzkpg.de5.net/all.m3u,unverified,,播放能力需由 check_health.py 或影视 App 实测
-live,👖裤佬体育直播[备],https://stymei.pages.dev/live.m3u,unverified,,播放能力需由 check_health.py 或影视 App 实测
+live,👖裤佬体育直播,https://jsnzkpg.de5.net/all.m3u,unverified,,播放能力需由 check_health.py 或影视 App 实测
 live,👖裤佬抖音直播,https://douyin.445569.xyz/live.m3u,unverified,,播放能力需由 check_health.py 或影视 App 实测
 live,👖裤佬快手直播,https://kuaishou.445569.xyz/list.m3u,unverified,,播放能力需由 check_health.py 或影视 App 实测
-live,👖裤佬虎牙直播,https://huya.445569.xyz/live.m3u,unverified,,播放能力需由 check_health.py 或影视 App 实测
+live,👖裤佬虎牙直播,https://yahu.445569.xyz/live.m3u,unverified,,播放能力需由 check_health.py 或影视 App 实测
 live,👖裤佬斗鱼直播,https://douyu.445569.xyz/live.m3u,unverified,,播放能力需由 check_health.py 或影视 App 实测
 live,👖裤佬酷狗直播,https://kugou.445569.xyz/live.m3u,unverified,,播放能力需由 check_health.py 或影视 App 实测
 live,👖裤佬来疯直播,https://laifeng.445569.xyz/live.m3u,unverified,,播放能力需由 check_health.py 或影视 App 实测
 live,👖裤佬百战直播,https://baizhan.445569.xyz/live.m3u,unverified,,播放能力需由 check_health.py 或影视 App 实测
-live,👖裤佬YY直播,https://yy.445569.xyz/live.m3u,unverified,,播放能力需由 check_health.py 或影视 App 实测
 live,👖裤佬Twitch直播,https://twitch.445569.xyz/live.m3u,unverified,,播放能力需由 check_health.py 或影视 App 实测
 live,👖裤佬TikTok直播,https://tiktok.445569.xyz/live.m3u,unverified,,播放能力需由 check_health.py 或影视 App 实测
-live,🍿易发TV直播,https://445569.pages.dev/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt,unverified,,播放能力需由 check_health.py 或影视 App 实测
-live,🍿华视TV直播,https://445569.pages.dev/https://raw.githubusercontent.com/swhtv/111/refs/heads/main/%E5%8D%8E%E8%A7%86box%E5%8D%8E%E8%A7%86%E5%A4%A7%E5%85%A8swtv,unverified,,播放能力需由 check_health.py 或影视 App 实测
-live,🍿PPV体育赛事直播,https://jsnzkpg4.pages.dev/https://www.korice.eu.org/ppv_m3u.php,unverified,,播放能力需由 check_health.py 或影视 App 实测
-live,🍿韩国Panda直播,https://jsnzkpg4.pages.dev/https://xiongmao.caonizuzong.indevs.in/all.m3u,unverified,,播放能力需由 check_health.py 或影视 App 实测
-live,🍿乌拉TV直播,https://jsnzkpg4.pages.dev/https://ilook.epg.one/5CM5SY98BF24PL/2,unverified,,播放能力需由 check_health.py 或影视 App 实测
-live,🍿全球TV直播,https://jsnzkpg4.pages.dev/https://iptv-org.github.io/iptv/index.m3u,unverified,,播放能力需由 check_health.py 或影视 App 实测

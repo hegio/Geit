@@ -1,36 +1,575 @@
 {
-  "updated": "2026-11-08T16:16:16Z",
+  "updated": "2026-11-18T00:17:43Z",
   "policy": {
     "unresolved_action": "仅报告，保留在 merged.m3u，不自动删除或猜测归类",
     "rules_file": "tvbox/channel_rules.json",
     "private_groups": "私密频道/JAV 保留来源原分组"
   },
   "summary": {
-    "channels": 6939,
-    "classified": 6935,
-    "pending_review": 4,
+    "channels": 6807,
+    "classified": 6767,
+    "pending_review": 40,
     "categories": {
-      "音乐点播": 338,
-      "音乐频道": 95,
-      "港澳台": 386,
-      "卫视频道": 108,
-      "地方频道": 266,
-      "影视少儿": 569,
-      "央视频道": 225,
-      "体育频道": 64,
+      "音乐点播": 339,
+      "音乐频道": 88,
+      "港澳台": 387,
+      "卫视频道": 104,
+      "地方频道": 273,
+      "影视少儿": 419,
+      "体育频道": 53,
+      "央视频道": 229,
       "运营商/内网": 117,
-      "海外频道": 293,
-      "教育纪实": 22,
+      "海外频道": 283,
+      "教育纪实": 23,
       "综合直播": 25,
-      "影视轮播": 1141,
-      "私密频道_169169": 714,
-      "私密频道2_169169": 1598,
-      "私密频道3_169169": 43,
+      "影视轮播": 1183,
+      "私密频道_169169": 717,
+      "私密频道2_169169": 1596,
       "JAV點播_169169": 931,
-      "待人工确认": 4
+      "待人工确认": 40
     }
   },
   "pending": [
+    {
+      "channel_key": "1",
+      "name": "1",
+      "category": "待人工确认",
+      "groups_raw": [
+        "DE=3"
+      ],
+      "source_sections": [
+        "韩国团播_169169"
+      ],
+      "sources": [
+        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
+      ],
+      "line_count": 1
+    },
+    {
+      "channel_key": "2",
+      "name": "2",
+      "category": "待人工确认",
+      "groups_raw": [
+        "DE=3"
+      ],
+      "source_sections": [
+        "韩国团播_169169"
+      ],
+      "sources": [
+        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
+      ],
+      "line_count": 1
+    },
+    {
+      "channel_key": "3",
+      "name": "3",
+      "category": "待人工确认",
+      "groups_raw": [
+        "DE=3"
+      ],
+      "source_sections": [
+        "韩国团播_169169"
+      ],
+      "sources": [
+        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
+      ],
+      "line_count": 1
+    },
+    {
+      "channel_key": "4",
+      "name": "4",
+      "category": "待人工确认",
+      "groups_raw": [
+        "DE=3"
+      ],
+      "source_sections": [
+        "韩国团播_169169"
+      ],
+      "sources": [
+        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
+      ],
+      "line_count": 1
+    },
+    {
+      "channel_key": "5",
+      "name": "5",
+      "category": "待人工确认",
+      "groups_raw": [
+        "DE=3"
+      ],
+      "source_sections": [
+        "韩国团播_169169"
+      ],
+      "sources": [
+        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
+      ],
+      "line_count": 1
+    },
+    {
+      "channel_key": "6",
+      "name": "6",
+      "category": "待人工确认",
+      "groups_raw": [
+        "DE=3"
+      ],
+      "source_sections": [
+        "韩国团播_169169"
+      ],
+      "sources": [
+        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
+      ],
+      "line_count": 1
+    },
+    {
+      "channel_key": "7",
+      "name": "7",
+      "category": "待人工确认",
+      "groups_raw": [
+        "DE=3"
+      ],
+      "source_sections": [
+        "韩国团播_169169"
+      ],
+      "sources": [
+        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
+      ],
+      "line_count": 1
+    },
+    {
+      "channel_key": "8",
+      "name": "8",
+      "category": "待人工确认",
+      "groups_raw": [
+        "DE=3"
+      ],
+      "source_sections": [
+        "韩国团播_169169"
+      ],
+      "sources": [
+        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
+      ],
+      "line_count": 1
+    },
+    {
+      "channel_key": "9",
+      "name": "9",
+      "category": "待人工确认",
+      "groups_raw": [
+        "DE=3"
+      ],
+      "source_sections": [
+        "韩国团播_169169"
+      ],
+      "sources": [
+        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
+      ],
+      "line_count": 1
+    },
+    {
+      "channel_key": "10",
+      "name": "10",
+      "category": "待人工确认",
+      "groups_raw": [
+        "DE=3"
+      ],
+      "source_sections": [
+        "韩国团播_169169"
+      ],
+      "sources": [
+        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
+      ],
+      "line_count": 1
+    },
+    {
+      "channel_key": "11",
+      "name": "11",
+      "category": "待人工确认",
+      "groups_raw": [
+        "DE=3"
+      ],
+      "source_sections": [
+        "韩国团播_169169"
+      ],
+      "sources": [
+        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
+      ],
+      "line_count": 1
+    },
+    {
+      "channel_key": "12",
+      "name": "12",
+      "category": "待人工确认",
+      "groups_raw": [
+        "DE=3"
+      ],
+      "source_sections": [
+        "韩国团播_169169"
+      ],
+      "sources": [
+        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
+      ],
+      "line_count": 1
+    },
+    {
+      "channel_key": "13",
+      "name": "13",
+      "category": "待人工确认",
+      "groups_raw": [
+        "DE=3"
+      ],
+      "source_sections": [
+        "韩国团播_169169"
+      ],
+      "sources": [
+        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
+      ],
+      "line_count": 1
+    },
+    {
+      "channel_key": "15",
+      "name": "15",
+      "category": "待人工确认",
+      "groups_raw": [
+        "DE=3"
+      ],
+      "source_sections": [
+        "韩国团播_169169"
+      ],
+      "sources": [
+        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
+      ],
+      "line_count": 1
+    },
+    {
+      "channel_key": "16",
+      "name": "16",
+      "category": "待人工确认",
+      "groups_raw": [
+        "DE=3"
+      ],
+      "source_sections": [
+        "韩国团播_169169"
+      ],
+      "sources": [
+        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
+      ],
+      "line_count": 1
+    },
+    {
+      "channel_key": "17",
+      "name": "17",
+      "category": "待人工确认",
+      "groups_raw": [
+        "DE=3"
+      ],
+      "source_sections": [
+        "韩国团播_169169"
+      ],
+      "sources": [
+        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
+      ],
+      "line_count": 1
+    },
+    {
+      "channel_key": "18",
+      "name": "18",
+      "category": "待人工确认",
+      "groups_raw": [
+        "DE=3"
+      ],
+      "source_sections": [
+        "韩国团播_169169"
+      ],
+      "sources": [
+        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
+      ],
+      "line_count": 1
+    },
+    {
+      "channel_key": "19",
+      "name": "19",
+      "category": "待人工确认",
+      "groups_raw": [
+        "DE=3"
+      ],
+      "source_sections": [
+        "韩国团播_169169"
+      ],
+      "sources": [
+        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
+      ],
+      "line_count": 1
+    },
+    {
+      "channel_key": "20",
+      "name": "20",
+      "category": "待人工确认",
+      "groups_raw": [
+        "DE=3"
+      ],
+      "source_sections": [
+        "韩国团播_169169"
+      ],
+      "sources": [
+        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
+      ],
+      "line_count": 1
+    },
+    {
+      "channel_key": "21",
+      "name": "21",
+      "category": "待人工确认",
+      "groups_raw": [
+        "DE=3"
+      ],
+      "source_sections": [
+        "韩国团播_169169"
+      ],
+      "sources": [
+        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
+      ],
+      "line_count": 1
+    },
+    {
+      "channel_key": "22",
+      "name": "22",
+      "category": "待人工确认",
+      "groups_raw": [
+        "DE=3"
+      ],
+      "source_sections": [
+        "韩国团播_169169"
+      ],
+      "sources": [
+        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
+      ],
+      "line_count": 1
+    },
+    {
+      "channel_key": "23",
+      "name": "23",
+      "category": "待人工确认",
+      "groups_raw": [
+        "DE=3"
+      ],
+      "source_sections": [
+        "韩国团播_169169"
+      ],
+      "sources": [
+        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
+      ],
+      "line_count": 1
+    },
+    {
+      "channel_key": "24",
+      "name": "24",
+      "category": "待人工确认",
+      "groups_raw": [
+        "DE=3"
+      ],
+      "source_sections": [
+        "韩国团播_169169"
+      ],
+      "sources": [
+        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
+      ],
+      "line_count": 1
+    },
+    {
+      "channel_key": "25",
+      "name": "25",
+      "category": "待人工确认",
+      "groups_raw": [
+        "DE=3"
+      ],
+      "source_sections": [
+        "韩国团播_169169"
+      ],
+      "sources": [
+        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
+      ],
+      "line_count": 1
+    },
+    {
+      "channel_key": "26",
+      "name": "26",
+      "category": "待人工确认",
+      "groups_raw": [
+        "DE=3"
+      ],
+      "source_sections": [
+        "韩国团播_169169"
+      ],
+      "sources": [
+        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
+      ],
+      "line_count": 1
+    },
+    {
+      "channel_key": "27",
+      "name": "27",
+      "category": "待人工确认",
+      "groups_raw": [
+        "DE=3"
+      ],
+      "source_sections": [
+        "韩国团播_169169"
+      ],
+      "sources": [
+        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
+      ],
+      "line_count": 1
+    },
+    {
+      "channel_key": "28",
+      "name": "28",
+      "category": "待人工确认",
+      "groups_raw": [
+        "DE=3"
+      ],
+      "source_sections": [
+        "韩国团播_169169"
+      ],
+      "sources": [
+        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
+      ],
+      "line_count": 1
+    },
+    {
+      "channel_key": "29",
+      "name": "29",
+      "category": "待人工确认",
+      "groups_raw": [
+        "DE=3"
+      ],
+      "source_sections": [
+        "韩国团播_169169"
+      ],
+      "sources": [
+        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
+      ],
+      "line_count": 1
+    },
+    {
+      "channel_key": "30",
+      "name": "30",
+      "category": "待人工确认",
+      "groups_raw": [
+        "DE=3"
+      ],
+      "source_sections": [
+        "韩国团播_169169"
+      ],
+      "sources": [
+        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
+      ],
+      "line_count": 1
+    },
+    {
+      "channel_key": "31",
+      "name": "31",
+      "category": "待人工确认",
+      "groups_raw": [
+        "DE=3"
+      ],
+      "source_sections": [
+        "韩国团播_169169"
+      ],
+      "sources": [
+        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
+      ],
+      "line_count": 1
+    },
+    {
+      "channel_key": "32",
+      "name": "32",
+      "category": "待人工确认",
+      "groups_raw": [
+        "DE=3"
+      ],
+      "source_sections": [
+        "韩国团播_169169"
+      ],
+      "sources": [
+        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
+      ],
+      "line_count": 1
+    },
+    {
+      "channel_key": "33",
+      "name": "33",
+      "category": "待人工确认",
+      "groups_raw": [
+        "DE=3"
+      ],
+      "source_sections": [
+        "韩国团播_169169"
+      ],
+      "sources": [
+        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
+      ],
+      "line_count": 1
+    },
+    {
+      "channel_key": "34",
+      "name": "34",
+      "category": "待人工确认",
+      "groups_raw": [
+        "DE=3"
+      ],
+      "source_sections": [
+        "韩国团播_169169"
+      ],
+      "sources": [
+        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
+      ],
+      "line_count": 1
+    },
+    {
+      "channel_key": "35",
+      "name": "35",
+      "category": "待人工确认",
+      "groups_raw": [
+        "DE=3"
+      ],
+      "source_sections": [
+        "韩国团播_169169"
+      ],
+      "sources": [
+        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
+      ],
+      "line_count": 1
+    },
+    {
+      "channel_key": "36",
+      "name": "36",
+      "category": "待人工确认",
+      "groups_raw": [
+        "DE=3"
+      ],
+      "source_sections": [
+        "韩国团播_169169"
+      ],
+      "sources": [
+        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
+      ],
+      "line_count": 1
+    },
+    {
+      "channel_key": "37",
+      "name": "37",
+      "category": "待人工确认",
+      "groups_raw": [
+        "DE=3"
+      ],
+      "source_sections": [
+        "韩国团播_169169"
+      ],
+      "sources": [
+        "https://gh-proxy.com/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
+      ],
+      "line_count": 1
+    },
     {
       "channel_key": "zgqx",
       "name": "zgqx",

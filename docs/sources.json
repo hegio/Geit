@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T16:16:16Z",
+  "updated": "2026-11-18T00:17:43Z",
   "repository": "hegio/Geit",
   "branch": "main",
   "count": 3,
@@ -11,10 +11,10 @@
       "status": "reachable",
       "http_status": 200,
       "content_type": "text/plain; charset=utf-8",
-      "bytes": 838944,
+      "bytes": 795266,
       "sites": 0,
       "lives": 0,
-      "channels": 9102,
+      "channels": 9099,
       "detail": ""
     },
     {
@@ -24,9 +24,9 @@
       "status": "reachable",
       "http_status": 200,
       "content_type": "text/plain; charset=utf-8",
-      "bytes": 13584,
+      "bytes": 11120,
       "sites": 26,
-      "lives": 19,
+      "lives": 11,
       "channels": 0,
       "detail": "存在含真实凭据的直播项，已跳过"
     },

@@ -181,15 +181,9 @@
       "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg"
     },
     {
-      "name": "👖裤佬体育直播[主]",
+      "name": "👖裤佬体育直播",
       "type": 0,
       "url": "https://jsnzkpg.de5.net/all.m3u",
-      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg"
-    },
-    {
-      "name": "👖裤佬体育直播[备]",
-      "type": 0,
-      "url": "https://stymei.pages.dev/live.m3u",
       "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg"
     },
     {
@@ -207,7 +201,7 @@
     {
       "name": "👖裤佬虎牙直播",
       "type": 0,
-      "url": "https://huya.445569.xyz/live.m3u",
+      "url": "https://yahu.445569.xyz/live.m3u",
       "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg"
     },
     {
@@ -235,12 +229,6 @@
       "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg"
     },
     {
-      "name": "👖裤佬YY直播",
-      "type": 0,
-      "url": "https://yy.445569.xyz/live.m3u",
-      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg"
-    },
-    {
       "name": "👖裤佬Twitch直播",
       "type": 0,
       "url": "https://twitch.445569.xyz/live.m3u",
@@ -250,42 +238,6 @@
       "name": "👖裤佬TikTok直播",
       "type": 0,
       "url": "https://tiktok.445569.xyz/live.m3u",
-      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg"
-    },
-    {
-      "name": "🍿易发TV直播",
-      "type": 1,
-      "url": "https://445569.pages.dev/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg"
-    },
-    {
-      "name": "🍿华视TV直播",
-      "type": 1,
-      "url": "https://445569.pages.dev/https://raw.githubusercontent.com/swhtv/111/refs/heads/main/%E5%8D%8E%E8%A7%86box%E5%8D%8E%E8%A7%86%E5%A4%A7%E5%85%A8swtv",
-      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg"
-    },
-    {
-      "name": "🍿PPV体育赛事直播",
-      "type": 0,
-      "url": "https://jsnzkpg4.pages.dev/https://www.korice.eu.org/ppv_m3u.php",
-      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg"
-    },
-    {
-      "name": "🍿韩国Panda直播",
-      "type": 0,
-      "url": "https://jsnzkpg4.pages.dev/https://xiongmao.caonizuzong.indevs.in/all.m3u",
-      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg"
-    },
-    {
-      "name": "🍿乌拉TV直播",
-      "type": 0,
-      "url": "https://jsnzkpg4.pages.dev/https://ilook.epg.one/5CM5SY98BF24PL/2",
-      "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg"
-    },
-    {
-      "name": "🍿全球TV直播",
-      "type": 0,
-      "url": "https://jsnzkpg4.pages.dev/https://iptv-org.github.io/iptv/index.m3u",
       "source": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/refs/heads/Jsnzkpg/Jsnzkpg"
     },
     {
