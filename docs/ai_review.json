@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-17T20:58:02Z",
+  "updated": "2026-11-18T21:03:02Z",
   "mode": "auto",
   "safety": "AI 只生成分类建议和错误解释；不参与失效判定、不修改 merged.m3u、不写入 removable.json、不接收含凭据的完整 URL。",
   "inputs": {
-    "pending_channels": 4,
+    "pending_channels": 40,
     "failure_clusters": 30,
     "removable": {
-      "flagged": 2,
-      "pending": 1,
+      "flagged": 0,
+      "pending": 0,
       "policy": {
         "fail_streak_limit": 3,
         "scope": "仅统计 geit-fish 中的 live 直播源；频道抽样轮转，不参与计数",
@@ -25,42 +25,258 @@
   "result": {
     "classification_suggestions": [
       {
+        "channel_key": "1",
+        "category": "待人工确认",
+        "confidence": "low",
+        "reason": "频道名仅为数字，无法识别身份；来源分组“韩国团播”提示可能为海外直播，但不能据此确认频道归属。"
+      },
+      {
+        "channel_key": "2",
+        "category": "待人工确认",
+        "confidence": "low",
+        "reason": "频道名缺失有效身份信息，仅凭数字编号不能推断分类。"
+      },
+      {
+        "channel_key": "3",
+        "category": "待人工确认",
+        "confidence": "low",
+        "reason": "频道名为数字，缺乏台标、呼号或节目信息，不能编造身份。"
+      },
+      {
+        "channel_key": "4",
+        "category": "待人工确认",
+        "confidence": "low",
+        "reason": "频道名为数字，来源分组提示韩国团播，仍需人工确认实际内容。"
+      },
+      {
+        "channel_key": "5",
+        "category": "待人工确认",
+        "confidence": "low",
+        "reason": "频道名为数字，无法从现有元数据判断频道身份。"
+      },
+      {
+        "channel_key": "6",
+        "category": "待人工确认",
+        "confidence": "low",
+        "reason": "频道名为数字，缺乏可识别的频道名称或归属信息。"
+      },
+      {
+        "channel_key": "7",
+        "category": "待人工确认",
+        "confidence": "low",
+        "reason": "频道名为数字，来源分组仅提示地区方向，不能替代身份确认。"
+      },
+      {
+        "channel_key": "8",
+        "category": "待人工确认",
+        "confidence": "low",
+        "reason": "频道名为数字，无法确认是否为正式海外频道或轮播内容。"
+      },
+      {
+        "channel_key": "9",
+        "category": "待人工确认",
+        "confidence": "low",
+        "reason": "频道名为数字，缺少台号、节目单或来源说明，身份不明。"
+      },
+      {
+        "channel_key": "10",
+        "category": "待人工确认",
+        "confidence": "low",
+        "reason": "频道名为数字，不能依据编号推断分类。"
+      },
+      {
+        "channel_key": "11",
+        "category": "待人工确认",
+        "confidence": "low",
+        "reason": "频道名为数字，来源分组“韩国团播”仅作参考，需人工核对。"
+      },
+      {
+        "channel_key": "12",
+        "category": "待人工确认",
+        "confidence": "low",
+        "reason": "频道名为数字，缺乏可核验的频道身份。"
+      },
+      {
+        "channel_key": "13",
+        "category": "待人工确认",
+        "confidence": "low",
+        "reason": "频道名为数字，无法判断具体频道内容。"
+      },
+      {
+        "channel_key": "15",
+        "category": "待人工确认",
+        "confidence": "low",
+        "reason": "频道名为数字，且频道编号不连续，需人工确认来源与归属。"
+      },
+      {
+        "channel_key": "16",
+        "category": "待人工确认",
+        "confidence": "low",
+        "reason": "频道名为数字，缺少有效身份信息。"
+      },
+      {
+        "channel_key": "17",
+        "category": "待人工确认",
+        "confidence": "low",
+        "reason": "频道名为数字，不能确认是否为韩国团播相关频道。"
+      },
+      {
+        "channel_key": "18",
+        "category": "待人工确认",
+        "confidence": "low",
+        "reason": "频道名为数字，缺乏频道呼号或节目信息。"
+      },
+      {
+        "channel_key": "19",
+        "category": "待人工确认",
+        "confidence": "low",
+        "reason": "频道名为数字，无法从元数据推断分类。"
+      },
+      {
+        "channel_key": "20",
+        "category": "待人工确认",
+        "confidence": "low",
+        "reason": "频道名为数字，身份不明，需人工核对播放内容。"
+      },
+      {
+        "channel_key": "21",
+        "category": "待人工确认",
+        "confidence": "low",
+        "reason": "频道名为数字，来源分组提示海外方向，但不能确认具体频道。"
+      },
+      {
+        "channel_key": "22",
+        "category": "待人工确认",
+        "confidence": "low",
+        "reason": "频道名为数字，缺少可识别的频道名称。"
+      },
+      {
+        "channel_key": "23",
+        "category": "待人工确认",
+        "confidence": "low",
+        "reason": "频道名为数字，无法判断频道归属。"
+      },
+      {
+        "channel_key": "24",
+        "category": "待人工确认",
+        "confidence": "low",
+        "reason": "频道名为数字，仅凭编号不能推断分类。"
+      },
+      {
+        "channel_key": "25",
+        "category": "待人工确认",
+        "confidence": "low",
+        "reason": "频道名为数字，缺乏来源、台标或节目单信息。"
+      },
+      {
+        "channel_key": "26",
+        "category": "待人工确认",
+        "confidence": "low",
+        "reason": "频道名为数字，身份不确定。"
+      },
+      {
+        "channel_key": "27",
+        "category": "待人工确认",
+        "confidence": "low",
+        "reason": "频道名为数字，不能确认是否属于韩国团播分组。"
+      },
+      {
+        "channel_key": "28",
+        "category": "待人工确认",
+        "confidence": "low",
+        "reason": "频道名为数字，缺少有效身份字段。"
+      },
+      {
+        "channel_key": "29",
+        "category": "待人工确认",
+        "confidence": "low",
+        "reason": "频道名为数字，无法判断实际频道内容。"
+      },
+      {
+        "channel_key": "30",
+        "category": "待人工确认",
+        "confidence": "low",
+        "reason": "频道名为数字，需人工确认频道身份。"
+      },
+      {
+        "channel_key": "31",
+        "category": "待人工确认",
+        "confidence": "low",
+        "reason": "频道名为数字，来源分组仅提示地区，不能作为分类依据。"
+      },
+      {
+        "channel_key": "32",
+        "category": "待人工确认",
+        "confidence": "low",
+        "reason": "频道名为数字，缺乏可核验信息。"
+      },
+      {
+        "channel_key": "33",
+        "category": "待人工确认",
+        "confidence": "low",
+        "reason": "频道名为数字，无法确认频道归属。"
+      },
+      {
+        "channel_key": "34",
+        "category": "待人工确认",
+        "confidence": "low",
+        "reason": "频道名为数字，身份不明。"
+      },
+      {
+        "channel_key": "35",
+        "category": "待人工确认",
+        "confidence": "low",
+        "reason": "频道名为数字，不能推断具体频道。"
+      },
+      {
+        "channel_key": "36",
+        "category": "待人工确认",
+        "confidence": "low",
+        "reason": "频道名为数字，缺少频道名称或节目信息。"
+      },
+      {
+        "channel_key": "37",
+        "category": "待人工确认",
+        "confidence": "low",
+        "reason": "频道名为数字，无法确认其是否为韩国团播频道。"
+      },
+      {
         "channel_key": "zgqx",
         "category": "待人工确认",
         "confidence": "low",
-        "reason": "频道名为拼音缩写且无可识别台标信息，无法确认频道身份，不作猜测。"
+        "reason": "频道名为拼音缩写，疑似“中国气象”，但未提供官方名称，不能编造身份。"
       },
       {
         "channel_key": "hyzxc",
         "category": "待人工确认",
         "confidence": "low",
-        "reason": "频道名仅为字母缩写，缺少台名、地区或栏目线索，需人工核对。"
+        "reason": "频道名为拼音缩写，无法确认对应频道身份。"
       },
       {
         "channel_key": "hycxldb",
         "category": "待人工确认",
         "confidence": "low",
-        "reason": "缩写无法映射到具体频道，来源分组“央卫63”混合央视与卫视，不能据此判定。"
+        "reason": "频道名为拼音缩写，缺少可核验的频道名称。"
       },
       {
         "channel_key": "hylzy",
         "category": "待人工确认",
         "confidence": "low",
-        "reason": "名称不可识别且无辅助元数据，建议人工确认后再归入央视频道或卫视频道。"
+        "reason": "频道名为拼音缩写，不能据此确认频道归属。"
       }
     ],
-    "incident_summary": "失败以软失败为主：t33.cdn2020.com 大量返回 451，属内容访问受限，不代表源失效；多个域名与裸 IP 返回无状态码错误，多为连接、DNS 或源站临时问题；m.061899.xyz 出现 429，属限流；iesdouyin.com 返回 200 但播放未验证；38.75.136.137 返回 200 却探测失败，疑似播放协议或媒体流问题。",
+    "incident_summary": "失败以软失败为主：t33.cdn2020.com 返回 451，提示内容因法律或区域原因不可用，集中在私密频道和点播分组；大量主机 http_status 为 None，说明连接失败可能来自网络中断、DNS 解析失败或源站不可达，并非明确失效。个别 403、429 和 567 属于访问受限或临时异常。38.75.136.137 出现 200 但探针失败，属于可连接但无法正常播放，需要人工复核。",
     "recommended_actions": [
-      "对 451 主机 t33.cdn2020.com 复核是否存在地域、Referer、UA 或内容策略限制，并尝试更换出口或请求头后重测。",
-      "对无状态码的 http_error 源检查 DNS、端口、TLS 与连接稳定性，区分临时网络问题与源站异常。",
-      "对 429 主机降低探测频率并设置退避，避免被限流误判为失效。",
-      "对 200 但 playback_unverified 与 probe_failed 的条目检查播放协议、编码格式与实际媒体流可用性。",
-      "保留以上条目，待人工复核与复测后再决定处理方式。"
+      "优先复核 38.75.136.137 的 200 但 probe_failed 条目，检查播放协议、编码或是否存在防盗链。",
+      "对 http_status 为 None 的主机进行连接性和 DNS 复核，确认是否为网络抖动或源站暂时不可达。",
+      "复核 t33.cdn2020.com 的 451 响应，确认是否受区域限制或源站策略影响，不按失效处理。",
+      "检查 403、429、567 对应源站是否触发限流、鉴权或临时网关错误，建议稍后重试。",
+      "为名称仅为数字或拼音缩写的频道补充来源说明、台标或节目信息，以便后续准确归类。"
     ],
     "warnings": [
-      "451、429、无状态码连接错误以及 5xx 均不能直接判定为失效。",
-      "频道名均为不可识别缩写，分类结果为待人工确认，未猜测频道身份。",
-      "部分失败涉及裸 IP 与自建域名，可能受网络环境影响，需多次复测。"
+      "451、403、429、5xx 和超时均不能直接判定为失效。",
+      "频道名为数字或拼音缩写时，不应依据来源分组猜测频道身份。",
+      "probe_failed 但 HTTP 200 的情况可能涉及协议或播放器兼容问题，需人工确认。"
     ]
   }
 }
