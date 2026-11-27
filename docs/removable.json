@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-26T21:30:22Z",
+  "updated": "2026-11-27T20:45:01Z",
   "policy": {
     "fail_streak_limit": 3,
     "scope": "仅统计 geit-fish 中的 live 直播源；频道抽样轮转，不参与计数",
